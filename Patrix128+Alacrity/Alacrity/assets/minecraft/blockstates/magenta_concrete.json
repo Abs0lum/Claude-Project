@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/concrete/magenta_1" },
+      { "model": "minecraft:block/stone/concrete/magenta_2" },
+      { "model": "minecraft:block/stone/concrete/magenta_3" },
+      { "model": "minecraft:block/stone/concrete/magenta_4" }
+    ]
+  }
+}

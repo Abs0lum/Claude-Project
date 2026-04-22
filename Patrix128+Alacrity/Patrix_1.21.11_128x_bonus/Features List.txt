@@ -1,0 +1,73 @@
+================================
+Most of the following features are stored in "assets\minecraft\optifine\ctm\patrix" folder in this pack, can try removing the ones you don't want.
+================================
+
+- asphalt pavement, pothole, patches
+random texture of gray concrete block, depends on world seed and x,y,z location
+
+- road manhole cover
+double polished deepslate slab
+
+- yellow road lines
+gray concrete dust block in savanna or birch_forest biome
+
+- road chinese words
+gray glazed terracotta block in various biomes
+taiga = ¨® car
+badlands = ¦æ go/pass
+dark_forest = ¸T no/restricted
+swamp = ºC slow
+and direction arrow for rest of the biomes
+
+- modern concrete
+light gray concrete block
+
+- damaged concrete
+bedrock in any overworld biomes above y=5, connects to all concrete or stone type blocks
+
+- scifi screens
+black wool or carpet in any biomes other than end or void type biomes
+
+- bone piles
+purpur block in any biomes other than end or void type biomes
+
+- roof tiles
+red nether bricks in any biomes other than nether type biomes
+
+- thatch
+birch slab/stairs/pressure plate in any non-birch biomes
+
+- timber frame
+white = double diorite slab
+yellow = double smooth sandstone slab
+brick = double brick slab
+planks = double spruce slab
+mud = double mud brick slab
+
+- potion shelves
+double oak slab
+
+- food baskets
+petrified oak slabs
+fishes = any ocean, beach, or swamp biomes
+spices = any desert, savanna, or badlands biomes
+breads = any forest or taiga biomes
+fruit/vegetables = any rest of the biomes
+
+- medieval tankards and bowl of food
+dry sea pickles, 1~3 are tankards and 4 is a bowl of random food
+
+- nest
+dry dead horn coral fan in any non-ocean biomes
+
+- 3 block tall doors
+any powered doors
+
+- white ceramic tiles
+end stone brick slab/stairs/wall block in any biomes other than end or void type biomes
+
+- green resin clump
+resin clump in any dark forest, jungle, or swamp biomes
+
+- blue resin clump
+resin clump in any ocean or beach biomes

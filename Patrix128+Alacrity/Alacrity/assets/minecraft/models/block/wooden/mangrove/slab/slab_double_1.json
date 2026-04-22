@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "block/templates/wooden_slabs/slab_double_1",
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/wooden/mangrove/1",
+        "2": "block/wooden/mangrove/2",
+        "3": "block/wooden/mangrove/parquet_1",
+        "particle": "block/wooden/mangrove/particle"
+	}
+}

@@ -1,0 +1,44 @@
+{
+    "multipart": [
+        {   "when": { "charges": "0" },
+            "apply": [
+                { "model": "block/respawn_anchor_0" },
+                { "model": "block/respawn_anchor_0", "y": 90 },
+                { "model": "block/respawn_anchor_0", "y": 180 },
+                { "model": "block/respawn_anchor_0", "y": 270 }
+            ]
+        },
+        {   "when": { "charges": "1" },
+            "apply": [
+                { "model": "block/respawn_anchor_1" },
+                { "model": "block/respawn_anchor_1", "y": 90 },
+                { "model": "block/respawn_anchor_1", "y": 180 },
+                { "model": "block/respawn_anchor_1", "y": 270 }
+            ]
+        },
+        {   "when": { "charges": "2" },
+            "apply": [
+                { "model": "block/respawn_anchor_2" },
+                { "model": "block/respawn_anchor_2", "y": 90 },
+                { "model": "block/respawn_anchor_2", "y": 180 },
+                { "model": "block/respawn_anchor_2", "y": 270 }
+            ]
+        },
+        {   "when": { "charges": "3" },
+            "apply": [
+                { "model": "block/respawn_anchor_3" },
+                { "model": "block/respawn_anchor_3", "y": 90 },
+                { "model": "block/respawn_anchor_3", "y": 180 },
+                { "model": "block/respawn_anchor_3", "y": 270 }
+            ]
+        },
+        {   "when": { "charges": "4" },
+            "apply": [
+                { "model": "block/respawn_anchor_4" },
+                { "model": "block/respawn_anchor_4", "y": 90 },
+                { "model": "block/respawn_anchor_4", "y": 180 },
+                { "model": "block/respawn_anchor_4", "y": 270 }
+            ]
+        }
+    ]
+}

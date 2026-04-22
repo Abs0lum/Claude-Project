@@ -1,0 +1,23 @@
+{
+  "multipart": [
+    {
+      "apply": { "model": "minecraft:block/materials/copper/bars_a/bar_post" }
+    },
+    {
+      "when": { "north": "true" },
+      "apply": { "model": "minecraft:block/materials/copper/bars_a/bar_side_l" }
+    },
+    {
+      "when": { "east": "true" },
+      "apply": { "model": "minecraft:block/materials/copper/bars_a/bar_side_l", "y": 90 }
+    },
+    {
+      "when": { "south": "true" },
+      "apply": { "model": "minecraft:block/materials/copper/bars_a/bar_side_r" }
+    },
+    {
+      "when": { "west": "true" },
+      "apply": { "model": "minecraft:block/materials/copper/bars_a/bar_side_r", "y": 90 }
+    }
+  ]
+}

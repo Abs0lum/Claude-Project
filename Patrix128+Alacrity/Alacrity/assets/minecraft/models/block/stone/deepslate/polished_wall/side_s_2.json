@@ -1,0 +1,11 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/templates/polished_wall/side_s_2",
+	"texture_size": [32, 32],
+	"textures": {
+        "3": "block/stone/deepslate/wall_parts",
+        "4": "block/stone/deepslate/bricks_extra",
+        "7": "block/stone/deepslate/wall",
+        "particle": "block/stone/deepslate/particle"
+	}
+}

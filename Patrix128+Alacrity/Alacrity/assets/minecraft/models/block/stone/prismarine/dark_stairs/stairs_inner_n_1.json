@@ -1,0 +1,58 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+        "particle": "block/stone/prismarine/bricks_particle",
+        "top": "block/stone/prismarine/dark_2"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [16, 4, 8, 8], "texture": "#top", "cullface": "north"},
+				"east": {"uv": [8, 4, 16, 8], "texture": "#top", "cullface": "east"},
+				"south": {"uv": [0, 4, 8, 8], "texture": "#top", "cullface": "south"},
+				"west": {"uv": [16, 4, 8, 8], "texture": "#top", "cullface": "west"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#top"},
+				"down": {"uv": [0, 8, 8, 0], "texture": "#top", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 8],
+			"faces": {
+				"north": {"uv": [16, 0, 8, 4], "texture": "#top", "cullface": "north"},
+				"east": {"uv": [0, 0, 4, 4], "texture": "#top", "cullface": "east"},
+				"south": {"uv": [0, 0, 8, 4], "texture": "#top"},
+				"west": {"uv": [4, 0, 0, 4], "texture": "#top", "cullface": "west"},
+				"up": {"uv": [0, 0, 8, 4], "texture": "#top"}
+			}
+		},
+		{
+			"from": [0, 8, 8],
+			"to": [8, 16, 16],
+			"faces": {
+				"east": {"uv": [4, 4, 8, 8], "texture": "#top"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#top", "cullface": "south"},
+				"west": {"uv": [4, 0, 0, 4], "texture": "#top", "cullface": "west"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#top"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [75, -135, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"rotation": [0, -90, 0]
+		}
+	}
+}

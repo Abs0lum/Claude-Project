@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/stone/stone_top_1",
+		"all": "block/stone/stone_side_1",
+		"particle": "block/stone/stone_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [8, 0, 16, 8], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#all", "cullface": "east"},
+				"south": {"uv": [8, 0, 16, 8], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [8, 0, 16, 8], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [8, 0, 16, 8], "texture": "#2", "cullface": "up"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#2", "cullface": "down"}
+			}
+		}
+	]
+}

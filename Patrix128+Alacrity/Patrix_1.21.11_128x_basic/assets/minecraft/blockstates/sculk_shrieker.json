@@ -1,0 +1,20 @@
+{
+    "multipart": [
+        {   "when": { "can_summon": "false" },
+            "apply": [
+                { "model": "block/sculk_shrieker" },
+                { "model": "block/sculk_shrieker2" },
+                { "model": "block/sculk_shrieker3" },
+                { "model": "block/sculk_shrieker4" }
+            ]
+        },
+        {   "when": { "can_summon": "true" },
+            "apply": [
+                { "model": "block/sculk_shrieker_can_summon" },
+                { "model": "block/sculk_shrieker_can_summon2" },
+                { "model": "block/sculk_shrieker_can_summon3" },
+                { "model": "block/sculk_shrieker_can_summon4" }
+            ]
+        }
+    ]
+}

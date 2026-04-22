@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+        "0": "block/nature/dripleaf/dripleaf",
+        "particle": "block/nature/dripleaf/dripleaf"
+	}
+}

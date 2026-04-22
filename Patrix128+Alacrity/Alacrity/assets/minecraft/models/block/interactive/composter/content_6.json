@@ -1,0 +1,18 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"4": "block/interactive/composter_content"
+	},
+	"elements": [
+		{
+			"name": "bottom",
+			"from": [0.5, 13, 0.5],
+			"to": [15.5, 13, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14.05, 8]},
+			"faces": {
+				"up": {"uv": [0.25, 0.25, 7.75, 7.75], "texture": "#4"}
+			}
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+    "multipart": [
+        {   "apply": { "model": "block/andesite" }
+        },
+        {   "apply": [
+                { "model": "block/andesite2", "weight": 1 },
+                { "model": "block/andesite2", "y": 90, "weight": 1 },
+                { "model": "block/andesite2", "y": 180, "weight": 1 },
+                { "model": "block/andesite2", "y": 270, "weight": 1 },
+                { "model": "block/andesite3", "weight": 1 },
+                { "model": "block/andesite3", "y": 90, "weight": 1 },
+                { "model": "block/andesite3", "y": 180, "weight": 1 },
+                { "model": "block/andesite3", "y": 270, "weight": 1 },
+                { "model": "block/air", "weight": 32 }
+            ]
+        }
+    ]
+}

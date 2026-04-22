@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "axis=x": [
+      { "model": "minecraft:block/wooden/dark_oak/log/log_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_2", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_3", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_4", "x": 90, "y": 90 }
+    ],
+    "axis=y": [
+      { "model": "minecraft:block/wooden/dark_oak/log/log_1" },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_2" },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_3" },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_4" }
+    ],
+    "axis=z": [
+      { "model": "minecraft:block/wooden/dark_oak/log/log_1", "x": 90 },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_2", "x": 90 },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_3", "x": 90 },
+      { "model": "minecraft:block/wooden/dark_oak/log/log_4", "x": 90 }
+    ]
+  }
+}

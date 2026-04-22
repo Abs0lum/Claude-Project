@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/slab_1" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/slab_2" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/slab_3" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/terracotta/light_gray_1" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_2" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_3" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/top_1" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/top_2" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/top_3" },
+      { "model": "minecraft:block/stone/terracotta/light_gray_slab/top_4" }
+    ]
+  }
+}

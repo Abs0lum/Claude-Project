@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/001-100_sky/sky021_mask_normal3.png",
+	"blend": {"type": "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 21,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"13500": 1.0,
+				"14500": 0.0,
+				"21500": 0.0,
+				"22500": 1.0
+				}
+			},
+		"rotation": {
+			"speed": -0.866,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]},
+		"biomes": {"entries": ["minecraft:bamboo_jungle", "minecraft:bamboo_jungle_hills", "minecraft:jungle", "minecraft:jungle_edge", "minecraft:jungle_hills", "minecraft:modified_jungle", "minecraft:modified_jungle_edge", "minecraft:sparse_jungle", "minecraft:giant_spruce_taiga", "minecraft:giant_tree_taiga", "minecraft:old_growth_birch_forest", "minecraft:old_growth_pine_taiga", "minecraft:old_growth_spruce_taiga"]}
+		}
+}

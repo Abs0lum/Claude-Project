@@ -1,0 +1,71 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/glow_lichen/growth",
+        "particle": "block/nature/glow_lichen/particle"
+	},
+	"elements": [
+		{
+			"name": "Grass",
+			"from": [1, -1, 0.1],
+			"to": [17, 7, 0.1],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [9, 7, 0.1]},
+			"faces": {
+				"north": {"uv": [8, 8, 16, 4], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [16, 8, 8, 4], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [3, -1, 0.1],
+			"to": [19, 3, 0.1],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [13, 3, 0.1]},
+			"faces": {
+				"north": {"uv": [8, 6.5, 16, 4.5], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [16, 6.5, 8, 4.5], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-3, 4, 0.1],
+			"to": [13, 8, 0.1],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [-3, 8, 0.1]},
+			"faces": {
+				"north": {"uv": [8, 6, 16, 4], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [16, 6, 8, 4], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [2, 12, 0.1],
+			"to": [18, 16, 0.1],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [2, 16, 0.1]},
+			"faces": {
+				"north": {"uv": [8, 2.5, 16, 0.5], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [16, 2.5, 8, 0.5], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-1, 3, 0.1],
+			"to": [15, 11, 0.1],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [7, 11, 0.1]},
+			"faces": {
+				"north": {"uv": [8, 4, 16, 0], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [16, 4, 8, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-2, 6, 0.1],
+			"to": [14, 14, 0.1],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [6, 14, 0.1]},
+			"faces": {
+				"north": {"uv": [8, 4, 16, 0], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [16, 4, 8, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

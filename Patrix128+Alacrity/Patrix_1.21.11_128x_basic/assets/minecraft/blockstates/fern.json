@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/fern" },
+            { "model": "block/fern", "y": 90 },
+            { "model": "block/fern", "y": 180 },
+            { "model": "block/fern", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/simple_wall/post_3",
+	"texture_size": [32, 32],
+	"textures": {
+        "cubes": "block/stone/diorite/cubes",
+        "slab_cubes": "block/stone/diorite/polished_slab_cubes",
+        "1": "block/stone/diorite/side",
+        "particle": "block/stone/diorite/particle"
+	}
+}

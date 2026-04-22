@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=east,half=lower":  {"model":"waystones:block/waystone_blackstone"},
+    "facing=north,half=lower": {"model":"waystones:block/waystone_blackstone"},
+    "facing=south,half=lower": {"model":"waystones:block/waystone_blackstone"},
+    "facing=west,half=lower":  {"model":"waystones:block/waystone_blackstone"},
+    "facing=east,half=upper":  {"model":"waystones:block/waystone_blackstone_top"},
+    "facing=north,half=upper": {"model":"waystones:block/waystone_blackstone_top"},
+    "facing=south,half=upper": {"model":"waystones:block/waystone_blackstone_top"},
+    "facing=west,half=upper":  {"model":"waystones:block/waystone_blackstone_top"}
+  }
+}

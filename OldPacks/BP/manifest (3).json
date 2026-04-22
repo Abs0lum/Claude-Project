@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld-Tectonic BP [SCHEMA-FIX v0.3.0]",
+    "description": "v0.3.0 SCHEMA-FIX \u2014 corrects all schema errors found in v0.2.0 test. (1) biome format_version back to '1.21.110' (Microsoft canonical example; v0.2 swap to '1.13.0' failed with 'no parser available'). (2) client_biome format_version is '1.21.40' per Microsoft docs. (3) client_biome foliage_appearance uses 'color' field, not 'foliage_color' (schema rejected the latter). Same fix on grass_appearance. (4) Removed fog_appearance component entirely (referenced non-existent 'minecraft:default' fog asset). IMPORTANT: world must have 'Custom Biomes' experimental toggle ENABLED for minecraft:replace_biomes to take effect. Without that toggle, biomes parse cleanly but don't replace anything.",
+    "uuid": "2a8f6b14-7e9c-4d3a-a1b5-c8e7f2d4a690",
+    "version": [
+      0,
+      3,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "PatrixWorld-Tectonic biomes",
+      "type": "data",
+      "uuid": "d14e8c23-6f5a-4b9e-8c2d-7a3b5e9f1c40",
+      "version": [
+        0,
+        3,
+        0
+      ]
+    }
+  ]
+}

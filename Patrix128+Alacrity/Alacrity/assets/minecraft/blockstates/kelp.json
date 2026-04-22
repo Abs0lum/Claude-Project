@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/underwater/kelp/top_1" },
+      { "model": "minecraft:block/underwater/kelp/top_2" }
+  	]
+  }
+}

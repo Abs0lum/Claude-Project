@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "pw:alpine_peak"
+    },
+    "components": {
+      "minecraft:water_appearance": {
+        "surface_color": "#3F9EE5"
+      },
+      "minecraft:water_identifier": {
+        "water_identifier": "pw:alpine_water"
+      },
+      "minecraft:sky_color": {
+        "sky_color": "#86B6F6"
+      },
+      "minecraft:fog_appearance": {
+        "fog_identifier": "minecraft:default"
+      },
+      "minecraft:grass_appearance": {
+        "grass_color": "#80B497"
+      },
+      "minecraft:foliage_appearance": {
+        "foliage_color": "#6DA36D"
+      },
+      "minecraft:foliage_appearance_type": {
+        "type": "evergreen"
+      }
+    }
+  }
+}

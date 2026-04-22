@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/nether/ancient_derbis/side",
+		"3": "block/nether/ancient_derbis/top",
+		"particle": "block/nether/ancient_derbis/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [8, 0, 0, 8], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#2", "cullface": "east"},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#2", "cullface": "south"},
+				"west": {"uv": [16, 0, 8, 8], "texture": "#2", "cullface": "west"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#3", "cullface": "up"},
+				"down": {"uv": [0, 8, 8, 0], "texture": "#3", "cullface": "down"}
+			}
+		}
+	]
+}

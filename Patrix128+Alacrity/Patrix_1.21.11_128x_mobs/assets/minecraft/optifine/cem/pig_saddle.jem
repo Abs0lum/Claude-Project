@@ -1,0 +1,123 @@
+{
+	"credit": "Created by FreshLX for Patrix",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "root",
+			"id": "root",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Patrix",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"varb.fcc": "frame_counter == var.frame_counter_prev",
+					"var.hy": "clamp( 90*sin(torad(head_yaw)), -90, 90 )",
+					"var.id": "random(id)*pi*4",
+					"var.ls_offset": "if( varb.fcc, var.ls_offset, is_hurt || limb_speed>=if(is_child, 0.55, 0.75), var.ls_offset + frame_time*if(is_child, 2, 1.3)*if(is_hurt, 2, 1) * limb_speed, var.ls_offset)",
+					"var.ls": "if( is_riding, 2,  0.3 +( limb_swing -var.ls_offset*3 ) * 0.98 * if(is_child, 0.5, 1)  )",
+					"var.position": "if( varb.fcc, var.position, age<9 || is_riding, pos_y, pos_y*min(1,frame_time*16) +var.position*max(0,1-frame_time*16) )",
+					"var.vs": "if( varb.fcc, var.vs, age<9, max(0,3-age), (var.position-pos_y) )",
+					"var.Bt": "var.id +age/if(is_child, 40, 60)*pi*2",
+					"var.St": "var.id +age/if(is_child, 7, 10)*pi +limb_swing/if(is_in_water, 1.5, 4) -pos_y/4",
+					"var.Ct": "var.id +age/if(is_child, 1.2, 1.8)",
+					"var.It": "( var.id +age*if(is_child, 1.1, 1)*(0.7+0.3*random(id)) +sin( var.id +age*if(is_child, 1.1, 1)*(0.7+0.3*random(id))/33 )*9 )/15",
+					"var.idl2": "max( 0, 1-limb_speed * 1.5 )*(1-var.swim)",
+					"var.idle": "max( 0, 1-limb_speed * if( is_in_water, 6, 4 ) )",
+					"var.move": "min( 1,   limb_speed * if( is_in_water, 6, 4 ) )",
+					"var.air": "clamp( if( varb.fcc, var.air, !is_riding && !is_on_ground && !is_in_water, var.air +if(var.vs<0, 0.4, 6)*frame_time, var.air -6 *frame_time ), 0, if(age<9, 0, 1) )",
+					"var.run": "clamp(if( varb.fcc, var.run, limb_speed>=if(is_child, 0.55, 0.75), var.run +6 *frame_time, var.run -3 *frame_time ), 0, if(is_child, 1.5, 1)*max(0,1-var.swim-var.air) )",
+					"var.walk": "clamp(1-var.run-var.air, 0, (1-var.swim) )*if(is_child, 1.3, 1)",
+					"var.swiA": "clamp(if(varb.fcc, var.swiA, !is_riding&&!is_on_ground&&is_in_water, var.swiA +0.8 *frame_time, var.swiA -2 *frame_time ), 0, 1 )",
+					"var.swim": "clamp(-0.5 +var.swiA*2, 0, 1)",
+					"var.hurt": "(hurt_time/10)*(hurt_time/10)*max(0, (1-hurt_time/10)*8 )",
+					"var.scared": "clamp( if( varb.fcc, var.scared, is_hurt && hurt_time<3 || (age>9 && !is_on_ground && var.fall_amp>1), var.scared +2 *frame_time, var.scared -frame_time *if(limb_speed>0.1, 0.07, 0.5 ) ), 0, 1 )",
+					"varb.jumping": "!is_on_ground && !is_in_water && pos_y > var.pre_posy && age>9 || var.t_jump!=0",
+					"varb.falling": "!is_on_ground && !is_in_water && pos_y < var.pre_posy",
+					"var.t_land": "clamp( if( varb.fcc, var.t_land, (var.t_land==0 || var.t_land==1) && varb.falling, 0, var.t_land + frame_time * if(varb.falling,4,2) ), if(age<9, max(0,3-age)/6, 0), 1)",
+					"var.t_jump": "clamp( if( varb.fcc, var.t_jump, (var.t_jump==1 && is_on_ground) || !varb.jumping, 0, var.t_jump + frame_time * 2                    ), 0, 1)",
+					"var.t_fall": "clamp( if( varb.fcc, var.t_fall, var.air>0.4, var.t_fall +6 *frame_time, var.t_fall -6 *frame_time ), 0, 1)",
+					"var.fall_amp": "if( varb.fcc, var.fall_amp, max(0, var.fall_amp - frame_time * var.fall_amp * if(var.t_land<0.7, 3, 6) +if(age<9 || !is_on_ground, var.vs/if(is_child, 2, 4), 0) ) )",
+					"var.jump": "sin( ( var.t_jump -pow( var.t_jump, 2 )/2 )*2*pi )*if(is_child, 1.7, 1.3)*1.2",
+					"var.land": "sin( ( clamp(-0.2 +var.t_land*1.2, 0, 1) -pow(clamp(-0.2 +var.t_land*1.2, 0, 1 ),2 )/2 )*2*pi )*sqrt( clamp(var.fall_amp*2, 0, if(is_alive, 3, 0)) )",
+					"var.fall": "clamp( if(age>9, var.vs*1.5, 0 ), -1.5, 1.5 )",
+					"var.tilt": "clamp( if( varb.fcc, var.tilt, head_pitch==0 && limb_speed>0.02 && !between(var.pre_roty, rot_y-0.01, rot_y+0.01), var.tilt +6 *frame_time, var.tilt -4 *frame_time ), 0, var.run )",
+					"var.tr": "if(                   age>9 && var.tp> 0 && var.idle>0.98 || abs(rot_y-var.pre_roty)>0, var.tr, rot_y )",
+					"var.tp": "if( varb.fcc, var.tp, age>9 && var.tp==0 && var.idle>0.98 && abs(rot_y-var.pre_roty)>0, 1, max(0, var.tp -1.5 *frame_time ) )",
+					"var.tq": "todeg( clamp( rot_y -var.tr, -pi/2, pi/2 ) )",
+					"var.turnR": "if( !is_riding && var.tq>0, 1, 0 )*var.idle*(1-var.swim)",
+					"var.turnL": "if( !is_riding && var.tq<0, 1, 0 )*var.idle*(1-var.swim)",
+					"var.rr": "if( age>9 && !is_riding && var.idle>0.98 && var.tp>0, var.rr, rot_y )",
+					"var.NAeat": "clamp( if( varb.fcc, var.NAeat, head_pitch==0 && limb_speed<0.2 && rule_index==2 && between(cos(var.id+(age+limb_swing)/70)*10, -4, 7), var.NAeat +1.6 *frame_time, var.NAeat -1.6 *frame_time ), 0, (1-var.Nshake/4) )",
+					"var.chew": " clamp( if( varb.fcc, var.chew, var.NAeat>0.8, var.NAeat, var.chew -0.12 *frame_time ), 0, 1)",
+					"var.sniff": "clamp( if( varb.fcc, var.sniff, var.chew==0 && ( head_pitch!=0 && (-2 +sin(var.id +(age+limb_swing)/5)*5 +cos(var.id +(age+limb_swing)/13)*5 )>0 || ( var.NAlook==1 && cos(var.id +(age+limb_swing)/11)>-0.5 ) ), var.sniff +4 *frame_time, var.sniff -4 *frame_time ), 0, 1)",
+					"var.Nidle": "( 0.3+0.7*(0.5-0.5*cos( clamp( -1 +sin(var.id +(age+limb_swing)/73 )*3, 0, max(0, 1-var.run) )*pi )) )",
+					"var.NAlook": " clamp( if( varb.fcc, var.NAlook, head_pitch==0 && is_on_ground &&  (    -2 +sin(var.id +(age+limb_swing)/88 )*3  )>0                                                , var.NAlook  +1.6 *frame_time, var.NAlook  -1.6 *frame_time ), 0, max(0, 1 -var.run) )",
+					"var.NAshake": "clamp( if( varb.fcc, var.NAshake,                 is_on_ground && ((-398.7 +sin(var.id +(age+limb_swing)/250)*400)>0.7 || (!is_hurt && between(var.scared,0.2,0.5))), var.NAshake +1.6 *frame_time, var.NAshake -0.8 *frame_time ), 0, 1 )",
+					"var.NAlfleg": "clamp( if( varb.fcc, var.NAlfleg, !is_in_water && is_on_ground &&  (-198.8 +cos(var.id +(age+limb_swing)/170)*200)>0.9                                              , var.NAlfleg +2   *frame_time, var.NAlfleg -2   *frame_time ), 0, var.idle )",
+					"var.NArbleg": "clamp( if( varb.fcc, var.NArbleg, !is_in_water && is_on_ground &&  (-198.8 -sin(var.id +(age+limb_swing)/170)*200)>0.9                                              , var.NArbleg +2   *frame_time, var.NArbleg -2   *frame_time ), 0, var.idle )",
+					"var.Neat": "0.5-0.5*cos( pow( var.NAeat, 2)*pi )",
+					"var.Nlook": "0.5-0.5*cos( var.NAlook*pi )",
+					"var.Nshake": "0.5-0.5*cos( pow( var.NAshake, 3)*pi )",
+					"var.Nlfleg": "0.5-0.5*cos( var.NAlfleg*pi )",
+					"var.Nrbleg": "0.5-0.5*cos( var.NArbleg*pi )",
+					"var.Created_by_FreshLX_for_Patrix": "0"
+				},
+				{
+					"root.ry": "torad( var.hy/2 )*var.tilt +(-rot_y +var.rr )*var.tp",
+					"root.rz": "torad( var.hy/3 )*var.tilt",
+					"root.tx": " sin(root.rz)*24",
+					"root.ty": "-cos(root.rz)*24+24 +if(is_ridden, 0, if(is_child, 2, 4) )*var.swiA",
+					"body.rx": "torad(                          +(-sin(var.Bt+pi/4)/3 -3*sin( pi/12+var.ls*2)*    var.move       )*var.walk                     +(-9*cos(var.ls)*limb_speed )*var.run  +( 7*sin(var.St*2)*max(var.move, 0.5) )*var.swim  +( -20*var.jump*if(is_child,1.5,1) +45*var.fall +15*cos(var.t_land*4)*var.land )  +((-1+cos( var.tp*pi*4 +cos( var.tp*pi*4 )/4 ))/60*var.tq)*(var.turnL+var.turnR)  +( -3 -10*sin(var.ls    ) )*var.hurt         +sin(var.It*1.5 +sin(-pi/4+var.It/1.5)*2 )*var.Nidle*(1-var.Neat)  +( if(is_child,0,5) +3*sin(var.Neat*pi) )*var.Neat  )",
+					"body.ry": "torad(  ( var.hy/10*var.idl2 )  +(-cos(var.Bt/3 )/3 +1.5*sin(-pi/4 +var.ls  )*max(var.move, 0.2) )*var.walk*if(is_child,0.7,1)                                         +(-5*sin(-pi/4+var.St)                )*var.swim                    -4*sin(var.St*1.5)*var.t_fall                                   +(-var.tq*(1-var.tp)  +var.tq/2*(1+cos(var.tp*pi  ))     )*(var.turnL+var.turnR)  +(     20*cos(var.ls/1.5) )*var.hurt                                +2*cos(clamp(0.5+sin(-pi/18+var.It),0,1)*pi)*var.Nlook*(1-var.swim)       -1.5*cos(     var.id+age/3)*(var.Nlfleg+var.Nrbleg)  )",
+					"body.rz": "torad(                           (  -if(is_ridden,1.5,3)*cos(-pi/4 +var.ls  )*max(var.move, 0.2) )*var.walk*if(is_child,0.7,1)  +( 4*sin(var.ls)*limb_speed )*var.run  +( 5*cos(-pi/4+var.St)                )*var.swim                    +2*cos(var.St*1.5)*var.t_fall                                   +( var.tq/30*sin( var.tp*pi*2 )*(1-cos(var.tp*pi*2))     )*(var.turnL-var.turnR)  +(   -2.6*sin(var.ls    ) )*var.hurt  +1*cos(clamp(0.5-sin(-pi/12+var.It)*0.7,0,1)*pi)*(0.8-cos(var.It/4+sin(var.It/4)))*var.Nidle*(1-var.Neat) -3*cos(pi/4+var.id+age/3)*(var.Nlfleg+var.Nrbleg) +5*cos(var.id+age/1.8)*var.Nshake  )",
+					"body.tx": "(  cos(var.Bt/3)/6*var.walk  +(   2*sin(torad(var.tq*var.tp))  *( 1+cos(var.tp*pi  ) )/2)*(var.turnL+var.turnR)  ) * if( is_child, 0.5, 1 )",
+					"body.ty": "( if(is_child,40,16)-0.3+0.6*min(1,limb_speed)   +( ( 0.2 +cos(pi/9+var.ls*2)*0.24 )*var.move -sin(var.Bt)/9 )*var.walk  +( 0.25 +sin(pi/4+var.ls) )*limb_speed*var.run  +( var.jump -3*max(0,var.fall) +3*var.land )  +var.tq/90*( 1-cos(var.tp*pi*2) )/4*(var.turnL+var.turnR)  +( 1 +0.5*cos(var.ls) )*var.hurt  +( if(is_child,0,0.8) +0.5*sin(var.Neat*pi) )*var.Neat  ) * if( is_child, 0.5, 1 )",
+					"body.tz": "( -(2-2*cos(torad(var.tq*var.tp)) )*( 1+cos(var.tp*pi) )/2*(var.turnL+var.turnR)  +(     -cos(var.ls)*2 )*var.hurt  -var.Neat  ) * if( is_child, 0.5, 1 )"
+				},
+				{
+					"var.pre_roty": "rot_y",
+					"var.pre_posy": "pos_y",
+					"var.frame_counter_prev": "frame_counter"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -8, 0],
+			"submodels": [
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 8, 0],
+					"rotate": [-90, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [-5, -8, -2, 10, 16, 8],
+							"uvNorth": [36, 16, 46, 32],
+							"uvEast": [28, 16, 36, 32],
+							"uvSouth": [54, 16, 64, 32],
+							"uvWest": [46, 16, 54, 32],
+							"uvUp": [46, 16, 36, 8],
+							"uvDown": [56, 8, 46, 16],
+							"sizeAdd": 0.5
+						}
+					]
+				}
+			]
+		}
+	]
+}

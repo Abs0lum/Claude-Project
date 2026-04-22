@@ -1,0 +1,60 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "1": "block/nature/grass/moss_extra",
+        "particle": "block/nature/grass/moss"
+	},
+	"elements": [
+		{
+			"name": "Grass",
+			"from": [12.45165, 16, 3.26992],
+			"to": [12.95165, 17.5, 3.26992],
+			"rotation": {"angle": 45, "axis": "y", "origin": [12.70165, 16.75, 3.26992]},
+			"faces": {
+				"north": {"uv": [14, 0.25, 14.25, 1], "texture": "#1", "cullface": "up", "tintindex": 0},
+				"south": {"uv": [14, 0.25, 14.25, 1], "texture": "#1", "cullface": "up", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [11.90165, 16, 13.76992],
+			"to": [12.40165, 17.5, 13.76992],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [12.15165, 16.75, 13.76992]},
+			"faces": {
+				"north": {"uv": [13.25, 0.25, 13.5, 1], "texture": "#1", "cullface": "up", "tintindex": 0},
+				"south": {"uv": [13.25, 0.25, 13.5, 1], "texture": "#1", "cullface": "up", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [2.5908, 16, 7.74127],
+			"to": [3.0908, 17.5, 7.74127],
+			"rotation": {"angle": 45, "axis": "y", "origin": [2.59332, 16.75, 8.43659]},
+			"faces": {
+				"north": {"uv": [14.75, 0.25, 15, 1], "texture": "#1", "cullface": "up", "tintindex": 0},
+				"south": {"uv": [14.75, 0.25, 15, 1], "texture": "#1", "cullface": "up", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [7.21611, 15.91155, 2.79028],
+			"to": [7.71611, 17.41155, 2.79028],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12.01268, 17.48988, 4.8165]},
+			"faces": {
+				"north": {"uv": [13.25, 0.25, 13.5, 1], "texture": "#1", "cullface": "up", "tintindex": 0},
+				"south": {"uv": [13.25, 0.25, 13.5, 1], "texture": "#1", "cullface": "up", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [5.70929, 15.75, 7.34691],
+			"to": [5.70929, 17.25, 7.84691],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [6.26268, 16.48988, 7.8165]},
+			"faces": {
+				"east": {"uv": [13.25, 0.25, 13.5, 1], "texture": "#1", "cullface": "up", "tintindex": 0},
+				"west": {"uv": [13.25, 0.25, 13.5, 1], "texture": "#1", "cullface": "up", "tintindex": 0}
+			}
+		}
+	]
+}

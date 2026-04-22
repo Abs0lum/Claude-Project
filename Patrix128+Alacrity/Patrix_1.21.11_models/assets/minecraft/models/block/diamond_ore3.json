@@ -1,0 +1,6 @@
+{
+    "parent": "block/crystal2",
+    "textures": {
+        "crystal": "block/diamond_block"
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/terracotta/orange_slab/slab_1" },
+      { "model": "minecraft:block/stone/terracotta/orange_slab/slab_2" },
+      { "model": "minecraft:block/stone/terracotta/orange_slab/slab_3" },
+      { "model": "minecraft:block/stone/terracotta/orange_slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/terracotta/orange_1" },
+      { "model": "minecraft:block/stone/terracotta/orange_2" },
+      { "model": "minecraft:block/stone/terracotta/orange_3" },
+      { "model": "minecraft:block/stone/terracotta/orange_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/terracotta/orange_slab/top_1" },
+      { "model": "minecraft:block/stone/terracotta/orange_slab/top_2" },
+      { "model": "minecraft:block/stone/terracotta/orange_slab/top_3" },
+      { "model": "minecraft:block/stone/terracotta/orange_slab/top_4" }
+    ]
+  }
+}

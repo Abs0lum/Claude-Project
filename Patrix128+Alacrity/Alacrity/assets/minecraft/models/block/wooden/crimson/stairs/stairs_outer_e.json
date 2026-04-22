@@ -1,0 +1,10 @@
+{
+    "parent": "block/templates/wooden_stairs/stairs_outer_e",
+	"textures": {
+        "1": "block/wooden/crimson/double_1",
+        "2": "block/wooden/crimson/double_2",
+        "corners": "block/wooden/crimson/stairs_corner_double",
+        "e": "block/wooden/crimson/double_end_1",
+        "particle": "block/wooden/crimson/particle"
+	}
+}

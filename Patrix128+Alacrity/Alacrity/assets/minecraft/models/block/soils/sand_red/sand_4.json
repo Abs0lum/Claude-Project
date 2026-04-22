@@ -1,0 +1,22 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"all": "block/soils/sand_red/sand",
+		"particle": "block/soils/sand_red/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [8, 8, 16, 16], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [8, 8, 16, 16], "texture": "#all", "cullface": "east"},
+				"south": {"uv": [8, 8, 16, 16], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [8, 8, 16, 16], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [8, 8, 16, 16], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [8, 8, 16, 16], "texture": "#all", "cullface": "down"}
+			}
+		}
+	]
+}

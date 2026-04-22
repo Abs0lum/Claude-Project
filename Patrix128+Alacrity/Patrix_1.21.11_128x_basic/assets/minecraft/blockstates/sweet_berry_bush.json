@@ -1,0 +1,36 @@
+{
+    "multipart": [
+        {   "when": { "age": "0" },
+            "apply": [
+                { "model": "block/sweet_berry_bush_stage0" },
+                { "model": "block/sweet_berry_bush_stage0", "y": 90 },
+                { "model": "block/sweet_berry_bush_stage0", "y": 180 },
+                { "model": "block/sweet_berry_bush_stage0", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "1" },
+            "apply": [
+                { "model": "block/sweet_berry_bush_stage1" },
+                { "model": "block/sweet_berry_bush_stage1", "y": 90 },
+                { "model": "block/sweet_berry_bush_stage1", "y": 180 },
+                { "model": "block/sweet_berry_bush_stage1", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "2" },
+            "apply": [
+                { "model": "block/sweet_berry_bush_stage2" },
+                { "model": "block/sweet_berry_bush_stage2", "y": 90 },
+                { "model": "block/sweet_berry_bush_stage2", "y": 180 },
+                { "model": "block/sweet_berry_bush_stage2", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "3" },
+            "apply": [
+                { "model": "block/sweet_berry_bush_stage3" },
+                { "model": "block/sweet_berry_bush_stage3", "y": 90 },
+                { "model": "block/sweet_berry_bush_stage3", "y": 180 },
+                { "model": "block/sweet_berry_bush_stage3", "y": 270 }
+            ]
+        }
+    ]
+}

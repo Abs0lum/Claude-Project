@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/resin/small_bricks_1" },
+      { "model": "minecraft:block/stone/resin/small_bricks_2" },
+      { "model": "minecraft:block/stone/resin/small_bricks_3" },
+      { "model": "minecraft:block/stone/resin/small_bricks_4" }
+    ]
+  }
+}

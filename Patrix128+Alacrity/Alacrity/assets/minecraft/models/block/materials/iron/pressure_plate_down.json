@@ -1,0 +1,22 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/thin_block",
+	"textures": {
+		"3": "block/materials/iron/pressure_plate",
+		"particle": "block/materials/iron/particle"
+	},
+	"elements": [
+		{
+			"from": [1, -0.5, 1],
+			"to": [15, 0.5, 15],
+			"faces": {
+				"north": {"uv": [1, 0, 15, 1], "texture": "#3"},
+				"east": {"uv": [1, 0, 15, 1], "texture": "#3"},
+				"south": {"uv": [1, 0, 15, 1], "texture": "#3"},
+				"west": {"uv": [1, 0, 15, 1], "texture": "#3"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#3"},
+				"down": {"uv": [1, 1, 15, 15], "rotation": 90, "texture": "#3", "cullface": "down"}
+			}
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+    "parent":"block/template_plant2",
+    "textures": {
+	"cross":"block/crimson_fungus"
+    }
+}

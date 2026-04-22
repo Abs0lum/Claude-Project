@@ -1,0 +1,22 @@
+{
+	"texture": "skybox:the_end/sky008_distortion.png",
+	"vertex": [
+		{ "x": " 100", "y": " 100", "z": "-100", "uv_x": "1", "uv_y": "0" },
+		{ "x": "-100", "y": " 100", "z": "-100", "uv_x": "0", "uv_y": "0" },
+		{ "x": "-100", "y": "-100", "z": "-100", "uv_x": "0", "uv_y": "1" },
+		{ "x": " 100", "y": "-100", "z": "-100", "uv_x": "1", "uv_y": "1" }
+	],
+	"rotation": {
+		"degrees_x": "20",
+		"degrees_y": "single_rotation",
+		"degrees_z": "0",
+		"base_degrees_x": "0",
+		"base_degrees_y": "0",
+		"base_degrees_z": "0"
+	},
+	"properties": {
+		"blend": true,
+		"is_solid": true,
+		"alpha": "endsky_3_biomes_fade"
+	}
+}

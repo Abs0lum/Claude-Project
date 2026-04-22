@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "berries=false": [
+      { "model": "minecraft:block/nature/vines/cave_vines_end_1" },
+      { "model": "minecraft:block/nature/vines/cave_vines_end_2" }
+    ],
+    "berries=true": [
+      { "model": "minecraft:block/nature/vines/cave_vines_end_berries_1" },
+      { "model": "minecraft:block/nature/vines/cave_vines_end_berries_2" }
+    ]
+  }
+}

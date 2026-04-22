@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop3",
+    "textures": {
+        "crop": "block/nether_wart_stage2"
+    }
+}

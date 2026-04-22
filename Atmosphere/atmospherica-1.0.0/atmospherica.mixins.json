@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.beash.atmospherica.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "ClientLevelMixin",
+    "DimensionSpecialEffectsMixin",
+    "LevelRendererStarsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "variants": { 
+    "facing=east,half=bottom,shape=inner_left":   [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4", "y": 270, "uvlock": true }
+    ], 
+    "facing=east,half=bottom,shape=inner_right":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1" },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2" },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3" },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4" } 
+    ], 
+    "facing=east,half=bottom,shape=outer_left":   [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1", "y": 270, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4", "y": 270, "uvlock": true }
+    ], 
+    "facing=east,half=bottom,shape=outer_right":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1" },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2" },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3" },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4" }
+    ], 
+    "facing=east,half=bottom,shape=straight":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_1" },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_2" },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_3" },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_4" }  
+    ], 
+    "facing=east,half=top,shape=inner_left":      [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "uvlock": true }
+    ], 
+    "facing=east,half=top,shape=inner_right":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "y": 90, "uvlock": true } 
+    ], 
+    "facing=east,half=top,shape=outer_left":      [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "uvlock": true }
+    ], 
+    "facing=east,half=top,shape=outer_right":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "y": 90, "uvlock": true }
+    ], 
+    "facing=east,half=top,shape=straight":        [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_4", "x": 180, "uvlock": true }
+    ], 
+    "facing=north,half=bottom,shape=inner_left":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3", "y": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4", "y": 180, "uvlock": true }
+    ], 
+    "facing=north,half=bottom,shape=inner_right": [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4", "y": 270, "uvlock": true }
+
+    ], 
+    "facing=north,half=bottom,shape=outer_left":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4", "y": 180, "uvlock": true }
+    ], 
+    "facing=north,half=bottom,shape=outer_right": [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4", "y": 270, "uvlock": true }
+    ], 
+    "facing=north,half=bottom,shape=straight":    [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_1", "y": 270, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_2", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_3", "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_4", "y": 270, "uvlock": true }
+    ], 
+    "facing=north,half=top,shape=inner_left":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "y": 270, "uvlock": true }
+    ], 
+    "facing=north,half=top,shape=inner_right":    [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "uvlock": true }
+    ], 
+    "facing=north,half=top,shape=outer_left":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "y": 270, "uvlock": true }
+    ], 
+    "facing=north,half=top,shape=outer_right":    [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "uvlock": true }
+    ], 
+    "facing=north,half=top,shape=straight":       [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_4", "x": 180, "y": 270, "uvlock": true }
+    ], 
+    "facing=south,half=bottom,shape=inner_left":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1" },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2" },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3" },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4" }
+    ], 
+    "facing=south,half=bottom,shape=inner_right": [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4", "y": 90, "uvlock": true }
+    ], 
+    "facing=south,half=bottom,shape=outer_left":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1" },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2" },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3" },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4" }
+    ], 
+    "facing=south,half=bottom,shape=outer_right": [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1", "y": 90, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4", "y": 90, "uvlock": true }
+    ], 
+    "facing=south,half=bottom,shape=straight":    [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_4", "y": 90, "uvlock": true } 
+    ], 
+    "facing=south,half=top,shape=inner_left":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "y": 90, "uvlock": true } 
+    ], 
+    "facing=south,half=top,shape=inner_right":    [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "y": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "y": 180, "uvlock": true }
+    ], 
+    "facing=south,half=top,shape=outer_left":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "y": 90, "uvlock": true }
+    ], 
+    "facing=south,half=top,shape=outer_right":    [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "y": 180, "uvlock": true } 
+    ], 
+    "facing=south,half=top,shape=straight":       [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_1", "x": 180, "y": 90, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_2", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_3", "x": 180, "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_4", "x": 180, "y": 90, "uvlock": true }
+    ], 
+    "facing=west,half=bottom,shape=inner_left":   [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1", "y": 90, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4", "y": 90, "uvlock": true }
+    ], 
+    "facing=west,half=bottom,shape=inner_right":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_1", "y": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/inner_4", "y": 180, "uvlock": true }
+    ], 
+    "facing=west,half=bottom,shape=outer_left":   [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3", "y": 90, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4", "y": 90, "uvlock": true }
+    ], 
+    "facing=west,half=bottom,shape=outer_right":  [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_1", "y": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/outer_4", "y": 180, "uvlock": true }
+    ], 
+    "facing=west,half=bottom,shape=straight":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_1", "y": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_2", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_3", "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/straight_4", "y": 180, "uvlock": true }
+    ], 
+    "facing=west,half=top,shape=inner_left":      [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "y": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "y": 180, "uvlock": true }
+    ], 
+    "facing=west,half=top,shape=inner_right":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_inner_4", "x": 180, "y": 270, "uvlock": true }
+    ], 
+    "facing=west,half=top,shape=outer_left":      [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "y": 180, "uvlock": true }, 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "y": 180, "uvlock": true }
+    ], 
+    "facing=west,half=top,shape=outer_right":     [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_1", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_2", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_3", "x": 180, "y": 270, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_outer_4", "x": 180, "y": 270, "uvlock": true } 
+    ], 
+    "facing=west,half=top,shape=straight":        [ 
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_1", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_2", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_3", "x": 180, "y": 180, "uvlock": true },
+      { "model": "minecraft:block/stone/blackstone/stairs/slope_4", "x": 180, "y": 180, "uvlock": true }
+    ]
+  }
+}

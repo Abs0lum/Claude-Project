@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/crimson/wart_1" },
+      { "model": "minecraft:block/nether/crimson/wart_2" },
+      { "model": "minecraft:block/nether/crimson/wart_3" },
+      { "model": "minecraft:block/nether/crimson/wart_4" }
+	]
+  }
+}

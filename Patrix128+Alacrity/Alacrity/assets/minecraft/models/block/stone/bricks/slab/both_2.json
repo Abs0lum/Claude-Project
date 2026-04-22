@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/bricks_slab/both_2",
+	"textures": {
+		"2": "block/stone/bricks/bricks",
+		"3": "block/stone/bricks/diag_2",
+		"particle": "block/stone/bricks/particle"
+	}
+}

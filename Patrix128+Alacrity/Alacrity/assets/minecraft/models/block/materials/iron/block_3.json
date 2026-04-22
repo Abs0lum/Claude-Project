@@ -1,0 +1,23 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/materials/iron/side_atlas",
+		"3": "block/materials/iron/top_atlas",
+		"particle": "block/materials/iron/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 8, 16], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [0, 8, 8, 16], "texture": "#2", "cullface": "east"},
+				"south": {"uv": [0, 8, 8, 16], "texture": "#2", "cullface": "south"},
+				"west": {"uv": [0, 8, 8, 16], "texture": "#2", "cullface": "west"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#3", "cullface": "up"},
+				"down": {"uv": [0, 8, 8, 16], "texture": "#3", "cullface": "down"}
+			}
+		}
+	]
+}

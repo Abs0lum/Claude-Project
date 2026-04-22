@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"type": "multi-textured",
+	"animatableTextures": [
+		{
+			"texture": "skybox:overworld/uv_mapped/gas_giant_jupiter.png",
+			"uvRange": {
+				"minU": 0.495416666666,
+				"minV": 0.743125,
+				"maxU": 0.504583333333,
+				"maxV": 0.756875
+			},
+			"gridColumns": 1,
+			"gridRows": 1,
+			"duration": 1000
+		},
+		{
+			"texture": "skybox:overworld/uv_mapped/gas_giant_uranus.png",
+			"uvRange": {
+				"minU": 0.83,
+				"minV": 0.245,
+				"maxU": 0.8366666666,
+				"maxV": 0.255
+			},
+			"gridColumns": 1,
+			"gridRows": 1,
+			"duration": 1000
+		}
+	],
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 5,
+		"rotation": {
+			"speed": -0.234,
+			"mapping": {"0": [0.0, 0.0, -30.0]},
+			"axis": {"0": [0.0, 0.0, -30.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]}
+		}
+}

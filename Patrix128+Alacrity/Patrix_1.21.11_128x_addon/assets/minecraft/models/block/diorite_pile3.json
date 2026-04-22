@@ -1,0 +1,6 @@
+{
+    "parent":"block/rockpile3",
+    "textures": {
+	"all":"block/diorite"
+    }
+}

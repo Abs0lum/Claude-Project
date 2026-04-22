@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/materials/copper/chiseled_oxid_25_1" },
+      { "model": "minecraft:block/materials/copper/chiseled_oxid_25_2" },
+      { "model": "minecraft:block/materials/copper/chiseled_oxid_25_3" },
+      { "model": "minecraft:block/materials/copper/chiseled_oxid_25_4" }
+    ]
+  }
+}

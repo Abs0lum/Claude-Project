@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/concrete/orange_1" },
+      { "model": "minecraft:block/stone/concrete/orange_2" },
+      { "model": "minecraft:block/stone/concrete/orange_3" },
+      { "model": "minecraft:block/stone/concrete/orange_4" }
+    ]
+  }
+}

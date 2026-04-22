@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:the_end/sky004_end_barrens.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 704,
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [20.0, 0.0, 0.0]},
+			"axis": {"0": [20.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.2207843137254902, "green": 0.1101960784313725, "blue": 0.0956862745098039}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:the_end"]},
+		"biomes": {"entries": ["minecraft:end_barrens"]}
+		}
+}

@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky130_day_normal5.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 130,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"500": 0.0,
+				"1500": 1.0,
+				"10500": 1.0,
+				"11500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -0.866,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.5450980392156863, "green": 0.5607843137254902, "blue": 0.607843137254902}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]},
+		"biomes": {"entries": ["minecraft:deep_dark", "minecraft:dripstone_caves", "minecraft:lush_caves", "minecraft:mangrove_swamp", "minecraft:pale_garden", "minecraft:swamp", "minecraft:swamp_hills"]}
+		}
+}

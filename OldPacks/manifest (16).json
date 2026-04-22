@@ -1,0 +1,36 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "FallingTree BP",
+    "description": "Chop a log, watch the whole tree fall over.",
+    "uuid": "7d51f455-08fb-4075-98d6-41c895c0bc25",
+    "version": [1, 2, 0],
+    "min_engine_version": [1, 21, 80]
+  },
+  "modules": [
+    {
+      "description": "FallingTree data",
+      "type": "data",
+      "uuid": "545160dd-bf62-422d-a327-e1fb0d974c55",
+      "version": [1, 0, 0]
+    },
+    {
+      "description": "FallingTree scripts",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "f0bfe581-551a-4a9d-83c2-676dd2510ec3",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    },
+    {
+      "uuid": "d604ecdf-7cd7-4e5d-a145-896d930f1a25",
+      "version": [1, 0, 0]
+    }
+  ]
+}

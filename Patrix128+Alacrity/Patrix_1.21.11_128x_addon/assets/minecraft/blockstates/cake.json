@@ -1,0 +1,53 @@
+{
+    "multipart": [
+        {   "when": { "bites": "0" },
+            "apply": [
+                { "model": "block/cake", "weight": 2 },
+                { "model": "block/cake_c", "weight": 1 },
+                { "model": "block/cake_b", "weight": 1 }
+            ]
+        },
+        {   "when": { "bites": "1" },
+            "apply": [
+                { "model": "block/cake_slice1", "weight": 2 },
+                { "model": "block/cake_slice1_c", "weight": 1 },
+                { "model": "block/cake_slice1_b", "weight": 1 }
+            ]
+        },
+        {   "when": { "bites": "2" },
+            "apply": [
+                { "model": "block/cake_slice2", "weight": 2 },
+                { "model": "block/cake_slice2_c", "weight": 1 },
+                { "model": "block/cake_slice2_b", "weight": 1 }
+            ]
+        },
+        {   "when": { "bites": "3" },
+            "apply": [
+                { "model": "block/cake_slice3", "weight": 2 },
+                { "model": "block/cake_slice3_c", "weight": 1 },
+                { "model": "block/cake_slice3_b", "weight": 1 }
+            ]
+        },
+        {   "when": { "bites": "4" },
+            "apply": [
+                { "model": "block/cake_slice4", "weight": 2 },
+                { "model": "block/cake_slice4_c", "weight": 1 },
+                { "model": "block/cake_slice4_b", "weight": 1 }
+            ]
+        },
+        {   "when": { "bites": "5" },
+            "apply": [
+                { "model": "block/cake_slice5", "weight": 2 },
+                { "model": "block/cake_slice5_c", "weight": 1 },
+                { "model": "block/cake_slice5_b", "weight": 1 }
+            ]
+        },
+        {   "when": { "bites": "6" },
+            "apply": [
+                { "model": "block/cake_slice6", "weight": 2 },
+                { "model": "block/cake_slice6_c", "weight": 1 },
+                { "model": "block/cake_slice6_b", "weight": 1 }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/cobble_wall/item",
+	"ambientocclusion": false,
+	"textures": {
+        "stairs_top": "block/stone/deepslate/cobbled_stairs_top",
+        "extra": "block/stone/deepslate/extra",
+        "all": "block/stone/deepslate/cobbled_stairs_side",
+        "particle": "block/stone/deepslate/particle"
+	}
+}

@@ -1,0 +1,93 @@
+{
+  "variants": {
+    "pickles=1,waterlogged=true": [
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_uw_2", "y": 270 }
+    ],
+    "pickles=2,waterlogged=true": [
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_uw_2", "y": 270 }
+    ],
+    "pickles=3,waterlogged=true": [
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_2", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_3" },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_3", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_3", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_uw_3", "y": 270 }
+    ],
+    "pickles=4,waterlogged=true": [
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_uw_2", "y": 270 }
+    ],
+
+    "pickles=1,waterlogged=false": [
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_1_s_2", "y": 270 }
+    ],
+    "pickles=2,waterlogged=false": [
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_2_s_2", "y": 270 }
+    ],
+    "pickles=3,waterlogged=false": [
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_2", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_3" },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_3", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_3", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_3_s_3", "y": 270 }
+    ],
+    "pickles=4,waterlogged=false": [
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_1" },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_1", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_1", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_1", "y": 270 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_2" },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_2", "y": 90 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_2", "y": 180 },
+      { "model": "minecraft:block/underwater/pickle/pickle_4_s_2", "y": 270 }
+    ]
+  }
+}

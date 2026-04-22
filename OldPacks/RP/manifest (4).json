@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld-Tectonic RP [SURVEY v0.1.0]",
+    "description": "v0.1.0 SURVEY — Resource pack side for first 3 anchor biomes. Ships client_biome JSONs + per-biome Vibrant Visuals water settings (cold glacier-clear for alpine_peak, calm pink-tinted for cherry_valley, warm muddy for desert_dunes). Pair with BP of same version.",
+    "uuid": "3b9a4c26-8d1e-4f7b-a5c3-2e8d6b4a1f70",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 26, 0]
+  },
+  "modules": [
+    {
+      "description": "PatrixWorld-Tectonic client biomes + VV water",
+      "type": "resources",
+      "uuid": "e25f9d34-7b6c-4d8a-9e1f-3c5b8d7a2e50",
+      "version": [0, 1, 0]
+    }
+  ]
+}

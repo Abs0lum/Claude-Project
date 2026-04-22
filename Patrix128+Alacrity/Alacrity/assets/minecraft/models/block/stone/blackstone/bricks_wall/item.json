@@ -1,0 +1,15 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "minecraft:block/templates/stone_bricks_wall/item",
+	"texture_size": [32, 32],
+	"textures": {
+        "cubes": "block/stone/blackstone/cubes",
+        "extra": "block/stone/blackstone/bricks_extra",
+        "wall_hole": "block/stone/blackstone/wall",
+        "wall_end": "block/stone/blackstone/wall_end",
+        "wall_parts": "block/stone/blackstone/wall_parts",
+        "wall_alt": "block/stone/blackstone/wall_alt",
+        "wall_short": "block/stone/blackstone/wall_short",
+		"particle": "block/stone/stone_particle"
+	}
+}

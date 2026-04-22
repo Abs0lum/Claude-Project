@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_rail_raised_ne2",
+    "textures": {
+        "rail": "block/detector_rail",
+        "extra": "block/extra/rail_extra"
+    }
+}

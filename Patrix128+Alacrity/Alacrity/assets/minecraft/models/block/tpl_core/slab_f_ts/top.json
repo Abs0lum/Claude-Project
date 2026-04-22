@@ -1,0 +1,25 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"1": "block/stone/quartz/polished_slab_1",
+		"2": "block/stone/quartz/polished_slab_2",
+		"t": "block/stone/quartz/polished_1",
+		"particle": "block/stone/quartz/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 8], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#2", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [16, 0, 0, 8], "texture": "#2", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#t", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#t"}
+			}
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/bricks_wall/side_w_2",
+	"textures": {
+		"parts": "block/stone/bricks/extra_3",
+		"side": "block/stone/bricks/stairs_side",
+		"particle": "block/stone/bricks/particle"
+	}
+}

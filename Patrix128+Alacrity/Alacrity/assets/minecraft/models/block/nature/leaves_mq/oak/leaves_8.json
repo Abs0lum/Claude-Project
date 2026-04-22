@@ -1,0 +1,45 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "block/nature/leaves/oak_leaves",
+		"2": "block/oak_leaves",
+		"particle": "block/oak_leaves"
+	},
+	"elements": [
+		{
+			"name": "Base",
+			"from": [13.325, -3.975, -6.125],
+			"to": [13.325, 24.025, 21.875],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.325, 8.025, 7.875]},
+			"faces": {
+				"east": {"uv": [0, 14, 7, 7], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 14, 7, 7], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [1.325, -5.975, -6.125],
+			"to": [1.325, 22.025, 21.875],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8.325, 8.025, 7.875]},
+			"faces": {
+				"east": {"uv": [7, 7, 14, 0], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [7, 7, 14, 0], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0}
+			}
+		}
+	]
+}

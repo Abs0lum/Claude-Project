@@ -1,0 +1,152 @@
+{
+	"credit": "Created by FreshLX for Patrix",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Patrix",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"var.child_scale": "if(is_child, 1, 0)",
+					"var.r": "random(id)*pi*2 +limb_swing/10*0",
+					"var.ls": "var.r +limb_swing/1.4/if(is_child, 3, 1)",
+					"var.b": "var.r +age/if(is_child, 50, 80)*pi*2",
+					"var.c": "var.r +age/if(is_child, 10, 16)/(1+random(id))",
+					"var.d": "clamp(-2+random(id)*8 +sin(var.r +age/74)*4, 0, 1)"
+				},
+				{
+					"head.rx": "(sin(torad(if(is_child, -45, 45))+var.ls*2)/6 +sin(var.ls/1.5)/3)*limb_speed/if(is_child, 2, 1) +torad(if(is_child, -5, 10)) +clamp(-torad(10)*(limb_speed*3), torad(-10), 0) +sin(torad(-90)+(limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/40 +torad(head_pitch)/1.4 -(sin(pi*2*swing_progress)/3) +(sin(var.c +sin(var.c)*(1+random(id)*2))/4*clamp(1-limb_speed*3, 0, 1))*var.d",
+					"head.ry": "torad(head_yaw)/1.2",
+					"head.rz": " sin(torad( 45)+var.ls)/15*limb_speed +torad(head_yaw)/4 +(-cos(var.c*1.7)/10*clamp(1-limb_speed*3, 0, 1))*var.d +(-cos(var.ls +cos(var.ls)/2)/8 -sin(var.ls)/3 -sin(var.ls/1.8)/3/if(is_child, 3, 1))*limb_speed",
+					"head.tx": "( (sin(torad(180)+var.ls)*limb_speed)/if(is_child, 1.5, 1) +(-cos(var.ls +cos(var.ls)/2)*1.5)*limb_speed ) * (1-0.5*var.child_scale)",
+					"head.ty": "( 0.5 +(sin(pi*swing_progress)*2) +(sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/4 +if(is_child, -abs(sin(var.ls))*2.5 +limb_speed, sin(torad(135)+var.ls*2)*1.5)*limb_speed) ) * (1-0.5*var.child_scale) +if(is_child, 12, 0)*var.child_scale",
+					"head.tz": "( (if(is_child, 0.9, -1.8) -sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/4 +(sin(-pi*swing_progress)*2))/if(is_child, 1.5, 1) +(if(is_child, -2, 0) -cos(var.c +sin(var.c)*(1+random(id)*2))*2*clamp(1-limb_speed*3, 0, 1))*var.d -sin(var.ls)*2*limb_speed ) * (1-0.5*var.child_scale)",
+					"body.rx": "torad(if(is_child, -5*(1-var.d*2), 10)) +sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/40*if(is_child, -0.8, 1) +torad(5)*limb_speed +(sin(pi*swing_progress)/3) +((-torad(5) +cos(var.c +sin(var.c)*(1+random(id)*2))/4)/2*clamp(1-limb_speed*3, 0, 1))*var.d +sin(var.ls)/8*limb_speed",
+					"body.ry": "sin(torad(45)+var.ls)/10*limb_speed +torad(head_yaw)/6",
+					"body.rz": "head.rz -torad(head_yaw)/4 -sin(torad(45)+var.ls)/10*limb_speed +cos(var.c*1.7)/10*clamp(1-limb_speed*3, 0, 1)*var.d -(-sin(var.ls)/3 -sin(var.ls/1.8)/3/if(is_child, 3, 1))*limb_speed",
+					"body.tx": "head.tx",
+					"body.ty": "head.ty",
+					"body.tz": "head.tz"
+				},
+				{
+					"right_arm.rx": "torad(if(is_child, -70, -10)) +torad(head_yaw)/8 +sin(torad(180)+var.ls)/if(is_child, 4, 6)*limb_speed +sin(torad(45)+var.ls*2)/if(is_child, 4, 6)*limb_speed +clamp(torad(-120)*limb_speed*2, torad(if(is_child, -40, -70)), 0) +sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2-torad(60))/20 -(sin(pi*swing_progress*2)) +(sin(var.c +sin(var.c)*(1+random(id)*2))/5*clamp(1-limb_speed*3, 0, 1)*if(is_child, 1, -1))*var.d +(torad(10) +cos(var.ls -cos(var.ls)/2)/4 +cos(var.ls/4 -cos(var.ls/4)/2)/2)*limb_speed",
+					"left_arm.rx": " torad(if(is_child, -70, -10)) -torad(head_yaw)/8 +sin(torad( 0 )+var.ls)/if(is_child, 4, 6)*limb_speed +sin(torad(45)+var.ls*2)/if(is_child, 4, 6)*limb_speed +clamp(torad(-120)*limb_speed*2, torad(if(is_child, -40, -70)), 0) +sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2-torad(60))/20 -(sin(pi*swing_progress*2)) +(sin(var.c +sin(var.c)*(1+random(id)*2))/5*clamp(1-limb_speed*3, 0, 1)*if(is_child, 1, -1))*var.d +(torad(10) +cos(var.ls -cos(var.ls)/2)/4 +sin(var.ls/3 -cos(var.ls/3)/2)/2)*limb_speed",
+					"right_arm.ry": "clamp(-(head_yaw/65)*right_arm.rx, torad(-45), torad(45)) +torad(-5)+torad( 25)*limb_speed +sin(torad( 90)+(limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/20 +(sin(-pi/2*swing_progress*2)/4)",
+					"left_arm.ry": " clamp(-(head_yaw/65)* left_arm.rx, torad(-45), torad(45)) +torad( 5)+torad(-25)*limb_speed +sin(torad(-90)+(limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/20 -(sin(-pi/2*swing_progress*2)/4)",
+					"right_arm.rz": "if(is_in_water, torad( 15), torad( 2)) +clamp(-torad(head_pitch)/8, 0, torad( 45)) -(sin(pi*swing_progress))/2",
+					"left_arm.rz": " if(is_in_water, torad(-15), torad(-2)) +clamp( torad(head_pitch)/8, torad(-45), 0) +(sin(pi*swing_progress))/2",
+					"right_arm.tx": "-5.1 * (1-0.5*var.child_scale) +body.tx",
+					"left_arm.tx": "  5.1 * (1-0.5*var.child_scale) +body.tx",
+					"right_arm.ty": "( 2.5 -(1*limb_speed) +sin(torad(-60)+(limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/5 ) * (1-0.5*var.child_scale) +body.ty",
+					"left_arm.ty": " ( 2.5 -(1*limb_speed) +sin(torad(-60)+(limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/5 ) * (1-0.5*var.child_scale) +body.ty",
+					"right_arm.tz": "( -sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/4 +if(is_child, -0.5, -1.8) +torad(head_yaw) -(sin(pi*swing_progress)*4) +(if(is_child, -2, 0) -cos(var.c +sin(var.c)*(1+random(id)*2))*1.5*clamp(1-limb_speed*3, 0, 1))*var.d -sin(var.ls)*2*limb_speed ) * (1-0.5*var.child_scale)",
+					"left_arm.tz": " ( -sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/4 +if(is_child, -0.5, -1.8) -torad(head_yaw) -(sin(pi*swing_progress)*4) +(if(is_child, -2, 0) -cos(var.c +sin(var.c)*(1+random(id)*2))*1.5*clamp(1-limb_speed*3, 0, 1))*var.d -sin(var.ls)*2*limb_speed ) * (1-0.5*var.child_scale)"
+				},
+				{
+					"right_leg.rx": "if(is_riding, torad(-85), sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/40 +sin(torad( 0 )+var.ls)/6 +sin(torad( 0 )+var.ls)/if(is_child, 1, 1.5)*limb_speed +torad(10)*limb_speed +if(is_child, torad(2), 0) +clamp((torad(5) +cos(var.c +sin(var.c)*(1+random(id)*2))/12)*clamp(1-limb_speed*3, 0, 1),          0, torad(20))*var.d) -torad(head_yaw)/30 +(sin(-pi*swing_progress)/5)",
+					"left_leg.rx": " if(is_riding, torad(-85), sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/40 +sin(torad(180)+var.ls)/6 +sin(torad(180)+var.ls)/if(is_child, 1, 1.5)*limb_speed +torad(10)*limb_speed +if(is_child, torad(2), 0) +clamp((torad(5) +cos(var.c +sin(var.c)*(1+random(id)*2))/12)*clamp(1-limb_speed*3, 0, 1), torad(-10), torad(20))*var.d) +torad(head_yaw)/30 +(sin(-pi*swing_progress)/5)",
+					"right_leg.ry": "if(is_riding, torad( 20), torad( 5)) +if(is_child, clamp(torad( 15)-limb_speed, 0, torad( 15)), 0)",
+					"left_leg.ry": " if(is_riding, torad(-20), torad(-5)) +if(is_child, clamp(torad(-15)+limb_speed, torad(-15), 0), 0)",
+					"right_leg.rz": "if(is_riding,          0, torad( 2) +right_leg.rx *right_leg.ry)",
+					"left_leg.rz": " if(is_riding,          0, torad(-2) + left_leg.rx * left_leg.ry)",
+					"right_leg.tx": "( -2 +sin(torad(180)+var.ls)*limb_speed ) * (1-0.5*var.child_scale)",
+					"left_leg.tx": " (  2 +sin(torad(180)+var.ls)*limb_speed ) * (1-0.5*var.child_scale)",
+					"right_leg.ty": "( 0.2 +clamp(12 +(sin(torad( 90)+var.ls)*2)*clamp(limb_speed*2, 0, 1) +(limb_speed) +if(is_child, -2*limb_speed, 0), 0, 12.2) ) * (1-0.5*var.child_scale) +if(is_child, 12, 0)*var.child_scale",
+					"left_leg.ty": " ( 0.2 +clamp(12 +(sin(torad(-90)+var.ls)*2)*clamp(limb_speed*2, 0, 1) +(limb_speed) +if(is_child, -2*limb_speed, 0), 0, 12.2) ) * (1-0.5*var.child_scale) +if(is_child, 12, 0)*var.child_scale",
+					"right_leg.tz": "( clamp((sin(torad( 90)+var.ls)*6)*limb_speed +(3*limb_speed), -6, 1) +if(is_child, -0.5, -0.2) +if(is_riding, 0, -sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/3 +clamp((-1 -cos(var.c +sin(var.c)*(1+random(id)*2)) )*clamp(1-limb_speed*3, 0, 1), -2, 0)*var.d) +torad(head_yaw)/2 +(sin(pi*swing_progress)*2) ) * (1-0.5*var.child_scale)",
+					"left_leg.tz": " ( clamp((sin(torad(-90)+var.ls)*6)*limb_speed +(3*limb_speed), -6, 1) +if(is_child, -0.5, -0.2) +if(is_riding, 0, -sin((limb_swing/2+age)/if(is_child, 45, 80)*pi*2)/3 +clamp((-1 -cos(var.c +sin(var.c)*(1+random(id)*2)) )*clamp(1-limb_speed*3, 0, 1), -2, 1)*var.d) -torad(head_yaw)/2 +(sin(pi*swing_progress)*2) ) * (1-0.5*var.child_scale)"
+				}
+			]
+		},
+		{
+			"part": "headwear",
+			"id": "headwear",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"submodels": [
+				{
+					"id": "head2",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"boxes": [
+						{
+							"coordinates": [-4, 0, -4, 8, 8, 8],
+							"uvNorth": [8, 8, 16, 16],
+							"uvEast": [0, 8, 8, 16],
+							"uvSouth": [24, 8, 32, 16],
+							"uvWest": [16, 8, 24, 16],
+							"uvUp": [16, 8, 8, 0],
+							"uvDown": [24, 0, 16, 8]
+						},
+						{
+							"coordinates": [-4, 0, -4, 8, 8, 8],
+							"uvNorth": [40, 8, 48, 16],
+							"uvEast": [32, 8, 40, 16],
+							"uvSouth": [56, 8, 64, 16],
+							"uvWest": [48, 8, 56, 16],
+							"uvUp": [48, 8, 40, 0],
+							"uvDown": [56, 0, 48, 8],
+							"sizeAdd": 0.25
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 12, -2, 8, 12, 4], "textureOffset": [16, 16]}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [5, -22, 0],
+			"boxes": [
+				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [40, 16]}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-5, -22, 0],
+			"boxes": [
+				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 16]}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [1.9, -12, 0],
+			"boxes": [
+				{"coordinates": [-4, 0, -2, 4, 12, 4], "textureOffset": [0, 16]}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.9, -12, 0],
+			"boxes": [
+				{"coordinates": [0, 0, -2, 4, 12, 4], "textureOffset": [0, 16]}
+			]
+		}
+	]
+}

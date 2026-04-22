@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/amethyst/natural_1" },
+      { "model": "minecraft:block/stone/amethyst/natural_2" },
+      { "model": "minecraft:block/stone/amethyst/natural_3" },
+      { "model": "minecraft:block/stone/amethyst/natural_4" }
+    ]
+  }
+}

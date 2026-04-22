@@ -1,0 +1,25 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/nether/warped/nylium_top",
+		"3": "block/nether/warped/nylium_side_slab",
+		"all": "block/nether/netherrack_1",
+		"particle": "block/nether/netherrack_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -8, 0]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 4], "texture": "#3", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 4], "texture": "#3", "cullface": "east"},
+				"south": {"uv": [8, 0, 16, 4], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [8, 0, 16, 4], "texture": "#3", "cullface": "west"},
+				"up": {"uv": [8, 0, 16, 8], "texture": "#2"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#all", "cullface": "down"}
+			}
+		}
+	]
+}

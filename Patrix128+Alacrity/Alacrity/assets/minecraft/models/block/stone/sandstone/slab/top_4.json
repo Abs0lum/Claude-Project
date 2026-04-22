@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/sandstone_slab/top_4",
+	"texture_size": [32, 32],
+	"textures": {
+		"side": "block/stone/sandstone/sandstone",
+		"particle": "block/stone/sand/particle"
+	}
+}

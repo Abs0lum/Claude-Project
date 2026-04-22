@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/stone/ores/copper_ore_1"},
+      {"model": "minecraft:block/stone/ores/copper_ore_2"},
+      {"model": "minecraft:block/stone/ores/copper_ore_3"},
+      {"model": "minecraft:block/stone/ores/copper_ore_4"}
+    ]
+  }
+}

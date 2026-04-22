@@ -1,0 +1,55 @@
+{
+	"schemaVersion": 1,
+	"type": "multi-textured",
+	"animatableTextures": [
+		{
+			"texture": "skybox:overworld/uv_mapped/gas_giant_neptune.png",
+			"uvRange": {
+				"minU": 0.164583333333,
+				"minV": 0.746875,
+				"maxU": 0.16875,
+				"maxV": 0.753125
+			},
+			"gridColumns": 1,
+			"gridRows": 1,
+			"duration": 1000
+		},
+		{
+			"texture": "skybox:overworld/uv_mapped/gas_giant_saturn.png",
+			"uvRange": {
+				"minU": 0.829166666666,
+				"minV": 0.74375,
+				"maxU": 0.8375,
+				"maxV": 0.75625
+			},
+			"gridColumns": 1,
+			"gridRows": 1,
+			"duration": 1000
+		}
+	],
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 405,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"507150": 0.0,
+				"507550": 1.0,
+				"507950": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -0.456,
+			"mapping": {"0": [-30.0, 0.0, -42.0]},
+			"axis": {"0": [-30.0, 0.0, -42.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]},
+		"yRanges": {"entries": [{"min": 255.0, "max": 10000.0}]}
+		}
+}

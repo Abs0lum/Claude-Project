@@ -1,0 +1,21 @@
+{
+	"textures": {
+		"particle": "block/birch_trapdoor",
+		"texture": "block/birch_trapdoor",
+		"door": "block/birch_door_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 13],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"east": {"uv": [0, 0.5, 3, 15.5], "texture": "#door", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [0, 0.5, 3, 15.5], "texture": "#door", "cullface": "west"},
+				"up": {"uv": [0, 0.5, 3, 15.5], "rotation": 90, "texture": "#door", "cullface": "up"},
+				"down": {"uv": [0, 0.5, 3, 15.5], "rotation": 90, "texture": "#door", "cullface": "down"}
+			}
+		}
+	]
+}

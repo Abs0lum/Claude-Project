@@ -1,0 +1,99 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/tinted_cross",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "block/nether/crimson/wart_plant",
+		"particle": "block/nether/crimson/wart_particle"
+	},
+	"elements": [
+		{
+			"name": "wart",
+			"from": [10.75, 0.2, 3.5],
+			"to": [13.25, 1.7, 6],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [13.75, 0, 2.5]},
+			"faces": {
+				"north": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"east": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"south": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"west": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"up": {"uv": [12.75, 0, 14, 1.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [9, 0.015, 1.5],
+			"to": [15, 0.015, 8.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [14, 0, 2.5]},
+			"faces": {
+				"up": {"uv": [6.25, 0, 9.75, 3], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "wart",
+			"from": [4.05, 0.2, 9.95],
+			"to": [6.55, 1.7, 12.45],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [6.75, 0, 9.5]},
+			"faces": {
+				"north": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"east": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"south": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"west": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"up": {"uv": [12.75, 0, 14, 1.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [1.5, 0.015, 9],
+			"to": [8.5, 0.015, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0.015, 12]},
+			"faces": {
+				"up": {"uv": [2.75, 0, 6.25, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "wart",
+			"from": [2.51966, -1.04201, 3.5],
+			"to": [5.01966, 0.45799, 6],
+			"rotation": {"angle": 0, "axis": "z", "origin": [3.76966, 0.20799, 4.75]},
+			"faces": {
+				"north": {"uv": [11.25, 1.25, 12.5, 2], "texture": "#0"},
+				"east": {"uv": [11.25, 1.25, 12.5, 2], "texture": "#0"},
+				"south": {"uv": [11.25, 1.25, 12.5, 2], "texture": "#0"},
+				"west": {"uv": [11.25, 1.25, 12.5, 2], "texture": "#0"},
+				"up": {"uv": [11.25, 0, 12.5, 1.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [1.5, 0.015, 0.5],
+			"to": [7.5, 0.015, 7.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [6, 0, 2.5]},
+			"faces": {
+				"up": {"uv": [0, 0, 3.5, 3], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "wart",
+			"from": [10.01966, -1.16701, 10.75],
+			"to": [12.51966, 0.33299, 13.25],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [11.76966, 0.20799, 11.25]},
+			"faces": {
+				"north": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"east": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"south": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"west": {"uv": [12.75, 1.25, 14, 2], "texture": "#0"},
+				"up": {"uv": [12.75, 0, 14, 1.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [9, 0.015, 8],
+			"to": [15, 0.015, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [14, 0, 9]},
+			"faces": {
+				"up": {"uv": [0, 0, 3.5, 3], "rotation": 270, "texture": "#0"}
+			}
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+  "multipart": [
+    {
+      "when": { "north": "true" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_1" },
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_2" }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_3" }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_4" }
+      ]
+    },
+    {
+      "when": { "east": "true" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_1", "uvlock": true, "y": 90 },
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_2", "uvlock": true, "y": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_3", "uvlock": true, "y": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_4", "uvlock": true, "y": 90 }
+      ]
+    },
+    {
+      "when": { "south": "true" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_1", "uvlock": true, "y": 180 },
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_2", "uvlock": true, "y": 180 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_3", "uvlock": true, "y": 180 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_4", "uvlock": true, "y": 180 }
+      ]
+    },
+    {
+      "when": { "west": "true" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_1", "uvlock": true, "y": 270 },
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_2", "uvlock": true, "y": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_3", "uvlock": true, "y": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_4", "uvlock": true, "y": 270 }
+      ]
+    },
+    {
+      "when": { "up": "true" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_1", "uvlock": true, "x": 270 },
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_2", "uvlock": true, "x": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_3", "uvlock": true, "x": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_4", "uvlock": true, "x": 270 }
+      ]
+    },
+    {
+      "when": { "down": "true" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_1", "uvlock": true, "x": 90 },
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_2", "uvlock": true, "x": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_3", "uvlock": true, "x": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/stem_face_4", "uvlock": true, "x": 90 }
+      ]
+    },
+    {
+      "when": { "north": "false" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_1" },
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_2" }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_3" }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_4" }
+      ]
+    },
+    {
+      "when": { "east": "false" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_1", "uvlock": true, "y": 90 },
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_2", "uvlock": true, "y": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_3", "uvlock": true, "y": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_4", "uvlock": true, "y": 90 }
+      ]
+    },
+    {
+      "when": { "south": "false" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_1", "uvlock": true, "y": 180 },
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_2", "uvlock": true, "y": 180 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_3", "uvlock": true, "y": 180 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_4", "uvlock": true, "y": 180 }
+      ]
+    },
+    {
+      "when": { "west": "false" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_1", "uvlock": true, "y": 270 },
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_2", "uvlock": true, "y": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_3", "uvlock": true, "y": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_4", "uvlock": true, "y": 270 }
+      ]
+    },
+    {
+      "when": { "up": "false" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_1", "uvlock": true, "x": 270 },
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_2", "uvlock": true, "x": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_3", "uvlock": true, "x": 270 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_4", "uvlock": true, "x": 270 }
+      ]
+    },
+    {
+      "when": { "down": "false" },
+      "apply": [ 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_1", "uvlock": true, "x": 90 },
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_2", "uvlock": true, "x": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_3", "uvlock": true, "x": 90 }, 
+        { "model": "minecraft:block/nature/big_shrooms/inner_face_4", "uvlock": true, "x": 90 }
+      ]
+    }
+  ]
+}

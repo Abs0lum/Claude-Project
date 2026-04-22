@@ -1,0 +1,12 @@
+{
+    "parent": "block/templates/wooden_stairs/slope_inner_n",
+	"textures": {
+        "1": "block/wooden/birch/double_1",
+        "2": "block/wooden/birch/double_2",
+        "corners": "block/wooden/birch/stairs_corner_double",
+        "e": "block/wooden/birch/double_end_1",
+        "c": "block/wooden/birch/clean_1",
+        "b": "block/wooden/birch/stairs_back",
+        "particle": "block/wooden/birch/particle"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"loader": "fusion:model",
+  	"type": "connecting",
+	"parent": "block/templates/glass_block",
+	"textures": {
+        "n": "block/glass/stained/green/fct_normal",
+        "i": "block/glass/stained/green/fct_inner",        
+		"particle": "block/glass/particle/green"
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/wool/wool_block/cyan_1" },
+      { "model": "minecraft:block/wool/wool_block/cyan_2" },
+      { "model": "minecraft:block/wool/wool_block/cyan_3" },
+      { "model": "minecraft:block/wool/wool_block/cyan_4" }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "multipart": [
+        {   "apply": { "model": "block/moss_carpet" }
+        },
+        {   "apply": [
+                { "model": "block/moss_carpet2" },
+                { "model": "block/moss_carpet2", "y": 90 },
+                { "model": "block/moss_carpet2", "y": 180 },
+                { "model": "block/moss_carpet2", "y": 270 }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+        "0": "block/nature/flowers/rose_bush",
+        "particle": "block/nature/flowers/rose_bush"
+	},
+	"elements": [
+		{
+			"name": "cross",
+			"from": [8, 0, 3.5],
+			"to": [8, 9, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 9.5]},
+			"faces": {
+				"east": {"uv": [10.25, 1.5, 14.75, 6], "texture": "#0"},
+				"west": {"uv": [10.25, 6, 14.75, 1.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "cross",
+			"from": [3.5, 0, 8.05],
+			"to": [12.5, 9, 8.05],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 3.5, 8.05]},
+			"faces": {
+				"north": {"uv": [10, 1.25, 15, 6], "texture": "#0"},
+				"south": {"uv": [10.25, 6, 14.75, 1.5], "rotation": 180, "texture": "#0"}
+			}
+		}
+	]
+}

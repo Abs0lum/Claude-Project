@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/slab_1" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/slab_2" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/slab_3" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/sandstone_red/smooth_sandstone_1" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_sandstone_2" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_sandstone_3" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_sandstone_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/top_1" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/top_2" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/top_3" },
+      { "model": "minecraft:block/stone/sandstone_red/smooth_slab/top_4" }
+    ]
+  }
+}

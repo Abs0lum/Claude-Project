@@ -1,0 +1,9 @@
+{
+    "parent": "block/templates/wooden_stairs/stairs_straight_n",
+	"textures": {
+        "1": "block/wooden/dark_oak/double_4",
+        "2": "block/wooden/dark_oak/double_3",
+        "e": "block/wooden/dark_oak/double_end_4",
+        "particle": "block/wooden/dark_oak/particle"
+	}
+}

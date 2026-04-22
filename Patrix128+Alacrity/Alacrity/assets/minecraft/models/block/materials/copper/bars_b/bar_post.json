@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made by Satellence with Blockbench",
+	"textures": {
+        "0": "block/materials/copper/parts_b",
+		"particle": "block/materials/copper/particle_25"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 8, 7.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 1, 8], "texture": "#0"},
+				"east": {"uv": [0.75, 0, 1.75, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 1, 8], "texture": "#0"},
+				"west": {"uv": [0.75, 0, 1.75, 8], "texture": "#0"},
+				"up": {"uv": [2.75, 5.75, 3.75, 6.75], "texture": "#0", "cullface": "up"},
+				"down": {"uv": [6.25, 11.25, 7.25, 12.25], "rotation": 90, "texture": "#0", "cullface": "down"}
+			}
+		}
+	]
+}

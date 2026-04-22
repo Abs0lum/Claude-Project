@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/underwater/corals/fire_coral_1", "y": 0 },
+      { "model": "minecraft:block/underwater/corals/fire_coral_1", "y": 90 },
+      { "model": "minecraft:block/underwater/corals/fire_coral_1", "y": 180 },
+      { "model": "minecraft:block/underwater/corals/fire_coral_1", "y": 270 },
+      { "model": "minecraft:block/underwater/corals/fire_coral_2", "y": 0 },
+      { "model": "minecraft:block/underwater/corals/fire_coral_2", "y": 90 },
+      { "model": "minecraft:block/underwater/corals/fire_coral_2", "y": 180 },
+      { "model": "minecraft:block/underwater/corals/fire_coral_2", "y": 270 }
+    ]
+  }
+}

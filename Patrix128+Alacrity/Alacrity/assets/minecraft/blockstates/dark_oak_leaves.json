@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_1" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_1", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_1", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_1", "y": 270 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_2" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_2", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_2", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_2", "y": 270 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_3" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_3", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_3", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_3", "y": 270 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_4" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_4", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_4", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_4", "y": 270 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_5" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_5", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_5", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_5", "y": 270 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_6" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_6", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_6", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_6", "y": 270 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_7" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_7", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_7", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_7", "y": 270 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_8" },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_8", "y": 90 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_8", "y": 180 },
+      { "model": "minecraft:block/nature/leaves/dark_oak/leaves_8", "y": 270 }
+    ]
+  }
+}

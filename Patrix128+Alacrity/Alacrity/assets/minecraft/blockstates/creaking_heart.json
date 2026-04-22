@@ -1,0 +1,82 @@
+{
+  "variants": {
+    "creaking_heart_state=uprooted,axis=x": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_2", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_3", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_4", "x": 90, "y": 90 }
+    ],
+    "creaking_heart_state=uprooted,axis=y": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_1" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_2" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_3" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_4" }
+    ],
+    "creaking_heart_state=uprooted,axis=z": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_1", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_2", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_3", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_4", "x": 90 }
+    ],
+
+    "creaking_heart_state=dormant,axis=x": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_2", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_3", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_4", "x": 90, "y": 90 }
+    ],
+    "creaking_heart_state=dormant,axis=y": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_1" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_2" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_3" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_4" }
+    ],
+    "creaking_heart_state=dormant,axis=z": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_1", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_2", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_3", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_4", "x": 90 }
+    ],
+
+
+
+
+    "active=false,axis=x": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_2", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_3", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_4", "x": 90, "y": 90 }
+    ],
+    "active=false,axis=y": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_1" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_2" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_3" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_4" }
+    ],
+    "active=false,axis=z": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_1", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_2", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_3", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_4", "x": 90 }
+    ],
+
+    "active=true,axis=x": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_2", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_3", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_4", "x": 90, "y": 90 }
+    ],
+    "active=true,axis=y": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_1" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_2" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_3" },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_4" }
+    ],
+    "active=true,axis=z": [
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_1", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_2", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_3", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/log/hearth_log_active_4", "x": 90 }
+    ]
+  }
+}

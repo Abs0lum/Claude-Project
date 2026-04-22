@@ -1,0 +1,28 @@
+{
+  "multipart": [
+    {
+      "apply": [ 
+        { "model": "block/interactive/cauldron" }
+      ] 
+    },
+    {
+      "when": { "level": "1" },      
+      "apply": [ 
+          { "model": "block/interactive/cauldron_fill/powdered_snow_level_1" }
+      ]
+    },
+    {
+      "when": { "level": "2" },      
+      "apply": [ 
+          { "model": "block/interactive/cauldron_fill/powdered_snow_level_2" }
+      ]
+    },
+    {
+      "when": { "level": "3" },      
+      "apply": [ 
+          { "model": "block/interactive/cauldron_fill/powdered_snow_level_3" }
+      ]
+    }
+
+  ]
+}

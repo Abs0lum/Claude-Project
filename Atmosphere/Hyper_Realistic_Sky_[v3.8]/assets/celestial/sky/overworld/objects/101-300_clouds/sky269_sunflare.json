@@ -1,0 +1,22 @@
+{
+	"texture": "skybox:overworld/uv_mapped/sunflare.png",
+	"vertex": [
+		{ "x": " 22", "y": "100", "z": " 22", "uv_x": "modulo(((floor(0.066666666666666*worldTime))/10),1)+0.1", "uv_y": "modulo(((floor(0.666666666666666*worldTime))/10),1)" },
+		{ "x": "-22", "y": "100", "z": " 22", "uv_x": "modulo(((floor(0.066666666666666*worldTime))/10),1)", "uv_y": "modulo(((floor(0.666666666666666*worldTime))/10),1)" },
+		{ "x": "-22", "y": "100", "z": "-22", "uv_x": "modulo(((floor(0.066666666666666*worldTime))/10),1)", "uv_y": "modulo(((floor(0.666666666666666*worldTime))/10),1)+0.1" },
+		{ "x": " 22", "y": "100", "z": "-22", "uv_x": "modulo(((floor(0.066666666666666*worldTime))/10),1)+0.1", "uv_y": "modulo(((floor(0.666666666666666*worldTime))/10),1)+0.1" }
+	],
+	"rotation": {
+		"degrees_x": "single_rotation",
+		"degrees_y": "0",
+		"degrees_z": "0",
+		"base_degrees_x": "-90",
+		"base_degrees_y": "0",
+		"base_degrees_z": "sun_rotation"
+	},
+	"properties": {
+		"is_solid": false,
+		"blend": true,
+		"alpha": "(1-submerged) * 0.35 * day_fade"
+	}
+}

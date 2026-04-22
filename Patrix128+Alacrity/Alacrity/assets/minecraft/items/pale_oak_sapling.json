@@ -1,0 +1,18 @@
+{"model": { 
+	"type": "select",
+	"property": "display_context",
+	"cases": [
+		{
+			"when": "fixed",
+			"model": {
+			  "type": "model", 
+              "model": "block/nature/saplings/pale_oak_sapling_wall"
+			}
+		}
+	],
+	"fallback": {
+		"type": "model", 
+        "model": "block/nature/saplings/pale_oak_sapling_item"
+	}
+}}
+

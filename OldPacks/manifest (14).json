@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "FallingTree RP",
+    "description": "Visual assets for the falling tree entity.",
+    "uuid": "d604ecdf-7cd7-4e5d-a145-896d930f1a25",
+    "version": [1, 2, 0],
+    "min_engine_version": [1, 21, 80]
+  },
+  "modules": [
+    {
+      "description": "FallingTree resources",
+      "type": "resources",
+      "uuid": "2259536b-300d-40ac-8ced-afa27c7ee6a9",
+      "version": [1, 0, 0]
+    }
+  ]
+}

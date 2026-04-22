@@ -1,0 +1,28 @@
+{
+    "multipart": [
+        {   "when": { "level": "1" },
+            "apply": [
+                { "model": "block/water_cauldron_level1" },
+                { "model": "block/water_cauldron_level1", "y": 90 },
+                { "model": "block/water_cauldron_level1", "y": 180 },
+                { "model": "block/water_cauldron_level1", "y": 270 }
+            ]
+        },
+        {   "when": { "level": "2" },
+            "apply": [
+                { "model": "block/water_cauldron_level2" },
+                { "model": "block/water_cauldron_level2", "y": 90 },
+                { "model": "block/water_cauldron_level2", "y": 180 },
+                { "model": "block/water_cauldron_level2", "y": 270 }
+            ]
+        },
+        {   "when": { "level": "3" },
+            "apply": [
+                { "model": "block/water_cauldron_full" },
+                { "model": "block/water_cauldron_full", "y": 90 },
+                { "model": "block/water_cauldron_full", "y": 180 },
+                { "model": "block/water_cauldron_full", "y": 270 }
+            ]
+        }
+    ]
+}

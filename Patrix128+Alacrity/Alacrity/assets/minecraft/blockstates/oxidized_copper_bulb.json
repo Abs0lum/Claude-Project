@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "lit=false,powered=false": [
+      { "model": "minecraft:block/materials/copper/bulb/oxid_100_1" },
+      { "model": "minecraft:block/materials/copper/bulb/oxid_100_2" },
+      { "model": "minecraft:block/materials/copper/bulb/oxid_100_3" },
+      { "model": "minecraft:block/materials/copper/bulb/oxid_100_4" }
+    ],
+
+    "lit=false,powered=true": [
+      { "model": "minecraft:block/materials/copper/bulb/pwrd_oxid_100_1" },
+      { "model": "minecraft:block/materials/copper/bulb/pwrd_oxid_100_2" },
+      { "model": "minecraft:block/materials/copper/bulb/pwrd_oxid_100_3" },
+      { "model": "minecraft:block/materials/copper/bulb/pwrd_oxid_100_4" }
+    ],
+
+    "lit=true,powered=false": [
+      { "model": "minecraft:block/materials/copper/bulb/lit_oxid_100_1" },
+      { "model": "minecraft:block/materials/copper/bulb/lit_oxid_100_2" },
+      { "model": "minecraft:block/materials/copper/bulb/lit_oxid_100_3" },
+      { "model": "minecraft:block/materials/copper/bulb/lit_oxid_100_4" }
+    ],
+
+    "lit=true,powered=true": [
+      { "model": "minecraft:block/materials/copper/bulb/lit_pwrd_oxid_100_1" },
+      { "model": "minecraft:block/materials/copper/bulb/lit_pwrd_oxid_100_2" },
+      { "model": "minecraft:block/materials/copper/bulb/lit_pwrd_oxid_100_3" },
+      { "model": "minecraft:block/materials/copper/bulb/lit_pwrd_oxid_100_4" }
+    ]
+    
+  }
+}

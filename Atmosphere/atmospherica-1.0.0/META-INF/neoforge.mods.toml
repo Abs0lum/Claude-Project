@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="atmospherica"
+version="1.0.0"
+displayName="AtmosphericA"
+authors="Beash"
+description='''Fog settings per biome with a B key menu.'''
+
+[[mixins]]
+config="atmospherica.mixins.json"
+
+[[dependencies.atmospherica]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+side="CLIENT"
+
+[[dependencies.atmospherica]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.202,)"
+side="CLIENT"

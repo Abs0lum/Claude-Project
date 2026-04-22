@@ -1,0 +1,22 @@
+{
+	"texture": "skybox:overworld/uv_mapped/lightning_far_low2.png",
+	"vertex": [
+		{ "x": "-31.4453125", "y": "16.796875", "z": "-100", "uv_x": "1", "uv_y": "lightning_far_2_uv_y" },
+		{ "x": "-100", "y": "16.796875", "z": "2.5390625", "uv_x": "0", "uv_y": "lightning_far_2_uv_y" },
+		{ "x": "-100", "y": "-6.8359375", "z": "2.5390625", "uv_x": "0", "uv_y": "lightning_far_2_uv_y+0.1428571428571429" },
+		{ "x": "-31.4453125", "y": "-6.8359375", "z": "-100", "uv_x": "1", "uv_y": "lightning_far_2_uv_y+0.1428571428571429" }
+	],
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "rain_rotation - 90",
+		"degrees_z": "0",
+		"base_degrees_x": "0",
+		"base_degrees_y": "0",
+		"base_degrees_z": "0"
+	},
+	"properties": {
+		"is_solid": false,
+		"blend": true,
+		"alpha": "(1-submerged) * night_fade * low_altitude * thunderAlpha * rain_biomes_fade"
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "inverted=false": {
+      "model": "minecraft:block/redstone/daylight_day"
+    },
+    "inverted=true": {
+      "model": "minecraft:block/redstone/daylight_night"
+    }
+  }
+}

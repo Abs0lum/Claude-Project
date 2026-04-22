@@ -1,0 +1,59 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"tendrils": "block/sculk_sensor_tendril_active"
+	},
+	"elements": [
+		{
+			"from": [3, 8, 9],
+			"to": [3, 19, 17],
+			"rotation": {"angle": 45, "axis": "y", "origin": [3, 8, 13]},
+			"faces": {
+				"east": {"uv": [8, 2, 16, 16], "texture": "#tendrils"},
+				"west": {"uv": [16, 2, 8, 16], "texture": "#tendrils"}
+			}
+		},
+		{
+			"from": [6, 8, 10],
+			"to": [18, 25, 10],
+			"rotation": {"angle": 45, "axis": "y", "origin": [12, 8, 10]},
+			"faces": {
+				"north": {"uv": [16, 2, 8, 16], "texture": "#tendrils"},
+				"south": {"uv": [8, 2, 16, 16], "texture": "#tendrils"}
+			}
+		},
+		{
+			"from": [14, 8, -1],
+			"to": [14, 16, 5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [14, 8, 2]},
+			"faces": {
+				"east": {"uv": [8, 2, 0, 16], "texture": "#tendrils"},
+				"west": {"uv": [0, 2, 8, 16], "texture": "#tendrils"}
+			}
+		},
+		{
+			"from": [-2, 8, 5],
+			"to": [8, 22, 5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [3, 8, 5]},
+			"faces": {
+				"north": {"uv": [0, 2, 8, 16], "texture": "#tendrils"},
+				"south": {"uv": [8, 2, 0, 16], "texture": "#tendrils"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [75, -45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"rotation": [0, -180, 0]
+		}
+	}
+}

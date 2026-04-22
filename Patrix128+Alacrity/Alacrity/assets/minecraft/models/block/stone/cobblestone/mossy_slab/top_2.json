@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/cobble_slab/top_2",
+	"textures": {
+        "2": "block/stone/cobblestone/mossy_cobblestone_stairs_top",        
+        "3": "block/stone/cobblestone/mossy_extra",
+		"4": "block/stone/cobblestone/mossy_cobblestone_top",
+        "all": "block/stone/cobblestone/mossy_cobblestone_stairs_side",
+		"particle": "block/stone/stone_particle"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "block/tpl_core/slab_f_ts/slab",
+	"textures": {
+        "t": "block/stone/tuff/polished_2",
+        "1": "block/stone/tuff/polished_slab_2",
+        "2": "block/stone/tuff/polished_slab_1",
+        "particle": "block/stone/tuff/particle"
+	}
+}

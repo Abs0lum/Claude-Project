@@ -1,0 +1,50 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/firefly_bush",
+		"cross": "block/firefly_bush",
+		"cross_emissive": "block/firefly_bush_emissive"
+	},
+	"elements": [
+		{
+			"from": [-2, -1, 8],
+			"to": [22, 25, 8],
+			"shade": false,
+			"rotation": {"angle": 30, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#cross"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#cross"}
+			}
+		},
+		{
+			"from": [7, 0, -4],
+			"to": [7, 22, 18],
+			"shade": false,
+			"rotation": {"angle": 20, "axis": "z", "origin": [7, 0, 7]},
+			"faces": {
+				"east": {"uv": [16, 0, 0, 16], "texture": "#cross"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#cross"}
+			}
+		},
+		{
+			"from": [12, 0, -4],
+			"to": [12, 18, 18],
+			"shade": false,
+			"rotation": {"angle": -25, "axis": "z", "origin": [12, 0, 7]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 15], "texture": "#cross"},
+				"west": {"uv": [16, 0, 0, 15], "texture": "#cross"}
+			}
+		},
+		{
+			"from": [-2, -1, 8],
+			"to": [22, 25, 8],
+			"shade": false,
+			"rotation": {"angle": 30, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#cross_emissive"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#cross_emissive"}
+			}
+		}
+	]
+}

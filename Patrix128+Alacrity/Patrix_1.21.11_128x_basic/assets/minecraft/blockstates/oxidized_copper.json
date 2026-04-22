@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/oxidized_copper" },
+            { "model": "block/oxidized_copper", "y": 90 },
+            { "model": "block/oxidized_copper", "y": 180 },
+            { "model": "block/oxidized_copper", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/flower_pot_cross",
+  "textures": {
+    "plant": "block/extra/potted_brown_mushroom"
+  }
+}

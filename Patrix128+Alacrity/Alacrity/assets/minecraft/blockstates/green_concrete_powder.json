@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/concrete/powder/green_1" },
+      { "model": "minecraft:block/stone/concrete/powder/green_2" },
+      { "model": "minecraft:block/stone/concrete/powder/green_3" },
+      { "model": "minecraft:block/stone/concrete/powder/green_4" }
+    ]
+  }
+}

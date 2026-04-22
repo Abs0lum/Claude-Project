@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/decoration/candles/item_template",
+  "textures": {
+    "main": "minecraft:block/decoration/candles/white",
+    "particle": "minecraft:block/decoration/candles/white"
+  }
+}

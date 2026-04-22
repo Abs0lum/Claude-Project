@@ -1,0 +1,6 @@
+{
+  "parent": "terrainslabs:block/ontop/tinted_cross",
+  "textures": {
+    "cross": "minecraft:block/short_grass"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "multipart": [
+        {   "apply": { "model": "block/nether_quartz_ore" }
+        },
+        {   "apply": [
+                { "model": "block/nether_quartz_ore2", "weight": 1 },
+                { "model": "block/nether_quartz_ore2", "y": 90, "uvlock": true, "weight": 1 },
+                { "model": "block/nether_quartz_ore2", "y": 180, "uvlock": true, "weight": 1 },
+                { "model": "block/nether_quartz_ore2", "y": 270, "uvlock": true, "weight": 1 },
+                { "model": "block/nether_quartz_ore3", "weight": 1 },
+                { "model": "block/nether_quartz_ore3", "y": 90, "uvlock": true, "weight": 1 },
+                { "model": "block/nether_quartz_ore3", "y": 180, "uvlock": true, "weight": 1 },
+                { "model": "block/nether_quartz_ore3", "y": 270, "uvlock": true, "weight": 1 },
+                { "model": "block/air", "weight": 2 }
+            ]
+        }
+    ]
+}

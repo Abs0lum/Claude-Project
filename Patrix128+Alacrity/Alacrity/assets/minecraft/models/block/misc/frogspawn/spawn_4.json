@@ -1,0 +1,18 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/misc/frogspawn",
+		"particle": "block/misc/frogspawn_particles"
+	},
+	"elements": [
+		{
+			"from": [0, -0.8, 0],
+			"to": [16, -0.8, 16],
+			"faces": {
+				"up": {"uv": [8, 8, 16, 16], "texture": "#2"},
+				"down": {"uv": [8, 16, 16, 8], "texture": "#2"}
+			}
+		}
+	]
+}

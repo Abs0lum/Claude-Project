@@ -1,0 +1,21 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "4": "block/nether/red_bricks/extra_3",
+        "all": "block/nether/red_bricks/stairs_side"
+	},
+	"elements": [
+		{
+			"from": [5.5, 0, 0],
+			"to": [10.5, 16, 8],
+			"faces": {
+				"north": {"uv": [8, 0, 10.5, 8], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [8, 0, 12, 8], "texture": "#all"},
+				"west": {"uv": [8, 0, 12, 8], "texture": "#all"},
+				"up": {"uv": [12, 3, 16, 5.5], "rotation": 270, "texture": "#4", "cullface": "up"},
+				"down": {"uv": [8.75, 12, 11.25, 16], "texture": "#4", "cullface": "down"}
+			}
+		}
+	]
+}

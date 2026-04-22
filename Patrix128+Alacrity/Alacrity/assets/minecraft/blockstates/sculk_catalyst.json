@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "bloom=false": { "model": "minecraft:block/misc/sculk/catalyst" },
+    "bloom=true": { "model": "minecraft:block/misc/sculk/catalyst" }
+  }
+}

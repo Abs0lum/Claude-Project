@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/soils/sand_red/slab/slab_1" },
+      { "model": "minecraft:block/soils/sand_red/slab/slab_2" },
+      { "model": "minecraft:block/soils/sand_red/slab/slab_3" },
+      { "model": "minecraft:block/soils/sand_red/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/soils/sand_red/sand_1" },
+      { "model": "minecraft:block/soils/sand_red/sand_2" },
+      { "model": "minecraft:block/soils/sand_red/sand_3" },
+      { "model": "minecraft:block/soils/sand_red/sand_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/soils/sand_red/slab/top_1" },
+      { "model": "minecraft:block/soils/sand_red/slab/top_2" },
+      { "model": "minecraft:block/soils/sand_red/slab/top_3" },
+      { "model": "minecraft:block/soils/sand_red/slab/top_4" }
+    ]
+  }
+}

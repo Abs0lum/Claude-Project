@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/decoration/candles/two_candle_template_1",
+  "textures": {
+    "main": "minecraft:block/decoration/candles/yellow",
+    "particle": "minecraft:block/decoration/candles/yellow"
+  }
+}

@@ -1,0 +1,1 @@
+Textures are baked from models downloaded from "sketchfab.com", "cgtrader.com", "turbosquid.com" or modeled by myself. 

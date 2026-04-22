@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky268_rainbow.png",
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 428,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"507050": 0.0,
+				"507400": 1.0,
+				"507650": 1.0,
+				"508000": 0.0
+				}
+			},
+		"rotation": {
+			"speed": 0.0,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 1000,
+		"transitionOutDuration": 2400
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]}
+		}
+}

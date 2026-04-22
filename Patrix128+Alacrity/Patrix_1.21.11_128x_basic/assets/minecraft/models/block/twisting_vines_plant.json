@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross6",
+  "textures": {
+    "cross": "minecraft:block/twisting_vines_plant"
+  }
+}

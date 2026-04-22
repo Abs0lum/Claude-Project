@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/301-400_events/sky331_iridescent_clouds_2.png",
+	"blend": {"type": "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 331,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"346500": 0.0,
+				"347500": 1.0,
+				"348500": 1.0,
+				"349500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -0.866,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.3254901960784314, "green": 0.4117647058823529, "blue": 0.5294117647058824}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]},
+		"biomes": {"entries": ["minecraft:frozen_peaks", "minecraft:giant_spruce_taiga_hills", "minecraft:giant_tree_taiga_hills", "minecraft:gravelly_mountains", "minecraft:jagged_peaks", "minecraft:modified_gravelly_mountains", "minecraft:mountain_edge", "minecraft:mountains", "minecraft:snowy_mountains", "minecraft:snowy_slopes", "minecraft:snowy_taiga_hills", "minecraft:snowy_taiga_mountains", "minecraft:stony_peaks", "minecraft:taiga_hills", "minecraft:taiga_mountains", "minecraft:windswept_gravelly_hills", "minecraft:windswept_hills", "minecraft:wooded_hills", "minecraft:wooded_mountains"]}
+		}
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "bottom=false": [
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_1" },
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_2" },
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_3" },
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_4" }
+  	],
+    "bottom=true": [
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_wb_1" },
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_wb_2" },
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_wb_3" },
+      { "model": "minecraft:block/wooden/bamboo/scaffolding_wb_4" }
+  	]
+  }
+}

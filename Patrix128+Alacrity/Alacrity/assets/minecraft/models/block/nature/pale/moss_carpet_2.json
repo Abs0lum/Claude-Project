@@ -1,0 +1,104 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/pale_moss/moss_extra",
+        "top": "block/nature/pale_moss/moss",
+        "particle": "block/nature/pale_moss/moss_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 0.5, 16],
+			"faces": {
+				"north": {"uv": [8, 7.25, 16, 7.5], "texture": "#top", "cullface": "north", "tintindex": 0},
+				"east": {"uv": [8, 7.25, 16, 7.5], "texture": "#top", "cullface": "east", "tintindex": 0},
+				"south": {"uv": [8, 7.25, 16, 7.5], "texture": "#top", "cullface": "south", "tintindex": 0},
+				"west": {"uv": [8, 7.25, 16, 7.5], "texture": "#top", "cullface": "west", "tintindex": 0},
+				"up": {"uv": [8, 0, 16, 8], "texture": "#top", "tintindex": 0},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#top", "cullface": "down", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [16, 0.05, 0],
+			"to": [19, 0.05, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.001, 8]},
+			"faces": {
+				"up": {"uv": [8, 1.75, 16, 3.25], "rotation": 270, "texture": "#1", "cullface": "east", "tintindex": 0},
+				"down": {"uv": [8, 3.25, 16, 1.75], "rotation": 90, "texture": "#1", "cullface": "east", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [-3, 0.05, 0],
+			"to": [0, 0.05, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.001, 8]},
+			"faces": {
+				"up": {"uv": [6.75, 1.75, 14.75, 3.25], "rotation": 90, "texture": "#1", "cullface": "west", "tintindex": 0},
+				"down": {"uv": [6.75, 3.25, 14.75, 1.75], "rotation": 270, "texture": "#1", "cullface": "west", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [0, 0.025, -3],
+			"to": [16, 0.025, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.001, 8]},
+			"faces": {
+				"up": {"uv": [0, 1.75, 8, 3.25], "rotation": 180, "texture": "#1", "cullface": "north", "tintindex": 0},
+				"down": {"uv": [8, 1.75, 0, 3.25], "texture": "#1", "cullface": "north", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [0, 0.025, 16],
+			"to": [16, 0.025, 19],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.001, 8]},
+			"faces": {
+				"up": {"uv": [4.5, 1.75, 12.5, 3.25], "texture": "#1", "cullface": "south", "tintindex": 0},
+				"down": {"uv": [12.5, 1.75, 4.5, 3.25], "rotation": 180, "texture": "#1", "cullface": "south", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [0, 0.5, 16],
+			"to": [16, 0.5, 19],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 0.501, 16]},
+			"faces": {
+				"up": {"uv": [4.5, 3.75, 12.5, 5.25], "texture": "#1", "cullface": "south", "tintindex": 0},
+				"down": {"uv": [12.5, 3.75, 4.5, 5.25], "rotation": 180, "texture": "#1", "cullface": "south", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [16, 0.5, 0],
+			"to": [19, 0.5, 16],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [16, 0.501, 8]},
+			"faces": {
+				"up": {"uv": [8, 3.75, 16, 5.25], "rotation": 270, "texture": "#1", "cullface": "east", "tintindex": 0},
+				"down": {"uv": [8, 5.25, 16, 3.75], "rotation": 90, "texture": "#1", "cullface": "east", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [-3, 0.5, 0],
+			"to": [0, 0.5, 16],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [0, 0.501, 8]},
+			"faces": {
+				"up": {"uv": [6.75, 3.75, 14.75, 5.25], "rotation": 90, "texture": "#1", "cullface": "west", "tintindex": 0},
+				"down": {"uv": [6.75, 5.25, 14.75, 3.75], "rotation": 270, "texture": "#1", "cullface": "west", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [0, 0.5, -3],
+			"to": [16, 0.5, 0],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 0.501, 0]},
+			"faces": {
+				"up": {"uv": [0, 3.75, 8, 5.25], "rotation": 180, "texture": "#1", "cullface": "north", "tintindex": 0},
+				"down": {"uv": [8, 3.75, 0, 5.25], "texture": "#1", "cullface": "north", "tintindex": 0}
+			}
+		}
+	]
+}

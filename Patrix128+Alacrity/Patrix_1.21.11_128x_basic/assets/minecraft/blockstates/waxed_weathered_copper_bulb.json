@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "lit=false,powered=false": [
+      { "model": "block/weathered_copper_bulb" },
+      { "model": "block/weathered_copper_bulb", "y": 90 },
+      { "model": "block/weathered_copper_bulb", "y": 180 },
+      { "model": "block/weathered_copper_bulb", "y": 270 }
+    ],
+    "lit=false,powered=true": [
+      { "model": "block/weathered_copper_bulb_powered" },
+      { "model": "block/weathered_copper_bulb_powered", "y": 90 },
+      { "model": "block/weathered_copper_bulb_powered", "y": 180 },
+      { "model": "block/weathered_copper_bulb_powered", "y": 270 }
+    ],
+    "lit=true,powered=false": [
+      { "model": "block/weathered_copper_bulb_lit" },
+      { "model": "block/weathered_copper_bulb_lit", "y": 90 },
+      { "model": "block/weathered_copper_bulb_lit", "y": 180 },
+      { "model": "block/weathered_copper_bulb_lit", "y": 270 }
+    ],
+    "lit=true,powered=true": [
+      { "model": "block/weathered_copper_bulb_lit_powered" },
+      { "model": "block/weathered_copper_bulb_lit_powered", "y": 90 },
+      { "model": "block/weathered_copper_bulb_lit_powered", "y": 180 },
+      { "model": "block/weathered_copper_bulb_lit_powered", "y": 270 }
+    ]
+  }
+}

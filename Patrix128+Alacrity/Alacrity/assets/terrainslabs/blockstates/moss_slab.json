@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/nature/grass/moss_slab/slab_1" },
+      { "model": "minecraft:block/nature/grass/moss_slab/slab_2" },
+      { "model": "minecraft:block/nature/grass/moss_slab/slab_3" },
+      { "model": "minecraft:block/nature/grass/moss_slab/slab_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/nature/grass/moss_slab/top_1" },
+      { "model": "minecraft:block/nature/grass/moss_slab/top_2" },
+      { "model": "minecraft:block/nature/grass/moss_slab/top_3" },
+      { "model": "minecraft:block/nature/grass/moss_slab/top_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/nature/grass/moss_1" },
+      { "model": "minecraft:block/nature/grass/moss_2" },
+      { "model": "minecraft:block/nature/grass/moss_3" },
+      { "model": "minecraft:block/nature/grass/moss_4" }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/gold_block" },
+            { "model": "block/gold_block", "y": 180 },
+            { "model": "block/gold_block", "x": 180 },
+            { "model": "block/gold_block", "x": 180, "y": 180 }
+        ]
+    }
+}

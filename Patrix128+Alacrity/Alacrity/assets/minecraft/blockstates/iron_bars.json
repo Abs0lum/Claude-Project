@@ -1,0 +1,23 @@
+{
+  "multipart": [
+    {
+      "apply": { "model": "minecraft:block/materials/iron/bars_post" }
+    },
+    {
+      "when": { "north": "true" },
+      "apply": { "model": "minecraft:block/materials/iron/bars_side_n" }
+    },
+    {
+      "when": { "east": "true" },
+      "apply": { "model": "minecraft:block/materials/iron/bars_side_e" }
+    },
+    {
+      "when": { "south": "true" },
+      "apply": { "model": "minecraft:block/materials/iron/bars_side_s" }
+    },
+    {
+      "when": { "west": "true" },
+      "apply": { "model": "minecraft:block/materials/iron/bars_side_w" }
+    }
+  ]
+}

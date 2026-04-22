@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/diorite/polished_1" },
+      { "model": "minecraft:block/stone/diorite/polished_2" },
+      { "model": "minecraft:block/stone/diorite/polished_3" },
+      { "model": "minecraft:block/stone/diorite/polished_4" }
+    ]
+  }
+}

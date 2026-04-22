@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "FallingTree RP [WIDEGRID $debugger$ v2.8.1]",
+    "description": "v2.8.0 WIDEGRID \u2014 unified 7\u00d77 entity envelope with per-species geometries and dimensions. 10 species each have their own canopy cube layout within a shared 7\u00d77 grid; each uses only the cells it needs. Acacia now has angled branch_l/branch_r shoulder stubs (rotated \u00b130\u00b0) under a flat umbrella canopy. Texture atlas upgraded 128\u00d7128 \u2192 256\u00d7256 with Patrix HD leaves tiled 2\u00d72 per species. Per-species visible_bounds: oak/birch 6w22h, spruce 4w26h, jungle 8w22h, acacia 8w24h, dark_oak 8w21h, mangrove 6w21h, cherry 7w23h, crimson/warped 4w24h. These drive fall animation curve, impact timing, collision corridor, and future per-species physics. DAMAGE fix: EntityDamageCause.entityAttack enum imported and used (prior builds passed raw string which engine rejected silently); camerashake intensified 1.2/0.6, knockback strength 2.2 / vertical 0.6; all 3 effects now fire independently so a single failure doesn't cascade. ft:canopy_size property removed (ft:wood_type drives geometry directly). DEBUG=true. v2.8.1: added \"capabilities\":[\"pbr\"] to RP manifest so Vibrant Visuals toggle is no longer greyed out.",
+    "uuid": "4410d782-8723-40e3-9586-8262cbb9a1f8",
+    "version": [
+      2,
+      8,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      80
+    ]
+  },
+  "modules": [
+    {
+      "description": "FallingTree resources",
+      "type": "resources",
+      "uuid": "95f4efcf-0333-4373-b470-eea36df91034",
+      "version": [
+        2,
+        8,
+        1
+      ]
+    }
+  ],
+  "capabilities": [
+    "pbr"
+  ]
+}

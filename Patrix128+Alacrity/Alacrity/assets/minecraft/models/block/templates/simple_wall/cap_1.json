@@ -1,0 +1,23 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"wall_parts": "block/stone/granite/wall_parts",
+		"particle": "block/stone/granite/particle"
+	},
+	"elements": [
+		{
+			"from": [5, 14, 5],
+			"to": [11, 15.5, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 8]},
+			"faces": {
+				"north": {"uv": [16, 15.25, 13, 16], "texture": "#wall_parts"},
+				"east": {"uv": [7, 15.25, 10, 16], "texture": "#wall_parts"},
+				"south": {"uv": [4, 15.25, 7, 16], "texture": "#wall_parts"},
+				"west": {"uv": [13, 15.25, 10, 16], "texture": "#wall_parts"},
+				"up": {"uv": [0, 10, 3, 13], "texture": "#wall_parts"}
+			}
+		}
+	]
+}

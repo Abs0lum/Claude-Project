@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "block/soul_torch"},
+      {"model": "block/soul_torch2"}
+    ]
+  }
+}

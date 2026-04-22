@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/wooden/spruce/planks/planks_1"  },
+      { "model": "minecraft:block/wooden/spruce/planks/planks_2"  },
+      { "model": "minecraft:block/wooden/spruce/planks/planks_3"  },
+      { "model": "minecraft:block/wooden/spruce/planks/planks_4"  },
+      { "model": "minecraft:block/wooden/spruce/planks/planks_5"  },
+      { "model": "minecraft:block/wooden/spruce/planks/planks_6"  },
+      { "model": "minecraft:block/wooden/spruce/planks/planks_7"  },
+      { "model": "minecraft:block/wooden/spruce/planks/planks_8"  }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:block/tpl_core/wall_bricks/tall_e_4",
+	"textures": {
+        "extra": "block/stone/tuff/bricks_extra",
+        "wall_hole": "block/stone/tuff/wall",
+        "wall_parts": "block/stone/tuff/wall_parts",
+        "wall_alt": "block/stone/tuff/wall_alt",
+        "wall_tall": "block/stone/tuff/wall_tall",
+		"particle": "block/stone/stone_particle"
+	}
+}

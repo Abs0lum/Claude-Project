@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky142_sunrise_normal1_high.png",
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 142,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"22500": 0.0,
+				"23500": 1.0,
+				"500": 1.0,
+				"1500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -0.866,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.4901960784313725, "green": 0.596078431372549, "blue": 0.7411764705882353}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": 255.0, "max": 319.0}]},
+		"biomes": {"entries": ["minecraft:forest", "minecraft:birch_forest", "minecraft:birch_forest_hills", "minecraft:cherry_grove", "minecraft:dark_forest", "minecraft:dark_forest_hills", "minecraft:flower_forest", "minecraft:meadow", "minecraft:mushroom_fields", "minecraft:plains", "minecraft:river", "minecraft:sunflower_plains", "minecraft:taiga", "minecraft:tall_birch_forest", "minecraft:tall_birch_hills", "minecraft:windswept_forest"]}
+		}
+}

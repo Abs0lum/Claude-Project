@@ -1,0 +1,31 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/pink_petals/v3_1-2",
+        "particle": "block/nature/cherry_particles"
+	},
+	"elements": [
+		{
+			"name": "l1",
+			"from": [1, 0.6, 1],
+			"to": [17, 0.6, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -0.75, 0]},
+			"faces": {
+				"up": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"down": {"uv": [0, 8, 8, 0], "texture": "#1", "cullface": "down"}
+			}
+		},
+		{
+			"name": "l2",
+			"from": [1, 1.1, 1],
+			"to": [17, 1.1, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -0.75, 0]},
+			"faces": {
+				"up": {"uv": [8, 0, 16, 8], "texture": "#1"},
+				"down": {"uv": [8, 8, 16, 0], "texture": "#1", "cullface": "down"}
+			}
+		}
+	]
+}

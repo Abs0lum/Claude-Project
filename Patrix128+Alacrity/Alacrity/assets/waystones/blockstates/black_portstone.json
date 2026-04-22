@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "facing=east,half=lower":  {"model":"waystones:block/portstone_base"},
+    "facing=north,half=lower": {"model":"waystones:block/portstone_base"},
+    "facing=south,half=lower": {"model":"waystones:block/portstone_base"},    
+    "facing=west,half=lower":  {"model":"waystones:block/portstone_base"},
+
+    "facing=north,half=upper": {"model":"waystones:block/portstone_top_black","y":0   },
+    "facing=east,half=upper":  {"model":"waystones:block/portstone_top_black","y":90  },
+    "facing=south,half=upper": {"model":"waystones:block/portstone_top_black","y":180 },
+    "facing=west,half=upper":  {"model":"waystones:block/portstone_top_black","y":270 }
+  }
+}

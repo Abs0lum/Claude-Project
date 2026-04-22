@@ -1,0 +1,75 @@
+{
+  "multipart": [
+    {
+      "when": { "up": "true" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_post"
+      }
+    },
+    {
+      "when": { "north": "low" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side", "uvlock": true
+      }
+    },
+    {
+      "when": { "east": "low" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side", "y": 90, "uvlock": true
+      }
+    },
+    {
+      "when": { "south": "low" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side", "y": 180, "uvlock": true
+      }
+    },
+    {
+      "when": { "west": "low" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side", "y": 270, "uvlock": true
+      }
+    },
+    {
+      "when": { "north": "tall" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side_tall", "uvlock": true
+      }
+    },
+    {
+      "when": { "east": "tall" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side_tall", "y": 90, "uvlock": true
+      }
+    },
+    {
+      "when": { "south": "tall" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side_tall", "y": 180, "uvlock": true
+      }
+    },
+    {
+      "when": { "west": "tall" },
+      "apply": {
+        "model": "block/mossy_cobblestone_wall_side_tall", "y": 270, "uvlock": true
+      }
+    },
+    {
+      "when": { "north": "none", "south": "none", "east": "none", "west": "none", "up": "false" },
+      "apply": [
+        { "model": "block/branch1", "weight": 4 },
+        { "model": "block/branch1", "y": 90, "weight": 4 },
+        { "model": "block/branch1", "y": 180, "weight": 4 },
+        { "model": "block/branch1", "y": 270, "weight": 4 },
+        { "model": "block/branch2", "weight": 3 },
+        { "model": "block/branch2", "y": 90, "weight": 3 },
+        { "model": "block/branch2", "y": 180, "weight": 3 },
+        { "model": "block/branch2", "y": 270, "weight": 3 },
+        { "model": "block/branch3", "weight": 2 },
+        { "model": "block/branch3", "y": 90, "weight": 2 },
+        { "model": "block/branch3", "y": 180, "weight": 2 },
+        { "model": "block/branch3", "y": 270, "weight": 2 }
+      ]
+    }
+  ]
+}

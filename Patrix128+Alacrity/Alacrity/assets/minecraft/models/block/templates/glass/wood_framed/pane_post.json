@@ -1,0 +1,26 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "block/glass/stained/black/pane",
+		"particle": "block/glass/particle/black"
+	},
+	"elements": [
+		{
+			"name": "post",
+			"from": [6.5, -0.005, 6.5],
+			"to": [9.5, 15.995, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.995, 8]},
+			"faces": {
+				"north": {"uv": [8, 4.5, 16, 6], "rotation": 90, "texture": "#2"},
+				"east": {"uv": [8, 4.5, 16, 6], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [8, 4.5, 16, 6], "rotation": 90, "texture": "#2"},
+				"west": {"uv": [8, 4.5, 16, 6], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [14.5, 0.25, 16, 1.75], "rotation": 270, "texture": "#2", "cullface": "up"},
+				"down": {"uv": [14.5, 0.25, 16, 1.75], "rotation": 270, "texture": "#2", "cullface": "down"}
+			}
+		}
+	],
+	"clight_blueit": "Made by Satellence with Blockbench"
+}

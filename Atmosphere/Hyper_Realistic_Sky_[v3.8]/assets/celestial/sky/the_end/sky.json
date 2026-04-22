@@ -1,0 +1,48 @@
+{
+	"sky_objects": [
+		"sky001_end_main",
+		"sky002_end_highlands",
+		"sky003_end_midlands",
+		"sky004_end_barrens",
+		"sky005_small_end_islands",
+		"sky006_distortion",
+		"sky007_distortion",
+		"sky008_distortion",
+		"sky009_distortion",
+		"sky010_end_mod",
+		"sky011_distortion_mod",
+		"sky012_black_hole"
+		],
+	"environment": {
+		"fog": {
+			"has_thick_fog": false,
+			"fog_start": "fogStart",
+			"fog_end": "fogEnd"
+			},
+		"fog_color": {
+			"ignore_sky_effects": true,
+			"colors": [{
+				"red": 0.072272, "green": 0.066626, "blue": 0.144128,
+				"ratio": "1"
+					},
+					{
+				"red": 0.0192156862745098, "green": 0.0733333333333333, "blue": 0.0333333333333333,
+				"ratio": "endsky_1_biomes_fade"
+					},
+					{
+				"red": 0.0254901960784314, "green": 0.1698039215686275, "blue": 0.3266666666666667,
+				"ratio": "endsky_2_biomes_fade"
+					},
+					{
+				"red": 0.2207843137254902, "green": 0.1101960784313725, "blue": 0.0956862745098039,
+				"ratio": "endsky_3_biomes_fade"
+					},
+					{
+				"red": 0.1674509803921569, "green": 0.1172549019607843, "blue": 0.0725490196078431,
+				"ratio": "endsky_4_biomes_fade"
+					}
+				]
+			},
+		"void_culling_level": "-10000"
+		}
+}

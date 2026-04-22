@@ -1,0 +1,13 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "minecraft:block/templates/stone_bricks_wall/tall_n_3",
+	"texture_size": [32, 32],
+	"textures": {
+        "extra": "block/stone/stone_bricks_mossy/mossy_stone_bricks_extra",
+        "wall_hole": "block/stone/stone_bricks_mossy/mossy_wall",
+        "wall_parts": "block/stone/stone_bricks_mossy/mossy_wall_parts",
+        "wall_alt": "block/stone/stone_bricks_mossy/mossy_wall_alt",
+        "wall_tall": "block/stone/stone_bricks_mossy/mossy_wall_tall",
+		"particle": "block/stone/stone_particle"
+	}
+}

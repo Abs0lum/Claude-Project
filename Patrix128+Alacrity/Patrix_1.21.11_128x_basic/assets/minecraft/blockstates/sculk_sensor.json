@@ -1,0 +1,20 @@
+{
+    "multipart": [
+        {   "when": { "sculk_sensor_phase": "active|cooldown" },
+            "apply": [
+                { "model": "block/sculk_sensor_active" },
+                { "model": "block/sculk_sensor_active2" },
+                { "model": "block/sculk_sensor_active3" },
+                { "model": "block/sculk_sensor_active4" }
+            ]
+        },
+        {   "when": { "sculk_sensor_phase": "inactive" },
+            "apply": [
+                { "model": "block/sculk_sensor_inactive" },
+                { "model": "block/sculk_sensor_inactive2" },
+                { "model": "block/sculk_sensor_inactive3" },
+                { "model": "block/sculk_sensor_inactive4" }
+            ]
+        }
+    ]
+}

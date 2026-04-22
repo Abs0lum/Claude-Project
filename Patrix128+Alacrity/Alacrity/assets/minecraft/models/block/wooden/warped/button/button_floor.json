@@ -1,0 +1,24 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/thin_block",
+	"texture_size": [32, 32],
+	"textures": {
+        "all": "block/wooden/warped/buttons",
+        "particle": "block/wooden/warped/particle"
+	},
+	"elements": [
+		{
+			"from": [4, -0.5, 4],
+			"to": [12, 2, 12],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 15, 8]},
+			"faces": {
+				"north": {"uv": [9, 14.75, 13, 16], "texture": "#all"},
+				"east": {"uv": [8, 11, 9.25, 15], "rotation": 270, "texture": "#all"},
+				"south": {"uv": [9, 10, 13, 11.25], "rotation": 180, "texture": "#all"},
+				"west": {"uv": [12.75, 11, 14, 15], "rotation": 90, "texture": "#all"},
+				"up": {"uv": [9, 11, 13, 15], "texture": "#all"},
+				"down": {"uv": [8, 6, 12, 10], "texture": "#all", "cullface": "down"}
+			}
+		}
+	]
+}

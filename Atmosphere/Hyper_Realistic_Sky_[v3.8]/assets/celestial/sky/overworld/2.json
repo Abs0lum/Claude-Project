@@ -1,0 +1,498 @@
+{
+	"sky_objects": [
+		"001-100_sky/sky001_stars_bright",
+		"001-100_sky/sky001_stars_bright_distortion",
+		"001-100_sky/sky002_andromeda",
+		"001-100_sky/sky003_black_hole",
+		"001-100_sky/sky004_neptune",
+		"001-100_sky/sky004_saturn",
+		"001-100_sky/sky005_jupiter",
+		"001-100_sky/sky005_uranus",
+		"001-100_sky/sky006_stars_dim",
+		"001-100_sky/sky007_moon_mask",
+		"001-100_sky/sky008_sunset_sunrise_base_low",
+		"001-100_sky/sky009_moon_glare",
+		"001-100_sky/sky010_moon",
+		"001-100_sky/sky011_blood_moon_mask",
+		"001-100_sky/sky012_moon_glare_blood",
+		"001-100_sky/sky013_moon_glare_blue",
+		"001-100_sky/sky014_blood_moon",
+		"001-100_sky/sky015_sun_glare",
+		"001-100_sky/sky016_sun",
+		"001-100_sky/sky017_sun_high",
+		"001-100_sky/sky018_mask_overcast",
+		"001-100_sky/sky019_mask_normal1",
+		"001-100_sky/sky019_mask_normal1_mod",
+		"001-100_sky/sky020_mask_normal2",
+		"001-100_sky/sky021_mask_normal3",
+		"001-100_sky/sky022_mask_normal4",
+		"001-100_sky/sky023_mask_normal5",
+		"001-100_sky/sky024_mask_hot",
+		"001-100_sky/sky025_mask_clear",
+		"001-100_sky/sky026_mask_snow",
+		"001-100_sky/sky027_mask_rain",
+		"001-100_sky/sky027_mask_rain_mod",
+		"001-100_sky/sky028_mask_sandstorm",
+		"001-100_sky/sky029_day",
+		"001-100_sky/sky030_sunset_sunrise_low",
+		"001-100_sky/sky031_shooting_star1",
+		"001-100_sky/sky032_shooting_star2",
+		"001-100_sky/sky033_shooting_star3",
+		"001-100_sky/sky034_shooting_star4",
+		"001-100_sky/sky035_meteor_shower1",
+		"001-100_sky/sky036_meteor_shower2",
+		"001-100_sky/sky037_meteor_shower3",
+		"001-100_sky/sky038_mask_high",
+		"001-100_sky/sky039_sunset_sunrise_high",
+		"101-300_clouds/sky101_sunset_overcast",
+		"101-300_clouds/sky102_sunset_normal1",
+		"101-300_clouds/sky102_sunset_normal1_mod",
+		"101-300_clouds/sky103_sunset_normal2",
+		"101-300_clouds/sky104_sunset_normal3",
+		"101-300_clouds/sky105_sunset_normal4",
+		"101-300_clouds/sky106_sunset_normal5",
+		"101-300_clouds/sky107_sunset_hot",
+		"101-300_clouds/sky108_sunset_clear",
+		"101-300_clouds/sky109_sunrise_overcast",
+		"101-300_clouds/sky110_sunrise_normal1",
+		"101-300_clouds/sky110_sunrise_normal1_mod",
+		"101-300_clouds/sky111_sunrise_normal2",
+		"101-300_clouds/sky112_sunrise_normal3",
+		"101-300_clouds/sky113_sunrise_normal4",
+		"101-300_clouds/sky114_sunrise_normal5",
+		"101-300_clouds/sky115_sunrise_hot",
+		"101-300_clouds/sky116_sunrise_clear",
+		"101-300_clouds/sky117_night_overcast",
+		"101-300_clouds/sky118_night_normal1",
+		"101-300_clouds/sky118_night_normal1_mod",
+		"101-300_clouds/sky119_night_normal2",
+		"101-300_clouds/sky120_night_normal3",
+		"101-300_clouds/sky121_night_normal4",
+		"101-300_clouds/sky122_night_normal5",
+		"101-300_clouds/sky123_night_hot",
+		"101-300_clouds/sky124_night_clear",
+		"101-300_clouds/sky125_day_overcast",
+		"101-300_clouds/sky126_day_normal1",
+		"101-300_clouds/sky126_day_normal1_mod",
+		"101-300_clouds/sky127_day_normal2",
+		"101-300_clouds/sky128_day_normal3",
+		"101-300_clouds/sky129_day_normal4",
+		"101-300_clouds/sky130_day_normal5",
+		"101-300_clouds/sky131_day_hot",
+		"101-300_clouds/sky132_day_clear",
+		"101-300_clouds/sky133_sunset_overcast_high",
+		"101-300_clouds/sky134_sunset_normal1_high",
+		"101-300_clouds/sky134_sunset_normal1_high_mod",
+		"101-300_clouds/sky135_sunset_normal2_high",
+		"101-300_clouds/sky136_sunset_normal3_high",
+		"101-300_clouds/sky137_sunset_normal4_high",
+		"101-300_clouds/sky138_sunset_normal5_high",
+		"101-300_clouds/sky139_sunset_hot_high",
+		"101-300_clouds/sky140_sunset_clear_high",
+		"101-300_clouds/sky141_sunrise_overcast_high",
+		"101-300_clouds/sky142_sunrise_normal1_high",
+		"101-300_clouds/sky142_sunrise_normal1_high_mod",
+		"101-300_clouds/sky143_sunrise_normal2_high",
+		"101-300_clouds/sky144_sunrise_normal3_high",
+		"101-300_clouds/sky145_sunrise_normal4_high",
+		"101-300_clouds/sky146_sunrise_normal5_high",
+		"101-300_clouds/sky147_sunrise_hot_high",
+		"101-300_clouds/sky148_sunrise_clear_high",
+		"101-300_clouds/sky149_night_overcast_high",
+		"101-300_clouds/sky150_night_normal1_high",
+		"101-300_clouds/sky150_night_normal1_high_mod",
+		"101-300_clouds/sky151_night_normal2_high",
+		"101-300_clouds/sky152_night_normal3_high",
+		"101-300_clouds/sky153_night_normal4_high",
+		"101-300_clouds/sky154_night_normal5_high",
+		"101-300_clouds/sky155_night_hot_high",
+		"101-300_clouds/sky156_night_clear_high",
+		"101-300_clouds/sky157_day_overcast_high",
+		"101-300_clouds/sky158_day_normal1_high",
+		"101-300_clouds/sky158_day_normal1_high_mod",
+		"101-300_clouds/sky159_day_normal2_high",
+		"101-300_clouds/sky160_day_normal3_high",
+		"101-300_clouds/sky161_day_normal4_high",
+		"101-300_clouds/sky162_day_normal5_high",
+		"101-300_clouds/sky163_day_hot_high",
+		"101-300_clouds/sky164_day_clear_high",
+		"sky256_day_mountains_high",
+		"sky257_night_mountains_high",
+		"sky258_sunset_glow_high",
+		"sky259_sunrise_glow_high",
+		"sky260_mountains_high_rain",
+		"sky261_mountains_high_thunder",
+		"101-300_clouds/sky268_rainbow",
+		"101-300_clouds/sky269_sunflare",
+		"101-300_clouds/sky270_sunset_snow",
+		"101-300_clouds/sky271_sunrise_snow",
+		"101-300_clouds/sky272_night_snow",
+		"101-300_clouds/sky273_day_snow",
+		"101-300_clouds/sky274_sunset_snow_high",
+		"101-300_clouds/sky275_sunrise_snow_high",
+		"101-300_clouds/sky276_night_snow_high",
+		"101-300_clouds/sky277_day_snow_high",
+		"101-300_clouds/sky278_thunder_snow",
+		"101-300_clouds/sky279_thunder_snow_high",
+		"101-300_clouds/sky280_sunset_rain",
+		"101-300_clouds/sky280_sunset_rain_mod",
+		"101-300_clouds/sky281_sunrise_rain",
+		"101-300_clouds/sky281_sunrise_rain_mod",
+		"101-300_clouds/sky282_night_rain",
+		"101-300_clouds/sky282_night_rain_mod",
+		"101-300_clouds/sky283_day_rain",
+		"101-300_clouds/sky283_day_rain_mod",
+		"101-300_clouds/sky284_sunset_rain_high",
+		"101-300_clouds/sky284_sunset_rain_high_mod",
+		"101-300_clouds/sky285_sunrise_rain_high",
+		"101-300_clouds/sky285_sunrise_rain_high_mod",
+		"101-300_clouds/sky286_night_rain_high",
+		"101-300_clouds/sky286_night_rain_high_mod",
+		"101-300_clouds/sky287_day_rain_high",
+		"101-300_clouds/sky287_day_rain_high_mod",
+		"101-300_clouds/sky288_thunder_rain",
+		"101-300_clouds/sky288_thunder_rain_mod",
+		"101-300_clouds/sky289_thunder_rain_high",
+		"101-300_clouds/sky289_thunder_rain_high_mod",
+		"101-300_clouds/sky290_sunset_sandstorm",
+		"101-300_clouds/sky291_sunrise_sandstorm",
+		"101-300_clouds/sky292_night_sandstorm",
+		"101-300_clouds/sky293_day_sandstorm",
+		"101-300_clouds/sky294_sunset_sandstorm_high",
+		"101-300_clouds/sky295_sunrise_sandstorm_high",
+		"101-300_clouds/sky296_night_sandstorm_high",
+		"101-300_clouds/sky297_day_sandstorm_high",
+		"101-300_clouds/sky298_thunder_sandstorm",
+		"101-300_clouds/sky299_thunder_sandstorm_high",
+		"301-400_events/sky301_auroras",
+		"301-400_events/sky302_auroras_high",
+		"301-400_events/sky303_lightning1_stage1",
+		"301-400_events/sky304_lightning1_stage2",
+		"301-400_events/sky305_lightning2_stage1",
+		"301-400_events/sky306_lightning2_stage2",
+		"301-400_events/sky307_lightning3_stage1",
+		"301-400_events/sky308_lightning3_stage2",
+		"301-400_events/sky309_lightning4_stage1",
+		"301-400_events/sky310_lightning4_stage2",
+		"301-400_events/sky311_lightning_high1",
+		"301-400_events/sky312_lightning_high2",
+		"301-400_events/sky313_lightning_high3",
+		"301-400_events/sky314_lightning_high4",
+		"301-400_events/sky315_tornado",
+		"301-400_events/sky316_tornado_anim1",
+		"301-400_events/sky316_tornado_anim2",
+		"301-400_events/sky317_tornado_high",
+		"301-400_events/sky318_mammatus_low",
+		"301-400_events/sky319_mammatus_high",
+		"301-400_events/sky320_hurricane_low",
+		"301-400_events/sky321_hurricane_high",
+		"301-400_events/sky322_asperitas_low",
+		"301-400_events/sky323_asperitas_high",
+		"301-400_events/sky324_lightning_far_low1",
+		"301-400_events/sky324_lightning_far_low2",
+		"301-400_events/sky324_lightning_far_low3",
+		"301-400_events/sky324_lightning_far_low4",
+		"301-400_events/sky324_lightning_far_low5",
+		"301-400_events/sky324_lightning_far_low6",
+		"301-400_events/sky324_lightning_far_low7",
+		"301-400_events/sky324_lightning_far_low8",
+		"301-400_events/sky325_lightning_far_high1",
+		"301-400_events/sky325_lightning_far_high2",
+		"301-400_events/sky325_lightning_far_high3",
+		"301-400_events/sky325_lightning_far_high4",
+		"301-400_events/sky325_lightning_far_high5",
+		"301-400_events/sky325_lightning_far_high6",
+		"301-400_events/sky325_lightning_far_high7",
+		"301-400_events/sky325_lightning_far_high8",
+		"301-400_events/sky326_fiery_sunset_low",
+		"301-400_events/sky327_fiery_sunset_high",
+		"301-400_events/sky328_noctilucent_low",
+		"301-400_events/sky329_noctilucent_high",
+		"301-400_events/sky330_iridescent_clouds_1",
+		"301-400_events/sky331_iridescent_clouds_2",
+		"301-400_events/sky332_iridescent_clouds_3",
+		"301-400_events/sky333_supercell_low",
+		"301-400_events/sky334_supercell_high",
+		"401-500_solar_eclipse/sky401_eclipse_sky",
+		"401-500_solar_eclipse/sky402_stars_low",
+		"401-500_solar_eclipse/sky403_stars_high",
+		"401-500_solar_eclipse/sky404_black_hole",
+		"401-500_solar_eclipse/sky405_neptune",
+		"401-500_solar_eclipse/sky405_saturn",
+		"401-500_solar_eclipse/sky406_jupiter",
+		"401-500_solar_eclipse/sky406_uranus",
+		"401-500_solar_eclipse/sky407_sun",
+		"401-500_solar_eclipse/sky408_moon",
+		"401-500_solar_eclipse/sky409_moon_mask_eclipse",
+		"401-500_solar_eclipse/sky410_moon_mask_eclipse_high",
+		"401-500_solar_eclipse/sky411_eclipse",
+		"401-500_solar_eclipse/sky412_eclipse_overcast",
+		"401-500_solar_eclipse/sky413_eclipse_normal1",
+		"401-500_solar_eclipse/sky413_eclipse_normal1_mod",
+		"401-500_solar_eclipse/sky414_eclipse_normal2",
+		"401-500_solar_eclipse/sky415_eclipse_normal3",
+		"401-500_solar_eclipse/sky416_eclipse_normal4",
+		"401-500_solar_eclipse/sky417_eclipse_normal5",
+		"401-500_solar_eclipse/sky418_eclipse_hot",
+		"401-500_solar_eclipse/sky419_eclipse_clear",
+		"401-500_solar_eclipse/sky420_eclipse_overcast_high",
+		"401-500_solar_eclipse/sky421_eclipse_normal1_high",
+		"401-500_solar_eclipse/sky421_eclipse_normal1_high_mod",
+		"401-500_solar_eclipse/sky422_eclipse_normal2_high",
+		"401-500_solar_eclipse/sky423_eclipse_normal3_high",
+		"401-500_solar_eclipse/sky426_eclipse_hot_high",
+		"401-500_solar_eclipse/sky427_eclipse_clear_high",
+		"401-500_solar_eclipse/sky428_eclipse_rainbow",
+		"401-500_solar_eclipse/sky429_eclipse_snow",
+		"401-500_solar_eclipse/sky430_eclipse_snow_high",
+		"401-500_solar_eclipse/sky433_eclipse_rain",
+		"401-500_solar_eclipse/sky433_eclipse_rain_mod",
+		"401-500_solar_eclipse/sky434_eclipse_rain_high",
+		"401-500_solar_eclipse/sky434_eclipse_rain_high_mod",
+		"401-500_solar_eclipse/sky437_eclipse_sandstorm",
+		"401-500_solar_eclipse/sky438_eclipse_sandstorm_high",
+		"401-500_solar_eclipse/sky441_eclipse_sky_tint",
+		"401-500_solar_eclipse/sky442_eclipse_sky_tint_high",
+		"sky495_day_mountains",
+		"sky496_night_mountains",
+		"sky497_rain_mountains",
+		"sky498_thunder_mountains",
+		"sky499_sunset_glow",
+		"sky500_sunrise_glow",
+		"501-600_earth/sky501_earth_mask",
+		"501-600_earth/sky502_earth_day",
+		"501-600_earth/sky503_hurricane",
+		"501-600_earth/sky504_earth_shadow_sunset_sunrise",
+		"501-600_earth/sky505_earth_night",
+		"501-600_earth/sky506_earth_sunset_sunrise",
+		"501-600_earth/sky507_eclipse_shadow"
+		],
+	"environment": {
+		"fog": {
+			"has_thick_fog": false,
+			"fog_start": "fogStart",
+			"fog_end": "fogEnd"
+			},
+		"fog_color": {
+			"ignore_sky_effects": true,
+			"colors": [{
+				"red": 0.3254901960784314, "green": 0.4117647058823529, "blue": 0.5294117647058824,
+				"ratio": "sunset_fade * low_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.5090196078431373, "green": 0.6227450980392157, "blue": 0.7274509803921569,
+				"ratio": "sunrise_fade * low_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.0509803921568627, "green": 0.0549019607843137, "blue": 0.0823529411764706,
+				"ratio": "night_fade * low_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.8470588235294118, "green": 0.9019607843137255, "blue": 0.9764705882352941,
+				"ratio": "day_fade * low_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.5450980392156863, "green": 0.5607843137254902, "blue": 0.607843137254902,
+				"ratio": "day_fade * low_altitude * (1-rainAlpha) * normal5_biomes_fade"
+					},
+					{
+				"red": 0.392156862745098, "green": 0.4745098039215686, "blue": 0.5764705882352941,
+				"ratio": "sunset_fade * high_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.5243137254901961, "green": 0.56, "blue": 0.5854901960784314,
+				"ratio": "sunset_fade * high_altitude * (1-rainAlpha) * normal5_biomes_fade"
+					},
+					{
+				"red": 0.4901960784313725, "green": 0.596078431372549, "blue": 0.7411764705882353,
+				"ratio": "sunrise_fade * high_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.2662745098039216, "green": 0.3270588235294118, "blue": 0.3976470588235294,
+				"ratio": "sunrise_fade * high_altitude * (1-rainAlpha) * normal5_biomes_fade"
+					},
+					{
+				"red": 0.0274509803921569, "green": 0.0509803921568627, "blue": 0.0901960784313725,
+				"ratio": "night_fade * high_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.6705882352941176, "green": 0.7686274509803922, "blue": 0.8941176470588235,
+				"ratio": "day_fade * high_altitude * (1-rainAlpha)"
+					},
+					{
+				"red": 0.5694117647058824, "green": 0.5647058823529412, "blue": 0.5698039215686275,
+				"ratio": "day_fade * high_altitude * (1-rainAlpha) * normal5_biomes_fade"
+					},
+					{
+				"red": 0.6588235294117647, "green": 0.6588235294117647, "blue": 0.6549019607843137,
+				"ratio": "day_fade * low_altitude * rainAlpha * snow_fade * rain_biomes_fade"
+					},
+					{
+				"red": 0.4352941176470588, "green": 0.4352941176470588, "blue": 0.4352941176470588,
+				"ratio": "day_fade * low_altitude * thunderAlpha * snow_fade * rain_biomes_fade"
+					},
+					{
+				"red": 0.6317647058823529, "green": 0.6854901960784314, "blue": 0.7458823529411765,
+				"ratio": "sunset_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.5937254901960784, "green": 0.6831372549019608, "blue": 0.7894117647058824,
+				"ratio": "sunrise_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.076078431372549, "green": 0.116078431372549, "blue": 0.1490196078431373,
+				"ratio": "night_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.7145098039215686, "green": 0.7313725490196078, "blue": 0.7654901960784314,
+				"ratio": "day_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.4752941176470588, "green": 0.4905882352941176, "blue": 0.5172549019607843,
+				"ratio": "day_fade * high_altitude * thunderAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.1843137254901961, "green": 0.2627450980392157, "blue": 0.4196078431372549,
+				"ratio": "sunset_fade * low_altitude * rainAlpha * rain_biomes_fade"
+					},
+					{
+				"red": 0.3411764705882353, "green": 0.4666666666666666, "blue": 0.6156862745098039,
+				"ratio": "sunrise_fade * low_altitude * rainAlpha * rain_biomes_fade"
+					},
+					{
+				"red": 0.0235294117647059, "green": 0.0274509803921569, "blue": 0.0470588235294118,
+				"ratio": "night_fade * low_altitude * rainAlpha * rain_biomes_fade"
+					},
+					{
+				"red": 0.4, "green": 0.4549019607843137, "blue": 0.5254901960784314,
+				"ratio": "day_fade * low_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.1764705882352941, "green": 0.2, "blue": 0.2392156862745098,
+				"ratio": "day_fade * low_altitude * thunderAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.3725490196078431, "green": 0.4470588235294118, "blue": 0.5333333333333333,
+				"ratio": "sunset_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.4274509803921569, "green": 0.5137254901960784, "blue": 0.6274509803921569,
+				"ratio": "sunrise_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.007843137254902, "green": 0.0117647058823529, "blue": 0.0156862745098039,
+				"ratio": "night_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.5725490196078431, "green": 0.6313725490196078, "blue": 0.7098039215686275,
+				"ratio": "day_fade * high_altitude * rainAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.2411764705882353, "green": 0.2666666666666667, "blue": 0.3035294117647059,
+				"ratio": "day_fade * high_altitude * thunderAlpha * (1-snow_fade) * rain_biomes_fade"
+					},
+					{
+				"red": 0.2349019607843137, "green": 0.2988235294117647, "blue": 0.3937254901960784,
+				"ratio": "sunset_fade * low_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.303921568627451, "green": 0.3603921568627451, "blue": 0.452156862745098,
+				"ratio": "sunrise_fade * low_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.003921568627451, "green": 0.007843137254902, "blue": 0.0117647058823529,
+				"ratio": "night_fade * low_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.62352941176, "green": 0.53725490196, "blue": 0.50588235294,
+				"ratio": "day_fade * low_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.2509803921568627, "green": 0.2196078431372549, "blue": 0.207843137254902,
+				"ratio": "day_fade * low_altitude * thunderAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.4509803921568627, "green": 0.4509803921568627, "blue": 0.4666666666666667,
+				"ratio": "sunset_fade * high_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.4509803921568627, "green": 0.4509803921568627, "blue": 0.4666666666666667,
+				"ratio": "sunrise_fade * high_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.003921568627451, "green": 0.007843137254902, "blue": 0.0117647058823529,
+				"ratio": "night_fade * high_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.62352941176, "green": 0.53725490196, "blue": 0.5058823529,
+				"ratio": "day_fade * high_altitude * rainAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.2474509803921569, "green": 0.2109803921568627, "blue": 0.1901960784313725,
+				"ratio": "day_fade * high_altitude * thunderAlpha * sandstorm_biomes_fade"
+					},
+					{
+				"red": 0.4627450980392157, "green": 0.4980392156862745, "blue": 0.5803921568627451,
+				"ratio": "tornado_fade * low_altitude"
+					},
+					{
+				"red": 0.7376470588235294, "green": 0.7517647058823529, "blue": 0.7898039215686275,
+				"ratio": "tornado_fade * high_altitude"
+					},
+					{
+				"red": 0.7176470588235294, "green": 0.7803921568627451, "blue": 0.8549019607843137,
+				"ratio": "mammatus_fade * low_altitude * (1-thunderAlpha) * rain_biomes_fade"
+					},
+					{
+				"red": 0.8529411764705882, "green": 0.8643137254901961, "blue": 0.8803921568627451,
+				"ratio": "mammatus_fade * high_altitude * (1-thunderAlpha) * rain_biomes_fade"
+					},
+					{
+				"red": 0.1380392156862745,  "green": 0.1564705882352941, "blue": 0.1886274509803922,
+				"ratio": "hurricane_fade * low_altitude * thunderAlpha * rain_biomes_fade"
+					},
+					{
+				"red": 0.4654901960784314,  "green": 0.5203921568627451, "blue": 0.5811764705882353,
+				"ratio": "hurricane_fade * high_altitude * thunderAlpha * rain_biomes_fade"
+					},
+					{
+				"red": 0.3, "green": 0.4254901960784314, "blue": 0.596078431372549,
+				"ratio": "asperitas_fade * low_altitude * (1-thunderAlpha) * rain_biomes_fade"
+					},
+					{
+				"red": 0.3, "green": 0.4254901960784314, "blue": 0.596078431372549,
+				"ratio": "asperitas_fade * high_altitude * (1-thunderAlpha) * rain_biomes_fade"
+					},
+					{
+				"red": 0.4529411764705882, "green": 0.4443137254901961, "blue": 0.5349019607843137,
+				"ratio": "fiery_sunset_fade * low_altitude * (1-rainAlpha) * normal1_biomes_fade"
+					},
+					{
+				"red": 0.756078431372549, "green": 0.6603921568627451, "blue": 0.6701960784313725,
+				"ratio": "fiery_sunset_fade * high_altitude * (1-rainAlpha) * normal1_biomes_fade"
+					},
+					{
+				"red": 0.1764705882352941, "green": 0.2235294117647059, "blue": 0.3019607843137255,
+				"ratio": "supercell_fade * low_altitude"
+					},
+					{
+				"red": 0.2117647058823529, "green": 0.1058823529411765, "blue": 0.0823529411764706,
+				"ratio": "eclipse_fade * low_altitude"
+					},
+					{
+				"red": 0.1254901960784314, "green": 0.1607843137254902, "blue": 0.2235294117647059,
+				"ratio": "eclipse_fade * high_altitude"
+					},
+					{
+				"red": 0.0, "green": 0.0, "blue": 0.0,
+				"ratio": "space_altitude"
+					}
+				]
+			},
+		"clouds": {
+			"height": -1000,
+			"color": "ffffff"
+			},
+		"void_culling_level": "-10000"
+		}
+}

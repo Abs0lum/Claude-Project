@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/simple_wall/post_2",
+	"texture_size": [32, 32],
+	"textures": {
+        "cubes": "block/stone/andesite/cubes",
+        "slab_cubes": "block/stone/andesite/polished_slab_cubes",
+        "1": "block/stone/andesite/side",
+        "particle": "block/stone/andesite/particle"
+	}
+}

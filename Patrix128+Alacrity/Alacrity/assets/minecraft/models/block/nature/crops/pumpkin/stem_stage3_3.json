@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [64, 16],
+	"textures": {
+        "2": "block/nature/crops/pumpkin_stem_stage3",
+        "particle": "block/nature/dirt/particle"
+	},
+	"elements": [
+		{
+			"from": [8, -1, -0.00001],
+			"to": [8, 15, 15.99999],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 6.99999]},
+			"faces": {
+				"east": {"uv": [4, 16, 0, 0], "rotation": 180, "texture": "#2"},
+				"west": {"uv": [0, 16, 4, 0], "rotation": 180, "texture": "#2"}
+			}
+		},
+		{
+			"from": [0, -1, 7.99999],
+			"to": [16, 15, 7.99999],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 7.99999]},
+			"faces": {
+				"north": {"uv": [16, 16, 12, 0], "rotation": 180, "texture": "#2"},
+				"south": {"uv": [12, 16, 16, 0], "rotation": 180, "texture": "#2"}
+			}
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=east,half=lower":  {"model":"waystones:block/waystone_andesite"},
+    "facing=north,half=lower": {"model":"waystones:block/waystone_andesite"},
+    "facing=south,half=lower": {"model":"waystones:block/waystone_andesite"},
+    "facing=west,half=lower":  {"model":"waystones:block/waystone_andesite"},
+    "facing=east,half=upper":  {"model":"waystones:block/waystone_andesite_top"},
+    "facing=north,half=upper": {"model":"waystones:block/waystone_andesite_top"},
+    "facing=south,half=upper": {"model":"waystones:block/waystone_andesite_top"},
+	  "facing=west,half=upper":  {"model":"waystones:block/waystone_andesite_top"}
+  }
+}

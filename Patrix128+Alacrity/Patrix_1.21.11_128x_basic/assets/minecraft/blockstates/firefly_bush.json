@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+            { "model": "minecraft:block/firefly_bush" },
+            { "model": "minecraft:block/firefly_bush", "y": 90 },
+            { "model": "minecraft:block/firefly_bush", "y": 180 },
+            { "model": "minecraft:block/firefly_bush", "y": 270 },
+            { "model": "minecraft:block/firefly_bush2" },
+            { "model": "minecraft:block/firefly_bush2", "y": 90 },
+            { "model": "minecraft:block/firefly_bush2", "y": 180 },
+            { "model": "minecraft:block/firefly_bush2", "y": 270 }
+        ]
+    }
+}

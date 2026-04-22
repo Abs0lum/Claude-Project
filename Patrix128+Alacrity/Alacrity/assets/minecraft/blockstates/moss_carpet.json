@@ -1,0 +1,15 @@
+{
+    "multipart": [
+		{ "apply": [
+                { "model": "minecraft:block/nature/grass/moss_carpet_1" },
+                { "model": "minecraft:block/nature/grass/moss_carpet_2" },
+                { "model": "minecraft:block/nature/grass/moss_carpet_3" },
+                { "model": "minecraft:block/nature/grass/moss_carpet_4" },
+                { "model": "minecraft:block/nature/grass/moss_carpet_glow_1" },
+                { "model": "minecraft:block/nature/grass/moss_carpet_glow_2" },
+                { "model": "minecraft:block/nature/grass/moss_carpet_glow_3" },
+                { "model": "minecraft:block/nature/grass/moss_carpet_glow_4" }
+			]
+		}
+	]
+}

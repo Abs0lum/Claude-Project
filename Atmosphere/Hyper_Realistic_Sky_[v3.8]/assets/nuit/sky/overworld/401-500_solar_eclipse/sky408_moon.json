@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "decorations",
+	"moon": "minecraft:textures/environment/moon_phases.png",
+	"showSun": false,
+	"showMoon": true,
+	"showStars": false,
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 408,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"507050": 0.0,
+				"507400": 1.0,
+				"507650": 1.0,
+				"508000": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -0.2,
+			"mapping": {"0": [96.2493, -37.8659, 0.0]},
+			"axis": {"0": [-20.7763, 0.0, 40.7418]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]}
+		}
+}

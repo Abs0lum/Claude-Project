@@ -1,0 +1,51 @@
+{
+  "variants": {
+  	"has_bottle_0=false,has_bottle_1=false,has_bottle_2=false": { 
+	  "model": "minecraft:block/interactive/brewing/empty"
+	},
+    "has_bottle_0=true,has_bottle_1=false,has_bottle_2=false": [
+    	{ "model": "minecraft:block/interactive/brewing/fill_1" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_2" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_3" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_4" }
+    ],
+    "has_bottle_0=false,has_bottle_1=true,has_bottle_2=false": [
+    	{ "model": "minecraft:block/interactive/brewing/fill_1" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_2" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_3" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_4" }
+    ],
+    "has_bottle_0=false,has_bottle_1=false,has_bottle_2=true": [
+    	{ "model": "minecraft:block/interactive/brewing/fill_1" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_2" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_3" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_4" }
+    ],
+
+    "has_bottle_0=true,has_bottle_1=true,has_bottle_2=false": [
+    	{ "model": "minecraft:block/interactive/brewing/fill_1" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_2" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_3" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_4" }
+    ],
+    "has_bottle_0=false,has_bottle_1=true,has_bottle_2=true": [
+    	{ "model": "minecraft:block/interactive/brewing/fill_1" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_2" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_3" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_4" }
+    ],
+    "has_bottle_0=true,has_bottle_1=false,has_bottle_2=true": [
+    	{ "model": "minecraft:block/interactive/brewing/fill_1" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_2" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_3" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_4" }
+    ],
+
+    "has_bottle_0=true,has_bottle_1=true,has_bottle_2=true": [
+    	{ "model": "minecraft:block/interactive/brewing/fill_1" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_2" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_3" },
+    	{ "model": "minecraft:block/interactive/brewing/fill_4" }
+    ]
+  }
+}

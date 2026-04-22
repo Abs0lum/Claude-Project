@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:atmosphere_settings": {
+    "description": {
+      "identifier": "realsource:end_atmospherics"
+    },"horizon_blend_stops": {
+      "min": 0.0,
+      "start": 0.05,
+      "mie_start": 0.0,
+      "max": 0.75
+    },
+    "rayleigh_strength": 1.6,
+    "sun_mie_strength": 0.0,
+    "sky_zenith_color": [45, 15, 45],
+    "sky_horizon_color": [0, 0, 0]
+  }
+}

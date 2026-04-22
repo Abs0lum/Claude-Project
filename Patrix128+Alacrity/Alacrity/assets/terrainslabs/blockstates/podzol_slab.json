@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "type=bottom,snowy=false": [
+      { "model": "minecraft:block/nature/grass/podzol_slab/slab_1" },
+      { "model": "minecraft:block/nature/grass/podzol_slab/slab_2" },
+      { "model": "minecraft:block/nature/grass/podzol_slab/slab_3" },
+      { "model": "minecraft:block/nature/grass/podzol_slab/slab_4" }
+    ],
+    "type=top,snowy=false": [
+      { "model": "minecraft:block/nature/grass/podzol_slab/top_1" },
+      { "model": "minecraft:block/nature/grass/podzol_slab/top_2" },
+      { "model": "minecraft:block/nature/grass/podzol_slab/top_3" },
+      { "model": "minecraft:block/nature/grass/podzol_slab/top_4" }
+    ],
+    "type=double,snowy=false": [
+      { "model": "minecraft:block/nature/grass/podzol_1" },
+      { "model": "minecraft:block/nature/grass/podzol_2" },
+      { "model": "minecraft:block/nature/grass/podzol_3" },
+      { "model": "minecraft:block/nature/grass/podzol_4" }
+    ],
+    "type=bottom,snowy=true": [
+      { "model": "minecraft:block/nature/snow/snow_grass_slab/slab_1" },
+      { "model": "minecraft:block/nature/snow/snow_grass_slab/slab_2" },
+      { "model": "minecraft:block/nature/snow/snow_grass_slab/slab_3" },
+      { "model": "minecraft:block/nature/snow/snow_grass_slab/slab_4" }
+    ],
+    "type=top,snowy=true": [
+    { "model": "minecraft:block/nature/snow/snow_grass_slab/top_1" },
+      { "model": "minecraft:block/nature/snow/snow_grass_slab/top_2" },
+      { "model": "minecraft:block/nature/snow/snow_grass_slab/top_3" },
+      { "model": "minecraft:block/nature/snow/snow_grass_slab/top_4" }
+    ],
+    "type=double,snowy=true": [     
+      { "model": "minecraft:block/nature/snow/snow_grass_block_1" },
+      { "model": "minecraft:block/nature/snow/snow_grass_block_2" },
+      { "model": "minecraft:block/nature/snow/snow_grass_block_3" },
+      { "model": "minecraft:block/nature/snow/snow_grass_block_4" }      
+    ]
+  }
+}

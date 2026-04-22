@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky132_day_clear.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 132,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"500": 0.0,
+				"1500": 1.0,
+				"10500": 1.0,
+				"11500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -2.0,
+			"mapping": {"0": [0.0, 167.5, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.8470588235294118, "green": 0.9019607843137255, "blue": 0.9764705882352941}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]},
+		"biomes": {"entries": ["minecraft:desert", "minecraft:desert_hills", "minecraft:desert_lakes"]}
+		}
+}

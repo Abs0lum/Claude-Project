@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/slab_1" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/slab_2" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/slab_3" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/double_1" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/double_2" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/double_3" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/double_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/top_1" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/top_2" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/top_3" },
+      { "model": "minecraft:block/materials/copper/cubes_slab_0/top_4" }
+    ]
+  }
+}

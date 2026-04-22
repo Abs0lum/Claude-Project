@@ -1,0 +1,8 @@
+{
+	"parent": "block/templates/wooden_log/wooden_log",
+	"textures": {
+        "3": "block/wooden/cherry/log_top_2",
+        "all": "block/wooden/cherry/log_2",
+        "particle": "block/wooden/cherry/particle"
+	}
+}

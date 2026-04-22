@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nature/grass/ontop/grass_1", "weight": 50 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_1", "weight": 50, "y": 90 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_1", "weight": 50, "y": 180 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_1", "weight": 50, "y": 270 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_2", "weight": 50 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_2", "weight": 50, "y": 90 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_2", "weight": 50, "y": 180 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_2", "weight": 50, "y": 270 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_3", "weight": 25 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_3", "weight": 25, "y": 90 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_3", "weight": 25, "y": 180 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_3", "weight": 25, "y": 270 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_4", "weight": 25 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_4", "weight": 25, "y": 90 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_4", "weight": 25, "y": 180 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_4", "weight": 25, "y": 270 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_5", "weight": 15 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_5", "weight": 15, "y": 90 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_5", "weight": 15, "y": 180 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_5", "weight": 15, "y": 270 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_6", "weight": 15 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_6", "weight": 15, "y": 90 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_6", "weight": 15, "y": 180 },
+      { "model": "minecraft:block/nature/grass/ontop/grass_6", "weight": 15, "y": 270 }
+	]
+  }
+}

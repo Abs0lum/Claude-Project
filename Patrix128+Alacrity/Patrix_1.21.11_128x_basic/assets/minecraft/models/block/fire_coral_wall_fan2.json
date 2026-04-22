@@ -1,0 +1,7 @@
+{
+    "parent": "block/coral_wall_fan2",
+    "textures": {
+        "cross": "block/fire_coral",
+        "fan": "block/fire_coral_fan"
+    }
+}

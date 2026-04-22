@@ -1,0 +1,7 @@
+{
+    "parent": "block/rail_flat",
+    "textures": {
+        "rail": "block/rail",
+        "extra": "block/extra/rail_extra"
+    }
+}

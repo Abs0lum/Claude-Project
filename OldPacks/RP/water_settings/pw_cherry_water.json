@@ -1,0 +1,38 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:water_settings": {
+    "description": {
+      "identifier": "pw:cherry_water"
+    },
+    "components": {
+      "minecraft:particle_concentrations": {
+        "cdom": 0.4,
+        "chlorophyll": 1.5,
+        "suspended_sediment": 0.3
+      },
+      "minecraft:caustics": {
+        "enabled": true,
+        "frame_length": 0.12,
+        "power": 2.8,
+        "scale": 0.7
+      },
+      "minecraft:waves": {
+        "enabled": true,
+        "depth": 0.04,
+        "direction_increment": 90,
+        "frequency": 0.9,
+        "frequency_scaling": 1.18,
+        "interlacing": 0.5,
+        "octaves": 3,
+        "pulling": 0.0,
+        "smoothness": 1.0,
+        "detail": 1.0,
+        "speed": 0.7,
+        "speed_scaling": 1.02
+      },
+      "minecraft:biome_water_color_contribution": {
+        "contribution": 0.8
+      }
+    }
+  }
+}

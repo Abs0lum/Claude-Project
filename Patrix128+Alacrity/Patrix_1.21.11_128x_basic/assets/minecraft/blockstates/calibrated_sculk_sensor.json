@@ -1,0 +1,47 @@
+{
+    "multipart": [
+        {   "when": { "facing": "north" },
+            "apply": [
+                { "model": "block/calibrated_sculk_sensor" }
+            ]
+        },
+        {   "when": { "facing": "east" },
+            "apply": [
+                { "model": "block/calibrated_sculk_sensor", "y": 90 }
+            ]
+        },
+        {   "when": { "facing": "south" },
+            "apply": [
+                { "model": "block/calibrated_sculk_sensor", "y": 180 }
+            ]
+        },
+        {   "when": { "facing": "west" },
+            "apply": [
+                { "model": "block/calibrated_sculk_sensor", "y": 270 }
+            ]
+        },
+        {   "apply": [
+                { "model": "block/calibrated_sculk_sensor_extra" },
+                { "model": "block/calibrated_sculk_sensor_extra", "y": 90 },
+                { "model": "block/calibrated_sculk_sensor_extra", "y": 180 },
+                { "model": "block/calibrated_sculk_sensor_extra", "y": 270 }
+            ]
+        },
+        {   "when": { "sculk_sensor_phase": "active|cooldown" },
+            "apply": [
+                { "model": "block/calibrated_sculk_sensor_active" },
+                { "model": "block/calibrated_sculk_sensor_active", "y": 90 },
+                { "model": "block/calibrated_sculk_sensor_active", "y": 180 },
+                { "model": "block/calibrated_sculk_sensor_active", "y": 270 }
+            ]
+        },
+        {   "when": { "sculk_sensor_phase": "inactive" },
+            "apply": [
+                { "model": "block/calibrated_sculk_sensor_inactive" },
+                { "model": "block/calibrated_sculk_sensor_inactive", "y": 90 },
+                { "model": "block/calibrated_sculk_sensor_inactive", "y": 180 },
+                { "model": "block/calibrated_sculk_sensor_inactive", "y": 270 }
+            ]
+        }
+    ]
+}

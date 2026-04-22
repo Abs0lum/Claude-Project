@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/tuff/natural/block_1" },
+      { "model": "minecraft:block/stone/tuff/natural/block_2" },
+      { "model": "minecraft:block/stone/tuff/natural/block_3" },
+      { "model": "minecraft:block/stone/tuff/natural/block_4" }
+    ]
+  }
+}

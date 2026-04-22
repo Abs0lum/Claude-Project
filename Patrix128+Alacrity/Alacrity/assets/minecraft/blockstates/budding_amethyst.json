@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/amethyst/budding_1" },
+      { "model": "minecraft:block/stone/amethyst/budding_2" },
+      { "model": "minecraft:block/stone/amethyst/budding_3" },
+      { "model": "minecraft:block/stone/amethyst/budding_4" }
+    ]
+  }
+}

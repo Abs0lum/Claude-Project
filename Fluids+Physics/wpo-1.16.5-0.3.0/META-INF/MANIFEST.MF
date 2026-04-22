@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+MixinConfigs: mixins.wpo.json
+Specification-Title: WPO
+Implementation-Title: WPO
+Implementation-Version: 0.3.0
+

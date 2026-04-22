@@ -1,0 +1,211 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"extra": "block/stone/stone_bricks/stone_bricks_extra",
+		"wall_hole": "block/stone/stone_bricks/wall",
+		"wall_end": "block/stone/stone_bricks/wall_end",
+		"wall_parts": "block/stone/stone_bricks/wall_parts",
+		"wall_alt": "block/stone/stone_bricks/wall_alt",
+		"wall_short": "block/stone/stone_bricks/wall_short",
+		"particle": "block/stone/stone_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 11, 5],
+			"to": [8, 14, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 2, 0, 3.5], "texture": "#wall_short"},
+				"south": {"uv": [0, 2, 4, 3.5], "texture": "#wall_short"},
+				"west": {"uv": [3, 1, 0, 2.5], "texture": "#wall_end"},
+				"up": {"uv": [12, 0, 16, 3], "texture": "#wall_alt"},
+				"down": {"uv": [0, 8, 4, 5], "texture": "#wall_parts"}
+			}
+		},
+		{
+			"from": [0, 0, 6],
+			"to": [8, 2.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 14.75, 0, 16], "texture": "#wall_hole"},
+				"south": {"uv": [0, 14.75, 4, 16], "texture": "#wall_hole"},
+				"down": {"uv": [16, 4, 12, 2], "texture": "#extra"}
+			}
+		},
+		{
+			"from": [0, 0, 6],
+			"to": [0, 11, 10],
+			"rotation": {"angle": 0, "axis": "x", "origin": [0, 6, 8]},
+			"faces": {
+				"west": {"uv": [0, 10, 5.5, 12], "rotation": 270, "texture": "#extra"}
+			}
+		},
+		{
+			"from": [7.5, 2.5, 6.01],
+			"to": [8, 10.275, 9.99],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 2.5, 8]},
+			"faces": {
+				"north": {"uv": [4, 0.25, 0, 0], "rotation": 90, "texture": "#wall_hole"},
+				"east": {"uv": [2, 13, 6, 11], "rotation": 270, "texture": "#wall_hole"},
+				"south": {"uv": [0, 0.25, 4, 0], "rotation": 270, "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [7.5, 5.725, 6.01],
+			"to": [8, 13.5, 9.99],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 13.5, 8]},
+			"faces": {
+				"north": {"uv": [2, 4.5, 6, 4.25], "rotation": 90, "texture": "#wall_hole"},
+				"east": {"uv": [5, 14, 3, 10], "rotation": 180, "texture": "#wall_hole"},
+				"south": {"uv": [6, 4.75, 2, 4.5], "rotation": 270, "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 2.5, 6],
+			"to": [7.5, 3, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [3.75, 14.5, 0, 14.75], "texture": "#wall_hole"},
+				"south": {"uv": [0, 14.5, 3.75, 14.75], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 3, 6],
+			"to": [7, 3.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 14.25, 0, 14.5], "texture": "#wall_hole"},
+				"south": {"uv": [0, 14.25, 3.5, 14.5], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 3.5, 6],
+			"to": [6.5, 4, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [3.25, 14, 0, 14.25], "texture": "#wall_hole"},
+				"south": {"uv": [0, 14, 3.25, 14.25], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 4, 6],
+			"to": [6, 4.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [3, 13.75, 0, 14], "texture": "#wall_hole"},
+				"south": {"uv": [0, 13.75, 3, 14], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 4.5, 6],
+			"to": [5.5, 5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.75, 13.5, 0, 13.75], "texture": "#wall_hole"},
+				"south": {"uv": [0, 13.5, 2.75, 13.75], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 5, 6],
+			"to": [5, 5.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.5, 13.25, 0, 13.5], "texture": "#wall_hole"},
+				"south": {"uv": [0, 13.25, 2.5, 13.5], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 5.5, 6],
+			"to": [4.5, 6, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.25, 13, 0, 13.25], "texture": "#wall_hole"},
+				"south": {"uv": [0, 13, 2.25, 13.25], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 6, 6],
+			"to": [4, 6.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 12.75, 0, 13], "texture": "#wall_hole"},
+				"south": {"uv": [0, 12.75, 2, 13], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 6.5, 6],
+			"to": [3.5, 7, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.75, 12.5, 0, 12.75], "texture": "#wall_hole"},
+				"south": {"uv": [0, 12.5, 1.75, 12.75], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 7, 6],
+			"to": [3, 7.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 12.25, 0, 12.5], "texture": "#wall_hole"},
+				"south": {"uv": [0, 12.25, 1.5, 12.5], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 10.5, 6],
+			"to": [5, 11, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.5, 10.75, 0, 10.5], "texture": "#wall_hole"},
+				"south": {"uv": [0, 10.75, 2.5, 10.5], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 10, 6],
+			"to": [4.5, 10.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.25, 11, 0, 10.75], "texture": "#wall_hole"},
+				"south": {"uv": [0, 11, 2.25, 10.75], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 9.5, 6],
+			"to": [4, 10, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 11.25, 0, 11], "texture": "#wall_hole"},
+				"south": {"uv": [0, 11.25, 2, 11], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 9, 6],
+			"to": [3.5, 9.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.75, 11.5, 0, 11.25], "texture": "#wall_hole"},
+				"south": {"uv": [0, 11.5, 1.75, 11.25], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 8.5, 6],
+			"to": [3, 9, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 11.75, 0, 11.5], "texture": "#wall_hole"},
+				"south": {"uv": [0, 11.75, 1.5, 11.5], "texture": "#wall_hole"}
+			}
+		},
+		{
+			"from": [0, 7.5, 6],
+			"to": [2.5, 8.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.25, 11.75, 0, 12.25], "texture": "#wall_hole"},
+				"east": {"uv": [5, 2, 3, 2.5], "texture": "#wall_hole"},
+				"south": {"uv": [0, 11.75, 1.25, 12.25], "texture": "#wall_hole"}
+			}
+		}
+	]
+}

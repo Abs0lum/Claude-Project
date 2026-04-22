@@ -1,0 +1,40 @@
+{
+    "variants": {
+        "facing=east,half=lower,hinge=left,open=false":   { "model": "block/wooden/crimson/door/left", "y": 0   },
+        "facing=south,half=lower,hinge=left,open=false":  { "model": "block/wooden/crimson/door/left", "y": 90  },
+        "facing=west,half=lower,hinge=left,open=false":   { "model": "block/wooden/crimson/door/left", "y": 180 },
+        "facing=north,half=lower,hinge=left,open=false":  { "model": "block/wooden/crimson/door/left", "y": 270 },
+        "facing=south,half=lower,hinge=right,open=true":  { "model": "block/wooden/crimson/door/left", "y": 0   },
+        "facing=west,half=lower,hinge=right,open=true":   { "model": "block/wooden/crimson/door/left", "y": 90  },
+        "facing=north,half=lower,hinge=right,open=true":  { "model": "block/wooden/crimson/door/left", "y": 180 },
+        "facing=east,half=lower,hinge=right,open=true":   { "model": "block/wooden/crimson/door/left", "y": 270 },
+        
+        "facing=east,half=lower,hinge=right,open=false":  { "model": "block/wooden/crimson/door/right", "y": 0   },
+        "facing=south,half=lower,hinge=right,open=false": { "model": "block/wooden/crimson/door/right", "y": 90  },
+        "facing=west,half=lower,hinge=right,open=false":  { "model": "block/wooden/crimson/door/right", "y": 180 },
+        "facing=north,half=lower,hinge=right,open=false": { "model": "block/wooden/crimson/door/right", "y": 270 },  
+        "facing=north,half=lower,hinge=left,open=true":   { "model": "block/wooden/crimson/door/right", "y": 0   },
+        "facing=east,half=lower,hinge=left,open=true":    { "model": "block/wooden/crimson/door/right", "y": 90  },
+        "facing=south,half=lower,hinge=left,open=true":   { "model": "block/wooden/crimson/door/right", "y": 180 },
+        "facing=west,half=lower,hinge=left,open=true":    { "model": "block/wooden/crimson/door/right", "y": 270 },
+
+
+        "facing=east,half=upper,hinge=left,open=false":   { "model": "block/wooden/crimson/door/hinge_left", "y": 0   },
+        "facing=south,half=upper,hinge=left,open=false":  { "model": "block/wooden/crimson/door/hinge_left", "y": 90  },
+        "facing=west,half=upper,hinge=left,open=false":   { "model": "block/wooden/crimson/door/hinge_left", "y": 180 },
+        "facing=north,half=upper,hinge=left,open=false":  { "model": "block/wooden/crimson/door/hinge_left", "y": 270 },
+        "facing=east,half=upper,hinge=right,open=false":  { "model": "block/wooden/crimson/door/hinge_right", "y": 0   },
+        "facing=south,half=upper,hinge=right,open=false": { "model": "block/wooden/crimson/door/hinge_right", "y": 90  },
+        "facing=west,half=upper,hinge=right,open=false":  { "model": "block/wooden/crimson/door/hinge_right", "y": 180 },
+        "facing=north,half=upper,hinge=right,open=false": { "model": "block/wooden/crimson/door/hinge_right", "y": 270 },
+
+        "facing=east,half=upper,hinge=left,open=true":    { "model": "block/wooden/crimson/door/hinge_left", "y": 0   },
+        "facing=south,half=upper,hinge=left,open=true":   { "model": "block/wooden/crimson/door/hinge_left", "y": 90  },
+        "facing=west,half=upper,hinge=left,open=true":    { "model": "block/wooden/crimson/door/hinge_left", "y": 180 },
+        "facing=north,half=upper,hinge=left,open=true":   { "model": "block/wooden/crimson/door/hinge_left", "y": 270 },  
+        "facing=east,half=upper,hinge=right,open=true":   { "model": "block/wooden/crimson/door/hinge_right", "y": 0   },
+        "facing=south,half=upper,hinge=right,open=true":  { "model": "block/wooden/crimson/door/hinge_right", "y": 90  },
+        "facing=west,half=upper,hinge=right,open=true":   { "model": "block/wooden/crimson/door/hinge_right", "y": 180 },
+        "facing=north,half=upper,hinge=right,open=true":  { "model": "block/wooden/crimson/door/hinge_right", "y": 270 }
+    }
+}

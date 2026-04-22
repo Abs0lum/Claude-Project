@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "facing=down,open=false": {
+      "x": 180,
+      "model": "minecraft:block/interactive/barrel"
+    },
+    "facing=down,open=true": {
+      "x": 180,
+      "model": "minecraft:block/interactive/barrel_open"
+    },
+    "facing=east,open=false": {
+      "x": 90,
+      "y": 90,
+      "model": "minecraft:block/interactive/barrel"
+    },
+    "facing=east,open=true": {
+      "x": 90,
+      "y": 90,
+      "model": "minecraft:block/interactive/barrel_open"
+    },
+    "facing=north,open=false": {
+      "x": 90,
+      "model": "minecraft:block/interactive/barrel"
+    },
+    "facing=north,open=true": {
+      "x": 90,
+      "model": "minecraft:block/interactive/barrel_open"
+    },
+    "facing=south,open=false": {
+      "x": 90,
+      "y": 180,
+      "model": "minecraft:block/interactive/barrel"
+    },
+    "facing=south,open=true": {
+      "x": 90,
+      "y": 180,
+      "model": "minecraft:block/interactive/barrel_open"
+    },
+    "facing=up,open=false": {
+      "model": "minecraft:block/interactive/barrel"
+    },
+    "facing=up,open=true": {
+      "model": "minecraft:block/interactive/barrel_open"
+    },
+    "facing=west,open=false": {
+      "x": 90,
+      "y": 270,
+      "model": "minecraft:block/interactive/barrel"
+    },
+    "facing=west,open=true": {
+      "x": 90,
+      "y": 270,
+      "model": "minecraft:block/interactive/barrel_open"
+    }
+  }
+}

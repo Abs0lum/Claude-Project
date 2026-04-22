@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [BARKFIX v0.2.3]",
+    "description": "v0.2.3 BARKFIX \u2014 load warnings and missing textures. (1) Fixed blocks.json format_version 1.21.120\u21921.1.0 (prior session wrongly bumped it thinking that enabled variations \u2014 max for blocks.json is 1.1.0, and 1.21.120 was being silently downgraded to 1.1.0, causing some entries to not fully parse). (2) Fixed muddy_mangrove_roots entry \u2014 was missing 'down' face, now complete. (3) Fixed the purple/black missing-texture issue on dirt sides exposed when breaking grass_block: shortname 'grass_block_side' wasn't registered (Patrix uses legacy 'grass_side'); added alias. (4) Added podzol (textures + shortnames + blocks.json entry). (5) Auto-registered sandstone_normal + red_sandstone_normal side shortnames that were referenced but missing. (6) Ported Patrix log/plank/leaves textures for all 10 wood species (oak/spruce/birch/jungle/acacia/dark_oak/mangrove/cherry/crimson/warped) \u2014 58 new PNGs. This fixes the bark color mismatch between standing trees (was vanilla) and BIGCANOPY falling entity (Patrix-colored) \u2014 now both match. Added 24 legacy shortname aliases (log_oak, log_big_oak, leaves_jungle etc.) for full Bedrock compat. Carries v0.2.2 VARFIX + v0.2.1 SMOOTH + v0.1.9 MYCOPORT.",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      2,
+      3
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        2,
+        3
+      ]
+    }
+  ]
+}

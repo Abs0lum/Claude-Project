@@ -1,0 +1,92 @@
+{
+  "variants": {
+    "age=0": [
+      { "model": "minecraft:block/nature/crops/wheat/stage0_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage0_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage0_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage0_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage0_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage0_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage0_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage0_2", "y": 270 }
+    ],
+    "age=1": [
+      { "model": "minecraft:block/nature/crops/wheat/stage1_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage1_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage1_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage1_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage1_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage1_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage1_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage1_2", "y": 270 }
+    ],
+    "age=2": [
+      { "model": "minecraft:block/nature/crops/wheat/stage2_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage2_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage2_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage2_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage2_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage2_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage2_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage2_2", "y": 270 }
+    ],
+    "age=3": [
+      { "model": "minecraft:block/nature/crops/wheat/stage3_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage3_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage3_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage3_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage3_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage3_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage3_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage3_2", "y": 270 }
+    ],
+    "age=4": [
+      { "model": "minecraft:block/nature/crops/wheat/stage4_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage4_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage4_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage4_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage4_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage4_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage4_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage4_2", "y": 270 }
+    ],
+    "age=5": [
+      { "model": "minecraft:block/nature/crops/wheat/stage5_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage5_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage5_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage5_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage5_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage5_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage5_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage5_2", "y": 270 }
+    ],
+    "age=6": [
+      { "model": "minecraft:block/nature/crops/wheat/stage6_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage6_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage6_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage6_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage6_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage6_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage6_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage6_2", "y": 270 }
+    ],
+    "age=7": [
+      { "model": "minecraft:block/nature/crops/wheat/stage7_1", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_1", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_1", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_1", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_2", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_2", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_2", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_2", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_3", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_3", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_3", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_3", "y": 270 },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_4", "y": 0   },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_4", "y": 90  },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_4", "y": 180 },
+      { "model": "minecraft:block/nature/crops/wheat/stage7_4", "y": 270 }
+    ]
+  }
+}

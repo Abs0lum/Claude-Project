@@ -1,0 +1,27 @@
+Last updated: March 2026
+
+The contents of this resource pack are protected under All Rights Reserved.
+Unauthorized redistribution or reuse is not permitted.
+
+You may not:
+- Re-upload this resource pack to any website or platform outside of the official sources
+- Use any assets from this resource pack in other projects without explicit permission
+- Distribute modified versions of this resource pack
+- Use any assets from this resource pack to train AI models or use them in AI-generated content
+
+You are welcome to:
+- Share links to the official pages:
+-- Website: https://alacrity.su/
+-- Modrinth: https://modrinth.com/resourcepack/alacrity
+-- Curseforge: https://www.curseforge.com/minecraft/texture-packs/alacrity
+-- PlanetMinecraft: https://www.planetminecraft.com/texture-pack/alacrity-5014462/
+- Create add-ons for the resource pack, provided they do not include any of my original assets
+- Include it in modpacks via the official Modrinth or CurseForge tooling
+- Use it as a server-side resource pack - please mention Alacrity by Satellence in your server's welcome message
+
+If you'd like to use this resource pack or its assets in any other way, please reach out first - I'm open to discussion.
+I reserve the right to request removal of any content that violates these terms. These terms may be updated at any time - please check back occasionally.
+
+Contacts:
+Discord server: https://discord.gg/ZAV7uWnt5k
+Email: satellence@gmail.com

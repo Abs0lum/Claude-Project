@@ -1,0 +1,14 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "minecraft:block/templates/stone_bricks_wall/side_s_4",
+	"texture_size": [32, 32],
+	"textures": {
+        "extra": "block/stone/endstone/bricks_extra",
+        "wall_hole": "block/stone/endstone/wall",
+        "wall_end": "block/stone/endstone/wall_end",
+        "wall_parts": "block/stone/endstone/wall_parts",
+        "wall_alt": "block/stone/endstone/wall_alt",
+        "wall_short": "block/stone/endstone/wall_short",
+		"particle": "block/stone/stone_particle"
+	}
+}

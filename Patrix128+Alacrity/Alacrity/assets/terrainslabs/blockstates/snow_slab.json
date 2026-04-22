@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/nature/snow/snow_block/slab/slab_1" },
+      { "model": "minecraft:block/nature/snow/snow_block/slab/slab_2" },
+      { "model": "minecraft:block/nature/snow/snow_block/slab/slab_3" },
+      { "model": "minecraft:block/nature/snow/snow_block/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/nature/snow/snow_block/block_1" },
+      { "model": "minecraft:block/nature/snow/snow_block/block_2" },
+      { "model": "minecraft:block/nature/snow/snow_block/block_3" },
+      { "model": "minecraft:block/nature/snow/snow_block/block_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/nature/snow/snow_block/slab/top_1" },
+      { "model": "minecraft:block/nature/snow/snow_block/slab/top_2" },
+      { "model": "minecraft:block/nature/snow/snow_block/slab/top_3" },
+      { "model": "minecraft:block/nature/snow/snow_block/slab/top_4" }
+    ]
+  }
+}

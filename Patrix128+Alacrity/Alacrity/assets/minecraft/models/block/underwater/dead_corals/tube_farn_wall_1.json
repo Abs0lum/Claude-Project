@@ -1,0 +1,46 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "all": "block/underwater/dead_corals/tube_coral",
+        "particle": "block/underwater/dead_corals/tube_p"
+	},
+	"elements": [
+		{
+			"from": [0, 8.5, 8],
+			"to": [16, 8.5, 16],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 8.5, 16]},
+			"faces": {
+				"up": {"uv": [8, 8, 0, 4], "rotation": 180, "texture": "#all"},
+				"down": {"uv": [0, 8, 8, 4], "texture": "#all"}
+			}
+		},
+		{
+			"from": [0, 7.5, 8],
+			"to": [16, 7.5, 16],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 7.5, 16]},
+			"faces": {
+				"up": {"uv": [16, 4, 8, 0], "rotation": 180, "texture": "#all"},
+				"down": {"uv": [8, 4, 16, 0], "texture": "#all"}
+			}
+		},
+		{
+			"from": [0, 8.5, 16],
+			"to": [16, 16.5, 16],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 8.5, 16]},
+			"faces": {
+				"north": {"uv": [0, 4, 8, 0], "rotation": 180, "texture": "#all"},
+				"south": {"uv": [8, 4, 0, 0], "rotation": 180, "texture": "#all"}
+			}
+		},
+		{
+			"from": [0, -0.5, 16],
+			"to": [16, 7.5, 16],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 7.5, 16]},
+			"faces": {
+				"north": {"uv": [8, 8, 0, 4], "texture": "#all"},
+				"south": {"uv": [0, 8, 8, 4], "texture": "#all"}
+			}
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/lava_cauldron" },
+            { "model": "block/lava_cauldron", "y": 90 },
+            { "model": "block/lava_cauldron", "y": 180 },
+            { "model": "block/lava_cauldron", "y": 270 }
+        ]
+    }
+}

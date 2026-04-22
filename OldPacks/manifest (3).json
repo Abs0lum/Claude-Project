@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [DRIPBARK v0.2.5]",
+    "description": "v0.2.5 DRIPBARK \u2014 grass_side dirt variance + dripstone + bark variance. (1) grass_block_side: 16 composite variants, keeping the original Patrix grass+transition strip on top (user confirmed grass_top variation works and asked for it left alone) while swapping the dirt portion (rows 20-63) for 16 different Patrix dirt CTM tiles. Registered under grass_block_side + legacy grass_side alias. (2) dripstone_block: 8 synthesized variants via rotation/flip/wrap-shift (Patrix ships only 1 dripstone_block.png \u2014 no CTM library for it). (3) pointed_dripstone: 8 shape textures (base/middle/frustum/tip \u00d7 up/down) generated fresh using Patrix dripstone color data with tapered silhouette masks approximating vanilla proportions. Replaces vanilla low-res stalactite/stalagmite textures. (4) Bark variance: 8 variants per species \u00d7 10 species \u00d7 2 faces (side + end grain) = 160 new bark variant PNGs. Registered as variations arrays on all 10 log/stem shortnames. Synthesized via rotation/flip (Patrix has only single log textures, no bark CTM). Total 247 new PNGs. Carries v0.2.4 DENSE+VARS + v0.2.3 BARKFIX.",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      2,
+      5
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        2,
+        5
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [40, 40],
+	"textures": {
+        "0": "block/nature/leaves/jungle_leaves",
+        "1": "block/nature/leaves/jungle_branches",
+        "particle": "block/nature/leaves/jungle_leaves"
+	},
+	"elements": [
+		{
+			"name": "Large",
+			"from": [-9.175, 7.6, -7.875],
+			"to": [22.825, 7.6, 24.125],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [6.575, 7.6, 7.125]},
+			"faces": {
+				"up": {"uv": [0, 8, 8, 0], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 8, 8, 0], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Large",
+			"from": [7.575, -8.15, -6.875],
+			"to": [7.575, 23.85, 25.125],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [7.575, 7.6, 8.125]},
+			"faces": {
+				"east": {"uv": [8, 16, 16, 8], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 16, 16, 8], "rotation": 90, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-5.3, -5.225, 6.525],
+			"to": [18.7, 18.775, 6.525],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [3.7, 6.775, 9.025]},
+			"faces": {
+				"north": {"uv": [6, 6, 12, 0], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [6, 6, 12, 0], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-6.3, -5.225, 9.025],
+			"to": [17.7, 18.775, 9.025],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [5.7, 6.775, 6.025]},
+			"faces": {
+				"north": {"uv": [6, 6, 12, 0], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [6, 6, 12, 0], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-5.3, 0.775, -4.975],
+			"to": [18.7, 0.775, 19.025],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [4.7, 3.775, 9.025]},
+			"faces": {
+				"up": {"uv": [6, 6, 12, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [6, 6, 12, 0], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-7.3, 14.775, -4.975],
+			"to": [16.7, 14.775, 19.025],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [2.7, 8.775, 9.025]},
+			"faces": {
+				"up": {"uv": [0, 6, 6, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 6, 6, 0], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		}
+	]
+}

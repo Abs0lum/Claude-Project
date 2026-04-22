@@ -1,0 +1,149 @@
+{
+  "multipart": [
+    {
+      "apply": [
+            { "model": "minecraft:block/nature/pale/moss_carpet_1" },
+            { "model": "minecraft:block/nature/pale/moss_carpet_2" },
+            { "model": "minecraft:block/nature/pale/moss_carpet_3" },
+            { "model": "minecraft:block/nature/pale/moss_carpet_4" }
+	  ],
+      "when": { "bottom": "true" }
+    },
+    {
+      "apply": [
+            { "model": "minecraft:block/nature/pale/moss_carpet_1" },
+            { "model": "minecraft:block/nature/pale/moss_carpet_2" },
+            { "model": "minecraft:block/nature/pale/moss_carpet_3" },
+            { "model": "minecraft:block/nature/pale/moss_carpet_4" }
+	  ],
+      "when": { "bottom": "false", "east": "none", "north": "none", "south": "none", "west": "none" }
+    },
+    {
+      "apply": [
+            { "model": "minecraft:block/nature/pale/moss_grass_1", "y": 0 },
+            { "model": "minecraft:block/nature/pale/moss_grass_1", "y": 90 },
+            { "model": "minecraft:block/nature/pale/moss_grass_1", "y": 180 },
+            { "model": "minecraft:block/nature/pale/moss_grass_1", "y": 270 },
+            { "model": "minecraft:block/nature/pale/moss_grass_2", "y": 0 },
+            { "model": "minecraft:block/nature/pale/moss_grass_2", "y": 90 },
+            { "model": "minecraft:block/nature/pale/moss_grass_2", "y": 180 },
+            { "model": "minecraft:block/nature/pale/moss_grass_2", "y": 270 },
+            { "model": "minecraft:block/nature/pale/moss_grass_3", "y": 0 },
+            { "model": "minecraft:block/nature/pale/moss_grass_3", "y": 90 },
+            { "model": "minecraft:block/nature/pale/moss_grass_3", "y": 180 },
+            { "model": "minecraft:block/nature/pale/moss_grass_3", "y": 270 }
+	  ],
+      "when": { "bottom": "true" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_lg_1" },
+        { "model": "minecraft:block/nature/pale/wall_lg_2" },
+        { "model": "minecraft:block/nature/pale/wall_lg_3" },
+        { "model": "minecraft:block/nature/pale/wall_lg_4" }
+      ],
+      "when": { "north": "tall" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_sm_1" },
+        { "model": "minecraft:block/nature/pale/wall_sm_2" },
+        { "model": "minecraft:block/nature/pale/wall_sm_3" },
+        { "model": "minecraft:block/nature/pale/wall_sm_4" }
+      ],
+      "when": { "north": "low" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_lg_1" },
+        { "model": "minecraft:block/nature/pale/wall_lg_2" },
+        { "model": "minecraft:block/nature/pale/wall_lg_3" },
+        { "model": "minecraft:block/nature/pale/wall_lg_4" }
+      ],
+      "when": { "bottom": "false", "east": "none", "north": "none", "south": "none", "west": "none" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_lg_1", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_lg_2", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_lg_3", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_lg_4", "y": 90 }
+      ],
+      "when": { "east": "tall" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_sm_1", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_sm_2", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_sm_3", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_sm_4", "y": 90 }
+      ],
+      "when": { "east": "low" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_lg_1", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_lg_2", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_lg_3", "y": 90 },
+        { "model": "minecraft:block/nature/pale/wall_lg_4", "y": 90 }
+      ],
+      "when": { "bottom": "false", "east": "none", "north": "none", "south": "none", "west": "none" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_lg_1", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_lg_2", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_lg_3", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_lg_4", "y": 180 }
+      ],
+      "when": { "south": "tall" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_sm_1", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_sm_2", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_sm_3", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_sm_4", "y": 180 }
+      ],
+      "when": {
+        "south": "low"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_lg_1", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_lg_2", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_lg_3", "y": 180 },
+        { "model": "minecraft:block/nature/pale/wall_lg_4", "y": 180 }
+      ],
+      "when": { "bottom": "false", "east": "none", "north": "none", "south": "none", "west": "none" }
+    },
+    {
+      "apply":[
+        { "model": "minecraft:block/nature/pale/wall_lg_1", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_lg_2", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_lg_3", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_lg_4", "y": 270 }
+      ],
+      "when": { "west": "tall" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_sm_1", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_sm_2", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_sm_3", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_sm_4", "y": 270 }
+      ],
+      "when": { "west": "low" }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/nature/pale/wall_sm_1", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_sm_2", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_sm_3", "y": 270 },
+        { "model": "minecraft:block/nature/pale/wall_sm_4", "y": 270 }
+      ],
+      "when": { "bottom": "false", "east": "none", "north": "none", "south": "none", "west": "none" }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/fire_coral" },
+            { "model": "block/fire_coral", "y": 90 },
+            { "model": "block/fire_coral", "y": 180 },
+            { "model": "block/fire_coral", "y": 270 },
+            { "model": "block/fire_coral2" },
+            { "model": "block/fire_coral2", "y": 90 },
+            { "model": "block/fire_coral2", "y": 180 },
+            { "model": "block/fire_coral2", "y": 270 }
+        ]
+    }
+}

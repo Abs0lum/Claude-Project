@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/concrete/powder/pink_1" },
+      { "model": "minecraft:block/stone/concrete/powder/pink_2" },
+      { "model": "minecraft:block/stone/concrete/powder/pink_3" },
+      { "model": "minecraft:block/stone/concrete/powder/pink_4" }
+    ]
+  }
+}

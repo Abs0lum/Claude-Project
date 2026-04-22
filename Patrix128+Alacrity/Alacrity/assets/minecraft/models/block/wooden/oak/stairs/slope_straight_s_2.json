@@ -1,0 +1,11 @@
+{
+    "parent": "block/templates/wooden_stairs/slope_straight_s",
+	"textures": {
+        "1": "block/wooden/oak/double_2",
+        "2": "block/wooden/oak/double_1",
+        "e": "block/wooden/oak/double_end_2",
+        "c": "block/wooden/oak/clean_2",
+        "b": "block/wooden/oak/stairs_back",
+        "particle": "block/wooden/oak/particle"
+	}
+}

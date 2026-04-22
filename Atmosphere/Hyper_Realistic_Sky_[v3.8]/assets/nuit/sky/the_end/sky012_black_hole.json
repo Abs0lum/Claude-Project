@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"type": "multi-textured",
+	"animatableTextures": [
+		{
+			"texture": "skybox:overworld/uv_mapped/black_hole.png",
+			"uvRange": {
+				"minU": 0.4003303333333333,
+				"minV": 0.7454295,
+				"maxU": 0.6036813333333333,
+				"maxV": 0.93918475
+			},
+			"gridColumns": 4,
+			"gridRows": 16,
+			"duration": 62
+		}
+	],
+	"blend": {"type" : "add"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 710,
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [0.0, 0.0, 180.0]},
+			"axis": {"0": [20.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:the_end"]},
+		"biomes": {"excludes": true, "entries": ["minecraft:the_end"]}
+		}
+}

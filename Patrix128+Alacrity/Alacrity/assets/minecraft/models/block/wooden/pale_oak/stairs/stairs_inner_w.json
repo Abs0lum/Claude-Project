@@ -1,0 +1,10 @@
+{
+    "parent": "block/templates/wooden_stairs/stairs_inner_w",
+	"textures": {
+        "1": "block/wooden/pale_oak/double_1",
+        "2": "block/wooden/pale_oak/double_2",
+        "corners": "block/wooden/pale_oak/stairs_corner_double",
+        "e": "block/wooden/pale_oak/double_end_1",
+        "particle": "block/wooden/pale_oak/particle"
+	}
+}

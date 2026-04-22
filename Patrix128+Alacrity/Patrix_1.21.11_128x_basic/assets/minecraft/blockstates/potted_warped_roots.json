@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/potted_warped_roots" },
+            { "model": "block/potted_warped_roots", "y": 90 },
+            { "model": "block/potted_warped_roots", "y": 180 },
+            { "model": "block/potted_warped_roots", "y": 270 }
+        ]
+    }
+}

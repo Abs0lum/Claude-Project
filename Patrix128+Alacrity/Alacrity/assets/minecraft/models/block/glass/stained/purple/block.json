@@ -1,0 +1,8 @@
+{
+	"parent": "block/templates/glass_block",
+	"textures": {
+		"n": "block/glass/stained/purple/normal",
+		"i": "block/glass/stained/purple/inner",		
+		"particle": "block/glass/particle/purple"
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "multipart": [
+        {   "when": { "snowy": "false" },
+            "apply": { "model": "block/podzol" }
+        },
+        {   "when": { "snowy": "false" },
+            "apply": [
+                {"model": "block/air", "weight": 4 },
+                { "model": "block/hanging_roots_extra", "weight": 1 },
+                { "model": "block/hanging_roots_extra", "y": 90, "weight": 1 },
+                { "model": "block/hanging_roots_extra", "y": 180, "weight": 1 },
+                { "model": "block/hanging_roots_extra", "y": 270, "weight": 1 }
+            ]
+        },
+        {   "when": { "snowy": "true" },
+            "apply": { "model": "block/grass_block_snow" }
+        }
+    ]
+}

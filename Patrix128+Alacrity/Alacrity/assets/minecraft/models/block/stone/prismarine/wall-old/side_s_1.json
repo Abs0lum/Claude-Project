@@ -1,0 +1,46 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"3": "block/stone/prismarine/slab_top",
+		"4": "block/stone/prismarine/extra",
+		"all": "block/stone/prismarine/stairs_side",
+		"particle": "block/stone/prismarine/particle"
+	},
+	"elements": [
+		{
+			"from": [5.5, 0, 8],
+			"to": [10.5, 12, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 12]},
+			"faces": {
+				"east": {"uv": [4, 2, 8, 8], "texture": "#all"},
+				"south": {"uv": [6.75, 2, 4.25, 8], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [4, 2, 8, 8], "texture": "#all"},
+				"down": {"uv": [8.75, 12, 11.25, 16], "texture": "#4", "cullface": "down"}
+			}
+		},
+		{
+			"from": [5.5, 12, 8],
+			"to": [10.5, 15.001, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13.5, 9.75]},
+			"faces": {
+				"east": {"uv": [3.75, 2, 5.75, 3.5], "texture": "#all"},
+				"west": {"uv": [5.25, 2, 7.25, 3.5], "texture": "#all"},
+				"up": {"uv": [4.75, 6.25, 7.25, 8], "texture": "#3"}
+			}
+		},
+		{
+			"from": [4, 12, 12],
+			"to": [12, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 13.75]},
+			"faces": {
+				"north": {"uv": [8, 8, 4, 10], "texture": "#all"},
+				"east": {"uv": [2, 0, 4, 2], "texture": "#all"},
+				"south": {"uv": [4, 8, 0, 10], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [12, 0, 14, 2], "texture": "#all"},
+				"up": {"uv": [4, 3.75, 8, 5.75], "texture": "#3"},
+				"down": {"uv": [9.25, 16, 13.25, 14], "texture": "#4"}
+			}
+		}
+	]
+}

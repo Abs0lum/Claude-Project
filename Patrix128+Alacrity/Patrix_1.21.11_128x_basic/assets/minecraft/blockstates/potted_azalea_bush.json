@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/potted_azalea_bush" },
+            { "model": "block/potted_azalea_bush", "y": 90 },
+            { "model": "block/potted_azalea_bush", "y": 180 },
+            { "model": "block/potted_azalea_bush", "y": 270 }
+        ]
+    }
+}

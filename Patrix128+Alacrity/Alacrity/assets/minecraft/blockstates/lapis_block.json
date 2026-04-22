@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/materials/lapis/block_1" },
+      { "model": "minecraft:block/materials/lapis/block_2" },
+      { "model": "minecraft:block/materials/lapis/block_3" },
+      { "model": "minecraft:block/materials/lapis/block_4" }
+    ]
+  }
+}

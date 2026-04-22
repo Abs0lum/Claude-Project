@@ -1,0 +1,69 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/saplings/birch",
+        "particle": "block/nature/saplings/birch"
+	},
+	"elements": [
+		{
+			"from": [1, 7, 8],
+			"to": [14, 21, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [16, 8, 9.5, 16], "texture": "#1"},
+				"south": {"uv": [9.5, 8, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, 6.5, 1],
+			"to": [8, 20.5, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"east": {"uv": [16, 8, 9.5, 16], "texture": "#1"},
+				"west": {"uv": [9.5, 8, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [5.30733, 8.64718, 5.5],
+			"to": [5.30733, 22.14718, 12],
+			"rotation": {"angle": 0, "axis": "z", "origin": [5.30733, 8.49718, 8.1]},
+			"faces": {
+				"east": {"uv": [16, 0.25, 12.75, 7], "texture": "#1"},
+				"west": {"uv": [12.75, 0.25, 16, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [10.30733, 6.64718, 5],
+			"to": [10.30733, 20.14718, 11.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [5.30733, 8.49718, 8.1]},
+			"faces": {
+				"east": {"uv": [12.5, 0.25, 9.25, 7], "texture": "#1"},
+				"west": {"uv": [9.25, 0.25, 12.5, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [4.90733, 7.14718, 11.1],
+			"to": [11.40733, 20.64718, 11.1],
+			"rotation": {"angle": 0, "axis": "z", "origin": [5.30733, 8.49718, 8.1]},
+			"faces": {
+				"north": {"uv": [9.25, 0.25, 12.5, 7], "texture": "#1"},
+				"south": {"uv": [12.5, 0.25, 9.25, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [4.90733, 7.64718, 5.85],
+			"to": [11.40733, 21.14718, 5.85],
+			"rotation": {"angle": 0, "axis": "x", "origin": [5.30733, 8.49718, 8.1]},
+			"faces": {
+				"north": {"uv": [12.75, 0.25, 16, 7], "texture": "#1"},
+				"south": {"uv": [16, 0.25, 12.75, 7], "texture": "#1"}
+			}
+		}
+	]
+}

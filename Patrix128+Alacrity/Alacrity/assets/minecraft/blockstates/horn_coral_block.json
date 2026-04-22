@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/underwater/corals/horn_1" },
+      { "model": "minecraft:block/underwater/corals/horn_2" },
+      { "model": "minecraft:block/underwater/corals/horn_3" },
+      { "model": "minecraft:block/underwater/corals/horn_4" }
+    ]
+  }
+}

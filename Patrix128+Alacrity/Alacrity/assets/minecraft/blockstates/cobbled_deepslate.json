@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/deepslate/cobbled_1" },
+      { "model": "minecraft:block/stone/deepslate/cobbled_2" },
+      { "model": "minecraft:block/stone/deepslate/cobbled_3" },
+      { "model": "minecraft:block/stone/deepslate/cobbled_4" }
+    ]
+  }
+}

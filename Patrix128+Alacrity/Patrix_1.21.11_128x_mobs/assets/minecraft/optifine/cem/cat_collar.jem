@@ -1,0 +1,107 @@
+{
+	"credit": "Created by FreshLX for Patrix",
+	"textureSize": [128, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -9, 9],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Patrix",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"var.child_scale": "if(is_child, 1, 0)",
+					"var.r": "random(id)*pi*4",
+					"var.sleep": " if(head.rz!=0, 1, 0)",
+					"var.lick": "if(is_sitting||is_riding, clamp((-40 -sin((pos_x*2.6+pos_y*3.3+pos_z)+(age-(limb_swing/1.5))/150)*48), 0, 1), 0)"
+				},
+				{
+					"rotation.rx": "torad(90) +if(var.sleep==1, 0, is_sitting||is_riding, torad(-55), 0)",
+					"bone3.rx": "0",
+					"body.rx": "if(var.sleep==1, torad(-60),    if( !is_on_ground&&is_in_water, sin(limb_swing+age/2)/20, is_sneaking, torad(5),                                             is_sprinting||limb_speed>=if(is_child, 0.8, 0.95), torad(2) +sin(torad( 45)+limb_swing/if(is_child, 2, 1)/1.1)*limb_speed/8,                                  torad(-3)*limb_speed +sin(limb_swing/if(is_child, 1.5, 1)/1.2*2)*limb_speed/30 +sin(torad(-45)+(age/if(is_child, 0.6, 1)+limb_swing)/7)/100 ) )",
+					"body.rz": "                                if(                                                       is_sneaking, -sin(limb_swing/if(is_child, 1.5, 1))*limb_speed/2,   is_sprinting||limb_speed>=if(is_child, 0.8, 0.95), 0,                                                                                                        -sin(limb_swing/if(is_child, 2, 1)/1.1)*limb_speed/6 )",
+					"body.tx": "if(var.sleep==1, 1, 0) * (1-0.5*var.child_scale)",
+					"body.ty": "(                        15.7  +if( !is_on_ground&&is_in_water, 1,                        is_sneaking, 1 +cos(limb_swing/if(is_child, 1.5, 1)*2)*limb_speed, is_sprinting||limb_speed>=if(is_child, 0.8, 0.95), -0.5 +sin(limb_swing/if(is_child, 2, 1)/1.2)*limb_speed/2, is_sitting||is_riding, 2, -1*limb_speed +cos(limb_swing/if(is_child, 1.5, 1)/1.2*2)*limb_speed/if(is_child||limb_speed>=0.7, 1, 2) +sin((age/if(is_child, 0.6, 1)+limb_swing)/7)/10 ) ) * (1-0.5*var.child_scale) +if(is_child, 12, 0)*var.child_scale",
+					"body.tz": "(                        1     +if( !is_on_ground&&is_in_water, -cos(age/2*2+limb_speed)/4,                                                                                                                                                                                is_sitting||is_riding, 1, 0) ) * (1-0.5*var.child_scale)"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -6, -1],
+			"submodels": [
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 6, 1],
+					"rotate": [90, 0, 0],
+					"submodels": [
+						{
+							"id": "bone3",
+							"invertAxis": "xy",
+							"translate": [0, 0, -1],
+							"rotate": [-180, 0, 0],
+							"boxes": [
+								{
+									"coordinates": [-2, -8, -3, 4, 16, 6],
+									"uvNorth": [54, 12, 62, 44],
+									"uvEast": [42, 12, 54, 44],
+									"uvSouth": [74, 12, 82, 44],
+									"uvWest": [62, 12, 74, 44],
+									"uvUp": [62, 12, 54, 0],
+									"uvDown": [70, 0, 62, 12],
+									"sizeAdd": 0.01
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "front_left_leg",
+			"id": "front_left_leg",
+			"invertAxis": "xy",
+			"translate": [1.1, -1, 4]
+		},
+		{
+			"part": "front_right_leg",
+			"id": "front_right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.1, -1, 4]
+		},
+		{
+			"part": "back_left_leg",
+			"id": "back_left_leg",
+			"invertAxis": "xy",
+			"translate": [1.1, -1, -7]
+		},
+		{
+			"part": "back_right_leg",
+			"id": "back_right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.1, -1, -7]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0, -9, -9.5],
+			"rotate": [-90, 0, 0]
+		},
+		{
+			"part": "tail2",
+			"id": "tail2",
+			"invertAxis": "xy",
+			"translate": [0, -1.5, -9]
+		}
+	]
+}

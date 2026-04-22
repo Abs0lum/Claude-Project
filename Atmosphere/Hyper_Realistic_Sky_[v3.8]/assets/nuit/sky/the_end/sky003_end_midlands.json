@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:the_end/sky003_end_midlands.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 703,
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [20.0, 0.0, 0.0]},
+			"axis": {"0": [20.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.0254901960784314, "green": 0.1698039215686275, "blue": 0.3266666666666667}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:the_end"]},
+		"biomes": {"entries": ["minecraft:end_midlands"]}
+		}
+}

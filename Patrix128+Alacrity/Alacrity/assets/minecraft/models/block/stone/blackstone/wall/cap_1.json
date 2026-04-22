@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "minecraft:block/templates/simple_wall/cap_1",
+	"texture_size": [32, 32],
+	"textures": {
+        "wall_parts": "block/stone/blackstone/wall_parts",
+        "particle": "block/stone/blackstone/particle"
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+        { "model": "minecraft:block/nature/dirt/coarse_dirt_1" },
+        { "model": "minecraft:block/nature/dirt/coarse_dirt_2" },
+        { "model": "minecraft:block/nature/dirt/coarse_dirt_3" },
+        { "model": "minecraft:block/nature/dirt/coarse_dirt_4" }
+      ]
+  }
+}

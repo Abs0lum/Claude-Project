@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/cobblestone/mossy_cobblestone_1" },
+      { "model": "minecraft:block/stone/cobblestone/mossy_cobblestone_2" },
+      { "model": "minecraft:block/stone/cobblestone/mossy_cobblestone_3" },
+      { "model": "minecraft:block/stone/cobblestone/mossy_cobblestone_4" }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+        { "model": "minecraft:block/nature/snow/snow_block/block_1" },
+        { "model": "minecraft:block/nature/snow/snow_block/block_2" },
+        { "model": "minecraft:block/nature/snow/snow_block/block_3" },
+        { "model": "minecraft:block/nature/snow/snow_block/block_4" },
+        { "model": "minecraft:block/nature/snow/snow_block/block_5" },
+        { "model": "minecraft:block/nature/snow/snow_block/block_6" },
+        { "model": "minecraft:block/nature/snow/snow_block/block_7" },
+        { "model": "minecraft:block/nature/snow/snow_block/block_8" }
+    ]
+  }
+}

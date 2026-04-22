@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+        { "model": "minecraft:block/nature/pale/moss_1" },
+        { "model": "minecraft:block/nature/pale/moss_2" },
+        { "model": "minecraft:block/nature/pale/moss_3" },
+        { "model": "minecraft:block/nature/pale/moss_4" }
+    ]
+  }
+}

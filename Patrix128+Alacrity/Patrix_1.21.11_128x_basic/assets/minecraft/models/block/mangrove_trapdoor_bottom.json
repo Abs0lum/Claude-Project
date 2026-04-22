@@ -1,0 +1,22 @@
+{
+	"parent": "block/thin_block",
+	"textures": {
+		"particle": "block/mangrove_trapdoor",
+		"texture": "block/mangrove_trapdoor",
+		"door": "block/mangrove_door_bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"north": {"uv": [0, 16, 16, 13], "texture": "#door", "cullface": "north"},
+				"east": {"uv": [0, 16, 16, 13], "texture": "#door", "cullface": "east"},
+				"south": {"uv": [0, 16, 16, 13], "texture": "#door", "cullface": "south"},
+				"west": {"uv": [0, 16, 16, 13], "texture": "#door", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
+			}
+		}
+	]
+}

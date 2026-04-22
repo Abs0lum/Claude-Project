@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east,mode=compare,powered=false": { "y": 270, "model": "minecraft:block/redstone/compactor/off" },
+    "facing=east,mode=compare,powered=true": { "y": 270, "model": "minecraft:block/redstone/compactor/on" },
+    "facing=east,mode=subtract,powered=false": { "y": 270, "model": "minecraft:block/redstone/compactor/subtract" },
+    "facing=east,mode=subtract,powered=true": { "y": 270, "model": "minecraft:block/redstone/compactor/subtract_on" },
+    "facing=north,mode=compare,powered=false": { "y": 180, "model": "minecraft:block/redstone/compactor/off" },
+    "facing=north,mode=compare,powered=true": { "y": 180, "model": "minecraft:block/redstone/compactor/on" },
+    "facing=north,mode=subtract,powered=false": { "y": 180, "model": "minecraft:block/redstone/compactor/subtract" },
+    "facing=north,mode=subtract,powered=true": { "y": 180, "model": "minecraft:block/redstone/compactor/subtract_on" },
+    "facing=south,mode=compare,powered=false": { "model": "minecraft:block/redstone/compactor/off" },
+    "facing=south,mode=compare,powered=true": { "model": "minecraft:block/redstone/compactor/on" },
+    "facing=south,mode=subtract,powered=false": { "model": "minecraft:block/redstone/compactor/subtract" },
+    "facing=south,mode=subtract,powered=true": { "model": "minecraft:block/redstone/compactor/subtract_on" },
+    "facing=west,mode=compare,powered=false": { "y": 90, "model": "minecraft:block/redstone/compactor/off" },
+    "facing=west,mode=compare,powered=true": { "y": 90, "model": "minecraft:block/redstone/compactor/on" },
+    "facing=west,mode=subtract,powered=false": { "y": 90, "model": "minecraft:block/redstone/compactor/subtract" },
+    "facing=west,mode=subtract,powered=true": { "y": 90, "model": "minecraft:block/redstone/compactor/subtract_on" }
+  }
+}

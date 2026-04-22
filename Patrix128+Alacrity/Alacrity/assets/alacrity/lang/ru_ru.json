@@ -1,0 +1,7 @@
+{
+    "rpo.alacrity": "Alacrity",
+    "rpo.alacrity.gravelStyle": "Гравий",
+    "rpo.alacrity.gravelStyle.gray": "Серый",
+    "rpo.alacrity.gravelStyle.dark": "Темный",
+    "rpo.alacrity.gravelStyle.tooltip": "Переключение между темным и серым (как в ванилле) гравием"
+}

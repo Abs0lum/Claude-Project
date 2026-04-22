@@ -1,0 +1,28 @@
+{
+    "multipart": [
+        {   "when": { "axis": "x" },
+            "apply": [
+                {"model": "block/pearlescent_froglight", "x": 90, "y": 90 },
+                {"model": "block/pearlescent_froglight", "x": 270, "y": 270 },
+                {"model": "block/pearlescent_froglight", "x": 90, "y": 270 },
+                {"model": "block/pearlescent_froglight", "x": 270, "y": 90 }
+            ]
+        },
+        {   "when": { "axis": "y" },
+            "apply": [
+                {"model": "block/pearlescent_froglight" },
+                {"model": "block/pearlescent_froglight", "y": 90 },
+                {"model": "block/pearlescent_froglight", "y": 180 },
+                {"model": "block/pearlescent_froglight", "y": 270 }
+            ]
+        },
+        {   "when": { "axis": "z" },
+            "apply": [
+                {"model": "block/pearlescent_froglight", "x": 90 },
+                {"model": "block/pearlescent_froglight", "x": 270, "y": 180 },
+                {"model": "block/pearlescent_froglight", "x": 90, "y": 180 },
+                {"model": "block/pearlescent_froglight", "x": 270 }
+            ]
+        }
+    ]
+}

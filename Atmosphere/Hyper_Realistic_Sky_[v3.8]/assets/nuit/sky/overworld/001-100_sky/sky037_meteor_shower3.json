@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/001-100_sky/sky037_meteor_shower3.png",
+	"blend": {"type" : "add"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 37,
+		"fade": {
+			"duration": 192000,
+			"keyFrames": {
+				"117400": 0.0,
+				"117450": 1.0,
+				"117800": 1.0,
+				"117850": 0.0
+				}
+			},
+		"rotation": {
+			"speed": 250.0,
+			"mapping": {"0": [-35.0, 0.0, -50.0]},
+			"axis": {"0": [-35.0, 0.0, -50.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]}
+		}
+}

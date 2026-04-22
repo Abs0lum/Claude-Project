@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "atmospherics",
+  "version": "2.6",
+  "name": "Atmospherics",
+  "description": "Biome-based fog, sky, clouds and stars editor with live preview.",
+  "authors": [
+    "Beash"
+  ],
+  "contact": {},
+  "license": "ARR",
+  "icon": "assets/beash/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.beash.ambientfog.AmbientFogClient"
+    ]
+  },
+  "mixins": [
+    "atmospherics.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": ">=26.1",
+    "java": ">=25",
+    "fabric-api": "*",
+    "sodium": "*"
+  }
+}
+

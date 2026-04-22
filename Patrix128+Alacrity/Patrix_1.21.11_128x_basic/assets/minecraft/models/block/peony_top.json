@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_top",
+  "textures": {
+    "cross": "minecraft:block/peony_top"
+  }
+}

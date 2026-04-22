@@ -1,0 +1,6 @@
+{
+    "parent": "block/crystal1",
+    "textures": {
+        "crystal": "block/redstone_block"
+    }
+}

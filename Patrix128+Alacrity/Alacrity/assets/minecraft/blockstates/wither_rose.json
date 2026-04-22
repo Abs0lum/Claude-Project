@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nature/flowers/wither_rose_1" },
+      { "model": "minecraft:block/nature/flowers/wither_rose_1", "y": 90 },
+      { "model": "minecraft:block/nature/flowers/wither_rose_1", "y": 180 },
+      { "model": "minecraft:block/nature/flowers/wither_rose_1", "y": 270 }
+	]
+  }
+}

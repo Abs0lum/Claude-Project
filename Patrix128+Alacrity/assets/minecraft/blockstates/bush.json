@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/bush" },
+            { "model": "block/bush", "y": 90 },
+            { "model": "block/bush", "y": 180 },
+            { "model": "block/bush", "y": 270 },
+            { "model": "block/bush2" },
+            { "model": "block/bush2", "y": 90 },
+            { "model": "block/bush2", "y": 180 },
+            { "model": "block/bush2", "y": 270 }
+        ]
+    }
+}

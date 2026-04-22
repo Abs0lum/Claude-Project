@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "minecraft:block/templates/stone_bricks_wall/post_3",
+	"texture_size": [32, 32],
+	"textures": {
+        "cubes": "block/stone/endstone/cubes",
+        "extra": "block/stone/endstone/bricks_extra",
+        "wall_parts": "block/stone/endstone/wall_parts",
+		"particle": "block/stone/stone_particle"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "block/tpl_core/stairs_s/stairs_inn",
+	"textures": {
+        "all": "block/stone/tuff/natural_2",
+        "particle": "block/stone/tuff/particle"
+	}
+}

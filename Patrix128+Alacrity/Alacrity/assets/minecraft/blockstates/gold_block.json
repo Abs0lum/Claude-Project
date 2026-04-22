@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/materials/gold/block_1" },
+      { "model": "minecraft:block/materials/gold/block_2" },
+      { "model": "minecraft:block/materials/gold/block_3" },
+      { "model": "minecraft:block/materials/gold/block_4" }
+    ]
+  }
+}

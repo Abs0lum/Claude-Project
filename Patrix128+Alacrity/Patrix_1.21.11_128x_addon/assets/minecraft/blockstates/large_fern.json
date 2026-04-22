@@ -1,0 +1,16 @@
+{
+    "multipart": [
+        {   "when": { "half": "lower" },
+            "apply": { "model": "block/large_fern_bottom" }
+        },
+        {   "when": { "half": "upper" },
+            "apply": { "model": "block/large_fern_top" }
+        },
+        {   "when": { "half": "upper" },
+            "apply": [
+                { "model": "block/large_fern_top_extra" },
+                { "model": "block/large_fern_top_extra", "y": 90 }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/polished_tuff" },
+            { "model": "block/polished_tuff", "y": 90 },
+            { "model": "block/polished_tuff", "y": 180 },
+            { "model": "block/polished_tuff", "y": 270 },
+            { "model": "block/polished_tuff", "x": 90 },
+            { "model": "block/polished_tuff", "x": 90, "y": 90 },
+            { "model": "block/polished_tuff", "x": 90, "y": 180 },
+            { "model": "block/polished_tuff", "x": 90, "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "parent": "block/templates/wooden_stairs/slope_straight_e",
+	"textures": {
+        "1": "block/wooden/mangrove/double_2",
+        "2": "block/wooden/mangrove/double_1",
+        "e": "block/wooden/mangrove/double_end_2",
+        "c": "block/wooden/mangrove/clean_2",
+        "b": "block/wooden/mangrove/stairs_back",
+        "particle": "block/wooden/mangrove/particle"
+	}
+}

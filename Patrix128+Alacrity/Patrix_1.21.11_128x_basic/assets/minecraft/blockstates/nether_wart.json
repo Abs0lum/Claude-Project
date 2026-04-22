@@ -1,0 +1,28 @@
+{
+    "multipart": [
+        {   "when": { "age": "0" },
+            "apply": [
+                { "model": "block/nether_wart_stage0" },
+                { "model": "block/nether_wart_stage0", "y": 90 },
+                { "model": "block/nether_wart_stage0", "y": 180 },
+                { "model": "block/nether_wart_stage0", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "1|2" },
+            "apply": [
+                { "model": "block/nether_wart_stage1" },
+                { "model": "block/nether_wart_stage1", "y": 90 },
+                { "model": "block/nether_wart_stage1", "y": 180 },
+                { "model": "block/nether_wart_stage1", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "3" },
+            "apply": [
+                { "model": "block/nether_wart_stage2" },
+                { "model": "block/nether_wart_stage2", "y": 90 },
+                { "model": "block/nether_wart_stage2", "y": 180 },
+                { "model": "block/nether_wart_stage2", "y": 270 }
+            ]
+        }
+    ]
+}

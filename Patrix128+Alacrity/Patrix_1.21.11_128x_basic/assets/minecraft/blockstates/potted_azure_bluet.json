@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/potted_azure_bluet" },
+            { "model": "block/potted_azure_bluet", "y": 90 },
+            { "model": "block/potted_azure_bluet", "y": 180 },
+            { "model": "block/potted_azure_bluet", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"schemaVersion": 1,
+	"type": "monocolor",
+	"color": {"red": 0.0, "green": 0.0, "blue": 0.0},
+	"blend": {"type" : "add"},
+	"properties": {
+		"visibleUnderwater": true,
+		"layer": 1000
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]}
+		}
+}

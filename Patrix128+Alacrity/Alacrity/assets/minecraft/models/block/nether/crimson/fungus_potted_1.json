@@ -1,0 +1,48 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/tinted_cross",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "block/nether/crimson/crimson_roots",
+		"2": "block/nether/crimson/fungus",
+		"particle": "block/nether/crimson/crimson_particle"
+	},
+	"elements": [
+		{
+			"name": "wart",
+			"from": [5.5, 12, 5.4205],
+			"to": [10.5, 14, 10.4205],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8.75, 9.25738, 7.67054]},
+			"faces": {
+				"north": {"uv": [0, 5, 5, 7], "texture": "#2"},
+				"east": {"uv": [0, 5, 5, 7], "texture": "#2"},
+				"south": {"uv": [0, 5, 5, 7], "texture": "#2"},
+				"west": {"uv": [5, 5, 10, 7], "texture": "#2"},
+				"up": {"uv": [5, 0, 10, 5], "texture": "#2"},
+				"down": {"uv": [0, 7, 5, 12], "texture": "#2"}
+			}
+		},
+		{
+			"name": "wart",
+			"from": [7, 7, 6.9205],
+			"to": [9, 12, 8.9205],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8.75, 9.25738, 7.67054]},
+			"faces": {
+				"north": {"uv": [10, 7.5, 12, 12.5], "texture": "#2"},
+				"east": {"uv": [10.5, 7.5, 12.5, 12.5], "texture": "#2"},
+				"south": {"uv": [11, 7.5, 13, 12.5], "texture": "#2"},
+				"west": {"uv": [9.5, 7.5, 11.5, 12.5], "texture": "#2"},
+				"down": {"uv": [12, 10.5, 14, 12.5], "texture": "#2"}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [5.5, 7.015, 4.5],
+			"to": [11.5, 7.015, 10.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [10.5, 7, 8.5]},
+			"faces": {
+				"up": {"uv": [3.25, 0, 6.25, 3], "rotation": 270, "texture": "#0"}
+			}
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/misc/honey/honey_block_1" },
+      { "model": "minecraft:block/misc/honey/honey_block_2" },
+      { "model": "minecraft:block/misc/honey/honey_block_3" },
+      { "model": "minecraft:block/misc/honey/honey_block_4" }
+    ]
+  }
+}

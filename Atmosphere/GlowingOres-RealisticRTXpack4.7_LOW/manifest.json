@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "GLOWING ORES to REALISTIC RTX pack v4.7 / LOW",
+        "description": "RealSource RTX texture pack for PC with BEDROCK",
+        "uuid": "1dd4b609-b5db-4994-bc15-ccaa92e1a6c3",
+        "version": [ 4, 7, 0 ],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "097f6629-338d-466d-aa32-7bb58535e458",
+            "version": [ 4, 7, 0 ]
+        }
+    ]
+}

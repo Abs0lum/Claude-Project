@@ -1,0 +1,9 @@
+{
+    "clight_blueit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/glass/led_framed/pane_straight",
+	"textures": {
+        "5": "block/glass/stained/light_blue/pane",
+		"6": "block/glass/normal/pane_parts",
+        "particle": "block/glass/particle/light_blue"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+        "0": "block/nature/crops/cocoa",
+		"particle": "block/soils/dirt/particle"
+	},
+	"elements": [
+		{
+			"from": [4.5, 2, 8.5],
+			"to": [11.5, 10.5, 15.5],
+			"faces": {
+				"north": {"uv": [9, 7.75, 12.5, 12], "texture": "#0"},
+				"east": {"uv": [5.25, 7.75, 8.75, 12], "texture": "#0"},
+				"south": {"uv": [9, 3.5, 12.5, 7.75], "texture": "#0"},
+				"west": {"uv": [5.25, 3.5, 8.75, 7.75], "texture": "#0"},
+				"up": {"uv": [11.75, 0, 15.25, 3.5], "texture": "#0"},
+				"down": {"uv": [8, 0, 11.5, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 10.5, 13],
+			"to": [8, 14.5, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 3.5]},
+			"faces": {
+				"east": {"uv": [15.5, 14, 14, 16], "texture": "#0"},
+				"west": {"uv": [14, 14, 15.5, 16], "texture": "#0"}
+			}
+		}
+	]
+}

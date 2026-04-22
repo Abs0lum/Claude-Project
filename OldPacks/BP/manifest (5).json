@@ -1,0 +1,56 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "FallingTree BP [DAMAGE v2.7.3]",
+    "description": "v2.7.3 DAMAGE \u2014 fixes missing player damage during tree-fall impact. Previous versions used runCommand('damage @s ...') which silently failed in some engine builds (player-scoped @s binding flaky; peaceful context stripped the cmd). Switched to direct entity.applyDamage() script API which cannot be suppressed by difficulty. Also loosened corridor width 1.2\u21921.5, along -0.5\u2192trunkLen+1.5, dy -1.5\u21923, so players clipped by the visible trunk edge still get hit. Added explicit 'impact sweep: N/M in corridor' log line for diagnostics. Tree now damages ANY player in the fall path including the chopper. All other behavior identical to v2.7.2.",
+    "uuid": "be7227ad-138a-45a5-9e38-4c2cf4732440",
+    "version": [
+      2,
+      7,
+      3
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      80
+    ]
+  },
+  "modules": [
+    {
+      "description": "FallingTree data",
+      "type": "data",
+      "uuid": "a8b6523b-c9ac-4a1b-8586-aea316833b4b",
+      "version": [
+        2,
+        7,
+        3
+      ]
+    },
+    {
+      "description": "FallingTree scripts",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "6fed24a7-f6c9-47ef-90ec-6b0b20d5ca0c",
+      "version": [
+        2,
+        7,
+        3
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    },
+    {
+      "uuid": "4410d782-8723-40e3-9586-8262cbb9a1f8",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

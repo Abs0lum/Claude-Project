@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/materials/copper/block_oxid_100_1" },
+      { "model": "minecraft:block/materials/copper/block_oxid_100_2" },
+      { "model": "minecraft:block/materials/copper/block_oxid_100_3" },
+      { "model": "minecraft:block/materials/copper/block_oxid_100_4" }
+    ]
+  }
+}

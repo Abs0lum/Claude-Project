@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/simple_wall/tall_e_2",
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/stone/andesite/side",
+        "particle": "block/stone/andesite/particle"
+	}
+}

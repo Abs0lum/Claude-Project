@@ -1,0 +1,14 @@
+{
+    "textures": {
+        "particle": "block/mycelium_top",
+        "inside": "block/mycelium_top"
+    },
+    "elements": [
+        {   "from": [ 1, 0, 1 ],
+            "to": [ 15, 15, 15 ],
+            "faces": {
+                "up": { "texture": "#inside", "cullface": "up" }
+            }
+        }
+    ]
+}

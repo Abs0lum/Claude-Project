@@ -1,0 +1,27 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/small_dripleaf_stem_top",
+		"stem": "block/small_dripleaf_stem_top"
+	},
+	"elements": [
+		{
+			"from": [3, -13.9, 8],
+			"to": [13, 0.1, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 16], "rotation": 180, "texture": "#stem", "cullface": "down"},
+				"south": {"uv": [13, 0, 3, 16], "rotation": 180, "texture": "#stem", "cullface": "down"}
+			}
+		},
+		{
+			"from": [8, -15.9, 3],
+			"to": [8, 0.1, 13],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [3, 0, 13, 16], "rotation": 180, "texture": "#stem", "cullface": "down"},
+				"west": {"uv": [13, 0, 3, 16], "rotation": 180, "texture": "#stem", "cullface": "down"}
+			}
+		}
+	]
+}

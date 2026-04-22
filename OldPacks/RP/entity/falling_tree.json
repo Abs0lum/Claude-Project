@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ft:falling_tree",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "oak":      "geometry.ft_falling_tree.oak",
+        "spruce":   "geometry.ft_falling_tree.spruce",
+        "birch":    "geometry.ft_falling_tree.birch",
+        "jungle":   "geometry.ft_falling_tree.jungle",
+        "acacia":   "geometry.ft_falling_tree.acacia",
+        "dark_oak": "geometry.ft_falling_tree.dark_oak",
+        "mangrove": "geometry.ft_falling_tree.mangrove",
+        "cherry":   "geometry.ft_falling_tree.cherry",
+        "crimson":  "geometry.ft_falling_tree.crimson",
+        "warped":   "geometry.ft_falling_tree.warped"
+      },
+      "textures": {
+        "oak": "textures/entity/fallingtree/oak",
+        "spruce": "textures/entity/fallingtree/spruce",
+        "birch": "textures/entity/fallingtree/birch",
+        "jungle": "textures/entity/fallingtree/jungle",
+        "acacia": "textures/entity/fallingtree/acacia",
+        "dark_oak": "textures/entity/fallingtree/dark_oak",
+        "mangrove": "textures/entity/fallingtree/mangrove",
+        "cherry": "textures/entity/fallingtree/cherry",
+        "crimson": "textures/entity/fallingtree/crimson",
+        "warped": "textures/entity/fallingtree/warped"
+      },
+      "render_controllers": ["controller.render.ft_falling_tree"],
+      "animations": {
+        "setup": "animation.ft_falling_tree.setup",
+        "fall": "animation.ft_falling_tree.fall",
+        "rest": "animation.ft_falling_tree.rest",
+        "fall_controller": "controller.animation.ft_falling_tree.fall"
+      },
+      "scripts": {
+        "animate": ["setup", "fall_controller"]
+      },
+      "spawn_egg": {
+        "texture": "oak"
+      }
+    }
+  }
+}

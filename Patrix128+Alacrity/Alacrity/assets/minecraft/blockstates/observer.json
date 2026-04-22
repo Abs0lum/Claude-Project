@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=down,powered=false": { "model": "minecraft:block/redstone/obs", "x": 90  },
+    "facing=down,powered=true": { "model": "minecraft:block/redstone/obs_on", "x": 90  },
+    "facing=east,powered=false": { "model": "minecraft:block/redstone/obs", "y": 90  },
+    "facing=east,powered=true": { "model": "minecraft:block/redstone/obs_on", "y": 90  },
+    "facing=north,powered=false": { "model": "minecraft:block/redstone/obs"  },
+    "facing=north,powered=true": { "model": "minecraft:block/redstone/obs_on"  },
+    "facing=south,powered=false": { "model": "minecraft:block/redstone/obs", "y": 180  },
+    "facing=south,powered=true": { "model": "minecraft:block/redstone/obs_on", "y": 180  },
+    "facing=up,powered=false": { "model": "minecraft:block/redstone/obs", "x": 270  },
+    "facing=up,powered=true": { "model": "minecraft:block/redstone/obs_on", "x": 270  },
+    "facing=west,powered=false": { "model": "minecraft:block/redstone/obs", "y": 270  },
+    "facing=west,powered=true": { "model": "minecraft:block/redstone/obs_on", "y": 270  }
+  }
+}

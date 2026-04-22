@@ -1,0 +1,49 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "block/materials/copper/cubes_waxed_extra_0",
+		"top": "block/materials/copper/cubes_waxed_0",
+		"particle": "block/materials/copper/cubes_waxed_extra_0"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [16, 8, 0, 16], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#top", "cullface": "east"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [16, 8, 0, 16], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [16, 0, 0, 16], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#top", "cullface": "down"}
+			}
+		},
+		{
+			"from": [8, 8, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [16, 0, 8, 8], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#top", "cullface": "east"},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [16, 8, 0, 16], "texture": "#1"},
+				"up": {"uv": [16, 8, 0, 16], "rotation": 90, "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [75, -135, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"rotation": [0, -90, 0]
+		}
+	}
+}

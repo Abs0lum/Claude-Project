@@ -1,0 +1,229 @@
+{
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -25, 0],
+			"boxes": [
+				{
+					"coordinates": [-5, 17, -5, 10, 15, 10],
+					"uvNorth": [10, 10, 20, 25],
+					"uvEast": [0, 10, 10, 25],
+					"uvSouth": [30, 10, 40, 25],
+					"uvWest": [20, 10, 30, 25],
+					"uvUp": [20, 10, 10, 0],
+					"uvDown": [30, 0, 20, 10]
+				},
+				{
+					"coordinates": [-3, 32, -3, 6, 7, 6],
+					"uvNorth": [6, 25, 12, 32],
+					"uvEast": [0, 25, 6, 32],
+					"uvSouth": [18, 25, 24, 32],
+					"uvWest": [12, 25, 18, 32],
+					"uvUp": [6, 6, 0, 0]
+				},
+				{
+					"coordinates": [-14, 29, 1, 14, 16, 0.01],
+					"uvNorth": [50, 0, 64, 16],
+					"uvSouth": [50, 16, 64, 32]
+				},
+				{
+					"coordinates": [0, 29, 1, 14, 16, 0.01],
+					"uvNorth": [64, 0, 50, 16],
+					"uvSouth": [64, 16, 50, 32]
+				}
+			]
+		},
+		{
+			"part": "tentacle1",
+			"id": "tentacle1",
+			"invertAxis": "xy",
+			"translate": [-5, -18, 0],
+			"submodels": [
+				{
+					"id": "tentacle1_rotation",
+					"invertAxis": "xy",
+					"translate": [5, 9, 0],
+					"boxes": [
+						{
+							"coordinates": [-1, -11, -2.25, 2, 20, 2],
+							"uvNorth": [42, 2, 44, 20],
+							"uvEast": [40, 2, 42, 20],
+							"uvSouth": [46, 2, 48, 20],
+							"uvWest": [44, 2, 46, 20],
+							"uvUp": [44, 2, 42, 0],
+							"uvDown": [46, 0, 44, 2]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "tentacle2",
+			"id": "tentacle2",
+			"invertAxis": "xy",
+			"translate": [-3.5, -18, 3.5],
+			"submodels": [
+				{
+					"id": "tentacle2_rotation",
+					"invertAxis": "xy",
+					"translate": [3.5, 9, -3.5],
+					"boxes": [
+						{
+							"coordinates": [-1, -7, -2.25, 2, 16, 2],
+							"uvNorth": [42, 2, 44, 20],
+							"uvEast": [40, 2, 42, 20],
+							"uvSouth": [46, 2, 48, 20],
+							"uvWest": [44, 2, 46, 20],
+							"uvUp": [44, 2, 42, 0],
+							"uvDown": [46, 0, 44, 2]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "tentacle3",
+			"id": "tentacle3",
+			"invertAxis": "xy",
+			"translate": [0, -18, 5],
+			"boxes": [
+				{
+					"coordinates": [-1, 2, -7.25, 2, 16, 2],
+					"uvNorth": [42, 2, 44, 20],
+					"uvEast": [40, 2, 42, 20],
+					"uvSouth": [46, 2, 48, 20],
+					"uvWest": [44, 2, 46, 20],
+					"uvUp": [44, 2, 42, 0],
+					"uvDown": [46, 0, 44, 2]
+				}
+			]
+		},
+		{
+			"part": "tentacle4",
+			"id": "tentacle4",
+			"invertAxis": "xy",
+			"translate": [3.5, -18, 3.5],
+			"submodels": [
+				{
+					"id": "tentacle4_rotation",
+					"invertAxis": "xy",
+					"translate": [-3.5, 9, -3.5],
+					"boxes": [
+						{
+							"coordinates": [-1, -7, -2.25, 2, 16, 2],
+							"uvNorth": [42, 2, 44, 20],
+							"uvEast": [40, 2, 42, 20],
+							"uvSouth": [46, 2, 48, 20],
+							"uvWest": [44, 2, 46, 20],
+							"uvUp": [44, 2, 42, 0],
+							"uvDown": [46, 0, 44, 2]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "tentacle5",
+			"id": "tentacle5",
+			"invertAxis": "xy",
+			"translate": [-10, -18, 5],
+			"rotate": [0, -90, 0],
+			"submodels": [
+				{
+					"id": "tentacle5_rotation",
+					"invertAxis": "xy",
+					"translate": [-5, 9, -10],
+					"rotate": [0, 90, 0],
+					"boxes": [
+						{
+							"coordinates": [-1, -11, -2.25, 2, 20, 2],
+							"uvNorth": [42, 2, 44, 20],
+							"uvEast": [40, 2, 42, 20],
+							"uvSouth": [46, 2, 48, 20],
+							"uvWest": [44, 2, 46, 20],
+							"uvUp": [44, 2, 42, 0],
+							"uvDown": [46, 0, 44, 2]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "tentacle6",
+			"id": "tentacle6",
+			"invertAxis": "xy",
+			"translate": [3.5, -18, -3.5],
+			"submodels": [
+				{
+					"id": "tentacle6_rotation",
+					"invertAxis": "xy",
+					"translate": [-3.5, 9, 3.5],
+					"boxes": [
+						{
+							"coordinates": [-1, -7, -2.25, 2, 16, 2],
+							"uvNorth": [42, 2, 44, 20],
+							"uvEast": [40, 2, 42, 20],
+							"uvSouth": [46, 2, 48, 20],
+							"uvWest": [44, 2, 46, 20],
+							"uvUp": [44, 2, 42, 0],
+							"uvDown": [46, 0, 44, 2]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "tentacle7",
+			"id": "tentacle7",
+			"invertAxis": "xy",
+			"translate": [0, -18, -1.65],
+			"rotate": [0, -180, 0],
+			"submodels": [
+				{
+					"id": "tentacle7_rotation",
+					"invertAxis": "xy",
+					"translate": [0, 9, -1.7],
+					"rotate": [0, -180, 0],
+					"boxes": [
+						{
+							"coordinates": [-1, -7, -2.25, 2, 16, 2],
+							"uvNorth": [42, 2, 44, 20],
+							"uvEast": [40, 2, 42, 20],
+							"uvSouth": [46, 2, 48, 20],
+							"uvWest": [44, 2, 46, 20],
+							"uvUp": [44, 2, 42, 0],
+							"uvDown": [46, 0, 44, 2]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "tentacle8",
+			"id": "tentacle8",
+			"invertAxis": "xy",
+			"translate": [-3.5, -18, -3.5],
+			"submodels": [
+				{
+					"id": "tentacle8_rotation",
+					"invertAxis": "xy",
+					"translate": [3.5, 9, 3.5],
+					"boxes": [
+						{
+							"coordinates": [-1, -7, -2.25, 2, 16, 2],
+							"uvNorth": [42, 2, 44, 20],
+							"uvEast": [40, 2, 42, 20],
+							"uvSouth": [46, 2, 48, 20],
+							"uvWest": [44, 2, 46, 20],
+							"uvUp": [44, 2, 42, 0],
+							"uvDown": [46, 0, 44, 2]
+						}
+					]
+				}
+			]
+		}
+	]
+}

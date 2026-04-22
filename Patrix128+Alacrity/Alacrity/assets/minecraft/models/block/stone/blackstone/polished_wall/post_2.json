@@ -1,0 +1,11 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/templates/polished_wall/post_2",
+	"texture_size": [32, 32],
+	"textures": {
+		"3": "block/stone/blackstone/cubes",
+		"4": "block/stone/blackstone/bricks_extra",
+		"5": "block/stone/blackstone/wall_parts",
+		"particle": "block/stone/blackstone/particle"
+	}
+}

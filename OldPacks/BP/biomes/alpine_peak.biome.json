@@ -1,0 +1,82 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "pw:alpine_peak"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.5,
+        "snow_accumulation": [
+          0.5,
+          1.0
+        ],
+        "temperature": 0.0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "extreme"
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 4,
+          "sea_floor_material": "minecraft:gravel",
+          "foundation_material": "minecraft:stone",
+          "mid_material": "minecraft:stone",
+          "top_material": "minecraft:snow",
+          "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": "minecraft:packed_ice",
+              "mid_material": "minecraft:packed_ice"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [
+              0.6,
+              1.0
+            ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:stone",
+              "mid_material": "minecraft:stone"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [
+              0.1,
+              0.4
+            ]
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "mountain",
+          "cold",
+          "frozen",
+          "overworld",
+          "monster",
+          "animal",
+          "pw_alpine"
+        ]
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "targets": [
+              "minecraft:frozen_peaks",
+              "minecraft:jagged_peaks"
+            ],
+            "amount": 1.0,
+            "dimension": "minecraft:overworld",
+            "noise_frequency_scale": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

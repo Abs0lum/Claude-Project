@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/materials/iron/raw_1" },
+      { "model": "minecraft:block/materials/iron/raw_2" },
+      { "model": "minecraft:block/materials/iron/raw_3" },
+      { "model": "minecraft:block/materials/iron/raw_4" }
+    ]
+  }
+}

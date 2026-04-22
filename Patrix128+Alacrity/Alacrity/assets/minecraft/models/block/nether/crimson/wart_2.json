@@ -1,0 +1,22 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"3": "block/nether/crimson/wart",
+		"particle": "block/nether/crimson/wart_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [8, 0, 16, 8], "texture": "#3", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#3", "cullface": "east"},
+				"south": {"uv": [8, 0, 16, 8], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [8, 0, 16, 8], "texture": "#3", "cullface": "west"},
+				"up": {"uv": [8, 0, 16, 8], "texture": "#3", "cullface": "up"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#3", "cullface": "down"}
+			}
+		}
+	]
+}

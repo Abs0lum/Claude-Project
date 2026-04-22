@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/endstone/bricks_1" },
+      { "model": "minecraft:block/stone/endstone/bricks_2" },
+      { "model": "minecraft:block/stone/endstone/bricks_3" },
+      { "model": "minecraft:block/stone/endstone/bricks_4" },
+      { "model": "minecraft:block/stone/endstone/bricks_5" },
+      { "model": "minecraft:block/stone/endstone/bricks_6" },
+      { "model": "minecraft:block/stone/endstone/bricks_7" },
+      { "model": "minecraft:block/stone/endstone/bricks_8" },
+      { "model": "minecraft:block/stone/endstone/bricks_9" },
+      { "model": "minecraft:block/stone/endstone/bricks_10" },
+      { "model": "minecraft:block/stone/endstone/bricks_11" },
+      { "model": "minecraft:block/stone/endstone/bricks_12" },
+      { "model": "minecraft:block/stone/endstone/bricks_13" },
+      { "model": "minecraft:block/stone/endstone/bricks_14" },
+      { "model": "minecraft:block/stone/endstone/bricks_15" },
+      { "model": "minecraft:block/stone/endstone/bricks_16" }
+    ]
+  }
+}

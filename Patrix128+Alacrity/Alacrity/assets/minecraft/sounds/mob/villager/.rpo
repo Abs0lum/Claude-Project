@@ -1,0 +1,4 @@
+{
+    condition: "!villagersSounds.female",
+    fallbacks: "assets/minecraft/sounds/mob/villager_female"
+}

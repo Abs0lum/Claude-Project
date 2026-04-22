@@ -1,0 +1,8 @@
+{
+	"parent": "block/templates/glass/led_framed/pane_corner",
+	"textures": {
+        "5": "block/glass/stained/black/pane",
+		"6": "block/glass/normal/pane_parts",
+        "particle": "block/glass/particle/black"
+	}
+}

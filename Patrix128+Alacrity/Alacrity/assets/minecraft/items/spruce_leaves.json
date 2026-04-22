@@ -1,0 +1,7 @@
+{
+  "model": { 
+  	"type": "minecraft:model", 
+      "model": "minecraft:block/nature/leaves/spruce/leaves_1",
+  	"tints": [{ "type": "minecraft:constant", "value": -10380959 }]
+  }
+}

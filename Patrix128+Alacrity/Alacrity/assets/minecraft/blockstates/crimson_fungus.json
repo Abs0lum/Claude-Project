@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/crimson/fungus_1", "y": 0   },
+      { "model": "minecraft:block/nether/crimson/fungus_1", "y": 90  },
+      { "model": "minecraft:block/nether/crimson/fungus_1", "y": 180 },
+      { "model": "minecraft:block/nether/crimson/fungus_1", "y": 270 }
+	]
+  }
+}

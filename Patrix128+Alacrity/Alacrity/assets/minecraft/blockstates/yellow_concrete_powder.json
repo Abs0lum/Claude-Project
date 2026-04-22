@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/concrete/powder/yellow_1" },
+      { "model": "minecraft:block/stone/concrete/powder/yellow_2" },
+      { "model": "minecraft:block/stone/concrete/powder/yellow_3" },
+      { "model": "minecraft:block/stone/concrete/powder/yellow_4" }
+    ]
+  }
+}

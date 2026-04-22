@@ -1,0 +1,20 @@
+{
+	"texture": "minecraft:textures/environment/moon_phases.png",
+	"display": {
+		"scale": "20",
+		"distance": "100"
+	},
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "0",
+		"degrees_z": "moon_rotation",
+		"base_degrees_x": "-80",
+		"base_degrees_y": "-51.8",
+		"base_degrees_z": "55"
+	},
+	"properties": {
+		"has_moon_phases": true,
+		"blend": true,
+		"alpha": "(1-submerged) * ((ifElse((dayTime > 13000) & (dayTime < 13501), 0.001 * (dayTime - 12500), ifElse((dayTime > 13500) & (dayTime < 22501), 1, ifElse((dayTime > 22500) & (dayTime < 23000), -0.001 * (dayTime - 23500), (ifElse((posY > 264), 1, ifElse((posY > 255) & (posY < 265), 0.05 * (posY-245), 0.5))))))))"
+	}
+}

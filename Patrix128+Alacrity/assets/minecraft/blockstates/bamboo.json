@@ -1,0 +1,67 @@
+{
+    "multipart": [
+        {   "when": { "age": "0","leaves": "none" },
+            "apply": [
+                { "model": "block/bamboo_age1" },
+                { "model": "block/bamboo_age1", "y": 90 },
+                { "model": "block/bamboo_age1", "y": 180 },
+                { "model": "block/bamboo_age1", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "0","leaves": "small" },
+            "apply": [
+                { "model": "block/bamboo_age0" },
+                { "model": "block/bamboo_age0", "y": 90 },
+                { "model": "block/bamboo_age0", "y": 180 },
+                { "model": "block/bamboo_age0", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "0","leaves": "large" },
+            "apply": [
+                { "model": "block/bamboo_age0" },
+                { "model": "block/bamboo_age0", "y": 90 },
+                { "model": "block/bamboo_age0", "y": 180 },
+                { "model": "block/bamboo_age0", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "1","leaves": "none" },
+            "apply": [
+                { "model": "block/bamboo_age2" },
+                { "model": "block/bamboo_age2", "y": 90 },
+                { "model": "block/bamboo_age2", "y": 180 },
+                { "model": "block/bamboo_age2", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "1","leaves": "small" },
+            "apply": [
+                { "model": "block/bamboo_age1" },
+                { "model": "block/bamboo_age1", "y": 90 },
+                { "model": "block/bamboo_age1", "y": 180 },
+                { "model": "block/bamboo_age1", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "1","leaves": "large" },
+            "apply": [
+                { "model": "block/bamboo_age0" },
+                { "model": "block/bamboo_age0", "y": 90 },
+                { "model": "block/bamboo_age0", "y": 180 },
+                { "model": "block/bamboo_age0", "y": 270 }
+            ]
+        },
+        {   "when": { "leaves": "small" },
+            "apply": { "model": "block/bamboo_small_leaves" }
+        },
+        {   "when": { "leaves": "large" },
+            "apply": { "model": "block/bamboo_large_leaves" }
+        },
+        {   "when": { "leaves": "none" },
+            "apply": [
+                { "model": "block/air", "weight": 24 },
+                { "model": "block/bamboo_extra_leaves", "weight": 1 },
+                { "model": "block/bamboo_extra_leaves", "y": 90, "weight": 1 },
+                { "model": "block/bamboo_extra_leaves", "y": 180, "weight": 1 },
+                { "model": "block/bamboo_extra_leaves", "y": 270, "weight": 1 }
+            ]
+        }
+    ]
+}

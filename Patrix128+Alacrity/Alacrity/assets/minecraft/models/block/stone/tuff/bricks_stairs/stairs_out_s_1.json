@@ -1,0 +1,8 @@
+{
+    "parent": "block/tpl_core/stairs_faced_all/stairs_out_s",
+	"textures": {
+        "1": "block/stone/tuff/cubes_1",
+        "2": "block/stone/tuff/cubes_2", 
+        "particle": "block/stone/tuff/particle"
+	}
+}

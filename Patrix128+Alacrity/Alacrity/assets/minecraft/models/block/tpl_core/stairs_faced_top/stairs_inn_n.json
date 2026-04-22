@@ -1,0 +1,12 @@
+{
+    "parent": "block/tpl_core/stairs_faced/stairs_inn_n",
+	"textures": {
+        "1": "#1",
+        "2": "#2",
+        "alt_1": "#1",
+        "alt_2": "#2",
+        "t": "#t",
+        "b": "#t",
+        "particle": "block/stone/quartz/particle"
+	}
+}

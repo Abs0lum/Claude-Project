@@ -1,0 +1,9 @@
+{
+    "parent": "block/tpl_core/block_f_top",
+	"textures": {
+        "1": "block/stone/tuff/chiseled_side_4",
+        "2": "block/stone/tuff/chiseled_side_3",
+        "t": "block/stone/tuff/chiseled_top_4",
+        "particle": "block/stone/tuff/particle"
+	}
+}

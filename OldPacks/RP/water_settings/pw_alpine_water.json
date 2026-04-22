@@ -1,0 +1,38 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:water_settings": {
+    "description": {
+      "identifier": "pw:alpine_water"
+    },
+    "components": {
+      "minecraft:particle_concentrations": {
+        "cdom": 0.2,
+        "chlorophyll": 0.5,
+        "suspended_sediment": 0.0
+      },
+      "minecraft:caustics": {
+        "enabled": true,
+        "frame_length": 0.1,
+        "power": 3.5,
+        "scale": 0.5
+      },
+      "minecraft:waves": {
+        "enabled": true,
+        "depth": 0.08,
+        "direction_increment": 73,
+        "frequency": 1.3,
+        "frequency_scaling": 1.12,
+        "interlacing": 0.3,
+        "octaves": 4,
+        "pulling": 0.4,
+        "smoothness": 0.8,
+        "detail": 0.85,
+        "speed": 1.1,
+        "speed_scaling": 1.04
+      },
+      "minecraft:biome_water_color_contribution": {
+        "contribution": 0.6
+      }
+    }
+  }
+}

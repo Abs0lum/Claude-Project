@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"type": "decorations",
+	"sun": "minecraft:textures/environment/sun.png",
+	"showSun": true,
+	"showMoon": false,
+	"showStars": false,
+	"blend": {"type" : "decorations"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 407,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"507050": 0.0,
+				"507250": 1.0,
+				"507450": 0.0,
+				"507600": 0.0,
+				"507800": 1.0,
+				"508000": 0.0
+				}
+			},
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [0.0, 0.0, -90.0]},
+			"axis": {"0": [120.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]}
+		}
+}

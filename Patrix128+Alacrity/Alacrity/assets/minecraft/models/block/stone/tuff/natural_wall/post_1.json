@@ -1,0 +1,9 @@
+{
+	"parent": "block/tpl_core/wall_natural/post",
+	"textures": {
+        "cubes": "block/stone/tuff/cubes_1",
+        "slab_cubes": "block/stone/tuff/polished_slab_cubes_1",
+        "1": "block/stone/tuff/natural_1",
+        "particle": "block/stone/tuff/particle"
+	}
+}

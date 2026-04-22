@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:the_end/sky002_end_highlands.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 702,
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [20.0, 0.0, 0.0]},
+			"axis": {"0": [20.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.0192156862745098, "green": 0.0733333333333333, "blue": 0.0333333333333333}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:the_end"]},
+		"biomes": {"entries": ["minecraft:end_highlands"]}
+		}
+}

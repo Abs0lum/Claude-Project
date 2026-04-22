@@ -1,0 +1,23 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"all": "block/nether/netherrack_1",
+		"particle": "block/nether/netherrack_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"north": {"uv": [0, 8, 8, 12], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [0, 8, 8, 12], "texture": "#all", "cullface": "east"},
+				"south": {"uv": [0, 8, 8, 12], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [0, 8, 8, 12], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [0, 8, 8, 16], "texture": "#all"}
+			}
+		}
+	]
+}

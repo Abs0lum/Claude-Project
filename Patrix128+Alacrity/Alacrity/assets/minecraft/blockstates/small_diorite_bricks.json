@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "create:block/blocks/diorite/small_bricks_1" },
+      { "model": "create:block/blocks/diorite/small_bricks_2" },
+      { "model": "create:block/blocks/diorite/small_bricks_3" },
+      { "model": "create:block/blocks/diorite/small_bricks_4" }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+	"textures": {
+		"particle": "block/mossy_stone_bricks",
+		"wall": "block/mossy_stone_bricks",
+		"top": "block/moss_block",
+		"extra": "block/extra/moss_carpet_extra"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 0],
+			"to": [11, 16, 8],
+			"faces": {
+				"north": {"uv": [9, 0, 15, 16], "texture": "#wall", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 16], "texture": "#wall"},
+				"south": {"uv": [9, 0, 15, 16], "texture": "#wall"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#wall"},
+				"up": {"uv": [5, 0, 11, 8], "texture": "#top", "cullface": "up"},
+				"down": {"uv": [1, 8, 7, 16], "texture": "#wall", "cullface": "down"}
+			}
+		},
+		{
+			"from": [4.99, 6, -0.01],
+			"to": [11.01, 16, 8.01],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [8.02, 0, 2, 8], "texture": "#extra", "cullface": "north"},
+				"east": {"uv": [16, 0, 7.98, 8], "texture": "#extra", "cullface": "up"},
+				"south": {"uv": [8, 0, 14.02, 8], "texture": "#extra", "cullface": "up"},
+				"west": {"uv": [0, 0, 8.02, 8], "texture": "#extra", "cullface": "up"}
+			}
+		}
+	]
+}

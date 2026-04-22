@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "moisture=0": [
+      { "model": "minecraft:block/nature/dirt/farmland_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_4" }
+    ],
+    "moisture=1": [
+      { "model": "minecraft:block/nature/dirt/farmland_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_4" }
+    ],
+    "moisture=2": [
+      { "model": "minecraft:block/nature/dirt/farmland_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_4" }
+    ],
+    "moisture=3": [
+      { "model": "minecraft:block/nature/dirt/farmland_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_4" }
+    ],
+    "moisture=4": [
+      { "model": "minecraft:block/nature/dirt/farmland_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_4" }
+    ],
+    "moisture=5": [
+      { "model": "minecraft:block/nature/dirt/farmland_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_4" }
+    ],
+    "moisture=6": [
+      { "model": "minecraft:block/nature/dirt/farmland_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_4" }
+    ],
+    "moisture=7": [
+      { "model": "minecraft:block/nature/dirt/farmland_wet_1" },
+      { "model": "minecraft:block/nature/dirt/farmland_wet_2" },
+      { "model": "minecraft:block/nature/dirt/farmland_wet_3" },
+      { "model": "minecraft:block/nature/dirt/farmland_wet_4" }
+    ]
+  }
+}

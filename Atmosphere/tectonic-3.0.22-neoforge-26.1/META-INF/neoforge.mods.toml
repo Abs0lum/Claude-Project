@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+accessTransformers = [  ]
+issueTrackerURL = "https://github.com/Apollounknowndev/tectonic/issues"
+
+[dependencies]
+
+[[dependencies.tectonic]]
+modId = "lithostitched"
+type = "required"
+versionRange = "[1.6.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tectonic]]
+modId = "lithostitched"
+type = "required"
+versionRange = "[1.6.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "tectonic.mixins.json"
+
+[[mixins]]
+config = "tectonic.26.1.mixins.json"
+
+[[mods]]
+modId = "tectonic"
+version = "3.0.22"
+displayName = "Tectonic"
+description = "Terrain shaping brought to new heights, grander and more varied than ever before!"
+logoFile = "pack.png"
+displayURL = "https://modrinth.com/project/tectonic"
+credits = "Contributors: HB Stratos, DawnKiro, Uni"
+authors = "Apollo"
+modproperties = {  }

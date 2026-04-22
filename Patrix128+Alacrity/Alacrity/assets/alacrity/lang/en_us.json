@@ -1,0 +1,9 @@
+{
+    "rpo.alacrity": "Alacrity",
+    "rpo.alacrity.gravelStyle": "Gravel Style",
+    "rpo.alacrity.gravelStyle.tooltip": "Switch between dark and gray (vanilla-like) gravel",
+    "rpo.alacrity.villagers": "Villagers preset",
+    "rpo.alacrity.villagers.tooltip": "Switch between gender neutral and female villagers (which not everyone liked and, I agree, was controversial",
+    "rpo.alacrity.villagersSounds": "Villagers sound",
+    "rpo.alacrity.villagersSounds.tooltip": "Switch between vanilla and female villagers (may be annoying)"
+}

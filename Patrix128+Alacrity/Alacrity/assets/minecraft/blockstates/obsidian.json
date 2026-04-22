@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/obsidian/normal_1" },
+      { "model": "minecraft:block/stone/obsidian/normal_2" },
+      { "model": "minecraft:block/stone/obsidian/normal_3" },
+      { "model": "minecraft:block/stone/obsidian/normal_4" }
+    ]
+  }
+}

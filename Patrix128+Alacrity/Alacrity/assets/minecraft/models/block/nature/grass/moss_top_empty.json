@@ -1,0 +1,8 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "1": "block/nature/grass/moss_extra",
+        "particle": "block/nature/grass/moss"
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "particle": "block/extra/stone_extra",
+    "texture": "minecraft:block/stone"
+  }
+}

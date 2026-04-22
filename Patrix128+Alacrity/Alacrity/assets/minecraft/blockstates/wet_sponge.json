@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+    	{ "model": "minecraft:block/misc/sponge/wet_1" },
+    	{ "model": "minecraft:block/misc/sponge/wet_2" },
+    	{ "model": "minecraft:block/misc/sponge/wet_3" },
+    	{ "model": "minecraft:block/misc/sponge/wet_4" }
+    ]
+  }
+}

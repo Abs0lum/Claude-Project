@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:the_end/sky005_small_end_islands.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 705,
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [20.0, 0.0, 0.0]},
+			"axis": {"0": [20.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.1674509803921569, "green": 0.1172549019607843, "blue": 0.0725490196078431}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:the_end"]},
+		"biomes": {"entries": ["minecraft:small_end_islands"]}
+		}
+}

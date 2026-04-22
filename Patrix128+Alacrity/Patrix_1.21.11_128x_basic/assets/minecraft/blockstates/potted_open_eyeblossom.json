@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/potted_open_eyeblossom" },
+            { "model": "block/potted_open_eyeblossom", "y": 90 },
+            { "model": "block/potted_open_eyeblossom", "y": 180 },
+            { "model": "block/potted_open_eyeblossom", "y": 270 }
+        ]
+    }
+}

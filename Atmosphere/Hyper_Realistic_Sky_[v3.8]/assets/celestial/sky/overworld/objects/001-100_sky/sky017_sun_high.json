@@ -1,0 +1,19 @@
+{
+	"texture": "minecraft:textures/environment/sun.png",
+	"display": {
+		"scale": "30",
+		"distance": "100"
+	},
+	"rotation": {
+		"degrees_x": "single_rotation",
+		"degrees_y": "0",
+		"degrees_z": "0",
+		"base_degrees_x": "-90",
+		"base_degrees_y": "0",
+		"base_degrees_z": "sun_rotation"
+	},
+	"properties": {
+		"blend": true,
+		"alpha": "(1-submerged) * 0.5 * (high_altitude + space_altitude)"
+	}
+}

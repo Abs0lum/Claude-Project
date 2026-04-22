@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "tip=false": [
+      { "model": "minecraft:block/nature/pale/vines_body_1" },
+      { "model": "minecraft:block/nature/pale/vines_body_2" }
+    ],
+    "tip=true": [
+      { "model": "minecraft:block/nature/pale/vines_end_1" },
+      { "model": "minecraft:block/nature/pale/vines_end_2" }
+    ]
+  }
+}

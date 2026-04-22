@@ -1,0 +1,44 @@
+{
+  "variants": {
+    "facing=north": [
+      { "model": "minecraft:block/jack_o_lantern" },
+      { "model": "minecraft:block/jack_o_lantern2" },
+      { "model": "minecraft:block/jack_o_lantern3" },
+      { "model": "minecraft:block/jack_o_lantern4" },
+      { "model": "minecraft:block/jack_o_lantern_extra" },
+      { "model": "minecraft:block/jack_o_lantern2_extra" },
+      { "model": "minecraft:block/jack_o_lantern3_extra" },
+      { "model": "minecraft:block/jack_o_lantern4_extra" }
+    ],
+    "facing=east": [
+      { "model": "minecraft:block/jack_o_lantern", "y": 90 },
+      { "model": "minecraft:block/jack_o_lantern2", "y": 90 },
+      { "model": "minecraft:block/jack_o_lantern3", "y": 90 },
+      { "model": "minecraft:block/jack_o_lantern4", "y": 90 },
+      { "model": "minecraft:block/jack_o_lantern_extra", "y": 90 },
+      { "model": "minecraft:block/jack_o_lantern2_extra", "y": 90 },
+      { "model": "minecraft:block/jack_o_lantern3_extra", "y": 90 },
+      { "model": "minecraft:block/jack_o_lantern4_extra", "y": 90 }
+    ],
+    "facing=south": [
+      { "model": "minecraft:block/jack_o_lantern", "y": 180 },
+      { "model": "minecraft:block/jack_o_lantern2", "y": 180 },
+      { "model": "minecraft:block/jack_o_lantern3", "y": 180 },
+      { "model": "minecraft:block/jack_o_lantern4", "y": 180 },
+      { "model": "minecraft:block/jack_o_lantern_extra", "y": 180 },
+      { "model": "minecraft:block/jack_o_lantern2_extra", "y": 180 },
+      { "model": "minecraft:block/jack_o_lantern3_extra", "y": 180 },
+      { "model": "minecraft:block/jack_o_lantern4_extra", "y": 180 }
+    ],
+    "facing=west": [
+      { "model": "minecraft:block/jack_o_lantern", "y": 270 },
+      { "model": "minecraft:block/jack_o_lantern2", "y": 270 },
+      { "model": "minecraft:block/jack_o_lantern3", "y": 270 },
+      { "model": "minecraft:block/jack_o_lantern4", "y": 270 },
+      { "model": "minecraft:block/jack_o_lantern_extra", "y": 270 },
+      { "model": "minecraft:block/jack_o_lantern2_extra", "y": 270 },
+      { "model": "minecraft:block/jack_o_lantern3_extra", "y": 270 },
+      { "model": "minecraft:block/jack_o_lantern4_extra", "y": 270 }
+    ]
+  }
+}

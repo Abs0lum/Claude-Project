@@ -1,0 +1,87 @@
+{
+  "multipart": [
+    {
+      "when": { "up": "true" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_post"
+      }
+    },
+    {
+      "when": { "north": "low" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side", "uvlock": true
+      }
+    },
+    {
+      "when": { "east": "low" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side", "y": 90, "uvlock": true
+      }
+    },
+    {
+      "when": { "south": "low" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side", "y": 180, "uvlock": true
+      }
+    },
+    {
+      "when": { "west": "low" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side", "y": 270, "uvlock": true
+      }
+    },
+    {
+      "when": { "north": "tall" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side_tall", "uvlock": true
+      }
+    },
+    {
+      "when": { "east": "tall" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side_tall", "y": 90, "uvlock": true
+      }
+    },
+    {
+      "when": { "south": "tall" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side_tall", "y": 180, "uvlock": true
+      }
+    },
+    {
+      "when": { "west": "tall" },
+      "apply": {
+        "model": "block/deepslate_tile_wall_side_tall", "y": 270, "uvlock": true
+      }
+    },
+    {
+      "when": { "north": "none", "south": "none", "east": "none", "west": "none", "up": "false" },
+      "apply": [
+        { "model": "block/book1a", "weight": 3 },
+        { "model": "block/book1a", "y": 90, "weight": 3 },
+        { "model": "block/book1a", "y": 180, "weight": 3 },
+        { "model": "block/book1a", "y": 270, "weight": 3 },
+        { "model": "block/book1b", "weight": 2 },
+        { "model": "block/book1b", "y": 90, "weight": 2 },
+        { "model": "block/book1b", "y": 180, "weight": 2 },
+        { "model": "block/book1b", "y": 270, "weight": 2 },
+        { "model": "block/book2a", "weight": 3 },
+        { "model": "block/book2a", "y": 90, "weight": 3 },
+        { "model": "block/book2a", "y": 180, "weight": 3 },
+        { "model": "block/book2a", "y": 270, "weight": 3 },
+        { "model": "block/book2b", "weight": 2 },
+        { "model": "block/book2b", "y": 90, "weight": 2 },
+        { "model": "block/book2b", "y": 180, "weight": 2 },
+        { "model": "block/book2b", "y": 270, "weight": 2 },
+        { "model": "block/book3a", "weight": 3 },
+        { "model": "block/book3a", "y": 90, "weight": 3 },
+        { "model": "block/book3a", "y": 180, "weight": 3 },
+        { "model": "block/book3a", "y": 270, "weight": 3 },
+        { "model": "block/book3b", "weight": 2 },
+        { "model": "block/book3b", "y": 90, "weight": 2 },
+        { "model": "block/book3b", "y": 180, "weight": 2 },
+        { "model": "block/book3b", "y": 270, "weight": 2 }
+      ]
+    }
+  ]
+}

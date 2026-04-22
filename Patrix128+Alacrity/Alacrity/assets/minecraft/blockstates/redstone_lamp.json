@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "lit=false": [
+      { "model": "minecraft:block/redstone/lamp_off_1" },
+      { "model": "minecraft:block/redstone/lamp_off_2" }
+    ],
+    "lit=true": [
+      { "model": "minecraft:block/redstone/lamp_on_1" },
+      { "model": "minecraft:block/redstone/lamp_on_2" }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/underwater/dead_corals/tube_1" },
+      { "model": "minecraft:block/underwater/dead_corals/tube_2" },
+      { "model": "minecraft:block/underwater/dead_corals/tube_3" },
+      { "model": "minecraft:block/underwater/dead_corals/tube_4" }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/diamond_block" },
+            { "model": "block/diamond_block", "y": 90 },
+            { "model": "block/diamond_block", "y": 180 },
+            { "model": "block/diamond_block", "y": 270 },
+            { "model": "block/diamond_block", "x": 90 },
+            { "model": "block/diamond_block", "x": 90, "y": 90 },
+            { "model": "block/diamond_block", "x": 90, "y": 180 },
+            { "model": "block/diamond_block", "x": 90, "y": 270 }
+        ]
+    }
+}

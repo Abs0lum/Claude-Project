@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"particle": "block/brewing_stand",
+		"stand": "block/brewing_stand"
+	},
+	"elements": [
+		{
+			"from": [-0.41, 4, 8],
+			"to": [6.59, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [9, 0, 16, 12], "texture": "#stand"},
+				"south": {"uv": [16, 0, 9, 12], "texture": "#stand"}
+			}
+		},
+		{
+			"from": [4.59, 0, 8],
+			"to": [6.59, 4, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [9, 12, 11, 16], "texture": "#stand"},
+				"south": {"uv": [11, 12, 9, 16], "texture": "#stand"}
+			}
+		},
+		{
+			"from": [1.82, 3.1, 2.322],
+			"to": [5.82, 3.6, 6.322],
+			"rotation": {"angle": 45, "axis": "y", "origin": [3.82, 5.5, 3.822]},
+			"faces": {
+				"north": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"},
+				"east": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"},
+				"south": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"},
+				"west": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"}
+			}
+		},
+		{
+			"from": [5.82, 3.1, 2.322],
+			"to": [1.82, 3.6, 6.322],
+			"rotation": {"angle": 45, "axis": "y", "origin": [3.82, 5.5, 3.822]},
+			"faces": {
+				"north": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"},
+				"east": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"},
+				"south": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"},
+				"west": {"uv": [0, 12.375, 5, 12.875], "texture": "#stand"}
+			}
+		}
+	]
+}

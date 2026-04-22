@@ -1,0 +1,72 @@
+{
+  "variants": {
+    "layers=1": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_1",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_2",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_3",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_4",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_5",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_6",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_7",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_8",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_9",  "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_10", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_11", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/plane_12", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/rocky_1",  "weight": 3 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/rocky_2",  "weight": 3 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/rocky_3",  "weight": 3 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/rocky_4",  "weight": 3 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/grassy_1", "weight": 3 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/grassy_2", "weight": 3 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/grassy_3", "weight": 3 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_1/grassy_4", "weight": 3 }
+  ],
+    "layers=2": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_2/plane_1", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_2/plane_2", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_2/plane_3", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_2/plane_4", "weight": 20 }
+    ],
+    "layers=3": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_3/plane_1", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_3/plane_2", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_3/plane_3", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_3/plane_4", "weight": 20 }
+    ],
+    "layers=4": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_4/plane_1", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_4/plane_2", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_4/plane_3", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_4/plane_4", "weight": 20 }
+    ],
+    "layers=5": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_5/plane_1", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_5/plane_2", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_5/plane_3", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_5/plane_4", "weight": 20 }
+    ],
+    "layers=6": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_6/plane_1", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_6/plane_2", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_6/plane_3", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_6/plane_4", "weight": 20 }
+    ],
+    "layers=7": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_7/plane_1", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_7/plane_2", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_7/plane_3", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_plane_layer_7/plane_4", "weight": 20 }
+    ],
+    "layers=8": [
+      { "model": "minecraft:block/nature/snow/ontop/snow_block/block_1", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_block/block_2", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_block/block_3", "weight": 20 },
+      { "model": "minecraft:block/nature/snow/ontop/snow_block/block_4", "weight": 20 },
+        { "model": "minecraft:block/nature/snow/ontop/snow_block/block_5", "weight": 20 },
+        { "model": "minecraft:block/nature/snow/ontop/snow_block/block_6", "weight": 20 },
+        { "model": "minecraft:block/nature/snow/ontop/snow_block/block_7", "weight": 20 },
+        { "model": "minecraft:block/nature/snow/ontop/snow_block/block_8", "weight": 20 }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "key.atmospherica.open": "Open Fog Menu",
+  "key.categories.atmospherica": "AtmosphericA",
+  "screen.atmospherica.title": "AtmosphericA - Biome Fog",
+  "screen.atmospherica.biome": "Current biome: %s",
+  "screen.atmospherica.start": "Fog start",
+  "screen.atmospherica.end": "Fog end",
+  "screen.atmospherica.density": "Fog density",
+  "screen.atmospherica.transition": "Transition speed",
+  "screen.atmospherica.selected": "Selected color: %s",
+  "screen.atmospherica.night": "Night Fog",
+  "screen.atmospherica.weather": "Weather",
+  "screen.atmospherica.fog": "Fog",
+  "screen.atmospherica.sky": "Sky",
+  "screen.atmospherica.clouds": "Clouds",
+  "screen.atmospherica.done": "Done",
+  "screen.atmospherica.exit": "Exit",
+  "screen.atmospherica.left.biome": "Biome on display",
+  "screen.atmospherica.left.stars": "Stars",
+  "screen.atmospherica.left.import": "Import",
+  "screen.atmospherica.left.export": "Export",
+  "screen.atmospherica.left.reset_biome": "Reset Biome",
+  "screen.atmospherica.left.reset_all": "Reset All",
+  "screen.atmospherica.right.important": "Important",
+  "screen.atmospherica.right.fog.on": "Fog: ON",
+  "screen.atmospherica.right.fog.off": "Fog: OFF",
+  "screen.atmospherica.right.sky.on": "Sky: ON",
+  "screen.atmospherica.right.sky.off": "Sky: OFF",
+  "screen.atmospherica.right.stars.on": "Stars: ON",
+  "screen.atmospherica.right.stars.off": "Stars: OFF",
+  "screen.atmospherica.right.off_all": "OFF ALL",
+  "screen.atmospherica.right.on_all": "ON ALL"
+  ,"screen.atmospherica.reset_all.title": "Reset all settings?"
+  ,"screen.atmospherica.reset_all.body": "This will remove fog settings for all biomes."
+  ,"screen.atmospherica.weather.title": "Weather"
+  ,"screen.atmospherica.weather.rain": "Rain"
+  ,"screen.atmospherica.weather.thunder": "Thunder"
+  ,"screen.atmospherica.weather.reset": "Reset"
+  ,"screen.atmospherica.weather.fog.slider": "Fog: %s"
+  ,"screen.atmospherica.weather.night_fog.slider": "Night fog darken: %s"
+  ,"screen.atmospherica.weather.sky.slider": "Sky: %s"
+  ,"screen.atmospherica.weather.fog_start.slider": "Fog start: %s"
+  ,"screen.atmospherica.weather.fog_end.slider": "Fog end: %s"
+  ,"screen.atmospherica.weather.color": "Fog color: %s"
+  ,"screen.atmospherica.stars.title": "Stars"
+  ,"screen.atmospherica.mode.day": "Day"
+  ,"screen.atmospherica.mode.night": "Night"
+  ,"screen.atmospherica.stars.amount": "Amount: %s"
+  ,"screen.atmospherica.stars.brightness": "Brightness: %s"
+  ,"screen.atmospherica.stars.twinkle": "Twinkle: %s"
+  ,"screen.atmospherica.stars.day.on": "Day stars: ON"
+  ,"screen.atmospherica.stars.day.off": "Day stars: OFF"
+}

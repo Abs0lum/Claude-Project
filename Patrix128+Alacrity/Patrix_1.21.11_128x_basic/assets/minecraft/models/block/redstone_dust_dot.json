@@ -1,0 +1,19 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/redstone_dust_dot",
+		"line": "block/redstone_dust_dot"
+	},
+	"elements": [
+		{
+			"from": [0, 0.15, 0],
+			"to": [16, 0.15, 16],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#line", "tintindex": 0},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#line", "tintindex": 0}
+			}
+		}
+	]
+}

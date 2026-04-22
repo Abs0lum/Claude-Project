@@ -1,0 +1,17 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "2": "block/nature/big_shrooms/brown",
+        "particle": "block/nature/big_shrooms/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 8, 16], "texture": "#2", "cullface": "north"}
+			}
+		}
+	]
+}

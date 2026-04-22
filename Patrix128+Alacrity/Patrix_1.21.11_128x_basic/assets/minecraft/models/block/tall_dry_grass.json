@@ -1,0 +1,70 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/tall_dry_grass",
+		"cross": "block/tall_dry_grass",
+		"cross2": "block/short_dry_grass"
+	},
+	"elements": [
+		{
+			"from": [12.66348, 0, -0.25822],
+			"to": [12.66348, 20, 15.74178],
+			"shade": false,
+			"rotation": {"x": -2.00307, "y": 14.8687, "z": -7.7614, "origin": [12.66348, 0, 7.74178]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#cross", "tintindex": 0},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#cross", "tintindex": 0}
+			}
+		},
+		{
+			"from": [4.20711, -1, 9.27526],
+			"to": [18.20711, 11, 9.27526],
+			"shade": false,
+			"rotation": {"x": 20, "y": 15, "z": 0, "origin": [11.20711, 0, 9.27526]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#cross2", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#cross2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-0.75822, 0, 12.66348],
+			"to": [15.24178, 17, 12.66348],
+			"shade": false,
+			"rotation": {"x": 7.5, "y": -15, "z": 0, "origin": [7.24178, 0, 12.66348]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#cross", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#cross", "tintindex": 0}
+			}
+		},
+		{
+			"from": [5.96593, -1, 3.75882],
+			"to": [5.96593, 13, 17.75882],
+			"shade": false,
+			"rotation": {"x": -5.23619, "y": -14.0761, "z": 20.6469, "origin": [5.96593, 0, 10.75882]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#cross2", "tintindex": 0},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#cross2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-2.29289, 0, 5.70711],
+			"to": [13.70711, 14, 5.70711],
+			"shade": false,
+			"rotation": {"x": -7.5, "y": 45, "z": 0, "origin": [5.70711, 0, 5.70711]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#cross", "tintindex": 0},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#cross", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7, -1, -1.58579],
+			"to": [7, 15, 12.41421],
+			"shade": false,
+			"rotation": {"x": -18.88172, "y": 41.64114, "z": -27.23631, "origin": [7, 0, 5.41421]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#cross2", "tintindex": 0},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#cross2", "tintindex": 0}
+			}
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/401-500_solar_eclipse/sky401_eclipse_sky.png",
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 442,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"507050": 0.0,
+				"507400": 1.0,
+				"507650": 1.0,
+				"508000": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -0.234,
+			"mapping": {"0": [180.0, 0.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.1254901960784314, "green": 0.1607843137254902, "blue": 0.2235294117647059}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]},
+		"yRanges": {"entries": [{"min": 255.0, "max": 319.0}]}
+		}
+}

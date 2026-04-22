@@ -1,0 +1,301 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/grass/grass",
+        "particle": "block/nature/grass/grass"
+	},
+	"elements": [
+		{
+			"name": "Grass",
+			"from": [-0.96143, 0, 3.04117],
+			"to": [15.03857, 3.5, 3.04117],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [6.03857, 2.25, 5.04117]},
+			"faces": {
+				"north": {"uv": [0, 1.75, 8, 3], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8, 1.75, 0, 3], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [2.03857, 0, 0.04117],
+			"to": [2.03857, 3.5, 16.04117],
+			"rotation": {"angle": 45, "axis": "y", "origin": [6.03857, 2.25, 5.04117]},
+			"faces": {
+				"east": {"uv": [8, 1.75, 0, 3], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [0, 1.75, 8, 3], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-0.65906, 0, 12.58864],
+			"to": [15.34094, 3.5, 12.58864],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [10.34094, 1.75, 9.58864]},
+			"faces": {
+				"north": {"uv": [8, 0, 0, 1.25], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 0, 8, 1.25], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [0.71735, 0, 4.50833],
+			"to": [16.71735, 3.5, 4.50833],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.71735, 1.75, 4.50833]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 1.25], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8, 0, 0, 1.25], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [12.80602, 0, -0.1006],
+			"to": [12.80602, 3.5, 15.8994],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [11.80602, 1.75, 5.8994]},
+			"faces": {
+				"east": {"uv": [0, 0, 8, 1.25], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 0, 0, 1.25], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [8.35659, 0, 11.22315],
+			"to": [15.35659, 4, 11.22315],
+			"rotation": {"angle": 45, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [11.75, 4.5, 8.25, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8.25, 4.5, 11.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [1.35659, 0, 11.22315],
+			"to": [8.35659, 4, 11.22315],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [8.25, 4.5, 11.75, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [11.75, 4.5, 8.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [7.85659, 0, 0.72315],
+			"to": [7.85659, 4, 7.72315],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"east": {"uv": [11.75, 4.5, 8.25, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8.25, 4.5, 11.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [8.35659, 0, 11.22315],
+			"to": [15.35659, 4, 11.22315],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [11.75, 4.5, 8.25, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8.25, 4.5, 11.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.85659, 0, 7.72315],
+			"to": [4.85659, 4, 14.72315],
+			"rotation": {"angle": 45, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"east": {"uv": [8.25, 4.5, 11.75, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [11.75, 4.5, 8.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [7.85659, 0, 0.72315],
+			"to": [7.85659, 4, 7.72315],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"east": {"uv": [11.75, 4.5, 8.25, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8.25, 4.5, 11.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [8.35659, 0, 11.22315],
+			"to": [15.35659, 4, 11.22315],
+			"rotation": {"angle": -45, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.85659, 0, 7.72315],
+			"to": [4.85659, 4, 14.72315],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"east": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.35659, 0, 4.22315],
+			"to": [11.35659, 4, 4.22315],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"north": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [11.85659, 0, 7.72315],
+			"to": [11.85659, 4, 14.72315],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"east": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [1.35659, 0, 11.22315],
+			"to": [8.35659, 4, 11.22315],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [7.85659, 0, 0.72315],
+			"to": [7.85659, 4, 7.72315],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"east": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [11.85659, 0, 7.72315],
+			"to": [11.85659, 4, 14.72315],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"east": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [1.35659, 0, 11.22315],
+			"to": [8.35659, 4, 11.22315],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [7.85659, 0, 0.72315],
+			"to": [7.85659, 4, 7.72315],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"east": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [8.35659, 0, 11.22315],
+			"to": [15.35659, 4, 11.22315],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.85659, 0, 7.72315],
+			"to": [4.85659, 4, 14.72315],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"east": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.35659, 0, 4.22315],
+			"to": [11.35659, 4, 4.22315],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"north": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [11.85659, 0, 7.72315],
+			"to": [11.85659, 4, 14.72315],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"east": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [1.35659, 0, 11.22315],
+			"to": [8.35659, 4, 11.22315],
+			"rotation": {"angle": 45, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.35659, 0, 4.22315],
+			"to": [11.35659, 4, 4.22315],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"north": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [8.35659, 0, 11.22315],
+			"to": [15.35659, 4, 11.22315],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [11.85659, 2, 11.22315]},
+			"faces": {
+				"north": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.85659, 0, 7.72315],
+			"to": [4.85659, 4, 14.72315],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.85659, 2, 11.22315]},
+			"faces": {
+				"east": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Small_Bush",
+			"from": [4.35659, 0, 4.22315],
+			"to": [11.35659, 4, 4.22315],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [7.85659, 2, 4.22315]},
+			"faces": {
+				"north": {"uv": [12.25, 4.5, 15.75, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.75, 4.5, 12.25, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

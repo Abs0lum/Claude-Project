@@ -1,0 +1,8 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "particle": "block/nature/grass/grass_tall"
+	}
+}

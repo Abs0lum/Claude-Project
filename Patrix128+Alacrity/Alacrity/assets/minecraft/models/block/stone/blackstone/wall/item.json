@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "minecraft:block/templates/simple_wall/item",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "cubes": "block/stone/blackstone/cubes",
+        "slab_cubes": "block/stone/blackstone/polished_slab_cubes",
+        "1": "block/stone/blackstone/side"
+	}
+}

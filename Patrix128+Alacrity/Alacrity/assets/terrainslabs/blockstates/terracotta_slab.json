@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/terracotta/slab/slab_1" },
+      { "model": "minecraft:block/stone/terracotta/slab/slab_2" },
+      { "model": "minecraft:block/stone/terracotta/slab/slab_3" },
+      { "model": "minecraft:block/stone/terracotta/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/terracotta/terracotta_1" },
+      { "model": "minecraft:block/stone/terracotta/terracotta_2" },
+      { "model": "minecraft:block/stone/terracotta/terracotta_3" },
+      { "model": "minecraft:block/stone/terracotta/terracotta_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/terracotta/slab/top_1" },
+      { "model": "minecraft:block/stone/terracotta/slab/top_2" },
+      { "model": "minecraft:block/stone/terracotta/slab/top_3" },
+      { "model": "minecraft:block/stone/terracotta/slab/top_4" }
+    ]
+  }
+}

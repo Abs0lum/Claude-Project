@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "age=0,hanging=false": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_1"
+    },
+    "age=0,hanging=true": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_hanging_1"
+    },
+    "age=1,hanging=false": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_1"
+    },
+    "age=1,hanging=true": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_hanging_1"
+    },
+    "age=2,hanging=false": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_1"
+    },
+    "age=2,hanging=true": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_hanging_1"
+    },
+    "age=3,hanging=false": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_1"
+    },
+    "age=3,hanging=true": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_hanging_1"
+    },
+    "age=4,hanging=false": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_1"
+    },
+    "age=4,hanging=true": {
+      "model": "minecraft:block/nature/saplings/mangrove_propague_hanging_1"
+    }
+  }
+}

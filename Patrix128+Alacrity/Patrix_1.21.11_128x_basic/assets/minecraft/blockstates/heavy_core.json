@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/heavy_core" },
+            { "model": "block/heavy_core", "y": 90 },
+            { "model": "block/heavy_core", "y": 180 },
+            { "model": "block/heavy_core", "y": 270 }
+        ]
+    }
+}

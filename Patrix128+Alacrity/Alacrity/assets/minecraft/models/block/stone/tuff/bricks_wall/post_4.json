@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/tpl_core/wall_bricks/post_4",
+	"textures": {
+        "cubes": "block/stone/tuff/cubes_4",
+        "extra": "block/stone/tuff/bricks_extra",
+        "wall_parts": "block/stone/tuff/wall_parts",
+		"particle": "block/stone/stone_particle"
+	}
+}

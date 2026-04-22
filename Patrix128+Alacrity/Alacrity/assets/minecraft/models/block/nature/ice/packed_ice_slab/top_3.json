@@ -1,0 +1,26 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+        "2": "block/nature/ice/packed_ice_top_1",
+        "3": "block/nature/ice/packed_ice_bottom_1",
+        "5": "block/nature/ice/packed_ice_side_1",
+        "particle": "block/nature/ice/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"north": {"uv": [0, 8, 8, 12], "texture": "#5", "cullface": "north"},
+				"east": {"uv": [0, 8, 8, 12], "texture": "#5", "cullface": "east"},
+				"south": {"uv": [0, 8, 8, 12], "texture": "#5", "cullface": "south"},
+				"west": {"uv": [0, 8, 8, 12], "texture": "#5", "cullface": "west"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#2", "cullface": "up"},
+				"down": {"uv": [0, 8, 8, 16], "texture": "#3"}
+			}
+		}
+	]
+}

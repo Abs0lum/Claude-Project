@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/endstone/slab/slab_1" },
+      { "model": "minecraft:block/stone/endstone/slab/slab_2" },
+      { "model": "minecraft:block/stone/endstone/slab/slab_3" },
+      { "model": "minecraft:block/stone/endstone/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/endstone/stone_1" },
+      { "model": "minecraft:block/stone/endstone/stone_2" },
+      { "model": "minecraft:block/stone/endstone/stone_3" },
+      { "model": "minecraft:block/stone/endstone/stone_4" },
+      { "model": "minecraft:block/stone/endstone/stone_5" },
+      { "model": "minecraft:block/stone/endstone/stone_6" },
+      { "model": "minecraft:block/stone/endstone/stone_7" },
+      { "model": "minecraft:block/stone/endstone/stone_8" },
+      { "model": "minecraft:block/stone/endstone/stone_9" },
+      { "model": "minecraft:block/stone/endstone/stone_10" },
+      { "model": "minecraft:block/stone/endstone/stone_11" },
+      { "model": "minecraft:block/stone/endstone/stone_12" },
+      { "model": "minecraft:block/stone/endstone/stone_13" },
+      { "model": "minecraft:block/stone/endstone/stone_14" },
+      { "model": "minecraft:block/stone/endstone/stone_15" },
+      { "model": "minecraft:block/stone/endstone/stone_16" },
+      { "model": "minecraft:block/stone/endstone/stone_17" },
+      { "model": "minecraft:block/stone/endstone/stone_18" },
+      { "model": "minecraft:block/stone/endstone/stone_19" },
+      { "model": "minecraft:block/stone/endstone/stone_20" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/endstone/slab/top_1" },
+      { "model": "minecraft:block/stone/endstone/slab/top_2" },
+      { "model": "minecraft:block/stone/endstone/slab/top_3" },
+      { "model": "minecraft:block/stone/endstone/slab/top_4" }
+    ]
+  }
+}

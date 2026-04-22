@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/301-400_events/sky333_supercell_low.png",
+	"blend": {"type": "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 333,
+		"fade": {
+			"duration": 1344000,
+			"keyFrames": {
+				"984500": 0.0,
+				"985500": 1.0,
+				"994500": 1.0,
+				"995500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": 0.866,
+			"mapping": {"0": [0.0, 0.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.1764705882352941, "green": 0.2235294117647059, "blue": 0.3019607843137255}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]}
+		}
+}

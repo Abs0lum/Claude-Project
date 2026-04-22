@@ -1,0 +1,8 @@
+{
+    "parent": "block/tpl_core/block_f",
+	"textures": {
+        "1": "block/stone/stone_bricks_mossy/bricks_14",
+        "2": "block/stone/stone_bricks_mossy/bricks_13",
+        "particle": "block/stone/stone_bricks_mossy/particle"
+	}
+}

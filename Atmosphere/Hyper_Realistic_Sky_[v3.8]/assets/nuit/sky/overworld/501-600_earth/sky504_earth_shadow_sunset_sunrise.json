@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/501-600_earth/sky504_earth_shadow_sunset_sunrise.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 504,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"12720": 0.0,
+				"14220": 1.0,
+				"15720": 1.0,
+				"16720": 0.0,
+				"19280": 0.0,
+				"20280": 1.0,
+				"21780": 1.0,
+				"23280": 0.0
+				}
+			},
+		"rotation": {
+			"speed": 0.0,
+			"mapping": {
+				"6000": [0.0, 10.0, 0.0],
+				"6001": [0.0, 170.0, 0.0],
+				"18000": [0.0, 170.0, 0.0],
+				"18001": [0.0, 10.0, 0.0]
+			},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]},
+		"yRanges": {"entries": [{"min": 319.0, "max": 10000.0}]}
+		}
+}

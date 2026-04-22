@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/cobweb" },
+            { "model": "block/cobweb", "y": 180 }
+        ]
+    }
+}

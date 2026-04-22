@@ -1,0 +1,9 @@
+{
+  "presets": [
+    {
+      "id": "source",
+      "name": "Source Preset",
+      "resource": "/assets/atmospherics/presets/source_biome_fog.json"
+    }
+  ]
+}

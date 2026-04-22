@@ -1,0 +1,40 @@
+{
+    "multipart": [
+        {   "when": { "persistent": "true" },
+            "apply": [
+                { "model": "block/dark_oak_leaves" },
+                { "model": "block/dark_oak_leaves", "y": 90 },
+                { "model": "block/dark_oak_leaves", "y": 180 },
+                { "model": "block/dark_oak_leaves", "y": 270 }
+            ]
+        },
+        {   "when": { "persistent": "false","distance": "7|6|5|4|3" },
+            "apply": [
+                { "model": "block/dark_oak_leaves" },
+                { "model": "block/dark_oak_leaves", "y": 90 },
+                { "model": "block/dark_oak_leaves", "y": 180 },
+                { "model": "block/dark_oak_leaves", "y": 270 }
+            ]
+        },
+        {   "when": { "persistent": "false","distance": "2" },
+            "apply": [
+                { "model": "block/dark_oak_leaves" },
+                { "model": "block/dark_oak_leaves", "y": 90 },
+                { "model": "block/dark_oak_leaves", "y": 180 },
+                { "model": "block/dark_oak_leaves", "y": 270 },
+                { "model": "block/dark_oak_leaves2" },
+                { "model": "block/dark_oak_leaves2", "y": 90 },
+                { "model": "block/dark_oak_leaves2", "y": 180 },
+                { "model": "block/dark_oak_leaves2", "y": 270 }
+            ]
+        },
+        {   "when": { "persistent": "false","distance": "1" },
+            "apply": [
+                { "model": "block/dark_oak_leaves2" },
+                { "model": "block/dark_oak_leaves2", "y": 90 },
+                { "model": "block/dark_oak_leaves2", "y": 180 },
+                { "model": "block/dark_oak_leaves2", "y": 270 }
+            ]
+        }
+    ]
+}

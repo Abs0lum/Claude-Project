@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "axis=x": [
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_2", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_3", "x": 90, "y": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_4", "x": 90, "y": 90 }
+    ],
+    "axis=y": [
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_1" },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_2" },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_3" },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_4" }
+    ],
+    "axis=z": [
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_1", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_2", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_3", "x": 90 },
+      { "model": "minecraft:block/wooden/pale_oak/stripped/stripped_4", "x": 90 }
+    ]
+  }
+}

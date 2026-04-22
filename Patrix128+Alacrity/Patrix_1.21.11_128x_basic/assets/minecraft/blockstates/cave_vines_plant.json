@@ -1,0 +1,26 @@
+{
+    "multipart": [
+        {   "when": { "berries": "false" },
+            "apply": { "model": "block/cave_vines_plant" }
+        },
+        {   "when": { "berries": "true" },
+            "apply": { "model": "block/cave_vines_plant_lit" }
+        },
+        {   "when": { "berries": "false" },
+            "apply": [
+                { "model": "block/cave_vine_extra" },
+                { "model": "block/cave_vine_extra", "y": 90 },
+                { "model": "block/cave_vine_extra", "y": 180 },
+                { "model": "block/cave_vine_extra", "y": 270 }
+            ]
+        },
+        {   "when": { "berries": "true" },
+            "apply": [
+                { "model": "block/cave_vine_lit_extra" },
+                { "model": "block/cave_vine_lit_extra", "y": 90 },
+                { "model": "block/cave_vine_lit_extra", "y": 180 },
+                { "model": "block/cave_vine_lit_extra", "y": 270 }
+            ]
+        }
+    ]
+}

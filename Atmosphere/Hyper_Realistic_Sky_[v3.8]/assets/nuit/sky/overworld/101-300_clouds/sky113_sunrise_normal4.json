@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky113_sunrise_normal4.png",
+	"blend": {"type": "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 113,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"22500": 0.0,
+				"23500": 1.0,
+				"500": 1.0,
+				"1500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -0.866,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.5090196078431373, "green": 0.6227450980392157, "blue": 0.7274509803921569}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]},
+		"biomes": {"entries": ["minecraft:beach", "minecraft:cold_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_ocean", "minecraft:deep_warm_ocean", "minecraft:lukewarm_ocean", "minecraft:mushroom_field_shore", "minecraft:ocean", "minecraft:stone_shore", "minecraft:stony_shore", "minecraft:warm_ocean"]}
+		}
+}

@@ -1,0 +1,10 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/cobble_stairs/stairs_outer_2",
+	"textures": {
+        "2": "block/stone/prismarine/top",
+        "side": "block/stone/prismarine/stairs_side",
+        "top": "block/stone/prismarine/slab_top",
+        "particle": "block/stone/prismarine/particle"
+	}
+}

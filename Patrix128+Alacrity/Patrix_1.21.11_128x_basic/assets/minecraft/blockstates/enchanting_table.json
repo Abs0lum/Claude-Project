@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/enchanting_table" },
+            { "model": "block/enchanting_table", "y": 90 },
+            { "model": "block/enchanting_table", "y": 180 },
+            { "model": "block/enchanting_table", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "minecraft:block/materials/copper/lantern_b"
+    },
+    "hanging=true": {
+      "model": "minecraft:block/materials/copper/lantern_b_hng"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.ft_falling_tree": {
+      "geometry": "Array.species_geos[q.property('ft:wood_type')]",
+      "materials": [{ "*": "Material.default" }],
+      "textures": [
+        "Array.wood_textures[q.property('ft:wood_type')]"
+      ],
+      "arrays": {
+        "geometries": {
+          "Array.species_geos": [
+            "Geometry.oak",
+            "Geometry.spruce",
+            "Geometry.birch",
+            "Geometry.jungle",
+            "Geometry.acacia",
+            "Geometry.dark_oak",
+            "Geometry.mangrove",
+            "Geometry.cherry",
+            "Geometry.crimson",
+            "Geometry.warped"
+          ]
+        },
+        "textures": {
+          "Array.wood_textures": [
+            "Texture.oak",
+            "Texture.spruce",
+            "Texture.birch",
+            "Texture.jungle",
+            "Texture.acacia",
+            "Texture.dark_oak",
+            "Texture.mangrove",
+            "Texture.cherry",
+            "Texture.crimson",
+            "Texture.warped"
+          ]
+        }
+      },
+      "part_visibility": [
+        { "log_1":  "q.property('ft:trunk_height') >= 1" },
+        { "log_2":  "q.property('ft:trunk_height') >= 2" },
+        { "log_3":  "q.property('ft:trunk_height') >= 3" },
+        { "log_4":  "q.property('ft:trunk_height') >= 4" },
+        { "log_5":  "q.property('ft:trunk_height') >= 5" },
+        { "log_6":  "q.property('ft:trunk_height') >= 6" },
+        { "log_7":  "q.property('ft:trunk_height') >= 7" },
+        { "log_8":  "q.property('ft:trunk_height') >= 8" },
+        { "log_9":  "q.property('ft:trunk_height') >= 9" },
+        { "log_10": "q.property('ft:trunk_height') >= 10" },
+        { "log_11": "q.property('ft:trunk_height') >= 11" },
+        { "log_12": "q.property('ft:trunk_height') >= 12" },
+        { "log_13": "q.property('ft:trunk_height') >= 13" },
+        { "log_14": "q.property('ft:trunk_height') >= 14" },
+        { "log_15": "q.property('ft:trunk_height') >= 15" },
+        { "log_16": "q.property('ft:trunk_height') >= 16" },
+        { "branch_l": "q.property('ft:wood_type') == 4 && q.property('ft:trunk_height') >= 4" },
+        { "branch_r": "q.property('ft:wood_type') == 4 && q.property('ft:trunk_height') >= 4" }
+      ]
+    }
+  }
+}

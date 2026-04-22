@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/basalt/slab/slab_1", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_2", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_3", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_4", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_1", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_2", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_3", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_4", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_1", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_2", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_3", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_4", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_1", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_2", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_3", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/slab/slab_4", "y": 270 }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/basalt/basalt_1", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/basalt_2", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/basalt_3", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/basalt_4", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/basalt_1", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/basalt_2", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/basalt_3", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/basalt_4", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/basalt_1", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/basalt_2", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/basalt_3", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/basalt_4", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/basalt_1", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/basalt_2", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/basalt_3", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/basalt_4", "y": 270 }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/basalt/slab/top_1", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/top_2", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/top_3", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/top_4", "y": 0 },
+      { "model": "minecraft:block/stone/basalt/slab/top_1", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/top_2", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/top_3", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/top_4", "y": 90 },
+      { "model": "minecraft:block/stone/basalt/slab/top_1", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/top_2", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/top_3", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/top_4", "y": 180 },
+      { "model": "minecraft:block/stone/basalt/slab/top_1", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/slab/top_2", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/slab/top_3", "y": 270 },
+      { "model": "minecraft:block/stone/basalt/slab/top_4", "y": 270 }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": true,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/grass/grass",
+        "2": "block/nature/grass/grass_tall",
+        "particle": "block/nature/grass/grass_tall"
+	},
+	"elements": [
+		{
+			"name": "Grass",
+			"from": [8.41758, -3, -0.03284],
+			"to": [8.41758, 29, 15.96716],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"east": {"uv": [16, 0, 8, 16], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [8, 0, 16, 16], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [10.41758, 0, -0.03284],
+			"to": [10.41758, 12, 15.96716],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"east": {"uv": [16, 10, 8, 16], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 10, 16, 16], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [5.41758, 0, -0.03284],
+			"to": [5.41758, 12, 15.96716],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"east": {"uv": [8, 10, 0, 16], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [0, 10, 8, 16], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-0.3324, 0, 5.71718],
+			"to": [15.6676, 12, 5.71718],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"north": {"uv": [8, 10, 0, 16], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 10, 8, 16], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-0.3324, 0, 10.71718],
+			"to": [15.6676, 12, 10.71718],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"north": {"uv": [8, 10, 0, 16], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 10, 8, 16], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-0.3324, -3, 7.71718],
+			"to": [15.6676, 29, 7.71718],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"north": {"uv": [8, 0, 0, 16], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-0.3324, 0, 9.71718],
+			"to": [15.6676, 4.5, 9.71718],
+			"rotation": {"angle": 45, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"north": {"uv": [8, 6.75, 0, 9], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 6.75, 8, 9], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-1.96143, 0, 5.04117],
+			"to": [14.03857, 4.5, 5.04117],
+			"rotation": {"angle": 45, "axis": "y", "origin": [6.03857, 2.25, 5.04117]},
+			"faces": {
+				"north": {"uv": [0, 6.75, 8, 9], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8, 6.75, 0, 9], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [10.03857, 0, 0.04117],
+			"to": [10.03857, 4.5, 16.04117],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [6.03857, 2.25, 5.04117]},
+			"faces": {
+				"east": {"uv": [0, 4.25, 8, 6.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 4.25, 0, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [3.03857, 0, -0.95883],
+			"to": [3.03857, 4.5, 15.04117],
+			"rotation": {"angle": 45, "axis": "y", "origin": [6.03857, 2.25, 5.04117]},
+			"faces": {
+				"east": {"uv": [8, 6.75, 0, 9], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [0, 6.75, 8, 9], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [7.03857, 0, 0.04117],
+			"to": [7.03857, 3.5, 16.04117],
+			"rotation": {"angle": 45, "axis": "y", "origin": [6.03857, 2.25, 5.04117]},
+			"faces": {
+				"east": {"uv": [0, 1.75, 8, 3], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 1.75, 0, 3], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [12.80602, 0, -0.1006],
+			"to": [12.80602, 3.5, 15.8994],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [11.80602, 1.75, 5.8994]},
+			"faces": {
+				"east": {"uv": [0, 0, 8, 1.25], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 0, 0, 1.25], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-0.65906, 0, 10.58864],
+			"to": [15.34094, 3.5, 10.58864],
+			"rotation": {"angle": 45, "axis": "y", "origin": [10.34094, 1.75, 7.58864]},
+			"faces": {
+				"north": {"uv": [8, 0, 0, 1.25], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 0, 8, 1.25], "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

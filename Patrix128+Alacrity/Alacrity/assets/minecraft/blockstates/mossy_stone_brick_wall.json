@@ -1,0 +1,95 @@
+{
+  "multipart": [
+    {
+      "when": { "up": "true" },      
+        "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/post_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/post_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/post_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/post_4" }
+        ]      
+    },
+    {
+      "when": { "north": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_n_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_n_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_n_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_n_4" }
+        ]      
+    },
+    {
+      "when": { "east": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_e_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_e_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_e_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_e_4" }
+        ]      
+    },
+    {
+      "when": { "south": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_s_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_s_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_s_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_s_4" }
+        ]      
+    },
+    {
+      "when": { "west": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_w_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_w_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_w_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/side_w_4" }
+        ]      
+    },
+
+    {
+      "when": { "west": "low", "south": "low", "east": "low", "north": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/cap_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/cap_2" }
+        ]      
+    },
+
+
+    {
+      "when": { "north": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_n_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_n_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_n_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_n_4" }
+        ]      
+    },
+    {
+      "when": { "east": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_e_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_e_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_e_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_e_4" }
+        ]      
+    },
+    {
+      "when": { "south": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_s_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_s_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_s_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_s_4" }
+        ]      
+    },
+    {
+      "when": { "west": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_w_1" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_w_2" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_w_3" },
+          { "model": "minecraft:block/stone/stone_bricks/mossy_wall/tall_w_4" }
+        ]      
+    }
+  ]
+}

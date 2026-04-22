@@ -1,0 +1,66 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/extra/amethyst_crystal",
+		"crystal": "block/extra/amethyst_crystal",
+		"base": "block/amethyst_block"
+	},
+	"elements": [
+		{
+			"from": [7, -1, 6],
+			"to": [11, 15, 10],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [9, -1, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 14], "texture": "#crystal"},
+				"east": {"uv": [0, 0, 4, 14], "texture": "#crystal"},
+				"south": {"uv": [0, 0, 4, 14], "texture": "#crystal"},
+				"west": {"uv": [0, 0, 4, 14], "texture": "#crystal"},
+				"up": {"uv": [4, 12, 8, 16], "texture": "#crystal"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#base", "cullface": "down"}
+			}
+		},
+		{
+			"from": [11.25, -1, 7.5],
+			"to": [14.25, 4, 10.5],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [12.75, 0, 9]},
+			"faces": {
+				"north": {"uv": [12, 0, 16, 6], "texture": "#crystal"},
+				"east": {"uv": [12, 0, 16, 6], "texture": "#crystal"},
+				"south": {"uv": [12, 0, 16, 6], "texture": "#crystal"},
+				"west": {"uv": [12, 0, 16, 6], "texture": "#crystal"},
+				"up": {"uv": [12, 8, 16, 12], "texture": "#crystal"},
+				"down": {"uv": [12, 12, 16, 16], "texture": "#base", "cullface": "down"}
+			}
+		},
+		{
+			"from": [4.5, -1, 4],
+			"to": [8.5, 10, 8],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [6.5, 0, 6]},
+			"faces": {
+				"north": {"uv": [4, 0, 8, 11], "texture": "#crystal"},
+				"east": {"uv": [8, 0, 12, 11], "texture": "#crystal"},
+				"south": {"uv": [4, 0, 8, 11], "texture": "#crystal"},
+				"west": {"uv": [8, 0, 12, 11], "texture": "#crystal"},
+				"up": {"uv": [8, 12, 12, 16], "texture": "#crystal"},
+				"down": {"uv": [12, 0, 16, 4], "texture": "#base", "cullface": "down"}
+			}
+		},
+		{
+			"from": [3, -1, 10],
+			"to": [6, 6, 13],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [4.5, 0, 11.5]},
+			"faces": {
+				"north": {"uv": [8, 0, 12, 9], "texture": "#crystal"},
+				"east": {"uv": [4, 0, 8, 9], "texture": "#crystal"},
+				"south": {"uv": [8, 0, 12, 9], "texture": "#crystal"},
+				"west": {"uv": [4, 0, 8, 9], "texture": "#crystal"},
+				"up": {"uv": [12, 12, 16, 16], "texture": "#crystal"},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#base", "cullface": "down"}
+			}
+		}
+	]
+}

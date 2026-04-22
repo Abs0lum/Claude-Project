@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/netherite_block" },
+            { "model": "block/netherite_block", "y": 90 },
+            { "model": "block/netherite_block", "y": 180 },
+            { "model": "block/netherite_block", "y": 270 },
+            { "model": "block/netherite_block", "x": 90 },
+            { "model": "block/netherite_block", "x": 90, "y": 90 },
+            { "model": "block/netherite_block", "x": 90, "y": 180 },
+            { "model": "block/netherite_block", "x": 90, "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [LEAFFIX v0.1.5]",
+    "description": "v0.1.5 LEAFFIX — fixes v0.1.4 black halos on grass/fern (alpha dilation now fills newly-opaque pixels with average RGB of opaque neighbors instead of exposing the hidden black/white PNG background). Isotropic rotation added for 8 leaves blocks to break up aligned-slab interior canopies.",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      1,
+      5
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}

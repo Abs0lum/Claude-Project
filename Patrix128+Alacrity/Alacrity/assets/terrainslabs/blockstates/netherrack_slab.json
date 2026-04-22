@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/nether/netherrack/slab/slab_1" },
+      { "model": "minecraft:block/nether/netherrack/slab/slab_2" },
+      { "model": "minecraft:block/nether/netherrack/slab/slab_3" },
+      { "model": "minecraft:block/nether/netherrack/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/nether/netherrack/netherrack_1" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_2" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_3" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/nether/netherrack/slab/top_1" },
+      { "model": "minecraft:block/nether/netherrack/slab/top_2" },
+      { "model": "minecraft:block/nether/netherrack/slab/top_3" },
+      { "model": "minecraft:block/nether/netherrack/slab/top_4" }
+    ]
+  }
+}

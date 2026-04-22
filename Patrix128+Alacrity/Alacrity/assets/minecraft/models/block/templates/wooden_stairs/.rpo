@@ -1,0 +1,4 @@
+{
+    condition: "!woodenStairs.thin",
+    fallbacks: "assets/minecraft/models/block/templates/wooden_stairs_slope_v2"
+}

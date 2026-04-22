@@ -1,0 +1,76 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"1": "block/interactive/cartography_table_extra",
+		"2": "block/interactive/cartography_table_base",
+		"particle": "block/interactive/cartography_table_extra"
+	},
+	"elements": [
+		{
+			"name": "Bottom",
+			"from": [1, 1.5, -0.5],
+			"to": [15, 7.5, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.75, 8]},
+			"faces": {
+				"north": {"uv": [0.5, 4.25, 7.5, 7.25], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [7.5, 4.25, 7.25, 7.25], "texture": "#2", "cullface": "north"},
+				"west": {"uv": [0.75, 4.25, 0.5, 7.25], "texture": "#2", "cullface": "north"},
+				"up": {"uv": [0.5, 4.25, 7.5, 4.5], "texture": "#2", "cullface": "north"},
+				"down": {"uv": [7.5, 7.25, 0.5, 7], "rotation": 180, "texture": "#2", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Bottom",
+			"from": [1, 1.5, -0.5],
+			"to": [15, 7.5, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.75, 8]},
+			"faces": {
+				"north": {"uv": [0.5, 4.25, 7.5, 7.25], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [7.5, 4.25, 7.25, 7.25], "texture": "#2", "cullface": "north"},
+				"west": {"uv": [0.75, 4.25, 0.5, 7.25], "texture": "#2", "cullface": "north"},
+				"up": {"uv": [0.5, 4.25, 7.5, 4.5], "texture": "#2", "cullface": "north"},
+				"down": {"uv": [7.5, 7.25, 0.5, 7], "rotation": 180, "texture": "#2", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Bottom",
+			"from": [6.5, 5, -0.75],
+			"to": [9.5, 5.5, -0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.75, 8]},
+			"faces": {
+				"north": {"uv": [3.25, 5.25, 4.75, 5.5], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [4.75, 5.25, 4.5, 5.5], "texture": "#2", "cullface": "north"},
+				"west": {"uv": [3.5, 5.25, 3.25, 5.5], "texture": "#2", "cullface": "north"},
+				"down": {"uv": [4.75, 5.5, 3.25, 5.25], "rotation": 180, "texture": "#2", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Bottom",
+			"from": [6.5, 5.5, -1],
+			"to": [9.5, 6, -0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.75, 8]},
+			"faces": {
+				"north": {"uv": [3.25, 5, 4.75, 5.25], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [4.75, 5, 4.5, 5.25], "texture": "#2", "cullface": "north"},
+				"west": {"uv": [3.5, 5, 3.25, 5.25], "texture": "#2", "cullface": "north"},
+				"up": {"uv": [3.25, 5, 4.75, 5.25], "texture": "#2", "cullface": "north"},
+				"down": {"uv": [4.75, 5.25, 3.25, 5], "rotation": 180, "texture": "#2", "cullface": "north"}
+			}
+		},
+		{
+			"name": "CenterPillar",
+			"from": [5, 8.5, -0.5],
+			"to": [11, 11.5, 4],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 10, 2.25]},
+			"faces": {
+				"north": {"uv": [7.75, 0.5, 10.75, 2], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [8, 1, 10.25, 2.5], "texture": "#1", "cullface": "north"},
+				"south": {"uv": [7.75, 0, 10.75, 1.5], "texture": "#1", "cullface": "north"},
+				"west": {"uv": [8, 0, 10.25, 1.5], "texture": "#1", "cullface": "north"},
+				"up": {"uv": [11, 2.5, 14, 5], "texture": "#1", "cullface": "north"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#1"}
+			}
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"pack": {
+		"description": [{"text":"by UsernameGeri","color":"gold"}],
+		"pack_format": 15,
+		"min_format": [15, 0],
+		"max_format": [1000, 0],
+		"supported_formats": [15, 1000]
+	},
+	"overlays": {
+		"entries": [{
+			"directory": "celestial",
+			"min_format": 6,
+			"max_format": 34,
+			"formats": [6, 34]
+			}
+		]
+	}
+}

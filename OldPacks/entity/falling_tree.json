@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ft:falling_tree",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "default": "geometry.ft_falling_tree"
+      },
+      "textures": {
+        "oak": "textures/entity/fallingtree/oak",
+        "spruce": "textures/entity/fallingtree/spruce",
+        "birch": "textures/entity/fallingtree/birch",
+        "jungle": "textures/entity/fallingtree/jungle",
+        "acacia": "textures/entity/fallingtree/acacia",
+        "dark_oak": "textures/entity/fallingtree/dark_oak",
+        "mangrove": "textures/entity/fallingtree/mangrove",
+        "cherry": "textures/entity/fallingtree/cherry",
+        "crimson": "textures/entity/fallingtree/crimson",
+        "warped": "textures/entity/fallingtree/warped"
+      },
+      "render_controllers": ["controller.render.ft_falling_tree"],
+      "animations": {
+        "setup": "animation.ft_falling_tree.setup",
+        "fall": "animation.ft_falling_tree.fall"
+      },
+      "scripts": {
+        "animate": ["setup"]
+      },
+      "spawn_egg": {
+        "texture": "oak"
+      }
+    }
+  }
+}

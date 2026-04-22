@@ -1,0 +1,14 @@
+{
+  "multipart": [
+    {
+      "apply": [ 
+        { "model": "block/misc/cake/cake" }
+      ] 
+    },
+    {
+      "apply": [ 
+          { "model": "block/decoration/candles/light_blue/cake_candle" }
+      ]
+    }
+  ]
+}

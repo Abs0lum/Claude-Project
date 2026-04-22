@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nature/other/brown_mushroom_1" },
+      { "model": "minecraft:block/nature/other/brown_mushroom_1", "y": 90 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_1", "y": 180 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_1", "y": 270 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_2" },
+      { "model": "minecraft:block/nature/other/brown_mushroom_2", "y": 90 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_2", "y": 180 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_2", "y": 270 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_3" },
+      { "model": "minecraft:block/nature/other/brown_mushroom_3", "y": 90 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_3", "y": 180 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_3", "y": 270 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_4" },
+      { "model": "minecraft:block/nature/other/brown_mushroom_4", "y": 90 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_4", "y": 180 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_4", "y": 270 },
+        { "model": "minecraft:block/nature/other/brown_mushroom_5" },
+      { "model": "minecraft:block/nature/other/brown_mushroom_5", "y": 90 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_5", "y": 180 },
+      { "model": "minecraft:block/nature/other/brown_mushroom_5", "y": 270 }
+	]
+  }
+}

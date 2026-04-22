@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky294_sunset_sandstorm_high.png",
+	"blend": {"type" : "add"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 294,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"10500": 0.0,
+				"11500": 1.0,
+				"12500": 1.0,
+				"13500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -3,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.4509803921568627, "green": 0.4509803921568627, "blue": 0.4666666666666667}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["rain", "thunder"]},
+		"yRanges": {"entries": [{"min": 255.0, "max": 319.0}]},
+		"biomes": {"entries": ["minecraft:desert", "minecraft:desert_hills", "minecraft:desert_lakes", "minecraft:badlands", "minecraft:badlands_plateau", "minecraft:eroded_badlands", "minecraft:modified_badlands_plateau", "minecraft:modified_wooded_badlands_plateau", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:shattered_savanna", "minecraft:shattered_savanna_plateau", "minecraft:windswept_savanna", "minecraft:wooded_badlands", "minecraft:wooded_badlands_plateau"]}
+		}
+}

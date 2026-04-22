@@ -1,0 +1,47 @@
+{
+	"textures": {
+		"particle": "block/dripstone_block",
+		"stone": "block/dripstone_block"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 2],
+			"to": [11, 16, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [5, 0, 11, 16], "texture": "#stone"},
+				"east": {"uv": [2, 0, 14, 16], "texture": "#stone"},
+				"south": {"uv": [5, 0, 11, 16], "texture": "#stone"},
+				"west": {"uv": [2, 0, 14, 16], "texture": "#stone"},
+				"up": {"uv": [5, 2, 11, 14], "texture": "#stone", "cullface": "up"},
+				"down": {"uv": [5, 2, 11, 14], "texture": "#stone", "cullface": "down"}
+			}
+		},
+		{
+			"from": [2, 0, 5],
+			"to": [14, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 0, 14, 16], "texture": "#stone"},
+				"east": {"uv": [5, 0, 11, 16], "texture": "#stone"},
+				"south": {"uv": [2, 0, 14, 16], "texture": "#stone"},
+				"west": {"uv": [5, 0, 11, 16], "texture": "#stone"},
+				"up": {"uv": [2, 5, 14, 11], "texture": "#stone", "cullface": "up"},
+				"down": {"uv": [2, 5, 14, 11], "texture": "#stone", "cullface": "down"}
+			}
+		},
+		{
+			"from": [1, 9, 4],
+			"to": [15, 15, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [1, 1, 15, 7], "texture": "#stone"},
+				"east": {"uv": [4, 1, 12, 7], "texture": "#stone"},
+				"south": {"uv": [1, 1, 15, 7], "texture": "#stone"},
+				"west": {"uv": [4, 1, 12, 7], "texture": "#stone"},
+				"up": {"uv": [1, 4, 15, 12], "texture": "#stone"},
+				"down": {"uv": [1, 4, 15, 12], "texture": "#stone"}
+			}
+		}
+	]
+}

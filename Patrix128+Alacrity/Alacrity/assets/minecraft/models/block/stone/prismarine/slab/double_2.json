@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/cobble_slab/double_2",
+	"textures": {
+        "2": "block/stone/prismarine/slab_top",
+        "all": "block/stone/prismarine/slab_double_side",
+        "particle": "block/stone/prismarine/particle"
+	}
+}

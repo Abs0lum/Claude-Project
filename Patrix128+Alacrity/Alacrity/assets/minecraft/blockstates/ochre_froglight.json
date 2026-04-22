@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": [
+      { "model": "minecraft:block/misc/froglight/ochre_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/misc/froglight/ochre_2", "x": 90, "y": 90 }
+    ],
+    "axis=y": [
+      { "model": "minecraft:block/misc/froglight/ochre_1" },
+      { "model": "minecraft:block/misc/froglight/ochre_2" }
+    ],
+    "axis=z": [
+      { "model": "minecraft:block/misc/froglight/ochre_1", "x": 90 },
+      { "model": "minecraft:block/misc/froglight/ochre_2", "x": 90 }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nature/other/sugar_canes_1" },
+      { "model": "minecraft:block/nature/other/sugar_canes_2" }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld-Tectonic BP [SURVEY v0.1.0]",
+    "description": "v0.1.0 SURVEY — First 3 anchor biomes (alpine_peak, cherry_valley, desert_dunes) replacing their vanilla counterparts via minecraft:replace_biomes. Validates biome JSON + replace_biomes pipeline on PS5 before expanding to the full 10-biome roster in v0.5 'quarry'. See PatrixWorld_Tectonic_Research.md for full design doc.",
+    "uuid": "2a8f6b14-7e9c-4d3a-a1b5-c8e7f2d4a690",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 26, 0]
+  },
+  "modules": [
+    {
+      "description": "PatrixWorld-Tectonic biomes",
+      "type": "data",
+      "uuid": "d14e8c23-6f5a-4b9e-8c2d-7a3b5e9f1c40",
+      "version": [0, 1, 0]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"torch": "block/redstone_torch",
+		"particle": "block/redstone_torch"
+	},
+	"elements": [
+		{
+			"from": [-0.75, 3.5, 7.25],
+			"to": [0.75, 13.5, 8.75],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 3.5, 8]},
+			"faces": {
+				"north": {"uv": [7.25, 6, 8.75, 16], "texture": "#torch"},
+				"east": {"uv": [7.25, 6, 8.75, 16], "texture": "#torch"},
+				"south": {"uv": [7.25, 6, 8.75, 16], "texture": "#torch"},
+				"west": {"uv": [7.25, 6, 8.75, 16], "texture": "#torch"},
+				"up": {"uv": [7, 7, 9, 9], "rotation": 270, "texture": "#torch"},
+				"down": {"uv": [7, 13, 9, 15], "texture": "#torch"}
+			}
+		},
+		{
+			"from": [-1.5, 13.125, 6.5],
+			"to": [1.5, 13.5, 9.5],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 3.5, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 6, 9.5, 6.375], "texture": "#torch"},
+				"east": {"uv": [6.5, 6, 9.5, 6.375], "texture": "#torch"},
+				"south": {"uv": [6.5, 6, 9.5, 6.375], "texture": "#torch"},
+				"west": {"uv": [6.5, 6, 9.5, 6.375], "texture": "#torch"}
+			}
+		},
+		{
+			"from": [-1.5, 9.625, 6.5],
+			"to": [1.5, 10, 9.5],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 3.5, 8]},
+			"faces": {
+				"north": {"uv": [6.5, 9.5, 9.5, 9.875], "texture": "#torch"},
+				"east": {"uv": [6.5, 9.5, 9.5, 9.875], "texture": "#torch"},
+				"south": {"uv": [6.5, 9.5, 9.5, 9.875], "texture": "#torch"},
+				"west": {"uv": [6.5, 9.5, 9.5, 9.875], "texture": "#torch"}
+			}
+		},
+		{
+			"from": [0, 7.8, 0],
+			"to": [0, 19.5, 16],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 3.5, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 11.7], "texture": "#torch"},
+				"west": {"uv": [0, 0, 16, 11.7], "texture": "#torch"}
+			}
+		},
+		{
+			"from": [-8, 7.8, 8],
+			"to": [8, 19.5, 8],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 3.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 11.7], "texture": "#torch"},
+				"south": {"uv": [0, 0, 16, 11.7], "texture": "#torch"}
+			}
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+    "multipart": [
+		{ "apply": { "model": "minecraft:block/furniture/bookshelf/bookshelf_structure" } },
+		{ "apply": [
+				{ "model": "minecraft:block/furniture/bookshelf/books_1", "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_2", "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_3", "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_4", "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_5", "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_6", "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_7", "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_8", "weight": 2  }
+			]
+		},
+		{ "apply": [
+				{ "model": "minecraft:block/furniture/bookshelf/books_2", "y": 90, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_3", "y": 90, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_4", "y": 90, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_1", "y": 90, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_6", "y": 90, "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_7", "y": 90, "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_8", "y": 90, "weight": 2  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_5", "y": 90, "weight": 5  }
+			]
+		},
+		{ "apply": [
+				{ "model": "minecraft:block/furniture/bookshelf/books_3", "y": 180, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_4", "y": 180, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_1", "y": 180, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_2", "y": 180, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_7", "y": 180, "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_8", "y": 180, "weight": 2  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_5", "y": 180, "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_6", "y": 180, "weight": 5  }
+			]
+		},
+		{ "apply": [
+				{ "model": "minecraft:block/furniture/bookshelf/books_4", "y": 270, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_1", "y": 270, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_2", "y": 270, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_3", "y": 270, "weight": 10 },
+				{ "model": "minecraft:block/furniture/bookshelf/books_8", "y": 270, "weight": 2  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_5", "y": 270, "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_6", "y": 270, "weight": 5  },
+				{ "model": "minecraft:block/furniture/bookshelf/books_7", "y": 270, "weight": 5  }
+			]
+		}
+	]
+}

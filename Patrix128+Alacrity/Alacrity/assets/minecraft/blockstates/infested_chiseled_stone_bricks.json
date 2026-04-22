@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/stone_bricks/infested_chiseled_1" },
+      { "model": "minecraft:block/stone/stone_bricks/infested_chiseled_2" },
+      { "model": "minecraft:block/stone/stone_bricks/infested_chiseled_3" },
+      { "model": "minecraft:block/stone/stone_bricks/infested_chiseled_4" }
+    ]
+  }
+}

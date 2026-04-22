@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/decoration/candles/cake_candle_template",
+  "textures": {
+    "main": "minecraft:block/decoration/candles/pink",
+    "particle": "minecraft:block/decoration/candles/pink"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "me/adda/enhanced_falling_trees/mixin/BlockBreakingMixin": {
+      "getDestroyProgress": "Lnet/minecraft/class_4970$class_4971;method_26165(Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F"
+    },
+    "me/adda/enhanced_falling_trees/mixin/MixinDefaultParticleType": {
+      "<init>": "<init>"
+    },
+    "me/adda/enhanced_falling_trees/mixin/PlayerMixin": {
+      "defineSynchedData": "Lnet/minecraft/class_1657;method_5693()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "me/adda/enhanced_falling_trees/mixin/BlockBreakingMixin": {
+        "getDestroyProgress": "Lnet/minecraft/class_4970$class_4971;method_26165(Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F"
+      },
+      "me/adda/enhanced_falling_trees/mixin/MixinDefaultParticleType": {
+        "<init>": "<init>"
+      },
+      "me/adda/enhanced_falling_trees/mixin/PlayerMixin": {
+        "defineSynchedData": "Lnet/minecraft/class_1657;method_5693()V"
+      }
+    }
+  }
+}

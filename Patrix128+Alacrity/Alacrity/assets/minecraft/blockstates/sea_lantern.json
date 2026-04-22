@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/decoration/sea_lantern/lantern_1" },
+      { "model": "minecraft:block/decoration/sea_lantern/lantern_2" },
+      { "model": "minecraft:block/decoration/sea_lantern/lantern_3" },
+      { "model": "minecraft:block/decoration/sea_lantern/lantern_4" }
+    ]
+  }
+}

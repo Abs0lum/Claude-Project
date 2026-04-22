@@ -1,0 +1,57 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky141_sunrise_overcast_high.png",
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 141,
+		"fade": {
+			"duration": 192000,
+			"keyFrames": {
+				"500": 1.0,
+				"1500": 0.0,
+				"22500": 0.0,
+				"23500": 1.0,
+				"24500": 1.0,
+				"25500": 0.0,
+				"46500": 0.0,
+				"47500": 1.0,
+				"48500": 1.0,
+				"49500": 0.0,
+				"70500": 0.0,
+				"71500": 1.0,
+				"72500": 1.0,
+				"73500": 0.0,
+				"94500": 0.0,
+				"95500": 1.0,
+				"96500": 1.0,
+				"97500": 0.0,
+				"142500": 0.0,
+				"143500": 1.0,
+				"144500": 1.0,
+				"145500": 0.0,
+				"166500": 0.0,
+				"167500": 1.0,
+				"168500": 1.0,
+				"169500": 0.0,
+				"190500": 0.0,
+				"191500": 1.0
+				}
+			},
+		"rotation": {
+			"speed": -0.866,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.5423529411764706, "green": 0.6384313725490196, "blue": 0.7592156862745098}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": 255.0, "max": 319.0}]},
+		"biomes": {"entries": ["minecraft:deep_frozen_ocean", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:ice_spikes", "minecraft:snowy_beach", "minecraft:snowy_plains", "minecraft:snowy_taiga", "minecraft:snowy_tundra", "minecraft:grove"]}
+		}
+}

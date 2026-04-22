@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/underwater/seagrass/small_1", "y": 0  , "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_1", "y": 90 , "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_1", "y": 180, "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_1", "y": 270, "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_2", "y": 0  , "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_2", "y": 90 , "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_2", "y": 180, "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_2", "y": 270, "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_3", "y": 0  , "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_3", "y": 90 , "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_3", "y": 180, "weight": 50 },
+      { "model": "minecraft:block/underwater/seagrass/small_3", "y": 270, "weight": 50 }
+	]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "multipart": [
+    {
+      "apply": [ 
+        { "model": "block/interactive/cauldron" }
+      ] 
+    },
+    {
+      "apply": [ 
+          { "model": "block/interactive/cauldron_fill/lava" }
+      ]
+    }
+
+  ]
+}

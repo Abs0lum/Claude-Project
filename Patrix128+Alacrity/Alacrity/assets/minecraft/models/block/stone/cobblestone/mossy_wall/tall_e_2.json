@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/cobble_wall/tall_e_2",
+	"textures": {
+        "extra": "block/stone/cobblestone/mossy_extra",
+        "all": "block/stone/cobblestone/mossy_cobblestone_stairs_side",
+		"particle": "block/stone/stone_particle"
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/quartz/smooth/smooth_1" },
+      { "model": "minecraft:block/stone/quartz/smooth/smooth_2" },
+      { "model": "minecraft:block/stone/quartz/smooth/smooth_3" },
+      { "model": "minecraft:block/stone/quartz/smooth/smooth_4" }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"texture": "minecraft:textures/environment/sun.png",
+	"display": {
+		"scale": "30",
+		"distance": "100"
+	},
+	"rotation": {
+		"degrees_x": "single_rotation",
+		"degrees_y": "0",
+		"degrees_z": "0",
+		"base_degrees_x": "-90",
+		"base_degrees_y": "0",
+		"base_degrees_z": "-60"
+	},
+	"properties": {
+		"blend": true,
+		"alpha": "(1-submerged) * (ifElse((loop_25 > 507065) & (loop_25 < 507265), 0.005 * (loop_25 - 507065), ifElse((loop_25 > 507585) & (loop_25 < 507785), 0.005 * (loop_25 - 507585), ifElse((loop_25 > 507264) & (loop_25 < 507464), -0.005 * (loop_25 - 507464), ifElse((loop_25 > 507784) & (loop_25 < 507984), -0.005 * (loop_25 - 507984), 0)))))"
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by Satellence with Blockbench",
+	"texture_size": [40, 40],
+	"textures": {
+		"1": "block/mangrove_leaves",
+		"2": "block/nature/leaves/mangrove_leaves",
+		"particle": "block/mangrove_leaves"
+	},
+	"elements": [
+		{
+			"name": "leaves",
+			"from": [-4.2, -7.675, 1.925],
+			"to": [19.8, 16.325, 1.925],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.8, 9.325, 7.925]},
+			"faces": {
+				"north": {"uv": [12, 12, 6, 6], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [6, 12, 12, 6], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [-3.2, -7.675, 13.925],
+			"to": [20.8, 16.325, 13.925],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.8, 6.325, 6.925]},
+			"faces": {
+				"north": {"uv": [12, 12, 6, 6], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [6, 12, 12, 6], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

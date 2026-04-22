@@ -1,0 +1,39 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/small_amethyst_bud",
+		"crystal": "block/small_amethyst_bud"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 8],
+			"to": [17, 16, 8],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [9, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#crystal"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#crystal"}
+			}
+		},
+		{
+			"from": [3, 0, 2],
+			"to": [3, 12, 14],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [3, 0, 8]},
+			"faces": {
+				"east": {"uv": [16, 0, 0, 16], "texture": "#crystal"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#crystal"}
+			}
+		},
+		{
+			"from": [0, 0, 14],
+			"to": [14, 14, 14],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [6, 0, 14]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#crystal"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#crystal"}
+			}
+		}
+	]
+}

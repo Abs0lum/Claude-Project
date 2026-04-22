@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nature/ice/blue_ice_1" },
+      { "model": "minecraft:block/nature/ice/blue_ice_2" },
+      { "model": "minecraft:block/nature/ice/blue_ice_3" },
+      { "model": "minecraft:block/nature/ice/blue_ice_4" }
+    ]
+  }
+}

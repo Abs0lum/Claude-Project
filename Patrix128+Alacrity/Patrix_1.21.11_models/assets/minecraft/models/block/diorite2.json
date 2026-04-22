@@ -1,0 +1,6 @@
+{
+    "parent":"block/stalactite1",
+    "textures": {
+	"all":"block/diorite"
+    }
+}

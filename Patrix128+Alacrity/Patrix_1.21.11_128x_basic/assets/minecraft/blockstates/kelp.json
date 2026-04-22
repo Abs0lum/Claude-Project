@@ -1,0 +1,13 @@
+{
+    "multipart": [
+        {   "apply": { "model": "block/kelp" }
+        },
+        {   "apply": [
+                { "model": "block/kelp_extra" },
+                { "model": "block/kelp_extra", "y": 90 },
+                { "model": "block/kelp_extra", "y": 180 },
+                { "model": "block/kelp_extra", "y": 270 }
+            ]
+        }
+    ]
+}

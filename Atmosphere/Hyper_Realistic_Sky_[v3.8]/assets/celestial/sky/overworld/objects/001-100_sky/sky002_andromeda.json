@@ -1,0 +1,21 @@
+{
+	"texture": "skybox:overworld/uv_mapped/andromeda.png",
+	"vertex": [
+		{ "x": "-100", "y": "-3.4718", "z": "-92.2077", "uv_x": 1, "uv_y": 0 },
+		{ "x": "-100", "y": "-1.6435", "z": "-88.5439", "uv_x": 0, "uv_y": 0 },
+		{ "x": "-100", "y": "-5.6107", "z": "-86.5642", "uv_x": 0, "uv_y": 1 },
+		{ "x": "-100", "y": "-7.4390", "z": "-90.228", "uv_x": 1, "uv_y": 1 }
+	],
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "0",
+		"degrees_z": "-single_rotation+90",
+		"base_degrees_x": "0",
+		"base_degrees_y": "26.52",
+		"base_degrees_z": "0"
+	},
+	"properties": {
+		"blend": true,
+		"alpha": "(1-submerged)"
+	}
+}

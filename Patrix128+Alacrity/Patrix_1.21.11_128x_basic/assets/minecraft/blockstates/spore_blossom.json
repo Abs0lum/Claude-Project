@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/spore_blossom" },
+            { "model": "block/spore_blossom", "y": 90 },
+            { "model": "block/spore_blossom", "y": 180 },
+            { "model": "block/spore_blossom", "y": 270 },
+            { "model": "block/spore_blossom2" },
+            { "model": "block/spore_blossom2", "y": 90 },
+            { "model": "block/spore_blossom2", "y": 180 },
+            { "model": "block/spore_blossom2", "y": 270 }
+        ]
+    }
+}

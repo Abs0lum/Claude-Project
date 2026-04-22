@@ -1,0 +1,30 @@
+{
+	"pack": {
+		"pack_format": 15,
+    	"description": "§5Alacrity §232x pack \n§7Author: §3Satellence§8",
+    	"supported_formats": {"min_inclusive": 14, "max_inclusive": 999 },
+    	"min_format": 14,
+    	"max_format": 999
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "overrides_1.21",
+				"formats": [19,999],
+				"min_format": 19,
+    			"max_format": 999
+			},
+			{
+				"directory": "overrides_1.21.5",
+				"formats": [50,999],
+				"min_format": 50,
+    			"max_format": 999
+			}
+
+		]
+	},
+	"fusion": {
+		"min_version":"1.2.2",
+        "overrides_folder": "fusion"
+    }
+}

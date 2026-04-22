@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "axis=x": [
+        { "model": "minecraft:block/stone/purpur/pillar_1", "x": 90, "y": 270 },
+        { "model": "minecraft:block/stone/purpur/pillar_2", "x": 90, "y": 270 },
+        { "model": "minecraft:block/stone/purpur/pillar_3", "x": 90, "y": 270 },
+        { "model": "minecraft:block/stone/purpur/pillar_4", "x": 90, "y": 270 }
+    ],
+    "axis=y": [
+        { "model": "minecraft:block/stone/purpur/pillar_1" },
+        { "model": "minecraft:block/stone/purpur/pillar_2" },
+        { "model": "minecraft:block/stone/purpur/pillar_3" },
+        { "model": "minecraft:block/stone/purpur/pillar_4" }
+    ],
+    "axis=z": [
+        { "model": "minecraft:block/stone/purpur/pillar_1", "x": 270 },
+        { "model": "minecraft:block/stone/purpur/pillar_1", "x": 270 },
+        { "model": "minecraft:block/stone/purpur/pillar_1", "x": 270 },
+        { "model": "minecraft:block/stone/purpur/pillar_1", "x": 270 }
+    ]
+  }
+}

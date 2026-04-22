@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/stone_bricks/infested_cracked_1" },
+      { "model": "minecraft:block/stone/stone_bricks/infested_cracked_2" },
+      { "model": "minecraft:block/stone/stone_bricks/infested_cracked_3" },
+      { "model": "minecraft:block/stone/stone_bricks/infested_cracked_4" }
+    ]
+  }
+}

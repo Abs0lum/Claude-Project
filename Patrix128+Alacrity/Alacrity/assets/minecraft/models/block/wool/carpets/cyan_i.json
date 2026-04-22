@@ -1,0 +1,8 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/wool/carpets/a_item_template",
+	"textures": {
+		"3": "block/wool/carpet_cyan_extra",
+		"particle": "block/wool/particle/cyan"
+	}
+}

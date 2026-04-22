@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/tuff/bricks_chiseled/block_1" },
+      { "model": "minecraft:block/stone/tuff/bricks_chiseled/block_2" },
+      { "model": "minecraft:block/stone/tuff/bricks_chiseled/block_3" },
+      { "model": "minecraft:block/stone/tuff/bricks_chiseled/block_4" }
+    ]
+  }
+}

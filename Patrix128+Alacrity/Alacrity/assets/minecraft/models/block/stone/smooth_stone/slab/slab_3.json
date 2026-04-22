@@ -1,0 +1,25 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/stone/smooth_stone/smooth_stone_side",
+		"3": "block/stone/smooth_stone/smooth_stone",
+		"4": "block/stone/smooth_stone/smooth_stone_bot",
+		"particle": "block/stone/stone_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 12, 0, 16], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [8, 12, 16, 16], "texture": "#2", "cullface": "east"},
+				"south": {"uv": [0, 12, 8, 16], "texture": "#2", "cullface": "south"},
+				"west": {"uv": [16, 12, 8, 16], "texture": "#2", "cullface": "west"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#3"},
+				"down": {"uv": [0, 8, 8, 16], "rotation": 90, "texture": "#4", "cullface": "down"}
+			}
+		}
+	]
+}

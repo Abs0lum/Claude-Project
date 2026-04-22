@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/simple_wall/post_4",
+	"texture_size": [32, 32],
+	"textures": {
+		"cubes": "block/stone/granite/cubes",
+		"slab_cubes": "block/stone/granite/polished_slab_cubes",
+		"1": "block/stone/granite/side",
+		"particle": "block/stone/granite/particle"
+	}
+}

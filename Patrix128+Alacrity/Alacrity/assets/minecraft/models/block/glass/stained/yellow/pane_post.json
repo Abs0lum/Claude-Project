@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/glass/led_framed/pane_post",
+	"textures": {
+		"2": "block/glass/stained/yellow/pane",
+		"6": "block/glass/normal/pane_parts",
+		"particle": "block/glass/particle/yellow"
+	}
+}

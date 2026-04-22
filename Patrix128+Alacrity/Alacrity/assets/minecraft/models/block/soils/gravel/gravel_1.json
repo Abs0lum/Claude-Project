@@ -1,0 +1,7 @@
+{
+	"parent": "block/templates/simple_block",
+	"textures": {
+		"all": "block/soils/gravel/gravel_1",
+		"particle": "block/soils/gravel/particle"
+	}
+}

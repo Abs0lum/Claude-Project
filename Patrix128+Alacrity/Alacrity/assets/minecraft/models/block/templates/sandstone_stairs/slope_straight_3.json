@@ -1,0 +1,65 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"3": "block/stone/sandstone/sandstone",
+		"particle": "block/stone/sand/particle"
+	},
+	"elements": [
+		{
+			"from": [7.975, 0, -0.025],
+			"to": [16.025, 2.5, 16.025],
+			"faces": {
+				"north": {"uv": [12, 1.25, 14, 1.875], "texture": "#3", "cullface": "down"},
+				"east": {"uv": [12, 1.25, 16, 1.875], "texture": "#3", "cullface": "down"},
+				"south": {"uv": [14, 1.25, 16, 1.875], "texture": "#3", "cullface": "down"},
+				"west": {"uv": [12, 1.25, 16, 1.875], "texture": "#3", "cullface": "down"},
+				"down": {"uv": [0, 4, 2, 8], "texture": "#3", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-0.025, 8, -0.025],
+			"to": [8.025, 10.5, 16.025],
+			"faces": {
+				"north": {"uv": [12, 1.25, 14, 1.875], "texture": "#3", "cullface": "north"},
+				"south": {"uv": [14, 1.25, 16, 1.875], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [12, 1.25, 16, 1.875], "texture": "#3", "cullface": "west"},
+				"down": {"uv": [2, 4, 4, 8], "texture": "#3"}
+			}
+		},
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 12, 4, 14], "texture": "#3", "cullface": "north"},
+				"east": {"uv": [0, 12, 4, 14], "texture": "#3", "cullface": "east"},
+				"south": {"uv": [0, 12, 4, 14], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [0, 12, 4, 14], "texture": "#3", "cullface": "west"}
+			}
+		},
+		{
+			"from": [8, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [0, 14, 2, 16], "texture": "#3", "cullface": "north"},
+				"east": {"uv": [0, 14, 4, 16], "texture": "#3", "cullface": "east"},
+				"south": {"uv": [2, 14, 4, 16], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [0, 14, 4, 16], "texture": "#3"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [75, -135, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"rotation": [0, -90, 0]
+		}
+	}
+}

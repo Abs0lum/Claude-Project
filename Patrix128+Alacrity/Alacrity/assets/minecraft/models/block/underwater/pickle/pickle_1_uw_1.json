@@ -1,0 +1,41 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"all": "block/underwater/pickle",
+		"particle": "block/underwater/seagrass_particle"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 9, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]},
+			"faces": {
+				"north": {"uv": [0, 2, 2, 6.5], "texture": "#all"},
+				"east": {"uv": [6, 2, 8, 6.5], "texture": "#all"},
+				"south": {"uv": [4, 2, 6, 6.5], "texture": "#all"},
+				"west": {"uv": [2, 2, 4, 6.5], "texture": "#all"},
+				"up": {"uv": [2, 0, 4, 2], "texture": "#all"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#all", "cullface": "down"}
+			}
+		},
+		{
+			"from": [6.5, 9, 8],
+			"to": [9.5, 17, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 13, 8]},
+			"faces": {
+				"north": {"uv": [16, 0, 14.5, 4], "texture": "#all"},
+				"south": {"uv": [14.5, 0, 16, 4], "texture": "#all"}
+			}
+		},
+		{
+			"from": [6.5, 9, 8],
+			"to": [9.5, 17, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 13, 8]},
+			"faces": {
+				"north": {"uv": [14.5, 0, 13, 4], "texture": "#all"},
+				"south": {"uv": [13, 0, 14.5, 4], "texture": "#all"}
+			}
+		}
+	]
+}

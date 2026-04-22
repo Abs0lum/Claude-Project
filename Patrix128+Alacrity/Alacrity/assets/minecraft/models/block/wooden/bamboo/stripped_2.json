@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/cube_all",
+	"texture_size": [32, 32],
+	"textures": {
+        "2": "block/wooden/bamboo/stripped",
+        "all": "block/wooden/bamboo/stripped_top",
+        "particle": "block/wooden/bamboo/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [8, 0, 16, 8], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#2", "cullface": "east"},
+				"south": {"uv": [8, 0, 16, 8], "texture": "#2", "cullface": "south"},
+				"west": {"uv": [8, 0, 16, 8], "texture": "#2", "cullface": "west"},
+				"up": {"uv": [8, 0, 16, 8], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#all", "cullface": "down"}
+			}
+		}
+	]
+}

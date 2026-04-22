@@ -1,0 +1,23 @@
+{
+    id: "alacrity",
+    version: 9,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+    	gravelStyle: [
+			"gray",
+			"dark"
+		],
+		woodenStairs: [
+			"vanilla",
+			"thin"
+		],
+		woodenSlab: [
+			"vanilla",
+			"thin"
+		],
+		leavesQuality: [
+			"high",
+			"medium"
+		]
+    }
+}

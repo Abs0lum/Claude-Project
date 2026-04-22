@@ -1,0 +1,207 @@
+{"variants":{
+	"facing=east,half=bottom,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_4", "y": 0,   "uvlock": true }], 
+	"facing=south,half=bottom,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_1", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_4", "y": 90,  "uvlock": true }], 
+	"facing=west,half=bottom,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_1", "y": 180, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_4", "y": 180, "uvlock": true }], 
+	"facing=north,half=bottom,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_1", "y": 270, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_str_4", "y": 270, "uvlock": true }], 
+
+	"facing=east,half=bottom,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 0,   "uvlock": true }],
+	"facing=south,half=bottom,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 0,   "uvlock": true }],
+	"facing=south,half=bottom,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=bottom,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 90, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 90, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 90, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 90, "uvlock": true }], 
+	"facing=west,half=bottom,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 180, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 180, "uvlock": true }],
+	"facing=north,half=bottom,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 180, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 180, "uvlock": true }], 
+	"facing=north,half=bottom,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 270, "uvlock": true }],
+	"facing=east,half=bottom,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_1", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_inn_4", "y": 270, "uvlock": true }],
+
+	"facing=east,half=bottom,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 0,   "uvlock": true }], 
+	"facing=south,half=bottom,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 0,   "uvlock": true }],
+	"facing=south,half=bottom,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 90,  "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=bottom,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=bottom,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 180, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 180, "uvlock": true }], 
+	"facing=north,half=bottom,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 180, "uvlock": true }],
+	"facing=north,half=bottom,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 270, "uvlock": true }], 
+	"facing=east,half=bottom,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_1", "y": 270, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/stairs_out_4", "y": 270, "uvlock": true }], 
+
+	"facing=east,half=top,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_4", "y": 0,   "uvlock": true }],
+	"facing=south,half=top,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_1", "y": 90,  "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=top,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_1", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_4", "y": 180, "uvlock": true }],
+	"facing=north,half=top,shape=straight":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_1", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_str_4", "y": 270, "uvlock": true }],
+
+	"facing=east,half=top,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 0,   "uvlock": true }],    
+	"facing=south,half=top,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 0,   "uvlock": true }],
+	"facing=south,half=top,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 90,  "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=top,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 90,  "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=top,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 180, "uvlock": true }],
+	"facing=north,half=top,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 180, "uvlock": true }],
+	"facing=north,half=top,shape=inner_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 270, "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 270, "uvlock": true }],
+	"facing=east,half=top,shape=inner_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_1", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_inn_4", "y": 270, "uvlock": true }],
+
+	"facing=east,half=top,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 0,   "uvlock": true }],
+	"facing=south,half=top,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 0,   "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 0,   "uvlock": true }],
+	"facing=south,half=top,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=top,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 90,  "uvlock": true }, 
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 90,  "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 90,  "uvlock": true }],
+	"facing=west,half=top,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 180, "uvlock": true }],
+	"facing=north,half=top,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 180, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 180, "uvlock": true }],
+	"facing=north,half=top,shape=outer_right":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 270, "uvlock": true }], 
+	"facing=east,half=top,shape=outer_left":[
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_1", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_2", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_3", "y": 270, "uvlock": true },
+	  { "model": "minecraft:block/stone/quartz/smooth_stairs/cornice_out_4", "y": 270, "uvlock": true }]
+}}

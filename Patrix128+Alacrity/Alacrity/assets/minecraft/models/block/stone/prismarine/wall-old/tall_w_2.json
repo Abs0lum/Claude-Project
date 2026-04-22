@@ -1,0 +1,23 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"4": "block/stone/prismarine/extra",
+		"all": "block/stone/prismarine/stairs_side",
+		"particle": "block/stone/prismarine/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 5.5],
+			"to": [8, 16, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [4, 8, 8, 16], "texture": "#all"},
+				"south": {"uv": [4, 8, 8, 16], "texture": "#all"},
+				"west": {"uv": [0, 8, 2.5, 16], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [0, 7.75, 4, 10.25], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [8.75, 16, 11.25, 12], "rotation": 270, "texture": "#4", "cullface": "down"}
+			}
+		}
+	]
+}

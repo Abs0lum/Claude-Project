@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"type": "multi-textured",
+	"animatableTextures": [
+		{
+			"texture": "skybox:overworld/501-600_earth/sky507_eclipse_shadow.png",
+			"uvRange": {
+				"minU": 0.45,
+				"minV": 0.175,
+				"maxU": 0.55,
+				"maxV": 0.325
+			},
+			"gridColumns": 1,
+			"gridRows": 1,
+			"duration": 1000
+		}
+	],
+	"blend": {"type" : "multiply"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 507,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"507150": 0.0,
+				"507175": 1.0,
+				"507875": 1.0,
+				"507900": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -5.0,
+			"mapping": {"0": [-84.808, -93.013, 0.0]},
+			"axis": {"0": [-60.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]},
+		"yRanges": {"entries": [{"min": 319.0, "max": 10000.0}]}
+		}
+}

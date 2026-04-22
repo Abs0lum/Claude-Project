@@ -1,0 +1,69 @@
+{
+  "multipart": [
+    {
+      "when": { "up": "true" },      
+        "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/post_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/post_2" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/post_3" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/post_4" } 
+        ]      
+    },
+    {
+      "when": { "north": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_n_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_n_2" }
+        ]      
+    },
+    {
+      "when": { "east": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_e_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_e_2" }
+        ]      
+    },
+    {
+      "when": { "south": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_s_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_s_2" }
+        ]      
+    },
+    {
+      "when": { "west": "low" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_w_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/side_w_2" }
+        ]      
+    },
+    {
+      "when": { "north": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_n_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_n_2" }
+        ]      
+    },
+    {
+      "when": { "east": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_e_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_e_2" }
+        ]      
+    },
+    {
+      "when": { "south": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_s_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_s_2" }
+        ]      
+    },
+    {
+      "when": { "west": "tall" },
+      "apply": [ 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_w_1" }, 
+          { "model": "minecraft:block/stone/cobblestone/mossy_wall/tall_w_2" }
+        ]      
+    }
+  ]
+}

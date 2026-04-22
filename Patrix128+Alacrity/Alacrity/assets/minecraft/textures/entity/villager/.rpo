@@ -1,0 +1,4 @@
+{
+    condition: "!villagers.female",
+    fallbacks: "assets/minecraft/textures/entity/villager_female"
+}

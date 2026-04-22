@@ -1,0 +1,22 @@
+{
+    "cyellowit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "2": "block/stone/terracotta/yellow",
+        "particle": "block/stone/terracotta/particle/yellow"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [0, 4, 8, 8], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [0, 4, 8, 8], "texture": "#2", "cullface": "east"},
+				"south": {"uv": [0, 4, 8, 8], "texture": "#2", "cullface": "south"},
+				"west": {"uv": [0, 4, 8, 8], "texture": "#2", "cullface": "west"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#2"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#2", "cullface": "down"}
+			}
+		}
+	]
+}

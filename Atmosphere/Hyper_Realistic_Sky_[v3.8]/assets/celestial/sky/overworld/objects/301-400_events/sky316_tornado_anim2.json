@@ -1,0 +1,22 @@
+{
+	"texture": "skybox:overworld/uv_mapped/tornado_2.png",
+	"vertex": [
+		{ "x": "-71.2890625", "y": "26.7578125", "z": " 100", "uv_x": "modulo(((floor(0.078125*worldTime))/8),1)+0.125", "uv_y": "modulo(((floor(1.25*worldTime))/16),1)" },
+		{ "x": "-32.2265625", "y": "26.7578125", "z": " 100", "uv_x": "modulo(((floor(0.078125*worldTime))/8),1)", "uv_y": "modulo(((floor(1.25*worldTime))/16),1)" },
+		{ "x": "-32.2265625", "y": "-2.5390625", "z": " 100", "uv_x": "modulo(((floor(0.078125*worldTime))/8),1)", "uv_y": "modulo(((floor(1.25*worldTime))/16),1)+0.0625" },
+		{ "x": "-71.2890625", "y": "-2.5390625", "z": " 100", "uv_x": "modulo(((floor(0.078125*worldTime))/8),1)+0.125", "uv_y": "modulo(((floor(1.25*worldTime))/16),1)+0.0625" }
+	],
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "single_rotation",
+		"degrees_z": "0",
+		"base_degrees_x": "0",
+		"base_degrees_y": "0",
+		"base_degrees_z": "0"
+	},
+	"properties": {
+		"is_solid": true,
+		"blend": true,
+		"alpha": "(1-submerged) * tornado_fade * low_altitude"
+	}
+}

@@ -1,0 +1,129 @@
+{
+	"credit": "Created by FreshLX for Patrix",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "root",
+			"id": "root",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Patrix",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"root.ry": "torad( var.hy/2 )*var.tilt +(-rot_y +var.rr )*var.tp",
+					"root.rz": "torad( var.hy/3 )*var.tilt",
+					"root.tx": " sin(root.rz)*24",
+					"root.ty": "-cos(root.rz)*24+24 +if(is_ridden, 0, if(is_child, 4, 8) )*var.swiA",
+					"body.rx": "torad(                           (-sin(var.Bt+pi/4)/2 -2*sin( pi/12+var.ls*2)*    var.move       )*var.walk                     +(-8*cos(var.ls)*limb_speed )*var.run  +( 5.5*sin(var.St*2)*max(var.move, 0.5) )*var.swim  +( -20*var.jump*if(is_child,1.5,1) +45*var.fall +15*cos(var.t_land*4)*var.land )  +((-1+cos( var.tp*pi*4 +cos( var.tp*pi*4 )/4 ))/60*var.tq)*(var.turnL+var.turnR)  +( -3 -10*sin(var.ls    ) )*var.hurt                                    +sin(var.It*1.5 +sin(-pi/4+var.It/1.5)*2 )*var.Nidle*(1-var.eat) +( if(is_child,10,15) +7*sin(var.eat*pi) )*var.eat  )",
+					"body.ry": "torad(  ( var.hy/10*var.idl2 )  +(-cos(var.Bt/3   )/2   +sin(-pi/4 +var.ls  )*max(var.move, 0.5) )*var.walk*if(is_child,0.7,1)                                         +(-3  *sin(-pi/4+var.St)                )*var.swim                    -4*sin(var.St*1.5)*var.t_fall                                   +(-var.tq*(1-var.tp)  +var.tq/2*(1+cos(var.tp*pi  ))     )*(var.turnL+var.turnR)  +(     20*cos(var.ls/1.5) )*var.hurt                                +3*cos(clamp(0.5+sin(-pi/18+var.It),0,1)*pi)*var.Nlook*(1-var.swim)    -1.5*cos(     var.id+age/3)*(var.Nlfleg+var.Nrbleg)  )",
+					"body.rz": "torad(                           (                    -3*cos(-pi/4 +var.ls  )*max(var.move, 0.5) )*var.walk*if(is_child,0.7,1)  +( 4*sin(var.ls)*limb_speed )*var.run  +( 5  *cos(-pi/4+var.St)                )*var.swim                    +2*cos(var.St*1.5)*var.t_fall                                   +( var.tq/30*sin( var.tp*pi*2 )*(1-cos(var.tp*pi*2))     )*(var.turnL-var.turnR)  +(   -2.6*sin(var.ls    ) )*var.hurt  +cos(clamp(0.5-sin(-pi/12+var.It)*0.7,0,1)*pi)*(0.8-cos(var.It/4+sin(var.It/4)))*var.Nidle*(1-var.eat) -3*cos(pi/4+var.id+age/3)*(var.Nlfleg+var.Nrbleg) -2*cos(var.id+age/1.3)*var.Nshake  )",
+					"body.tx": "(  cos(var.Bt/3)/6*var.walk  +(   2*sin(torad(var.tq*var.tp))  *( 1+cos(var.tp*pi  ) )/2)*(var.turnL+var.turnR)  ) * if( is_child, 0.5, 1 )",
+					"body.ty": "( if(is_child,35,12)-1.8 +( ( 0.2 +cos(pi/9+var.ls*2)*0.24 )*var.move -sin(var.Bt)/6 )*var.walk  +( 0.25 +sin(var.ls) )*limb_speed*var.run  +( var.jump -3*max(0,var.fall) +4*var.land )  +var.tq/90*( 1-cos(var.tp*pi*2) )/4*(var.turnL+var.turnR)  +( 2 +1*cos(var.ls) )*var.hurt  +( if(is_child,2,3) +1.5*sin(var.eat*pi) )*var.eat  ) * if( is_child, 0.5, 1 )",
+					"body.tz": "(  -(2-2*cos(torad(var.tq*var.tp)) )*( 1+cos(var.tp*pi) )/2*(var.turnL+var.turnR)  +(     -cos(var.ls)*4 )*var.hurt  -0.4*var.eat  ) * if( is_child, 0.5, 1 )",
+					"head2.rx": "-body.rx                           +torad( head_pitch/1.2*(1-var.eat)  +( cos(var.Bt)/4  +( 1+cos(var.ls*2 +sin(var.ls*2)/2 )*2 )*limb_speed )*var.walk  -( 0.5+sin(pi/4+var.ls) )*5*limb_speed*var.run/if(is_child,2,1)  +(-5 -(3+3*var.move)*sin(var.St*2) )*var.swim  +( 20*pow( clamp(var.fall*1.5,-1,1), 3) -20*cos(var.t_land*pi)*var.land )  +(-7 +20*sin(var.ls/1.2) )*var.hurt  +3*sin(var.It*1.5 +sin(var.It/1.5)/2 )*var.Nidle +( 10*cos(clamp(-0.5+sin(pi/12+var.It/3)*3,0,1)*pi) )*var.Nlook +(40+5*sin(pi/4 +var.id +age/if(is_child, 1.35, 2)) -30*sin(var.eat*pi) )*var.eat  )",
+					"head2.ry": "clamp(-body.ry -root.rz/2 -root.ry +torad( var.hy/1.3*(1-var.eat/2)*(1-var.tilt*1.5) ), -pi/2.5, pi/2.5 )                 +torad(  -30*cos(var.ls*1.3)*var.hurt                                                      +20              *cos(clamp(0.5+sin(      var.It)*1.5,0,1)*pi)*var.Nlook  )",
+					"head2.rz": "      -body.rz -root.rz/2          +torad( -var.tq/18*( 1-cos(var.tp*pi*2) )*(var.turnL+var.turnR)  -6*sin(var.St*1.5)*var.t_fall  +30*cos(var.ls*0.8)*var.hurt  +5*cos(clamp(0.5-sin(var.It)*1.5,0,1)*pi)*var.Nidle +10*sin(var.It/2)*cos(clamp(0.5+sin(pi/16+var.It)*1.5,0,1)*pi)*var.Nlook*(1-var.eat) +( 1+sin(pi/6+var.Ct) )*min(1,var.chew*8)*if(random(id)>0.5,-1, 1) +23*sin(var.id+age/1.3)*var.Nshake -7*(var.Nlfleg-var.Nrbleg)  )",
+					"head2.tx": "torad( -var.hy )",
+					"head2.ty": "-18 +if(is_child,var.eat,0) +(-sin(var.Bt)/6  +( 1+cos(-pi/4+var.ls*2) )/2*limb_speed )*var.walk  +( 1+sin(var.ls) )*limb_speed*var.run  +sin(var.St*2)/2*var.move*var.swim  +( 2*sin( var.t_jump*pi )*var.jump +( 2 -3*cos( var.t_land*pi) )*var.land )  +( sin(limb_swing)/2 +0.5 )*var.hurt  +( if(is_child, 4, 6.3)*var.eat  +var.Nshake  +(var.Nlfleg+var.Nrbleg)/2*(1-var.eat) )",
+					"head2.tz": "-6  -1.7*var.eat",
+					"head2.sx": "if(is_child,1.35,1)",
+					"head2.sy": "head2.sx",
+					"head2.sz": "head2.sx",
+					"rotation.sx": "if(is_child, 0.9, 1)",
+					"rotation.sz": "if(is_child, 0.8, 1)"
+				},
+				{
+					"right_ear.ry": "torad( clamp(-5 +20*limb_speed  -var.hy/3  -10*cos(var.ls*2)*limb_speed*var.walk  +( -60*sin(-pi/9+var.It)*(1+cos(clamp(1.5-cos(-pi/9+var.It*2),0,1)*pi))*var.Nlook ) -70*sin(pi/6+age*1.5)*sin(pow(var.NearR,2)*pi) +30*var.eat, -22, 60 )  )",
+					"left_ear.ry": " torad( clamp( 5 -20*limb_speed  -var.hy/3  +10*cos(var.ls*2)*limb_speed*var.walk  +( -60*sin(-pi/9+var.It)*(1+cos(clamp(1.5-cos(-pi/9+var.It*2),0,1)*pi))*var.Nlook ) +70*cos(pi/6+age*1.5)*sin(pow(var.NearL,2)*pi) -30*var.eat, -60, 22 )  )",
+					"right_ear.rz": "torad( -3  -2*cos(pi/4+var.Bt)*var.walk  +20*sin(pi/4+var.ls)*limb_speed*var.run  +4*cos(var.St*2)*var.swim  +(-40*cos(var.t_jump*pi)*var.jump +(40 +5*sin(var.St*4  )*var.t_fall)*var.fall +90*cos(var.t_land*3)*var.land )  -40*sin(age*1.5)*sin(pow(var.NearR,2)*pi) +30*sin(-pi/9+var.It)*(1+cos(clamp(1.5-cos(-pi/6+var.It*2),0,1)*pi))*var.Nidle +( 15 -40*cos(pi/11+var.id+age/1.3) )*var.Nshake  )",
+					"left_ear.rz": " torad(  3  +2*cos(pi/4+var.Bt)*var.walk  -20*sin(pi/4+var.ls)*limb_speed*var.run  -4*cos(var.St*2)*var.swim  -(-40*cos(var.t_jump*pi)*var.jump +(40 +5*sin(var.St*3.8)*var.t_fall)*var.fall +90*cos(var.t_land*3)*var.land )  -40*cos(age*1.5)*sin(pow(var.NearL,2)*pi) +30*sin(-pi/9+var.It)*(1+cos(clamp(1.5-cos(-pi/6+var.It*2),0,1)*pi))*var.Nidle +(-15 -40*cos(pi/11+var.id+age/1.3) )*var.Nshake  )"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -14, 0],
+			"submodels": [
+				{
+					"id": "head2",
+					"invertAxis": "xy",
+					"translate": [0, 18, -6],
+					"submodels": [
+						{
+							"id": "left_ear",
+							"invertAxis": "xy",
+							"translate": [-3, 2.25, -3.5],
+							"boxes": [
+								{
+									"coordinates": [-3, -1, -0.5, 3, 2, 1],
+									"uvNorth": [1, 13, 4, 15],
+									"uvEast": [0, 13, 1, 15],
+									"uvSouth": [5, 13, 8, 15],
+									"uvWest": [4, 13, 5, 15],
+									"uvUp": [4, 13, 1, 12],
+									"uvDown": [7, 12, 4, 13],
+									"sizeAdd": 0.1
+								}
+							]
+						},
+						{
+							"id": "right_ear",
+							"invertAxis": "xy",
+							"translate": [3, 2.25, -3.5],
+							"boxes": [
+								{
+									"coordinates": [0, -1, -0.5, 3, 2, 1],
+									"uvNorth": [4, 13, 1, 15],
+									"uvEast": [5, 13, 4, 15],
+									"uvSouth": [8, 13, 5, 15],
+									"uvWest": [0, 13, 1, 15],
+									"uvUp": [1, 13, 4, 12],
+									"uvDown": [4, 12, 7, 13],
+									"sizeAdd": 0.1
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

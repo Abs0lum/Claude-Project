@@ -1,0 +1,72 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [64, 64],
+	"textures": {
+        "0": "block/nature/leaves/oak_leaves",
+        "1": "block/nature/leaves/oak_branches",
+        "particle": "block/nature/leaves/oak_leaves"
+	},
+	"elements": [
+		{
+			"name": "Large",
+			"from": [8.025, -7.975, -7.95],
+			"to": [8.025, 24.025, 24.05],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8.025, 8.025, 8.05]},
+			"faces": {
+				"east": {"uv": [8, 8, 16, 0], "rotation": 270, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [16, 8, 8, 0], "rotation": 90, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Large",
+			"from": [-7.975, 8.025, -7.95],
+			"to": [24.025, 8.025, 24.05],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8.025, 8.025, 8.05]},
+			"faces": {
+				"up": {"uv": [0, 8, 8, 0], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [8, 8, 0, 0], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-5.975, 8.025, -5.95],
+			"to": [22.025, 8.025, 22.05],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.025, 8.025, 8.05]},
+			"faces": {
+				"up": {"uv": [7, 14, 14, 7], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [7, 14, 14, 7], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-5.975, 8.025, -5.95],
+			"to": [22.025, 8.025, 22.05],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8.025, 8.025, 8.05]},
+			"faces": {
+				"up": {"uv": [0, 7, 7, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 7, 7, 0], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-5.975, 8.025, -5.95],
+			"to": [22.025, 8.025, 22.05],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8.025, 8.025, 8.05]},
+			"faces": {
+				"up": {"uv": [0, 14, 7, 7], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 14, 7, 7], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-5.975, 8.025, -5.95],
+			"to": [22.025, 8.025, 22.05],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8.025, 8.025, 8.05]},
+			"faces": {
+				"up": {"uv": [7, 7, 14, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [7, 7, 14, 0], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		}
+	]
+}

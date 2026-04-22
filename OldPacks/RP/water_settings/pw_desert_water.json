@@ -1,0 +1,38 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:water_settings": {
+    "description": {
+      "identifier": "pw:desert_water"
+    },
+    "components": {
+      "minecraft:particle_concentrations": {
+        "cdom": 2.0,
+        "chlorophyll": 3.0,
+        "suspended_sediment": 12.0
+      },
+      "minecraft:caustics": {
+        "enabled": true,
+        "frame_length": 0.08,
+        "power": 4.5,
+        "scale": 0.6
+      },
+      "minecraft:waves": {
+        "enabled": true,
+        "depth": 0.06,
+        "direction_increment": 65,
+        "frequency": 1.0,
+        "frequency_scaling": 1.15,
+        "interlacing": 0.4,
+        "octaves": 3,
+        "pulling": 0.2,
+        "smoothness": 0.9,
+        "detail": 0.9,
+        "speed": 0.9,
+        "speed_scaling": 1.05
+      },
+      "minecraft:biome_water_color_contribution": {
+        "contribution": 0.9
+      }
+    }
+  }
+}

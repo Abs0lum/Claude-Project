@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/bricks/chiseled_1" },
+      { "model": "minecraft:block/nether/bricks/chiseled_2" },
+      { "model": "minecraft:block/nether/bricks/chiseled_3" },
+      { "model": "minecraft:block/nether/bricks/chiseled_4" }
+    ]
+  }
+}

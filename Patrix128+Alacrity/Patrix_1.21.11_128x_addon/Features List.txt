@@ -1,0 +1,171 @@
+================================
+Most of the following features are stored in "assets\minecraft\optifine\ctm\patrix" folder in this pack, can try removing the ones you don't want.
+================================
+
+- block border transition overlay textures
+supported for snow, sculk, crimson nylium, warped nylium, grass, moss, mycelium, podzol, gravel, prismarine, coarse dirt, red sand, sand, dirt, packed mud, and mud blocks
+
+- glowing ore
+normal or deepslate redstone/emerald/diamond ore
+
+- connected chiseled quartz block
+connects horizontally
+
+- connected chiseled sandstone
+connects vertically
+
+- connected chiseled red sandstone
+connects vertically
+
+- connected chiseled polished blackstone
+connects vertically
+
+- connected chiseled deepslate
+connects horizontally
+
+- connected chiseled tuff
+connects vertically
+
+- connected reinforced deepslate
+connects into a wall with brick borders
+
+- dried mud
+dirt block in any desert, badlands, or savanna biomes
+
+- rooted forest ground
+podzol in dark_forest, jungle, or any swamp biomes
+
+- mossy red bricks
+red bricks in any dark forest, jungle, and swamp biomes
+
+- natural sandstone
+sandstone in any desert, badlands, savanna, nether, end, or datapack/modded biomes
+
+- natural red sandstone
+sandstone in any desert, badlands, savanna, nether, end, or datapack/modded biomes
+
+- natural colored sandstone
+terracotta that naturally appears in any badlands biomes
+
+- organic bioluminescence growth
+glowstone in any nether biomes
+
+- barnacle wood planks
+acacia, birch, dark_oak, jungle, mangrove, oak, and spruce planks in any ocean biomes in y=0~63
+
+- dead coral rock
+normal stone or gravel in any ocean biomes in y=0~68
+
+- chunky gravel
+gravel in any river, stony shores, snowy, nether, end, datapack/modded biomes, or anywhere else outside of y=31~79
+
+- duckweed
+lilypads in any flower_forest, birch, jungle, or swamp biomes
+
+- spanish moss
+vines in swamp biome
+
+- thick hanging vines
+vines in bamboo jungle, mangrove swamp, or any nether biomes
+
+- mayan hieroglyphs
+chiseled stone bricks in any jungle biomes
+
+- egyptian hieroglyphs
+chiseled sandstone in desert biome
+
+- palm tree bark
+jungle log in any savanna, desert, badlands, beach, and warm ocean biomes, the middle and top part of jungle wood sides uses different texture
+
+- chocolate/strawberry cakes
+random texture for cakes
+
+- connected glass
+connected frames for regular glass block/pane (not stained glass)
+
+- framed stained glass
+metal framing added to any stained glass
+
+- log wall
+double dark oak slab
+
+- cobblestone with stonebrick corners
+double cobblestone slab
+
+- scroll shelves
+stacked cartography table
+
+- 3D wheels
+short piston head with "/setblock ~ ~ ~ minecraft:piston_head[short=true]", could toggle the placement/size by switching between normal/sticky variant
+
+- tables
+scaffolding in any temperate, cold, snowy biomes (real life biomes that don't normally grow bamboos)
+
+- animal fur
+light gray or brown wool/carpet in any cold or snowy biomes
+
+- fluorescent light
+sea lantern in any non-ocean biomes
+
+- infested growth on blocks
+any silverfish-infested blocks
+
+- log pile
+unlit signal-fire campfires
+
+- swamp cattail plants
+seagrass in any jungle and swamp biomes in y=62~66
+
+- large icicles
+pointed dripstones in any snowy biomes
+
+- mossy spikes
+pointed dripstones in any dark forest, jungle, and swamp biomes
+
+- volcanic spikes
+pointed dripstones in any nether biomes, or deep dark biome
+
+- tropical plants
+random ferns/large ferns in any jungle, swamp, or dark forest biomes
+
+- palm and dracena plants
+ferns/large ferns in any desert, badlands, or savanna biomes
+
+- large sapling
+saplings with "stage=1" blockstate
+
+- fallen branches
+random fallen branches for invis mossy cobblestone wall (all directions+center pillar disabled)
+
+- fallen logs
+random fallen logs for invis mossy stone brick wall (all directions+center pillar disabled)
+
+- rock piles
+random rock piles for invis diorite/andesite/cobbled_deepslate/sandstone/red_sandstone wall (all directions+center pillar disabled)
+
+- pots
+random pots for invis mud brick wall (all directions+center pillar disabled)
+
+- coins
+random gold coins for invis end stone brick wall (all directions+center pillar disabled)
+
+- small cauldron
+small cauldron for invis polished deepslate wall (all directions+center pillar disabled)
+
+- small icicles
+random icicles for invis prismarine wall (all directions+center pillar disabled)
+
+- book piles
+random book piles for invis deepslate tile wall (all directions+center pillar disabled)
+
+- potion piles
+random potion piles for invis stone brick wall (all directions+center pillar disabled)
+
+- traffic cones
+random traffic cones for invis brick wall (all directions+center pillar disabled)
+
+- glass bottles
+random glass bottles for invis polished tuff wall (all directions+center pillar disabled)
+
+- hanging moss
+hanging moss under moss carpets

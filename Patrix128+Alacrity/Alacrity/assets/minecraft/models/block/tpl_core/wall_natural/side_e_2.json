@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "block/stone/tuff/natural_1",
+		"wall_parts": "block/stone/granite/wall_parts",
+		"particle": "block/stone/granite/particle"
+	},
+	"elements": [
+		{
+			"from": [8, 11, 5],
+			"to": [16, 14, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 1.5, 4, 3], "texture": "#wall_parts"},
+				"east": {"uv": [0, 0, 3, 1.5], "texture": "#wall_parts"},
+				"south": {"uv": [0, 1.5, 4, 3], "texture": "#wall_parts"},
+				"up": {"uv": [8, 3, 12, 6], "texture": "#wall_parts"},
+				"down": {"uv": [0, 4.75, 4, 7.75], "texture": "#wall_parts"}
+			}
+		},
+		{
+			"from": [8, 0, 5.5],
+			"to": [16, 11, 10.5],
+			"faces": {
+				"north": {"uv": [0, 5, 8, 16], "texture": "#1"},
+				"east": {"uv": [8, 5, 13, 16], "texture": "#1"},
+				"south": {"uv": [8, 5, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 5, 8], "rotation": 270, "texture": "#1"}
+			}
+		}
+	]
+}

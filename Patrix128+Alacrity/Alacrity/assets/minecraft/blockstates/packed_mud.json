@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+        { "model": "minecraft:block/soils/mud/packed_mud_1" },
+        { "model": "minecraft:block/soils/mud/packed_mud_2" },
+        { "model": "minecraft:block/soils/mud/packed_mud_3" },
+        { "model": "minecraft:block/soils/mud/packed_mud_4" }
+      ]
+  }
+}

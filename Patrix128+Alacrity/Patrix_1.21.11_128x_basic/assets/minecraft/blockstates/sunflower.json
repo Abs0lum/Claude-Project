@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "minecraft:block/sunflower_bottom"
+    },
+    "half=upper": [
+      {"model": "minecraft:block/sunflower_top", "weight": 3 },
+      {"model": "minecraft:block/sunflower_top2", "weight": 2 },
+      {"model": "minecraft:block/sunflower_top3", "weight": 1 }
+    ]
+  }
+}

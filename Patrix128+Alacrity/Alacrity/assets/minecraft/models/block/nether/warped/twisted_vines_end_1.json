@@ -1,0 +1,41 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"3": "block/nether/warped/twisted_vines",
+		"particle": "block/nether/warped/wart_particle"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [7.5, 2.025, 1],
+			"to": [15.5, 2.025, 15],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [7.5, 2.025, 8]},
+			"faces": {
+				"up": {"uv": [0, 9, 4, 16], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [0, 16, 4, 9], "rotation": 180, "texture": "#3"}
+			}
+		},
+		{
+			"name": "base",
+			"from": [0.5, 6, 1],
+			"to": [8.5, 6, 15],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8.5, 6, 8]},
+			"faces": {
+				"up": {"uv": [4, 9, 8, 16], "texture": "#3"},
+				"down": {"uv": [4, 16, 8, 9], "texture": "#3"}
+			}
+		},
+		{
+			"name": "base",
+			"from": [9.325, 8.225, 1.425],
+			"to": [17.325, 8.225, 8.925],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8.325, 10.225, 8.175]},
+			"faces": {
+				"up": {"uv": [12, 12.25, 16, 16], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [12, 16, 16, 12.25], "rotation": 180, "texture": "#3"}
+			}
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+    "parent": "block/templates/wooden_stairs/slope_straight_s",
+	"textures": {
+        "1": "block/wooden/acacia/double_4",
+        "2": "block/wooden/acacia/double_3",
+        "e": "block/wooden/acacia/double_end_4",
+        "c": "block/wooden/acacia/clean_4",
+        "b": "block/wooden/acacia/stairs_back",
+        "particle": "block/wooden/acacia/particle"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/glow_lichen/side",
+        "particle": "block/nature/glow_lichen/particle"
+	},
+	"elements": [
+		{
+			"name": "Grass",
+			"from": [0, 0, 0.1],
+			"to": [16, 16, 0.1],
+			"faces": {
+				"north": {"uv": [0, 8, 8, 16], "rotation": 180, "texture": "#1", "cullface": "north"},
+				"south": {"uv": [0, 16, 8, 8], "texture": "#1"}
+			}
+		}
+	]
+}

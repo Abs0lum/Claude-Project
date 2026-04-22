@@ -1,0 +1,182 @@
+{
+	"credit": "Created by FreshLX for Patrix",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "segment1",
+			"id": "segment1",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "segment2",
+			"id": "segment2",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "segment3",
+			"id": "segment3",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "segment4",
+			"id": "segment4",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "segment5",
+			"id": "segment5",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "segment6",
+			"id": "segment6",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "segment7",
+			"id": "segment7",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "segment8",
+			"id": "segment8",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0]
+		},
+		{
+			"part": "core",
+			"id": "core",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "core2",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"submodels": [
+						{
+							"id": "core3",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{
+									"coordinates": [-3, -3, -3, 6, 6, 6],
+									"uvNorth": [6, 22, 12, 28],
+									"uvEast": [0, 22, 6, 28],
+									"uvSouth": [18, 22, 24, 28],
+									"uvWest": [12, 22, 18, 28],
+									"uvUp": [12, 22, 6, 16],
+									"uvDown": [18, 16, 12, 22]
+								}
+							]
+						},
+						{
+							"id": "base",
+							"invertAxis": "xy",
+							"translate": [0, -4, 0],
+							"boxes": [
+								{
+									"coordinates": [-4, 0, -4, 8, 8, 8],
+									"uvNorth": [40, 8, 48, 16],
+									"uvEast": [32, 8, 40, 16],
+									"uvSouth": [56, 8, 64, 16],
+									"uvWest": [48, 8, 56, 16],
+									"uvUp": [48, 8, 40, 0],
+									"uvDown": [56, 0, 48, 8]
+								}
+							]
+						},
+						{
+							"id": "inner",
+							"invertAxis": "xy",
+							"translate": [0, -4, 0],
+							"boxes": [
+								{
+									"coordinates": [-4, 0, -4, 8, 8, 8],
+									"uvNorth": [40, 24, 48, 32],
+									"uvEast": [32, 24, 40, 32],
+									"uvSouth": [56, 24, 64, 32],
+									"uvWest": [48, 24, 56, 32],
+									"uvUp": [48, 24, 40, 16],
+									"uvDown": [56, 16, 48, 24],
+									"sizeAdd": -0.4
+								}
+							]
+						},
+						{
+							"id": "top",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{
+									"coordinates": [-4, -4, -4, 8, 8, 8],
+									"uvNorth": [8, 8, 16, 16],
+									"uvEast": [0, 8, 8, 16],
+									"uvSouth": [24, 8, 32, 16],
+									"uvWest": [16, 8, 24, 16],
+									"uvUp": [16, 8, 8, 0],
+									"uvDown": [24, 0, 16, 8]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "Created_by_FreshLX_for_Patrix",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"var.r": "random(id)*pi*4",
+					"var.look": "clamp(-18 +sin(var.r+age/60)*20, 0, 1)*clamp(1-torad(head_yaw)/1.5, 0, 1)",
+					"var.swim": "clamp(if(  is_in_water||is_in_lava, min(20, var.swim +0.04 *frame_time*20), max(0, var.swim -0.04 *frame_time*20)), 0, 1)",
+					"var.jump": "clamp(if(!is_on_ground, min(20, var.jump +0.08 *frame_time*20), max(0, var.jump -0.08 *frame_time*20)), 0, 1)"
+				},
+				{
+					"core.ty": "24",
+					"core2.ty": "-3.8 +(2 +sin((var.r+age/sqrt(max_health))/2) )*var.swim -3*(if(age>10, clamp( (pos_y-var.j), 0, 0.5)/1.5 +clamp(-(pos_y-var.j), 0, 0.5)/1.5, 0)*1.7*clamp(1-max_health/40, 0.2, 1))",
+					"top.ty": "(clamp(cos((var.r+age/sqrt(max_health))/3)/2, -0.5, 0.5)/2        +segment1.ty )*(1-var.swim) +(-1 +sin((var.r+age/sqrt(max_health))/2) )*var.swim",
+					"top.rx": "                    (  cos((var.r+age/sqrt(max_health))/3)/20 )*(1-var.swim)",
+					"core2.rx": "                  ( torad(if(age>10, clamp((pos_y-var.j)*90*limb_speed*var.jump +20*limb_speed*(1-var.jump), -10, 10), 0)) )*(1-var.swim) +(torad(10) +sin((var.r+age/sqrt(max_health))/2)/5)*var.swim",
+					"top.ry": "clamp(torad(head_yaw)/4 +sin((var.r+age/sqrt(max_health))/6)/10, torad(-10), torad(10))",
+					"core2.ry": "(top.ry -clamp(torad(head_yaw)/4, torad(-10), torad(10)))/2",
+					"inner.ry": "top.ry/1.5",
+					"top.rz": "                -cos((var.r+age/sqrt(max_health))/6)/40 +clamp(-torad(head_yaw)/6, torad(-3), torad(3))",
+					"core.sy": "1 +(     clamp(-cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health)/8, 0.5, 3))/8 , -0.4, 0.4)/1.2/2  -1/2  *clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump))*(1-var.swim)",
+					"core.sx": "1 +(0.1 +clamp( cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health)/8, 0.5, 3))/12, -0.3, 0.3)/1.2/2  +1/1.5*clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump))*(1-var.swim)",
+					"core.sz": "1 +(0.1 +clamp( cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health)/8, 0.5, 3))/12, -0.3, 0.3)/1.2/2  +1/1.5*clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump))*(1-var.swim)",
+					"core2.sy": "0.95 +(-cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/4 )*var.swim +( if(age>10, clamp( (pos_y-var.j), 0, 0.5)/1.5 +clamp(-(pos_y-var.j), 0, 0.5)/1.5, 0)*1.7*clamp(1-max_health/40, 0.2, 1) )/2*(1-var.swim)",
+					"core2.sx": "0.95 +( cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/6 )*var.swim +( if(age>10, clamp(-(pos_y-var.j),-0.5, 0)/2   +clamp( (pos_y-var.j),-0.5, 0)/2  , 0)*1.7*clamp(1-max_health/40, 0.2, 1) )/2*(1-var.swim)",
+					"core2.sz": "0.95 +( cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/6 )*var.swim +( if(age>10, clamp(-(pos_y-var.j),-0.5, 0)/2   +clamp( (pos_y-var.j),-0.5, 0)/2  , 0)*1.7*clamp(1-max_health/40, 0.2, 1) )/2*(1-var.swim)",
+					"inner.sx": "clamp(2 -core2.sy/4, 0.7, 1)",
+					"inner.sz": "clamp(2 -core2.sy/4, 0.7, 1)",
+					"inner.sy": "0.9 +clamp(-cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health)/8, 0.5, 3))/8 , -0.4, 0.4)/2",
+					"base.rx": "if(is_on_ground, -core2.rx, 0)",
+					"base.sx": "(0.9 +core.sx)/2",
+					"base.sz": "(0.9 +core.sz)/2"
+				},
+				{
+					"var.j": "var.j2",
+					"var.j2": "var.j3",
+					"var.j3": "var.j4",
+					"var.j4": "var.j5",
+					"var.j5": "var.j6",
+					"var.j6": "var.j7",
+					"var.j7": "var.j8",
+					"var.j8": "var.j9",
+					"var.j9": "var.j10",
+					"var.j10": "pos_y"
+				}
+			]
+		}
+	]
+}

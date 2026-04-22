@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/dead_bush" },
+            { "model": "block/dead_bush", "y": 90 },
+            { "model": "block/dead_bush", "y": 180 },
+            { "model": "block/dead_bush", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ft:falling_tree",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "ft:wood_type": {
+          "type": "int",
+          "range": [0, 9],
+          "default": 0,
+          "client_sync": true
+        },
+        "ft:trunk_height": {
+          "type": "int",
+          "range": [1, 16],
+          "default": 5,
+          "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["ft_falling_tree"]
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.01,
+        "height": 0.01
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          { "deals_damage": false }
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 9999,
+        "breathes_air": true,
+        "breathes_water": true,
+        "breathes_lava": true
+      },
+      "minecraft:fire_immune": {}
+    }
+  }
+}

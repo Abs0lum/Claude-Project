@@ -1,0 +1,51 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/pale_moss/moss_side",
+        "particle": "block/nature/pale_moss/moss_particle"
+	},
+	"elements": [
+		{
+			"name": "side_moss",
+			"from": [6.9, 0.5, -1],
+			"to": [6.9, 8.5, 15],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6.9, 1.001, 7.1]},
+			"faces": {
+				"east": {"uv": [0, 3.75, 4, 1.75], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [4, 3.75, 0, 1.75], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [1, 0.5, 11.1],
+			"to": [17, 8.5, 11.1],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.9, 1.001, 11.1]},
+			"faces": {
+				"north": {"uv": [14.375, 2.875, 10.375, 0.875], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [10.375, 2.875, 14.375, 0.875], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [0, 0.5, 5.1],
+			"to": [16, 8.5, 5.1],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.9, 1.001, 5.1]},
+			"faces": {
+				"north": {"uv": [8.75, 2.375, 4.75, 0.375], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [4.75, 2.375, 8.75, 0.375], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [3.9, 0.5, 0.2],
+			"to": [3.9, 8.5, 16.2],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [3.9, 1.001, 8.1]},
+			"faces": {
+				"east": {"uv": [12.75, 2.75, 8.75, 0.75], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8.75, 2.75, 12.75, 0.75], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

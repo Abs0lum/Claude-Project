@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/blackstone/polished_1" },
+      { "model": "minecraft:block/stone/blackstone/polished_2" },
+      { "model": "minecraft:block/stone/blackstone/polished_3" },
+      { "model": "minecraft:block/stone/blackstone/polished_4" }
+    ]
+  }
+}

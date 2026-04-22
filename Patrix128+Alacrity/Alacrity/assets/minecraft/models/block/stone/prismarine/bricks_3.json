@@ -1,0 +1,24 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/stone/prismarine/bricks",
+		"3": "block/stone/prismarine/bricks_top",
+		"4": "block/stone/prismarine/bricks_bottom",
+		"particle": "block/stone/prismarine/bricks_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [8, 8, 0, 16], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [8, 8, 16, 16], "texture": "#2", "cullface": "east"},
+				"south": {"uv": [0, 8, 8, 16], "texture": "#2", "cullface": "south"},
+				"west": {"uv": [16, 8, 8, 16], "texture": "#2", "cullface": "west"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#3", "cullface": "up"},
+				"down": {"uv": [0, 16, 8, 8], "texture": "#4", "cullface": "down"}
+			}
+		}
+	]
+}

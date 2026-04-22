@@ -1,0 +1,129 @@
+{
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "base",
+			"id": "base",
+			"invertAxis": "xy",
+			"translate": [-5, -12, 5],
+			"boxes": [
+				{
+					"coordinates": [-5, 0, -5, 10, 12, 10],
+					"uvNorth": [10, 10, 20, 22],
+					"uvEast": [0, 10, 10, 22],
+					"uvSouth": [30, 10, 40, 22],
+					"uvWest": [20, 10, 30, 22],
+					"uvUp": [20, 10, 10, 0],
+					"uvDown": [30, 0, 20, 10]
+				}
+			]
+		},
+		{
+			"part": "upper_jaw",
+			"id": "upper_jaw",
+			"invertAxis": "xy",
+			"translate": [-0.5, -12, 4],
+			"rotate": [-180, -180, 0],
+			"submodels": [
+				{
+					"id": "bone3",
+					"invertAxis": "xy",
+					"translate": [-1.5, 12, 0],
+					"rotate": [0, 0, -0.5],
+					"boxes": [
+						{
+							"coordinates": [-2, -14, -4, 4, 14, 8],
+							"uvWest": [52, 8, 60, 22],
+							"uvDown": [56, 0, 52, 8]
+						}
+					],
+					"submodels": [
+						{
+							"id": "bone",
+							"invertAxis": "xy",
+							"translate": [-2, 0, -4],
+							"rotate": [0, 0.5, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -14, 0, 4, 14, 0],
+									"uvNorth": [48, 8, 52, 22]
+								}
+							]
+						},
+						{
+							"id": "bone2",
+							"invertAxis": "xy",
+							"translate": [-2, 0, 4],
+							"rotate": [0, -0.5, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -14, 0, 4, 14, 0],
+									"uvSouth": [60, 8, 64, 22]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"this.ry": 0
+				}
+			]
+		},
+		{
+			"part": "lower_jaw",
+			"id": "lower_jaw",
+			"invertAxis": "xy",
+			"translate": [-1.5, -12, -4],
+			"rotate": [-180, 0, 0],
+			"submodels": [
+				{
+					"id": "bone6",
+					"invertAxis": "xy",
+					"translate": [-0.5, 12, 8],
+					"rotate": [0, 0, -0.5],
+					"boxes": [
+						{
+							"coordinates": [-2, -14, -4, 4, 14, 8],
+							"uvWest": [52, 8, 60, 22],
+							"uvDown": [56, 0, 52, 8]
+						}
+					],
+					"submodels": [
+						{
+							"id": "bone4",
+							"invertAxis": "xy",
+							"translate": [-2, 0, 4],
+							"rotate": [0, -0.5, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -14, 0, 4, 14, 0],
+									"uvSouth": [60, 8, 64, 22]
+								}
+							]
+						},
+						{
+							"id": "bone5",
+							"invertAxis": "xy",
+							"translate": [-2, 0, -4],
+							"rotate": [0, 0.5, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -14, 0, 4, 14, 0],
+									"uvNorth": [48, 8, 52, 22]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		}
+	]
+}

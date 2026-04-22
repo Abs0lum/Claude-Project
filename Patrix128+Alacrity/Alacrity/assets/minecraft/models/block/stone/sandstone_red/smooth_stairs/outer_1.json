@@ -1,0 +1,33 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+        "smooth": "block/stone/sandstone_red/smooth_sandstone",
+        "particle": "block/stone/sand/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+                "north": {"uv": [0, 4, 8, 8], "texture": "#smooth", "cullface": "north"},
+                "east": {"uv": [0, 4, 8, 8], "texture": "#smooth", "cullface": "east"},
+                "south": {"uv": [0, 4, 8, 8], "texture": "#smooth", "cullface": "south"},
+                "west": {"uv": [0, 4, 8, 8], "texture": "#smooth", "cullface": "west"},
+                "up": {"uv": [0, 0, 8, 8], "texture": "#smooth"},
+                "down": {"uv": [0, 0, 8, 8], "texture": "#smooth", "cullface": "down"}
+			}
+		},
+		{
+			"from": [8, 8, 8],
+			"to": [16, 16, 16],
+			"faces": {
+                "north": {"uv": [0, 0, 4, 4], "texture": "#smooth"},
+                "east": {"uv": [0, 0, 4, 4], "texture": "#smooth", "cullface": "east"},
+                "south": {"uv": [4, 0, 8, 4], "texture": "#smooth", "cullface": "south"},
+                "west": {"uv": [4, 0, 8, 4], "texture": "#smooth"},
+                "up": {"uv": [4, 4, 8, 8], "texture": "#smooth"}
+			}
+		}
+	]
+}

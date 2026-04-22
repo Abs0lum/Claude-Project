@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": [
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_1" },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_1", "y": 90 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_1", "y": 180 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_1", "y": 270 }
+    ],
+    "age=1": [
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_2" },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_2", "y": 90 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_2", "y": 180 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_2", "y": 270 }
+    ],
+    "age=2": [
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_3" },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_3", "y": 90 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_3", "y": 180 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_3", "y": 270 }
+    ],
+    "age=3": [
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_4" },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_4", "y": 90 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_4", "y": 180 },
+      { "model": "minecraft:block/nature/bushes/sweet_berries_bush_4", "y": 270 }
+    ]
+  }
+}

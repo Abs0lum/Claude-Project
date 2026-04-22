@@ -1,0 +1,49 @@
+{
+	"schemaVersion": 1,
+	"type": "multi-textured",
+	"animatableTextures": [
+		{
+			"texture": "skybox:overworld/uv_mapped/sunflare.png",
+			"uvRange": {
+				"minU": 0.45,
+				"minV": 0.175,
+				"maxU": 0.55,
+				"maxV": 0.325
+			},
+			"gridColumns": 10,
+			"gridRows": 10,
+			"duration": 75
+		}
+	],
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": true,
+		"layer": 269,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"500": 0.0,
+				"1500": 1.0,
+				"10500": 1.0,
+				"11500": 0.0
+				}
+			},
+		"rotation": {
+			"duration": 600000,
+			"speed": 1.0,
+			"mapping": {"0": [0.0, 0.0, -90.0]},
+			"axis": {
+				"503000": [100.0, 0.0, 0.0],
+				"504000": [120.0, 0.0, 0.0],
+				"516000": [120.0, 0.0, 0.0],
+				"517000": [100.0, 0.0, 0.0]
+				}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear", "rain", "thunder", "rain_biome", "rain_thunder", "snow", "snow_thunder"]}
+		}
+}

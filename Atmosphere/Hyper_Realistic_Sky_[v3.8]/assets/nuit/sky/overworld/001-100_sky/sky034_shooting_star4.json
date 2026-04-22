@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/001-100_sky/sky034_shooting_star4.png",
+	"blend": {"type" : "add"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 34,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"18760": 0.0,
+				"18770": 1.0,
+				"18800": 1.0,
+				"18810": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -280.0,
+			"mapping": {"0": [-30.0, 0.0, 30.0]},
+			"axis": {"0": [-30.0, 0.0, 30.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]}
+		}
+}

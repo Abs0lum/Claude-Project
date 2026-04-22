@@ -1,0 +1,8 @@
+{
+    "parent": "block/tpl_core/wall_polished/tall_n_1",
+	"textures": {
+        "3": "block/stone/tuff/wall_parts",
+        "4": "block/stone/tuff/bricks_extra",
+        "particle": "block/stone/tuff/particle"
+	}
+}

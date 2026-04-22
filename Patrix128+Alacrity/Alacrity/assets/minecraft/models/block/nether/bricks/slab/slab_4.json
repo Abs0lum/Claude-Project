@@ -1,0 +1,10 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/bricks_slab/slab_4",
+	"texture_size": [32, 32],
+	"textures": {
+        "2": "block/nether/bricks/top_special",
+        "side": "block/nether/bricks/stairs_side",
+        "particle": "block/nether/bricks/particle"
+	}
+}

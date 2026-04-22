@@ -1,0 +1,7 @@
+{
+	"parent": "block/tpl_core/wall_natural/cap_1",
+	"textures": {
+        "wall_parts": "block/stone/tuff/wall_parts",
+        "particle": "block/stone/tuff/particle"
+	}
+}

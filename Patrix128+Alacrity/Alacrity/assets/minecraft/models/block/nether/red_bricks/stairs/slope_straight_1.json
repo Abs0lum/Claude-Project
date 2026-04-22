@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/bricks_stairs/slope_straight_1",
+	"textures": {
+        "2": "block/nether/red_bricks/stairs_top",
+        "top": "block/nether/red_bricks/extra_2",
+        "side": "block/nether/red_bricks/stairs_side",
+        "atlas": "block/nether/red_bricks/bricks",
+        "particle": "block/nether/red_bricks/particle"
+	}
+}

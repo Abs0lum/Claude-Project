@@ -1,0 +1,22 @@
+{
+	"texture": "skybox:overworld/uv_mapped/gas_giant_jupiter.png",
+	"vertex": [
+		{ "x": "2.75", "y": "2.75", "z": "-100", "uv_x": 1, "uv_y": 0 },
+		{ "x": "-2.75", "y": "2.75", "z": "-100", "uv_x": 0, "uv_y": 0 },
+		{ "x": "-2.75", "y": "-2.75", "z": "-100", "uv_x": 0, "uv_y": 1 },
+		{ "x": "2.75", "y": "-2.75", "z": "-100", "uv_x": 1, "uv_y": 1 }
+	],
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "jupiter_uranus_rotation",
+		"degrees_z": "0",
+		"base_degrees_x": "30",
+		"base_degrees_y": "0",
+		"base_degrees_z": "0"
+	},
+	"properties": {
+		"blend": true,
+		"is_solid": true,
+		"alpha": "(1-submerged)"
+	}
+}

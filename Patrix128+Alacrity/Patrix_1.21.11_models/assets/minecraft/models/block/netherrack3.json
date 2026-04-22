@@ -1,0 +1,6 @@
+{
+    "parent":"block/stalactite2",
+    "textures": {
+	"all":"block/netherrack"
+    }
+}

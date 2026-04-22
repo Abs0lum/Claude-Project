@@ -1,0 +1,34 @@
+{
+	"sky_objects": [
+		"sky001",
+		"sky002",
+		"sky003",
+		"sky004",
+		"sky005_mod"
+		],
+	"environment": {
+		"fog": {
+			"has_thick_fog": false,
+			"fog_start": "fogStart",
+			"fog_end": "fogEnd"
+			},
+		"fog_color": {
+			"ignore_sky_effects": true,
+			"colors": [
+					{
+				"red": 0.1384313725490196, "green": 0.0156862745098039, "blue": 0.00039215686,
+				"ratio": "nethersky_1_biomes_fade"
+					},
+					{
+				"red": 0.0325490196078431, "green": 0.0882352941176471, "blue": 0.0847058823529412,
+				"ratio": "nethersky_2_biomes_fade"
+					},
+					{
+				"red": 0.1050980392156863, "green": 0.096078431372549, "blue": 0.0941176470588235,
+				"ratio": "nethersky_3_biomes_fade"
+					}
+				]
+			},
+		"void_culling_level": "-10000"
+		}
+}

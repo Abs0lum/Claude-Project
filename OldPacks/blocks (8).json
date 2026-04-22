@@ -1,0 +1,111 @@
+{
+  "format_version": "1.19.30",
+  "minecraft:stone": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:granite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:polished_granite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:andesite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:polished_andesite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:diorite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:polished_diorite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:cobblestone": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:mossy_cobblestone": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:stone_bricks": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:mossy_stone_bricks": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:cracked_stone_bricks": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:dirt": {
+    "sound": "gravel",
+    "isotropic": true
+  },
+  "minecraft:coarse_dirt": {
+    "sound": "gravel",
+    "isotropic": true
+  },
+  "minecraft:gravel": {
+    "sound": "gravel",
+    "isotropic": true
+  },
+  "minecraft:sand": {
+    "sound": "sand",
+    "isotropic": true
+  },
+  "minecraft:red_sand": {
+    "sound": "sand",
+    "isotropic": true
+  },
+  "minecraft:clay": {
+    "sound": "gravel",
+    "isotropic": true
+  },
+  "minecraft:tuff": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:oak_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:spruce_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:birch_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:jungle_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:acacia_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:dark_oak_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:cherry_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:mangrove_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  }
+}

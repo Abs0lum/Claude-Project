@@ -1,0 +1,37 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"wall_end": "block/stone/stone_bricks/wall_end",
+		"wall_parts": "block/stone/stone_bricks/wall_parts",
+		"wall_alt": "block/stone/stone_bricks/wall_alt",
+		"wall_short": "block/stone/stone_bricks/wall_short",
+		"particle": "block/stone/stone_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 11, 5],
+			"to": [8, 14, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 9, 0, 10.5], "texture": "#wall_short"},
+				"south": {"uv": [0, 9, 4, 10.5], "texture": "#wall_short"},
+				"west": {"uv": [9, 1, 6, 2.5], "texture": "#wall_end"},
+				"up": {"uv": [12, 6, 16, 9], "texture": "#wall_alt"},
+				"down": {"uv": [3.5, 7.5, 7.5, 5], "texture": "#wall_parts"}
+			}
+		},
+		{
+			"from": [0, 0, 5.5],
+			"to": [8, 11, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 10.5, 0, 16], "texture": "#wall_short"},
+				"south": {"uv": [0, 10.5, 4, 16], "texture": "#wall_short"},
+				"west": {"uv": [8.75, 2.5, 6.25, 8], "texture": "#wall_end"},
+				"down": {"uv": [4, 7.25, 8, 4.75], "texture": "#wall_parts"}
+			}
+		}
+	]
+}

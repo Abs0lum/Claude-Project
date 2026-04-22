@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: fallingtree
+Specification-Vendor: Rakambda
+Specification-Version: 26.1.2.1
+Implementation-Title: FallingTree
+Implementation-Version: 26.1.2.1
+Implementation-Vendor: Rakambda
+Implementation-Timestamp: 2026-04-10T09:13:18+0000
+

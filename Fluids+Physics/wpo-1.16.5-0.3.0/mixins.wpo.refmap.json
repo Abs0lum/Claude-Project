@@ -1,0 +1,78 @@
+{
+  "mappings": {
+    "net/skds/wpo/mixins/fluids/FlowingFluidMixin": {
+      "getHeight": "Lnet/minecraft/fluid/FlowingFluid;func_223407_a(Lnet/minecraft/fluid/FluidState;)F",
+      "tick": "Lnet/minecraft/fluid/FlowingFluid;func_207191_a(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/FluidState;)V",
+      "getFlow": "Lnet/minecraft/fluid/FlowingFluid;func_215663_a(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/FluidState;)Lnet/minecraft/util/math/vector/Vector3d;"
+    },
+    "net/skds/wpo/mixins/block/AbstractBlockStateMixin": {
+      "ticksRandomly": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_204519_t()Z",
+      "updatePostPlacement": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_196956_a(Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;",
+      "neighborChanged": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_215697_a(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;Lnet/minecraft/util/math/BlockPos;Z)V",
+      "getFluidState": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_204520_s()Lnet/minecraft/fluid/FluidState;"
+    },
+    "net/skds/wpo/mixins/item/GlassBottleItemMixin": {
+      "Lnet/minecraft/item/GlassBottleItem;onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/item/GlassBottleItem;func_77659_a(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/ActionResult;",
+      "Lnet/minecraft/world/World;playSound(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V": "Lnet/minecraft/world/World;func_184148_a(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V",
+      "Lnet/minecraft/item/GlassBottleItem;rayTrace(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/math/RayTraceContext$FluidMode;)Lnet/minecraft/util/math/BlockRayTraceResult;": "Lnet/minecraft/item/GlassBottleItem;func_219968_a(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/math/RayTraceContext$FluidMode;)Lnet/minecraft/util/math/BlockRayTraceResult;"
+    },
+    "net/skds/wpo/mixins/other/BoatEntityMixin": {
+      "checkInWater": "Lnet/minecraft/entity/item/BoatEntity;func_184446_u()Z",
+      "Lnet/minecraft/fluid/FluidState;isSource()Z": "Lnet/minecraft/fluid/FluidState;func_206889_d()Z",
+      "Lnet/minecraft/entity/item/BoatEntity;getUnderwaterStatus()Lnet/minecraft/entity/item/BoatEntity$Status;": "Lnet/minecraft/entity/item/BoatEntity;func_184444_v()Lnet/minecraft/entity/item/BoatEntity$Status;"
+    },
+    "net/skds/wpo/mixins/fluids/FlowingFluidBlockMixin": {
+      "Lnet/minecraft/block/FlowingFluidBlock;onBlockAdded": "Lnet/minecraft/block/FlowingFluidBlock;func_220082_b(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Z)V",
+      "Lnet/minecraft/block/FlowingFluidBlock;updatePostPlacement": "Lnet/minecraft/block/FlowingFluidBlock;func_196271_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;",
+      "Lnet/minecraft/block/FlowingFluidBlock;neighborChanged": "Lnet/minecraft/block/FlowingFluidBlock;func_220069_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;Lnet/minecraft/util/math/BlockPos;Z)V",
+      "Lnet/minecraft/fluid/FlowingFluid;getTickRate(Lnet/minecraft/world/IWorldReader;)I": "Lnet/minecraft/fluid/FlowingFluid;func_205569_a(Lnet/minecraft/world/IWorldReader;)I"
+    },
+    "net/skds/wpo/mixins/fluids/FluidBlockRendererMixin": {
+      "Lnet/minecraft/client/renderer/FluidBlockRenderer;getFluidHeight(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/Fluid;)F": "Lnet/minecraft/client/renderer/FluidBlockRenderer;func_217640_a(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/Fluid;)F",
+      "render": "Lnet/minecraft/client/renderer/FluidBlockRenderer;func_228796_a_(Lnet/minecraft/world/IBlockDisplayReader;Lnet/minecraft/util/math/BlockPos;Lcom/mojang/blaze3d/vertex/IVertexBuilder;Lnet/minecraft/fluid/FluidState;)Z"
+    },
+    "net/skds/wpo/mixins/other/FallingBlockEntityMixin": {
+      "Lnet/minecraft/world/World;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z": "Lnet/minecraft/world/World;func_180501_a(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z",
+      "tick": "Lnet/minecraft/entity/item/FallingBlockEntity;func_70071_h_()V"
+    }
+  },
+  "data": {
+    "searge": {
+      "net/skds/wpo/mixins/fluids/FlowingFluidMixin": {
+        "getHeight": "Lnet/minecraft/fluid/FlowingFluid;func_223407_a(Lnet/minecraft/fluid/FluidState;)F",
+        "tick": "Lnet/minecraft/fluid/FlowingFluid;func_207191_a(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/FluidState;)V",
+        "getFlow": "Lnet/minecraft/fluid/FlowingFluid;func_215663_a(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/FluidState;)Lnet/minecraft/util/math/vector/Vector3d;"
+      },
+      "net/skds/wpo/mixins/block/AbstractBlockStateMixin": {
+        "ticksRandomly": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_204519_t()Z",
+        "updatePostPlacement": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_196956_a(Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;",
+        "neighborChanged": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_215697_a(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;Lnet/minecraft/util/math/BlockPos;Z)V",
+        "getFluidState": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_204520_s()Lnet/minecraft/fluid/FluidState;"
+      },
+      "net/skds/wpo/mixins/item/GlassBottleItemMixin": {
+        "Lnet/minecraft/item/GlassBottleItem;onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/item/GlassBottleItem;func_77659_a(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/ActionResult;",
+        "Lnet/minecraft/world/World;playSound(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V": "Lnet/minecraft/world/World;func_184148_a(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V",
+        "Lnet/minecraft/item/GlassBottleItem;rayTrace(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/math/RayTraceContext$FluidMode;)Lnet/minecraft/util/math/BlockRayTraceResult;": "Lnet/minecraft/item/GlassBottleItem;func_219968_a(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/math/RayTraceContext$FluidMode;)Lnet/minecraft/util/math/BlockRayTraceResult;"
+      },
+      "net/skds/wpo/mixins/other/BoatEntityMixin": {
+        "checkInWater": "Lnet/minecraft/entity/item/BoatEntity;func_184446_u()Z",
+        "Lnet/minecraft/fluid/FluidState;isSource()Z": "Lnet/minecraft/fluid/FluidState;func_206889_d()Z",
+        "Lnet/minecraft/entity/item/BoatEntity;getUnderwaterStatus()Lnet/minecraft/entity/item/BoatEntity$Status;": "Lnet/minecraft/entity/item/BoatEntity;func_184444_v()Lnet/minecraft/entity/item/BoatEntity$Status;"
+      },
+      "net/skds/wpo/mixins/fluids/FlowingFluidBlockMixin": {
+        "Lnet/minecraft/block/FlowingFluidBlock;onBlockAdded": "Lnet/minecraft/block/FlowingFluidBlock;func_220082_b(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Z)V",
+        "Lnet/minecraft/block/FlowingFluidBlock;updatePostPlacement": "Lnet/minecraft/block/FlowingFluidBlock;func_196271_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/block/BlockState;Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;",
+        "Lnet/minecraft/block/FlowingFluidBlock;neighborChanged": "Lnet/minecraft/block/FlowingFluidBlock;func_220069_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;Lnet/minecraft/util/math/BlockPos;Z)V",
+        "Lnet/minecraft/fluid/FlowingFluid;getTickRate(Lnet/minecraft/world/IWorldReader;)I": "Lnet/minecraft/fluid/FlowingFluid;func_205569_a(Lnet/minecraft/world/IWorldReader;)I"
+      },
+      "net/skds/wpo/mixins/fluids/FluidBlockRendererMixin": {
+        "Lnet/minecraft/client/renderer/FluidBlockRenderer;getFluidHeight(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/Fluid;)F": "Lnet/minecraft/client/renderer/FluidBlockRenderer;func_217640_a(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/fluid/Fluid;)F",
+        "render": "Lnet/minecraft/client/renderer/FluidBlockRenderer;func_228796_a_(Lnet/minecraft/world/IBlockDisplayReader;Lnet/minecraft/util/math/BlockPos;Lcom/mojang/blaze3d/vertex/IVertexBuilder;Lnet/minecraft/fluid/FluidState;)Z"
+      },
+      "net/skds/wpo/mixins/other/FallingBlockEntityMixin": {
+        "Lnet/minecraft/world/World;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z": "Lnet/minecraft/world/World;func_180501_a(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z",
+        "tick": "Lnet/minecraft/entity/item/FallingBlockEntity;func_70071_h_()V"
+      }
+    }
+  }
+}

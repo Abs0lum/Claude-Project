@@ -1,0 +1,105 @@
+{
+  "config.efallingtrees.title": "Настройки Enhanced Falling Trees",
+  "config.efallingtrees.client": "Клиент",
+  "config.efallingtrees.common": "Общие",
+  "config.efallingtrees.common.tooltip": "Нельзя изменять в игре",
+
+  "text.autoconfig.efallingtrees_client.title": "Настройки Enhanced Falling Trees",
+
+  "text.autoconfig.efallingtrees_client.category.default": "Основные",
+  "text.autoconfig.efallingtrees_client.option.invertCrouchMining": "Инвертировать добычу в приседе",
+
+  "text.autoconfig.efallingtrees_client.category.sound_settings": "Звуковые эффекты",
+  "text.autoconfig.efallingtrees_client.option.soundSettings.enabled": "Включено",
+  "text.autoconfig.efallingtrees_client.option.soundSettings.startVolume": "Громкость в начале",
+  "text.autoconfig.efallingtrees_client.option.soundSettings.endVolume": "Громкость в конце",
+
+  "text.autoconfig.efallingtrees_client.category.animation": "Анимация",
+  "text.autoconfig.efallingtrees_client.option.animation.treeProperties": "Дерево",
+  "text.autoconfig.efallingtrees_client.option.animation.treeProperties.fallAnimLength": "Длина анимации падения",
+  "text.autoconfig.efallingtrees_client.option.animation.treeProperties.bounceAngleHeight": "Высота угла отскока",
+  "text.autoconfig.efallingtrees_client.option.animation.treeProperties.bounceAnimLength": "Длина анимации отскока",
+  "text.autoconfig.efallingtrees_client.option.animation.bambooProperties": "Бамбук",
+  "text.autoconfig.efallingtrees_client.option.animation.bambooProperties.fallAnimLength": "Длина анимации падения",
+  "text.autoconfig.efallingtrees_client.option.animation.bambooProperties.bounceAngleHeight": "Высота угла отскока",
+  "text.autoconfig.efallingtrees_client.option.animation.bambooProperties.bounceAnimLength": "Длина анимации отскока",
+  "text.autoconfig.efallingtrees_client.option.animation.cactusProperties": "Кактус",
+  "text.autoconfig.efallingtrees_client.option.animation.cactusProperties.fallAnimLength": "Длина анимации падения",
+  "text.autoconfig.efallingtrees_client.option.animation.cactusProperties.bounceAngleHeight": "Высота угла отскока",
+  "text.autoconfig.efallingtrees_client.option.animation.cactusProperties.bounceAnimLength": "Длина анимации отскока",
+  "text.autoconfig.efallingtrees_client.option.animation.chorusProperties": "Хорус",
+  "text.autoconfig.efallingtrees_client.option.animation.chorusProperties.fallAnimLength": "Длина анимации падения",
+  "text.autoconfig.efallingtrees_client.option.animation.chorusProperties.bounceAngleHeight": "Высота угла отскока",
+  "text.autoconfig.efallingtrees_client.option.animation.chorusProperties.bounceAnimLength": "Длина анимации отскока",
+
+  "text.autoconfig.efallingtrees_common.title": "Настройки Enhanced Falling Trees",
+
+  "text.autoconfig.efallingtrees_common.category.default": "Основные",
+  "text.autoconfig.efallingtrees_common.option.isCrouchMiningAllowed.@PrefixText": "Игрок",
+  "text.autoconfig.efallingtrees_common.option.isCrouchMiningAllowed": "Разрешена добыча в приседе",
+  "text.autoconfig.efallingtrees_common.option.multiplyToolDamage": "Снижать прочность инструмента",
+  "text.autoconfig.efallingtrees_common.option.multiplyFoodExhaustion": "Снижать насыщенность",
+  "text.autoconfig.efallingtrees_common.option.leafParticleLifeTimeLength.@PrefixText": "Частицы",
+  "text.autoconfig.efallingtrees_common.option.leafParticleLifeTimeLength": "Время жизни частиц листвы",
+  "text.autoconfig.efallingtrees_common.option.leafParticleCount": "Количество листьев",
+  "text.autoconfig.efallingtrees_common.option.treeLifetimeLength.@PrefixText": "Объекты",
+  "text.autoconfig.efallingtrees_common.option.treeLifetimeLength": "Время жизни дерева",
+  "text.autoconfig.efallingtrees_common.option.cactusLifetimeLength": "Время жизни кактуса",
+  "text.autoconfig.efallingtrees_common.option.bambooLifetimeLength": "Время жизни бамбука",
+  "text.autoconfig.efallingtrees_common.option.chorusLifetimeLength": "Время жизни хоруса",
+
+  "text.autoconfig.efallingtrees_common.category.filter": "Фильтры",
+
+  "text.autoconfig.efallingtrees_common.option.filter.log": "Дерево",
+  "text.autoconfig.efallingtrees_common.option.filter.log.whitelistedBlockTags": "Разрешенные теги блоков дерева",
+  "text.autoconfig.efallingtrees_common.option.filter.log.whitelistedBlocks": "Разрешенные блоки дерева",
+  "text.autoconfig.efallingtrees_common.option.filter.log.blacklistedBlocks": "Запрещенные блоки дерева",
+
+  "text.autoconfig.efallingtrees_common.option.filter.leaves": "Листва",
+  "text.autoconfig.efallingtrees_common.option.filter.leaves.whitelistedBlockTags": "Разрешенные теги блоков листы",
+  "text.autoconfig.efallingtrees_common.option.filter.leaves.whitelistedBlocks": "Разрешенные блоки листвы",
+  "text.autoconfig.efallingtrees_common.option.filter.leaves.blacklistedBlocks": "Запрещенные блоки листвы",
+
+  "text.autoconfig.efallingtrees_common.category.limitations": "Ограничения",
+  "text.autoconfig.efallingtrees_common.option.limitations.maxLeavesDistance": "Максимальное расстояние листвы",
+  "text.autoconfig.efallingtrees_common.option.limitations.maxTreeDistance": "Максимальное расстояние дерева",
+
+  "text.autoconfig.efallingtrees_common.option.limitations.treeFallRequirements": "Требования для падения дерева",
+  "text.autoconfig.efallingtrees_common.option.limitations.treeFallRequirements.maxAmountType": "Тип максимального количества",
+  "text.autoconfig.efallingtrees_common.option.limitations.treeFallRequirements.maxAmount": "Максимальное количество",
+  "text.autoconfig.efallingtrees_common.option.limitations.treeFallRequirements.minTreeHeight": "Минимальная высота дерева",
+  "text.autoconfig.efallingtrees_common.option.limitations.treeFallRequirements.onlyRequiredTool": "Нужен инструмент",
+
+  "text.autoconfig.efallingtrees_common.option.limitations.bambooFallRequirements": "Требования для падения бамбука",
+  "text.autoconfig.efallingtrees_common.option.limitations.bambooFallRequirements.maxAmountType": "Тип максимального количества",
+  "text.autoconfig.efallingtrees_common.option.limitations.bambooFallRequirements.maxAmount": "Максимальное количество",
+  "text.autoconfig.efallingtrees_common.option.limitations.bambooFallRequirements.minTreeHeight": "Минимальная высота бамбука",
+  "text.autoconfig.efallingtrees_common.option.limitations.bambooFallRequirements.onlyRequiredTool": "Нужен инструмент",
+
+  "text.autoconfig.efallingtrees_common.option.limitations.chorusFallRequirements": "Требования для падения хоруса",
+  "text.autoconfig.efallingtrees_common.option.limitations.chorusFallRequirements.maxAmountType": "Тип максимального количества",
+  "text.autoconfig.efallingtrees_common.option.limitations.chorusFallRequirements.maxAmount": "Максимальное количество",
+  "text.autoconfig.efallingtrees_common.option.limitations.chorusFallRequirements.minTreeHeight": "Минимальная высота хоруса",
+  "text.autoconfig.efallingtrees_common.option.limitations.chorusFallRequirements.onlyRequiredTool": "Нужен инструмент",
+
+  "text.autoconfig.efallingtrees_common.option.limitations.cactusFallRequirements": "Требования для падения кактуса",
+  "text.autoconfig.efallingtrees_common.option.limitations.cactusFallRequirements.maxAmountType": "Тип максимального количества",
+  "text.autoconfig.efallingtrees_common.option.limitations.cactusFallRequirements.maxAmount": "Максимальное количество",
+  "text.autoconfig.efallingtrees_common.option.limitations.cactusFallRequirements.minTreeHeight": "Минимальная высота кактуса",
+  "text.autoconfig.efallingtrees_common.option.limitations.cactusFallRequirements.onlyRequiredTool": "Нужен инструмент",
+
+  "text.autoconfig.efallingtrees_common.category.features": "Дополнительно",
+  "text.autoconfig.efallingtrees_common.option.features.disableCactusTrees": "Отключить падение кактусов",
+  "text.autoconfig.efallingtrees_common.option.features.disableBambooTrees": "Отключить падение бамбука",
+  "text.autoconfig.efallingtrees_common.option.features.disableChorusTrees": "Отключить падение хоруса",
+
+  "text.autoconfig.efallingtrees_common.category.tree_breaking": "Ломание деревьев",
+  "text.autoconfig.efallingtrees_common.option.treeBreaking.enableBreakingSpeedModification": "Включить изменение скорости ломания",
+  "text.autoconfig.efallingtrees_common.option.treeBreaking.enableBreakingSpeedModification.@Tooltip": "Включить или выключить изменение скорости ломания деревьев",
+
+  "text.autoconfig.efallingtrees_common.option.treeBreaking.noAxeSpeedMultiplier": "Скорость без инструмента (%)",
+  "text.autoconfig.efallingtrees_common.option.treeBreaking.noAxeSpeedMultiplier.@Tooltip": "(% от обычной скорости)",
+
+  "text.autoconfig.efallingtrees_common.option.treeBreaking.axeSpeedMultiplier": "Скорость с инструментом (%)",
+  "text.autoconfig.efallingtrees_common.option.treeBreaking.axeSpeedMultiplier.@Tooltip": "(% от скорости инструмента)"
+}

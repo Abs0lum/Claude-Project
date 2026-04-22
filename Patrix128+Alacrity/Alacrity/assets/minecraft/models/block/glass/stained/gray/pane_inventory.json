@@ -1,0 +1,9 @@
+{
+    "cgrayit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/glass/led_framed/pane_inventory",
+	"textures": {
+        "5": "block/glass/stained/gray/pane",
+		"6": "block/glass/normal/pane_parts",
+        "particle": "block/glass/particle/gray"
+	}
+}

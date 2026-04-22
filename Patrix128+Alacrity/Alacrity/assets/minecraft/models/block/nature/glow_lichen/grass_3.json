@@ -1,0 +1,61 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/glow_lichen/growth",
+        "particle": "block/nature/glow_lichen/particle"
+	},
+	"elements": [
+		{
+			"name": "Grass",
+			"from": [11.41762, 0, -0.53284],
+			"to": [11.41762, 6.5, 15.46716],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"east": {"uv": [0, 0, 8, 3.25], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 0, 0, 3.25], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [2.41762, 0, -0.53284],
+			"to": [2.41762, 6.5, 15.46716],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"east": {"uv": [0, 4, 8, 7.25], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [8, 4, 0, 7.25], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [-0.8324, 0, 12.71714],
+			"to": [15.1676, 5, 12.71714],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"north": {"uv": [0, 4, 8, 6.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8, 4, 0, 6.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [9.41758, 0, 3.96716],
+			"to": [9.41758, 5, 19.96716],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.4176, 2.25, 7.71716]},
+			"faces": {
+				"east": {"uv": [8, 0, 0, 2.5], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [0, 0, 8, 2.5], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [5.62009, 0, 3.39438],
+			"to": [21.62009, 5, 3.39438],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [14.62009, 2.5, 3.39438]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 2.5], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8, 0, 0, 2.5], "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

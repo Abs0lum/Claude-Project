@@ -1,0 +1,63 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/tinted_cross",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "block/nether/crimson/crimson_roots",
+		"particle": "block/nether/crimson/crimson_particle"
+	},
+	"elements": [
+		{
+			"name": "wart",
+			"from": [6.75, 7, 6.5],
+			"to": [10.25, 9, 10],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [9.75, 7, 5.5]},
+			"faces": {
+				"north": {"uv": [14.25, 1.5, 16, 2.75], "texture": "#0"},
+				"east": {"uv": [14.25, 1.5, 16, 2.75], "texture": "#0"},
+				"south": {"uv": [14.25, 1.5, 16, 2.75], "texture": "#0"},
+				"west": {"uv": [14.25, 1.5, 16, 2.75], "texture": "#0"},
+				"up": {"uv": [14.25, 0, 16, 1.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "grass",
+			"from": [4.75, 7.9, 8.25],
+			"to": [8.75, 13.9, 8.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.75, 10.9, 8.25]},
+			"faces": {
+				"north": {"uv": [2.25, 11.5, 4.25, 14.5], "texture": "#0"},
+				"south": {"uv": [4.25, 11.5, 2.25, 14.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "grass",
+			"from": [6.75, 7.9, 6.25],
+			"to": [6.75, 13.9, 10.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.75, 10.9, 8.25]},
+			"faces": {
+				"east": {"uv": [13.75, 12.25, 11.75, 15.25], "texture": "#0"},
+				"west": {"uv": [11.75, 12.25, 13.75, 15.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "grass",
+			"from": [8.95, 8.35, 6.25],
+			"to": [8.95, 14.35, 10.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.95, 11.35, 8.25]},
+			"faces": {
+				"east": {"uv": [7, 8, 5, 11], "texture": "#0"},
+				"west": {"uv": [5, 8, 7, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [5, 7.015, 4.5],
+			"to": [11, 7.015, 11.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [10, 7, 5.5]},
+			"faces": {
+				"up": {"uv": [6.25, 0, 9.75, 3], "rotation": 270, "texture": "#0"}
+			}
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/netherrack/netherrack_1" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_2" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_3" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_4" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_5" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_6" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_7" },
+      { "model": "minecraft:block/nether/netherrack/netherrack_8" }
+    ]
+  }
+}

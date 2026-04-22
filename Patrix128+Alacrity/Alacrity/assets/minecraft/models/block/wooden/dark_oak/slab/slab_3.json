@@ -1,0 +1,10 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "block/templates/wooden_slabs/slab_3",
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/wooden/dark_oak/5",
+        "2": "block/wooden/dark_oak/6",
+        "particle": "block/wooden/dark_oak/particle"
+	}
+}

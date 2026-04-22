@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/tpl_core/wall_bricks/cap_2",
+	"textures": {
+        "wall_alt": "block/stone/tuff/wall_alt",
+        "wall_short": "block/stone/tuff/wall_short",
+		"particle": "block/stone/stone_particle"
+	}
+}

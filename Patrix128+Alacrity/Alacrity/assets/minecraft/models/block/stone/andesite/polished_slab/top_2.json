@@ -1,0 +1,24 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/stone/andesite/polished_slab",
+		"3": "block/stone/andesite/polished_top_atlas",
+		"particle": "block/stone/andesite/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 0, 0, 4], "texture": "#2"},
+				"east": {"uv": [8, 0, 16, 4], "texture": "#2"},
+				"south": {"uv": [0, 0, 8, 4], "texture": "#2"},
+				"west": {"uv": [16, 0, 8, 4], "texture": "#2"},
+				"up": {"uv": [8, 0, 16, 8], "texture": "#3", "cullface": "up"},
+				"down": {"uv": [8, 0, 16, 8], "rotation": 90, "texture": "#3"}
+			}
+		}
+	]
+}

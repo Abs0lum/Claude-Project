@@ -1,0 +1,8 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/inventory_only/boats/template_boat_chest",
+	"textures": {
+		"1": "item/models_items/chest",
+		"3": "item/models_items/chest_boat/mangrove"
+	}
+}

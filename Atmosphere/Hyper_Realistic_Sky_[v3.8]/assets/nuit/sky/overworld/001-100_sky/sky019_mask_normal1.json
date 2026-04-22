@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/001-100_sky/sky019_mask_normal1.png",
+	"blend": {"type": "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 19,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"13500": 1.0,
+				"14500": 0.0,
+				"21500": 0.0,
+				"22500": 1.0
+				}
+			},
+		"rotation": {
+			"speed": -0.866,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]},
+		"biomes": {"entries": ["minecraft:forest", "minecraft:birch_forest", "minecraft:birch_forest_hills", "minecraft:cherry_grove", "minecraft:dark_forest", "minecraft:dark_forest_hills", "minecraft:flower_forest", "minecraft:meadow", "minecraft:mushroom_fields", "minecraft:plains", "minecraft:river", "minecraft:sunflower_plains", "minecraft:taiga", "minecraft:tall_birch_forest", "minecraft:tall_birch_hills", "minecraft:windswept_forest"]}
+		}
+}

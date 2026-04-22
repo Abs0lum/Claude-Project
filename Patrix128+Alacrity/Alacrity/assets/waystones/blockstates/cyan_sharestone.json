@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=east,half=lower":  {"model":"waystones:block/sharestone_full"},
+    "facing=north,half=lower": {"model":"waystones:block/sharestone_full"},
+    "facing=south,half=lower": {"model":"waystones:block/sharestone_full"},
+    "facing=west,half=lower":  {"model":"waystones:block/sharestone_full"},
+    "facing=east,half=upper":  {"model":"waystones:block/empty"},
+    "facing=north,half=upper": {"model":"waystones:block/empty"},
+    "facing=south,half=upper": {"model":"waystones:block/empty"},
+    "facing=west,half=upper":  {"model":"waystones:block/empty"}
+  }
+}

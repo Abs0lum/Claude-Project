@@ -1,0 +1,43 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"stairs_top": "block/stone/cobblestone/cobblestone_stairs_top",
+		"extra": "block/stone/cobblestone/extra",
+		"all": "block/stone/cobblestone/cobblestone_stairs_side",
+		"particle": "block/stone/stone_particle"
+	},
+	"elements": [
+		{
+			"from": [5.5, 0, 0],
+			"to": [10.5, 12, 8],
+			"faces": {
+				"north": {"uv": [4.25, 2, 6.75, 8], "texture": "#all"},
+				"east": {"uv": [0, 2, 4, 8], "texture": "#all"},
+				"west": {"uv": [0, 2, 4, 8], "texture": "#all"},
+				"down": {"uv": [8.75, 12, 11.25, 16], "texture": "#extra"}
+			}
+		},
+		{
+			"from": [5.5, 12, 4],
+			"to": [10.5, 15.001, 8],
+			"faces": {
+				"east": {"uv": [5.25, 2, 7.25, 3.5], "texture": "#all"},
+				"west": {"uv": [3.75, 2, 5.75, 3.5], "texture": "#all"},
+				"up": {"uv": [4.75, 3.75, 7.25, 5.75], "texture": "#stairs_top"}
+			}
+		},
+		{
+			"from": [4, 12, 0],
+			"to": [12, 16, 4],
+			"faces": {
+				"north": {"uv": [0, 8, 4, 10], "texture": "#all"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#all"},
+				"south": {"uv": [0, 8, 4, 10], "texture": "#all"},
+				"west": {"uv": [14, 0, 16, 2], "texture": "#all"},
+				"up": {"uv": [4, 6, 8, 8], "texture": "#stairs_top"},
+				"down": {"uv": [9.25, 14, 13.25, 16], "texture": "#extra"}
+			}
+		}
+	]
+}

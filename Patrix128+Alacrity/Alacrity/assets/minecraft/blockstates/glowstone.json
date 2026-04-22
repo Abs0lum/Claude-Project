@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/glowstone/glowstone_1" },
+      { "model": "minecraft:block/nether/glowstone/glowstone_2" },
+      { "model": "minecraft:block/nether/glowstone/glowstone_3" },
+      { "model": "minecraft:block/nether/glowstone/glowstone_4" }
+    ]
+  }
+}

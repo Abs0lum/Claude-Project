@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "pw:cherry_valley"
+    },
+    "components": {
+      "minecraft:water_appearance": {
+        "surface_color": "#5DA7D8"
+      },
+      "minecraft:water_identifier": {
+        "water_identifier": "pw:cherry_water"
+      },
+      "minecraft:sky_color": {
+        "sky_color": "#A8C9E7"
+      },
+      "minecraft:fog_appearance": {
+        "fog_identifier": "minecraft:default"
+      },
+      "minecraft:grass_appearance": {
+        "grass_color": "#B5DB88"
+      },
+      "minecraft:foliage_appearance": {
+        "foliage_color": "#F7CCE0"
+      }
+    }
+  }
+}

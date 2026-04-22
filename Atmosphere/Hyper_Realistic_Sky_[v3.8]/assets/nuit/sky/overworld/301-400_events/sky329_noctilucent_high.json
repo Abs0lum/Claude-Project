@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/301-400_events/sky329_noctilucent_high.png",
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 329,
+		"fade": {
+			"duration": 192000,
+			"keyFrames": {
+				"118500": 0.0,
+				"119500": 1.0,
+				"120500": 1.0,
+				"121500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": 0.0,
+			"mapping": {"0": [0.0, 0.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.4901960784313725, "green": 0.596078431372549, "blue": 0.7411764705882353}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["clear"]},
+		"yRanges": {"entries": [{"min": 255.0, "max": 319.0}]},
+		"biomes": {"entries": ["minecraft:deep_frozen_ocean", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:ice_spikes", "minecraft:snowy_beach", "minecraft:snowy_plains", "minecraft:snowy_taiga", "minecraft:snowy_tundra", "minecraft:grove"]}
+		}
+}

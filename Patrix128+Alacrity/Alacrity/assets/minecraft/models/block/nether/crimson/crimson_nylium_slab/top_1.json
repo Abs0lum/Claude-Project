@@ -1,0 +1,24 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/nether/netherrack_1",
+		"3": "block/nether/crimson/nylium_side",
+		"4": "block/nether/crimson/nylium_top",
+		"particle": "block/nether/netherrack_particle"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 4], "texture": "#3", "cullface": "north"},
+				"east": {"uv": [0, 0, 8, 4], "texture": "#3", "cullface": "east"},
+				"south": {"uv": [0, 0, 8, 4], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [0, 0, 8, 4], "texture": "#3", "cullface": "west"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#4", "cullface": "up"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#2"}
+			}
+		}
+	]
+}

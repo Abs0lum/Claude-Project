@@ -1,0 +1,11 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "minecraft:block/templates/stone_bricks_wall/post_1",
+	"texture_size": [32, 32],
+	"textures": {
+        "cubes": "block/stone/deepslate/bricks_cubes",
+        "extra": "block/stone/deepslate/bricks_extra",
+        "wall_parts": "block/stone/deepslate/wall_parts",
+        "particle": "block/stone/deepslate/particle"
+	}
+}

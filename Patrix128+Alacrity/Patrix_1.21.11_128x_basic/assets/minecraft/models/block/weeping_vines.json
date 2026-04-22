@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross5",
+  "textures": {
+    "cross": "minecraft:block/weeping_vines"
+  }
+}

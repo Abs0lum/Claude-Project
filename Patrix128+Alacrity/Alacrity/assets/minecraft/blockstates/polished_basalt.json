@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "axis=x": [
+      { "model": "minecraft:block/stone/basalt/polished_1", "x": 90, "y": 90 },
+      { "model": "minecraft:block/stone/basalt/polished_2", "x": 90, "y": 90 },
+      { "model": "minecraft:block/stone/basalt/polished_3", "x": 90, "y": 90 },
+      { "model": "minecraft:block/stone/basalt/polished_4", "x": 90, "y": 90 }
+    ],
+    "axis=y": [
+      { "model": "minecraft:block/stone/basalt/polished_1" },
+      { "model": "minecraft:block/stone/basalt/polished_2" },
+      { "model": "minecraft:block/stone/basalt/polished_3" },
+      { "model": "minecraft:block/stone/basalt/polished_4" }
+    ],
+    "axis=z": [
+      { "model": "minecraft:block/stone/basalt/polished_1", "x": 90 },
+      { "model": "minecraft:block/stone/basalt/polished_2", "x": 90 },
+      { "model": "minecraft:block/stone/basalt/polished_3", "x": 90 },
+      { "model": "minecraft:block/stone/basalt/polished_4", "x": 90 }
+    ]
+  }
+}

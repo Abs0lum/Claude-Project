@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/prismarine/dark_1" },
+      { "model": "minecraft:block/stone/prismarine/dark_2" },
+      { "model": "minecraft:block/stone/prismarine/dark_3" },
+      { "model": "minecraft:block/stone/prismarine/dark_4" },
+      { "model": "minecraft:block/stone/prismarine/dark_5" },
+      { "model": "minecraft:block/stone/prismarine/dark_6" },
+      { "model": "minecraft:block/stone/prismarine/dark_7" },
+      { "model": "minecraft:block/stone/prismarine/dark_8" }
+    ]
+  }
+}

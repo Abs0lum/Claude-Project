@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/lodestone" },
+            { "model": "block/lodestone", "y": 90 },
+            { "model": "block/lodestone", "y": 180 },
+            { "model": "block/lodestone", "y": 270 }
+        ]
+    }
+}

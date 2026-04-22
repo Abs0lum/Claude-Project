@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/301-400_events/sky315_tornado.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 315,
+		"fade": {
+			"duration": 600000,
+			"keyFrames": {
+				"220000": 0.0,
+				"220250": 1.0,
+				"221750": 1.0,
+				"222000": 0.0,
+				"534000": 0.0,
+				"534250": 1.0,
+				"535750": 1.0,
+				"536000": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -1.0,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.4627450980392157, "green": 0.4980392156862745, "blue": 0.5803921568627451}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]}
+		}
+}

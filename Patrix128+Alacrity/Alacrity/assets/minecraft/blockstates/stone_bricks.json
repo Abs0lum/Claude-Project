@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_1" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_2" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_3" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_4" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_5" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_6" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_7" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_8" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_9" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_10" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_11" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_12" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_13" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_14" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_15" },
+      { "model": "minecraft:block/stone/stone_bricks/bricks/block_16" }
+    ]
+  }
+}

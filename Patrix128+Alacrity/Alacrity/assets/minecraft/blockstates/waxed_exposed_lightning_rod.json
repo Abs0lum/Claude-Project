@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=down,powered=false":  { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 180 },
+    "facing=down,powered=true":   { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 180 },
+    "facing=east,powered=false":  { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90, "y": 90 },
+    "facing=east,powered=true":   { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90, "y": 90 },
+    "facing=north,powered=false": { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90 },
+    "facing=north,powered=true":  { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90 },
+    "facing=south,powered=false": { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90, "y": 180 },
+    "facing=south,powered=true":  { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90, "y": 180 },
+    "facing=up,powered=false":    { "model": "minecraft:block/materials/copper/lightning_rod/rod_b" },
+    "facing=up,powered=true":     { "model": "minecraft:block/materials/copper/lightning_rod/rod_b" },
+    "facing=west,powered=false":  { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90, "y": 270 },
+    "facing=west,powered=true":   { "model": "minecraft:block/materials/copper/lightning_rod/rod_b", "x": 90, "y": 270 }
+  }
+}

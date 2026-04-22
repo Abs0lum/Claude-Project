@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/underwater/corals/fire_1" },
+      { "model": "minecraft:block/underwater/corals/fire_2" },
+      { "model": "minecraft:block/underwater/corals/fire_3" },
+      { "model": "minecraft:block/underwater/corals/fire_4" }
+    ]
+  }
+}

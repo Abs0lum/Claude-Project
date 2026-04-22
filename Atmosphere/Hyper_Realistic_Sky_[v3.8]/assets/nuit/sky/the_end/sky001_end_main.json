@@ -1,0 +1,12 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:the_end/sky001_end_main.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 701,
+		"fog": {"modifyColors": true, "red": 0.072272, "green": 0.066626, "blue": 0.144128, "showInDenseFog": true}
+		},
+	"conditions": {"worlds": {"entries": ["minecraft:the_end"]}}
+}

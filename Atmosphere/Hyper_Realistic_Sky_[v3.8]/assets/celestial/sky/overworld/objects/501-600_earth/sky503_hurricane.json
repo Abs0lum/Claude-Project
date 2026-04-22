@@ -1,0 +1,22 @@
+{
+	"texture": "skybox:overworld/uv_mapped/hurricane.png",
+	"vertex": [
+		{ "x": " 58.59375", "y": "-100", "z": "-58.59375", "uv_x": "modulo(((floor(0.09375*worldTime))/8),1)+0.125", "uv_y": "modulo(((floor(0.75*worldTime))/8),1)" },
+		{ "x": "-58.59375", "y": "-100", "z": "-58.59375", "uv_x": "modulo(((floor(0.09375*worldTime))/8),1)", "uv_y": "modulo(((floor(0.75*worldTime))/8),1)" },
+		{ "x": "-58.59375", "y": "-100", "z": " 58.59375", "uv_x": "modulo(((floor(0.09375*worldTime))/8),1)", "uv_y": "modulo(((floor(0.75*worldTime))/8),1)+0.125" },
+		{ "x": " 58.59375", "y": "-100", "z": " 58.59375", "uv_x": "modulo(((floor(0.09375*worldTime))/8),1)+0.125", "uv_y": "modulo(((floor(0.75*worldTime))/8),1)+0.125" }
+	],
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "0",
+		"degrees_z": "0",
+		"base_degrees_x": "0",
+		"base_degrees_y": "0",
+		"base_degrees_z": "0"
+	},
+	"properties": {
+		"is_solid": true,
+		"blend": true,
+		"alpha": "(1-submerged) * space_altitude * thunderAlpha"
+	}
+}

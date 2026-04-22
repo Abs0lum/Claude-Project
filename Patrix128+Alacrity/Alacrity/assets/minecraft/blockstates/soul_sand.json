@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/soul_sand/soul_sand_1" },
+      { "model": "minecraft:block/nether/soul_sand/soul_sand_2" },
+      { "model": "minecraft:block/nether/soul_sand/soul_sand_3" },
+      { "model": "minecraft:block/nether/soul_sand/soul_sand_4" }
+    ]
+  }
+}

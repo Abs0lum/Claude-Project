@@ -1,0 +1,35 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "realsource:fog_cherry_grove"
+      },
+      "volumetric": {
+        "density": {
+          "water": {
+            "max_density": 0.05,            
+            "uniform": true                 
+          },
+          "air": {
+            "max_density": 0.05,             
+            "zero_density_height": 270.0,    
+            "max_density_height": 100.0      
+          }
+        },
+        
+  
+        "media_coefficients": {
+          "water": {
+            "scattering": [0.016, 0.018, 0.02],  
+            "absorption": [0.09, 0.04, 0.04] 
+          },
+         "air": { 
+  "scattering": [0.18, 0.08, 0.16], 
+  "absorption": [0.01, 0.02, 0.01]
+}
+        }
+       
+      }
+    }
+  }
+  

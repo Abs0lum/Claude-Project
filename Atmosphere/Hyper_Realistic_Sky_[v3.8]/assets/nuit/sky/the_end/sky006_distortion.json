@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"type": "multi-textured",
+	"animatableTextures": [
+		{
+			"texture": "skybox:the_end/sky006_distortion.png",
+			"uvRange": {
+				"minU": 0.333333333333,
+				"minV": 0.5,
+				"maxU": 0.666666666666,
+				"maxV": 1
+			},
+			"gridColumns": 1,
+			"gridRows": 1,
+			"duration": 1000
+		}
+	],
+	"blend": {"type" : "normal"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 706,
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [20.0, 0.0, 0.0]},
+			"axis": {"0": [20.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:the_end"]},
+		"biomes": {"entries": ["minecraft:end_highlands"]}
+		}
+}

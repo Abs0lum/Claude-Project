@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld-Tectonic RP [SCHEMA-FIX v0.3.0]",
+    "description": "v0.3.0 SCHEMA-FIX \u2014 corrected client_biome schema. format_version is '1.21.40' per Microsoft canonical example. foliage_appearance and grass_appearance use 'color' field (not 'foliage_color'/'grass_color'). fog_appearance removed (referenced missing 'minecraft:default' fog asset). Water settings unchanged.",
+    "uuid": "3b9a4c26-8d1e-4f7b-a5c3-2e8d6b4a1f70",
+    "version": [
+      0,
+      3,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "PatrixWorld-Tectonic client biomes + VV water",
+      "type": "resources",
+      "uuid": "e25f9d34-7b6c-4d8a-9e1f-3c5b8d7a2e50",
+      "version": [
+        0,
+        3,
+        0
+      ]
+    }
+  ]
+}

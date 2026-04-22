@@ -1,0 +1,413 @@
+{
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"part": "stick1",
+			"id": "stick1",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"submodels": [
+				{
+					"id": "body",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"submodels": [
+						{
+							"id": "layer1",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "rod1",
+									"invertAxis": "xy",
+									"translate": [7, -2, -7],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -4, -0.5, 1, 7, 1],
+											"uvNorth": [21, 19, 22, 27],
+											"uvEast": [20, 19, 21, 27],
+											"uvSouth": [23, 19, 24, 27],
+											"uvWest": [22, 19, 23, 27],
+											"uvUp": [22, 19, 21, 18],
+											"uvDown": [23, 18, 22, 19]
+										}
+									]
+								},
+								{
+									"id": "rod2",
+									"invertAxis": "xy",
+									"translate": [-7, -2, -7],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -5, -0.5, 1, 9, 1],
+											"uvNorth": [17, 19, 18, 27],
+											"uvEast": [16, 19, 17, 27],
+											"uvSouth": [19, 19, 20, 27],
+											"uvWest": [18, 19, 19, 27],
+											"uvUp": [18, 19, 17, 18],
+											"uvDown": [19, 18, 18, 19]
+										}
+									]
+								},
+								{
+									"id": "rod3",
+									"invertAxis": "xy",
+									"translate": [-7, -2, 7],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -4, -0.5, 1, 7, 1],
+											"uvNorth": [23, 19, 24, 27],
+											"uvEast": [22, 19, 23, 27],
+											"uvSouth": [21, 19, 22, 27],
+											"uvWest": [20, 19, 21, 27],
+											"uvUp": [21, 18, 22, 19],
+											"uvDown": [22, 19, 23, 18]
+										}
+									]
+								},
+								{
+									"id": "rod4",
+									"invertAxis": "xy",
+									"translate": [7, -2, 7],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -5, -0.5, 1, 9, 1],
+											"uvNorth": [19, 19, 20, 27],
+											"uvEast": [18, 19, 19, 27],
+											"uvSouth": [17, 19, 18, 27],
+											"uvWest": [16, 19, 17, 27],
+											"uvUp": [17, 18, 18, 19],
+											"uvDown": [18, 19, 19, 18]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "layer2",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "rod5",
+									"invertAxis": "xy",
+									"translate": [5, -6, -5],
+									"boxes": [
+										{
+											"coordinates": [-1, -6, -1, 2, 9, 2],
+											"uvNorth": [10, 20, 12, 28],
+											"uvEast": [8, 20, 10, 28],
+											"uvSouth": [14, 20, 16, 28],
+											"uvWest": [12, 20, 14, 28],
+											"uvUp": [12, 20, 10, 18],
+											"uvDown": [14, 18, 12, 20]
+										}
+									]
+								},
+								{
+									"id": "rod6",
+									"invertAxis": "xy",
+									"translate": [-5, -6, -5],
+									"boxes": [
+										{
+											"coordinates": [-1, -5, -1, 2, 7, 2],
+											"uvNorth": [2, 20, 4, 28],
+											"uvEast": [0, 20, 2, 28],
+											"uvSouth": [6, 20, 8, 28],
+											"uvWest": [4, 20, 6, 28],
+											"uvUp": [4, 20, 2, 18],
+											"uvDown": [6, 18, 4, 20]
+										}
+									]
+								},
+								{
+									"id": "rod7",
+									"invertAxis": "xy",
+									"translate": [-5, -6, 5],
+									"boxes": [
+										{
+											"coordinates": [-1, -6, -1, 2, 9, 2],
+											"uvNorth": [14, 20, 16, 28],
+											"uvEast": [12, 20, 14, 28],
+											"uvSouth": [10, 20, 12, 28],
+											"uvWest": [8, 20, 10, 28],
+											"uvUp": [10, 18, 12, 20],
+											"uvDown": [12, 20, 14, 18]
+										}
+									]
+								},
+								{
+									"id": "rod8",
+									"invertAxis": "xy",
+									"translate": [5, -6, 5],
+									"boxes": [
+										{
+											"coordinates": [-1, -5, -1, 2, 7, 2],
+											"uvNorth": [6, 20, 8, 28],
+											"uvEast": [4, 20, 6, 28],
+											"uvSouth": [2, 20, 4, 28],
+											"uvWest": [0, 20, 2, 28],
+											"uvUp": [2, 18, 4, 20],
+											"uvDown": [4, 20, 6, 18]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "layer3",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "rod9",
+									"invertAxis": "xy",
+									"translate": [3, -14, -3],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -2, -0.5, 1, 7, 1],
+											"uvNorth": [29, 19, 30, 27],
+											"uvEast": [28, 19, 29, 27],
+											"uvSouth": [31, 19, 32, 27],
+											"uvWest": [30, 19, 31, 27],
+											"uvUp": [30, 19, 29, 18],
+											"uvDown": [31, 18, 30, 19]
+										}
+									]
+								},
+								{
+									"id": "rod10",
+									"invertAxis": "xy",
+									"translate": [-3, -14, -3],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -3, -0.5, 1, 9, 1],
+											"uvNorth": [25, 19, 26, 27],
+											"uvEast": [24, 19, 25, 27],
+											"uvSouth": [27, 19, 28, 27],
+											"uvWest": [26, 19, 27, 27],
+											"uvUp": [26, 19, 25, 18],
+											"uvDown": [27, 18, 26, 19]
+										}
+									]
+								},
+								{
+									"id": "rod11",
+									"invertAxis": "xy",
+									"translate": [-3, -14, 3],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -2, -0.5, 1, 7, 1],
+											"uvNorth": [31, 19, 32, 27],
+											"uvEast": [30, 19, 31, 27],
+											"uvSouth": [29, 19, 30, 27],
+											"uvWest": [28, 19, 29, 27],
+											"uvUp": [29, 18, 30, 19],
+											"uvDown": [30, 19, 31, 18]
+										}
+									]
+								},
+								{
+									"id": "rod12",
+									"invertAxis": "xy",
+									"translate": [3, -14, 3],
+									"boxes": [
+										{
+											"coordinates": [-0.5, -3, -0.5, 1, 9, 1],
+											"uvNorth": [27, 19, 28, 27],
+											"uvEast": [26, 19, 27, 27],
+											"uvSouth": [25, 19, 26, 27],
+											"uvWest": [24, 19, 25, 27],
+											"uvUp": [25, 18, 26, 19],
+											"uvDown": [26, 19, 27, 18]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "head2",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "bone1",
+									"invertAxis": "xy",
+									"translate": [0, 0, -1],
+									"rotate": [-15, 0, 0],
+									"submodels": [
+										{
+											"id": "bone2",
+											"invertAxis": "xy",
+											"translate": [0, 0, 0],
+											"rotate": [0, -45, 0],
+											"boxes": [
+												{
+													"coordinates": [-4, -4, -4, 8, 10, 8],
+													"uvNorth": [8, 8, 16, 18],
+													"uvEast": [0, 8, 8, 18],
+													"uvSouth": [24, 8, 32, 18],
+													"uvWest": [16, 8, 24, 18]
+												},
+												{
+													"coordinates": [-4, 4, -4, 8, 0, 8],
+													"uvUp": [8, 8, 0, 0]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"body.rx": "torad(20)*limb_speed",
+					"body.tx": "-stick1.tx",
+					"body.ty": "-stick1.ty -24+ if(is_on_ground, 0, sin(limb_swing/3+age/6)*3)",
+					"body.tz": "-stick1.tz +sin(limb_swing/3+age/10)*2",
+					"head2.ty": "-cos(limb_swing/3+age/6)",
+					"head2.rx": "torad(head_pitch) -cos(limb_swing/3+age/10)/10 -body.rx",
+					"head2.ry": "torad(head_yaw)",
+					"head2.rz": " sin(limb_swing/3+age/12)/10",
+					"head2.tx": "-cos(limb_swing/3+age/12)*2",
+					"layer1.ry": " age/if(is_burning, 5, 10)*2 +(limb_swing/3) + head2.ry/2",
+					"layer2.ry": "-age/if(is_burning, 5, 10)   -(limb_swing/3) + head2.ry/4",
+					"layer3.ry": " age/if(is_burning, 5, 10)   +(limb_swing/3)",
+					"layer1.tx": "head2.tx",
+					"layer2.tx": "head2.tx/2",
+					"layer3.tx": "head2.tx/4",
+					"rod1.ry": " torad(45)",
+					"rod2.ry": " torad(45) +pi/2",
+					"rod3.ry": " torad(45) -pi/2",
+					"rod4.ry": " torad(45) +pi",
+					"rod5.ry": " torad(45)",
+					"rod6.ry": " torad(45) +pi",
+					"rod7.ry": " torad(45) -pi/2",
+					"rod8.ry": " torad(45) +pi/2",
+					"rod9.ry": " torad(45) -pi/2",
+					"rod10.ry": "torad(45) +pi",
+					"rod11.ry": "torad(45) +pi/2",
+					"rod12.ry": "torad(45)",
+					"rod1.tx": " 7 + (hurt_time*pi)/8",
+					"rod2.tx": "-7 - (hurt_time*pi)/8",
+					"rod3.tx": "-7 + (hurt_time*pi)/8",
+					"rod4.tx": " 7 - (hurt_time*pi)/8",
+					"rod1.tz": " 7 + (hurt_time*pi)/8",
+					"rod2.tz": " 7 + (hurt_time*pi)/8",
+					"rod3.tz": "-7 - (hurt_time*pi)/8",
+					"rod4.tz": "-7 - (hurt_time*pi)/8",
+					"rod5.tx": " 5 + (hurt_time*pi)/8",
+					"rod6.tx": "-5 - (hurt_time*pi)/8",
+					"rod7.tx": "-5 + (hurt_time*pi)/8",
+					"rod8.tx": " 5 - (hurt_time*pi)/8",
+					"rod5.tz": " 5 + (hurt_time*pi)/8",
+					"rod6.tz": " 5 + (hurt_time*pi)/8",
+					"rod7.tz": "-5 - (hurt_time*pi)/8",
+					"rod8.tz": "-5 - (hurt_time*pi)/8",
+					"rod9.tx": " 3 + (hurt_time*pi)/8",
+					"rod10.tx": "-3 - (hurt_time*pi)/8",
+					"rod11.tx": "-3 + (hurt_time*pi)/8",
+					"rod12.tx": " 3 - (hurt_time*pi)/8",
+					"rod9.tz": "  3 + (hurt_time*pi)/8",
+					"rod10.tz": " 3 + (hurt_time*pi)/8",
+					"rod11.tz": "-3 - (hurt_time*pi)/8",
+					"rod12.tz": "-3 - (hurt_time*pi)/8",
+					"rod1.ty": " stick1.ty +4",
+					"rod2.ty": " stick2.ty +4",
+					"rod3.ty": " stick3.ty +4",
+					"rod4.ty": " stick4.ty +4",
+					"rod5.ty": " stick5.ty +6",
+					"rod6.ty": " stick6.ty +6",
+					"rod7.ty": " stick7.ty +6",
+					"rod8.ty": " stick8.ty +6",
+					"rod9.ty": " stick9.ty +5",
+					"rod10.ty": "stick10.ty+5",
+					"rod11.ty": "stick11.ty+5",
+					"rod12.ty": "stick12.ty+5"
+				}
+			]
+		},
+		{
+			"part": "stick2",
+			"id": "stick2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick3",
+			"id": "stick3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick4",
+			"id": "stick4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick5",
+			"id": "stick5",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick6",
+			"id": "stick6",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick7",
+			"id": "stick7",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick8",
+			"id": "stick8",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick9",
+			"id": "stick9",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick10",
+			"id": "stick10",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick11",
+			"id": "stick11",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "stick12",
+			"id": "stick12",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

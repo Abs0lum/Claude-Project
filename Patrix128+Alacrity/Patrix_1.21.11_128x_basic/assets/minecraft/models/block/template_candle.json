@@ -1,0 +1,41 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"flame": "block/extra/candle_wick"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 6, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 0, 4, 6], "texture": "#all"},
+				"east": {"uv": [2, 8, 4, 14], "texture": "#all"},
+				"south": {"uv": [2, 0, 4, 6], "texture": "#all"},
+				"west": {"uv": [2, 8, 4, 14], "texture": "#all"},
+				"up": {"uv": [14, 0, 16, 2], "texture": "#all"},
+				"down": {"uv": [14, 8, 16, 10], "texture": "#all", "cullface": "down"}
+			}
+		},
+		{
+			"from": [7, 6, 8],
+			"to": [9, 9.5, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#flame"},
+				"south": {"uv": [8, 0, 0, 16], "texture": "#flame"}
+			}
+		},
+		{
+			"from": [8, 6, 7],
+			"to": [8, 9.5, 9],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"east": {"uv": [16, 0, 8, 16], "texture": "#flame"},
+				"west": {"uv": [8, 0, 16, 16], "texture": "#flame"}
+			}
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "snowy=false": [
+      { "model": "minecraft:block/nature/grass/podzol_1" },
+      { "model": "minecraft:block/nature/grass/podzol_2" },
+      { "model": "minecraft:block/nature/grass/podzol_3" },
+      { "model": "minecraft:block/nature/grass/podzol_4" }
+    ],
+    "snowy=true": [
+      { "model": "minecraft:block/nature/snow/snow_grass_block_1" },
+      { "model": "minecraft:block/nature/snow/snow_grass_block_2" },
+      { "model": "minecraft:block/nature/snow/snow_grass_block_3" },
+      { "model": "minecraft:block/nature/snow/snow_grass_block_4" }
+    ]
+  }
+}

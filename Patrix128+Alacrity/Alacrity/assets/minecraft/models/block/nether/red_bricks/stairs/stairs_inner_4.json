@@ -1,0 +1,10 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/bricks_stairs/stairs_inner_4",
+	"textures": {
+        "2": "block/nether/red_bricks/extra_2",
+        "side": "block/nether/red_bricks/stairs_side",
+        "top": "block/nether/red_bricks/stairs_top",
+        "particle": "block/nether/red_bricks/particle"
+	}
+}

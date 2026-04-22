@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Vibrant Visuals PLUS 2.0",
+        "description": "PLUS for Bedrock Vibrant Visuals by RealSource",
+        "uuid": "0f54445a-697b-4fee-88a3-53b669e93842",
+        "version": [ 2, 0, 0 ],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "ce6b1a4b-b49d-4ea1-aa57-532b13dc9dc9",
+            "version": [ 2, 0, 0 ]
+        }
+    ],
+    "capabilities" : [
+            "pbr"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/cobble_wall/tall_e_1",
+	"textures": {
+        "extra": "block/stone/prismarine/extra",
+        "all": "block/stone/prismarine/stairs_side",
+		"particle": "block/stone/stone_particle"
+	}
+}

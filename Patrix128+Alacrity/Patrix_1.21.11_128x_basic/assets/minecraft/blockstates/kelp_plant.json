@@ -1,0 +1,14 @@
+{
+    "multipart": [
+        {   "apply": { "model": "block/kelp_plant" }
+        },
+        {   "apply": [
+                {"model": "block/air", "weight": 2 },
+                { "model": "block/kelp_plant_extra", "weight": 1 },
+                { "model": "block/kelp_plant_extra", "y": 90, "weight": 1 },
+                { "model": "block/kelp_plant_extra", "y": 180, "weight": 1 },
+                { "model": "block/kelp_plant_extra", "y": 270, "weight": 1 }
+            ]
+        }
+    ]
+}

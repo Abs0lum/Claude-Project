@@ -1,0 +1,58 @@
+{
+    "multipart": [
+        {   "apply": { "model": "block/deepslate_diamond_ore" }
+        },
+        {   "apply": [
+                {"model": "block/air"},
+                {"model": "block/deepslate_diamond_ore2"},
+                {"model": "block/deepslate_diamond_ore2", "y": 180},
+                {"model": "block/deepslate_diamond_ore3"},
+                {"model": "block/deepslate_diamond_ore3", "y": 180},
+                {"model": "block/deepslate_diamond_ore4"},
+                {"model": "block/deepslate_diamond_ore4", "y": 180}
+            ]
+        },
+        {   "apply": [
+                {"model": "block/deepslate_diamond_ore2",  "x": 180},
+                {"model": "block/deepslate_diamond_ore2", "x": 180, "y": 180},
+                {"model": "block/deepslate_diamond_ore3", "x": 180},
+                {"model": "block/deepslate_diamond_ore3", "x": 180, "y": 180},
+                {"model": "block/air"},
+                {"model": "block/deepslate_diamond_ore4", "x": 180},
+                {"model": "block/deepslate_diamond_ore4", "x": 180, "y": 180}
+            ]
+        },
+        {   "apply": [
+                {"model": "block/air"},
+                {"model": "block/deepslate_diamond_ore2", "x": 90},
+                {"model": "block/deepslate_diamond_ore2", "x": 270, "y": 180},
+                {"model": "block/deepslate_diamond_ore3", "x": 90},
+                {"model": "block/deepslate_diamond_ore3", "x": 270, "y": 180}
+            ]
+        },
+        {   "apply": [
+                {"model": "block/air"},
+                {"model": "block/deepslate_diamond_ore2", "x": 90, "y": 180},
+                {"model": "block/deepslate_diamond_ore2", "x": 270},
+                {"model": "block/deepslate_diamond_ore3", "x": 90, "y": 180},
+                {"model": "block/deepslate_diamond_ore3", "x": 270}
+            ]
+        },
+        {   "apply": [
+                {"model": "block/deepslate_diamond_ore2", "x": 90, "y": 90},
+                {"model": "block/deepslate_diamond_ore2", "x": 270, "y": 270},
+                {"model": "block/air"},
+                {"model": "block/deepslate_diamond_ore3", "x": 90, "y": 90},
+                {"model": "block/deepslate_diamond_ore3", "x": 270, "y": 270}
+            ]
+        },
+        {   "apply": [
+                {"model": "block/deepslate_diamond_ore2", "x": 90, "y": 270},
+                {"model": "block/deepslate_diamond_ore2", "x": 270, "y": 90},
+                {"model": "block/air"},
+                {"model": "block/deepslate_diamond_ore3", "x": 90, "y": 270},
+                {"model": "block/deepslate_diamond_ore3", "x": 270, "y": 90}
+            ]
+        }
+    ]
+}

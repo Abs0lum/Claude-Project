@@ -1,0 +1,14 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "minecraft:block/templates/stone_bricks_wall/side_n_1",
+	"texture_size": [32, 32],
+	"textures": {
+        "extra": "block/soils/mud_bricks/extra",
+        "wall_hole": "block/soils/mud_bricks/wall",
+        "wall_end": "block/soils/mud_bricks/wall_end",
+        "wall_parts": "block/soils/mud_bricks/wall_parts",
+        "wall_alt": "block/soils/mud_bricks/wall_alt",
+        "wall_short": "block/soils/mud_bricks/wall_short",
+        "particle": "block/soils/mud/packed_mud_particle"
+	}
+}

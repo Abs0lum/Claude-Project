@@ -1,0 +1,10 @@
+{
+  "predicate": {
+    "type": "tectonic:config",
+    "key": "river_ice"
+  },
+  "type": "lithostitched:add_features",
+  "biomes": "#c:is_snowy",
+  "features": "tectonic:underground_river/ice",
+  "step": "vegetal_decoration"
+}

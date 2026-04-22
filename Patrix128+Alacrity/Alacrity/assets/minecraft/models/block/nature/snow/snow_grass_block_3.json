@@ -1,0 +1,24 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "3": "block/nature/snow/snow_1",
+        "5": "block/nature/dirt/dirt",
+        "side": "block/nature/snow/dirt_snow_sides",
+        "particle": "block/nature/dirt/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 8, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 8, 8, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 8, 8, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 8, 8, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#3", "cullface": "up"},
+				"down": {"uv": [8, 0, 12, 4], "texture": "#5", "cullface": "down"}
+			}
+		}
+	]
+}

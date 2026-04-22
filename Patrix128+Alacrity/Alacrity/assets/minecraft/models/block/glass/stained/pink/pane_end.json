@@ -1,0 +1,9 @@
+{
+    "cpinkit": "Made by Satellence with Blockbench",
+	"parent": "block/templates/glass/led_framed/pane_end",
+	"textures": {
+        "5": "block/glass/stained/pink/pane",
+		"6": "block/glass/normal/pane_parts",
+        "particle": "block/glass/particle/pink"
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "block/interactive/grindstone",
+		"particle": "block/stone/stone_particle"
+	},
+	"elements": [
+		{
+			"from": [7.5, 13, 7.5],
+			"to": [8.5, 16, 8.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 14.5, 8]},
+			"faces": {
+				"north": {"uv": [8, 8, 9.5, 8.5], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [8, 8.5, 9.5, 9], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [9.5, 8, 11, 8.5], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [9.5, 8.5, 11, 9], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8, 8.5, 8.5, 9], "rotation": 270, "texture": "#0", "cullface": "up"}
+			}
+		}
+	]
+}

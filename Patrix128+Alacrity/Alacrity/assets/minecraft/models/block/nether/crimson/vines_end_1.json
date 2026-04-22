@@ -1,0 +1,221 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "block/nether/crimson/vines",
+		"particle": "block/nether/crimson/crimson_particle"
+	},
+	"elements": [
+		{
+			"name": "Roots",
+			"from": [7, 4, 1],
+			"to": [7, 16, 17],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 10, 8]},
+			"faces": {
+				"east": {"uv": [8, 8, 0, 14], "texture": "#1"},
+				"west": {"uv": [0, 8, 8, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [7, -3, 13],
+			"to": [7, 4, 15],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 10, 8]},
+			"faces": {
+				"east": {"uv": [9.75, 10.5, 8.75, 14], "texture": "#1"},
+				"west": {"uv": [8.75, 10.5, 9.75, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [7, -3, 3],
+			"to": [7, 4, 5],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 10, 8]},
+			"faces": {
+				"east": {"uv": [11.25, 10.5, 10.25, 14], "texture": "#1"},
+				"west": {"uv": [10.25, 10.5, 11.25, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [10.12132, 7.5, 4.46447],
+			"to": [16.12132, 16, 4.46447],
+			"rotation": {"angle": 45, "axis": "y", "origin": [10.12132, 8, 4.46447]},
+			"faces": {
+				"north": {"uv": [4.5, 6.25, 7.5, 10.5], "texture": "#1"},
+				"south": {"uv": [7.5, 6.25, 4.5, 10.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [13.62132, 1.5, 4.46447],
+			"to": [15.12132, 7.5, 4.46447],
+			"rotation": {"angle": 45, "axis": "y", "origin": [10.12132, 8, 4.46447]},
+			"faces": {
+				"north": {"uv": [3.5, 10, 4.25, 13], "texture": "#1"},
+				"south": {"uv": [4.25, 10, 3.5, 13], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [-0.87868, -2.5, 5.46447],
+			"to": [0.62132, 3.5, 5.46447],
+			"rotation": {"angle": 45, "axis": "y", "origin": [10.12132, 8, 4.46447]},
+			"faces": {
+				"north": {"uv": [10.25, 10.5, 11, 13.5], "texture": "#1"},
+				"south": {"uv": [11, 10.5, 10.25, 13.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [0.34315, 3.5, 13.24264],
+			"to": [6.34315, 16, 13.24264],
+			"rotation": {"angle": 45, "axis": "y", "origin": [2.34315, 11.5, 12.24264]},
+			"faces": {
+				"north": {"uv": [8, 8, 5, 14.25], "texture": "#1"},
+				"south": {"uv": [5, 8, 8, 14.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [2, 5, 8],
+			"to": [18, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 11, 8]},
+			"faces": {
+				"north": {"uv": [8, 0, 0, 5.5], "texture": "#1"},
+				"south": {"uv": [0, 0, 8, 5.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [4.5, -0.5, 8],
+			"to": [6.5, 5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, -0.5, 8]},
+			"faces": {
+				"north": {"uv": [9.75, 11.5, 8.75, 14.25], "texture": "#1"},
+				"south": {"uv": [8.75, 11.5, 9.75, 14.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [12.5, -0.5, 8],
+			"to": [14.5, 5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, -0.5, 8]},
+			"faces": {
+				"north": {"uv": [9.75, 10.5, 8.75, 13.25], "texture": "#1"},
+				"south": {"uv": [8.75, 10.5, 9.75, 13.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Roots",
+			"from": [9.5, -0.5, 8],
+			"to": [11.5, 5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, -0.5, 8]},
+			"faces": {
+				"north": {"uv": [11, 11.25, 10, 14], "texture": "#1"},
+				"south": {"uv": [10, 11.25, 11, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [2.99632, 10.13764, 8.87182],
+			"to": [4.99632, 14.63764, 8.87182],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [3.99632, 12.38764, 8.87182]},
+			"faces": {
+				"north": {"uv": [13.75, 10.5, 12.75, 12.75], "texture": "#1"},
+				"south": {"uv": [12.75, 10.5, 13.75, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [6.39632, 10.425, 3.08947],
+			"to": [6.39632, 14.925, 5.08947],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.97132, 12.675, 4.68947]},
+			"faces": {
+				"east": {"uv": [16, 10.5, 15, 12.75], "texture": "#1"},
+				"west": {"uv": [15, 10.5, 16, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [3.97132, 5.35, 2.36447],
+			"to": [3.97132, 9.85, 4.36447],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [3.54632, 7.6, 3.96447]},
+			"faces": {
+				"east": {"uv": [15.25, 10.5, 14.25, 12.75], "texture": "#1"},
+				"west": {"uv": [14.25, 10.5, 15.25, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [0.82132, 7.35, 13.61447],
+			"to": [0.82132, 11.85, 15.61447],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0.39632, 9.6, 15.21447]},
+			"faces": {
+				"east": {"uv": [15.25, 10.5, 14.25, 12.75], "texture": "#1"},
+				"west": {"uv": [14.25, 10.5, 15.25, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [4.64632, -1.475, 11.23947],
+			"to": [4.64632, 3.025, 13.23947],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [4.22132, 0.775, 12.83947]},
+			"faces": {
+				"east": {"uv": [15.25, 10.5, 14.25, 12.75], "texture": "#1"},
+				"west": {"uv": [14.25, 10.5, 15.25, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [3.12132, -3.475, 11.88947],
+			"to": [3.12132, 3.525, 13.38947],
+			"rotation": {"angle": -45, "axis": "y", "origin": [4.22132, 0.775, 13.33947]},
+			"faces": {
+				"east": {"uv": [12, 10.5, 11.25, 14], "texture": "#1"},
+				"west": {"uv": [11.25, 10.5, 12, 14], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [5.99632, 0.525, 8.01447],
+			"to": [7.99632, 5.025, 8.01447],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6.39632, 2.775, 7.58947]},
+			"faces": {
+				"north": {"uv": [15, 10.5, 16, 12.75], "texture": "#1"},
+				"south": {"uv": [16, 10.5, 15, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [10.44632, 0.5, 13.38947],
+			"to": [10.44632, 5, 15.38947],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [10.02132, 2.75, 14.98947]},
+			"faces": {
+				"east": {"uv": [14.5, 10.5, 13.5, 12.75], "texture": "#1"},
+				"west": {"uv": [13.5, 10.5, 14.5, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [12.99632, 4.18764, 7.14682],
+			"to": [14.99632, 8.68764, 7.14682],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [13.99632, 6.43764, 7.14682]},
+			"faces": {
+				"north": {"uv": [14.5, 10.5, 13.5, 12.75], "texture": "#1"},
+				"south": {"uv": [13.5, 10.5, 14.5, 12.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Glowing_vine",
+			"from": [8.99632, 9.18764, 7.14682],
+			"to": [10.99632, 13.68764, 7.14682],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [9.99632, 11.43764, 7.14682]},
+			"faces": {
+				"north": {"uv": [14.5, 10.5, 13.5, 12.75], "texture": "#1"},
+				"south": {"uv": [13.5, 10.5, 14.5, 12.75], "texture": "#1"}
+			}
+		}
+	]
+}

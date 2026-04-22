@@ -1,0 +1,110 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"texture_size": [40, 40],
+	"textures": {
+        "2": "block/nature/leaves/birch_leaves",
+        "particle": "block/nature/leaves/birch_leaves"
+	},
+	"elements": [
+		{
+			"name": "pendants",
+			"from": [4.9742, -10.675, -3.97618],
+			"to": [4.9742, 13.325, 4.02382],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [1.00003, 2.525, 7.56806]},
+			"faces": {
+				"east": {"uv": [0.25, 6.25, 1.75, 0.25], "rotation": 180, "texture": "#2", "cullface": "north", "tintindex": 0},
+				"west": {"uv": [1.75, 6.25, 0.25, 0.25], "rotation": 180, "texture": "#2", "cullface": "north", "tintindex": 0}
+			}
+		},
+		{
+			"name": "pendants",
+			"from": [13.3248, -15.925, 9.97066],
+			"to": [21.3248, 8.075, 9.97066],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [19.0748, 5.325, 12.47066]},
+			"faces": {
+				"north": {"uv": [1.75, 12.5, 0.25, 6.5], "rotation": 180, "texture": "#2", "cullface": "east", "tintindex": 0},
+				"south": {"uv": [0.25, 12.5, 1.75, 6.5], "rotation": 180, "texture": "#2", "cullface": "east", "tintindex": 0}
+			}
+		},
+		{
+			"name": "pendants",
+			"from": [-5.7, -11.425, 7.925],
+			"to": [2.3, 12.575, 7.925],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [5.00003, -1.475, 7.56806]},
+			"faces": {
+				"north": {"uv": [14.25, 6.25, 15.75, 0.25], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [15.75, 6.25, 14.25, 0.25], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "pendants",
+			"from": [7.41949, -11.675, 13.38131],
+			"to": [7.41949, 12.325, 21.38131],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8.00003, 2.525, 8.56806]},
+			"faces": {
+				"east": {"uv": [15.75, 12.5, 14.25, 6.5], "rotation": 180, "texture": "#2", "cullface": "west", "tintindex": 0},
+				"west": {"uv": [14.25, 12.5, 15.75, 6.5], "rotation": 180, "texture": "#2", "cullface": "west", "tintindex": 0}
+			}
+		},
+		{
+			"name": "pendants",
+			"from": [10.41948, -7.175, -7.61869],
+			"to": [10.41948, 16.825, 0.38131],
+			"rotation": {"angle": -45, "axis": "y", "origin": [9.00003, -1.475, 3.56806]},
+			"faces": {
+				"east": {"uv": [14.25, 12.5, 15.75, 6.5], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [15.75, 12.5, 14.25, 6.5], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [-4.2, 11.325, -4.075],
+			"to": [19.8, 11.325, 19.925],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [7.8, 9.325, 7.925]},
+			"faces": {
+				"up": {"uv": [14, 14, 8, 8], "texture": "#2", "tintindex": 0},
+				"down": {"uv": [8, 14, 14, 8], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [7.8, -4.675, -4.075],
+			"to": [7.8, 19.325, 19.925],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.2, -0.675, -0.075]},
+			"faces": {
+				"east": {"uv": [8, 8, 14, 2], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [14, 8, 8, 2], "rotation": 270, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [-3.2, -6.675, 8.925],
+			"to": [20.8, 17.325, 8.925],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8.8, 5.325, 6.925]},
+			"faces": {
+				"north": {"uv": [8, 14, 14, 8], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [14, 14, 8, 8], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [-4.2, 1.325, -4.075],
+			"to": [19.8, 1.325, 19.925],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [7.8, 1.325, 7.925]},
+			"faces": {
+				"up": {"uv": [8, 14, 2, 8], "rotation": 90, "texture": "#2", "tintindex": 0},
+				"down": {"uv": [2, 14, 8, 8], "rotation": 90, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [-3.2, -4.675, 8.925],
+			"to": [20.8, 19.325, 8.925],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.8, 7.325, 6.925]},
+			"faces": {
+				"north": {"uv": [2, 8, 8, 2], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [8, 8, 2, 2], "texture": "#2", "tintindex": 0}
+			}
+		}
+	]
+}

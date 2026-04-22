@@ -1,0 +1,99 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "particle": "block/nature/other/cactus",
+        "side": "block/nature/other/cactus"
+	},
+	"elements": [
+		{
+			"name": "main_cactus",
+			"from": [1, 0, 0],
+			"to": [15, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 4, 4], "texture": "#side"},
+				"west": {"uv": [0, 0, 4, 4], "texture": "#side"}
+			}
+		},
+		{
+			"name": "main_cactus_sides",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"up": {"uv": [8, 0, 12, 4], "texture": "#side", "cullface": "up"},
+				"down": {"uv": [8, 4, 12, 8], "texture": "#side", "cullface": "down"}
+			}
+		},
+		{
+			"name": "main_cactus_sides",
+			"from": [0, 0, 1],
+			"to": [16, 16, 15],
+			"faces": {
+				"north": {"uv": [0, 4, 4, 8], "texture": "#side"},
+				"south": {"uv": [0, 4, 4, 8], "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus_sides",
+			"from": [15, 4, 4.5],
+			"to": [20, 20, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [17.5, 12, 8]},
+			"faces": {
+				"east": {"uv": [14.25, 0, 16, 4], "texture": "#side"},
+				"west": {"uv": [14.25, 0, 16, 4], "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus_sides",
+			"from": [17, 11, 2.5],
+			"to": [22, 27, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19.5, 19, 6]},
+			"faces": {
+				"east": {"uv": [14.25, 0, 16, 4], "texture": "#side"},
+				"west": {"uv": [14.25, 0, 16, 4], "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus_sides",
+			"from": [14, 4, 5.5],
+			"to": [21, 20, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [17.5, 12, 8]},
+			"faces": {
+				"north": {"uv": [14.25, 4, 16, 8], "texture": "#side"},
+				"south": {"uv": [14.25, 4, 16, 8], "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus_sides",
+			"from": [16, 11, 3.5],
+			"to": [23, 27, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19.5, 19, 6]},
+			"faces": {
+				"north": {"uv": [14.25, 0, 16, 4], "texture": "#side"},
+				"south": {"uv": [14.25, 0, 16, 4], "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus",
+			"from": [14, 4, 4.5],
+			"to": [21, 20, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [17.5, 12, 8]},
+			"faces": {
+				"up": {"uv": [14.25, 8, 16, 9.75], "rotation": 90, "texture": "#side"},
+				"down": {"uv": [14.25, 8, 16, 9.75], "rotation": 90, "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus",
+			"from": [16, 11, 2.5],
+			"to": [23, 27, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19.5, 19, 6]},
+			"faces": {
+				"up": {"uv": [14.25, 8, 16, 9.75], "rotation": 90, "texture": "#side"},
+				"down": {"uv": [14.25, 8, 16, 9.75], "rotation": 90, "texture": "#side"}
+			}
+		}
+	]
+}

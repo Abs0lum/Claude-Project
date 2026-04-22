@@ -1,0 +1,65 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/other/dead_bush",
+        "particle": "block/nature/other/dead_bush"
+	},
+	"elements": [
+		{
+			"from": [6.75, 7, 1.75],
+			"to": [6.75, 18, 15.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 12, 8.25]},
+			"faces": {
+				"east": {"uv": [9, 10.5, 16, 16], "texture": "#1"},
+				"west": {"uv": [16, 10.5, 9, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.74686, 12.9979, 2.75],
+			"to": [11.24686, 12.9979, 14.25],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [6.74686, 12.9979, 8.5]},
+			"faces": {
+				"up": {"uv": [5.75, 0, 0, 2.25], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 0, 5.75, 2.25], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [0.99686, 8.4979, 3.75],
+			"to": [12.49686, 8.4979, 8.25],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [6.74686, 8.4979, 8.25]},
+			"faces": {
+				"up": {"uv": [5.75, 0, 0, 2.25], "texture": "#1"},
+				"down": {"uv": [0, 0, 5.75, 2.25], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [2.24686, 13.9979, 2.75],
+			"to": [6.74686, 13.9979, 14.25],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [6.74686, 13.9979, 8.5]},
+			"faces": {
+				"up": {"uv": [5.75, 2.25, 0, 4.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 2.25, 5.75, 4.5], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [0.99686, 9.4979, 8.25],
+			"to": [12.49686, 9.4979, 12.75],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [6.74686, 9.4979, 8.25]},
+			"faces": {
+				"up": {"uv": [5.75, 2.25, 0, 4.5], "texture": "#1"},
+				"down": {"uv": [0, 2.25, 5.75, 4.5], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [-0.75, 7, 8.25],
+			"to": [13.25, 16, 8.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 12, 8.25]},
+			"faces": {
+				"north": {"uv": [16, 5.5, 9, 10], "texture": "#1"},
+				"south": {"uv": [9, 5.5, 16, 10], "texture": "#1"}
+			}
+		}
+	]
+}

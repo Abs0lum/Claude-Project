@@ -1,0 +1,59 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/sculk",
+		"bottom": "block/sculk",
+		"side": "block/sculk_sensor_side",
+		"top": "block/sculk_sensor_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-2, 8, 5],
+			"to": [8, 22, 5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [3, 8, 5]},
+			"faces": {
+				"north": {"uv": [0, 2, 8, 16], "texture": "#tendrils"},
+				"south": {"uv": [8, 2, 0, 16], "texture": "#tendrils"}
+			}
+		},
+		{
+			"from": [14, 8, -1],
+			"to": [14, 16, 5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [14, 8, 2]},
+			"faces": {
+				"east": {"uv": [8, 2, 0, 16], "texture": "#tendrils"},
+				"west": {"uv": [0, 2, 8, 16], "texture": "#tendrils"}
+			}
+		},
+		{
+			"from": [6, 8, 10],
+			"to": [18, 25, 10],
+			"rotation": {"angle": 45, "axis": "y", "origin": [12, 8, 10]},
+			"faces": {
+				"north": {"uv": [16, 2, 8, 16], "texture": "#tendrils"},
+				"south": {"uv": [8, 2, 16, 16], "texture": "#tendrils"}
+			}
+		},
+		{
+			"from": [3, 8, 9],
+			"to": [3, 19, 17],
+			"rotation": {"angle": 45, "axis": "y", "origin": [3, 8, 13]},
+			"faces": {
+				"east": {"uv": [8, 2, 16, 16], "texture": "#tendrils"},
+				"west": {"uv": [16, 2, 8, 16], "texture": "#tendrils"}
+			}
+		}
+	]
+}

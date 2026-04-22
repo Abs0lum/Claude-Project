@@ -1,0 +1,68 @@
+{
+    "multipart": [
+        {   "when": { "age": "0" },
+            "apply": [
+                { "model": "block/wheat_stage0" },
+                { "model": "block/wheat_stage0", "y": 90 },
+                { "model": "block/wheat_stage0", "y": 180 },
+                { "model": "block/wheat_stage0", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "1" },
+            "apply": [
+                { "model": "block/wheat_stage1" },
+                { "model": "block/wheat_stage1", "y": 90 },
+                { "model": "block/wheat_stage1", "y": 180 },
+                { "model": "block/wheat_stage1", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "2" },
+            "apply": [
+                { "model": "block/wheat_stage2" },
+                { "model": "block/wheat_stage2", "y": 90 },
+                { "model": "block/wheat_stage2", "y": 180 },
+                { "model": "block/wheat_stage2", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "3" },
+            "apply": [
+                { "model": "block/wheat_stage3" },
+                { "model": "block/wheat_stage3", "y": 90 },
+                { "model": "block/wheat_stage3", "y": 180 },
+                { "model": "block/wheat_stage3", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "4" },
+            "apply": [
+                { "model": "block/wheat_stage4" },
+                { "model": "block/wheat_stage4", "y": 90 },
+                { "model": "block/wheat_stage4", "y": 180 },
+                { "model": "block/wheat_stage4", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "5" },
+            "apply": [
+                { "model": "block/wheat_stage5" },
+                { "model": "block/wheat_stage5", "y": 90 },
+                { "model": "block/wheat_stage5", "y": 180 },
+                { "model": "block/wheat_stage5", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "6" },
+            "apply": [
+                { "model": "block/wheat_stage6" },
+                { "model": "block/wheat_stage6", "y": 90 },
+                { "model": "block/wheat_stage6", "y": 180 },
+                { "model": "block/wheat_stage6", "y": 270 }
+            ]
+        },
+        {   "when": { "age": "7" },
+            "apply": [
+                { "model": "block/wheat_stage7" },
+                { "model": "block/wheat_stage7", "y": 90 },
+                { "model": "block/wheat_stage7", "y": 180 },
+                { "model": "block/wheat_stage7", "y": 270 }
+            ]
+        }
+    ]
+}

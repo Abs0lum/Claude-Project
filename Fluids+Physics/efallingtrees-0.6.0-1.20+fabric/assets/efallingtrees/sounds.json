@@ -1,0 +1,44 @@
+{
+	"tree_fall": {
+		"sounds": [
+			"efallingtrees:tree_fall",
+			"efallingtrees:big_tree_fall",
+			"efallingtrees:big_tree_fall_1",
+			"efallingtrees:medium_tree_fall",
+			"efallingtrees:medium_tree_fall_1",
+			"efallingtrees:small_tree_fall",
+			"efallingtrees:small_tree_fall_1",
+			"efallingtrees:small_tree_fall_2"
+		]
+	},
+	"tree_impact": {
+		"sounds": [
+			"efallingtrees:tree_impact",
+			"efallingtrees:big_tree_impact",
+			"efallingtrees:medium_tree_impact",
+			"efallingtrees:small_tree_impact",
+			"efallingtrees:small_tree_impact_1",
+			"efallingtrees:small_tree_impact_2"
+		]
+	},
+	"cactus_fall": {
+		"sounds": [
+			"efallingtrees:cactus_fall"
+		]
+	},
+	"cactus_impact": {
+		"sounds": [
+			"efallingtrees:cactus_impact"
+		]
+	},
+	"bamboo_fall": {
+		"sounds": [
+			"efallingtrees:bamboo_fall"
+		]
+	},
+	"bamboo_impact": {
+		"sounds": [
+			"efallingtrees:bamboo_impact"
+		]
+	}
+}

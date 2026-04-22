@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+        { "model": "minecraft:block/nature/snow/powdered_snow/block_1"},
+        { "model": "minecraft:block/nature/snow/powdered_snow/block_2"},
+        { "model": "minecraft:block/nature/snow/powdered_snow/block_3"},
+        { "model": "minecraft:block/nature/snow/powdered_snow/block_4"}
+    ]
+  }
+}

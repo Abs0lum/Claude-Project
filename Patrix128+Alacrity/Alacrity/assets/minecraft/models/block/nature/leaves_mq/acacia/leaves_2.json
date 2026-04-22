@@ -1,0 +1,47 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "block/nature/leaves/acacia_leaves",
+		"1": "block/acacia_leaves",
+		"particle": "block/acacia_leaves"
+	},
+	"elements": [
+		{
+			"name": "Branches",
+			"from": [-16, 2.775, 1.60109],
+			"to": [30, 2.775, 8.60109],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [2.96238, 10.775, 5.10109]},
+			"faces": {
+				"up": {"uv": [12.25, 11.75, 14, 0.25], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [12.25, 11.75, 14, 0.25], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Branches",
+			"from": [-16, 6.775, 5.60109],
+			"to": [30, 6.775, 12.60109],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [2.96238, 10.775, 5.10109]},
+			"faces": {
+				"up": {"uv": [12.25, 11.75, 14, 0.25], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [12.25, 11.75, 14, 0.25], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

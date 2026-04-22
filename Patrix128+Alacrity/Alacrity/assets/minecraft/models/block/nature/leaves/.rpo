@@ -1,0 +1,4 @@
+{
+    condition: "!leavesQuality.medium",
+    fallbacks: "assets/minecraft/models/block/nature/leaves_mq/"
+}

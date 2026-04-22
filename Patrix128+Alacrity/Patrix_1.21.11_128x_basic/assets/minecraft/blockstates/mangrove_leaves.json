@@ -1,0 +1,32 @@
+{
+    "multipart": [
+        {   "when": { "persistent": "true" },
+            "apply": [
+                { "model": "block/mangrove_leaves" },
+                { "model": "block/mangrove_leaves", "y": 90 },
+                { "model": "block/mangrove_leaves", "y": 180 },
+                { "model": "block/mangrove_leaves", "y": 270 }
+            ]
+        },
+        {   "when": { "persistent": "false","distance": "7|6|5|4|3" },
+            "apply": [
+                { "model": "block/mangrove_leaves" },
+                { "model": "block/mangrove_leaves", "y": 90 },
+                { "model": "block/mangrove_leaves", "y": 180 },
+                { "model": "block/mangrove_leaves", "y": 270 },
+                { "model": "block/mangrove_leaves2" },
+                { "model": "block/mangrove_leaves2", "y": 90 },
+                { "model": "block/mangrove_leaves2", "y": 180 },
+                { "model": "block/mangrove_leaves2", "y": 270 }
+            ]
+        },
+        {   "when": { "persistent": "false","distance": "2|1" },
+            "apply": [
+                { "model": "block/mangrove_leaves2" },
+                { "model": "block/mangrove_leaves2", "y": 90 },
+                { "model": "block/mangrove_leaves2", "y": 180 },
+                { "model": "block/mangrove_leaves2", "y": 270 }
+            ]
+        }
+    ]
+}

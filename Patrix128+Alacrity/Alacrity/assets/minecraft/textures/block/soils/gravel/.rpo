@@ -1,0 +1,4 @@
+{
+    condition: "!gravelStyle.gray",
+    fallbacks: "assets/minecraft/textures/block/soils/gravel_gray"
+}

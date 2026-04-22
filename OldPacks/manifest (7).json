@@ -1,0 +1,32 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [SMOOTH v0.2.1]",
+    "description": "v0.2.1 SMOOTH — fixes + variant expansion. (1) Fixes v0.1.9 load-time warning by removing phantom minecraft:dirt_path block ID from blocks.json (path shortnames remain aliased in terrain_texture.json). (2) Bumps all 23 variation blocks from 8 → 16 authored variants each using median-filtered tile picking (drops the outer-25% tonal outliers from each Patrix CTM set, then samples 16 evenly from the remaining core — more variety with no popping highlights). (3) Adds sandstone_top + red_sandstone_top variants (16 each, from sandstone/yellow/top + sandstone/red/top CTM). (4) Ports Patrix animated lava — lava_still (8 frames @ 4 ticks) + lava_flow (48 frames @ 1 tick), both with blend_frames enabled, via new textures/flipbook_textures.json. Dark/bright mottled Patrix lava replaces vanilla. (5) Sandstone top now isotropic. Carries v0.2.0 VARIATION + v0.1.9 MYCOPORT + v0.1.8 WATERPORT.",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      2,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        2,
+        1
+      ]
+    }
+  ]
+}
+
+

@@ -1,0 +1,18 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/vine",
+		"vine": "block/vine"
+	},
+	"elements": [
+		{
+			"from": [-1, 15.2, -1],
+			"to": [17, 15.2, 17],
+			"shade": false,
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "texture": "#vine", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#vine", "tintindex": 0}
+			}
+		}
+	]
+}

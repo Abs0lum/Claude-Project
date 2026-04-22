@@ -1,0 +1,12 @@
+{
+    "parent": "block/templates/wooden_stairs/slope_outer_e",
+	"textures": {
+        "1": "block/wooden/cherry/double_1",
+        "2": "block/wooden/cherry/double_2",
+        "corners": "block/wooden/cherry/stairs_corner_double",
+        "e": "block/wooden/cherry/double_end_1",
+        "c": "block/wooden/cherry/clean_1",
+        "b": "block/wooden/cherry/stairs_back",
+        "particle": "block/wooden/cherry/particle"
+	}
+}

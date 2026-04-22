@@ -1,0 +1,60 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"5": "block/glass/stained/black/pane",
+		"particle": "block/glass/particle/black"
+	},
+	"elements": [
+		{
+			"name": "glass",
+			"from": [8, 1, 1],
+			"to": [8, 15, 6.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"faces": {
+				"east": {"uv": [10.25, 8, 7.5, 15], "texture": "#5"},
+				"west": {"uv": [7.5, 8, 10.25, 15], "texture": "#5"}
+			}
+		},
+		{
+			"name": "bottom",
+			"from": [6.5, 0, 1],
+			"to": [9.5, 1, 6.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"faces": {
+				"east": {"uv": [4.75, 7, 7.5, 7.5], "texture": "#5"},
+				"west": {"uv": [0.5, 6, 3.25, 6.5], "texture": "#5"},
+				"up": {"uv": [0.5, 4.5, 3.25, 6], "rotation": 90, "texture": "#5"},
+				"down": {"uv": [8, 4.5, 11.25, 6], "rotation": 90, "texture": "#5", "cullface": "down"}
+			}
+		},
+		{
+			"name": "top",
+			"from": [6.5, 15, 1],
+			"to": [9.5, 16, 6.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"faces": {
+				"east": {"uv": [4.75, 7.5, 7.5, 8], "texture": "#5"},
+				"west": {"uv": [0.5, 6.5, 3.25, 7], "texture": "#5"},
+				"up": {"uv": [0.5, 4.5, 3.25, 6], "rotation": 90, "texture": "#5", "cullface": "up"},
+				"down": {"uv": [0, 2.5, 2.75, 4], "rotation": 90, "texture": "#5"}
+			}
+		},
+		{
+			"name": "sides",
+			"from": [6, -0.005, 0],
+			"to": [10, 16.005, 1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 2], "rotation": 90, "texture": "#5", "cullface": "north"},
+				"east": {"uv": [0, 1.5, 8, 2], "rotation": 90, "texture": "#5"},
+				"south": {"uv": [0, 0, 8, 2], "rotation": 90, "texture": "#5"},
+				"west": {"uv": [0, 0, 8, 0.5], "rotation": 90, "texture": "#5"},
+				"up": {"uv": [8.5, 2.25, 9, 4.25], "rotation": 90, "texture": "#5", "cullface": "up"},
+				"down": {"uv": [8, 2.25, 8.5, 4.25], "rotation": 270, "texture": "#5", "cullface": "down"}
+			}
+		}
+	],
+	"clight_blueit": "Made by Satellence with Blockbench"
+}

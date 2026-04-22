@@ -1,0 +1,21 @@
+# Massive archives and compiled files
+*.zip
+*.mcpack
+*.mcaddon
+*.jar
+*.apk
+*.nbt
+
+# Minecraft Media and Textures (Claude cannot read these)
+*.png
+*.jpg
+*.jpeg
+*.ogg
+*.wav
+*.tga
+*.lang
+
+# Executables and Server binaries
+*.exe
+*.dll
+bedrock-server*

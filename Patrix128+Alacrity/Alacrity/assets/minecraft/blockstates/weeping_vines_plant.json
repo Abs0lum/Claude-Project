@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/crimson/vines_body_1" },
+      { "model": "minecraft:block/nether/crimson/vines_body_2" }
+    ]
+  }
+}

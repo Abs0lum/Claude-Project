@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "pw:desert_dunes"
+    },
+    "components": {
+      "minecraft:water_appearance": {
+        "surface_color": "#32A598"
+      },
+      "minecraft:water_identifier": {
+        "water_identifier": "pw:desert_water"
+      },
+      "minecraft:sky_color": {
+        "sky_color": "#E8BF73"
+      },
+      "minecraft:fog_appearance": {
+        "fog_identifier": "minecraft:default"
+      },
+      "minecraft:grass_appearance": {
+        "grass_color": "#BFB755"
+      },
+      "minecraft:foliage_appearance": {
+        "foliage_color": "#AEA42A"
+      }
+    }
+  }
+}

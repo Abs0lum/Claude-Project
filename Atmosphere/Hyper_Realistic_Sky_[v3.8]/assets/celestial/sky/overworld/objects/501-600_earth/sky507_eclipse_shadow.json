@@ -1,0 +1,21 @@
+{
+	"texture": "skybox:overworld/501-600_earth/sky507_eclipse_shadow.png",
+	"display": {
+		"scale": "27",
+		"distance": "100"
+	},
+	"rotation": {
+		"degrees_x": "single_rotation * 5",
+		"degrees_y": "0",
+		"degrees_z": "0",
+		"base_degrees_x": "-85.6",
+		"base_degrees_y": "2.5",
+		"base_degrees_z": "-60"
+	},
+	"properties": {
+		"has_moon_phases": false,
+		"is_solid": true,
+		"blend": true,
+		"alpha": "(1-submerged) * 0.9 * (ifElse((loop_25 > 507150) & (loop_25 < 507176), 0.04 * (loop_25 - 507150), ifElse((loop_25 > 507175) & (loop_25 < 507876), 1, ifElse((loop_25 > 507875) & (loop_25 < 507900), -0.04 * (loop_25 - 507900), 0)))) * space_altitude"
+	}
+}

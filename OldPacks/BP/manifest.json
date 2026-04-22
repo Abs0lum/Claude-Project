@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld-Tectonic BP [MS-CANONICAL v0.6.1 VV-CAP]",
+    "description": "v0.6.0 MS-CANONICAL \u2014 water files rewritten verbatim from Microsoft's canonical example JSON (learn.microsoft.com/.../watercustomization). Previous v0.5 per-biome wave tuning triggered '[Lighting][error] input outside range [1, 10]' on two of the three files despite all values being documented as in-range. Rather than guess which field's validation is stricter than docs claim, reverting to MS' tested example. Only biome_water_color_contribution differs per biome: alpine 0.6, cherry 0.8, desert 0.9. All other water parameters identical across biomes (chlorophyll:0.5, suspended_sediment:0.5, cdom:1, octaves:28, depth:1, etc.). Cosmetic per-biome diversity now comes from client_biome surface_color + sky_color + grass/foliage tints (which already loaded fine). Biome files unchanged from v0.5.",
+    "uuid": "2a8f6b14-7e9c-4d3a-a1b5-c8e7f2d4a690",
+    "version": [
+      0,
+      6,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "PatrixWorld-Tectonic biomes",
+      "type": "data",
+      "uuid": "d14e8c23-6f5a-4b9e-8c2d-7a3b5e9f1c40",
+      "version": [
+        0,
+        6,
+        1
+      ]
+    }
+  ]
+}

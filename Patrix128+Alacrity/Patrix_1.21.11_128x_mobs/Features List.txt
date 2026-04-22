@@ -1,0 +1,75 @@
+================================
+Most of the following features are stored in "assets\minecraft\optifine\random\entity" folder in this pack, can try removing the ones you don't want. 
+================================
+
+- brown bear
+in any non-natural spawning biomes for polar bears
+
+- black & white, brown cow
+random variants, warm biomes tend to have more brown variants
+
+- slightly darker green creeper
+random variants
+
+- brown frog
+random variants for temperate biome frogs
+
+- swapped warm and cold biome frog variants
+rename the frog textures in the "assets\minecraft\textures\entity\frog" folder if you want it reverted back to vanilla
+
+- dirty hoglin
+random variants
+
+- muddy pig or hairy boar
+random variants, colder biomes tend to have more hairy boars
+
+- topless piglin
+random variants
+
+- topless zombified piglin
+random variants
+
+- black skin sheep
+random variants
+
+- hoodless or topless stray
+random variants
+
+- tarantula spider
+random variants
+
+- black & yellow cave spider
+random variants
+
+- orange squid
+random variants
+
+- greener glow squid
+random variants
+
+- brown sea turtle
+random variants
+
+- dark gray and brown wolf
+random variants, colder biomes tend to have less
+
+- topless zombie
+random variants
+
+- topless drowned
+random variants
+
+- naked husk
+random variants
+
+- brown chicken
+random variants
+
+- baby chicken
+baby chicken has yellow feathers/fur
+
+- gray dolphin
+random variants
+
+- darker silverfish
+random variants

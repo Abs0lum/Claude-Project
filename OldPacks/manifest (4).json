@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [DENSE+VARS v0.2.4]",
+    "description": "v0.2.4 DENSE+VARS \u2014 user-reported regressions fixed. (1) RESTORED 16-variant block variation for 23 surface blocks (stone, andesite, granite, diorite, dirt, coarse_dirt, sand, red_sand, gravel, grass_block_top + grass_top alias, mycelium_top/side, cobblestone, deepslate, end_stone, netherrack, mud, packed_mud, mud_bricks, muddy_mangrove_roots_top/side, sandstone_top, red_sandstone_top). v0.2.2 research said variations don't work on vanilla Bedrock (MCPE-165946) but user observation contradicted research \u2014 variants were visibly rendering in v0.2.1. Trusting the user's eyes. 368 variant PNGs restored from v0.2.1 cache, 16 per block with weight 10. (2) LEAF DILATION \u2014 v0.2.3 shipped raw Patrix leaves at 23-41% opacity causing sparse/see-through canopies (perceived as 'ruined canopy dimensions and foliage density'). Applied dilate_alpha_fill_rgb to 8 leaf species to reach 47-56% target opacity \u2014 denser silhouettes without forming solid green blocks. For over-target species (birch/jungle/mangrove), used probabilistic dilation targeting exactly 50%. Carries all v0.2.3 BARKFIX fixes (blocks.json format_version 1.1.0, grass_block_side alias, podzol, Patrix log/plank ports for all 10 species, 70+ new block ports, lava flipbook).",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      2,
+      4
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        2,
+        4
+      ]
+    }
+  ]
+}

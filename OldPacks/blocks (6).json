@@ -1,0 +1,216 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:stone": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "stone"
+  },
+  "minecraft:granite": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "granite"
+  },
+  "minecraft:polished_granite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:andesite": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "andesite"
+  },
+  "minecraft:polished_andesite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:diorite": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "diorite"
+  },
+  "minecraft:polished_diorite": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:cobblestone": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "cobblestone"
+  },
+  "minecraft:mossy_cobblestone": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:stone_bricks": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:mossy_stone_bricks": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:cracked_stone_bricks": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:dirt": {
+    "sound": "gravel",
+    "isotropic": true,
+    "textures": "dirt"
+  },
+  "minecraft:coarse_dirt": {
+    "sound": "gravel",
+    "isotropic": true,
+    "textures": "coarse_dirt"
+  },
+  "minecraft:gravel": {
+    "sound": "gravel",
+    "isotropic": true,
+    "textures": "gravel"
+  },
+  "minecraft:sand": {
+    "sound": "sand",
+    "isotropic": true,
+    "textures": "sand"
+  },
+  "minecraft:red_sand": {
+    "sound": "sand",
+    "isotropic": true,
+    "textures": "red_sand"
+  },
+  "minecraft:clay": {
+    "sound": "gravel",
+    "isotropic": true
+  },
+  "minecraft:tuff": {
+    "sound": "stone",
+    "isotropic": true
+  },
+  "minecraft:oak_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:spruce_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:birch_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:jungle_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:acacia_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:dark_oak_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:cherry_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:mangrove_leaves": {
+    "sound": "grass",
+    "isotropic": true
+  },
+  "minecraft:mud": {
+    "sound": "mud",
+    "isotropic": {
+      "up": true
+    },
+    "textures": "mud"
+  },
+  "minecraft:packed_mud": {
+    "sound": "mud",
+    "isotropic": true,
+    "textures": "packed_mud"
+  },
+  "minecraft:mud_bricks": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "mud_bricks"
+  },
+  "minecraft:muddy_mangrove_roots": {
+    "sound": "muddy_mangrove_roots",
+    "textures": {
+      "up": "muddy_mangrove_roots_top",
+      "side": "muddy_mangrove_roots_side"
+    }
+  },
+  "minecraft:mycelium": {
+    "sound": "grass",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "mycelium_top",
+      "down": "dirt",
+      "side": "mycelium_side"
+    }
+  },
+  "minecraft:grass_path": {
+    "sound": "grass"
+  },
+  "minecraft:red_mushroom_block": {
+    "sound": "wood"
+  },
+  "minecraft:brown_mushroom_block": {
+    "sound": "wood"
+  },
+  "minecraft:mushroom_stem": {
+    "sound": "wood"
+  },
+  "minecraft:netherrack": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "netherrack"
+  },
+  "minecraft:end_stone": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "end_stone"
+  },
+  "minecraft:deepslate": {
+    "sound": "stone",
+    "isotropic": true,
+    "textures": "deepslate"
+  },
+  "minecraft:grass_block": {
+    "sound": "grass",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "grass_block_top",
+      "down": "dirt",
+      "side": "grass_block_side"
+    }
+  },
+  "minecraft:sandstone": {
+    "sound": "stone",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "sandstone_top",
+      "down": "sandstone_bottom",
+      "side": "sandstone_normal"
+    }
+  },
+  "minecraft:red_sandstone": {
+    "sound": "stone",
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "red_sandstone_top",
+      "down": "red_sandstone_bottom",
+      "side": "red_sandstone_normal"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld-Tectonic RP [MS-CANONICAL v0.6.1 VV-CAP]",
+    "description": "v0.6.0 MS-CANONICAL \u2014 3 water JSONs now match Microsoft's canonical example shape to avoid validation edge cases. Only biome_water_color_contribution differs. Client biome files unchanged from v0.5 (format 1.21.70 with water_identifier). v0.6.1 VV-CAP: added \"capabilities\":[\"pbr\"] for Vibrant Visuals toggle compatibility.",
+    "uuid": "3b9a4c26-8d1e-4f7b-a5c3-2e8d6b4a1f70",
+    "version": [
+      0,
+      6,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "PatrixWorld-Tectonic client biomes + VV water",
+      "type": "resources",
+      "uuid": "e25f9d34-7b6c-4d8a-9e1f-3c5b8d7a2e50",
+      "version": [
+        0,
+        6,
+        1
+      ]
+    }
+  ],
+  "capabilities": [
+    "pbr"
+  ]
+}

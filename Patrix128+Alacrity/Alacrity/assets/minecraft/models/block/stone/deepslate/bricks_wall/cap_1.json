@@ -1,0 +1,10 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "minecraft:block/templates/stone_bricks_wall/cap_1",
+	"texture_size": [32, 32],
+	"textures": {
+        "wall_alt": "block/stone/deepslate/wall_alt",
+        "wall_short": "block/stone/deepslate/wall_short",
+        "particle": "block/stone/deepslate/particle"
+	}
+}

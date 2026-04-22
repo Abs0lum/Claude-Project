@@ -1,0 +1,61 @@
+Note 1:
+The instructions herein are made obsolete by the addition of support for Respackopts.
+Download from https://modrinth.com/mod/respackopts and use the gizmo in the resource pack selection screen.
+(you can still use the manual method described below, if you really want to)
+
+Note 2:
+If you're using Celestial 2.0 to use the pack, you may still use the manual method below, as with Respackopts,
+the in-game chat will spew out errors from Celestial if you disable any features. This does not break the
+pack in any way, it will still work perfectly fine, but in case that bothers you, do it manually.
+-----------------------------------------------------------------------------------------------------------
+Nuit:
+Overworld sky directory: assets\nuit\sky\overworld\
+End sky directory: assets\nuit\sky\the_end\
+Delete the json file for the corresponding feature that you wish to remove.
+
+Celestial:
+Overworld sky: assets\celestial\sky\overworld\sky.json
+End sky: assets\celestial\sky\the_end\sky.json
+Nether sky: assets\celestial\sky\the_nether\sky.json
+Open the json file, and delete the full quoted line along with the comma from "sky_objects", that you wish to remove.
+(Make sure each sky object remains separated by a comma, otherwise the file will break. The last line must not have a comma after it!)
+
+Biome dependant clouds:	can not be easily removed
+Rain clouds:		sky 027 and 280-289 and 433-436
+Snow clouds:		sky 026 and 270-279 and 429-432
+Lightning strikes: 	sky 303-314 and 324-325
+High altitude clouds:	can not be easily removed
+Rainbow: 		sky 268
+Iridescent clouds:	sky 330-332
+Noctilucent clouds:	sky 328-329
+Asperitas clouds:	sky 322-323
+Mammatus clouds:	sky 318-319
+Fiery sunsets:		sky 326-327
+Sandstorm:		sky 026 and 290-299 and 434-437
+Tornadoes:		sky 315-317
+Supercell:		sky 333-334
+Solar eclipse:		sky 401-440 and 507
+Blood Moon / Blue Moon:	sky 011-014
+Gas giants:		sky 004-005 and 405-406
+Auroras:		sky 301-302
+Northern star:		can not be removed
+Shooting stars:		sky 029-032
+Meteor shower:		sky 033-035
+Black hole:		sky 001 (distortion) and sky 003 and 404
+Andromeda:		sky 002
+Light pollution:	sky 006 and 009 and 012-013
+Outer space:		sky 501-507
+Hurricane:		sky 320-321 and 503
+Main End sky:		sky 001
+End highlands:		sky 002
+End midlands:		sky 003
+End barrens:		sky 004
+Small End islands:	sky 005
+End black hole:		sky 006-009 and 011-012
+Red Nether sky:		sky 001
+Cyan Nether sky:	sky 002
+Brown Nether sky:	sky 003
+High Nether sky:	sky 004
+
+Skyboxify is not included here, because it has different layering. Use Respackopts in that case.
+This feature is not supported for OptiFine (unless you can find a way to run it on Fabric or Neoforge, and use Respackopts).

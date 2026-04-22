@@ -1,0 +1,41 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "particle": "block/nature/other/cactus",
+        "side": "block/nature/other/cactus"
+	},
+	"elements": [
+		{
+			"name": "small_cactus_sides",
+			"from": [6, 5, 4.5],
+			"to": [10, 19, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 13, 9.5]},
+			"faces": {
+				"east": {"uv": [12.5, 0, 14.25, 3.5], "texture": "#side"},
+				"west": {"uv": [12.5, 0, 14.25, 3.5], "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus_sides",
+			"from": [4.5, 5, 6],
+			"to": [11.5, 19, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 13, 9.5]},
+			"faces": {
+				"north": {"uv": [12.5, 0, 14.25, 3.5], "texture": "#side"},
+				"south": {"uv": [12.5, 0, 14.25, 3.5], "texture": "#side"}
+			}
+		},
+		{
+			"name": "small_cactus",
+			"from": [4.5, 5, 4.5],
+			"to": [11.5, 19, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.5, 13, 9.5]},
+			"faces": {
+				"up": {"uv": [12.5, 8, 14.25, 9.75], "rotation": 270, "texture": "#side"}
+			}
+		}
+	]
+}

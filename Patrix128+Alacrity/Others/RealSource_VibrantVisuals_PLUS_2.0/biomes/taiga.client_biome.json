@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "minecraft:taiga"
+    },
+    "components": {
+      "minecraft:fog_appearance": {
+        "fog_identifier": "realsource:fog_taiga"
+      },
+      "minecraft:atmosphere_identifier": {
+        "atmosphere_identifier": "realsource:default_atmospherics"
+      },
+      "minecraft:color_grading_identifier": {
+        "color_grading_identifier": "realsource:default_color_grading"
+      },
+      "minecraft:lighting_identifier": {
+        "lighting_identifier": "realsource:default_lighting"
+      },
+      "minecraft:water_identifier": {
+        "water_identifier": "minecraft:default_water"
+      }
+    }
+  }
+}

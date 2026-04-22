@@ -1,0 +1,50 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+        "3": "block/wooden/oak/cubes",
+        "4": "block/wooden/oak/double",
+        "5": "block/wooden/oak/clean_3",
+        "6": "block/wooden/oak/stairs_back",
+        "particle": "block/wooden/oak/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [8, 8, 0, 12], "texture": "#3", "cullface": "north"},
+				"east": {"uv": [8, 8, 0, 12], "texture": "#4", "cullface": "east"},
+				"south": {"uv": [0, 12, 8, 16], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [8, 8, 0, 12], "texture": "#4", "cullface": "west"},
+				"up": {"uv": [0, 16, 8, 8], "rotation": 270, "texture": "#4", "cullface": "up"},
+				"down": {"uv": [0, 16, 8, 8], "rotation": 270, "texture": "#4"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [8, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [4, 12, 0, 16], "texture": "#3", "cullface": "north"},
+				"east": {"uv": [8, 12, 0, 16], "texture": "#4"},
+				"south": {"uv": [0, 8, 4, 12], "texture": "#3", "cullface": "south"},
+				"west": {"uv": [8, 12, 0, 16], "texture": "#4", "cullface": "west"},
+				"down": {"uv": [0, 16, 8, 12], "rotation": 270, "texture": "#4", "cullface": "down"}
+			}
+		},
+		{
+			"name": "support_beam",
+			"from": [2.70878, 2.69975, 6],
+			"to": [13.30878, 6.69975, 10],
+			"rotation": {"angle": 45, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [10.5, 4, 0, 8], "rotation": 180, "texture": "#5"},
+				"south": {"uv": [10.5, 0, 0, 4], "rotation": 180, "texture": "#5"},
+				"up": {"uv": [5.25, 11, 0, 9], "rotation": 180, "texture": "#4"},
+				"down": {"uv": [13.25, 14, 8, 12], "rotation": 180, "texture": "#6"}
+			}
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"texture": "skybox:overworld/001-100_sky/sky014_blood_moon.png",
+	"display": {
+		"scale": "20",
+		"distance": "100"
+	},
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "0",
+		"degrees_z": "moon_rotation",
+		"base_degrees_x": "-80",
+		"base_degrees_y": "-51.8",
+		"base_degrees_z": "55"
+	},
+	"properties": {
+		"has_moon_phases": true,
+		"blend": true,
+		"alpha": "(1-submerged) * blood_moon_fade * low_altitude"
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "snowy=false": [
+      { "model": "minecraft:block/grass_block", "weight": 300},
+      { "model": "minecraft:block/grass_block_1", "weight": 200},
+      { "model": "minecraft:block/grass_block_2", "weight": 200}
+    ],
+    "snowy=true": {
+      "model": "minecraft:block/grass_block_snow"
+    }
+  }
+}

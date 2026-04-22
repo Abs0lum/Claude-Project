@@ -1,0 +1,31 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/jack_o_lantern",
+		"front": "block/jack_o_lantern",
+		"right": "block/pumpkin_side4",
+		"back": "block/pumpkin_side3",
+		"left": "block/pumpkin_side2",
+		"top": "block/pumpkin_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#right", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#back", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#left", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#top", "cullface": "up"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#top", "cullface": "down"}
+			}
+		}
+	],
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"all": "block/stone/resin/resin_spots",
+		"particle": "block/stone/resin/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0.1],
+			"to": [16, 16, 0.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.9]},
+			"faces": {
+				"north": {"uv": [16, 8, 8, 16], "texture": "#all", "cullface": "north"},
+				"south": {"uv": [8, 8, 16, 16], "texture": "#all"}
+			}
+		}
+	]
+}

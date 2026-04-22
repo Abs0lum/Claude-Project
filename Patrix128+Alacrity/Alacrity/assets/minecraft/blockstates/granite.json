@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/granite/natural_1" },
+      { "model": "minecraft:block/stone/granite/natural_2" },
+      { "model": "minecraft:block/stone/granite/natural_3" },
+      { "model": "minecraft:block/stone/granite/natural_4" }
+    ]
+  }
+}

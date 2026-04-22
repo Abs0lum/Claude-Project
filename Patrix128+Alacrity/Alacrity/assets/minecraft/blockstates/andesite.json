@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/andesite/natural_1" },
+      { "model": "minecraft:block/stone/andesite/natural_2" },
+      { "model": "minecraft:block/stone/andesite/natural_3" },
+      { "model": "minecraft:block/stone/andesite/natural_4" }
+    ]
+  }
+}

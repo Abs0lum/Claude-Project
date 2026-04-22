@@ -1,0 +1,12 @@
+{
+    "parent": "block/tpl_core/stairs_faced/cornice_out_s",
+	"textures": {
+        "1": "block/stone/quartz/polished_slab_cubes_1",
+        "2": "block/stone/quartz/polished_slab_cubes_2",
+        "alt_1": "block/stone/quartz/polished_slab_1",
+        "alt_2": "block/stone/quartz/polished_slab_2",
+        "t": "block/stone/quartz/polished_1",
+        "b": "block/stone/quartz/polished_1",
+        "particle": "block/stone/quartz/particle"
+	}
+}

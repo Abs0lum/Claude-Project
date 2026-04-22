@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+	    "apply": [
+          { "model": "minecraft:block/decoration/flower_pot_sand", "y": 0 },
+          { "model": "minecraft:block/decoration/flower_pot_sand", "y": 90 },
+          { "model": "minecraft:block/decoration/flower_pot_sand", "y": 180 },
+          { "model": "minecraft:block/decoration/flower_pot_sand", "y": 270 }
+      ]
+    },
+    {
+      "apply": [
+          { "model": "minecraft:block/nature/other/cactus_potted", "y": 0 },
+          { "model": "minecraft:block/nature/other/cactus_potted", "y": 90 },
+          { "model": "minecraft:block/nature/other/cactus_potted", "y": 180 },
+          { "model": "minecraft:block/nature/other/cactus_potted", "y": 270 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [GRASSFIX v0.1.3]",
+    "description": "Patrix 64x sampler. v0.1.3 GRASSFIX — grass-block side uses full pre-baked Patrix side (dirt shows correctly, loses biome tint). Adds tallgrass, fern, 11 flowers, 6 double-plants, lily pad, dead bush.",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      1,
+      3
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}

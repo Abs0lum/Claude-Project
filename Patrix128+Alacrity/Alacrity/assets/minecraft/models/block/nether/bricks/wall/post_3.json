@@ -1,0 +1,36 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "4": "block/nether/bricks/extra_3",
+        "particle": "block/nether/bricks/stairs_side",
+        "all": "block/nether/bricks/stairs_side"
+	},
+	"elements": [
+		{
+			"from": [4.5, 0, 4.5],
+			"to": [11.5, 16, 11.5],
+			"faces": {
+				"north": {"uv": [12.25, 8, 15.75, 16], "texture": "#all"},
+				"east": {"uv": [8.25, 8, 11.75, 16], "texture": "#all"},
+				"south": {"uv": [8.25, 8, 11.75, 16], "texture": "#all"},
+				"west": {"uv": [12.25, 8, 15.75, 16], "texture": "#all"},
+				"up": {"uv": [8.75, 12.5, 12.25, 16], "texture": "#4", "cullface": "up"},
+				"down": {"uv": [8.75, 12.5, 12.25, 16], "texture": "#4", "cullface": "down"}
+			}
+		},
+		{
+			"from": [3.998, 16.01, 3.998],
+			"to": [12.002, 20.01, 12.002],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 22, 8]},
+			"faces": {
+				"north": {"uv": [8.25, 8, 12.25, 10], "texture": "#all", "cullface": "up"},
+				"east": {"uv": [8, 8, 12, 10], "texture": "#all", "cullface": "up"},
+				"south": {"uv": [12, 8, 16, 10], "texture": "#all", "cullface": "up"},
+				"west": {"uv": [8.25, 8, 12.25, 10], "texture": "#all", "cullface": "up"},
+				"up": {"uv": [4, 8, 8, 12], "texture": "#4", "cullface": "up"},
+				"down": {"uv": [9.25, 11, 13.25, 15], "texture": "#4", "cullface": "up"}
+			}
+		}
+	]
+}

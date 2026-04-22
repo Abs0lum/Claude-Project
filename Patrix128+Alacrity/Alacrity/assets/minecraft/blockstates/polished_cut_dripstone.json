@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "create:block/blocks/dripstone/polished_1" },
+      { "model": "create:block/blocks/dripstone/polished_2" },
+      { "model": "create:block/blocks/dripstone/polished_3" },
+      { "model": "create:block/blocks/dripstone/polished_4" }
+    ]
+  }
+}

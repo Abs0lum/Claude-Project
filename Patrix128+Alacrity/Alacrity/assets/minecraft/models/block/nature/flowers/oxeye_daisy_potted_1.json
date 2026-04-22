@@ -1,0 +1,70 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+        "2": "block/nature/flowers/oxeye_daisy",
+        "particle": "block/nature/flowers/oxeye_daisy"
+	},
+	"elements": [
+		{
+			"name": "stem",
+			"from": [9.25, 7, 3],
+			"to": [9.25, 23, 11],
+			"rotation": {"angle": 45, "axis": "y", "origin": [10.25, 8, 11]},
+			"faces": {
+				"east": {"uv": [0, 8, 4, 16], "texture": "#2"},
+				"west": {"uv": [4, 8, 0, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "stem",
+			"from": [4.67578, 7, 6.03152],
+			"to": [12.67578, 23, 6.03152],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8.36315, 16.9082, 5.53819]},
+			"faces": {
+				"north": {"uv": [0, 8, 4, 16], "texture": "#2"},
+				"south": {"uv": [4, 8, 0, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "FlowerLeaf",
+			"from": [5.11791, 18.44959, 7.57314],
+			"to": [10.61791, 18.44959, 13.07314],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.86791, 18.19959, 10.74814]},
+			"faces": {
+				"up": {"uv": [15.25, 3, 12.25, 0], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [12.25, 3, 15.25, 0], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "FlowerLeaf",
+			"from": [2.45783, 17.65043, 5.26431],
+			"to": [7.95783, 17.65043, 10.76431],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.20783, 17.65043, 8.01431]},
+			"faces": {
+				"up": {"uv": [12.5, 3, 9.5, 0], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [9.5, 3, 12.5, 0], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "FlowerLeaf",
+			"from": [3.66102, 17.7742, 2.40596],
+			"to": [9.16102, 17.7742, 7.90596],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [6.41102, 17.7742, 5.15596]},
+			"faces": {
+				"up": {"uv": [6.25, 3, 3.25, 0], "rotation": 180, "texture": "#2"},
+				"down": {"uv": [6.25, 3, 3.25, 0], "rotation": 180, "texture": "#2"}
+			}
+		},
+		{
+			"name": "FlowerLeaf",
+			"from": [7.80579, 18.65878, 3.65445],
+			"to": [13.30579, 18.65878, 9.15445],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [10.55579, 18.65878, 6.40445]},
+			"faces": {
+				"up": {"uv": [3, 3, 0, 0], "texture": "#2"},
+				"down": {"uv": [3, 3, 0, 0], "texture": "#2"}
+			}
+		}
+	]
+}

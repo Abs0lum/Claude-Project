@@ -1,0 +1,11 @@
+Most of the textures are downloaded from various free stock texture websites like "123rf.com", "textures.com", "polyhaven.com",  "3dtextures.me", "cc0textures.com", "poliigon.com", "artstation.com", "quixel megascans", or "substance 3d". I just crop/mix/modify them for minecraft texture formats.
+
+Some textures are procedurally/manually made by myself in substance painter.
+
+Some textures are baked from models downloaded from "sketchfab.com", "cgtrader.com", "turbosquid.com" or modeled by myself.
+
+===================
+
+If you like the work I've done, could consider supporting me on my patreon: https://www.patreon.com/patrix
+
+Any amount would be greatly appreciated!

@@ -1,0 +1,21 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/leaf_litter/layer_3",
+        "particle": "block/nature/leaf_litter/particles"
+	},
+	"elements": [
+		{
+			"name": "l1",
+			"from": [0.5, 0.6, 0.5],
+			"to": [16.5, 0.6, 16.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.5, 0]},
+			"faces": {
+				"up": {"uv": [0, 0, 8, 8], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 8, 8, 0], "texture": "#1", "cullface": "down", "tintindex": 0}
+			}
+		}
+	]
+}

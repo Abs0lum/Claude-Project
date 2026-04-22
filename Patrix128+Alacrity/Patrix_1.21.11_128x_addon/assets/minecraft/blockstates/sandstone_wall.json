@@ -1,0 +1,75 @@
+{
+  "multipart": [
+    {
+      "when": { "up": "true" },
+      "apply": {
+        "model": "block/sandstone_wall_post"
+      }
+    },
+    {
+      "when": { "north": "low" },
+      "apply": {
+        "model": "block/sandstone_wall_side", "uvlock": true
+      }
+    },
+    {
+      "when": { "east": "low" },
+      "apply": {
+        "model": "block/sandstone_wall_side", "y": 90, "uvlock": true
+      }
+    },
+    {
+      "when": { "south": "low" },
+      "apply": {
+        "model": "block/sandstone_wall_side", "y": 180, "uvlock": true
+      }
+    },
+    {
+      "when": { "west": "low" },
+      "apply": {
+        "model": "block/sandstone_wall_side", "y": 270, "uvlock": true
+      }
+    },
+    {
+      "when": { "north": "tall" },
+      "apply": {
+        "model": "block/sandstone_wall_side_tall", "uvlock": true
+      }
+    },
+    {
+      "when": { "east": "tall" },
+      "apply": {
+        "model": "block/sandstone_wall_side_tall", "y": 90, "uvlock": true
+      }
+    },
+    {
+      "when": { "south": "tall" },
+      "apply": {
+        "model": "block/sandstone_wall_side_tall", "y": 180, "uvlock": true
+      }
+    },
+    {
+      "when": { "west": "tall" },
+      "apply": {
+        "model": "block/sandstone_wall_side_tall", "y": 270, "uvlock": true
+      }
+    },
+    {
+      "when": { "north": "none", "south": "none", "east": "none", "west": "none", "up": "false" },
+      "apply": [
+        { "model": "block/sandstone_pile1" },
+        { "model": "block/sandstone_pile1", "y": 90 },
+        { "model": "block/sandstone_pile1", "y": 180 },
+        { "model": "block/sandstone_pile1", "y": 270 },
+        { "model": "block/sandstone_pile2" },
+        { "model": "block/sandstone_pile2", "y": 90 },
+        { "model": "block/sandstone_pile2", "y": 180 },
+        { "model": "block/sandstone_pile2", "y": 270 },
+        { "model": "block/sandstone_pile3" },
+        { "model": "block/sandstone_pile3", "y": 90 },
+        { "model": "block/sandstone_pile3", "y": 180 },
+        { "model": "block/sandstone_pile3", "y": 270 }
+      ]
+    }
+  ]
+}

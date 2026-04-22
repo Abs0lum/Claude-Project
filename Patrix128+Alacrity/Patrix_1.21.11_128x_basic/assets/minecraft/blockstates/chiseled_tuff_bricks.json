@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/chiseled_tuff_bricks" },
+            { "model": "block/chiseled_tuff_bricks", "y": 90 },
+            { "model": "block/chiseled_tuff_bricks", "y": 180 },
+            { "model": "block/chiseled_tuff_bricks", "y": 270 }
+        ]
+    }
+}

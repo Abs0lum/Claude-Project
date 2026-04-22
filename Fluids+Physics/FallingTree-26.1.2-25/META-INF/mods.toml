@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[64,)"
+issueTrackerURL = "https://github.com/Rakambda/FallingTree/issues"
+license = "LGPL-3.0"
+
+[[mods]] #mandatory
+modId = "fallingtree"
+version = "25"
+displayName = "FallingTree"
+description = '''Change the way you cut trees.'''
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/falling-tree"
+logoFile = "logo.png"
+authors = "Rakambda"
+
+[[dependencies.fallingtree]]
+modId = "forge"
+mandatory = true
+versionRange = "[64,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.fallingtree]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[26.1.2]"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.fallingtree]]
+modId = "cloth-config"
+mandatory = false
+ordering = "NONE"
+side = "CLIENT"

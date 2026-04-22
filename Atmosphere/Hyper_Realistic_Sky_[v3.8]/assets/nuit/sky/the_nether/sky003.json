@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:the_nether/sky003.png",
+	"blend": {"type" : "normal"},
+	"properties": {
+		"layer": 803,
+		"rotation": {
+			"speed": 1.0,
+			"mapping": {"0": [0.0, 0.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"showInDenseFog": true, "modifyColors": true, "red": 0.1050980392156863, "green": 0.096078431372549, "blue": 0.0941176470588235}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:the_nether"]},
+		"biomes": {"entries": ["minecraft:basalt_deltas"]},
+		"yRanges": {"entries": [{"min": 126.0, "max": 10000.0}]}
+		}
+}

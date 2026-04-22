@@ -1,0 +1,45 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"amethyst1": "block/amethyst_cluster",
+		"amethyst2": "block/medium_amethyst_bud",
+		"particle": "block/large_amethyst_bud"
+	},
+	"elements": [
+		{
+			"from": [3, 8, 8],
+			"to": [13, 21, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#amethyst1"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#amethyst1"}
+			}
+		},
+		{
+			"from": [8, 8, 3],
+			"to": [8, 22, 13],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#amethyst2"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#amethyst2"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [75, -45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"rotation": [0, -180, 0]
+		}
+	}
+}

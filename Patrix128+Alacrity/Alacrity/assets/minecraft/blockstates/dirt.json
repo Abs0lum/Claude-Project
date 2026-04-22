@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+        { "model": "minecraft:block/nature/dirt/dirt_1" },
+        { "model": "minecraft:block/nature/dirt/dirt_2" },
+        { "model": "minecraft:block/nature/dirt/dirt_3" },
+        { "model": "minecraft:block/nature/dirt/dirt_4" },
+        { "model": "minecraft:block/nature/dirt/dirt_5" },
+        { "model": "minecraft:block/nature/dirt/dirt_6" },
+        { "model": "minecraft:block/nature/dirt/dirt_7" },
+        { "model": "minecraft:block/nature/dirt/dirt_8" },
+        { "model": "minecraft:block/nature/dirt/dirt_9" },
+        { "model": "minecraft:block/nature/dirt/dirt_10" },
+        { "model": "minecraft:block/nature/dirt/dirt_11" },
+        { "model": "minecraft:block/nature/dirt/dirt_12" },
+        { "model": "minecraft:block/nature/dirt/dirt_13" },
+        { "model": "minecraft:block/nature/dirt/dirt_14" },
+        { "model": "minecraft:block/nature/dirt/dirt_15" },
+        { "model": "minecraft:block/nature/dirt/dirt_16" }
+      ]
+  }
+}

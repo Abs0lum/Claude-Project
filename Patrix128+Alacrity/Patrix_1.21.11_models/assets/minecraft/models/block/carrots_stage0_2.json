@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop_2",
+  "textures": {
+    "crop": "minecraft:block/carrots_stage0"
+  }
+}

@@ -1,0 +1,47 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "block/nature/leaves/spruce",
+		"2": "block/spruce_leaves",
+		"particle": "block/spruce_leaves"
+	},
+	"elements": [
+		{
+			"name": "Base",
+			"from": [-7.5, 8.5, -2],
+			"to": [20.5, 8.5, 26],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "x", "origin": [6.5, 8.5, 12]},
+			"faces": {
+				"up": {"uv": [7, 0, 0, 7], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 0, 7, 7], "rotation": 180, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [-1.5, 8.5, -6],
+			"to": [26.5, 8.5, 22],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "z", "origin": [12.5, 8.5, 8]},
+			"faces": {
+				"up": {"uv": [7, 7, 14, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [7, 7, 14, 0], "rotation": 90, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2", "tintindex": 0}
+			}
+		}
+	]
+}

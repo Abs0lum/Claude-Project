@@ -1,0 +1,226 @@
+{
+  "multipart": [
+    { 
+        "when": { "facing": "east", "half": "top", "shape": "straight" },      
+        "apply": [ 
+            { "model": "block/nether/bricks/stairs/slope_straight_1", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_2", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_3", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_4", "y": 0, "uvlock": true }
+        ]
+    },
+    { 
+        "when": { "facing": "south", "half": "top", "shape": "straight" }, 
+        "apply": [
+            { "model": "block/nether/bricks/stairs/slope_straight_1", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_2", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_3", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_4", "y": 90, "uvlock": true }
+        ]
+    },
+    { 
+        "when": { "facing": "west", "half": "top", "shape": "straight" }, 
+        "apply": [
+            { "model": "block/nether/bricks/stairs/slope_straight_1", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_2", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_3", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_4", "y": 180, "uvlock": true }
+        ]
+    },
+    { 
+        "when": { "facing": "north", "half": "top", "shape": "straight" }, 
+        "apply": [
+            { "model": "block/nether/bricks/stairs/slope_straight_1", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_2", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_3", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_straight_4", "y": 270, "uvlock": true }
+        ]
+    },
+
+    { 
+        "when": { "OR": [{ "facing": "east", "half": "top", "shape": "outer_right" }, {"facing": "south", "half": "top", "shape": "outer_left"} ] },      
+        "apply": [ 
+            { "model": "block/nether/bricks/stairs/slope_outer_1", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_2", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_3", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_4", "y": 0, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "south", "half": "top", "shape": "outer_right" }, {"facing": "west", "half": "top", "shape": "outer_left"} ] },      
+        "apply": [ 
+         	{ "model": "block/nether/bricks/stairs/slope_outer_1", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_2", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_3", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_4", "y": 90, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "west", "half": "top", "shape": "outer_right" }, {"facing": "north", "half": "top", "shape": "outer_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/slope_outer_1", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_2", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_3", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_4", "y": 180, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "north", "half": "top", "shape": "outer_right" }, {"facing": "east", "half": "top", "shape": "outer_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/slope_outer_1", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_2", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_3", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/slope_outer_4", "y": 270, "uvlock": true }
+        ]
+    },
+
+    { 
+      "when": { "OR": [{ "facing": "east", "half": "top", "shape": "inner_right" }, {"facing": "south", "half": "top", "shape": "inner_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/slope_inner_1", "y": 0, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_2", "y": 0, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_3", "y": 0, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_4", "y": 0, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "south", "half": "top", "shape": "inner_right" }, {"facing": "west", "half": "top", "shape": "inner_left"} ] },      
+        "apply": [ 
+        	{ "model": "block/nether/bricks/stairs/slope_inner_1", "y": 90, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_2", "y": 90, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_3", "y": 90, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_4", "y": 90, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "west", "half": "top", "shape": "inner_right" }, {"facing": "north", "half": "top", "shape": "inner_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/slope_inner_1", "y": 180, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_2", "y": 180, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_3", "y": 180, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_4", "y": 180, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "north", "half": "top", "shape": "inner_right" }, {"facing": "east", "half": "top", "shape": "inner_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/slope_inner_1", "y": 270, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_2", "y": 270, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_3", "y": 270, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/slope_inner_4", "y": 270, "uvlock": true }
+        ]
+    },
+
+    { 
+        "when": { "facing": "east", "half": "bottom", "shape": "straight" }, 
+        "apply": [
+            { "model": "block/nether/bricks/stairs/stairs_straight_1", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_2", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_3", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_4", "y": 0, "uvlock": true }
+        ]
+    },
+    { 
+        "when": { "facing": "south", "half": "bottom", "shape": "straight" }, 
+        "apply": [
+            { "model": "block/nether/bricks/stairs/stairs_straight_1", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_2", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_3", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_4", "y": 90, "uvlock": true }
+        ]
+    },
+    { 
+        "when": { "facing": "west", "half": "bottom", "shape": "straight" }, 
+        "apply": [
+            { "model": "block/nether/bricks/stairs/stairs_straight_1", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_2", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_3", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_4", "y": 180, "uvlock": true }
+        ]
+    },
+    { 
+        "when": { "facing": "north", "half": "bottom", "shape": "straight" }, 
+        "apply": [
+            { "model": "block/nether/bricks/stairs/stairs_straight_1", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_2", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_3", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_straight_4", "y": 270, "uvlock": true }
+        ]
+    },
+
+    { 
+        "when": { "OR": [{ "facing": "east", "half": "bottom", "shape": "outer_right" }, {"facing": "south", "half": "bottom", "shape": "outer_left"} ] },      
+        "apply": [ 
+            { "model": "block/nether/bricks/stairs/stairs_outer_1", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_2", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_3", "y": 0, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_4", "y": 0, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "south", "half": "bottom", "shape": "outer_right" }, {"facing": "west", "half": "bottom", "shape": "outer_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/stairs_outer_1", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_2", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_3", "y": 90, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_4", "y": 90, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "west", "half": "bottom", "shape": "outer_right" }, {"facing": "north", "half": "bottom", "shape": "outer_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/stairs_outer_1", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_2", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_3", "y": 180, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_4", "y": 180, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "north", "half": "bottom", "shape": "outer_right" }, {"facing": "east", "half": "bottom", "shape": "outer_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/stairs_outer_1", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_2", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_3", "y": 270, "uvlock": true },
+            { "model": "block/nether/bricks/stairs/stairs_outer_4", "y": 270, "uvlock": true }
+        ]
+    },
+
+    { 
+      "when": { "OR": [{ "facing": "east", "half": "bottom", "shape": "inner_right" }, {"facing": "south", "half": "bottom", "shape": "inner_left"} ] },      
+        "apply": [ 
+	        { "model": "block/nether/bricks/stairs/stairs_inner_1", "y": 0, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_2", "y": 0, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_3", "y": 0, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_4", "y": 0, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "south", "half": "bottom", "shape": "inner_right" }, {"facing": "west", "half": "bottom", "shape": "inner_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/stairs_inner_1", "y": 90, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_2", "y": 90, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_3", "y": 90, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_4", "y": 90, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "west", "half": "bottom", "shape": "inner_right" }, {"facing": "north", "half": "bottom", "shape": "inner_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/stairs_inner_1", "y": 180, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_2", "y": 180, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_3", "y": 180, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_4", "y": 180, "uvlock": true }
+        ]
+    },
+    { 
+      "when": { "OR": [{ "facing": "north", "half": "bottom", "shape": "inner_right" }, {"facing": "east", "half": "bottom", "shape": "inner_left"} ] },      
+        "apply": [ 
+          	{ "model": "block/nether/bricks/stairs/stairs_inner_1", "y": 270, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_2", "y": 270, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_3", "y": 270, "uvlock": true },
+	        { "model": "block/nether/bricks/stairs/stairs_inner_4", "y": 270, "uvlock": true }
+        ]
+    }
+
+  ]
+}

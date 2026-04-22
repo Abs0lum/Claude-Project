@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+        "1": "block/wooden/oak/double_2",
+        "2": "block/wooden/oak/double_1",
+        "e": "block/wooden/oak/double_end_2",
+        "particle": "block/wooden/oak/particle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#1", "cullface": "north"},
+				"east": {"uv": [16, 0, 0, 16], "rotation": 90, "texture": "#2", "cullface": "east"},
+				"south": {"uv": [16, 0, 0, 16], "rotation": 90, "texture": "#1", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#2", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#e", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#e", "cullface": "down"}
+			}
+		}
+	]
+}

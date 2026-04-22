@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "axis=x": [ 
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ew_1" }, 
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ew_2" },
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ew_3" },
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ew_4" }
+    ],
+    "axis=y": [ 
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_1" }, 
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_2" },
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_3" },
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_4" }
+    ],
+    "axis=z": [ 
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ns_1" }, 
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ns_2" },
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ns_3" },
+        { "model": "minecraft:block/wooden/mangrove/stripped/stripped_wood_ns_4" }
+    ]
+  }
+}

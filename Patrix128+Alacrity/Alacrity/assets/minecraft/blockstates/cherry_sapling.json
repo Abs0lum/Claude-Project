@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "stage=0": [ 
+            { "model": "block/nature/saplings/cherry_sapling_1", "y": 0 },
+            { "model": "block/nature/saplings/cherry_sapling_1", "y": 90 },
+            { "model": "block/nature/saplings/cherry_sapling_1", "y": 180 },
+            { "model": "block/nature/saplings/cherry_sapling_1", "y": 270 }
+        ],
+		"stage=1": [ 
+            { "model": "block/nature/saplings/cherry_sapling_2", "y": 0 },
+            { "model": "block/nature/saplings/cherry_sapling_2", "y": 90 },
+            { "model": "block/nature/saplings/cherry_sapling_2", "y": 180 },
+            { "model": "block/nature/saplings/cherry_sapling_2", "y": 270 }
+        ]
+    }
+}

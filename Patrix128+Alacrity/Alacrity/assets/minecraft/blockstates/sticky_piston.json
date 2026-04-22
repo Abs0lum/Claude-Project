@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "extended=false,facing=north": { "model": "minecraft:block/redstone/piston/piston_sticky" },
+    "extended=false,facing=down":  { "model": "minecraft:block/redstone/piston/piston_sticky", "x": 90 },
+    "extended=false,facing=east":  { "model": "minecraft:block/redstone/piston/piston_sticky", "y": 90 },
+    "extended=false,facing=south": { "model": "minecraft:block/redstone/piston/piston_sticky", "y": 180 },
+    "extended=false,facing=west":  { "model": "minecraft:block/redstone/piston/piston_sticky", "y": 270 },
+    "extended=false,facing=up":    { "model": "minecraft:block/redstone/piston/piston_sticky", "x": 270 },
+
+    "extended=true,facing=north":  { "model": "minecraft:block/redstone/piston/piston_base" },
+    "extended=true,facing=down":   { "model": "minecraft:block/redstone/piston/piston_base", "x": 90 },
+    "extended=true,facing=east":   { "model": "minecraft:block/redstone/piston/piston_base", "y": 90 },
+    "extended=true,facing=south":  { "model": "minecraft:block/redstone/piston/piston_base", "y": 180 },
+    "extended=true,facing=west":   { "model": "minecraft:block/redstone/piston/piston_base", "y": 270 },
+    "extended=true,facing=up":     { "model": "minecraft:block/redstone/piston/piston_base", "x": 270 }
+  }
+}

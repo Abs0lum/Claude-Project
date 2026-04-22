@@ -1,0 +1,39 @@
+================================
+To remove the following features, delete the quoted .json files located in "assets\minecraft\blockstates" folder in this pack.
+================================
+
+- stalactite models 
+random stalactite models for stone, andersite, diorite, granite, and netherrack blocks
+"stone.json andesite.json diorite.json granite.json netherrack.json"
+
+- corpse piles
+random piles ontop of nether quartz ore blocks
+"nether_quartz_ore.json"
+
+- 3d crystals
+random 3d crystals for redstone, emerald, and diamond ore/deepslate ore blocks
+"redstone_ore.json emerald_ore.json diamond_ore.json deepslate_redstone_ore.json deepslate_emerald_ore.json deepslate_diamond_ore.json"
+
+- small basalt collumns
+random quarter collumns for basalt blocks
+"basalt.json"
+
+- extra grass
+random extra grass ontop of grass blocks, and also hanging from the sides
+"grass_block.json"
+
+- small bushes
+grass will randomly use birch/jungle leaves block as small bushes
+"short_grass.json"
+
+- crop height variation
+various farm crops will have some height variation
+"beetroots.json carrots.json potatoes.json wheat.json"
+
+- hanging roots
+random short hanging roots below grass, podzol, and rooted dirt block
+"grass_block.json podzol.json rooted_dirt.json"
+
+- lilypad roots
+random roots below lilypads
+"lily_pad.json"

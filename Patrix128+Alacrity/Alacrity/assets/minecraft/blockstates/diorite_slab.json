@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/diorite/slab/slab_1" },
+      { "model": "minecraft:block/stone/diorite/slab/slab_2" },
+      { "model": "minecraft:block/stone/diorite/slab/slab_3" },
+      { "model": "minecraft:block/stone/diorite/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/diorite/natural_1" },
+      { "model": "minecraft:block/stone/diorite/natural_2" },
+      { "model": "minecraft:block/stone/diorite/natural_3" },
+      { "model": "minecraft:block/stone/diorite/natural_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/diorite/slab/top_1" },
+      { "model": "minecraft:block/stone/diorite/slab/top_2" },
+      { "model": "minecraft:block/stone/diorite/slab/top_3" },
+      { "model": "minecraft:block/stone/diorite/slab/top_4" }
+    ]
+  }
+}

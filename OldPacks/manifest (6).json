@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [VARFIX v0.2.2]",
+    "description": "v0.2.2 VARFIX — the variations weren't actually taking effect in v0.2.0/v0.2.1. Root cause from MS Learn docs + Bedrock Wiki: blocks.json needs format_version 1.21.110+ AND each block needs an explicit 'textures' field pointing to its terrain_texture.json shortname. Without that, Bedrock falls through to a lookup path that bypasses the variations array. Fixed both. Bumped blocks.json to format_version 1.21.120. Added explicit texture mappings for all 21 variation-enabled blocks (stone, dirt, sand, gravel, cobblestone, grass_block, mycelium, sandstone+red_sandstone, mud family, etc.). Variants should now be visible in-game. Carries v0.2.1 SMOOTH (16 median-filtered CTM variants + lava flipbook + sandstone port).",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      2,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        2,
+        2
+      ]
+    }
+  ]
+}
+
+
+

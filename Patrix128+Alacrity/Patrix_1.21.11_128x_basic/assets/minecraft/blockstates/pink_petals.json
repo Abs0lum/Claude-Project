@@ -1,0 +1,164 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_1", "weight": 6 },
+        { "model": "minecraft:block/pink_petals_1b", "weight": 5 }
+      ],
+      "when": {
+        "facing": "north",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_1", "y": 90, "weight": 6 },
+        { "model": "minecraft:block/pink_petals_1b", "y": 90, "weight": 5 }
+      ],
+      "when": {
+        "facing": "east",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_1", "y": 180, "weight": 6 },
+        { "model": "minecraft:block/pink_petals_1b", "y": 180, "weight": 5 }
+      ],
+      "when": {
+        "facing": "south",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_1", "y": 270, "weight": 6 },
+        { "model": "minecraft:block/pink_petals_1b", "y": 270, "weight": 5 }
+      ],
+      "when": {
+        "facing": "west",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_2", "weight": 7 },
+        { "model": "minecraft:block/pink_petals_2b", "weight": 6 }
+      ],
+      "when": {
+        "facing": "north",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_2", "y": 90, "weight": 7 },
+        { "model": "minecraft:block/pink_petals_2b", "y": 90, "weight": 6 }
+      ],
+      "when": {
+        "facing": "east",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_2", "y": 180, "weight": 7 },
+        { "model": "minecraft:block/pink_petals_2b", "y": 180, "weight": 6 }
+      ],
+      "when": {
+        "facing": "south",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_2", "y": 270, "weight": 7 },
+        { "model": "minecraft:block/pink_petals_2b", "y": 270, "weight": 6 }
+      ],
+      "when": {
+        "facing": "west",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_3", "weight": 8 },
+        { "model": "minecraft:block/pink_petals_3b", "weight": 7 }
+      ],
+      "when": {
+        "facing": "north",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_3", "y": 90, "weight": 8 },
+        { "model": "minecraft:block/pink_petals_3b", "y": 90, "weight": 7 }
+      ],
+      "when": {
+        "facing": "east",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_3", "y": 180, "weight": 8 },
+        { "model": "minecraft:block/pink_petals_3b", "y": 180, "weight": 7 }
+      ],
+      "when": {
+        "facing": "south",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_3", "y": 270, "weight": 8 },
+        { "model": "minecraft:block/pink_petals_3b", "y": 270, "weight": 7 }
+      ],
+      "when": {
+        "facing": "west",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_4", "weight": 9 },
+        { "model": "minecraft:block/pink_petals_4b", "weight": 8 }
+      ],
+      "when": {
+        "facing": "north",
+        "flower_amount": "4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_4", "y": 90, "weight": 9 },
+        { "model": "minecraft:block/pink_petals_4b", "y": 90, "weight": 8 }
+      ],
+      "when": {
+        "facing": "east",
+        "flower_amount": "4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_4", "y": 180, "weight": 9 },
+        { "model": "minecraft:block/pink_petals_4b", "y": 180, "weight": 8 }
+      ],
+      "when": {
+        "facing": "south",
+        "flower_amount": "4"
+      }
+    },
+    {
+      "apply": [
+        { "model": "minecraft:block/pink_petals_4", "y": 270, "weight": 9 },
+        { "model": "minecraft:block/pink_petals_4b", "y": 270, "weight": 8 }
+      ],
+      "when": {
+        "facing": "west",
+        "flower_amount": "4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/glow_lichen/hanging",
+        "particle": "block/nature/glow_lichen/particle"
+	},
+	"elements": [
+		{
+			"name": "Grass",
+			"from": [5.53553, -16, 9.94975],
+			"to": [13.53553, 15.5, 9.94975],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6.53553, -0.25, 10.94975]},
+			"faces": {
+				"north": {"uv": [7, 15.75, 11, 0], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [7, 0, 11, 15.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [2.53553, -16, 0.94975],
+			"to": [2.53553, 15.5, 8.94975],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [6.53553, -0.25, 10.94975]},
+			"faces": {
+				"east": {"uv": [12, 15.75, 16, 0], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [12, 0, 16, 15.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Grass",
+			"from": [5.53553, -16, 7.94975],
+			"to": [13.53553, 15.5, 7.94975],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [6.53553, -0.25, 10.94975]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 15.75], "texture": "#1"},
+				"south": {"uv": [0, 15.75, 4, 0], "rotation": 180, "texture": "#1"}
+			}
+		}
+	]
+}

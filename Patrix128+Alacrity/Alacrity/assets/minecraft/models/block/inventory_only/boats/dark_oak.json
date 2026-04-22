@@ -1,0 +1,7 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/inventory_only/boats/template_boat",
+	"textures": {
+		"3": "item/models_items/chest_boat/dark_oak"
+	}
+}

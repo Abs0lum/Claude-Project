@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PatrixWorld Sampler [ATLASFIX v0.2.7]",
+    "description": "v0.2.7 ATLASFIX \u2014 removes 8 sculk-family entries (sculk, sculk_vein, sculk_catalyst/sensor/shrieker top+side) from terrain_texture.json. These blocks have vanilla flipbook animations that expect multi-frame UV atlases; registering them as static textures caused 'invalid atlas index 1 for the expected UV count 1' errors at load. The 64x64 Patrix PNGs remain in textures/blocks/ so they still apply as texture overrides via filename match (engine uses per-pack file presence). All 122 other textures added in v0.2.6 TEXTUREAUDIT remain registered. Total entries: 377.",
+    "uuid": "7b5e9f01-3a24-4b6c-9d17-8e5f4c2b19a0",
+    "version": [
+      0,
+      2,
+      7
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Patrix hero block textures",
+      "type": "resources",
+      "uuid": "f2c8d9e4-6a51-4f8b-a3c9-1d8e7b4f5c62",
+      "version": [
+        0,
+        2,
+        7
+      ]
+    }
+  ]
+}

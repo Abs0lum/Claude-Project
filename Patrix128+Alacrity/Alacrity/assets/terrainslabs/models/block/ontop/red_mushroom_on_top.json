@@ -1,0 +1,6 @@
+{
+  "parent": "terrainslabs:block/ontop/cross",
+  "textures": {
+    "cross": "minecraft:block/red_mushroom"
+  }
+}

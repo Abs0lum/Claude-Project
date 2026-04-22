@@ -1,0 +1,7 @@
+{
+  "model": { 
+  	"type": "minecraft:model", 
+      "model": "minecraft:block/nature/leaves/dark_oak/leaves_1",
+  	"tints": [{ "type": "minecraft:constant", "value": -12012264 }]
+  }
+}

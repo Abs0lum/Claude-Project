@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/maps/filled_map",
+        "layer1": "item/maps/filled_map_markings"
+    }
+}

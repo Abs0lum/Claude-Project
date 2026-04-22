@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: forge-1.16.4
+Specification-Vendor: LolHens
+Specification-Version: 1
+Implementation-Title: forge-1.16.4
+Implementation-Version: 1.6.0+forge-1.16.4
+Implementation-Vendor: LolHens
+Implementation-Timestamp: 2021-12-05T18:38:57+0000
+MixinConfigs: fluidphysics.mixins.json
+

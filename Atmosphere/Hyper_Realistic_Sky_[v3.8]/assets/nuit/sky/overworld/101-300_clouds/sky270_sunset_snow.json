@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"type": "square-textured",
+	"texture": "skybox:overworld/101-300_clouds/sky270_sunset_snow.png",
+	"blend": {"type" : "screen"},
+	"properties": {
+		"visibleUnderwater": false,
+		"layer": 270,
+		"fade": {
+			"duration": 24000,
+			"keyFrames": {
+				"10500": 0.0,
+				"11500": 1.0,
+				"12500": 1.0,
+				"13500": 0.0
+				}
+			},
+		"rotation": {
+			"speed": -1.732,
+			"mapping": {"0": [0.0, -90.0, 0.0]},
+			"axis": {"0": [0.0, 0.0, 0.0]}
+			},
+		"transitionInDuration": 200,
+		"transitionOutDuration": 200,
+		"fog": {"modifyColors": true, "red": 0.1843137254901961, "green": 0.2627450980392157, "blue": 0.4196078431372549}
+		},
+	"conditions": {
+		"worlds": {"entries": ["minecraft:overworld"]},
+		"weather": {"entries": ["snow", "snow_thunder"]},
+		"yRanges": {"entries": [{"min": -128.0, "max": 255.0}]},
+		"biomes": {"entries": ["minecraft:forest", "minecraft:birch_forest", "minecraft:birch_forest_hills", "minecraft:cherry_grove", "minecraft:dark_forest", "minecraft:dark_forest_hills", "minecraft:flower_forest", "minecraft:giant_spruce_taiga", "minecraft:giant_tree_taiga", "minecraft:grove", "minecraft:meadow", "minecraft:mushroom_fields", "minecraft:old_growth_birch_forest", "minecraft:old_growth_pine_taiga", "minecraft:old_growth_spruce_taiga", "minecraft:plains", "minecraft:river", "minecraft:sunflower_plains", "minecraft:taiga", "minecraft:tall_birch_forest", "minecraft:tall_birch_hills", "minecraft:windswept_forest", "minecraft:frozen_peaks", "minecraft:giant_spruce_taiga_hills", "minecraft:giant_tree_taiga_hills", "minecraft:gravelly_mountains", "minecraft:jagged_peaks", "minecraft:modified_gravelly_mountains", "minecraft:mountain_edge", "minecraft:mountains", "minecraft:snowy_mountains", "minecraft:snowy_slopes", "minecraft:snowy_taiga_hills", "minecraft:snowy_taiga_mountains", "minecraft:stony_peaks", "minecraft:taiga_hills", "minecraft:taiga_mountains", "minecraft:windswept_gravelly_hills", "minecraft:windswept_hills", "minecraft:wooded_hills", "minecraft:wooded_mountains", "minecraft:bamboo_jungle", "minecraft:bamboo_jungle_hills", "minecraft:jungle", "minecraft:jungle_edge", "minecraft:jungle_hills", "minecraft:modified_jungle", "minecraft:modified_jungle_edge", "minecraft:sparse_jungle", "minecraft:beach", "minecraft:cold_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_ocean", "minecraft:deep_warm_ocean", "minecraft:lukewarm_ocean", "minecraft:mushroom_field_shore", "minecraft:ocean", "minecraft:stone_shore", "minecraft:stony_shore", "minecraft:warm_ocean", "minecraft:deep_dark", "minecraft:dripstone_caves", "minecraft:lush_caves", "minecraft:mangrove_swamp", "minecraft:pale_garden", "minecraft:swamp", "minecraft:swamp_hills", "minecraft:deep_frozen_ocean", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:ice_spikes", "minecraft:snowy_beach", "minecraft:snowy_plains", "minecraft:snowy_taiga", "minecraft:snowy_tundra"]}
+		}
+}

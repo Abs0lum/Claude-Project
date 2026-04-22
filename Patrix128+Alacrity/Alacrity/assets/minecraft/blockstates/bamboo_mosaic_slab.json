@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/slab_1" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/slab_2" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/slab_3" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/double_1" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/double_2" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/double_3" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/double_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/top_1" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/top_2" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/top_3" },
+      { "model": "minecraft:block/wooden/bamboo/mosaic/slab/top_4" }
+    ]
+  }
+}

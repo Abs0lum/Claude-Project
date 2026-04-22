@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.beash.ambientfog.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "CloudRendererMixin",
+    "SkyRenderingMixin",
+    "WorldRendererMixin",
+    "accessor.ClientWorldAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
+

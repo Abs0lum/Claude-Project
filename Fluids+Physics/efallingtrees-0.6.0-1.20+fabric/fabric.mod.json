@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "efallingtrees",
+  "version": "0.6.0-1.20+fabric",
+  "name": "Enhanced Falling Trees",
+  "description": "Enhanced Falling Trees is a mod that introduces realistic falling mechanics to trees, bamboos, and cacti, making your game more immersive with naturalistic plants behavior.\n\n§6Features:§r\n- Realistic tree falling animations\n- Support for bamboo and cacti\n- Customizable settings\n- Performance friendly\n- Works with most tree-generating mods\n",
+  "authors": [
+    "addavriance"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/enhanced-falling-trees",
+    "sources": "https://github.com/addavriance/EnhancedFallingTrees",
+    "issues": "https://github.com/addavriance/EnhancedFallingTrees/issues"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.adda.enhanced_falling_trees.fabric.FallingTreesFabric"
+    ],
+    "client": [
+      "me.adda.enhanced_falling_trees.fabric.FallingTreesClientFabric"
+    ],
+    "modmenu": [
+      "me.adda.enhanced_falling_trees.fabric.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "efallingtrees.mixins.json",
+    "efallingtrees-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.14.24",
+    "minecraft": "\u003e\u003d1.20",
+    "fabric-api": "\u003e\u003d0.83.0",
+    "cloth-config": "\u003e\u003d11.1.106",
+    "architectury": "\u003e\u003d9.1.12"
+  },
+  "suggests": {
+    "modmenu": "\u003e\u003d7.0.1"
+  },
+  "custom": {
+    "modmenu": {
+      "update_checker": true,
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/enhanced-falling-trees",
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/enhanced-falling-trees",
+        "modmenu.issues": "https://github.com/addavriance/EnhancedFallingTrees/issues"
+      }
+    }
+  },
+  "accessWidener": "efallingtrees.accesswidener"
+}

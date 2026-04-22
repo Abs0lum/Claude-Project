@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "attached=false,facing=east,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/normal",
+      "y": 90
+    },
+    "attached=false,facing=east,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/armed",
+      "y": 90
+    },
+    "attached=false,facing=north,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/normal"
+    },
+    "attached=false,facing=north,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/armed"
+    },
+    "attached=false,facing=south,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/normal",
+      "y": 180
+    },
+    "attached=false,facing=south,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/armed",
+      "y": 180
+    },
+    "attached=false,facing=west,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/normal",
+      "y": 270
+    },
+    "attached=false,facing=west,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/armed",
+      "y": 270
+    },
+    "attached=true,facing=east,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/armed",
+      "y": 90
+    },
+    "attached=true,facing=east,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/active",
+      "y": 90
+    },
+    "attached=true,facing=north,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/armed"
+    },
+    "attached=true,facing=north,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/active"
+    },
+    "attached=true,facing=south,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/armed",
+      "y": 180
+    },
+    "attached=true,facing=south,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/active",
+      "y": 180
+    },
+    "attached=true,facing=west,powered=false": {
+      "model": "minecraft:block/interactive/tripwire/armed",
+      "y": 270
+    },
+    "attached=true,facing=west,powered=true": {
+      "model": "minecraft:block/interactive/tripwire/active",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/tpl_core/stairs_faced/stairs_str_s",
+	"textures": {
+        "1": "block/stone/quartz/polished_slab_cubes_4",
+        "2": "block/stone/quartz/polished_slab_cubes_3",
+        "alt_1": "block/stone/quartz/polished_slab_4",
+        "alt_2": "block/stone/quartz/polished_slab_3",
+        "t": "block/stone/quartz/polished_4",
+        "b": "block/stone/quartz/polished_4",
+        "particle": "block/stone/quartz/particle"
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_1" },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_1", "y": 90 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_1", "y": 180 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_1", "y": 270 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_2" },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_2", "y": 90 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_2", "y": 180 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_2", "y": 270 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_3" },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_3", "y": 90 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_3", "y": 180 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_3", "y": 270 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_4" },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_4", "y": 90 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_4", "y": 180 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_4", "y": 270 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_5" },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_5", "y": 90 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_5", "y": 180 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_5", "y": 270 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_6" },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_6", "y": 90 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_6", "y": 180 },
+      { "model": "minecraft:block/nature/flowers/ontop/poppy_6", "y": 270 }
+	]
+  }
+}

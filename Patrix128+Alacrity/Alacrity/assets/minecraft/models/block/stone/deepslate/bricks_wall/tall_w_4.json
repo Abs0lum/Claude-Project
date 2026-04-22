@@ -1,0 +1,13 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "minecraft:block/templates/stone_bricks_wall/tall_w_4",
+	"texture_size": [32, 32],
+	"textures": {
+        "extra": "block/stone/deepslate/bricks_extra",
+        "wall_hole": "block/stone/deepslate/wall",
+        "wall_parts": "block/stone/deepslate/wall_parts",
+        "wall_alt": "block/stone/deepslate/wall_alt",
+        "wall_tall": "block/stone/deepslate/wall_tall",
+        "particle": "block/stone/deepslate/particle"
+	}
+}

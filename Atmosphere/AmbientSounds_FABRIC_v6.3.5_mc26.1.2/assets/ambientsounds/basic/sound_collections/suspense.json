@@ -1,0 +1,10 @@
+{
+    "sounds": [
+        {
+            "name": "suspense",
+            "files": [
+                "ambientsounds:suspense.end"
+            ]
+        }
+    ]
+}

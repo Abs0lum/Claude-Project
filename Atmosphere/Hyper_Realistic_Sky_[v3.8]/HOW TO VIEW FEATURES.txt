@@ -1,0 +1,161 @@
+Biome dependant clouds:
+	1. Go to a Forest biome
+	2. Go to a Windswept hills biome
+	3. Go to a Savannah biome
+	4. Go to a Desert biome
+	5. Go to a Swamp biome
+	6. Go to a Snowy Plains biome
+
+Rain clouds:
+	1. Go to a non-snowy biome
+	2. /weather rain
+	3. /weather thunder
+
+Snow clouds:
+	1. Go to a snowy biome
+	2. /weather rain
+	3. /weather thunder
+	
+Lightning strikes:
+	1. Go to a Forest biome for example
+	2. /weather thunder
+	3. /tp @p ~ ~ ~ -115 -20
+	4. /time set 13500
+
+High altitude clouds:
+	1. /tp ~ 270 ~
+
+Rainbow: (not in OptiFine / Skyboxify)
+	1. /weather rain (or thunder)
+	2. wait one minute.
+	3. /weather clear
+
+Iridescent clouds:
+	1. /weather clear
+	2. /time set 348300
+	3. Go to a plains biome
+	4. Go to a snowy slopes biome
+	5. Go to a desert biome
+
+Noctilucent clouds:
+	1. /weather clear
+	2. Go to a snowy plains biome
+	3. /time set 119700
+
+Asperitas clouds:
+	1. Do NOT be in a desert, mesa or savannah biome.
+	2. /time set 57000
+
+Mammatus clouds:
+	1. Do NOT be in a desert, mesa or savannah biome.
+	2. /weather clear (or rain)
+	3. /time set 127000
+
+Fiery sunset:
+	1. Go to a forest biome for example
+	2. /weather clear
+	3. /time set 181000
+
+Sandstorms:
+	1. Go to a desert, mesa or savannah biome.
+	2. /weather rain
+	3. /weather thunder
+
+Tornado: (not in OptiFine / Skyboxify)
+	1. /time set 220500
+
+Supercell:
+	1. /time set 985500
+
+Solar eclipse: (not in OptiFine / Skyboxify)
+	1. /tp @p ~ ~ ~ -60 -40
+	2. /time set 507000
+
+Blood Moon: (not in OptiFine / Skyboxify)
+	1. /weather clear
+	2. /time set 1938000
+
+Blue Moon: (not in OptiFine / Skyboxify)
+	1. /weather clear
+	2. /time set 762000
+
+Gas giants: (not in OptiFine / Skyboxify)
+	1. /tp ~ 320 ~
+	2. Look around
+
+Auroras:
+	1. Go to a snowy plains biome.
+	2. /time set 114000
+
+Northern star: (not in OptiFine / Skyboxify)
+	1. /time set 15000
+	2. /tp @p ~ ~ ~ 180 -26.5
+
+Shooting stars:
+	1. /tp @p ~ ~ ~ 70 -20
+	2. /time set 14400
+
+	and:
+
+	1. /tp @p ~ ~ ~ -80 -25
+	2. /time set 16800
+
+	and:
+
+	1. /tp @p ~ ~ ~ -160 -30
+	2. /time set 22400
+
+	and:
+
+	1. /tp @p ~ ~ ~ 0 -20
+	2. /time set 18700
+
+Meteor shower:
+	1. /time set 116950
+
+Black hole (use a spyglass or low FOV): (not in OptiFine / Skyboxify)
+	1. /tp @p ~ 270 ~ 126 -39.1
+	2. /time set 14000
+
+Andromeda (use a spyglass or low FOV): (not in OptiFine / Skyboxify)
+	1. /tp @p ~ 270 ~ -131.1 -62.9
+	2. /time set 14000
+
+Light pollution:
+	1. /time set 15000
+	2. look at the Moon
+	3. /time add 120000
+	4. keep repeating step 3.
+
+Outer space:
+	1. /tp ~ 320 ~
+
+Hurricane:
+	1. /weather thunder
+	2. /time set 411500
+
+	and: (not in OptiFine / Skyboxify)
+
+	1. /weather thunder
+	2. /tp ~ 320 ~
+
+End sky:
+	1. Go to the End dimension
+
+Outer End biome skies:
+	1. Leave the main end island via the teleporter
+
+Red nether sky:
+	1. Go to a Nether Wastes or Crimson Forest biome
+	2. / tp ~ 128 ~
+
+Cyan nether sky:
+	1. Go to a Warped Forest or Souls Sand Valley biome
+	2. / tp ~ 128 ~
+
+Brown nether sky:
+	1. Go to a Basalt Delta biome
+	2. / tp ~ 128 ~
+
+High nether sky:
+	1. / tp ~ 255 ~

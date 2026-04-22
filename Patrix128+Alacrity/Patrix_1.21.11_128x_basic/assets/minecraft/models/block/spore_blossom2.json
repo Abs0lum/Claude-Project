@@ -1,0 +1,61 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/spore_blossom",
+		"flower": "block/spore_blossom",
+		"base": "block/spore_blossom_base",
+		"extra": "block/extra/spore_blossom_extra"
+	},
+	"elements": [
+		{
+			"from": [0, 15.9, 0],
+			"to": [16, 15.9, 16],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 8]},
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#base"}
+			}
+		},
+		{
+			"from": [8, 15.9, 2],
+			"to": [20, 15.9, 14],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 15.9, 8]},
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "rotation": 90, "texture": "#extra"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#extra"}
+			}
+		},
+		{
+			"from": [-4, 15.9, 2],
+			"to": [8, 15.9, 14],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 15.9, 8]},
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "rotation": 270, "texture": "#extra"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#extra"}
+			}
+		},
+		{
+			"from": [2, 15.9, 8],
+			"to": [14, 15.9, 20],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 15.9, 8]},
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#flower"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [2, 15.9, -4],
+			"to": [14, 15.9, 8],
+			"shade": false,
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 15.9, 8]},
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "texture": "#flower"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#flower"}
+			}
+		}
+	]
+}

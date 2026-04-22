@@ -1,0 +1,7 @@
+{
+    "parent": "block/tpl_core/block_s",
+	"textures": {
+		"all": "block/stone/quartz/smooth_1",
+        "particle": "block/stone/quartz/particle"
+	}
+}

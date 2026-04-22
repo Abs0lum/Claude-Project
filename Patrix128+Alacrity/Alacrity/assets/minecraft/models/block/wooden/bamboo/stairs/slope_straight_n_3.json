@@ -1,0 +1,11 @@
+{
+    "parent": "block/templates/wooden_stairs/slope_straight_n",
+	"textures": {
+        "1": "block/wooden/bamboo/double_3",
+        "2": "block/wooden/bamboo/double_4",
+        "e": "block/wooden/bamboo/double_end_3",
+        "c": "block/wooden/bamboo/clean_3",
+        "b": "block/wooden/bamboo/stairs_back",
+        "particle": "block/wooden/bamboo/particle"
+	}
+}

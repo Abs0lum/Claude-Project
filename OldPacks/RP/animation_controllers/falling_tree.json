@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.ft_falling_tree.fall": {
+      "initial_state": "falling",
+      "states": {
+        "falling": {
+          "animations": ["fall"],
+          "transitions": [
+            { "rest": "q.property('ft:fall_stopped') == 1" },
+            { "rest": "q.anim_time > 1.78" }
+          ]
+        },
+        "rest": {
+          "animations": ["rest"]
+        }
+      }
+    }
+  }
+}

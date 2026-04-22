@@ -1,0 +1,257 @@
+{
+    "variants": {
+        "facing=east,half=bottom,shape=straight":     [ 
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_e_1"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_e_2"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_e_3"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_e_4"}
+        ],
+        "facing=south,half=bottom,shape=straight":    [ 
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_s_1"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_s_2"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_s_3"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_s_4"}
+        ],
+        "facing=west,half=bottom,shape=straight":     [ 
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_w_1"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_w_2"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_w_3"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_w_4"}
+        ],
+        "facing=north,half=bottom,shape=straight":    [ 
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_n_1"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_n_2"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_n_3"},
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_straight_n_4"}
+        ],
+
+
+        "facing=north,half=bottom,shape=outer_right":    [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_4" }
+
+        ],
+        "facing=east,half=bottom,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_e_4" }
+    	],
+        "facing=east,half=bottom,shape=outer_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_4" }
+    	],
+        "facing=south,half=bottom,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_w_4" }
+    	],
+        "facing=south,half=bottom,shape=outer_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_4" }
+    	],
+        "facing=west,half=bottom,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_s_4" }
+    	],
+        "facing=west,half=bottom,shape=outer_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_4" }
+    	],
+        "facing=north,half=bottom,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_outer_n_4" }
+    	],
+        
+
+
+        "facing=east,half=top,shape=straight":     [ 
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_e_4" }
+        ],
+        "facing=south,half=top,shape=straight":    [ 
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_s_4" }
+        ], 
+        "facing=west,half=top,shape=straight":     [ 
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_w_4" }
+        ],
+        "facing=north,half=top,shape=straight":    [ 
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_straight_n_4" }
+        ],
+
+
+        "facing=north,half=bottom,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_4" }
+        ],
+        "facing=east,half=bottom,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_e_4" }
+    	],
+        "facing=east,half=bottom,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_4" }
+    	],
+        "facing=south,half=bottom,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_w_4" }
+    	],
+        "facing=south,half=bottom,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_4" }
+    	],
+        "facing=west,half=bottom,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_s_4" }
+    	],
+        "facing=west,half=bottom,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_4" }
+    	],
+        "facing=north,half=bottom,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/stairs_inner_n_4" }
+    	],
+
+
+        "facing=north,half=top,shape=outer_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_4" }
+
+        ],
+        "facing=east,half=top,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_e_4" }
+    	],
+        "facing=east,half=top,shape=outer_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_4" }
+    	],
+        "facing=south,half=top,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_w_4" }
+    	],
+        "facing=south,half=top,shape=outer_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_4" }
+    	],
+        "facing=west,half=top,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_s_4" }
+    	],
+        "facing=west,half=top,shape=outer_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_4" }
+    	],
+        "facing=north,half=top,shape=outer_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_outer_n_4" }
+    	],
+
+
+    	"facing=north,half=top,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_4" }
+        ],
+        "facing=east,half=top,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_e_4" }
+    	],
+        "facing=east,half=top,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_4" }
+    	],
+        "facing=south,half=top,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_w_4" }
+    	],
+        "facing=south,half=top,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_4" }
+    	],
+        "facing=west,half=top,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_s_4" }
+    	],
+        "facing=west,half=top,shape=inner_right": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_4" }
+    	],
+        "facing=north,half=top,shape=inner_left": [
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_1" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_2" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_3" },
+            { "model": "block/stone/prismarine/bricks_stairs/slope_inner_n_4" }
+    	]
+    }
+}

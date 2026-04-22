@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/nether/warped/warped_nylium_1" },
+      { "model": "minecraft:block/nether/warped/warped_nylium_2" },
+      { "model": "minecraft:block/nether/warped/warped_nylium_3" },
+      { "model": "minecraft:block/nether/warped/warped_nylium_4" }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"texture": "skybox:overworld/uv_mapped/black_hole.png",
+	"vertex": [
+		{ "x": "3.275", "y": "-75.3603", "z": "-74.1534", "uv_x": "modulo(((floor(0.0504032258064516*worldTime))/4),1)+0.25", "uv_y": "modulo(((floor(0.8064516129032258*worldTime))/16),1)" },
+		{ "x": "-3.0283", "y": "-75.3603", "z": "-74.1534", "uv_x": "modulo(((floor(0.0504032258064516*worldTime))/4),1)", "uv_y": "modulo(((floor(0.8064516129032258*worldTime))/16),1)" },
+		{ "x": "-3.0283", "y": "-79.0765", "z": "-72.2989", "uv_x": "modulo(((floor(0.0504032258064516*worldTime))/4),1)", "uv_y": "modulo(((floor(0.8064516129032258*worldTime))/16),1)+0.0625" },
+		{ "x": "3.275", "y": "-79.0765", "z": "-72.2989", "uv_x": "modulo(((floor(0.0504032258064516*worldTime))/4),1)+0.25", "uv_y": "modulo(((floor(0.8064516129032258*worldTime))/16),1)+0.0625" }
+	],
+	"rotation": {
+		"degrees_x": "0",
+		"degrees_y": "0",
+		"degrees_z": "-single_rotation+90",
+		"base_degrees_x": "0",
+		"base_degrees_y": "26.52",
+		"base_degrees_z": "0"
+	},
+	"properties": {
+		"blend": true,
+		"alpha": "(1-submerged)"
+	}
+}

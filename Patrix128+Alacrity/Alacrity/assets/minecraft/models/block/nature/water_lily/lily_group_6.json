@@ -1,0 +1,72 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/water_lily/tiny",
+        "2": "block/nature/water_lily/extra",
+        "particle": "block/nature/water_lily/tiny"
+	},
+	"elements": [
+		{
+			"name": "lily_pad",
+			"from": [6.5, -0.75, -1],
+			"to": [16.5, -0.75, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11.5, -0.75, 4]},
+			"faces": {
+				"up": {"uv": [0, 0, 5, 5], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 5, 5, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "lily_pad",
+			"from": [0, -0.75, 7],
+			"to": [10, -0.75, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, -0.75, 10]},
+			"faces": {
+				"up": {"uv": [10.5, 5.25, 15.5, 10.25], "texture": "#1", "tintindex": 0},
+				"down": {"uv": [10.5, 10.25, 15.5, 5.25], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [2, -13.25, 12.5],
+			"to": [8, -0.75, 12.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [9, -0.75, 10]},
+			"faces": {
+				"north": {"uv": [0, 16, 3, 9.75], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"south": {"uv": [3, 16, 0, 9.75], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [13.9, -13.25, 2.675],
+			"to": [13.9, -0.75, 8.675],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [9, -0.75, 9.5]},
+			"faces": {
+				"east": {"uv": [2.75, 16, 5.75, 9.75], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [5.75, 16, 2.75, 9.75], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"name": "lily_pad",
+			"from": [-0.5, -0.25, -2],
+			"to": [9.5, -0.25, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.5, -0.25, 3]},
+			"faces": {
+				"up": {"uv": [5.25, 0, 10.25, 5], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [5.25, 5, 10.25, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "roots",
+			"from": [6.9, -12.75, 1.675],
+			"to": [6.9, -0.25, 7.675],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [2, -0.25, 8.5]},
+			"faces": {
+				"east": {"uv": [2.75, 16, 5.75, 9.75], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"west": {"uv": [5.75, 16, 2.75, 9.75], "rotation": 180, "texture": "#2", "tintindex": 0}
+			}
+		}
+	]
+}

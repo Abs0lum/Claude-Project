@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "minecraft:block/wooden/acacia/stripped/stripped_wood_ew_1" },
+    "axis=y": { "model": "minecraft:block/wooden/acacia/stripped/stripped_wood_1" },
+    "axis=z": { "model": "minecraft:block/wooden/acacia/stripped/stripped_wood_ns_1" }
+  }
+}

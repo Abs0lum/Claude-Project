@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/soils/mud_bricks/bricks_1" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_2" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_3" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_4" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_5" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_6" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_7" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_8" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_9" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_10" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_11" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_12" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_13" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_14" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_15" },
+      { "model": "minecraft:block/soils/mud_bricks/bricks_16" }
+    ]
+  }
+}

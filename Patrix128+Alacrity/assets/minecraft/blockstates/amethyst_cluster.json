@@ -1,0 +1,100 @@
+{
+    "multipart": [
+        {   "when": { "facing": "up" },
+            "apply": [
+                {"model": "block/amethyst_cluster2"},
+                {"model": "block/amethyst_cluster2", "y": 90},
+                {"model": "block/amethyst_cluster2", "y": 180},
+                {"model": "block/amethyst_cluster2", "y": 270},
+                {"model": "block/amethyst_cluster3"},
+                {"model": "block/amethyst_cluster3", "y": 90},
+                {"model": "block/amethyst_cluster3", "y": 180},
+                {"model": "block/amethyst_cluster3", "y": 270}
+            ]
+        },
+        {   "when": { "facing": "down" },
+            "apply": [
+                {"model": "block/amethyst_cluster2", "x": 180},
+                {"model": "block/amethyst_cluster2", "x": 180, "y": 180},
+                {"model": "block/amethyst_cluster3", "x": 180},
+                {"model": "block/amethyst_cluster3", "x": 180, "y": 180}
+            ]
+        },
+        {   "when": { "facing": "north" },
+            "apply": [
+                {"model": "block/amethyst_cluster2", "x": 90},
+                {"model": "block/amethyst_cluster2", "x": 270, "y": 180},
+                {"model": "block/amethyst_cluster3", "x": 90},
+                {"model": "block/amethyst_cluster3", "x": 270, "y": 180}
+            ]
+        },
+        {   "when": { "facing": "south" },
+            "apply": [
+                {"model": "block/amethyst_cluster2", "x": 90, "y": 180},
+                {"model": "block/amethyst_cluster2", "x": 270},
+                {"model": "block/amethyst_cluster3", "x": 90, "y": 180},
+                {"model": "block/amethyst_cluster3", "x": 270}
+            ]
+        },
+        {   "when": { "facing": "east" },
+            "apply": [
+                {"model": "block/amethyst_cluster2", "x": 90, "y": 90},
+                {"model": "block/amethyst_cluster2", "x": 270, "y": 270},
+                {"model": "block/amethyst_cluster3", "x": 90, "y": 90},
+                {"model": "block/amethyst_cluster3", "x": 270, "y": 270}
+            ]
+        },
+        {   "when": { "facing": "west" },
+            "apply": [
+                {"model": "block/amethyst_cluster2", "x": 90, "y": 270},
+                {"model": "block/amethyst_cluster2", "x": 270, "y": 90},
+                {"model": "block/amethyst_cluster3", "x": 90, "y": 270},
+                {"model": "block/amethyst_cluster3", "x": 270, "y": 90}
+            ]
+        },
+        {   "when": { "facing": "up" },
+            "apply": [
+                {"model": "block/air", "weight": 8 },
+                {"model": "block/amethyst_cluster", "weight": 1 },
+                {"model": "block/amethyst_cluster", "y": 90, "weight": 1 },
+                {"model": "block/amethyst_cluster", "y": 180, "weight": 1 },
+                {"model": "block/amethyst_cluster", "y": 270, "weight": 1 }
+            ]
+        },
+        {   "when": { "facing": "down" },
+            "apply": [
+                {"model": "block/air", "weight": 4 },
+                {"model": "block/amethyst_cluster", "x": 180, "weight": 1 },
+                {"model": "block/amethyst_cluster", "x": 180, "y": 180, "weight": 1 }
+            ]
+        },
+        {   "when": { "facing": "north" },
+            "apply": [
+                {"model": "block/air", "weight": 4 },
+                {"model": "block/amethyst_cluster", "x": 90, "weight": 1 },
+                {"model": "block/amethyst_cluster", "x": 270, "y": 180, "weight": 1 }
+            ]
+        },
+        {   "when": { "facing": "south" },
+            "apply": [
+                {"model": "block/air", "weight": 4 },
+                {"model": "block/amethyst_cluster", "x": 90, "y": 180, "weight": 1 },
+                {"model": "block/amethyst_cluster", "x": 270, "weight": 1 }
+            ]
+        },
+        {   "when": { "facing": "east" },
+            "apply": [
+                {"model": "block/air", "weight": 4 },
+                {"model": "block/amethyst_cluster", "x": 90, "y": 90, "weight": 1 },
+                {"model": "block/amethyst_cluster", "x": 270, "y": 270, "weight": 1 }
+            ]
+        },
+        {   "when": { "facing": "west" },
+            "apply": [
+                {"model": "block/air", "weight": 4 },
+                {"model": "block/amethyst_cluster", "x": 90, "y": 270, "weight": 1 },
+                {"model": "block/amethyst_cluster", "x": 270, "y": 90, "weight": 1 }
+            ]
+        }
+    ]
+}

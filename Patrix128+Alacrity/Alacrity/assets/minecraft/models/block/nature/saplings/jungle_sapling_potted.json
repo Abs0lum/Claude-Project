@@ -1,0 +1,69 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/saplings/jungle",
+        "particle": "block/nature/saplings/jungle"
+	},
+	"elements": [
+		{
+			"from": [1, 7, 8],
+			"to": [14, 23.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [16, 7.75, 9.5, 16], "texture": "#1"},
+				"south": {"uv": [9.5, 7.75, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, 6.5, 1],
+			"to": [8, 23, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"east": {"uv": [16, 7.75, 9.5, 16], "texture": "#1"},
+				"west": {"uv": [9.5, 7.75, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [5.30733, 11.64718, 3.5],
+			"to": [5.30733, 24.14718, 13],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [5.30733, 17.49718, 8.1]},
+			"faces": {
+				"east": {"uv": [16, 0, 11.25, 6.25], "texture": "#1"},
+				"west": {"uv": [11.25, 0, 16, 6.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [3.40733, 12.64718, 7.1],
+			"to": [12.90733, 25.14718, 7.1],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [5.30733, 16.49718, 9.1]},
+			"faces": {
+				"north": {"uv": [11.25, 0, 16, 6.25], "texture": "#1"},
+				"south": {"uv": [16, 0, 11.25, 6.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [9.30733, 12.64718, 3.5],
+			"to": [9.30733, 25.14718, 13],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [4.30733, 16.49718, 8.1]},
+			"faces": {
+				"east": {"uv": [16, 0, 11.25, 6.25], "texture": "#1"},
+				"west": {"uv": [11.25, 0, 16, 6.25], "texture": "#1"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [3.40733, 12.64718, 9.1],
+			"to": [12.90733, 25.14718, 9.1],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [5.30733, 16.49718, 7.1]},
+			"faces": {
+				"north": {"uv": [11.25, 0, 16, 6.25], "texture": "#1"},
+				"south": {"uv": [16, 0, 11.25, 6.25], "texture": "#1"}
+			}
+		}
+	]
+}

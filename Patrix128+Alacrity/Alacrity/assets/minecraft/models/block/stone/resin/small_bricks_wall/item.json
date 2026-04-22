@@ -1,0 +1,8 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+    "parent": "minecraft:block/templates/bricks_wall/item",
+	"textures": {
+        "parts": "block/stone/resin/small_bricks_wall",
+        "side": "block/stone/resin/small_bricks"
+	}
+}

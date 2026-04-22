@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/decoration/candles/four_candle_template_1",
+  "textures": {
+    "main": "minecraft:block/decoration/candles/cyan",
+    "particle": "minecraft:block/decoration/candles/cyan"
+  }
+}

@@ -1,0 +1,43 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by Satellence with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [48, 48],
+	"textures": {
+		"0": "block/nature/leaves/azalea_leaves",
+		"1": "block/azalea_leaves",
+		"particle": "block/azalea_leaves"
+	},
+	"elements": [
+		{
+			"from": [-4.8, 14.025, -2.45],
+			"to": [19.2, 14.025, 21.55],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8.2, 14.025, 9.55]},
+			"faces": {
+				"up": {"uv": [8, 8, 16, 0], "rotation": 180, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [8, 8, 16, 0], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-3.8, 3.025, -3.25],
+			"to": [20.2, 3.025, 20.75],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8.2, 6.025, 9.75]},
+			"faces": {
+				"up": {"uv": [0, 8, 8, 0], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 8, 8, 0], "rotation": 270, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}

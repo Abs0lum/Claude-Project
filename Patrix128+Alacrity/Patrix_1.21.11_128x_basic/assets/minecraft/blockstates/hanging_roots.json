@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/hanging_roots" },
+            { "model": "block/hanging_roots", "y": 90 },
+            { "model": "block/hanging_roots", "y": 180 },
+            { "model": "block/hanging_roots", "y": 270 }
+        ]
+    }
+}

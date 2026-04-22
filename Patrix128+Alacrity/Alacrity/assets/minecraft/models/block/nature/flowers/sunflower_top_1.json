@@ -1,0 +1,40 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+        "0": "block/nature/flowers/sunflower",
+        "particle": "block/nature/flowers/sunflower"
+	},
+	"elements": [
+		{
+			"name": "leaf",
+			"from": [2.725, 15.325, 3.325],
+			"to": [12.725, 15.325, 13.325],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8.225, 15.325, 6.325]},
+			"faces": {
+				"up": {"uv": [6, 0, 11, 5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [11, 0, 6, 5], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [4.475, 15.2, 5.075],
+			"to": [9.975, 15.2, 11.075],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8.225, 15.325, 6.325]},
+			"faces": {
+				"up": {"uv": [6.25, 5.5, 9.25, 8.25], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [9.25, 5.5, 6.25, 8.25], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "leaf",
+			"from": [4.32795, 11.81836, 8.075],
+			"to": [7.32795, 17.31836, 8.075],
+			"rotation": {"angle": 45, "axis": "z", "origin": [6.80295, 15.81836, 8.075]},
+			"faces": {
+				"north": {"uv": [5.75, 8.75, 4.25, 11.5], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [4.25, 8.75, 5.75, 11.5], "rotation": 180, "texture": "#0"}
+			}
+		}
+	]
+}

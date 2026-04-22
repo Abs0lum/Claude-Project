@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/stone/deepslate/infested_1" },
+      { "model": "minecraft:block/stone/deepslate/infested_2" },
+      { "model": "minecraft:block/stone/deepslate/infested_3" },
+      { "model": "minecraft:block/stone/deepslate/infested_4" }
+    ]
+  }
+}

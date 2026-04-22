@@ -1,0 +1,56 @@
+{
+    "multipart": [
+        {   "when": { "facing": "up" },
+            "apply": [
+                {"model": "block/small_amethyst_bud"},
+                {"model": "block/small_amethyst_bud", "y": 90},
+                {"model": "block/small_amethyst_bud", "y": 180},
+                {"model": "block/small_amethyst_bud", "y": 270},
+                {"model": "block/small_amethyst_bud2"},
+                {"model": "block/small_amethyst_bud2", "y": 90},
+                {"model": "block/small_amethyst_bud2", "y": 180},
+                {"model": "block/small_amethyst_bud2", "y": 270}
+            ]
+        },
+        {   "when": { "facing": "down" },
+            "apply": [
+                {"model": "block/small_amethyst_bud", "x": 180},
+                {"model": "block/small_amethyst_bud", "x": 180, "y": 180},
+                {"model": "block/small_amethyst_bud2", "x": 180},
+                {"model": "block/small_amethyst_bud2", "x": 180, "y": 180}
+            ]
+        },
+        {   "when": { "facing": "north" },
+            "apply": [
+                {"model": "block/small_amethyst_bud", "x": 90},
+                {"model": "block/small_amethyst_bud", "x": 270, "y": 180},
+                {"model": "block/small_amethyst_bud2", "x": 90},
+                {"model": "block/small_amethyst_bud2", "x": 270, "y": 180}
+            ]
+        },
+        {   "when": { "facing": "south" },
+            "apply": [
+                {"model": "block/small_amethyst_bud", "x": 90, "y": 180},
+                {"model": "block/small_amethyst_bud", "x": 270},
+                {"model": "block/small_amethyst_bud2", "x": 90, "y": 180},
+                {"model": "block/small_amethyst_bud2", "x": 270}
+            ]
+        },
+        {   "when": { "facing": "east" },
+            "apply": [
+                {"model": "block/small_amethyst_bud", "x": 90, "y": 90},
+                {"model": "block/small_amethyst_bud", "x": 270, "y": 270},
+                {"model": "block/small_amethyst_bud2", "x": 90, "y": 90},
+                {"model": "block/small_amethyst_bud2", "x": 270, "y": 270}
+            ]
+        },
+        {   "when": { "facing": "west" },
+            "apply": [
+                {"model": "block/small_amethyst_bud", "x": 90, "y": 270},
+                {"model": "block/small_amethyst_bud", "x": 270, "y": 90},
+                {"model": "block/small_amethyst_bud2", "x": 90, "y": 270},
+                {"model": "block/small_amethyst_bud2", "x": 270, "y": 90}
+            ]
+        }
+    ]
+}

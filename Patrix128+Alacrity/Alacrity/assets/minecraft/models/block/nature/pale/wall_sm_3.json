@@ -1,0 +1,61 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+        "1": "block/nature/pale_moss/moss_side",
+        "particle": "block/nature/pale_moss/moss_particle"
+	},
+	"elements": [
+		{
+			"name": "side_moss",
+			"from": [0, 0, 0.1],
+			"to": [16, 16, 0.1],
+			"rotation": {"angle": 0, "axis": "z", "origin": [7.9, 0.501, 0.1]},
+			"faces": {
+				"north": {"uv": [12, 4, 8, 0], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [8, 4, 12, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [13.5, 3.5, 0.1],
+			"to": [16.5, 8.5, 0.1],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [14.9, 3.501, 0.1]},
+			"faces": {
+				"north": {"uv": [2, 1.25, 1.25, 0], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [1.25, 1.25, 2, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [6, 3.5, 0.1],
+			"to": [9, 8.5, 0.1],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.4, 3.501, 0.1]},
+			"faces": {
+				"north": {"uv": [14.375, 1.875, 15.125, 0.625], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [15.125, 1.875, 14.375, 0.625], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [8, 6.5, 0.1],
+			"to": [11, 11.5, 0.1],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [9.4, 6.501, 0.1]},
+			"faces": {
+				"north": {"uv": [3.625, 1.25, 2.875, 0], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [2.875, 1.25, 3.625, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"name": "side_moss",
+			"from": [8.5, 0.5, 0.1],
+			"to": [11.5, 5.5, 0.1],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [9.9, 0.501, 0.1]},
+			"faces": {
+				"north": {"uv": [6.625, 1.75, 5.875, 0.5], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"south": {"uv": [5.875, 1.75, 6.625, 0.5], "rotation": 180, "texture": "#1", "tintindex": 0}
+			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "block/tpl_core/stairs_s/cornice_str",
+	"textures": {
+		"all": "block/stone/quartz/smooth_1",
+		"particle": "block/stone/quartz/particle"
+	}
+}

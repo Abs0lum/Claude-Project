@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "minecraft:block/nature/grass/grass_block_1",
+    "tints": [{"type": "minecraft:grass","downfall": 1.0,"temperature": 0.5}]
+  }
+}

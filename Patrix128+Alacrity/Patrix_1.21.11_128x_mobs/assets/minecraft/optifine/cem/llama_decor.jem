@@ -1,0 +1,202 @@
+{
+	"credit": "Created by FreshLX for Patrix",
+	"textureSize": [128, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -17, 6],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Patrix",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				},
+				{
+					"id": "head2",
+					"invertAxis": "xy",
+					"translate": [0, 17, -8],
+					"boxes": [
+						{
+							"coordinates": [-3.5, -2, -5, 7, 18, 7],
+							"uvNorth": [7, 17, 14, 35],
+							"uvEast": [0, 17, 7, 35],
+							"uvSouth": [21, 17, 28, 35],
+							"uvWest": [14, 17, 21, 35],
+							"uvUp": [14, 17, 7, 10],
+							"uvDown": [21, 10, 14, 17],
+							"sizeAdd": 0.5
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.hy": "clamp(head_yaw,-90,90)",
+					"var.child_scale": "if(is_child, 1, 0)",
+					"var.r": "random(id)*pi*4",
+					"var.ls": "limb_swing*if(is_child, 0.7, 1)",
+					"var.lsj": "limb_swing/if(is_child, 2, 1.3)",
+					"var.b": "var.r +age/if(is_child, 40, 75)*pi*2",
+					"var.swim": "var.r +limb_swing/6 +age/if(is_child, 13, 18)*pi*2",
+					"var.run": "clamp(if(limb_speed >= if(is_child, 0.4, 0.7), min(20, var.run +0.1 *frame_time*20), max(0, var.run -0.1 *frame_time*20)), 0, if(is_child, 1.3, 1))",
+					"var.walk": "clamp(1-var.run, 0, 1)"
+				},
+				{
+					"head2.rx": "-head.rx +torad(head_pitch)/1.5 -if(!is_on_ground&&is_in_water, torad(-5) +sin(var.swim)/10, cos(var.ls*2)/14*clamp(limb_speed*2, 0, 1)*var.walk -(-cos(var.lsj)/12 -torad(5))*limb_speed*var.run ) +sin(var.b+torad(90))/70 +(torad(10)*limb_speed)",
+					"head2.rz": "-head.rz -sin(torad( 0)+var.ls)/20*clamp(limb_speed*2, 0, 1)*var.walk",
+					"head2.ry": "-head.ry +sin(torad(90)+var.ls)/16*clamp(limb_speed*2, 0, 1)*var.walk +torad(var.hy)",
+					"head2.tx": "clamp(-torad(var.hy)*2*if(is_ridden, 0, clamp(1-limb_speed*4, 0, 1)), torad(-2), torad(2))",
+					"head2.ty": "-17.5 +if(!is_on_ground&&is_in_water, if(is_ridden, 0, 4) +sin(var.swim), -sin(torad(-45)+var.ls*2)*clamp(limb_speed*2, 0, 1)*var.walk -(cos(+var.lsj -sin(var.lsj)/2)*3 +2)*limb_speed*var.run ) -sin(var.b+torad(90))/4",
+					"head2.tz": "-6.5 +if(!is_on_ground&&is_in_water, -sin(torad(-45)+var.swim)/2, (sin(-pi/4 +var.lsj -cos(var.lsj)/3) -1)*limb_speed*var.run)",
+					"body_rotation.rx": "if(!is_on_ground&&is_in_water, torad(-10) +sin(var.swim)/10, -sin(var.ls*2)/10*clamp(limb_speed*2, 0, 1)*var.walk +(-sin(var.lsj)/8 +torad(5))*limb_speed*var.run ) +sin(var.b-torad(45))/60",
+					"body_rotation.ry": "sin(var.ls)/20*clamp(limb_speed*2, 0, 1)*var.walk",
+					"body_rotation.rz": "clamp(-torad(var.hy)/7*if(is_ridden, 0, clamp(1-limb_speed*4, 0, 1)), torad(-5), torad(5))",
+					"body_rotation.tx": "0",
+					"body_rotation.ty": "if(!is_on_ground&&is_in_water, sin(torad(-45)+var.swim)/2, sin(torad(-135)+var.ls*2)/4*clamp(limb_speed*2, 0, 1)*var.walk +(sin(-pi/4 +var.lsj) -1)*limb_speed*var.run ) -18.5",
+					"body_rotation.tz": "if(!is_on_ground&&is_in_water, if(is_ridden, 0, -5), if(is_ridden, 1, -1)*limb_speed +cos(var.ls)/2*clamp(limb_speed*2, 0, 1)*var.walk +(cos(var.lsj)*3 +3)*limb_speed*var.run ) +2.2 +sin(var.b)/6",
+					"render.leash_offset_x": "-(head2.tx                    )/16/if(is_child, 2, 1)",
+					"render.leash_offset_y": "-(head2.ty +if(is_child, 8, 0))/16/if(is_child, 2, 1)",
+					"render.leash_offset_z": "-(head2.tz -1                 )/16/if(is_child, 2, 1)"
+				},
+				{
+					"leg1.rx": " sin(var.b)/60 +if(!is_on_ground&&is_in_water,  sin(var.swim)/2, ((asin(sin(torad(-90+20)+var.ls))/4 +torad( 10))*clamp(limb_speed*8, 0.4, 1) +clamp(sin(torad( 0 +20)+var.ls)/3, torad(-30), 0)*if(is_child, 1.5, 1)*clamp(limb_speed*8, 0, 1))*var.walk +(-sin(pi/4 +var.lsj -sin(var.lsj)/3)/3 +torad(10) )*limb_speed*var.run ) -torad(5)",
+					"leg2.rx": " sin(var.b)/60 +if(!is_on_ground&&is_in_water, -sin(var.swim)/2, ((asin(sin(torad( 90+20)+var.ls))/4 +torad( 10))*clamp(limb_speed*8, 0.4, 1) +clamp(sin(torad(180+20)+var.ls)/3, torad(-30), 0)*if(is_child, 1.5, 1)*clamp(limb_speed*8, 0, 1))*var.walk +(-sin(      var.lsj -sin(var.lsj)/3)/3 +torad(10) )*limb_speed*var.run ) -torad(5)",
+					"leg3.rx": "-sin(var.b)/60 +if(!is_on_ground&&is_in_water, -sin(var.swim)/2, ((asin(sin(torad(180   )+var.ls))/4 +torad(-10))*clamp(limb_speed*8, 0.4, 1) +clamp(sin(torad( 90   )+var.ls)/3, 0, torad( 30))*if(is_child, 1.5, 1)*clamp(limb_speed*8, 0, 1))*var.walk +(-sin(pi/4 +var.lsj -sin(var.lsj)/3)/3 +torad( 5) )*limb_speed*var.run ) +torad(5)",
+					"leg4.rx": "-sin(var.b)/60 +if(!is_on_ground&&is_in_water,  sin(var.swim)/2, ((asin(sin(torad( 0    )+var.ls))/4 +torad(-10))*clamp(limb_speed*8, 0.4, 1) +clamp(sin(torad(-90   )+var.ls)/3, 0, torad( 30))*if(is_child, 1.5, 1)*clamp(limb_speed*8, 0, 1))*var.walk +(-sin(      var.lsj -sin(var.lsj)/3)/3 +torad( 5) )*limb_speed*var.run ) +torad(5)",
+					"leg1.ry": "torad(-5 )*clamp(1-limb_speed*8, 0, 1)",
+					"leg2.ry": "torad( 5 )*clamp(1-limb_speed*8, 0, 1)",
+					"leg3.ry": "torad( 5 )*clamp(1-limb_speed*8, 0, 1)",
+					"leg4.ry": "torad(-5 )*clamp(1-limb_speed*8, 0, 1)",
+					"leg1.rz": "if(!is_on_ground&&is_in_water, torad( 8), 0) +if(is_child, -torad(5), 0)",
+					"leg2.rz": "if(!is_on_ground&&is_in_water, torad(-8), 0) +if(is_child,  torad(5), 0)",
+					"leg3.rz": "if(!is_on_ground&&is_in_water, torad( 8), 0) +if(is_child, -torad(5), 0)",
+					"leg4.rz": "if(!is_on_ground&&is_in_water, torad(-8), 0) +if(is_child,  torad(5), 0)",
+					"leg1.tx": "(-3.2 +if(!is_on_ground&&is_in_water, -1, 0) ) * (1-0.5*var.child_scale)",
+					"leg2.tx": "( 3.2 +if(!is_on_ground&&is_in_water,  1, 0) ) * (1-0.5*var.child_scale)",
+					"leg3.tx": "(-3   +if(!is_on_ground&&is_in_water, -2, 0) ) * (1-0.5*var.child_scale)",
+					"leg4.tx": "( 3   +if(!is_on_ground&&is_in_water,  2, 0) ) * (1-0.5*var.child_scale)",
+					"leg1.ty": "( if(is_child, 25, 24) +if(!is_on_ground&&is_in_water, if(is_ridden, 0, 5) +sin(torad( 90)+var.swim)*1.5, clamp( (-1*limb_speed +sin(torad( 0 +20)+var.ls)*if(is_child, 3, 2)*clamp(limb_speed*8, 0, 1))*var.walk +(-cos(pi/4 +var.lsj)*3 -2.5)*limb_speed*var.run, -6, 0)) ) * (1-0.5*var.child_scale) +if(is_child, 11.5, 0)*var.child_scale",
+					"leg2.ty": "( if(is_child, 25, 24) +if(!is_on_ground&&is_in_water, if(is_ridden, 0, 5) +sin(torad(-90)+var.swim)*1.5, clamp( (-1*limb_speed +sin(torad(180+20)+var.ls)*if(is_child, 3, 2)*clamp(limb_speed*8, 0, 1))*var.walk +(-cos(      var.lsj)*3 -2.5)*limb_speed*var.run, -6, 0)) ) * (1-0.5*var.child_scale) +if(is_child, 11.5, 0)*var.child_scale",
+					"leg3.ty": "( if(is_child, 25, 24) +if(!is_on_ground&&is_in_water, if(is_ridden, 0, 3) +sin(torad(-90)+var.swim)*1.5, clamp( (-1*limb_speed +sin(torad(-90   )+var.ls)*if(is_child, 3, 2)*clamp(limb_speed*8, 0, 1))*var.walk +(-cos(pi/4 +var.lsj)*3 -2.5)*limb_speed*var.run, -6, 0)) ) * (1-0.5*var.child_scale) +if(is_child, 11.5, 0)*var.child_scale",
+					"leg4.ty": "( if(is_child, 25, 24) +if(!is_on_ground&&is_in_water, if(is_ridden, 0, 3) +sin(torad( 90)+var.swim)*1.5, clamp( (-1*limb_speed +sin(torad( 90   )+var.ls)*if(is_child, 3, 2)*clamp(limb_speed*8, 0, 1))*var.walk +(-cos(      var.lsj)*3 -2.5)*limb_speed*var.run, -6, 0)) ) * (1-0.5*var.child_scale) +if(is_child, 11.5, 0)*var.child_scale",
+					"leg1.tz": "( 6 +if(!is_on_ground&&is_in_water,  sin(var.swim)*6, asin(sin(torad(-90+20) +var.ls))*4*clamp(limb_speed*8, 0.4, 1)*var.walk +(-sin(pi/4 +var.lsj -sin(var.lsj)/2)*5 +1)*limb_speed*var.run ) ) * (1-0.5*var.child_scale)",
+					"leg2.tz": "( 6 +if(!is_on_ground&&is_in_water, -sin(var.swim)*6, asin(sin(torad( 90+20) +var.ls))*4*clamp(limb_speed*8, 0.4, 1)*var.walk +(-sin(      var.lsj -sin(var.lsj)/2)*5 +1)*limb_speed*var.run ) ) * (1-0.5*var.child_scale)",
+					"leg3.tz": "(-4 +if(!is_on_ground&&is_in_water, -sin(var.swim)*6, asin(sin(torad(180   ) +var.ls))*4*clamp(limb_speed*8, 0.4, 1)*var.walk +(-sin(pi/4 +var.lsj -sin(var.lsj)/2)*5 +1)*limb_speed*var.run ) ) * (1-0.5*var.child_scale)",
+					"leg4.tz": "(-4 +if(!is_on_ground&&is_in_water,  sin(var.swim)*6, asin(sin(torad( 0    ) +var.ls))*4*clamp(limb_speed*8, 0.4, 1)*var.walk +(-sin(      var.lsj -sin(var.lsj)/2)*5 +1)*limb_speed*var.run ) ) * (1-0.5*var.child_scale)",
+					"leg1.sy": "if(is_child, 0.75 -0.3*var.child_scale, 1)",
+					"leg2.sy": "if(is_child, 0.75 -0.3*var.child_scale, 1)",
+					"leg3.sy": "if(is_child, 0.75 -0.3*var.child_scale, 1)",
+					"leg4.sy": "if(is_child, 0.75 -0.3*var.child_scale, 1)"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -19, -2],
+			"submodels": [
+				{
+					"id": "body_rotation",
+					"invertAxis": "xy",
+					"translate": [0, 19, 2],
+					"rotate": [-90, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [-6, -8, -8, 12, 18, 11],
+							"uvNorth": [41, 11, 53, 29],
+							"uvEast": [30, 11, 41, 29],
+							"uvSouth": [64, 11, 76, 29],
+							"uvWest": [53, 11, 64, 29],
+							"uvUp": [53, 11, 41, 0],
+							"uvDown": [65, 0, 53, 11],
+							"sizeAdd": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-3.5, 0, -6],
+			"boxes": [
+				{
+					"coordinates": [1.5, 0, 6, 3, 7, 3],
+					"uvNorth": [24, 52, 21, 59],
+					"uvEast": [27, 52, 24, 59],
+					"uvSouth": [30, 52, 27, 59],
+					"uvWest": [21, 52, 18, 59],
+					"uvDown": [24, 49, 27, 52],
+					"sizeAdd": 0.5
+				}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [3.5, 0, -6],
+			"boxes": [
+				{
+					"coordinates": [-4.5, 0, 6, 3, 7, 3],
+					"uvNorth": [21, 52, 24, 59],
+					"uvEast": [18, 52, 21, 59],
+					"uvSouth": [27, 52, 30, 59],
+					"uvWest": [24, 52, 27, 59],
+					"uvDown": [27, 49, 24, 52],
+					"sizeAdd": 0.5
+				}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-3.5, 0, 5],
+			"boxes": [
+				{
+					"coordinates": [1.5, 0, -6, 3, 7, 3],
+					"uvNorth": [6, 52, 3, 59],
+					"uvEast": [9, 52, 6, 59],
+					"uvSouth": [12, 52, 9, 59],
+					"uvWest": [3, 52, 0, 59],
+					"uvDown": [6, 49, 9, 52],
+					"sizeAdd": 0.5
+				}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [3.5, 0, 5],
+			"boxes": [
+				{
+					"coordinates": [-4.5, 0, -6, 3, 7, 3],
+					"uvNorth": [3, 52, 6, 59],
+					"uvEast": [0, 52, 3, 59],
+					"uvSouth": [9, 52, 12, 59],
+					"uvWest": [6, 52, 9, 59],
+					"uvDown": [9, 49, 6, 52],
+					"sizeAdd": 0.5
+				}
+			]
+		},
+		{
+			"part": "chest_left",
+			"id": "chest_left",
+			"invertAxis": "xy",
+			"translate": [0, -19, -2]
+		},
+		{
+			"part": "chest_right",
+			"id": "chest_right",
+			"invertAxis": "xy",
+			"translate": [0, -19, -2]
+		}
+	]
+}

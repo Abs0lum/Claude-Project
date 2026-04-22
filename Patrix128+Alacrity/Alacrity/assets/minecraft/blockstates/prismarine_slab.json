@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=bottom": [
+      { "model": "minecraft:block/stone/prismarine/slab/slab_1" },
+      { "model": "minecraft:block/stone/prismarine/slab/slab_2" },
+      { "model": "minecraft:block/stone/prismarine/slab/slab_3" },
+      { "model": "minecraft:block/stone/prismarine/slab/slab_4" }
+    ],
+    "type=double": [
+      { "model": "minecraft:block/stone/prismarine/slab/double_1" },
+      { "model": "minecraft:block/stone/prismarine/slab/double_2" },
+      { "model": "minecraft:block/stone/prismarine/slab/double_3" },
+      { "model": "minecraft:block/stone/prismarine/slab/double_4" }
+    ],
+    "type=top": [
+      { "model": "minecraft:block/stone/prismarine/slab/top_1" },
+      { "model": "minecraft:block/stone/prismarine/slab/top_2" },
+      { "model": "minecraft:block/stone/prismarine/slab/top_3" },
+      { "model": "minecraft:block/stone/prismarine/slab/top_4" }
+    ]
+  }
+}

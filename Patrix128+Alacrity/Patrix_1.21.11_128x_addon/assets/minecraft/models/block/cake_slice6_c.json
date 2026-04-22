@@ -1,0 +1,22 @@
+{
+    "textures": {
+        "particle": "block/extra/cake_side_c",
+        "bottom": "block/extra/cake_bottom_c",
+        "top": "block/extra/cake_top_c",
+        "side": "block/extra/cake_side_c",
+        "inside": "block/extra/cake_inner_c"
+    },
+    "elements": [
+        {   "from": [ 13, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#inside" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.ft_falling_tree.setup": {
+      "loop": true,
+      "bones": {
+        "canopy": {
+          "position": [0, "q.property('ft:trunk_height') * 16", 0]
+        }
+      }
+    },
+    "animation.ft_falling_tree.fall": {
+      "loop": false,
+      "animation_length": 1.8,
+      "bones": {
+        "root": {
+          "rotation": {
+            "0.0":  { "pre": [0, 0, 0],
+                      "post": [0, 0, 0],
+                      "lerp_mode": "linear" },
+            "0.35": { "pre": [0, 0, "q.property('ft:fall_angle') * 0.044"],
+                      "post": [0, 0, "q.property('ft:fall_angle') * 0.044"],
+                      "lerp_mode": "linear" },
+            "0.9":  { "pre": [0, 0, "q.property('ft:fall_angle') * 0.333"],
+                      "post": [0, 0, "q.property('ft:fall_angle') * 0.333"],
+                      "lerp_mode": "linear" },
+            "1.4":  { "pre": [0, 0, "q.property('ft:fall_angle') * 0.867"],
+                      "post": [0, 0, "q.property('ft:fall_angle') * 0.867"],
+                      "lerp_mode": "linear" },
+            "1.65": { "pre": [0, 0, "q.property('ft:fall_angle') * 1.033"],
+                      "post": [0, 0, "q.property('ft:fall_angle') * 1.033"],
+                      "lerp_mode": "linear" },
+            "1.72": { "pre": [0, 0, "q.property('ft:fall_angle') * 0.956"],
+                      "post": [0, 0, "q.property('ft:fall_angle') * 0.956"],
+                      "lerp_mode": "linear" },
+            "1.8":  { "pre": [0, 0, "q.property('ft:fall_angle')"],
+                      "post": [0, 0, "q.property('ft:fall_angle')"],
+                      "lerp_mode": "linear" }
+          }
+        }
+      }
+    },
+    "animation.ft_falling_tree.rest": {
+      "loop": true,
+      "animation_length": 0.1,
+      "bones": {
+        "root": {
+          "rotation": [0, 0, "q.property('ft:fall_angle')"]
+        }
+      }
+    }
+  }
+}

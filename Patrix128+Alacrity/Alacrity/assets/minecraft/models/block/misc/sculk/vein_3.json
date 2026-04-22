@@ -1,0 +1,18 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "block/misc/sculk/vein",
+		"particle": "block/misc/sculk/sculk_p"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0.1],
+			"to": [16, 16, 0.1],
+			"faces": {
+				"north": {"uv": [8, 8, 0, 16], "texture": "#2", "cullface": "north"},
+				"south": {"uv": [0, 8, 8, 16], "texture": "#2"}
+			}
+		}
+	]
+}

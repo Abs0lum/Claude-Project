@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east":  { "model": "minecraft:block/interactive/anvil_1", "y": 270 },
+    "facing=north": { "model": "minecraft:block/interactive/anvil_1", "y": 180 },
+    "facing=south": { "model": "minecraft:block/interactive/anvil_1", "y": 0   },
+    "facing=west":  { "model": "minecraft:block/interactive/anvil_1", "y": 90  }
+  }
+}

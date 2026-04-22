@@ -1,0 +1,65 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"textures": {
+		"0": "block/decoration/cobweb",
+		"particle": "block/decoration/cobweb"
+	},
+	"elements": [
+		{
+			"from": [8, -4, -4],
+			"to": [8, 20, 20],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [7.5, 8, 7.5]},
+			"faces": {
+				"east": {"uv": [8, 0, 0, 8], "texture": "#0"},
+				"west": {"uv": [0, 0, 8, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-4, 8, -4],
+			"to": [20, 8, 20],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"up": {"uv": [16, 0, 8, 8], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-4, 8, -4],
+			"to": [20, 8, 20],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"up": {"uv": [8, 0, 16, 8], "texture": "#0"},
+				"down": {"uv": [16, 0, 8, 8], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -94, 0],
+			"translation": [0, 0, 2],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -12, 0],
+			"translation": [0, 0, 2],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"gui": {
+			"rotation": [45, 45, 0],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"fixed": {
+			"rotation": [45, 0, 0],
+			"translation": [0, 0, -0.5]
+		}
+	}
+}

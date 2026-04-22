@@ -1,0 +1,72 @@
+{
+  "mappings": {
+    "de/lolhens/minecraft/fluidphysics/mixin/BiomeColorsMixin": {
+      "getAverageWaterColor": "Lnet/minecraft/world/biome/BiomeColors;func_228363_c_(Lnet/minecraft/world/IBlockDisplayReader;Lnet/minecraft/util/math/BlockPos;)I"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/AbstractBlockStateMixin": {
+      "getPistonPushReaction": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_185905_o()Lnet/minecraft/block/material/PushReaction;"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/FlowableFluidMixin": {
+      "canSpreadTo": "Lnet/minecraft/fluid/FlowingFluid;func_205570_b(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/fluid/FluidState;Lnet/minecraft/fluid/Fluid;)Z",
+      "getNewLiquid": "Lnet/minecraft/fluid/FlowingFluid;func_205576_a(Lnet/minecraft/world/IWorldReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)Lnet/minecraft/fluid/FluidState;",
+      "spreadTo": "Lnet/minecraft/fluid/FlowingFluid;func_205574_a(Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/fluid/FluidState;)V",
+      "isWaterHole": "Lnet/minecraft/fluid/FlowingFluid;func_211759_a(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/fluid/Fluid;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)Z"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/FlowableFluidAccessor": {
+      "beforeDestroyingBlock": "func_205580_a(Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)V"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/SpringFeatureMixin": {
+      "place": "Lnet/minecraft/world/gen/feature/SpringFeature;func_241855_a(Lnet/minecraft/world/ISeedReader;Lnet/minecraft/world/gen/ChunkGenerator;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/gen/feature/LiquidsConfig;)Z"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/WaterFluidMixin": {
+      "canConvertToSource": "Lnet/minecraft/fluid/WaterFluid;func_205579_d()Z"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/PistonBlockMixin": {
+      "moveBlocks": "Lnet/minecraft/block/PistonBlock;func_176319_a(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/Direction;Z)Z",
+      "isPushable": "Lnet/minecraft/block/PistonBlock;func_185646_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/Direction;ZLnet/minecraft/util/Direction;)Z"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/ThreadedAnvilChunkStorageAccessor": {
+      "getChunks": "func_223491_f()Ljava/lang/Iterable;"
+    },
+    "de/lolhens/minecraft/fluidphysics/mixin/TrapdoorBlockMixin": {
+      "use": "Lnet/minecraft/block/TrapDoorBlock;func_225533_a_(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType;",
+      "neighborChanged": "Lnet/minecraft/block/TrapDoorBlock;func_220069_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;Lnet/minecraft/util/math/BlockPos;Z)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "de/lolhens/minecraft/fluidphysics/mixin/BiomeColorsMixin": {
+        "getAverageWaterColor": "Lnet/minecraft/world/biome/BiomeColors;func_228363_c_(Lnet/minecraft/world/IBlockDisplayReader;Lnet/minecraft/util/math/BlockPos;)I"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/AbstractBlockStateMixin": {
+        "getPistonPushReaction": "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;func_185905_o()Lnet/minecraft/block/material/PushReaction;"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/FlowableFluidMixin": {
+        "canSpreadTo": "Lnet/minecraft/fluid/FlowingFluid;func_205570_b(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/fluid/FluidState;Lnet/minecraft/fluid/Fluid;)Z",
+        "getNewLiquid": "Lnet/minecraft/fluid/FlowingFluid;func_205576_a(Lnet/minecraft/world/IWorldReader;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)Lnet/minecraft/fluid/FluidState;",
+        "spreadTo": "Lnet/minecraft/fluid/FlowingFluid;func_205574_a(Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/Direction;Lnet/minecraft/fluid/FluidState;)V",
+        "isWaterHole": "Lnet/minecraft/fluid/FlowingFluid;func_211759_a(Lnet/minecraft/world/IBlockReader;Lnet/minecraft/fluid/Fluid;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)Z"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/FlowableFluidAccessor": {
+        "beforeDestroyingBlock": "func_205580_a(Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)V"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/SpringFeatureMixin": {
+        "place": "Lnet/minecraft/world/gen/feature/SpringFeature;func_241855_a(Lnet/minecraft/world/ISeedReader;Lnet/minecraft/world/gen/ChunkGenerator;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/gen/feature/LiquidsConfig;)Z"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/WaterFluidMixin": {
+        "canConvertToSource": "Lnet/minecraft/fluid/WaterFluid;func_205579_d()Z"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/PistonBlockMixin": {
+        "moveBlocks": "Lnet/minecraft/block/PistonBlock;func_176319_a(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/Direction;Z)Z",
+        "isPushable": "Lnet/minecraft/block/PistonBlock;func_185646_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/Direction;ZLnet/minecraft/util/Direction;)Z"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/ThreadedAnvilChunkStorageAccessor": {
+        "getChunks": "func_223491_f()Ljava/lang/Iterable;"
+      },
+      "de/lolhens/minecraft/fluidphysics/mixin/TrapdoorBlockMixin": {
+        "use": "Lnet/minecraft/block/TrapDoorBlock;func_225533_a_(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/util/math/BlockRayTraceResult;)Lnet/minecraft/util/ActionResultType;",
+        "neighborChanged": "Lnet/minecraft/block/TrapDoorBlock;func_220069_a(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;Lnet/minecraft/util/math/BlockPos;Z)V"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"credit": "Made by Satellence with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "block/lava_still",
+		"particle": "block/lava_still"
+	},
+	"elements": [
+		{
+			"name": "water",
+			"from": [2, 13, 2],
+			"to": [14, 15, 14],
+			"faces": {
+				"up": {"uv": [2, 2, 14, 14], "texture": "#1", "cullface": "up"}
+			}
+		}
+	]
+}
