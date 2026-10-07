@@ -17,7 +17,7 @@ cd "$TMP"
 fail=0
 for f in *.js; do node --check "$f" || { echo "SYNTAX FAIL $f"; fail=1; }; done
 for t in tests/test_*.mjs; do
-  line="$(timeout 300 node "$t" 2>&1 | grep -E 'passed|pass,|Error|FAIL' | tail -1)"
+  line="$(timeout 300 node "$t" 2>&1 | grep -E 'passed|pass,|[0-9]+/[0-9]+ PASS|Error|FAIL' | tail -1)"
   echo "$(basename "$t" .mjs): $line"
 done
 echo "scratch copy: $TMP"
