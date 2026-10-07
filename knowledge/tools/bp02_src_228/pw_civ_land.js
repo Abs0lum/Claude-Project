@@ -395,3 +395,155 @@ export function slotVeto(body, boxes, square) {
     return true;
   };
 }
+
+// ------------------------------------------------------------------------------------------------ THE WIDE SURVEY (1.3.231, CIV-LAND)
+// His 00:23 CT 10-07: "survey a MUCH larger area and plan for elevation". The founding reads a 160 x 160 field (the clock's
+// SITE_R = 80) around the founding point; everything a town plans beyond it — benches 70..110 blocks past its streets, the
+// bands up a hill, its roads — was read live, cell by cell, and only where a chunk happened to be loaded (his survey reply:
+// "2173 of 2401 columns were not loaded"). The WIDE SURVEY grows the field to WIDE.R (192: 384 x 384) — and further as the
+// boundary stones move out (border + WIDE.margin, at most WIDE.Rmax) — after the founding, in the background: TILES of
+// 128 x 128 (8 x 8 chunks, chunk-aligned; one ticking area of <= 10 x 10 chunks each, the engine's cap) nearest first. A
+// tile already loaded is read at once; a sleeping one is held awake by ONE ticking area at a time, read when its chunks
+// load, then released. The founding's own field (the "before" ground the planners compare against) is never overwritten.
+export const WIDE = { R: 192, Rmax: 320, margin: 96, tile: 128, waitPolls: 6, holdTries: 12, yieldEvery: 256 };
+
+/** the radius the wide survey should cover for a boundary ring of radius borderR (16-block steps, R .. Rmax) */
+export function wideRadius(borderR = 0) {
+  return Math.min(WIDE.Rmax, Math.max(WIDE.R, Math.ceil((borderR + WIDE.margin) / 16) * 16));
+}
+
+/** the tiles [x0, z0, x1, z1] (inclusive, chunk-aligned, tile x tile) covering the square [cx - R, cx + R) x [cz - R, cz + R),
+ *  without those wholly inside `have` (a site already read: { x0, z0, w, d }), nearest the centre first */
+export function surveyTiles(cx, cz, R, tile = WIDE.tile, have = null) {
+  const a = (v) => Math.floor(v / tile) * tile;
+  const out = [];
+  for (let x = a(cx - R); x < cx + R; x += tile) for (let z = a(cz - R); z < cz + R; z += tile) {
+    const t = [x, z, x + tile - 1, z + tile - 1];
+    if (have && t[0] >= have.x0 && t[1] >= have.z0 && t[2] < have.x0 + have.w && t[3] < have.z0 + have.d) continue;
+    out.push(t);
+  }
+  const d2 = (t) => ((t[0] + t[2]) / 2 - cx) ** 2 + ((t[1] + t[3]) / 2 - cz) ** 2;
+  out.sort((p, q) => d2(p) - d2(q) || p[0] - q[0] || p[1] - q[1]);
+  return out;
+}
+
+/** a new field of radius R around (cx, cz) holding every known cell of `core` (and of `wide`, an earlier wide field) */
+export function growSite(core, cx, cz, R, wide = null) {
+  const site = makeSite(cx - R, cz - R, 2 * R, 2 * R);
+  for (const src of [wide, core]) {                              // the core last: its "before" ground always wins
+    if (!src) continue;
+    const xa = Math.max(site.x0, src.x0), xb = Math.min(site.x0 + site.w, src.x0 + src.w);
+    const za = Math.max(site.z0, src.z0), zb = Math.min(site.z0 + site.d, src.z0 + src.d);
+    for (let z = za; z < zb; z++) for (let x = xa; x < xb; x++) {
+      const i = src.idx(x, z);
+      if (src.h[i] < 0) continue;
+      const j = site.idx(x, z);
+      site.h[j] = src.h[i]; site.water[j] = src.water[i];
+    }
+  }
+  return site;
+}
+
+/** the survey's progress: { site, core, tiles, i, held, read, asleep, kept, skipped: [tile...], tries } */
+export function wideProgress(core, cx, cz, R, wide = null) {
+  const site = growSite(core, cx, cz, R, wide);
+  // a tile is surveyed while any of its columns inside the field is still unknown (a re-run reads only the tiles that never
+  // woke, and the columns the founding could not read)
+  const unknownIn = (t) => {
+    for (let x = Math.max(t[0], site.x0); x <= Math.min(t[2], site.x0 + site.w - 1); x++)
+      for (let z = Math.max(t[1], site.z0); z <= Math.min(t[3], site.z0 + site.d - 1); z++) if (site.h[site.idx(x, z)] < 0) return true;
+    return false;
+  };
+  const tiles = surveyTiles(cx, cz, R, WIDE.tile, null).filter(unknownIn);
+  return { cx, cz, R, site, core, tiles, i: 0, held: null, read: 0, asleep: 0, kept: 0, skipped: [], tries: 0 };
+}
+
+/** ONE PASS of the wide survey (a generator for system.runJob; the clock runs a pass, and again after a pause while it
+ *  answers "wait"). io = { loaded(tile) -> every chunk of the tile is loaded; column(x, z) -> { g, water } | null (asleep)
+ *  | undefined (no ground); hold(tile) -> a handle (a ticking area over the tile) | null (no slot free); release(handle) }.
+ *  Cells the field already knows are kept (never read again). Returns "done" | "wait". */
+export function* wideSurveyPass(prog, io) {
+  const site = prog.site;
+  while (prog.i < prog.tiles.length) {
+    const tile = prog.tiles[prog.i];
+    if (!io.loaded(tile)) {
+      if (!prog.held || prog.held.i !== prog.i) {
+        const h = io.hold(tile);
+        if (!h) {                                                 // no ticking slot free: wait, and give the tile up after holdTries
+          if (++prog.tries > WIDE.holdTries) { prog.skipped.push(tile); prog.i++; prog.tries = 0; continue; }
+          return "wait";
+        }
+        prog.held = { i: prog.i, h, polls: 0 };
+        prog.tries = 0;
+        return "wait";
+      }
+      if (++prog.held.polls > WIDE.waitPolls) {                   // its chunks never loaded: let it go, on to the next tile
+        io.release(prog.held.h); prog.held = null;
+        prog.skipped.push(tile); prog.i++;
+        continue;
+      }
+      return "wait";
+    }
+    let n = 0;
+    for (let x = tile[0]; x <= tile[2]; x++) for (let z = tile[1]; z <= tile[3]; z++) {
+      if (!site.inside(x, z)) continue;
+      if (site.at(x, z) !== undefined) { prog.kept++; continue; }
+      const c = io.column(x, z);
+      if (c === null) prog.asleep++;
+      else if (c) { site.set(x, z, c.g, !!c.water); prog.read++; }
+      if (++n % WIDE.yieldEvery === 0) yield;
+    }
+    if (prog.held && prog.held.i === prog.i) { io.release(prog.held.h); prog.held = null; }
+    prog.i++;
+    yield;
+  }
+  return "done";
+}
+
+// ------------------------------------------------------------------------------------------------ the site field as text (1.3.231)
+// The field lives in dynamic properties (the clock's saveSite, 30,000 characters a property). The old text (one "v*n" run
+// per change of v = ground * 2 + water) takes ~2 characters a column on hills; a 384 x 384 field would be ~300 KB. "d1":
+// row-major, each column's v as a DELTA from the column before it, one character per delta (-30..+30 from DELTA_ABC),
+// "~<v base 36>;" beyond that, and a run of one delta written once with "(<count base 36>)" after it (repeats).
+const DELTA_ABC = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxy";   // 61 characters: delta + 30
+export function siteEncode(site) {
+  const out = [];
+  let prev = 0, last = null, run = 0;
+  const flush = () => { if (last === null) return; out.push(last); if (run > 1) out.push(run === 2 ? last : `(${(run - 1).toString(36)})`); last = null; run = 0; };
+  for (let i = 0; i < site.h.length; i++) {
+    const v = site.h[i] * 2 + site.water[i];
+    const d = v - prev;
+    prev = v;
+    const tok = d >= -30 && d <= 30 ? DELTA_ABC[d + 30] : `~${v.toString(36)};`;
+    if (tok.length === 1 && tok === last) { run++; continue; }
+    flush();
+    if (tok.length === 1) { last = tok; run = 1; } else out.push(tok);
+  }
+  flush();
+  return { x0: site.x0, z0: site.z0, w: site.w, d: site.d, enc: "d1", data: out.join("") };
+}
+/** text -> field: the "d1" text, or the old run list ({ rle }) */
+export function siteDecode(r) {
+  const site = makeSite(r.x0, r.z0, r.w, r.d);
+  if (r.enc !== "d1") {
+    let i = 0;
+    for (const runTxt of r.rle.split(",")) {
+      const [v, n] = runTxt.split("*").map(Number);
+      const cnt = n || 1;
+      for (let k = 0; k < cnt; k++, i++) { site.h[i] = Math.floor(v / 2); site.water[i] = v & 1; }
+    }
+    return site;
+  }
+  const s = r.data, N = site.h.length;
+  let i = 0, p = 0, prev = 0, lastD = null;
+  const put = (v) => { if (i < N) { site.h[i] = Math.floor(v / 2); site.water[i] = v & 1; } i++; prev = v; };
+  while (p < s.length && i < N) {
+    const ch = s[p];
+    if (ch === "~") { const e = s.indexOf(";", p); put(parseInt(s.slice(p + 1, e), 36)); lastD = null; p = e + 1; continue; }
+    if (ch === "(") { const e = s.indexOf(")", p); const n = parseInt(s.slice(p + 1, e), 36); for (let k = 0; k < n; k++) put(prev + lastD); p = e + 1; continue; }
+    lastD = DELTA_ABC.indexOf(ch) - 30;
+    put(prev + lastD);
+    p++;
+  }
+  return site;
+}

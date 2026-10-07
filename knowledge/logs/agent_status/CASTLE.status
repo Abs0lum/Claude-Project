@@ -1,0 +1,5 @@
+04:28 CASTLE: tracing bl1/bl2 + bg1 pipe (castlegen.py), no writes yet
+04:29 CASTLE: DONE — bl1/bl2 traced (no forced-variety check; fix awaits ruling), bg1 pipe = sluice culvert, connected. No files changed.
+CASTLE 04:30 CT: slice bl2 distinctness fix (a)+(b) STARTED
+CASTLE 04:31 CT: check+test added (red->green), bl2->seed5 in VARIETIES; old bl2 moved _garbage/CASTLE-pre; generating bl5
+CASTLE 04:32 CT: PAUSED/DONE-slice — bl2->bl5 regenerated, verify pass, test green; see notes

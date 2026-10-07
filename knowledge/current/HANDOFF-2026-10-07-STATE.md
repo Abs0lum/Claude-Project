@@ -69,8 +69,12 @@ first for the round-228 content) and the decision journal entries D-C1006-* (kno
 - Geometry law (lesson candidate): block geometry ids lowercase, geometry format 1.16.0; `tools/geo_ref_check.py` on every
   build (BDS never loads RP geometry, so no gate can catch it).
 - Versions are never reused; every pack <= 250 MB; complete packs only (no hotfix overlays).
-- claude.ai Project knowledge is FULL (1,999,094 / 2,000,000 B) — writes refused. Candidates to remove (only on his
-  explicit ask): the ~280 `claude/tools/*` copies (all live in the knowledge mirror and the workspace) and duplicate
-  handoffs.
+- claude.ai Project knowledge: was FULL (1,999,094 / 2,000,000). On his ruling (01:24 CT 10-07) the 348 `claude/tools/*`
+  copies were read fresh, saved byte-exact, uploaded to Drive `ClaudeUploads/project-archive-2026-10-07` (348 files + zip
+  md5 ee9ffe8e, all md5-verified) and THEN deleted; `claude/MOVED-TO-DRIVE-INDEX.md` in the Project lists every moved file
+  with its md5 and Drive file id. Project now 794,018 / 2,000,000. Duplicate old handoffs remain (not touched).
+- PS5 crash answers (01:24): 1.3.227 was never tested on the PS5 (so "did it join" is unknown); no "65536 block
+  permutations" line seen in the phone's log. The permutation hypothesis is neither confirmed nor ruled out — the SLIM test
+  (BP-02 1.3.230) is the next step.
 - Knowledge mirror (from 10-07): `tools/knowledge_bundle.py` -> Drive `ClaudeUploads/knowledge/` + the GitHub repo
   (`knowledge/`, `prompts/`, `claude-settings/`).

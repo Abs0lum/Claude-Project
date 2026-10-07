@@ -248,8 +248,15 @@ function tryPyramidion(b) {
 const upId = (id) => id.replace("_lower_", "_upper_");
 
 // ---- BOOT BEACON: console (content log) + chat (first tick) ----------------
-console.warn("[PW-C2] companion v7 LOADED (pack v1.3.227 \u00b7 expects RP-04 v1.3.156) — SEMANTICS v4 (#174/#175: hips, ridge ends, pyramidion, ring, room-wall merge + corners re-derived under the measured transformation law) — Rules A-H armed, witness round pending");
-system.run(() => say("companion v2 booted — place a 63 LOWER to test auto-place"));
+// 1.3.231 (BLOCKS, 10-07): the pack version is no longer a hard-coded string (it went stale at 1.3.228 while 1.3.229/230
+// shipped). It is main.js's single-source PW_BUILD, published by main.js as globalThis.__PW_BUILD. main.js imports this
+// module BEFORE its own PW_BUILD line runs, so the banner waits one tick (system.run) and reads it then.
+const PW_C2_EXPECTS_RP04 = "1.3.159";                                    // the RP-04 build this companion's roof assets ship in
+system.run(() => {
+  const build = globalThis.__PW_BUILD || "? (main.js did not publish PW_BUILD)";
+  console.warn(`[PW-C2] companion v7 LOADED (pack v${build} \u00b7 expects RP-04 v${PW_C2_EXPECTS_RP04}) — SEMANTICS v4 (#174/#175: hips, ridge ends, pyramidion, ring, room-wall merge + corners re-derived under the measured transformation law) — Rules A-H armed, witness round pending`);
+  say("companion v2 booted — place a 63 LOWER to test auto-place");
+});
 
 // ---- PLACE: gate-by-gate ----------------------------------------------------
 world.afterEvents.playerPlaceBlock.subscribe((ev) => {

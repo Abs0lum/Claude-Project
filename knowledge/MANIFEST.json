@@ -1,20 +1,20 @@
 {
- "stamp": "2026-10-07",
- "headline": "first mirror: law CLAUDE-AR v3.0, prompts v2.6, state after round 229 + PS5 join crash",
- "built_utc": "2026-10-07T05:59:42Z",
- "files": 1488,
- "bytes": 44212464,
+ "stamp": "2026-10-07c",
+ "headline": "HANDOFF-2026-10-07-1130: round 231 built (7 packs, not packaged), status of every item, PS5 tests pending, next-build checklist",
+ "built_utc": "2026-10-07T16:33:28Z",
+ "files": 1554,
+ "bytes": 45119165,
  "rows": [
   {
    "path": "knowledge/CLAUDE-AR.md",
-   "bytes": 24068,
-   "md5": "cc0cc26aa75be4d3d393349a6b5b7e8d",
+   "bytes": 24171,
+   "md5": "7182975de9e845d55db10b9dec673b31",
    "source": "_knowledge/src/knowledge/CLAUDE-AR.md"
   },
   {
    "path": "prompts/README.md",
-   "bytes": 2759,
-   "md5": "6cb79d2fc3863847b823071cb8e425f9",
+   "bytes": 3002,
+   "md5": "9ac39f630b8e7278a3066e8a0c2f3bb2",
    "source": "_knowledge/src/prompts/README.md"
   },
   {
@@ -169,8 +169,8 @@
   },
   {
    "path": "prompts/claude-code-github-paste.md",
-   "bytes": 4974,
-   "md5": "9515621226eb9d5ec79f41d6752a6a08",
+   "bytes": 5066,
+   "md5": "deefb9aeff4be0b256d172f8b3c70457",
    "source": "_knowledge/src/prompts/claude-code-github-paste.md"
   },
   {
@@ -366,9 +366,15 @@
    "source": "_docs/program228/HANDOFF-2026-10-06-ROUND-228-COMBINED.md"
   },
   {
+   "path": "knowledge/current/HANDOFF-2026-10-07-1130.md",
+   "bytes": 20279,
+   "md5": "3d6e7706cff87f93468f20b44e1dc7d6",
+   "source": "_docs/program228/HANDOFF-2026-10-07-1130.md"
+  },
+  {
    "path": "knowledge/current/HANDOFF-2026-10-07-STATE.md",
-   "bytes": 6702,
-   "md5": "1bfe06ada4723e3ec40796ef99ac7e11",
+   "bytes": 7207,
+   "md5": "e4c0cd5d8dc388a9dede54ac0476db84",
    "source": "_docs/program228/HANDOFF-2026-10-07-STATE.md"
   },
   {
@@ -415,20 +421,20 @@
   },
   {
    "path": "knowledge/logs/decision_journal.md",
-   "bytes": 1034097,
-   "md5": "fb6070f157ffe819f74f420f09879dbc",
+   "bytes": 1044021,
+   "md5": "9ca1e2669b4ae8ec648555e98f28d28c",
    "source": "_logs/decision_journal.md"
   },
   {
    "path": "knowledge/logs/phase_log.md",
-   "bytes": 485034,
-   "md5": "de52b57efd5a21c3713c6f9de81e8400",
+   "bytes": 491207,
+   "md5": "38d6a96254e6ff7440a3e3517d747fc1",
    "source": "_logs/phase_log.md"
   },
   {
    "path": "knowledge/logs/intake_ledger.md",
-   "bytes": 11188,
-   "md5": "2abea7ab1cbc9f3deb460c01dd74dca9",
+   "bytes": 16056,
+   "md5": "1e304bddd8a3c621afb9c863549ceed5",
    "source": "_logs/intake_ledger.md"
   },
   {
@@ -436,6 +442,138 @@
    "bytes": 86450,
    "md5": "674ffa1a316c20cfa5a8ef3962c00e92",
    "source": "_logs/delivery_ledger.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/BLOCKS.md",
+   "bytes": 1914,
+   "md5": "b4153506b4f997323c9976011af1be8d",
+   "source": "_logs/agent_status/BLOCKS.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/CASTLE.md",
+   "bytes": 3721,
+   "md5": "68a12d96e708ce6aac4b96a1af3df90b",
+   "source": "_logs/agent_status/CASTLE.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/CASTLE.notes.md",
+   "bytes": 9794,
+   "md5": "515249f020c7d6a627f34e47ef30f4ed",
+   "source": "_logs/agent_status/CASTLE.notes.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/CASTLE.status",
+   "bytes": 490,
+   "md5": "4dc24bead5ed47311798073f1600354a",
+   "source": "_logs/agent_status/CASTLE.status"
+  },
+  {
+   "path": "knowledge/logs/agent_status/CIV-LAND.md",
+   "bytes": 6816,
+   "md5": "b2060fe5a5eea933576226cae1de7a39",
+   "source": "_logs/agent_status/CIV-LAND.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/CIV-LAND.notes.md",
+   "bytes": 12029,
+   "md5": "8a4a73d94ad65e800c7535f675dfe4d2",
+   "source": "_logs/agent_status/CIV-LAND.notes.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/CIV-LAND.status",
+   "bytes": 108,
+   "md5": "cfa57dedd3bc1e48df1d24e4ab65be4d",
+   "source": "_logs/agent_status/CIV-LAND.status"
+  },
+  {
+   "path": "knowledge/logs/agent_status/CIV-PEOPLE.md",
+   "bytes": 815,
+   "md5": "ed22b0b35aa661ae5f6280bbdff0fd06",
+   "source": "_logs/agent_status/CIV-PEOPLE.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/FURNITURE.md",
+   "bytes": 1170,
+   "md5": "d579f9a568554a4acbd3bc8716683400",
+   "source": "_logs/agent_status/FURNITURE.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/INTEGRATE.md",
+   "bytes": 1458,
+   "md5": "463bb21f3f2281bcbd350b1877597a77",
+   "source": "_logs/agent_status/INTEGRATE.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/INTEGRATE.notes.md",
+   "bytes": 11783,
+   "md5": "1c01a0c293cad932885eabe6c1a134d6",
+   "source": "_logs/agent_status/INTEGRATE.notes.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/MOLANG.md",
+   "bytes": 73,
+   "md5": "3daf660a8d4431971e219af032d49a53",
+   "source": "_logs/agent_status/MOLANG.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/PALACE.md",
+   "bytes": 7143,
+   "md5": "4c2100346415dd81c36ba192bed6a046",
+   "source": "_logs/agent_status/PALACE.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/PALACE.notes.md",
+   "bytes": 5812,
+   "md5": "dc989a150d92f2b23aced0eb37d36c5e",
+   "source": "_logs/agent_status/PALACE.notes.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/RAMPS.md",
+   "bytes": 6326,
+   "md5": "3cc946fcbe804f1a1a8a736c7473d343",
+   "source": "_logs/agent_status/RAMPS.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/RESEARCH.md",
+   "bytes": 1166,
+   "md5": "5c60d0459b5da029e8177e759ae80992",
+   "source": "_logs/agent_status/RESEARCH.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/TEXTURES.md",
+   "bytes": 2255,
+   "md5": "6a7569fee141bb0647338949ef9b97ec",
+   "source": "_logs/agent_status/TEXTURES.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/TEXTURES.notes.md",
+   "bytes": 16180,
+   "md5": "40f0792496a403175a7b1742e0e9cd88",
+   "source": "_logs/agent_status/TEXTURES.notes.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/TEXTURES.status",
+   "bytes": 220,
+   "md5": "36454d8de40b040726e5ac394085f006",
+   "source": "_logs/agent_status/TEXTURES.status"
+  },
+  {
+   "path": "knowledge/logs/agent_status/TREES.md",
+   "bytes": 20541,
+   "md5": "64ee662dbaa8c1603f3e3d8c90226bbc",
+   "source": "_logs/agent_status/TREES.md"
+  },
+  {
+   "path": "knowledge/logs/agent_status/TREES.notes.md",
+   "bytes": 7864,
+   "md5": "e7426d6699e3bffcc735a6d1c3d8c1d8",
+   "source": "_logs/agent_status/TREES.notes.md"
+  },
+  {
+   "path": "knowledge/logs/agent_brief_1007.md",
+   "bytes": 4195,
+   "md5": "f8cc61fe34d480ba984eaef45f91d644",
+   "source": "_logs/agent_brief_1007.md"
   },
   {
    "path": "knowledge/memory/areas/civitas.md",
@@ -996,10 +1134,76 @@
    "source": "_docs/castle/ACADEMY-II-DESIGN-2026-10-06.md"
   },
   {
+   "path": "knowledge/docs/castle/ACADEMY-II-DESIGN-v2-2026-10-07.md",
+   "bytes": 17840,
+   "md5": "6f09c24ba609fa56354a8436f85bd87f",
+   "source": "_docs/castle/ACADEMY-II-DESIGN-v2-2026-10-07.md"
+  },
+  {
    "path": "knowledge/docs/castle/CASTLE-DESIGN-COMPLETE-2026-10-06.md",
    "bytes": 62314,
    "md5": "2adb426faf2ee17785fa16adc6a29fdd",
    "source": "_docs/castle/CASTLE-DESIGN-COMPLETE-2026-10-06.md"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_ag1.json",
+   "bytes": 12118,
+   "md5": "4c79cc2c38fab9514517b10b06caf346",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_ag1.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_al2.json",
+   "bytes": 8082,
+   "md5": "b8f35fc4149fc84e3e54c8092abbc247",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_al2.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_al3.json",
+   "bytes": 7894,
+   "md5": "0133d68cb63edc0ce70160364ce3df25",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_al3.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_al4.json",
+   "bytes": 8610,
+   "md5": "74ce7286ea5e134e9df3f1c274fe29c6",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_al4.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_al5.json",
+   "bytes": 8467,
+   "md5": "39dee9d98962421c7a74721f026a1d97",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_al5.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_bg1.json",
+   "bytes": 10048,
+   "md5": "3dd620359aa57a9c34b654b365f6bd39",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_bg1.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_bl1.json",
+   "bytes": 8862,
+   "md5": "56ffef7a46bad20b05240e4a31bcb9c8",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_bl1.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_bl2.json",
+   "bytes": 8859,
+   "md5": "d486e805c89240ae8ec7ba3886626082",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_bl2.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_bl3.json",
+   "bytes": 8130,
+   "md5": "9daf3c959932cca5c2b3f3519fe36891",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_bl3.json"
+  },
+  {
+   "path": "knowledge/docs/castle/v0_4/verify-mvv_castle_bl4.json",
+   "bytes": 7984,
+   "md5": "073522e0d88b7ee04d45d33de1e6a9cb",
+   "source": "_docs/castle/v0_4/verify-mvv_castle_bl4.json"
   },
   {
    "path": "knowledge/docs/civ/CIVITAS-LIVING-ECONOMY-v1-DRAFT-2026-10-02.md",
@@ -1177,8 +1381,8 @@
   },
   {
    "path": "knowledge/docs/fell/ft_tpl_index.json",
-   "bytes": 41826,
-   "md5": "7d50a78680c078b92c2984a38aaa66dd",
+   "bytes": 41827,
+   "md5": "1a8e136979898cd20ec3c9a9f3ea2fbb",
    "source": "_docs/fell/ft_tpl_index.json"
   },
   {
@@ -1186,6 +1390,12 @@
    "bytes": 41854,
    "md5": "bf8a24523eb512651de97aa82adca283",
    "source": "_docs/fell/ft_tpl_index.pre125.json"
+  },
+  {
+   "path": "knowledge/docs/fell/ft_tpl_index.pre126.json",
+   "bytes": 41826,
+   "md5": "7d50a78680c078b92c2984a38aaa66dd",
+   "source": "_docs/fell/ft_tpl_index.pre126.json"
   },
   {
    "path": "knowledge/docs/fidelity/FIDELITY-SUMMARY.json",
@@ -1212,10 +1422,28 @@
    "source": "_docs/furniture/FURNITURE-OPTIONS-2026-10-06.md"
   },
   {
+   "path": "knowledge/docs/furniture/FURNITURE-SKINS-CHECK-2026-10-07.md",
+   "bytes": 38606,
+   "md5": "3d0629fccb83b221039dd09748ff0424",
+   "source": "_docs/furniture/FURNITURE-SKINS-CHECK-2026-10-07.md"
+  },
+  {
    "path": "knowledge/docs/furniture/candidates.json",
    "bytes": 68849,
    "md5": "7e65c38044669329cd2798825c5f6b3e",
    "source": "_docs/furniture/candidates.json"
+  },
+  {
+   "path": "knowledge/docs/furniture/skins-1007/skin_assignments.json",
+   "bytes": 17634,
+   "md5": "c5dfa737c3fefa597ac9f9a2b50b1c3c",
+   "source": "_docs/furniture/skins-1007/skin_assignments.json"
+  },
+  {
+   "path": "knowledge/docs/furniture/skins-1007/skin_table.json",
+   "bytes": 63623,
+   "md5": "3f22d8f87e7058fbb55306db0c76fef9",
+   "source": "_docs/furniture/skins-1007/skin_table.json"
   },
   {
    "path": "knowledge/docs/grids/INDEX.json",
@@ -1530,6 +1758,12 @@
    "source": "_docs/palace/GALLERY-CENSUS.md"
   },
   {
+   "path": "knowledge/docs/palace/PALACE-II-DESIGN-2026-10-07.md",
+   "bytes": 50156,
+   "md5": "deec40f77329d23f515a32da056404ec",
+   "source": "_docs/palace/PALACE-II-DESIGN-2026-10-07.md"
+  },
+  {
    "path": "knowledge/docs/palace/PALACE-II-RESEARCH-2026-10-06.md",
    "bytes": 56414,
    "md5": "7416d40703bc00d21b28580bf768bfbc",
@@ -1596,9 +1830,15 @@
    "source": "_docs/program228/HANDOFF-2026-10-06-ROUND-228-COMBINED.md"
   },
   {
+   "path": "knowledge/docs/program228/HANDOFF-2026-10-07-1130.md",
+   "bytes": 20279,
+   "md5": "3d6e7706cff87f93468f20b44e1dc7d6",
+   "source": "_docs/program228/HANDOFF-2026-10-07-1130.md"
+  },
+  {
    "path": "knowledge/docs/program228/HANDOFF-2026-10-07-STATE.md",
-   "bytes": 6702,
-   "md5": "1bfe06ada4723e3ec40796ef99ac7e11",
+   "bytes": 7207,
+   "md5": "e4c0cd5d8dc388a9dede54ac0476db84",
    "source": "_docs/program228/HANDOFF-2026-10-07-STATE.md"
   },
   {
@@ -1890,6 +2130,18 @@
    "source": "_docs/recheck/W3-R2-manifests.json"
   },
   {
+   "path": "knowledge/docs/research/PACK-SPLIT-2026-10-07.json",
+   "bytes": 18639,
+   "md5": "e42f826a757d569bc59dc16135cd6f9f",
+   "source": "_docs/research/PACK-SPLIT-2026-10-07.json"
+  },
+  {
+   "path": "knowledge/docs/research/PACK-SPLIT-2026-10-07.md",
+   "bytes": 11414,
+   "md5": "14fe5af0bfd662f32d9d982ccea071ff",
+   "source": "_docs/research/PACK-SPLIT-2026-10-07.md"
+  },
+  {
    "path": "knowledge/docs/research/R10-BEDROCK-WATER-REFERENCE-2026-10-05.md",
    "bytes": 20009,
    "md5": "ae1a53dfeb8d33c7b1e0558095ab8dd9",
@@ -1918,6 +2170,12 @@
    "bytes": 62188,
    "md5": "b6f9e98a9954edaeb93c8cffce4d960b",
    "source": "_docs/research/R9-WATER-PACKS-ON-DRIVE-2026-10-05.md"
+  },
+  {
+   "path": "knowledge/docs/research/TEXTURE-VARIANT-REDUCTION-2026-10-07.md",
+   "bytes": 32691,
+   "md5": "b3539ec475e971a5aad8cfe4db3b4dc4",
+   "source": "_docs/research/TEXTURE-VARIANT-REDUCTION-2026-10-07.md"
   },
   {
    "path": "knowledge/docs/research/civmods/A-COLONIES.md",
@@ -2092,6 +2350,12 @@
    "bytes": 6786,
    "md5": "d1105fd6322e4cc8f2d55ef5fbc2a27b",
    "source": "_docs/sizes/size_v2_ours_report.json"
+  },
+  {
+   "path": "knowledge/docs/skyway/SKYWAY-ANGLES-REQUIREMENTS-2026-10-07.md",
+   "bytes": 13122,
+   "md5": "34a1482b8f5eb3f69c6b3ea2a3dd56c8",
+   "source": "_docs/skyway/SKYWAY-ANGLES-REQUIREMENTS-2026-10-07.md"
   },
   {
    "path": "knowledge/docs/skyway/SKYWAY-OPTIONS-2026-10-06.md",
@@ -4261,8 +4525,8 @@
   },
   {
    "path": "knowledge/tools/bp02_src_228/pw_civ_clock.js",
-   "bytes": 615296,
-   "md5": "9e704a22c1a1040d18594b3e55fe45ca",
+   "bytes": 631984,
+   "md5": "705e2988d007171636f826c631132b9c",
    "source": "tools/bp02_src_228/pw_civ_clock.js"
   },
   {
@@ -4303,8 +4567,8 @@
   },
   {
    "path": "knowledge/tools/bp02_src_228/pw_civ_land.js",
-   "bytes": 23301,
-   "md5": "05c8d1edc409dc121ae3ec3af43f354b",
+   "bytes": 31710,
+   "md5": "508a005fb71d33f9e98f23d7d4e4b081",
    "source": "tools/bp02_src_228/pw_civ_land.js"
   },
   {
@@ -4327,8 +4591,8 @@
   },
   {
    "path": "knowledge/tools/bp02_src_228/pw_civ_people.js",
-   "bytes": 93230,
-   "md5": "0561896defca9b4900e5e27ea5eb53d9",
+   "bytes": 101981,
+   "md5": "c6580a851c7a907200131ebafeed5d71",
    "source": "tools/bp02_src_228/pw_civ_people.js"
   },
   {
@@ -4351,14 +4615,14 @@
   },
   {
    "path": "knowledge/tools/bp02_src_228/pw_civ_shop.js",
-   "bytes": 43178,
-   "md5": "0308ee244c66c558c86febad19a8ad14",
+   "bytes": 49691,
+   "md5": "b2f7832dcfcad1370d1c1b2b646a08cd",
    "source": "tools/bp02_src_228/pw_civ_shop.js"
   },
   {
    "path": "knowledge/tools/bp02_src_228/pw_civ_streets.js",
-   "bytes": 73160,
-   "md5": "c56881a77c51a05bbdb342fc4107797a",
+   "bytes": 91772,
+   "md5": "25ad1194f9cd34965b601a3163e6cfd9",
    "source": "tools/bp02_src_228/pw_civ_streets.js"
   },
   {
@@ -4399,8 +4663,8 @@
   },
   {
    "path": "knowledge/tools/bp02_src_228/pw_companion.js",
-   "bytes": 18770,
-   "md5": "036f5618374fa92102f9507bbca5279f",
+   "bytes": 19353,
+   "md5": "d0c9a4b7f37b92f212b81f32ca8b840a",
    "source": "tools/bp02_src_228/pw_companion.js"
   },
   {
@@ -4500,6 +4764,12 @@
    "source": "tools/bp02_src_228/tests/fixtures/pw_civ_people_b2.js"
   },
   {
+   "path": "knowledge/tools/bp02_src_228/tests/test_band.mjs",
+   "bytes": 13731,
+   "md5": "d864fb5f85a7f72962312542079ee648",
+   "source": "tools/bp02_src_228/tests/test_band.mjs"
+  },
+  {
    "path": "knowledge/tools/bp02_src_228/tests/test_beat.mjs",
    "bytes": 7353,
    "md5": "e48102f1e00957ae31f8a832443b60fd",
@@ -4560,10 +4830,28 @@
    "source": "tools/bp02_src_228/tests/test_hygiene.mjs"
   },
   {
+   "path": "knowledge/tools/bp02_src_228/tests/test_inn24.mjs",
+   "bytes": 13594,
+   "md5": "c19b1741fa1d1713bc5cb277e1e19f13",
+   "source": "tools/bp02_src_228/tests/test_inn24.mjs"
+  },
+  {
+   "path": "knowledge/tools/bp02_src_228/tests/test_landclock.mjs",
+   "bytes": 14164,
+   "md5": "0425eb44c79be15afbb0167413677388",
+   "source": "tools/bp02_src_228/tests/test_landclock.mjs"
+  },
+  {
    "path": "knowledge/tools/bp02_src_228/tests/test_lanes.mjs",
    "bytes": 3845,
    "md5": "66b39f9fc6d81bd5cad7598bd0b78987",
    "source": "tools/bp02_src_228/tests/test_lanes.mjs"
+  },
+  {
+   "path": "knowledge/tools/bp02_src_228/tests/test_leisure.mjs",
+   "bytes": 11138,
+   "md5": "b225b45c8d0d7d24e195f27252dc21f3",
+   "source": "tools/bp02_src_228/tests/test_leisure.mjs"
   },
   {
    "path": "knowledge/tools/bp02_src_228/tests/test_market.mjs",
@@ -4614,6 +4902,12 @@
    "source": "tools/bp02_src_228/tests/test_ramp8.mjs"
   },
   {
+   "path": "knowledge/tools/bp02_src_228/tests/test_rampclear.mjs",
+   "bytes": 3877,
+   "md5": "cf2c5251bbec1ca4f9f7a5de06b70b18",
+   "source": "tools/bp02_src_228/tests/test_rampclear.mjs"
+  },
+  {
    "path": "knowledge/tools/bp02_src_228/tests/test_route.mjs",
    "bytes": 2065,
    "md5": "c6e32c4381424e79e5eebaa042a69abd",
@@ -4630,6 +4924,12 @@
    "bytes": 26754,
    "md5": "f80037f05ec8265c3ddd09c81a9daf5e",
    "source": "tools/bp02_src_228/tests/test_shifts.mjs"
+  },
+  {
+   "path": "knowledge/tools/bp02_src_228/tests/test_survey.mjs",
+   "bytes": 10130,
+   "md5": "d1ff15b40076fd83dbc79e705b0df5c1",
+   "source": "tools/bp02_src_228/tests/test_survey.mjs"
   },
   {
    "path": "knowledge/tools/bp02_src_228/tests/test_talk.mjs",
@@ -5110,6 +5410,12 @@
    "bytes": 8451,
    "md5": "4d1784eb5c3313f95258cc62bcdfa2ec",
    "source": "tools/build_round_1002i.py"
+  },
+  {
+   "path": "knowledge/tools/build_round_231.py",
+   "bytes": 37972,
+   "md5": "11f25a33d22ba24a1113d8392cc2e51f",
+   "source": "tools/build_round_231.py"
   },
   {
    "path": "knowledge/tools/build_rp01_119.py",
@@ -5629,14 +5935,14 @@
   },
   {
    "path": "knowledge/tools/castle_verify.py",
-   "bytes": 17475,
-   "md5": "6b9c3de08abd5e824e4a41fbceb47723",
+   "bytes": 21457,
+   "md5": "803bef9d21a610f0a92d7aa49be3b2d9",
    "source": "tools/castle_verify.py"
   },
   {
    "path": "knowledge/tools/castlegen.py",
-   "bytes": 141038,
-   "md5": "9b245d6788f1fe7c93ffa49799a0d304",
+   "bytes": 161127,
+   "md5": "7d20f3a07e9b6debd0e2f0432ddae755",
    "source": "tools/castlegen.py"
   },
   {
@@ -6252,6 +6558,12 @@
    "source": "tools/homestead_src/test_logic.mjs"
   },
   {
+   "path": "knowledge/tools/inn_v2.py",
+   "bytes": 19013,
+   "md5": "99308439629e35d0bf4da1c12c8f3287",
+   "source": "tools/inn_v2.py"
+  },
+  {
    "path": "knowledge/tools/install_trees_228.py",
    "bytes": 11253,
    "md5": "62af90291d368e741a4f59fe69391c2a",
@@ -6337,8 +6649,8 @@
   },
   {
    "path": "knowledge/tools/knowledge_bundle.py",
-   "bytes": 11880,
-   "md5": "2536b9ea207a501cf2c614f98fba02dd",
+   "bytes": 12280,
+   "md5": "2432d71e95d147faaa5cd7ecb4035e88",
    "source": "tools/knowledge_bundle.py"
   },
   {
@@ -7026,6 +7338,36 @@
    "source": "tools/package_tier_round.py"
   },
   {
+   "path": "knowledge/tools/palace2_designdoc.py",
+   "bytes": 4496,
+   "md5": "2cb499330c409128d34b05d6513b6a8e",
+   "source": "tools/palace2_designdoc.py"
+  },
+  {
+   "path": "knowledge/tools/palace2_hookdata.py",
+   "bytes": 4007,
+   "md5": "6e3f21a83e96e1697e604437e19a2a6a",
+   "source": "tools/palace2_hookdata.py"
+  },
+  {
+   "path": "knowledge/tools/palace2_render.py",
+   "bytes": 11059,
+   "md5": "4e4afe8e73a1a6d514660a41aaa52dea",
+   "source": "tools/palace2_render.py"
+  },
+  {
+   "path": "knowledge/tools/palace2_verify.py",
+   "bytes": 23888,
+   "md5": "839d61c7dfe3ef43310a34c49ab2e6a2",
+   "source": "tools/palace2_verify.py"
+  },
+  {
+   "path": "knowledge/tools/palace2_walk.py",
+   "bytes": 6981,
+   "md5": "e557dd95fba7f6719c5601a0460e45cb",
+   "source": "tools/palace2_walk.py"
+  },
+  {
    "path": "knowledge/tools/palace_beds.py",
    "bytes": 1799,
    "md5": "1c434d85750f4cca919ad1a44e9748fa",
@@ -7069,8 +7411,8 @@
   },
   {
    "path": "knowledge/tools/palacegen2.py",
-   "bytes": 140775,
-   "md5": "5783f21480601c5e8e7c15a776e71ecb",
+   "bytes": 151507,
+   "md5": "8c4b3333b4e438fa6a44347ddb0450b9",
    "source": "tools/palacegen2.py"
   },
   {
@@ -7186,6 +7528,12 @@
    "bytes": 1874,
    "md5": "89711c77cb547464de4496aa4e43252c",
    "source": "tools/profwrap.py"
+  },
+  {
+   "path": "knowledge/tools/project_archive_index.py",
+   "bytes": 3275,
+   "md5": "55599b8cc12fa116cbca74c338aa539e",
+   "source": "tools/project_archive_index.py"
   },
   {
    "path": "knowledge/tools/purge_harvest.py",
@@ -7308,10 +7656,22 @@
    "source": "tools/r9_fetch_shots.py"
   },
   {
+   "path": "knowledge/tools/ramp231_render.py",
+   "bytes": 12655,
+   "md5": "f6680df11242f34ac377d4b026db9136",
+   "source": "tools/ramp231_render.py"
+  },
+  {
    "path": "knowledge/tools/ramp8_preview.py",
    "bytes": 3250,
    "md5": "94518f1696a98c3618d92b7a6f08dd6b",
    "source": "tools/ramp8_preview.py"
+  },
+  {
+   "path": "knowledge/tools/ramp8_struct_fix_231.py",
+   "bytes": 4286,
+   "md5": "9ff7bd4d5e89a12dd04b82926195d917",
+   "source": "tools/ramp8_struct_fix_231.py"
   },
   {
    "path": "knowledge/tools/ramp8_swatch.py",
@@ -7320,10 +7680,22 @@
    "source": "tools/ramp8_swatch.py"
   },
   {
+   "path": "knowledge/tools/ramp_fill_repoint_231.py",
+   "bytes": 1726,
+   "md5": "59b2e7423449c67083d6c5e486e47167",
+   "source": "tools/ramp_fill_repoint_231.py"
+  },
+  {
    "path": "knowledge/tools/ramp_v8.py",
    "bytes": 24707,
    "md5": "9b13cd7f5762caa5e349986d1a3c2459",
    "source": "tools/ramp_v8.py"
+  },
+  {
+   "path": "knowledge/tools/ramp_v9.py",
+   "bytes": 8279,
+   "md5": "255712fb640bfc5f732a1759d903d3f0",
+   "source": "tools/ramp_v9.py"
   },
   {
    "path": "knowledge/tools/rc_visibility_lint.py",
@@ -7453,8 +7825,8 @@
   },
   {
    "path": "knowledge/tools/road_kit_228.py",
-   "bytes": 3167,
-   "md5": "47be1aa8085420e3504cc5127086a2ac",
+   "bytes": 3564,
+   "md5": "ea75211a986e48836f24d0ac741b574b",
    "source": "tools/road_kit_228.py"
   },
   {
@@ -7914,6 +8286,12 @@
    "source": "tools/test_anim_sample.py"
   },
   {
+   "path": "knowledge/tools/test_castle_varieties.py",
+   "bytes": 712,
+   "md5": "99f9926db8d0bb623421def909541ea6",
+   "source": "tools/test_castle_varieties.py"
+  },
+  {
    "path": "knowledge/tools/test_contact_gate.py",
    "bytes": 1236,
    "md5": "cc5d4641cba2f381b79227e87bca3ee4",
@@ -7930,6 +8308,12 @@
    "bytes": 3013,
    "md5": "fa64c1b83f7cdaac6400dfbbe83d42f2",
    "source": "tools/test_molang_carry.py"
+  },
+  {
+   "path": "knowledge/tools/test_ramp_v9.py",
+   "bytes": 7388,
+   "md5": "6615c63cb79e839ec9ea2e1785f7ff4d",
+   "source": "tools/test_ramp_v9.py"
   },
   {
    "path": "knowledge/tools/test_std_cube.py",
@@ -8148,6 +8532,18 @@
    "source": "tools/texture_pilot_alligator.py"
   },
   {
+   "path": "knowledge/tools/texture_tier_231.py",
+   "bytes": 8737,
+   "md5": "bca0a0f3961f2aa91fc28c5afc0bb9bb",
+   "source": "tools/texture_tier_231.py"
+  },
+  {
+   "path": "knowledge/tools/texture_tier_231_verify.py",
+   "bytes": 2349,
+   "md5": "a7258f740dcc49a6845e817caf35b7de",
+   "source": "tools/texture_tier_231_verify.py"
+  },
+  {
    "path": "knowledge/tools/thatch_rebuild.py",
    "bytes": 2909,
    "md5": "2d4b3f6e3c55e301204bad731711a090",
@@ -8221,8 +8617,8 @@
   },
   {
    "path": "knowledge/tools/tree_gen.py",
-   "bytes": 29038,
-   "md5": "d30af2cb3e1057b0cab0e2a677f6aebc",
+   "bytes": 37634,
+   "md5": "af76374da24e5cdfbda8d86684970c6e",
    "source": "tools/tree_gen.py"
   },
   {
@@ -8923,8 +9319,8 @@
   },
   {
    "path": "knowledge/00-INDEX.md",
-   "bytes": 1995,
-   "md5": "8c4525c559ef468a81d09bd065e2f322",
+   "bytes": 2037,
+   "md5": "dbb3f81fbd9d0823c469bd6d1f2a0ddb",
    "source": "generated"
   }
  ],
@@ -8977,6 +9373,11 @@
   {
    "path": "_docs/blocks/ROOF-AUDIT-2026-10-02.json",
    "bytes": 236944,
+   "why": "large json report"
+  },
+  {
+   "path": "_docs/furniture/skins-1007/partid/partid.json",
+   "bytes": 236194,
    "why": "large json report"
   },
   {
@@ -9067,6 +9468,11 @@
   {
    "path": "_docs/recheck/all_mob_census_recheck.json",
    "bytes": 382220,
+   "why": "large json report"
+  },
+  {
+   "path": "_docs/research/TEXTURE-VARIANT-REDUCTION-2026-10-07.json",
+   "bytes": 411528,
    "why": "large json report"
   },
   {

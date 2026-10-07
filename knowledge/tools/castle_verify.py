@@ -273,7 +273,9 @@ def verify(c, verbose=True):
                         "sluice": sluice_ok, "cellar_cells_joined": dry_bad,
                         "by_kind": {k: sum(1 for h in heads if h[3] == k) for k in sorted({h[3] for h in heads})},
                         "unreached": [h for h in heads if (h[0], h[1], h[2]) not in dr][:6]}
-    r9 = heads_ok == len(heads) and trench_ok == len(c.trench) and junction_ok and dry_bad == 0 and sluice_ok is not False
+    tun_wet = sum(1 for q in getattr(c, "tunnel", set()) if q in dr)
+    rep["R9_drains"]["tunnel_cells_joined"] = tun_wet
+    r9 = heads_ok == len(heads) and trench_ok == len(c.trench) and junction_ok and dry_bad == 0 and sluice_ok is not False and tun_wet == 0
     # R10 water
     sx, sy, sz = c.size
     stray = []
@@ -313,8 +315,9 @@ def verify(c, verbose=True):
         inside = tuple(hdn["inside"])
         ok_in = inside in reach or any((inside[0] + dx, inside[1], inside[2] + dz) in reach for dx, dz in ((1, 0), (-1, 0), (0, 1), (0, -1)))
         w3 = Walker(c)
-        px, pf, pz = hdn["panel"]
-        w3.blocked = {(px, pf, pz), (px, pf + 1, pz)}
+        w3.blocked = set()
+        for (px, pf, pz) in hdn.get("panels", [hdn["panel"]]):
+            w3.blocked |= {(px, pf, pz), (px, pf + 1, pz)}
         r3 = w3.flood([P["gate_out"]])
         closed = inside in r3
         hid.append({"what": hdn["what"], "reached": ok_in, "reached_with_panel_closed": closed})
@@ -348,13 +351,82 @@ def verify(c, verbose=True):
     return ok, rep, reach
 
 
+def test_cut(widths=range(64, 385), full_models=((64, 64), (100, 100), (144, 144), (160, 160), (224, 224), (288, 288),
+                                                 (384, 384), (130, 200), (200, 70), (65, 383))):
+    """F1 (castle 231, TDD): the piece cut covers EVERY row and column of a W x D castle exactly once.
+    Part 1 (the grid): for every width 64..384, castlegen.piece_spans(n) tiles 0..n-1 with spans of <= 64 that start on
+    the 64 grid — each index lands in exactly one span (the old `n = W // 64` dropped the far 16..63 rows of 144, 160, 224,
+    288). Part 2 (the bytes): real Structures of the listed W x D (non-multiples included, non-square included), every
+    cell labelled with its own (x, z) parity pattern + a marker per 37th cell, are cut; every piece is 64 x sy x 64; the
+    pieces re-assembled at their grid origins equal the model cell for cell, the padding of a short edge piece is
+    structure void (-1, never overwrites the world), and every marker lands in exactly one piece.
+    Returns (ok, lines)."""
+    import castlegen as C
+    import mcstructure as M
+    lines, ok = [], True
+    for n in widths:
+        spans = C.piece_spans(n)
+        hits = [0] * n
+        for (o, ln) in spans:
+            if o % 64 or not 1 <= ln <= 64:
+                ok = False; lines.append(f"FAIL spans({n}): span {o},{ln} off-grid or bad length")
+            for k in range(o, o + ln):
+                if 0 <= k < n:
+                    hits[k] += 1
+                else:
+                    ok = False; lines.append(f"FAIL spans({n}): index {k} outside 0..{n - 1}")
+        bad = [k for k, h in enumerate(hits) if h != 1]
+        if bad or len(spans) != -(-n // 64):
+            ok = False; lines.append(f"FAIL spans({n}): {len(bad)} indices not covered exactly once (first {bad[:4]}), {len(spans)} spans")
+    lines.append(f"part 1: piece_spans for widths {min(widths)}..{max(widths)}: {'all rows/columns exactly once' if ok else 'FAILURES above'}")
+
+    class Fake:
+        pass
+    for (W, D) in full_models:
+        sy = 3
+        f = Fake()
+        f.size = (W, sy, D)
+        f.st = M.Structure((W, sy, D))
+        names = ["minecraft:stone", "minecraft:dirt", "minecraft:oak_planks", "minecraft:glass", "minecraft:air"]
+        f.markers = []
+        for x in range(W):
+            for y in range(sy):
+                for z in range(D):
+                    f.st.set(x, y, z, names[(x * 7 + z * 3 + y) % 5])
+                    if (x * D + z) % 37 == 0 and y == 0:
+                        f.markers.append({"fam": "station", "kind": "post", "cell": [x, y - 15, z]})
+        pieces = C.cut(f)
+        want_n = (-(-W // 64)) * (-(-D // 64))
+        good, nm, npc, badrows, nmk = C.pieces_equal_model(f, pieces)
+        sizes_ok = all(st.size == (64, sy, 64) for (st, _) in pieces.values())
+        pad_ok = True
+        for q, (st, _) in pieces.items():
+            i, j = C.piece_ij(q)
+            for x in range(64):
+                for z in range(64):
+                    gx, gz = i * 64 + x, j * 64 + z
+                    if gx >= W or gz >= D:
+                        if any(st.layer0[(x * sy + y) * 64 + z] != -1 for y in range(sy)):
+                            pad_ok = False
+        res = good and sizes_ok and pad_ok and len(pieces) == want_n
+        ok = ok and res
+        lines.append(f"part 2: {W} x {D}: {len(pieces)}/{want_n} pieces, model cells {nm}, piece cells {npc}, mismatched rows {badrows}, "
+                     f"markers {nmk}/{len(f.markers)}, sizes 64 {sizes_ok}, padding void {pad_ok} -> {'PASS' if res else 'FAIL'}")
+    return ok, lines
+
+
 def main():
+    if "--test-cut" in sys.argv:
+        ok, lines = test_cut()
+        print("\n".join(lines))
+        print("TEST CUT:", "PASS" if ok else "FAIL")
+        return 0 if ok else 1
     import castlegen as C
     v = C.Variety(C.arg("skin", "A"), C.arg("size", "lord"), C.arg("seed", 1))
     c = C.build(v)
     ok, rep, _ = verify(c)
     print("CONSTRUCTED CORRECTLY" if ok else "NOT YET")
-    out = Path("/home/claude/_docs/castle/v0_3") / f"verify-{v.skin}-{v.size_name}-{v.seed}.json"
+    out = Path("/home/claude/_docs/castle/v0_4") / f"verify-{v.skin}-{v.size_name}-{v.seed}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(rep, indent=1, default=list))
     return 0 if ok else 1

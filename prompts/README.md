@@ -13,7 +13,9 @@
 | `agent-templates/*.md` | reference for future subagent briefs | the 25 subagent briefs from 2026-10-06/07 (CIVITAS batches, palace, castles, Academy II, skyways, furniture, acacia, skirt tint, households & dynasty, plateau). |
 
 ## Notes on effort settings (checked against the Claude Code settings reference, 2026-10-07)
-- `effortLevel` accepts `low`, `medium`, `high`, `xhigh`. `ultracode: true` (or `/effort ultracode`, or `--effort ultracode`)
-  is the top mode; it needs a model that supports `xhigh`. `/effort ultracode off` needs Claude Code 2.1.284 or newer.
+- The effort slider (witnessed in his Claude app, 01:05 CT 10-07) has 6 stops; the top two are **Max** and, above it,
+  **Ultracode**. The settings file accepts `effortLevel` `low` / `medium` / `high` / `xhigh` (a `max` value was not in the
+  reference page I read — unverified); `ultracode: true` (or `/effort ultracode`) selects the top stop and needs a model that
+  supports `xhigh`. `/effort ultracode off` needs Claude Code 2.1.284 or newer. Correction: my first note omitted Max.
 - The environment variable `CLAUDE_CODE_EFFORT_LEVEL` overrides the settings file when set.
 - claude.ai chats have no effort switch in the instructions; the EFFORT paragraph sets the behaviour instead.

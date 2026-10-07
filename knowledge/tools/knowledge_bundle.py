@@ -123,6 +123,11 @@ def collect(b):
         p = ROOT / "_logs" / n
         if p.exists():
             b.add_file("knowledge/logs/" + n, p)
+    for p in sorted((ROOT / "_logs" / "agent_status").glob("*")):
+        if p.is_file():
+            b.add_file("knowledge/logs/agent_status/" + p.name, p)
+    if (ROOT / "_logs" / "agent_brief_1007.md").exists():
+        b.add_file("knowledge/logs/agent_brief_1007.md", ROOT / "_logs" / "agent_brief_1007.md")
     for p in sorted((KN / "memory_export").rglob("*.md")):
         b.add_file("knowledge/memory/" + p.relative_to(KN / "memory_export").as_posix(), p)
     pe = KN / "project_export"
@@ -173,8 +178,9 @@ def write_index(b, stamp, headline):
         by_top.setdefault(top, [0, 0])
         by_top[top][0] += 1
         by_top[top][1] += r["bytes"]
+    src_of = {r["path"]: r["source"] for r in b.rows}
     cur = sorted((r["path"] for r in b.rows if r["path"].startswith("knowledge/current/HANDOFF")),
-                 key=lambda s: newest_handoff_date(s) + s)
+                 key=lambda s: (newest_handoff_date(s), (ROOT / src_of[s]).stat().st_mtime))
     lines = [f"# ABSOLUTREALISM KNOWLEDGE MIRROR — {stamp}", "",
              f"**Headline:** {headline}", "",
              "Built by `tools/knowledge_bundle.py`. Every file's md5 is in `knowledge/MANIFEST.json`.", "",

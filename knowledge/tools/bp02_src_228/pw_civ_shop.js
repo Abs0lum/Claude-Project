@@ -92,6 +92,15 @@ HB.register("shop", { fn: () => {
   }
   const tm0 = Date.now();
   try { marketBeat(s, duty); } catch (e) { console.warn(`[CIV-SHOP] market: ${e}`); }   // 1.3.224: the market clerk on the square
+  // 1.3.231 (INN24): from dusk, once a world day, the inn's guests pay their beds (and the [CIV-INN] line)
+  if (tod >= 12000) {
+    let wday = 0; try { wday = world.getDay(); } catch { /* left */ }
+    for (const st of s.settlements) {
+      if (st.innNight === wday) continue;
+      const inn = s.buildings.find((q) => q.settlement === st.id && q.stage >= 4 && !q.closed && API.short(q) === "inn");
+      if (inn) { try { if (innNight(st, inn, API.BUILDINGS[inn.family], wday, tod, Math.floor(s.simDays))) API.save(); } catch (e) { console.warn(`[CIV-SHOP] inn night: ${e}`); } }
+    }
+  }
   const tm1 = Date.now();
   // 1.3.227 (profiled at city II: shop beats of 120..423 ms): at most HIRES_PER_BEAT keepers are hired in one beat (each is a
   // spawn and its set-up); the rest are hired on the next beats
@@ -100,7 +109,7 @@ HB.register("shop", { fn: () => {
     if (b.closed || b.stage < 4) continue;
     if (!b.keeper) {                                                  // 1.3.224: a hire that failed (chunk asleep) is tried again
       const def = API.BUILDINGS[b.family];
-      if (!def || b.stage < def.stages - 1 || !TRADE[API.short(b)] || !duty) continue;
+      if (!def || b.stage < def.stages - 1 || !TRADE[API.short(b)] || (!duty && API.short(b) !== "inn")) continue;   // 1.3.231 (INN24): the inn hires at any hour
       const last = hireTried.get(b.id) || -1e9;
       if (system.currentTick - last < 1200) continue;
       if (hires >= HIRES_PER_BEAT) continue;
@@ -116,7 +125,7 @@ HB.register("shop", { fn: () => {
       // the keeper is gone (died, unloaded far away): hire again when the shop's chunk is loaded and it is a work day
       if (hires >= HIRES_PER_BEAT) continue;
       hires++;
-      try { const dim = world.getDimension(b.dim); if (duty && API.blockAt(dim, b.x, b.y + 15, b.z)) { b.keeper = null; hireKeeper(dim, b, API.BUILDINGS[b.family], s.settlements.find((x) => x.id === b.settlement)); } } catch { /* unloaded */ }
+      try { const dim = world.getDimension(b.dim); if ((duty || API.short(b) === "inn") && API.blockAt(dim, b.x, b.y + 15, b.z)) { b.keeper = null; hireKeeper(dim, b, API.BUILDINGS[b.family], s.settlements.find((x) => x.id === b.settlement)); } } catch { /* unloaded */ }
       continue;
     }
     const stK = s.settlements.find((x) => x.id === b.settlement) || null;
@@ -177,7 +186,11 @@ world.beforeEvents.playerInteractWithEntity.subscribe((ev) => {
   if (keeper) {
     const tag = v.getTags().find((t) => t.startsWith("civ:shop:"));
     const bid = tag ? Number(tag.slice(9)) : NaN;
-    system.run(() => { try { openShop(player, bid, vname); } catch (e) { console.warn(`[CIV-SHOP] window: ${e}`); } });
+    system.run(() => { try { openShop(player, bid, vname, v); } catch (e) { console.warn(`[CIV-SHOP] window: ${e}`); } });
+  } else if (innJobOf(v) !== null) {
+    // 1.3.231 (INN24): any of the inn's staff serves (the rota's night keeper, the serving staff), not only the keeper
+    const bid = innJobOf(v);
+    system.run(() => { try { openShop(player, bid, vname, v); } catch (e) { console.warn(`[CIV-SHOP] inn window: ${e}`); } });
   } else {
     system.run(() => { try { VOICE.hold(v, player); openTalk(player, v); } catch (e) { console.warn(`[CIV-SHOP] talk: ${e}`); } });   // B5 (PE11): he stops and faces you
   }
@@ -243,7 +256,62 @@ function goodsOf(kind, ECON) {
   return { sells: Object.keys(p.out), buys: [...new Set([...Object.keys(p.in), ...Object.keys(p.out)])] };
 }
 
-export function openShop(player, bid, vname) {
+// INN24 (1.3.231, his 00:23 ruling; his 02:43 witness "We're closed" from Sven the Innkeeper in daylight). Mechanism: this
+// window opened only while the world's time of day was inside the FIXED WORK window (1000..11000) — never the keeper's own
+// shift (the late template, 3000..13000) — so 17:00..19:00 (daylight) the keeper stood at his station and refused. Now a
+// shop is open while ITS KEEPER is on his own shift (API.onShift), and the inn while ANY of its staff is on the rota's
+// duty (PEOPLE.innStatus): "closed" only when no staffer is.
+/** INN24: the census person's inn (its job's building id) of a body that is not the keeper, or null */
+function innJobOf(v) {
+  try {
+    if (!API) return null;
+    const pTag = v.getTags().find((t) => t.startsWith("civ:person:")), sTag = v.getTags().find((t) => t.startsWith("civ:settlement:"));
+    if (!pTag || !sTag) return null;
+    const s = API.load(), st = s.settlements.find((x) => x.id === Number(sTag.slice(15)));
+    const p = st && st.people ? API.PEOPLE.byId(st.people, Number(pTag.slice(11))) : null;
+    if (!p || !p.alive || typeof p.job !== "number") return null;
+    const b = s.buildings.find((x) => x.id === p.job);
+    return b && API.short(b) === "inn" && b.stage >= 4 && !b.closed ? b.id : null;
+  } catch { return null; }
+}
+/** INN24: the inn's staff on duty at world time (tod, wday) -> { on: [persons], next: ticks until open (0 now; null never),
+ *  staff, rota } — the rota over the census staff (the same rota the clock's schedule walks them by) */
+export function innNow(st, b, tod, wday, simDay) {
+  const staff = st && st.people ? API.PEOPLE.innStaff(st.people, b.id, simDay) : [];
+  return { ...API.PEOPLE.innStatus(staff, tod, wday, { seed: (st && st.seed) || 0 }), staff };
+}
+const ROLE = { inn_solo: "innkeeper", inn_long_d: "day", inn_long_n: "night", inn_day: "day", inn_eve: "evening", inn_night: "night", inn_serve: "serving" };
+/** INN24: a guest rents a bed for tonight (the player): the price returns to the treasury (as a sale does), once a night */
+function rentBed(player, st, b, vname) {
+  const L = st && st.ledger, price = API.PEOPLE.INN24.bedP;
+  let wday = 0; try { wday = world.getDay(); } catch { /* left */ }
+  const e = (st && st.pstats && st.pstats[player.name]) || null;
+  if (e && e.bed === wday) { player.sendMessage(`§7${vname}: "Your bed is paid for tonight — any free bed upstairs."`); return; }
+  if (!COIN.payPennies(player, price, st ? st.name : "the inn", `a bed at the inn #${b.id}`)) { player.sendMessage(`§c${vname}: "A bed is ${COIN.fmtP(price)} — you carry ${COIN.fmtP(COIN.countPennies(player))}."`); return; }
+  if (L) { L.treasury += price; L.playerNet += price; L.sales[b.id] = (L.sales[b.id] || 0) + 1; }
+  pstat(st, player, "t");
+  try { st.pstats[player.name].bed = wday; } catch { /* no name */ }
+  API.save();
+  player.sendMessage(`§a${vname}: "A bed for the night, ${COIN.fmtP(price)}. Any free bed upstairs is yours — sleep well."`);
+}
+/** INN24: once a world day (from dusk) the inn's guests — the homeless the clock lodges there (PEOPLE.innGuests) — pay
+ *  their beds from the citizens' purse into the inn's till (the economy's day pays the till out: toll to the treasury,
+ *  the rest to the purse); one [CIV-INN] line a town a day */
+export function innNight(st, b, def, wday, tod, simDay) {
+  if (!st || !b || st.innNight === wday || tod < 12000) return null;
+  st.innNight = wday;
+  const guests = API.PEOPLE.innGuests(st.people ? st.people.list : [], API.PEOPLE.bedsOf(def ? def.dir : []), b.id);
+  const L = st.ledger;
+  const bill = API.PEOPLE.lodgeBill(guests.length, L ? L.purse : 0);
+  if (L && bill.paid > 0) { L.purse -= bill.paid; L.tills[b.id] = (L.tills[b.id] || 0) + bill.paid; L.sales[b.id] = (L.sales[b.id] || 0) + Math.max(1, Math.round(bill.paid / API.ECON.COIN)); }
+  if (guests.length) st.log.push(`day ${simDay}: ${guests.length} without a home slept at the inn #${b.id} (${bill.paid} of ${bill.price} pennies paid)`);
+  const S = innNow(st, b, tod, wday, simDay);
+  const roles = {}; for (const [, t] of S.rota) roles[ROLE[t] || t] = (roles[ROLE[t] || t] || 0) + 1;
+  console.warn(`[CIV-INN] ${JSON.stringify({ st: st.id, inn: b.id, day: wday, staff: S.staff.length, roles, on: S.on.length, guests: guests.length, paid: bill.paid })}`);
+  return { guests, bill };
+}
+
+export function openShop(player, bid, vname, v = null) {
   const s = API.load();
   const b = s.buildings.find((x) => x.id === bid);
   if (!b) { player.sendMessage("§7The shopkeeper shrugs."); return; }
@@ -251,7 +319,20 @@ export function openShop(player, bid, vname) {
   const L = st && st.ledger;
   const ECON = API.ECON;
   const kind = API.short(b);
-  if (!onDuty()) { player.sendMessage(`§7${vname}: "We're closed — come back in the morning."`); return; }
+  let tod = 0, wday = 0; try { tod = world.getTimeOfDay(); wday = world.getDay(); } catch { /* left */ }
+  let serving = null;
+  if (kind === "inn") {
+    const S = innNow(st, b, tod, wday, Math.floor(s.simDays));
+    if (!S.on.length) {
+      const at = S.next !== null ? ` — we open at ${String(API.PEOPLE.hourOf(tod + S.next)).padStart(2, "0")}:00` : "";
+      player.sendMessage(`§7${vname}: "We're closed${at}."`); return;
+    }
+    serving = S.on.map((q) => `${q.name} (${ROLE[S.rota.get(q.id)] || "staff"})`);
+  } else {
+    let on;
+    try { on = v && st && API.onShift ? API.onShift(v, st, tod) : onDuty(); } catch { on = onDuty(); }
+    if (!on) { player.sendMessage(`§7${vname}: "We're closed — come back in the morning."`); return; }
+  }
   if (b.closed) { player.sendMessage(`§7${vname}: "The shop has closed."`); return; }
   const coins = COIN.countCoins(player);
   const form = new ActionFormData().title(`${vname}`);
@@ -284,6 +365,11 @@ export function openShop(player, bid, vname) {
       if (pay > 0) acts.push({ label: `Sell ${n} ${g} — ${COIN.fmtP(pay)}`, run: () => sell(player, st, b, g, n, vname) });
     }
     body += `\n${lines.join("\n")}`;
+  }
+  if (kind === "inn" && serving) {                                   // 1.3.231 (INN24): who is on duty; a bed for the night
+    body += `\nServing now: ${serving.join(", ")}`;
+    acts.unshift({ label: `Rent a bed for the night — ${COIN.fmtP(API.PEOPLE.INN24.bedP)}`, run: () => rentBed(player, st, b, vname) });
+    if (v && v.isValid) acts.push({ label: "Talk", run: () => { try { VOICE.hold(v, player); openTalk(player, v); } catch (e) { console.warn(`[CIV-SHOP] talk: ${e}`); } } });
   }
   acts.push({ label: "Leave", run: () => {} });
   form.body(body);

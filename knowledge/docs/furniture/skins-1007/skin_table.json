@@ -1,0 +1,3591 @@
+{
+ "candidates": [
+  {
+   "num": 1,
+   "pack": "rustic",
+   "id": "classic_nightstand",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "drawer pulls",
+     "cubes": [
+      17,
+      18
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "pack": "rustic",
+   "id": "classic_nightstand_open",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "drawer pulls",
+     "cubes": [
+      24,
+      25
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "pack": "rustic",
+   "id": "classic_nightstand_left",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "drawer pulls",
+     "cubes": [
+      12,
+      13
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "pack": "rustic",
+   "id": "classic_nightstand_middle",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "drawer pulls",
+     "cubes": [
+      7,
+      8
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "pack": "rustic",
+   "id": "foot_stool",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "upholstered body + top",
+     "cubes": [
+      0,
+      1
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "source smallchairbeige = beige upholstery"
+    },
+    {
+     "part": "skirt panels",
+     "cubes": [
+      2,
+      4,
+      6,
+      8
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    },
+    {
+     "part": "trim strips",
+     "cubes": [
+      3,
+      5,
+      7,
+      9
+     ],
+     "now": "post",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "or brass nails"
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "pack": "craftopia",
+   "id": "cofremini",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "lock plate",
+     "cubes": [
+      1
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "pack": "craftopia",
+   "id": "cofremini_open",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "lock plate",
+     "cubes": [
+      5
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    },
+    {
+     "part": "lid lining (optional)",
+     "cubes": "lid inner face",
+     "now": "whole piece: board/post",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "pack": "craftopia",
+   "id": "perchero3",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 9,
+   "pack": "craftopia",
+   "id": "espejo2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "mirror glass",
+     "cubes": [
+      0
+     ],
+     "now": "keep",
+     "need": "mirror",
+     "source": "pw_furn_mirror (new)",
+     "note": "was source PNG (keep)"
+    },
+    {
+     "part": "frame",
+     "cubes": [
+      1,
+      2,
+      3
+     ],
+     "now": "keep/post",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was source PNG"
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "pack": "craftopia",
+   "id": "toalla",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "towel",
+     "cubes": [
+      5,
+      7
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "linen"
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "pack": "craftopia",
+   "id": "lampara",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "lampshade",
+     "cubes": [
+      2,
+      4,
+      6,
+      7
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "linen or parchment shade"
+    },
+    {
+     "part": "candle/flame",
+     "cubes": "none in model",
+     "now": "whole piece: board/iron",
+     "need": "candle",
+     "source": "white_candle_lit (RP-04, have) on ADDED cubes",
+     "note": "add 1 candle cube if it is to read lit"
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "pack": "feudal",
+   "id": "alfombra_enrollada1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "rug roll",
+     "cubes": [
+      0,
+      3
+     ],
+     "now": "cloth:yellow",
+     "need": "rug",
+     "source": "pw_furn_rug (new woven pattern) or cloth tint",
+     "note": "source alfombra_enrollada1"
+    },
+    {
+     "part": "roll ends",
+     "cubes": [
+      1,
+      2,
+      4,
+      5
+     ],
+     "now": "board",
+     "need": "rug",
+     "source": "pw_furn_rug (new woven pattern) or cloth tint",
+     "note": "spiral end"
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "pack": "rustic",
+   "id": "small_chair",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "seat cushion",
+     "cubes": [
+      9
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "source smallchairbeige"
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "pack": "rustic",
+   "id": "simple_stool",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 15,
+   "pack": "craftopia",
+   "id": "taburete",
+   "status": "texture fix",
+   "top12": false,
+   "parts": [
+    {
+     "part": "seat top",
+     "cubes": [
+      5
+     ],
+     "now": "iron",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "misread as iron from the source colour"
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "pack": "feudal",
+   "id": "sit_tronco2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "log seat",
+     "cubes": [
+      0,
+      1
+     ],
+     "now": "board",
+     "need": "log",
+     "source": "log bark + log top (RP-04 pw_hearth_log / pw_hearth_log_end, have)",
+     "note": "bark sides + ring top"
+    }
+   ]
+  },
+  {
+   "num": 17,
+   "pack": "craftopia",
+   "id": "ajedrez",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "board top",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "game",
+     "source": "pw_furn_game (new: chequer board + bone/ebony men)",
+     "note": "chequer"
+    },
+    {
+     "part": "pieces",
+     "cubes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "now": "board",
+     "need": "ivory",
+     "source": "pw_furn_game atlas (ivory / ebony keys)",
+     "note": "two colours"
+    }
+   ]
+  },
+  {
+   "num": 18,
+   "pack": "craftopia",
+   "id": "casapajaro2",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 19,
+   "pack": "rustic",
+   "id": "dinner_table",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 20,
+   "pack": "rustic",
+   "id": "dinner_table_left",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 21,
+   "pack": "rustic",
+   "id": "dinner_table_middle",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 22,
+   "pack": "feudal",
+   "id": "mesa",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 23,
+   "pack": "feudal",
+   "id": "mesa1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "table-top clutter",
+     "cubes": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      16,
+      17,
+      18,
+      19
+     ],
+     "now": "post/board",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "small props (mugs / plates / papers?) - identify at import; not resolved from the ID sheet"
+    }
+   ]
+  },
+  {
+   "num": 24,
+   "pack": "feudal",
+   "id": "mesa4",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 25,
+   "pack": "feudal",
+   "id": "mesa2",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 26,
+   "pack": "feudal",
+   "id": "banco",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 27,
+   "pack": "feudal",
+   "id": "banco2",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 28,
+   "pack": "rustic",
+   "id": "chair_dinner",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "seat pad (optional)",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "or leather"
+    }
+   ]
+  },
+  {
+   "num": 29,
+   "pack": "rustic",
+   "id": "chair_classic",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "seat pad (optional)",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "or leather"
+    }
+   ]
+  },
+  {
+   "num": 30,
+   "pack": "feudal",
+   "id": "silla2",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 31,
+   "pack": "craftopia",
+   "id": "sillarus",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "sling seat",
+     "cubes": [
+      6
+     ],
+     "now": "board",
+     "need": "leather",
+     "source": "pw_furn_book atlas leather_dark region",
+     "note": ""
+    },
+    {
+     "part": "back strap",
+     "cubes": [
+      7
+     ],
+     "now": "board",
+     "need": "leather",
+     "source": "pw_furn_book atlas leather_dark region",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 32,
+   "pack": "feudal",
+   "id": "fireplace1-1",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "firewood",
+     "cubes": [
+      8,
+      9,
+      10
+     ],
+     "now": "stone/keep",
+     "need": "hearth",
+     "source": "pw_hearth_log_lit / log_end_lit / embers / ash / soot (RP-04, have)",
+     "note": "log_lit + log_end_lit"
+    },
+    {
+     "part": "embers",
+     "cubes": [
+      1,
+      2,
+      3
+     ],
+     "now": "stone",
+     "need": "hearth",
+     "source": "pw_hearth_log_lit / log_end_lit / embers / ash / soot (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "ash bed",
+     "cubes": [
+      4
+     ],
+     "now": "stone",
+     "need": "hearth",
+     "source": "pw_hearth_log_lit / log_end_lit / embers / ash / soot (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "back wall inner face",
+     "cubes": [
+      7
+     ],
+     "now": "stone",
+     "need": "hearth",
+     "source": "pw_hearth_log_lit / log_end_lit / embers / ash / soot (RP-04, have)",
+     "note": "soot"
+    },
+    {
+     "part": "flame",
+     "cubes": "none in model",
+     "now": "whole piece: stone/keep",
+     "need": "flame",
+     "source": "pw_hearth_flame flipbook (RP-04, have)",
+     "note": "ADD 2 crossed planes"
+    }
+   ]
+  },
+  {
+   "num": 33,
+   "pack": "feudal",
+   "id": "fireplace-top1-1",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "flue opening",
+     "cubes": [
+      3
+     ],
+     "now": "stone",
+     "need": "hearth",
+     "source": "pw_hearth_log_lit / log_end_lit / embers / ash / soot (RP-04, have)",
+     "note": "soot"
+    }
+   ]
+  },
+  {
+   "num": 34,
+   "pack": "craftopia",
+   "id": "chim1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "firewood",
+     "cubes": [
+      1,
+      2,
+      3
+     ],
+     "now": "stone/keep",
+     "need": "hearth",
+     "source": "pw_hearth_log_lit / log_end_lit / embers / ash / soot (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "hearth floor / back",
+     "cubes": [
+      0
+     ],
+     "now": "stone",
+     "need": "hearth",
+     "source": "pw_hearth_log_lit / log_end_lit / embers / ash / soot (RP-04, have)",
+     "note": "ash / soot"
+    },
+    {
+     "part": "flame",
+     "cubes": "none in model",
+     "now": "whole piece: stone/keep",
+     "need": "flame",
+     "source": "pw_hearth_flame flipbook (RP-04, have)",
+     "note": "ADD 2 crossed planes"
+    }
+   ]
+  },
+  {
+   "num": 35,
+   "pack": "feudal",
+   "id": "herramienta_fuego",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "fire irons",
+     "cubes": "cubes 1-16",
+     "now": "whole piece: iron/board/post",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "already iron; rack 17-18 wood"
+    }
+   ]
+  },
+  {
+   "num": 36,
+   "pack": "feudal",
+   "id": "paloantorcha-pro",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "brazier slats",
+     "cubes": "cubes 1-16",
+     "now": "whole piece: iron/post/end",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "already iron"
+    },
+    {
+     "part": "flame",
+     "cubes": "none in model",
+     "now": "whole piece: iron/post/end",
+     "need": "flame",
+     "source": "pw_hearth_flame flipbook (RP-04, have)",
+     "note": "ADD planes"
+    }
+   ]
+  },
+  {
+   "num": 37,
+   "pack": "feudal",
+   "id": "barril",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "staves",
+     "cubes": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "now": "board",
+     "need": "cask",
+     "source": "pw_furn_cask_<wood> (staves + hoops)",
+     "note": "source hoops were painted, lost in re-skin"
+    },
+    {
+     "part": "heads",
+     "cubes": [
+      0,
+      1,
+      6
+     ],
+     "now": "board/keep/cloth:silver",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was cloth:silver"
+    }
+   ]
+  },
+  {
+   "num": 38,
+   "pack": "feudal",
+   "id": "barril2",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "staves",
+     "cubes": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "now": "board",
+     "need": "cask",
+     "source": "pw_furn_cask_<wood> (staves + hoops)",
+     "note": "source hoops were painted, lost in re-skin"
+    },
+    {
+     "part": "heads",
+     "cubes": [
+      0,
+      1,
+      6
+     ],
+     "now": "board/keep/cloth:silver",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was cloth:silver"
+    }
+   ]
+  },
+  {
+   "num": 39,
+   "pack": "feudal",
+   "id": "cubo",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "hoops",
+     "cubes": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+     ],
+     "now": "post/end",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 40,
+   "pack": "feudal",
+   "id": "caja1",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 41,
+   "pack": "feudal",
+   "id": "cesta_patatas",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "potatoes",
+     "cubes": "bones item_1..15",
+     "now": "whole piece: board/keep",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "source cesta_patatas.png"
+    },
+    {
+     "part": "basket",
+     "cubes": "bone structure",
+     "now": "whole piece: board/keep",
+     "need": "wicker",
+     "source": "pw_furn_wicker (new)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 42,
+   "pack": "feudal",
+   "id": "cesta_manzana",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "apples",
+     "cubes": "bones item_* (3x3x3)",
+     "now": "whole piece: board/post/end",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": ""
+    },
+    {
+     "part": "stalks / leaves",
+     "cubes": "item_* planes",
+     "now": "whole piece: board/post/end",
+     "need": "leaf",
+     "source": "oak leaves (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "basket",
+     "cubes": "bone structure",
+     "now": "whole piece: board/post/end",
+     "need": "wicker",
+     "source": "pw_furn_wicker (new)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 43,
+   "pack": "feudal",
+   "id": "cesta_zanahoria",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "carrots",
+     "cubes": "bones item_* (2x2x4)",
+     "now": "whole piece: board/post/end",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": ""
+    },
+    {
+     "part": "tops",
+     "cubes": "item_* planes",
+     "now": "whole piece: board/post/end",
+     "need": "leaf",
+     "source": "oak leaves (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "basket",
+     "cubes": "bone structure",
+     "now": "whole piece: board/post/end",
+     "need": "wicker",
+     "source": "pw_furn_wicker (new)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 44,
+   "pack": "feudal",
+   "id": "tocon2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "stump",
+     "cubes": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      7,
+      10
+     ],
+     "now": "board",
+     "need": "log",
+     "source": "log bark + log top (RP-04 pw_hearth_log / pw_hearth_log_end, have)",
+     "note": "bark + rings"
+    },
+    {
+     "part": "split billets",
+     "cubes": [
+      3,
+      5,
+      8,
+      9
+     ],
+     "now": "board",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 45,
+   "pack": "rustic",
+   "id": "pan",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "pan",
+     "cubes": "bone dd",
+     "now": "whole piece: keep/post/end",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "was source pan.png"
+    },
+    {
+     "part": "handle",
+     "cubes": "bone bone",
+     "now": "whole piece: keep/post/end",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 46,
+   "pack": "rustic",
+   "id": "teapot",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "kettle",
+     "cubes": "all",
+     "now": "whole piece: keep/iron",
+     "need": "copper",
+     "source": "copper_block (RP-04, have)",
+     "note": "was source teapot.png"
+    }
+   ]
+  },
+  {
+   "num": 47,
+   "pack": "craftopia",
+   "id": "olla1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "pot",
+     "cubes": [
+      0,
+      2
+     ],
+     "now": "keep/post/end",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "was source"
+    },
+    {
+     "part": "contents",
+     "cubes": [
+      1
+     ],
+     "now": "keep/board",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "stew surface"
+    }
+   ]
+  },
+  {
+   "num": 48,
+   "pack": "craftopia",
+   "id": "platos",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "plates",
+     "cubes": [
+      4,
+      5
+     ],
+     "now": "board",
+     "need": "ceramic",
+     "source": "pw_mat_white_terracotta / pw_mat_hardened_clay (have)",
+     "note": ""
+    },
+    {
+     "part": "rack",
+     "cubes": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "now": "post/end",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 49,
+   "pack": "rustic",
+   "id": "basic_plate",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "plate",
+     "cubes": [
+      0
+     ],
+     "now": "keep",
+     "need": "ceramic",
+     "source": "pw_mat_white_terracotta / pw_mat_hardened_clay (have)",
+     "note": "was source quartz"
+    }
+   ]
+  },
+  {
+   "num": 50,
+   "pack": "rustic",
+   "id": "cutlery",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "blades / tines",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "now": "keep",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "was source quartz"
+    },
+    {
+     "part": "handles",
+     "cubes": [
+      5,
+      6
+     ],
+     "now": "keep",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 51,
+   "pack": "rustic",
+   "id": "cup_stg_0",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "cup",
+     "cubes": "all",
+     "now": "whole piece: keep",
+     "need": "ceramic",
+     "source": "pw_mat_white_terracotta / pw_mat_hardened_clay (have)",
+     "note": "or pewter (iron)"
+    }
+   ]
+  },
+  {
+   "num": 52,
+   "pack": "craftopia",
+   "id": "decoracioncocina1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "hanging utensils",
+     "cubes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "now": "post/end/board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    },
+    {
+     "part": "rail",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 53,
+   "pack": "craftopia",
+   "id": "estant1",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 54,
+   "pack": "craftopia",
+   "id": "estant5",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "crocks",
+     "cubes": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "now": "board",
+     "need": "ceramic",
+     "source": "pw_mat_white_terracotta / pw_mat_hardened_clay (have)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 55,
+   "pack": "rustic",
+   "id": "kitchen_drawer",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "drawer pulls",
+     "cubes": [
+      3,
+      4
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": "or iron"
+    }
+   ]
+  },
+  {
+   "num": 56,
+   "pack": "rustic",
+   "id": "kitchen_cabinet",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "door knobs",
+     "cubes": [
+      2,
+      4
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": "or iron"
+    }
+   ]
+  },
+  {
+   "num": 57,
+   "pack": "feudal",
+   "id": "estante4",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    },
+    {
+     "part": "open-book boards",
+     "cubes": [
+      12,
+      13
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    },
+    {
+     "part": "open-book pages",
+     "cubes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+     ],
+     "now": "board",
+     "need": "paper",
+     "source": "pw_furn_parchment atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 58,
+   "pack": "feudal",
+   "id": "estante5",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 59,
+   "pack": "feudal",
+   "id": "estante3",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books (sheet said jars)",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": "3x8x6 = the Feudal book size"
+    }
+   ]
+  },
+  {
+   "num": 60,
+   "pack": "feudal",
+   "id": "estante6",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 61,
+   "pack": "craftopia",
+   "id": "libreriarust1",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 62,
+   "pack": "craftopia",
+   "id": "libreriarust3",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      10,
+      11,
+      12
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 63,
+   "pack": "craftopia",
+   "id": "libreriarust5",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 64,
+   "pack": "craftopia",
+   "id": "libreriarust6",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      3,
+      4,
+      6,
+      7,
+      8
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 65,
+   "pack": "craftopia",
+   "id": "libre1r",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      3,
+      4,
+      7,
+      8
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 66,
+   "pack": "craftopia",
+   "id": "estant3",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 67,
+   "pack": "feudal",
+   "id": "libros1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      0,
+      1,
+      2
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    },
+    {
+     "part": "loose sheet",
+     "cubes": [
+      3
+     ],
+     "now": "board",
+     "need": "paper",
+     "source": "pw_furn_parchment atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 68,
+   "pack": "feudal",
+   "id": "libros2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      0,
+      1,
+      2
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 69,
+   "pack": "feudal",
+   "id": "libro_abierto",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "pages",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "now": "board",
+     "need": "paper",
+     "source": "pw_furn_parchment atlas",
+     "note": ""
+    },
+    {
+     "part": "boards",
+     "cubes": [
+      6,
+      7
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 70,
+   "pack": "feudal",
+   "id": "pergamino1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "scroll rolls",
+     "cubes": [
+      0,
+      3
+     ],
+     "now": "post/end",
+     "need": "paper",
+     "source": "pw_furn_parchment atlas",
+     "note": "scroll_end on the ends"
+    },
+    {
+     "part": "sheet",
+     "cubes": [
+      4
+     ],
+     "now": "board",
+     "need": "paper",
+     "source": "pw_furn_parchment atlas",
+     "note": "written"
+    },
+    {
+     "part": "roller knobs",
+     "cubes": [
+      1,
+      2,
+      5,
+      6
+     ],
+     "now": "board",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 71,
+   "pack": "craftopia",
+   "id": "libro_cocina1",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "boards",
+     "cubes": [
+      0,
+      4
+     ],
+     "now": "keep",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": "was source PNG"
+    },
+    {
+     "part": "pages",
+     "cubes": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+     ],
+     "now": "keep",
+     "need": "paper",
+     "source": "pw_furn_parchment atlas",
+     "note": "was source PNG"
+    },
+    {
+     "part": "page clips",
+     "cubes": [
+      10,
+      11
+     ],
+     "now": "board",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 72,
+   "pack": "craftopia",
+   "id": "escritorio1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "books",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "now": "board",
+     "need": "book",
+     "source": "pw_furn_book atlas (spine/cover/pages)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 73,
+   "pack": "rustic",
+   "id": "template_shelf_table",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 74,
+   "pack": "rustic",
+   "id": "shelf_table_left",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 75,
+   "pack": "craftopia",
+   "id": "organizadordehojas",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "paper sheets",
+     "cubes": "planes 7x0x10 / 7x1x10",
+     "now": "whole piece: post/board",
+     "need": "paper",
+     "source": "pw_furn_parchment atlas",
+     "note": "35 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 76,
+   "pack": "rustic",
+   "id": "globe",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "globe",
+     "cubes": [
+      7
+     ],
+     "now": "keep",
+     "need": "globe",
+     "source": "pw_furn_globe atlas",
+     "note": "cube-shaped in the source"
+    },
+    {
+     "part": "meridian + pin",
+     "cubes": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "now": "keep",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": ""
+    },
+    {
+     "part": "stand",
+     "cubes": [
+      0,
+      1,
+      2
+     ],
+     "now": "keep",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was source quartz-white"
+    }
+   ]
+  },
+  {
+   "num": 77,
+   "pack": "craftopia",
+   "id": "mundo",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "globe",
+     "cubes": [
+      5
+     ],
+     "now": "keep",
+     "need": "globe",
+     "source": "pw_furn_globe atlas",
+     "note": ""
+    },
+    {
+     "part": "stand / axis",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+     ],
+     "now": "iron",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": "now iron"
+    }
+   ]
+  },
+  {
+   "num": 78,
+   "pack": "craftopia",
+   "id": "telescopio",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "tube",
+     "cubes": [
+      0
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": "lens region on the ends"
+    },
+    {
+     "part": "draw sleeve",
+     "cubes": [
+      1
+     ],
+     "now": "post/end",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 79,
+   "pack": "craftopia",
+   "id": "pizarra",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "writing surface",
+     "cubes": [
+      5
+     ],
+     "now": "board",
+     "need": "slate",
+     "source": "pw_furn_slate atlas (board / chalk)",
+     "note": "was wood (board)"
+    },
+    {
+     "part": "back panel",
+     "cubes": [
+      4
+     ],
+     "now": "keep",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was source PNG"
+    },
+    {
+     "part": "frame",
+     "cubes": [
+      2,
+      3,
+      6,
+      7
+     ],
+     "now": "keep",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was source PNG"
+    },
+    {
+     "part": "chalk + duster",
+     "cubes": [
+      0,
+      1
+     ],
+     "now": "keep",
+     "need": "chalk",
+     "source": "pw_furn_slate chalk region",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 80,
+   "pack": "craftopia",
+   "id": "pizarra_bar1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "board",
+     "cubes": [
+      1
+     ],
+     "now": "board",
+     "need": "slate",
+     "source": "pw_furn_slate atlas (board / chalk)",
+     "note": ""
+    },
+    {
+     "part": "chalk marks",
+     "cubes": "cubes 2-20",
+     "now": "whole piece: post/board/end",
+     "need": "chalk",
+     "source": "pw_furn_slate chalk region",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 81,
+   "pack": "craftopia",
+   "id": "tablon_corcho1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "board face",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "cork",
+     "source": "pw_furn_parchment note region + new cork region",
+     "note": "pinned notes"
+    }
+   ]
+  },
+  {
+   "num": 82,
+   "pack": "craftopia",
+   "id": "lienzo1",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 83,
+   "pack": "craftopia",
+   "id": "lienzo2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "canvas",
+     "cubes": [
+      10
+     ],
+     "now": "board",
+     "need": "paint",
+     "source": "pw_furn_paint (new: painted panels, emblems, canvas)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 84,
+   "pack": "craftopia",
+   "id": "geoda",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "crystals",
+     "cubes": "planes 9-33",
+     "now": "whole piece: board/post/end",
+     "need": "amethyst",
+     "source": "amethyst_block (RP-04, have)",
+     "note": "34 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 85,
+   "pack": "craftopia",
+   "id": "capsula_amatista",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "case",
+     "cubes": [
+      4
+     ],
+     "now": "board",
+     "need": "glass",
+     "source": "pw_furn_glass (new, blend)",
+     "note": ""
+    },
+    {
+     "part": "specimen",
+     "cubes": [
+      2,
+      3
+     ],
+     "now": "board",
+     "need": "amethyst",
+     "source": "amethyst_block (RP-04, have)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 86,
+   "pack": "craftopia",
+   "id": "botes2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "jar",
+     "cubes": "all planes",
+     "now": "whole piece: post/board",
+     "need": "glass",
+     "source": "pw_furn_glass (new, blend)",
+     "note": "plus cork lid"
+    }
+   ]
+  },
+  {
+   "num": 87,
+   "pack": "craftopia",
+   "id": "botes1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "jars",
+     "cubes": "all",
+     "now": "whole piece: post/board",
+     "need": "glass",
+     "source": "pw_furn_glass (new, blend)",
+     "note": "44 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 88,
+   "pack": "craftopia",
+   "id": "estatua",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "figure",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "now": "keep",
+     "need": "stone",
+     "source": "pw_mat_* stone keys (have)",
+     "note": "was source PNG; or painted"
+    },
+    {
+     "part": "base",
+     "cubes": [
+      6
+     ],
+     "now": "keep/iron",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "now iron"
+    }
+   ]
+  },
+  {
+   "num": 89,
+   "pack": "craftopia",
+   "id": "mesasalonr1",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 90,
+   "pack": "craftopia",
+   "id": "damas1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "board",
+     "cubes": "base",
+     "now": "whole piece: board/post/end",
+     "need": "game",
+     "source": "pw_furn_game (new: chequer board + bone/ebony men)",
+     "note": ""
+    },
+    {
+     "part": "men",
+     "cubes": "cubes 3x1x3 / 2x1x2",
+     "now": "whole piece: board/post/end",
+     "need": "ivory",
+     "source": "pw_furn_game atlas (ivory / ebony keys)",
+     "note": "55 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 91,
+   "pack": "craftopia",
+   "id": "estatua2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "statue",
+     "cubes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "now": "board/post/end",
+     "need": "stone",
+     "source": "pw_mat_* stone keys (have)",
+     "note": "now wood"
+    },
+    {
+     "part": "plinth",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "stone",
+     "source": "pw_mat_* stone keys (have)",
+     "note": "now wood"
+    }
+   ]
+  },
+  {
+   "num": 92,
+   "pack": "feudal",
+   "id": "paloantorcha",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "post top",
+     "cubes": [
+      0
+     ],
+     "now": "post/end",
+     "need": "candle",
+     "source": "white_candle_lit (RP-04, have) on ADDED cubes",
+     "note": "flame painted in source; add candle cube or flame"
+    }
+   ]
+  },
+  {
+   "num": 93,
+   "pack": "feudal",
+   "id": "lampara-piedra",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "stone body",
+     "cubes": [
+      0,
+      1,
+      2
+     ],
+     "now": "board",
+     "need": "stone",
+     "source": "pw_mat_* stone keys (have)",
+     "note": "now WOOD: stone mode ignored when the source PNG is missing"
+    },
+    {
+     "part": "lamp bowl",
+     "cubes": [
+      3
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    },
+    {
+     "part": "flame",
+     "cubes": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "now": "board/post",
+     "need": "flame",
+     "source": "pw_hearth_flame flipbook (RP-04, have)",
+     "note": "now wood"
+    }
+   ]
+  },
+  {
+   "num": 94,
+   "pack": "craftopia",
+   "id": "trofeo",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "cup / urn",
+     "cubes": "all",
+     "now": "whole piece: keep/board",
+     "need": "gold",
+     "source": "brass atlas or new gold region",
+     "note": "was source trofeo.png"
+    }
+   ]
+  },
+  {
+   "num": 95,
+   "pack": "feudal",
+   "id": "cavern_cup",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "cup / font",
+     "cubes": "all",
+     "now": "whole piece: board/post/end",
+     "need": "stone",
+     "source": "pw_mat_* stone keys (have)",
+     "note": "or pewter"
+    }
+   ]
+  },
+  {
+   "num": 96,
+   "pack": "feudal",
+   "id": "carpa1",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "canopy + valance",
+     "cubes": [
+      0,
+      2
+     ],
+     "now": "cloth:yellow",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    },
+    {
+     "part": "flaps",
+     "cubes": [
+      3,
+      4,
+      5
+     ],
+     "now": "cloth:white",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "second tint"
+    }
+   ]
+  },
+  {
+   "num": 97,
+   "pack": "feudal",
+   "id": "tent2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "canopy",
+     "cubes": [
+      3,
+      4
+     ],
+     "now": "board/post",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "now WOOD"
+    }
+   ]
+  },
+  {
+   "num": 98,
+   "pack": "feudal",
+   "id": "caja",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 99,
+   "pack": "feudal",
+   "id": "cesta_cana",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "produce",
+     "cubes": "bones item_*",
+     "now": "whole piece: keep/post/end",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "49 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 100,
+   "pack": "feudal",
+   "id": "cesta_pescado",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "fish",
+     "cubes": "bones item_*",
+     "now": "whole piece: board/post",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "75 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 101,
+   "pack": "craftopia",
+   "id": "mesaplegable",
+   "status": "all wood",
+   "top12": true,
+   "parts": []
+  },
+  {
+   "num": 102,
+   "pack": "feudal",
+   "id": "mesa5",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 103,
+   "pack": "feudal",
+   "id": "soporte2",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 104,
+   "pack": "feudal",
+   "id": "soporte",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 105,
+   "pack": "feudal",
+   "id": "senal",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "lettering / arrow relief",
+     "cubes": "small cubes on the arms",
+     "now": "whole piece: board",
+     "need": "paint",
+     "source": "pw_furn_paint (new: painted panels, emblems, canvas)",
+     "note": "optional dark paint"
+    }
+   ]
+  },
+  {
+   "num": 106,
+   "pack": "feudal",
+   "id": "senal2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "lettering relief",
+     "cubes": "small cubes",
+     "now": "whole piece: board",
+     "need": "paint",
+     "source": "pw_furn_paint (new: painted panels, emblems, canvas)",
+     "note": "optional"
+    }
+   ]
+  },
+  {
+   "num": 107,
+   "pack": "feudal",
+   "id": "cartel_2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "chains",
+     "cubes": [
+      0,
+      1
+     ],
+     "now": "(not drawn)",
+     "need": "chain",
+     "source": "chain1 (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "emblem relief",
+     "cubes": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "now": "board/post/end",
+     "need": "paint",
+     "source": "pw_furn_paint (new: painted panels, emblems, canvas)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 108,
+   "pack": "feudal",
+   "id": "cartel_1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "chains",
+     "cubes": [
+      0,
+      1
+     ],
+     "now": "post/end",
+     "need": "chain",
+     "source": "chain1 (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "emblem relief",
+     "cubes": "small cubes",
+     "now": "whole piece: post/end/board",
+     "need": "paint",
+     "source": "pw_furn_paint (new: painted panels, emblems, canvas)",
+     "note": "32 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 109,
+   "pack": "feudal",
+   "id": "dinero1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "coins",
+     "cubes": "all",
+     "now": "whole piece: keep",
+     "need": "gold",
+     "source": "brass atlas or new gold region",
+     "note": "was source dinero1.png"
+    }
+   ]
+  },
+  {
+   "num": 110,
+   "pack": "craftopia",
+   "id": "escoba1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "broom head",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "straw",
+     "source": "hay_block_side / hay_block_top (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "binding",
+     "cubes": [
+      1
+     ],
+     "now": "post/end",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "or twine"
+    }
+   ]
+  },
+  {
+   "num": 111,
+   "pack": "craftopia",
+   "id": "papelera_madera",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 112,
+   "pack": "craftopia",
+   "id": "pumpkin_stack",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "pumpkins",
+     "cubes": "bones item_1..3",
+     "now": "whole piece: board",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "vanilla pumpkin colours"
+    }
+   ]
+  },
+  {
+   "num": 113,
+   "pack": "feudal",
+   "id": "mesarustica1",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 114,
+   "pack": "feudal",
+   "id": "taburete1",
+   "status": "texture fix",
+   "top12": false,
+   "parts": [
+    {
+     "part": "legs",
+     "cubes": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "now": "iron",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "misread as iron from the source colour"
+    }
+   ]
+  },
+  {
+   "num": 115,
+   "pack": "rustic",
+   "id": "classic_stool",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 116,
+   "pack": "rustic",
+   "id": "beer",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "tankards",
+     "cubes": "all",
+     "now": "whole piece: keep",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "pewter; foam top cream - was source beer.png"
+    }
+   ]
+  },
+  {
+   "num": 117,
+   "pack": "rustic",
+   "id": "wine",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "bottle",
+     "cubes": "all",
+     "now": "whole piece: keep/end",
+     "need": "glass",
+     "source": "pw_furn_glass (new, blend)",
+     "note": "dark green - was source wine.png"
+    }
+   ]
+  },
+  {
+   "num": 118,
+   "pack": "craftopia",
+   "id": "taza",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "mug",
+     "cubes": "all",
+     "now": "whole piece: board/post/end",
+     "need": "ceramic",
+     "source": "pw_mat_white_terracotta / pw_mat_hardened_clay (have)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 119,
+   "pack": "rustic",
+   "id": "roast",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "roast",
+     "cubes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "now": "keep",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "was source roast.png"
+    },
+    {
+     "part": "board",
+     "cubes": [
+      0
+     ],
+     "now": "keep",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 120,
+   "pack": "rustic",
+   "id": "roasted_turkey",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "fowl",
+     "cubes": "all",
+     "now": "whole piece: keep",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "was source turkey.png"
+    }
+   ]
+  },
+  {
+   "num": 121,
+   "pack": "rustic",
+   "id": "glazed_ham",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "ham",
+     "cubes": "all",
+     "now": "whole piece: keep",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "was source glazed_ham.png"
+    }
+   ]
+  },
+  {
+   "num": 122,
+   "pack": "rustic",
+   "id": "baguette",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "loaf",
+     "cubes": [
+      0
+     ],
+     "now": "keep",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "was source baguette.png"
+    }
+   ]
+  },
+  {
+   "num": 123,
+   "pack": "rustic",
+   "id": "egg_basket",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "basket",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "wicker",
+     "source": "pw_furn_wicker (new)",
+     "note": ""
+    },
+    {
+     "part": "eggs",
+     "cubes": [
+      1
+     ],
+     "now": "keep",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": "was source egg_basket.png"
+    }
+   ]
+  },
+  {
+   "num": 124,
+   "pack": "craftopia",
+   "id": "plato-manzanas",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "apples",
+     "cubes": [
+      0,
+      5,
+      8
+     ],
+     "now": "board",
+     "need": "food",
+     "source": "food textures (new, or source PNG kept = RESTRICTED line)",
+     "note": ""
+    },
+    {
+     "part": "leaves",
+     "cubes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+     ],
+     "now": "board",
+     "need": "leaf",
+     "source": "oak leaves (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "platter",
+     "cubes": [
+      9
+     ],
+     "now": "board",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 125,
+   "pack": "craftopia",
+   "id": "pizarra_bar3",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "slate",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "slate",
+     "source": "pw_furn_slate atlas (board / chalk)",
+     "note": ""
+    },
+    {
+     "part": "chalk marks",
+     "cubes": "cubes 1-19 small planes",
+     "now": "whole piece: board/post/end",
+     "need": "chalk",
+     "source": "pw_furn_slate chalk region",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 126,
+   "pack": "feudal",
+   "id": "mesapicknic",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 127,
+   "pack": "feudal",
+   "id": "trono1",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "seat cushion",
+     "cubes": [
+      7
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    },
+    {
+     "part": "back panel",
+     "cubes": [
+      4
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 128,
+   "pack": "craftopia",
+   "id": "sillonm",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "upholstery",
+     "cubes": [
+      3,
+      4,
+      5,
+      8
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": "seat / back / arm pads (exact split at import)"
+    }
+   ]
+  },
+  {
+   "num": 129,
+   "pack": "craftopia",
+   "id": "sillon",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "upholstery",
+     "cubes": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "now": "board",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 130,
+   "pack": "feudal",
+   "id": "silla3",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "chains",
+     "cubes": "planes 0x1x1 / 0x1x3",
+     "now": "whole piece: board/post",
+     "need": "chain",
+     "source": "chain1 (RP-04, have)",
+     "note": "52 cubes - skip list"
+    }
+   ]
+  },
+  {
+   "num": 131,
+   "pack": "craftopia",
+   "id": "cortina_cerrada",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "pleats + heading",
+     "cubes": [
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+     ],
+     "now": "cloth:red",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    },
+    {
+     "part": "pole",
+     "cubes": [
+      4,
+      5
+     ],
+     "now": "cloth:red",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was cloth:red"
+    },
+    {
+     "part": "brackets",
+     "cubes": [
+      0,
+      1
+     ],
+     "now": "cloth:red",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "was cloth:red"
+    },
+    {
+     "part": "finials",
+     "cubes": [
+      6,
+      7
+     ],
+     "now": "cloth:red",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": "was cloth:red"
+    }
+   ]
+  },
+  {
+   "num": 132,
+   "pack": "craftopia",
+   "id": "cortina_abierta",
+   "status": "accessory",
+   "top12": true,
+   "parts": [
+    {
+     "part": "pleats + heading",
+     "cubes": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "now": "cloth:red",
+     "need": "cloth",
+     "source": "pw_furn_cloth + tint key (fallback wool_colored_*)",
+     "note": ""
+    },
+    {
+     "part": "pole",
+     "cubes": [
+      0,
+      19
+     ],
+     "now": "cloth:red",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was cloth:red"
+    },
+    {
+     "part": "brackets",
+     "cubes": [
+      2,
+      3
+     ],
+     "now": "cloth:red",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "was cloth:red"
+    },
+    {
+     "part": "finials",
+     "cubes": [
+      17,
+      18
+     ],
+     "now": "cloth:red",
+     "need": "brass",
+     "source": "pw_furn_brass atlas",
+     "note": "was cloth:red"
+    }
+   ]
+  },
+  {
+   "num": 133,
+   "pack": "craftopia",
+   "id": "luz3",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "chains",
+     "cubes": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "now": "iron",
+     "need": "chain",
+     "source": "chain1 (RP-04, have)",
+     "note": ""
+    },
+    {
+     "part": "candles",
+     "cubes": "none in model",
+     "now": "whole piece: iron",
+     "need": "candle",
+     "source": "white_candle_lit (RP-04, have) on ADDED cubes",
+     "note": "ADD 4-8 candle cubes"
+    }
+   ]
+  },
+  {
+   "num": 134,
+   "pack": "craftopia",
+   "id": "cuadro1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "painting",
+     "cubes": [
+      4
+     ],
+     "now": "keep",
+     "need": "paint",
+     "source": "pw_furn_paint (new: painted panels, emblems, canvas)",
+     "note": "was source cuadro1.png"
+    },
+    {
+     "part": "frame",
+     "cubes": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "now": "keep",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "was source"
+    }
+   ]
+  },
+  {
+   "num": 135,
+   "pack": "craftopia",
+   "id": "cuadro3",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "panels",
+     "cubes": [
+      0,
+      1,
+      2
+     ],
+     "now": "keep",
+     "need": "paint",
+     "source": "pw_furn_paint (new: painted panels, emblems, canvas)",
+     "note": "was source cuadro3.png"
+    }
+   ]
+  },
+  {
+   "num": 136,
+   "pack": "craftopia",
+   "id": "espejo",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "mirror",
+     "cubes": [
+      0
+     ],
+     "now": "keep",
+     "need": "mirror",
+     "source": "pw_furn_mirror (new)",
+     "note": "was source espejo1.png"
+    }
+   ]
+  },
+  {
+   "num": 137,
+   "pack": "craftopia",
+   "id": "alfombra",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "rug",
+     "cubes": [
+      0
+     ],
+     "now": "cloth:red",
+     "need": "rug",
+     "source": "pw_furn_rug (new woven pattern) or cloth tint",
+     "note": "now plain red wool"
+    }
+   ]
+  },
+  {
+   "num": 138,
+   "pack": "craftopia",
+   "id": "piano2",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "keys",
+     "cubes": "cubes 7-17",
+     "now": "whole piece: iron/keep",
+     "need": "ivory",
+     "source": "pw_furn_game atlas (ivory / ebony keys)",
+     "note": "now iron"
+    },
+    {
+     "part": "case / stand",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "now": "iron/keep",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "now iron"
+    }
+   ]
+  },
+  {
+   "num": 139,
+   "pack": "feudal",
+   "id": "yunque",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "anvil",
+     "cubes": "all",
+     "now": "whole piece: iron",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "already iron - correct as is"
+    }
+   ]
+  },
+  {
+   "num": 140,
+   "pack": "feudal",
+   "id": "almadena",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "head",
+     "cubes": [
+      0,
+      2,
+      3
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "now wood"
+    }
+   ]
+  },
+  {
+   "num": 141,
+   "pack": "feudal",
+   "id": "martillo",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "hammer head",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "now wood"
+    }
+   ]
+  },
+  {
+   "num": 142,
+   "pack": "feudal",
+   "id": "tool1",
+   "status": "texture fix",
+   "top12": false,
+   "parts": [
+    {
+     "part": "shaft",
+     "cubes": [
+      0
+     ],
+     "now": "iron",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": "now iron (all thin parts were set to iron)"
+    }
+   ]
+  },
+  {
+   "num": 143,
+   "pack": "feudal",
+   "id": "tocon-sierra",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "saw blade",
+     "cubes": [
+      3
+     ],
+     "now": "keep",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "was source PNG"
+    },
+    {
+     "part": "stump",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "log",
+     "source": "log bark + log top (RP-04 pw_hearth_log / pw_hearth_log_end, have)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 144,
+   "pack": "feudal",
+   "id": "troncos",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "logs",
+     "cubes": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "now": "post/end",
+     "need": "log",
+     "source": "log bark + log top (RP-04 pw_hearth_log / pw_hearth_log_end, have)",
+     "note": "now stripped-log post/end"
+    }
+   ]
+  },
+  {
+   "num": 145,
+   "pack": "feudal",
+   "id": "tablas",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 146,
+   "pack": "feudal",
+   "id": "escalera6",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 147,
+   "pack": "feudal",
+   "id": "tendedero",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 148,
+   "pack": "feudal",
+   "id": "diana1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "target face",
+     "cubes": [
+      0
+     ],
+     "now": "board",
+     "need": "target",
+     "source": "pw_furn_target (new: straw butt with rings)",
+     "note": "now wood"
+    }
+   ]
+  },
+  {
+   "num": 149,
+   "pack": "feudal",
+   "id": "arrow_stand1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "arrows",
+     "cubes": "planes 0-17",
+     "now": "whole piece: board",
+     "need": "arrow",
+     "source": "pw_furn_arrow (new: shaft + fletching)",
+     "note": "now wood"
+    },
+    {
+     "part": "barrel",
+     "cubes": [
+      18,
+      19,
+      20
+     ],
+     "now": "board",
+     "need": "wood",
+     "source": "wood keys (board/post/end) - fixes a misread, not an accessory",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 150,
+   "pack": "feudal",
+   "id": "ff_weapon_stand",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "sword / trident blades",
+     "cubes": "bones sword + trident",
+     "now": "whole piece: board/post/end",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": "now wood"
+    }
+   ]
+  },
+  {
+   "num": 151,
+   "pack": "craftopia",
+   "id": "heno1",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "hay",
+     "cubes": [
+      5
+     ],
+     "now": "board",
+     "need": "straw",
+     "source": "hay_block_side / hay_block_top (RP-04, have)",
+     "note": "now wood"
+    }
+   ]
+  },
+  {
+   "num": 152,
+   "pack": "craftopia",
+   "id": "jaula_chicken",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "floor",
+     "cubes": [
+      21,
+      22
+     ],
+     "now": "board",
+     "need": "straw",
+     "source": "hay_block_side / hay_block_top (RP-04, have)",
+     "note": "bars already iron"
+    }
+   ]
+  },
+  {
+   "num": 153,
+   "pack": "craftopia",
+   "id": "valla_ganado1",
+   "status": "all wood",
+   "top12": false,
+   "parts": []
+  },
+  {
+   "num": 154,
+   "pack": "feudal",
+   "id": "puertavalla",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "hinges",
+     "cubes": [
+      0,
+      1
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    },
+    {
+     "part": "latch",
+     "cubes": [
+      14,
+      15
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 155,
+   "pack": "feudal",
+   "id": "ventana_cerrada",
+   "status": "accessory",
+   "top12": false,
+   "parts": [
+    {
+     "part": "hinges",
+     "cubes": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "now": "board",
+     "need": "iron",
+     "source": "pw_furn_iron (have)",
+     "note": ""
+    }
+   ]
+  }
+ ],
+ "status_counts": {
+  "accessory": 121,
+  "all wood": 31,
+  "texture fix": 3
+ },
+ "pieces_per_need": {
+  "brass": 12,
+  "wood": 23,
+  "cloth": 14,
+  "iron": 21,
+  "mirror": 2,
+  "candle": 3,
+  "rug": 2,
+  "log": 4,
+  "ivory": 3,
+  "game": 2,
+  "food": 14,
+  "leather": 1,
+  "flame": 4,
+  "hearth": 3,
+  "cask": 2,
+  "wicker": 4,
+  "leaf": 3,
+  "copper": 1,
+  "ceramic": 5,
+  "paper": 6,
+  "book": 15,
+  "globe": 2,
+  "slate": 3,
+  "chalk": 3,
+  "cork": 1,
+  "paint": 7,
+  "amethyst": 2,
+  "glass": 4,
+  "stone": 4,
+  "gold": 2,
+  "chain": 4,
+  "straw": 3,
+  "target": 1,
+  "arrow": 1
+ }
+}

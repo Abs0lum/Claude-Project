@@ -51,6 +51,10 @@ def ramp8():
         for z in ROAD:
             put(st, x, 13, z, "minecraft:cobblestone")
             put(st, x, 14, z, f"pw:ramp_cobble_8_e{x + 1}", **{"minecraft:cardinal_direction": "east", "pw:var": (x * 5 + z * 3) % 8, "pw:snow": 0})
+            # round 231 (RAMPS, his 10-07 "dirt above the street ramps"): the lane's TOP layer is AIR, as in every other road
+            # piece. Left unset it was structure void, and a DOWN ramp (kitPrep cuts only from its entry H + 1, and its y 15
+            # IS world H) kept the terrain standing at the upper street level over the whole lane.
+            put(st, x, 15, z, "minecraft:air")
     return st
 
 

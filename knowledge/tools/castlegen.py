@@ -29,7 +29,7 @@ carries the FEED PORT (a lined race to the box edge closed by a sluice board) fo
 
 Usage: castlegen.py --skin=A|B --size=lord|grand --seed=N [--write] [--render] [--verify] [--out=DIR]
        castlegen.py --all  [--out=DIR]      (the ten varieties: build, verify, write pieces + stages, render, sheet)
-Outputs: <out>/<stem>/{structures,manifests,stages}/ + <stem>/castle.json; renders in _docs/castle/v0_3/."""
+Outputs: <out>/<stem>/{structures,manifests,stages}/ + <stem>/castle.json; renders in _docs/castle/v0_4/."""
 import json
 import math
 import random
@@ -40,10 +40,10 @@ sys.path.insert(0, "/home/claude/tools")
 import civgen as G  # noqa: E402
 import mcstructure as M  # noqa: E402
 
-VERSION = "0.3 (castle 230)"
-STG = Path("/home/claude/_staging/civ/castle230")
+VERSION = "0.4 (castle 231)"
+STG = Path("/home/claude/_staging/castle231")
 DOCS = Path("/home/claude/_docs/castle")
-RENDERS = DOCS / "v0_3"
+RENDERS = DOCS / "v0_4"
 AIR, VOID, WATER = "minecraft:air", "minecraft:structure_void", "minecraft:water"
 DIRT, GRASS, GRAVEL, COBBLE, PATH = "minecraft:dirt", "minecraft:grass_block", "minecraft:gravel", "minecraft:cobblestone", "minecraft:grass_path"
 GLASS, LIGHT, POST, PANEL, FLOOR = "minecraft:glass_pane", "minecraft:light_block_14", "minecraft:spruce_log", "minecraft:spruce_planks", "minecraft:oak_planks"
@@ -577,14 +577,15 @@ class Castle(G.Building):
         self.poi["footprints"].append(cellset)
         return rec
 
-    def door_pass(self):
+    def door_pass(self, only=None):
         """v0.3: every tower's ground door — from the rim toward its `toward` point, a 2-high passage cut through the wall
         courses (masonry only) to the first open, floored cell (<= 8 cells); a spruce door in the rim"""
         masonry = {self.curtain, self.dress, self.tower_mat, PANEL, SMOOTH, STONEBR, "minecraft:cobblestone", "minecraft:mossy_stone_bricks",
                    "minecraft:polished_andesite", "minecraft:andesite", "minecraft:polished_diorite", "minecraft:chiseled_stone_bricks"}
-        for t in self.poi["towers"]:
-            if not t["door"] or t["r"] < 2:
+        for t in (only if only is not None else self.poi["towers"]):
+            if not t["door"] or t["r"] < 2 or t.get("door_done"):
                 continue
+            t["door_done"] = True
             cx, cz = t["cx"], t["cz"]
             tx, tz = t["toward"] if t["toward"] else (self.v.W / 2, self.v.W / 2)
             vx, vz = tx - cx, tz - cz
@@ -820,8 +821,9 @@ class Castle(G.Building):
         """cells outside the ring polygon whose distance to it lies in (berm, berm + width] (rounded corners)"""
         out = []
         xs = [p[0] for p in poly]; zs = [p[1] for p in poly]
-        lo_x, hi_x = int(min(xs)) - berm - width - 1, int(max(xs)) + berm + width + 1
-        lo_z, hi_z = int(min(zs)) - berm - width - 1, int(max(zs)) + berm + width + 1
+        pad = int(math.ceil(berm + width)) + 1
+        lo_x, hi_x = int(min(xs)) - pad, int(max(xs)) + pad
+        lo_z, hi_z = int(min(zs)) - pad, int(max(zs)) + pad
         for x in range(max(0, lo_x), min(self.v.W, hi_x + 1)):
             for z in range(max(0, lo_z), min(self.v.W, hi_z + 1)):
                 if point_in_poly(poly, x, z):
@@ -1389,6 +1391,11 @@ class Castle(G.Building):
                             # keep the floor's ring passable: no bed beside another bed
                             if any(self.get(x + ax, f, z + az) == "minecraft:bed" for ax in (-2, -1, 0, 1, 2) for az in (-2, -1, 0, 1, 2)):
                                 continue
+                            # (231) the foot needs a free, floored orthogonal neighbour (a D-tower's corner cells are
+                            # boxed in by the rim: the bed was there but its marker could not be reached, A lord 3)
+                            if not any((x + ax, z + az) != b and self.get(x + ax, f, z + az) == AIR and self.get(x + ax, f + 1, z + az) == AIR
+                                       and self.get(x + ax, f - 1, z + az) == FLOOR for ax, az in ((1, 0), (-1, 0), (0, 1), (0, -1))):
+                                continue
                             self.bed(x, f, z, OPP[hd] if False else hd, role="guard", step=step, office="men-at-arms")
                             n += 1; per += 1
                             break
@@ -1403,6 +1410,10 @@ def ring_points(v, inset, front=0):
     a, b = inset, W - 1 - inset
     if v.plan == "square":
         return [(a, b), (a, a), (b, a), (b, b)]
+    if v.plan == "rect" and v.skin == "A":
+        d = int((W - 2 * v.o) * 0.12)
+        e = min(d, 8) if v.rect_long_x else min(d, 14)            # x: the gate side keeps room for the bridge + barbican
+        return [(a - e, b), (a - e, a), (b + e, a), (b + e, b)] if v.rect_long_x else [(a, b + e), (a, a - e), (b, a - e), (b, b + e)]
     if v.plan == "rect":
         d = int((W - 2 * v.o) * 0.12) if v.skin == "A" else int(W * 0.08)
         return [(a + d, b), (a + d, a), (b - d, a), (b - d, b)] if v.rect_long_x else [(a, b - d), (a, a + d), (b, a + d), (b, b - d)]
@@ -1698,6 +1709,7 @@ def sluice(c, corner, out_dir, outfall_z):
             side = s_; break
     tx, tz = mx + dx * 3 + px * 4 * side, mz + dz * 3 + pz * 4 * side
     rec = c.tower(tx, tz, 3, 9, "square", floors=[4], toward=(tx + px * side * 10, tz + pz * side * 10), kind="sluicetower")
+    c.door_pass(only=[rec])                                  # (231) the sluice is built after the castle's door pass
     c.marker("station", "post", tx, 5, tz)
     return rec
 
@@ -1758,6 +1770,264 @@ def line_channels(c):
             nm = c.get(*q)
             if nm in (DIRT, GRASS) and q[1] <= -2:
                 c.put(*q, LINING)
+
+
+# ------------------------------------------------------------------------------------------------ hidden ways (231)
+F_TUNNEL = -11                                       # the sally tunnel's standing level (floor -12, ceiling -9): between the
+                                                     # culverts (-8..-7) and the trench (-14..-13), crossing neither
+SALLY_MAT = "minecraft:stone_brick_stairs"
+
+
+def _flight_cells(start, d, f_top, f_bot):
+    """a straight flight from standing f_top (at `start`) down to standing f_bot along d: [(x, z, standing)] k = 1.."""
+    (x, z), (dx, dz) = start, d
+    return [(x + dx * k, z + dz * k, f_top - k) for k in range(1, f_top - f_bot + 1)]
+
+
+def sally_tunnel(c, room_key, toward, keep_out, label="sally tunnel"):
+    """the SALLY TUNNEL (Dover's 13th-c. tunnels to the northern entrance [KENT-DOVER]; Harlech's Way from the Sea; the
+    10-06 inventory #25): from the cellar / basement `room_key` (standing -4) through a JIB PANEL in its wall, a flight of
+    stone stairs (3 clear over every tread, the stair law) down to the tunnel at standing -11 (1 wide, 2 high, lined, lit),
+    under the ward, the curtains and the moat to beyond `keep_out` (a predicate: cells the exit may NOT use), then a flight
+    up into a small CONDUIT HOUSE outside the walls (Dover's rain-water / conduit precedent: a plain stone hut with a door);
+    the stair head there is a closet behind a second JIB PANEL. Both panels are SEALED for R6 and recorded for R12.
+    Routes avoid every drain channel (R9) and the well's columns. Returns the record or None (a note says why)."""
+    import heapq
+    if room_key not in c.poi["rooms"]:
+        c.notes.append(f"{label}: no room {room_key}"); return None
+    x0, x1, z0, z1, rf = c.poi["rooms"][room_key]
+    W = c.v.W
+    tx, tz = toward
+    chan_cols = {}
+    for (x, f, z) in c.channel:
+        if -13 <= f <= -3:
+            chan_cols.setdefault((x, z), set()).add(f)
+
+    def near_channel(x, z, f_lo, f_hi):
+        for ax in (-1, 0, 1):
+            for az in (-1, 0, 1):
+                fs = chan_cols.get((x + ax, z + az))
+                if fs and any(f_lo <= f <= f_hi for f in fs):     # the trench may run UNDER the tunnel floor (-13 vs -12)
+                    return True
+        return False
+
+    def solid_ground(x, z, f_lo, f_hi):
+        """every cell f_lo..f_hi of the column is earth / masonry (no void, water, cellar)"""
+        if not (2 <= x < W - 2 and 2 <= z < W - 2) or (x, z) in c.reserved:
+            return False
+        for f in range(f_lo, f_hi + 1):
+            nm = c.get(x, f, z)
+            if nm in (None, AIR, WATER) or (x, f, z) in c.channel:
+                return False
+        return not near_channel(x, z, f_lo, f_hi)
+
+    # 1. the panel: a wall cell of the room on the side facing `toward`, the passage behind it to open earth
+    sides = []
+    for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+        if dx:
+            xs = x1 if dx > 0 else x0
+            cand = [(xs, z) for z in range(z0 + 1, z1)]
+        else:
+            zs = z1 if dz > 0 else z0
+            cand = [(x, zs) for x in range(x0 + 1, x1)]
+        sides.append(((dx, dz), cand))
+    sides.sort(key=lambda sd: -((sd[0][0] * (tx - (x0 + x1) / 2)) + sd[0][1] * (tz - (z0 + z1) / 2)))
+    start = None
+    for (d, cand) in sides:
+        dx, dz = d
+        cand.sort(key=lambda q: abs(q[0] - (x0 + x1) / 2) + abs(q[1] - (z0 + z1) / 2))
+        for (ix, iz) in cand:
+            if c.get(ix, rf, iz) != AIR or c.get(ix, rf + 1, iz) != AIR or c.get(ix, rf - 1, iz) in (None, AIR, WATER):
+                continue
+            # through the wall: masonry cells (<= 4) then the flight in solid earth
+            wall = []
+            k = 1
+            while k <= 5 and c.get(ix + dx * k, rf, iz + dz * k) not in (None, AIR, WATER, DIRT, GRASS):
+                wall.append((ix + dx * k, iz + dz * k)); k += 1
+            if not wall or k > 5:
+                continue
+            head = (ix + dx * (k - 1), iz + dz * (k - 1))
+            fl = _flight_cells(head, d, rf, F_TUNNEL)
+            if all(solid_ground(x, z, f - 1, f + 3) for (x, z, f) in fl) and not any((x, z) in c.occ and c.get(x, 0, z) not in (AIR,) and False for (x, z, f) in fl):
+                start = (d, wall, fl)
+                break
+        if start:
+            break
+    if not start:
+        c.notes.append(f"{label}: no clear wall + flight out of {room_key}"); return None
+    d, wall, fl_down = start
+    bottom = (fl_down[-1][0], fl_down[-1][1])
+
+    # 2. the exits: a flight up (11) + the conduit house (7 long, 5 wide) on open grass beyond keep_out
+    up_n = 0 - F_TUNNEL
+    exits = {}
+    for x in range(4, W - 4, 2):
+        for z in range(4, W - 4, 2):
+            for e in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                ex, ez = e
+                px, pz = -ez, ex
+                T = (x + ex * up_n, z + ez * up_n)
+                hut = [(T[0] + ex * a + px * b, T[1] + ez * a + pz * b) for a in range(-3, 7) for b in range(-2, 3)]
+                if any(not (2 <= hx < W - 2 and 2 <= hz < W - 2) or keep_out(hx, hz) or (hx, hz) in c.occ for (hx, hz) in hut):
+                    continue
+                if any(c.get(hx, -1, hz) != GRASS or any(c.get(hx, f, hz) not in (AIR, None) for f in range(0, 5)) for (hx, hz) in hut):
+                    continue
+                fl = [(x + ex * k, z + ez * k, F_TUNNEL + k) for k in range(1, up_n + 1)]
+                if all(solid_ground(qx, qz, f - 1, min(f + 2, -2)) for (qx, qz, f) in fl if f <= -3):
+                    exits[(x, z)] = e
+    if not exits:
+        c.notes.append(f"{label}: no exit site beyond the walls"); return None
+
+    # 3. the tunnel: A* at F_TUNNEL from the flight's foot to the nearest exit foot (orthogonal steps)
+    def ok(x, z):
+        return solid_ground(x, z, F_TUNNEL - 1, F_TUNNEL + 2)
+    goal = set(exits)
+    gl = list(goal)
+    def hfun(x, z):
+        return min(abs(x - gx) + abs(z - gz) for (gx, gz) in gl[:400]) if len(gl) <= 400 else 0
+    used_fl = {(x, z) for (x, z, f) in fl_down}
+    openq = [(0, 0, bottom)]
+    came = {bottom: None}
+    gcost = {bottom: 0}
+    found = None
+    n_iter = 0
+    while openq and n_iter < 200000:
+        n_iter += 1
+        _, g, cur = heapq.heappop(openq)
+        if cur in goal and cur != bottom:
+            found = cur; break
+        cx_, cz_ = cur
+        for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+            nx, nz = cx_ + dx, cz_ + dz
+            if (nx, nz) in came or (nx, nz) in used_fl or not ok(nx, nz):
+                continue
+            came[(nx, nz)] = cur
+            gcost[(nx, nz)] = g + 1
+            heapq.heappush(openq, (g + 1 + hfun(nx, nz), g + 1, (nx, nz)))
+    if not found:
+        c.notes.append(f"{label}: no tunnel route ({n_iter} steps searched)"); return None
+    path = []
+    q = found
+    while q is not None:
+        path.append(q); q = came[q]
+    path.reverse()
+    e = exits[found]
+    ex, ez = e
+    px, pz = -ez, ex
+    fl_up = [(found[0] + ex * k, found[1] + ez * k, F_TUNNEL + k) for k in range(1, up_n + 1)]
+    T = (fl_up[-1][0], fl_up[-1][1])
+
+    carved = []
+
+    def carve(x, f, z):
+        c.put(x, f, z, AIR); carved.append((x, f, z))
+
+    # the panel + the passage through the wall (2 high at the room's level)
+    (wx0, wz0) = wall[0]
+    for (x, z) in wall:
+        carve(x, rf, z); carve(x, rf + 1, z)
+    c.put(wx0, rf, wz0, "pw:jib_panel"); c.put(wx0, rf + 1, wz0, "pw:jib_panel")
+    # the flight down: the tread at standing - 1, 3 clear over it
+    hi_down = DIRNAME[(-d[0], -d[1])]
+    for (x, z, f) in fl_down:
+        c.stairs(x, f - 1, z, hi_down, mat=SALLY_MAT)
+        for ff in range(f, f + 3):
+            carve(x, ff, z)
+        # the step behind needs the same 3 over its tread: the cell above this tread's predecessor stays clear
+    # the tunnel
+    for i, (x, z) in enumerate(path):
+        carve(x, F_TUNNEL, z); carve(x, F_TUNNEL + 1, z)
+        c.put(x, F_TUNNEL - 1, z, LINING)
+        if i % 8 == 4:
+            c.light(x, F_TUNNEL + 1, z); carved.append((x, F_TUNNEL + 1, z))
+    # the flight up
+    hi_up = DIRNAME[e]
+    for (x, z, f) in fl_up:
+        c.stairs(x, f - 1, z, hi_up, mat=SALLY_MAT)
+        for ff in range(f, f + 3):
+            carve(x, ff, z)
+    # line everything carved underground
+    cs = set(carved) | {(x, f - 1, z) for (x, z, f) in fl_down + fl_up}
+    for (x, f, z) in list(carved):
+        for dx, dy, dz in ((1, 0, 0), (-1, 0, 0), (0, 0, 1), (0, 0, -1), (0, 1, 0), (0, -1, 0)):
+            q = (x + dx, f + dy, z + dz)
+            if q in cs:
+                continue
+            if c.get(*q) in (DIRT, GRASS) and q[1] <= -1:
+                c.put(*q, LINING)
+    # the conduit house: the flight's last cells under a stone hood, the closet, the panel, the room, the door
+    def at(a, b):
+        return (T[0] + ex * a + px * b, T[1] + ez * a + pz * b)
+    mat = c.curtain
+    for a in range(-3, 2):                                  # the hood over the flight head + closet: walls at b +-1
+        for b in (-1, 1):
+            hx, hz = at(a, b); c.fill(hx, 0, hz, hx, 3, hz, mat)
+        hx, hz = at(a, 0)
+        c.put(hx, 4, hz, mat)
+        if a >= -2:
+            c.fill(hx, 0, hz, hx, 3, hz, AIR) if a >= 0 else None
+    for a in range(-3, 0):                                  # over the treads: clear to 3, roofed at 4
+        hx, hz = at(a, 0)
+        c.fill(hx, 0, hz, hx, 3, hz, AIR)
+    hx, hz = at(-4, 0); c.fill(hx, 0, hz, hx, 4, hz, mat)  # the hood's back
+    for b in (-1, 0, 1):
+        hx, hz = at(-4, b); c.fill(hx, 0, hz, hx, 4, hz, mat)
+    hx, hz = at(1, 0); c.put(hx, -1, hz, LINING)           # the closet floor
+    pnl = at(2, 0)
+    for b in (-2, -1, 1, 2):                                # the partition with the jib panel
+        hx, hz = at(2, b); c.fill(hx, 0, hz, hx, 4, hz, mat)
+    c.put(pnl[0], 0, pnl[1], "pw:jib_panel"); c.put(pnl[0], 1, pnl[1], "pw:jib_panel"); c.fill(pnl[0], 2, pnl[1], pnl[0], 4, pnl[1], mat)
+    for a in range(2, 8):                                   # the room a 3..6, walls b +-2, door at a 7
+        for b in range(-2, 3):
+            hx, hz = at(a, b)
+            if a in (2, 7) or abs(b) == 2:
+                if a != 2:
+                    c.fill(hx, 0, hz, hx, 3, hz, mat)
+            else:
+                c.put(hx, -1, hz, SMOOTH); c.fill(hx, 0, hz, hx, 3, hz, AIR)
+            c.put(hx, 4, hz, mat)
+    dx_, dz_ = at(7, 0)
+    c.door(dx_, 0, dz_, DIRNAME[e])
+    lx, lz = at(4, 1); c.light(lx, 3, lz)
+    rx0, rz0 = at(3, -1); rx1, rz1 = at(6, 1)
+    c.room("conduithouse", rx0, rx1, rz0, rz1, 0)
+    c.marker("station", "post", *at(5, 0)[:1], 0, at(5, 0)[1]) if False else c.marker("station", "post", at(5, 0)[0], 0, at(5, 0)[1])
+    c.poi["footprints"].append({at(a, b) for a in range(-4, 8) for b in range(-2, 3)})
+    for a in range(-4, 8):
+        for b in range(-2, 3):
+            c.occ.add(at(a, b))
+    # sealing (R6) + the hidden record (R12)
+    for f in (0, 1):
+        c.poi["sealed"].add((pnl[0], f, pnl[1]))
+    for f in (rf, rf + 1):
+        c.poi["sealed"].add((wx0, f, wz0))
+    mid = path[len(path) // 2]
+    rec = {"what": label, "panel": [wx0, rf, wz0], "panels": [[wx0, rf, wz0], [pnl[0], 0, pnl[1]]],
+           "inside": [mid[0], F_TUNNEL, mid[1]], "length": len(path) + len(fl_down) + len(fl_up),
+           "from": room_key, "exit": [T[0], 0, T[1]], "tunnel_cells": [[x, F_TUNNEL, z] for (x, z) in path]}
+    c.poi["hidden"].append(rec)
+    c.infra.setdefault("sally", []).append({k: rec[k] for k in ("from", "exit", "length")})
+    c.tunnel = getattr(c, "tunnel", set()) | {(x, f, z) for (x, f, z) in carved if f <= -2}
+    return rec
+
+
+def lockup(c, gate):
+    """the LOCK-UP (Dungeon: castle prisons "often served only a temporary need", "simply a single plain room with a heavy
+    door" [W-DUNG]; the constable is responsible for the prisoners, R3 §4): in the north guard room of a gatehouse whose
+    guards sleep upstairs, a 3-deep cell behind a stone partition with an IRON door (villagers cannot open it: custody)"""
+    xa, xb, za, gz = gate["xa"], gate["xb"], gate["za"], gate["gz"]
+    z0, z1 = za + 1, gz - 5
+    xp = xa + 5
+    if xp >= xb - 3 or z1 - z0 < 3:
+        return None
+    c.fill(xp, 0, z0, xp, 3, z1, c.curtain)
+    zd = (z0 + z1) // 2
+    c.fill(xp, 0, zd, xp, 1, zd, AIR)
+    c.door(xp, 0, zd, "west", mat="minecraft:iron_door")
+    c.light(xa + 3, 2, zd)
+    c.room("lockup", xa + 2, xp - 1, z0, z1, 0)
+    c.notes.append("lock-up: iron door — architecture only (CIVITAS has no crime / custody yet, his 10:15 drop list)")
+    return (xa + 2, xp - 1, z0, z1)
 
 
 # ------------------------------------------------------------------------------------------------ skin A
@@ -1846,10 +2116,10 @@ def build_A(c):
         c.bridge(out_x, gx - berm - 1, span[0], span[1])
     if v.barbican:
         bx0, bx1, bz0, bz1 = c.barbican(out_x - 1, gz)
-        c.poi["gate_out"] = (bx0 - 3, 0, gz)
+        c.poi["gate_out"] = (max(0, bx0 - 3), 0, gz)
         approach_to = bx0 - 1
     else:
-        c.poi["gate_out"] = (out_x - 2, 0, gz)
+        c.poi["gate_out"] = (max(0, out_x - 2), 0, gz)
         approach_to = out_x
     for x in range(0, approach_to + 1):
         for z in range(span[0], span[1] + 1):
@@ -1900,13 +2170,22 @@ def build_A(c):
           ("bakehouse", 7, 9, lambda F: c.workshop(F, "bakehouse"), lambda r, s: -r[0])]
     if not lord:
         bk.insert(2, ("garrison_c", 9, 13, lambda F: c.garrison(F, 6, "G3"), lambda r, s: 0))
-        bk.insert(3, ("garrison_d", 9, 13, lambda F: c.garrison(F, 6, "G4"), lambda r, s: 0))
-        bk.insert(1, ("garrison2", 9, 13, lambda F: c.garrison(F, 6, "G4"), lambda r, s: abs((r[0] + r[1]) / 2 - W / 2) + abs((r[2] + r[3]) / 2 - W / 2)))
+        bk.insert(3, ("garrison_d", 9, 17, lambda F: c.garrison(F, 8, "G4"), lambda r, s: 0))
+        bk.insert(1, ("garrison2", 9, 17, lambda F: c.garrison(F, 8, "G4"), lambda r, s: abs((r[0] + r[1]) / 2 - W / 2) + abs((r[2] + r[3]) / 2 - W / 2)))
     placed += place_search(c, bk, in_outer_ward, None, " in the outer ward")
     missing = [k[0] for k in bk if k[0] not in [p[0] for p in placed]]
     if missing:
         # what the outer ward could not hold goes into the inner ward
         placed += place_search(c, [k for k in bk if k[0] in missing], in_inner, None, " (inner ward fallback)")
+    missing = [k for k in bk if k[0] not in [p[0] for p in placed]]
+    if missing:
+        # (231) a lean-to: 2 shallower (>= 7), 4 longer, against the curtain where the ring is tight (Bodiam's ranges)
+        slim = [(k[0], max(7, k[1] - 2), k[2] + 4, k[3], k[4]) for k in missing]
+        placed += place_search(c, slim, in_outer_ward, None, " (lean-to, outer ward)")
+        left = [k for k in slim if k[0] not in [p[0] for p in placed]]
+        if left:
+            placed += place_search(c, left, in_inner, None, " (lean-to, inner ward)")
+        c.notes = [n for n in c.notes if not any(n.startswith(p[0] + " SKIPPED") for p in placed)]
     c.poi["placed"] = [p[0] for p in placed]
     # the well; the ward's lamps
     well_pos = (wx, wz)
@@ -2102,10 +2381,10 @@ def build_B(c):
     span = (gz - 2, gz + 1)
     if v.barbican:
         bx0, bx1, bz0, bz1 = c.barbican(gx - 5, gz)
-        c.poi["gate_out"] = (bx0 - 3, 0, gz)
+        c.poi["gate_out"] = (max(0, bx0 - 3), 0, gz)
         approach_to = bx0 - 1
     else:
-        c.poi["gate_out"] = (gx - 6, 0, gz)
+        c.poi["gate_out"] = (max(0, gx - 6), 0, gz)
         approach_to = gx - 4
     for x in range(0, approach_to + 1):
         for z in range(span[0], span[1] + 1):
@@ -2129,15 +2408,15 @@ def build_B(c):
           ("bakehouse", 7, 9, lambda F: c.workshop(F, "bakehouse"), lambda r, s: -(r[0] + r[1]) / 2)]
     if not lord:
         bk.insert(2, ("garrison_c", 9, 13, lambda F: c.garrison(F, 6, "G3"), lambda r, s: 0))
-        bk.insert(3, ("garrison_d", 9, 13, lambda F: c.garrison(F, 6, "G4"), lambda r, s: 0))
-        bk.insert(1, ("garrison2", 9, 13, lambda F: c.garrison(F, 6, "G4"), lambda r, s: -abs((r[2] + r[3]) / 2 - cz)))
+        bk.insert(3, ("garrison_d", 9, 17, lambda F: c.garrison(F, 8, "G4"), lambda r, s: 0))
+        bk.insert(1, ("garrison2", 9, 17, lambda F: c.garrison(F, 8, "G4"), lambda r, s: -abs((r[2] + r[3]) / 2 - cz)))
     placed += [p[0] for p in place_search(c, bk, in_base, None, " in the base court")]
     c.poi["placed"] = placed
     wx, wz = (court[0] + court[1]) // 2, (court[2] + court[3]) // 2
     c.reserved |= {(wx + dx, wz + dz) for dx in range(-3, 4) for dz in range(-3, 4)}
     return {"ward_rect": (court[0], court[1], court[2], court[3]), "gate_z": gz, "rear_z": screens_z if False else rz, "well": (wx, wz), "moat": lake,
             "outer": outer, "inner": quad, "in_ward": lambda x, z: point_in_poly(c.poi["inside_poly"], x, z), "sluice_ring": quad, "berm": 1,
-            "moat_w": v.lake_w, "rxo": rxo}
+            "moat_w": v.lake_w, "rxo": rxo, "qpoly": qpoly}
 
 
 # ------------------------------------------------------------------------------------------------ the whole castle
@@ -2152,7 +2431,8 @@ def build(v):
     c.tower_beds(max(0, 12 - have_g2), "G2")
     if not lord:
         have = sum(1 for b in c.bed_roles if b["role"] == "guard")
-        c.tower_beds(max(0, 60 - have), "G4")
+        have_g4 = sum(1 for b in c.bed_roles if b["step"] == "G4")
+        c.tower_beds(max(0, 60 - have, 26 - have_g4), "G4")          # (231) G4 >= 26 (Krak's 60 by steps), not only 60 in all
     # the tower doors (after the ranges exist), the garderobes of the mural passages
     c.door_pass()
     garderobes(c)
@@ -2185,6 +2465,22 @@ def build(v):
             moat_feed(c, fc, (0, -sgn))
     route_heads(c)
     line_channels(c)
+    # (231) the hidden ways and the lock-up (inventory #25 / #26)
+    gates = [g for g in c.poi["gates"] if g["top"] - g["xa"] >= 0]
+    up = [g for g in c.poi["gates"] if g["role"] in ("lord", "constable") and (g["xb"] - g["xa"]) >= 12]
+    if up:
+        lockup(c, up[-1])
+    outer = S["outer"]
+    band = S["berm"] + S["moat_w"] + 4 if v.moat_kind != "none" else 6
+    def keep_out(x, z):
+        if v.skin == "B":
+            # B: from the donjon under the lake to the BASE COURT (Raby / Kenilworth: the base court holds the horses) —
+            # the box holds no ground beyond the base court's own curtain
+            return point_in_poly(S["qpoly"], x, z) or not point_in_poly(c.poi["inside_poly"], x, z)
+        return point_in_poly(outer, x, z) or poly_dist(outer, x, z) <= band
+    src = next((k for k in ("keep_basement_0", "cellar_0") if k in c.poi["rooms"]), None)
+    if src:
+        sally_tunnel(c, src, (W - 1, S["rear_z"]), keep_out)
     # the well shaft's lining was laid; re-assert the sources (lining never replaces water)
     c.close_air()
     # the walk / mural cells that later work buried
@@ -2205,41 +2501,58 @@ def build(v):
 
 
 # ------------------------------------------------------------------------------------------------ pieces, stages
+def piece_spans(n, P=64):
+    """F1 (castle 231): the 64-grid spans of a box edge n long — [(offset, length)], offsets on the grid, every index
+    0..n-1 in exactly one span, the last span short when n is not a multiple of 64. (The v0.2 cut used n // 64 spans:
+    144 -> 2 spans covering 128, so the far 16 rows / columns — towers, moat, curtain — were never written.)"""
+    return [(o, min(P, n - o)) for o in range(0, n, P)]
+
+
+def piece_key(i, j):
+    return f"{i}{j}" if i < 10 and j < 10 else f"{i}_{j}"
+
+
+def piece_ij(q):
+    return tuple(int(t) for t in q.split("_")) if "_" in q else (int(q[0]), int(q[1]))
+
+
 def cut(c):
-    """F1 (v0.3): the box is a multiple of 64 — every cell lands in exactly one piece; pieces share the model's palette
-    (layer copies by slices). Returns {ij: (Structure, markers)}."""
+    """F1: every cell of the model lands in exactly one 64 x sy x 64 piece, for ANY box width / depth (the castle box is
+    also padded to the 64 grid by Variety, so this is the belt to that brace). A short edge piece keeps the full 64 size
+    (the clock's rotated-group placement assumes uniform pieces); its overhang is structure void (-1), which never
+    overwrites the world. Pieces share the model's palette (rows copied by slices). Returns {key: (Structure, markers)}."""
     sx, sy, sz = c.size
-    assert sx % 64 == 0 and sz % 64 == 0, f"the box {sx} x {sz} is not on the 64 grid"
     st0 = c.st
     out = {}
     import copy
-    for i in range(sx // 64):
-        for j in range(sz // 64):
-            ox, oz = i * 64, j * 64
+    for i, (ox, lx) in enumerate(piece_spans(sx)):
+        for j, (oz, lz) in enumerate(piece_spans(sz)):
             st = M.Structure((64, sy, 64))
             st.palette = list(st0.palette); st._pal_index = dict(st0._pal_index)
-            L0 = st.layer0
-            for x in range(64):
+            L0, L1 = st.layer0, st.layer1
+            for x in range(lx):
                 for y in range(sy):
                     s = ((ox + x) * sy + y) * sz + oz
                     d = (x * sy + y) * 64
-                    L0[d:d + 64] = st0.layer0[s:s + 64]
+                    L0[d:d + lz] = st0.layer0[s:s + lz]
+                    L1[d:d + lz] = st0.layer1[s:s + lz]
             ents = []
-            for e in st0.entities:
+            for e in getattr(st0, "entities", []):
                 pos = [cc.value for cc in e.value["Pos"].value]
-                if ox <= pos[0] < ox + 64 and oz <= pos[2] < oz + 64:
+                if ox <= pos[0] < ox + lx and oz <= pos[2] < oz + lz:
                     ee = copy.deepcopy(e)
                     ee.value["Pos"] = M.lst(M.FLOAT, [M.f(pos[0] - ox), M.f(pos[1]), M.f(pos[2] - oz)])
                     ents.append(ee)
             st.entities = ents
-            marks = [dict(m, cell=[m["cell"][0] - ox, m["cell"][1], m["cell"][2] - oz]) for m in c.markers if ox <= m["cell"][0] < ox + 64 and oz <= m["cell"][2] < oz + 64]
-            out[f"{i}{j}"] = (st, marks)
+            marks = [dict(m, cell=[m["cell"][0] - ox, m["cell"][1], m["cell"][2] - oz]) for m in c.markers
+                     if ox <= m["cell"][0] < ox + lx and oz <= m["cell"][2] < oz + lz]
+            out[piece_key(i, j)] = (st, marks)
     return out
 
 
 def pieces_equal_model(c, pieces):
-    """R13 (F1's test): the union of the cut pieces == the model, cell for cell; every marker lands in exactly one piece.
-    Returns (ok, cells_model_nonair, cells_pieces_nonair, mismatches)."""
+    """R13 (F1's test): the union of the cut pieces == the model, cell for cell (both layers); the overhang of short edge
+    pieces is void; every marker lands in exactly one piece. Returns (ok, model_nonair, pieces_nonair, mismatches, markers)."""
     sx, sy, sz = c.size
     st0 = c.st
     air = {k for k, p in enumerate(st0.palette) if p[0] in (AIR,)}
@@ -2247,17 +2560,24 @@ def pieces_equal_model(c, pieces):
     n_model = sum(1 for k in st0.layer0 if k >= 0 and k not in air)
     n_pieces = 0
     for q, (st, marks) in pieces.items():
-        i, j = int(q[0]), int(q[1])
+        i, j = piece_ij(q)
         ox, oz = i * 64, j * 64
+        lx, lz = min(64, sx - ox), min(64, sz - oz)
         n_pieces += sum(1 for k in st.layer0 if k >= 0 and st.palette[k][0] != AIR)
         for x in range(64):
             for y in range(sy):
-                s = ((ox + x) * sy + y) * sz + oz
                 d = (x * sy + y) * 64
-                if st.layer0[d:d + 64] != st0.layer0[s:s + 64]:
+                if x < lx:
+                    s = ((ox + x) * sy + y) * sz + oz
+                    if st.layer0[d:d + lz] != st0.layer0[s:s + lz] or st.layer1[d:d + lz] != st0.layer1[s:s + lz]:
+                        bad += 1
+                    if any(k != -1 for k in st.layer0[d + lz:d + 64]):
+                        bad += 1
+                elif any(k != -1 for k in st.layer0[d:d + 64]):
                     bad += 1
     n_marks = sum(len(m) for (_, m) in pieces.values())
-    ok = bad == 0 and n_model == n_pieces and n_marks == len(c.markers) and len(pieces) == (sx // 64) * (sz // 64)
+    want = len(piece_spans(sx)) * len(piece_spans(sz))
+    ok = bad == 0 and n_model == n_pieces and n_marks == len(c.markers) and len(pieces) == want
     return ok, n_model, n_pieces, bad, n_marks
 
 
@@ -2360,7 +2680,7 @@ def write_all(c, stem, out_dir):
             (d / "stages" / f"{pstem}_s{i}.mcstructure").write_bytes(s.to_bytes())
         beds = {}
         for b in c.bed_roles:
-            if q == f"{b['x'] // 64}{b['z'] // 64}":
+            if q == piece_key(b['x'] // 64, b['z'] // 64):
                 key = b["role"] + (f"/{b['step']}" if b["step"] else "")
                 beds[key] = beds.get(key, 0) + 1
         per[q] = {"blocks": len(blocks), "markers": len(marks), "stages": counts, "implied_by_land_job": implied, "beds": beds}
@@ -2501,15 +2821,27 @@ def render(c, stem, reach=None):
     elevation_image(c, S, f"{stem} ELEVATION from the gate side").save(RENDERS / f"{stem}-elevation.png")
 
 
-VARIETIES = [("A", "lord", 2), ("A", "lord", 3), ("A", "lord", 4), ("A", "lord", 5), ("B", "lord", 1), ("B", "lord", 2), ("B", "lord", 3), ("B", "lord", 4),
+VARIETIES = [("A", "lord", 2), ("A", "lord", 3), ("A", "lord", 4), ("A", "lord", 5), ("B", "lord", 1), ("B", "lord", 5), ("B", "lord", 3), ("B", "lord", 4),
              ("A", "grand", 1), ("B", "grand", 1)]
+
+
+def plan_signature(v):
+    """the ground-plan draws that make a castle read as a different castle from above: (plan, quad, keep corner, moat kind)"""
+    return (v.plan, v.quad, v.keep_corner, v.moat_kind)
+
+
+def variety_collisions(varieties=None):
+    """FORCED VARIETY enforced: every pair of varieties whose plan_signature is the same (empty list = all distinct)"""
+    varieties = VARIETIES if varieties is None else varieties
+    sigs = [(t, plan_signature(Variety(*t))) for t in varieties]
+    return [(a, b, sa) for i, (a, sa) in enumerate(sigs) for (b, sb) in sigs[i + 1:] if sa == sb]
 
 
 def stem_of(v):
     return f"mvv_castle_{v.skin.lower()}{v.size_name[0]}{v.seed}"
 
 
-def sheet(results, name="CASTLE-VARIETY-SHEET-v0_3.png"):
+def sheet(results, name="CASTLE-VARIETY-SHEET-v0_4.png"):
     """every variety on one sheet: ground plan (reached cells green), underground plan, elevation, the verdict"""
     from PIL import Image, ImageDraw
     S = 1
@@ -2532,6 +2864,58 @@ def sheet(results, name="CASTLE-VARIETY-SHEET-v0_3.png"):
         y += rh
     img.save(DOCS / name)
     print("sheet ->", DOCS / name)
+
+
+def pack_castle(stem, out_dir, keep_raw=False):
+    """(231) disk law (~2 GB free, 120 MB per raw 192 castle): the written castle is re-laid in BP-02's pack layout and
+    tar-gzipped (~60x smaller): structures/pw/<stem>_<ij>_a_r1.mcstructure, structures/pw/stages/<...>_s0..s4.mcstructure,
+    and the per-piece manifests under _manifests/ (tool side, not pack content). Returns (tgz path, bytes, md5, files)."""
+    import hashlib
+    import tarfile
+    d = Path(out_dir) / stem
+    tgz = Path(out_dir) / f"{stem}.tgz"
+    n = 0
+    with tarfile.open(tgz, "w:gz") as tf:
+        for f in sorted((d / "structures").glob("*.mcstructure")):
+            tf.add(f, arcname=f"structures/pw/{f.name}"); n += 1
+        for f in sorted((d / "stages").glob("*.mcstructure")):
+            tf.add(f, arcname=f"structures/pw/stages/{f.name}"); n += 1
+        for f in sorted((d / "manifests").glob("*.json")):
+            tf.add(f, arcname=f"_manifests/{stem}/{f.name}"); n += 1
+        tf.add(d / "castle.json", arcname=f"_manifests/{stem}/castle.json"); n += 1
+    if not keep_raw:
+        import shutil
+        for sub in ("structures", "stages", "manifests"):
+            shutil.rmtree(d / sub, ignore_errors=True)
+    data = tgz.read_bytes()
+    return str(tgz), len(data), hashlib.md5(data).hexdigest(), n
+
+
+def sheet_from_renders(rows, name="CASTLE-VARIETY-SHEET-v0_4.png", scale=0.5):
+    """the variety sheet composed from the per-variety renders already on disk (one castle model in memory at a time):
+    rows = [(stem, description, verdict)] -> ground plan | underground | elevation per row"""
+    from PIL import Image, ImageDraw
+    tiles = []
+    for stem, desc, verdict in rows:
+        ims = []
+        for suf in ("plan-0", "under", "elevation"):
+            im = Image.open(RENDERS / f"{stem}-{suf}.png").convert("RGB")
+            ims.append(im.resize((max(1, int(im.width * scale)), max(1, int(im.height * scale)))))
+        tiles.append((desc, verdict, ims))
+    tw = max(sum(i.width for i in t[2]) + 30 for t in tiles)
+    rows_h = [max(i.height for i in t[2]) + 44 for t in tiles]
+    img = Image.new("RGB", (tw, sum(rows_h)), (10, 10, 12))
+    d = ImageDraw.Draw(img)
+    y = 0
+    for (desc, verdict, ims), rh in zip(tiles, rows_h):
+        d.text((6, y + 4), desc, fill=(255, 255, 255))
+        d.text((6, y + 18), verdict, fill=(120, 255, 140) if verdict.startswith("CONSTRUCTED") else (255, 160, 120))
+        x = 6
+        for im in ims:
+            img.paste(im, (x, y + 36 + (max(i.height for i in ims) - im.height))); x += im.width + 6
+        y += rh
+    img.save(DOCS / name)
+    return DOCS / name
 
 
 def castle_manifest(c, stem, per, r13, rep):
