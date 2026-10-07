@@ -1,0 +1,723 @@
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_people.js	2026-10-07 16:36:43.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-HOMES/pw_civ_people.js	2026-10-07 20:03:42.936405736 +0000
+@@ -651,6 +651,9 @@
+     outN++;
+     ev.push({ kind: "moved", text: `${p.name}${hh.length > 1 ? ` and ${hh.length - 1} of the household` : ""} left the family home #${was} for a home of their own, #${to.id}${best > lvlH(was) ? " (a better house)" : ""}`, people: hh.map((q) => q.id) });
+   }
++  // 1.3.232 (#29): FAMILY ROOM — a family whose home's beds cannot sleep it (2 to a bed) takes a free home that does, else
++  // exchanges homes with a smaller household (familyDay, the FAMILY block above WHY-IDLE)
++  const family = familyDay(P, day, ctx, { homes, resAt, lvlH, touch, deeds, ev, jobAt });
+   // 1.3.226 (his 20:48): a household whose house was bought for the town's core (home null) takes the first home with room
+   // (the replacement house on the outskirts, once it stands); a spouse goes along
+   for (const p of living) {
+@@ -921,7 +924,8 @@
+     if (!Object.keys(P.lines).length) delete P.lines;
+   }
+   return { events: ev, arrivals, departures, meanMood, parts, hungerW, tired, fullness: Math.round(fullness * 100) / 100, movers, far: farN, farMoved, crime,
+-           deeds, restore: [...touched].filter((id) => typeof id === "number" && Number.isFinite(id)) };   // 1.3.230 (HD)
++           deeds, restore: [...touched].filter((id) => typeof id === "number" && Number.isFinite(id)),   // 1.3.230 (HD)
++           family };                                                                                    // 1.3.232 (#29): { moved, swapped }
+ }
+ 
+ /** what a keeper might tell the player: the freshest rumour the keeper knows, by their fondness for the player */
+@@ -1401,6 +1405,149 @@
+   return deeds;
+ }
+ 
++// ------------------------------------------------------------------------------------------------ 1.3.232 (#29): FAMILY ROOM
++// His 04:12 CT 10-07: "[the cottages and initial homes] just seemed small to me for a family of 4" (resizing allowed).
++// MEASURED (tests/test_homes.mjs): the starter homes hold 1 bed (cottage_s, cottage_m) or 2 (cottage_l); his sleeping law
++// (the palace's: a double bed sleeps COURT.sleepers = 2; his 17:52 "the children's bed sleeps two") makes only the large
++// cottage a home for a family of 4. Births fill a 1-bed cottage to 4 (the crowd allowance, BIRTH.kidsPerHome) and no rule
++// ever moved a family on: in a simulated town (the real dayStep, 5 seeds x 300 days to city II) 81-95 % of the days a
++// family of 4 lived were spent in a home whose beds could not sleep it.
++// THE RULE: a FAMILY (a parent, the spouse at home, their DEPENDANTS: the children at home under DIALS.moveOutAge and
++// unmarried) whose home's beds cannot sleep it (beds x FAMILY.perBed < its size; the other residents do not count: a
++// lodger never sets a family moving) takes, in this order of classes (nearest work only inside the last one):
++//   1. a FREE home whose beds sleep it together with whoever lives there — the best level it affords (affordLevel: the
++//      move-out law), an empty house before a shared one, then nearest work; the family buys the new home and sells the
++//      old one when it leaves it empty (HD deeds); both homes are queued for restoration (his 21:47 law);
++//   2. else an EXCHANGE: a smaller household living alone in a home whose beds sleep the family swaps homes with it — the
++//      family lives alone too, its old beds sleep that household, both homes' places hold the newcomers, the family affords
++//      the level; the smallest household first, then nearest the family's work; no deeds (both pay from the one purse);
++//      both homes are queued for restoration.
++// Never the inn's guest beds (FAMILY.guestBeds); never a home past COMMUTE.far from the work of anyone who moves (the far
++// rule would send them back); the ranks at work never fall (SKILL.gate by house level: a move keeps the family's sum of
++// ranks, an exchange the sum over both households — a master leaves his level-2 house only for a family whose own master
++// it frees); at most FAMILY.perDay families a town a day — the most short of beds first, then the larger family, then by id.
++// No beds known (an old caller) -> nothing.
++export const FAMILY = { on: true, perBed: 2, perDay: 2, guestBeds: ["inn"] };
++/** #29: p's family — p, the spouse at p's home, and every child of either living there under DIALS.moveOutAge and
++ *  unmarried (the dependants). A married child is a household of its own; a grown one moves out on his own. */
++export function familyOf(P, p, day) {
++  const out = [p];
++  if (!p) return out;
++  const sp = p.spouse ? byId(P, p.spouse) : null;
++  if (sp && sp.alive && sp.home === p.home) out.push(sp);
++  for (const par of out.slice()) for (const id of par.kids || []) {
++    const k = byId(P, id);
++    if (k && k.alive && k.home === p.home && !k.spouse && age(k, day) < DIALS.moveOutAge && !out.includes(k)) out.push(k);
++  }
++  return out;
++}
++/** #29: do home x's beds sleep n more people beside `others` already living there (FAMILY.perBed to a bed)? Unknown or no
++ *  beds sleep nobody; the inn's beds are guest beds (never a family's). */
++export function sleeps(x, n, others = 0) {
++  return !!x && Number.isFinite(x.beds) && x.beds > 0 && !FAMILY.guestBeds.includes(x.kind) && x.beds * FAMILY.perBed >= (others || 0) + n;
++}
++/** #29: the families of census P in `homes` ([{id, beds, kind}]): { families, bySize {n: count}, sleep, short, sleep4,
++ *  short4, bySize4plus } — sleep / short: the home's beds do / do not sleep the family itself (pw:clock homes, the sim) */
++export function familyCensus(P, homes, day) {
++  const H = new Map((homes || []).map((h) => [h.id, h]));
++  const out = { families: 0, bySize: {}, sleep: 0, short: 0, sleep4: 0, short4: 0, bySize4plus: 0 };
++  const seen = new Set();
++  for (const p of alive(P)) {
++    if (seen.has(p.id) || !H.has(p.home) || stage(p, day) === "child") continue;
++    const F = familyOf(P, p, day);
++    for (const q of F) seen.add(q.id);
++    if (!F.some((q) => q !== p && q.id !== p.spouse)) continue;             // no dependant: no family
++    const n = F.length, h = H.get(p.home), ok = sleeps(h, n);
++    out.families++; out.bySize[n] = (out.bySize[n] || 0) + 1;
++    if (ok) out.sleep++; else out.short++;
++    if (n >= 4) { out.bySize4plus++; if (ok) out.sleep4++; else out.short4++; }
++  }
++  return out;
++}
++/** #29: the ranks at work of household G in a house of level `lvl` (apprentice 0, journeyman 1, master 2; SKILL.gate) */
++const RANK_N = { apprentice: 0, journeyman: 1, master: 2 };
++function rankSum(G, lvl) { return G.reduce((a, q) => a + (q.trade ? RANK_N[rankOf(q, q.trade, lvl)] : 0), 0); }
++/** #29: one census day of the FAMILY ROOM rule (called by dayStep after the move-out). S = { homes: Map, resAt, lvlH(id),
++ *  touch(id), deeds, ev, jobAt(q) }. Returns { moved, swapped }. */
++function familyDay(P, day, ctx, S) {
++  const out = { moved: 0, swapped: 0 };
++  const list = ctx.homes || [];
++  if (!FAMILY.on || !list.length) return out;
++  const res = new Map();                                                     // home -> its living residents
++  for (const q of alive(P)) if (q.home !== null && q.home !== undefined && S.homes.has(q.home)) { if (!res.has(q.home)) res.set(q.home, []); res.get(q.home).push(q); }
++  const cands = [], seen = new Set();
++  for (const [hid, R] of res) {
++    const h = S.homes.get(hid);
++    if (!Number.isFinite(h.beds) || FAMILY.guestBeds.includes(h.kind)) continue;   // beds unknown / the inn: not this rule's
++    for (const p of R) {
++      if (seen.has(p.id) || stage(p, day) === "child") continue;
++      const F = familyOf(P, p, day);
++      for (const q of F) seen.add(q.id);
++      if (!F.some((q) => q !== p && q.id !== p.spouse)) continue;           // no dependant: no family
++      const lack = F.length - h.beds * FAMILY.perBed;
++      if (lack > 0) cands.push({ p, F, h, lack });
++    }
++  }
++  if (!cands.length) return out;
++  cands.sort((a, b) => (b.lack - a.lack) || (b.F.length - a.F.length) || (a.p.id - b.p.id));
++  const work = (q) => (q.job !== null && q.job !== undefined && S.jobAt ? S.jobAt(q) : null);
++  const farFor = (x, G) => G.some((q) => { const j = work(q); return !!j && homeFar(x, j); });
++  const means = (G) => G.reduce((a, q) => a + (q.job !== null && q.job !== undefined && stage(q, day) !== "child" ? (ctx.wageOf ? ctx.wageOf(q) || 0 : HOUSING.wage) : 0), 0);
++  const resN = (id) => (res.get(id) || []).length;
++  for (const c of cands) {
++    if (out.moved + out.swapped >= FAMILY.perDay) break;
++    const { p, F, h } = c;
++    if (F.some((q) => !q.alive || q.home !== h.id)) continue;               // someone moved today already
++    const n = F.length, cap = affordLevel(means(F)), lvH = S.lvlH(h.id);
++    // 1. a free home whose beds sleep the family with whoever lives there (best level, empty first, nearest work)
++    const fits = list.filter((x) => x.id !== h.id && (x.room || 0) >= n && S.lvlH(x.id) <= cap && sleeps(x, n, resN(x.id)) && !farFor(x, F) && rankSum(F, S.lvlH(x.id)) >= rankSum(F, lvH));
++    if (fits.length) {
++      const best = Math.max(...fits.map((x) => S.lvlH(x.id)));
++      const anyEmpty = fits.some((x) => S.lvlH(x.id) === best && !resN(x.id));
++      const to = nearestFree(fits, work(p) || h, (x) => S.lvlH(x.id) === best && (!anyEmpty || !resN(x.id)));
++      for (const q of F) q.home = to.id;
++      const k = Math.min(h.over || 0, n); if (k) h.over -= k; h.room = (h.room || 0) + n - k;
++      to.room -= n;
++      res.set(h.id, (res.get(h.id) || []).filter((q) => !F.includes(q))); res.set(to.id, (res.get(to.id) || []).concat(F));
++      S.resAt.set(h.id, Math.max(0, (S.resAt.get(h.id) || n) - n)); S.resAt.set(to.id, (S.resAt.get(to.id) || 0) + n);
++      S.touch(h.id); S.touch(to.id);
++      S.deeds.push({ kind: "buy", home: to.id, lvl: best, price: Math.round(priceOf(best) * HOUSING.buyShare), pid: p.id });
++      if (!resN(h.id)) S.deeds.push({ kind: "sell", home: h.id, lvl: lvH, price: Math.round(priceOf(lvH) * HOUSING.sellShare), pid: p.id });
++      out.moved++;
++      S.ev.push({ kind: "moved", text: `${p.name}'s family of ${n} outgrew the beds of #${h.id} and moved to #${to.id}${best > lvH ? " (a bigger house)" : ""}`, people: F.map((q) => q.id) });
++      continue;
++    }
++    // 2. an exchange with a smaller household living alone in a home whose beds sleep the family
++    if (resN(h.id) !== n) continue;                                          // the family must live alone
++    let sw = null;
++    for (const y of list) {
++      if (y.id === h.id || !sleeps(y, n) || S.lvlH(y.id) > cap || farFor(y, F)) continue;
++      const G = res.get(y.id) || [];
++      if (!G.length || G.length >= n || !sleeps(h, G.length) || farFor(h, G)) continue;
++      const capY = (y.room || 0) + G.length - (y.over || 0), capH = (h.room || 0) + n - (h.over || 0);
++      if (capY < n || capH < G.length) continue;
++      const lvY = S.lvlH(y.id);                                              // the town's ranks at work never fall (SKILL.gate)
++      if (G.some((q) => q.keeper) || rankSum(F, lvY) + rankSum(G, lvH) < rankSum(F, lvH) + rankSum(G, lvY)) continue;
++      const d = placeDist(y, work(p) || h), grow = G.some((q) => q.sex === "f" && q.spouse && age(q, day) >= DIALS.apprentice && age(q, day) <= DIALS.fertile) ? 1 : 0;
++      // a household that cannot grow first (a couple that may still have children would soon be short in the small house),
++      // then the smallest, then nearest the family's work, then by id
++      if (!sw || grow < sw.grow || (grow === sw.grow && (G.length < sw.G.length || (G.length === sw.G.length && (d < sw.d || (d === sw.d && y.id < sw.y.id)))))) sw = { y, G, d, grow, capY, capH };
++    }
++    if (!sw) continue;
++    const { y, G } = sw;
++    for (const q of F) q.home = y.id;
++    for (const q of G) q.home = h.id;
++    y.room = Math.max(0, sw.capY - n); y.over = Math.max(0, n - sw.capY);
++    h.room = Math.max(0, sw.capH - G.length); h.over = Math.max(0, G.length - sw.capH);
++    res.set(h.id, G.slice()); res.set(y.id, F.slice());
++    S.resAt.set(h.id, G.length); S.resAt.set(y.id, n);
++    S.touch(h.id); S.touch(y.id);
++    out.swapped++;
++    S.ev.push({ kind: "moved", text: `${p.name}'s family of ${n} and ${G[0].name}${G.length > 1 ? `'s household of ${G.length}` : ""} exchanged homes (#${h.id} <-> #${y.id}): beds for the family`, people: F.concat(G).map((q) => q.id) });
++  }
++  return out;
++}
++
+ // ------------------------------------------------------------------------------------------------ WHY-IDLE (1.3.228 B2 / BF3)
+ // One reason code per person, from facts the schedule pass gathers (f). Priority: home > food > site > route, then the
+ // work module's own reason, then busy / rain / no site / no job. "—" = idle for a reason we do not know (the gate wants 0).
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_clock.js	2026-10-07 16:42:14.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-HOMES/pw_civ_clock.js	2026-10-07 20:13:20.036165119 +0000
+@@ -56,6 +56,8 @@
+ //   prio [family|clear]       build this family first inside the tier charter (a free command, B6) · tax low|normal|high (B7)
+ //   audit · board              the economy's ledger check / the notice board (B7)
+ //   beds                       the palace's role beds: held / reserved per role and who sleeps there (1.3.229)
++//   homes                      1.3.232 (#29): the dwellings by kind (count, beds, places, people) and the families: by size,
++//                              how many sleep in their own beds (two to a bed), the family moves / exchanges today
+ import { world, system, ItemStack, BlockVolume, BlockTypes, BlockPermutation, LiquidType, StructureAnimationMode } from "@minecraft/server";
+ import { CIV_BUILDINGS } from "./pw_civ_buildings.js";
+ import * as ECON from "./pw_civ_economy.js";
+@@ -897,7 +899,8 @@
+     .map((b) => {
+       const beds = bedsOfFamily(b.family);
+       const cap = Math.round((PEOPLE.PLACES.BEDS_BASE && beds ? beds : (hhOf(b) || 0)) * dens);
+-      return { id: b.id, room: Math.max(0, cap - (living[b.id] || 0)), over: Math.max(0, (living[b.id] || 0) - cap), beds, ...placeOf(b) };
++      // 1.3.232 (#29): + kind — the FAMILY ROOM rule never counts the inn's guest beds as a family's (PEOPLE.FAMILY.guestBeds)
++      return { id: b.id, room: Math.max(0, cap - (living[b.id] || 0)), over: Math.max(0, (living[b.id] || 0) - cap), beds, kind: short(b), ...placeOf(b) };
+     });
+ }
+ // ------------------------------------------------------------------------------------------------ B4 (1.3.228): PLACES & SHIFTS
+@@ -1289,6 +1292,7 @@
+     if (st.restore && !st.restore.length) delete st.restore;
+   } catch (e) { console.warn(`[CIV-CLOCK] houses: ${e}`); }
+   if ((r.movers && r.movers.length) || r.far || r.farMoved) { const d = diagOf(st); d.moves = { day, out: (r.movers || []).reduce((n, m) => n + m.ids.length, 0), far: r.far || 0, farMoved: r.farMoved || 0 }; }
++  if (r.family && (r.family.moved || r.family.swapped)) diagOf(st).family = { day, ...r.family };   // 1.3.232 (#29): memory only (pw:clock homes)
+   for (const e of r.events) {
+     st.log.push(`day ${s.simDays.toFixed(0)}: ${e.text}`);
+     if (["wedding", "birth", "death", "arrival", "inherit", "first", "rank", "sold", "line"].includes(e.kind)) events.push(`§d${st.name}: ${e.text}`);   // 1.3.230 (HD): + sold, line
+@@ -5574,8 +5578,11 @@
+   const alive = () => load() === s && s.settlements.includes(st);
+   const bases = st.streets.filter((x) => x.kind === "kit" && x.role !== "connector");
+   // every (base, side, window) in one list, the main street first, windows nearest the middle first
+-  const jobs = [];
+-  for (const base of bases) for (const side of [1, -1]) for (const tj of junctionWindows(st, base, side)) jobs.push([base, side, tj]);
++  const jobs0 = [];
++  for (const base of bases) for (const side of [1, -1]) for (const tj of junctionWindows(st, base, side)) jobs0.push([base, side, tj]);
++  // 1.3.232 (#28, his 04:12 "more crossroads"): inside each base street, a window that completes a crossroads (a tee already
++  // at that t on the other side: the cross13 piece) first; the base order and the rest of the order kept (PLAN.crossFirst)
++  const jobs = PLAN.crossFirst(jobs0, ([b2, sd, t2]) => ((b2.tees || []).some((j) => j.t === t2 && j.side === -sd) ? 1 : 0), (j) => j[0]);
+   const why = st.sideWhy = st.sideWhy || {};
+   if (why.day !== Math.floor(s.simDays)) { for (const k of Object.keys(why)) why[k] = 0; why.day = Math.floor(s.simDays); }
+   for (const k of ["jobs", "noH", "p2inf", "blocked2", "blockedC", "conn", "halves", "plans", "gone", "border", "passes"]) why[k] = why[k] || 0;
+@@ -5734,7 +5741,7 @@
+   const why = { pairs: 0, windows: 0, otherWin: 0, tried: 0 };
+   // 0.0.25 (the R-22 audit): the windows in one list and a CURSOR over it — the old loop restarted at the first window
+   // every call and stopped on the budget, so with slow connector plans the later windows were never tried
+-  const jobs = [];
++  const jobs0 = [];
+   for (const base of bases) for (const side of [1, -1]) {
+     for (const D of KIT.SIDE_OFFSETS) {
+       const other = parallelAt(st, base, side, D);
+@@ -5743,10 +5750,14 @@
+       for (const tj of junctionWindows(st, base, side)) {
+         why.windows++;
+         if (junctionWindows(st, other, -side).includes(tj + tOffOf(base) - tOffOf(other))) why.otherWin++;
+-        jobs.push([base, side, other, tj]);
++        jobs0.push([base, side, other, tj]);
+       }
+     }
+   }
++  // 1.3.232 (#28, his 04:12 "more crossroads"): inside each base street, a connector that completes crossroads first — at
++  // its base end (a tee at tj on the other side) and at its far end (a tee on the parallel at the same t, facing away)
++  const crossAt = (str, t, sd) => (str.tees || []).some((j) => j.t === t && j.side === sd) ? 1 : 0;
++  const jobs = PLAN.crossFirst(jobs0, ([b2, sd, o2, t2]) => crossAt(b2, t2, -sd) + crossAt(o2, t2 + tOffOf(b2) - tOffOf(o2), sd), (j) => j[0]);
+   const start = Math.min(st.closeCursor || 0, jobs.length);
+   for (let i = start; i < jobs.length; i++) {
+     if (i > start && Date.now() - t0 > PLAN_MS) { st.closeCursor = i; return false; }
+@@ -8182,6 +8193,21 @@
+     for (const r of COURT.COURT.order) if (all[r]) reply(`§e  ${r}: ${(by[r] || []).length} of ${all[r]}${r === "lord" || r === "noble" ? " (couples sleep 2 to a bed)" : ""} — ${(by[r] || []).slice(0, 8).join(", ") || "reserved, waiting for the role"}${(by[r] || []).length > 8 ? " …" : ""}`);
+     return;
+   }
++  if (cmd === "homes") {                                        // 1.3.232 (#29, his 04:12 "small for a family of 4"): beds vs families
++    const loc = p && p.location;
++    const st = (loc && s.settlements.find((x) => inInfluence(x, loc.x, loc.z))) || s.settlements[0];
++    if (!st) { reply("§e[CLOCK] no settlement"); return; }
++    const H = homeRoom(s, st), P = census(st), day = Math.floor(s.simDays), res = {};
++    for (const q of PEOPLE.alive(P)) if (q.home !== null && q.home !== undefined) res[q.home] = (res[q.home] || 0) + 1;
++    const by = {};
++    for (const h of H) { const k = (by[h.kind] = by[h.kind] || { n: 0, beds: 0, places: 0, people: 0 }); k.n++; k.beds += h.beds || 0; k.places += (res[h.id] || 0) + (h.room || 0) - (h.over || 0); k.people += res[h.id] || 0; }
++    const c = PEOPLE.familyCensus(P, H, day), f = diagOf(st).family || {};
++    reply(`§e[CLOCK] ${st.name} (${tierLabel(st)}) homes: ${Object.entries(by).map(([k, v]) => `${k} ${v.n} (beds ${v.beds}, places ${v.places}, people ${v.people})`).join(" · ")}`);
++    reply(`§e  families ${c.families} (by size ${Object.entries(c.bySize).map(([n, m]) => `${n}:${m}`).join(" ")}): ${c.sleep} sleep in their own beds (two to a bed), §c${c.short} short§e; of 4 or more: ${c.sleep4} sleep, ${c.short4} short`);
++    reply(`§e  family moves on day ${f.day ?? "—"}: ${f.moved || 0} moved, ${f.swapped || 0} exchanged homes (FAMILY ${PEOPLE.FAMILY.on ? "on" : "off"}, ${PEOPLE.FAMILY.perDay} a day)`);
++    console.warn(`[CIV-HOMES] ${JSON.stringify({ st: st.id, tier: st.tier, day, by, families: c, moves: f })}`);
++    return;
++  }
+   if (cmd === "savehold") {                                     // 1.3.228 (B2 / BF2): release a save hold (the stored town could not be read at load)
+     if (a === "off") { saveHold = false; save(true); reply("§e[CLOCK] save hold released: the town in memory was saved"); return; }
+     reply(`§e[CLOCK] save hold is ${saveHold ? "§cON§e (the stored town could not be read; savehold off writes the town in memory over it)" : "off"}`);
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_plan.js	2026-10-07 05:04:25.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-HOMES/pw_civ_plan.js	2026-10-07 20:13:01.469539255 +0000
+@@ -96,6 +96,24 @@
+   return fits[hash32((t0 * 131 + streetId) >>> 0, 0xF111) % fits.length];
+ }
+ 
++// --------------------------------------------------------------------------------------------- 1.3.232 (#28) CROSSROADS FIRST
++// His 04:12 CT 10-07: "We should also use more crossroads". The side-street search (clock sideStreetJob) lists its junction
++// windows street by street (the main street first), side +1 before side -1, nearest the middle first, and opens ONE street
++// a run: a town opened every +1 side street of its main street before the first -1 one, and a crossroads (two tees at one
++// t: the cross13 piece) formed only by chance. Now, INSIDE each base street's own windows, the ones that complete a
++// crossroads come first; the base order (main first) and the order inside each class are kept (D-C1006-WATCH law: keep
++// the priority classes) — the town does not run away along one line, it closes its crosses where it already grows.
++/** jobs (any arrays), completes(job) -> the crossroads it completes (0, 1, 2), groupOf(job) -> its base street. A new list:
++ *  grouped by base in first-seen order, completes desc inside a group, the input order otherwise (stable). */
++export function crossFirst(jobs, completes, groupOf) {
++  const gi = new Map();
++  return (jobs || []).map((j, i) => {
++    const g = groupOf(j);
++    if (!gi.has(g)) gi.set(g, gi.size);
++    return { j, i, g: gi.get(g), c: completes(j) || 0 };
++  }).sort((a, b) => a.g - b.g || b.c - a.c || a.i - b.i).map((x) => x.j);
++}
++
+ // --------------------------------------------------------------------------------------------- EN2 weathering
+ export const WEATHER = { bandDays: 40, bands: 3, fineBand: 3, integrity: [0, 0.25, 0.45, 0.6], finePerBand: 4, mood: 4 };
+ /** the age band of a dwelling standing `age` days (0..WEATHER.bands) */
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/test_homes.mjs	1970-01-01 00:00:00.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-HOMES/tests/test_homes.mjs	2026-10-07 20:05:04.772254367 +0000
+@@ -0,0 +1,345 @@
++// test_homes.mjs — 1.3.232 (#29): FAMILY ROOM (his 04:12 CT 10-07: "[the cottages and initial homes] just seemed small to me
++// for a family of 4"; resizing allowed). Pure census law + the clock's homes context, node-tested.
++// 0 MEASURE: the starter homes' beds (from the shipped templates) and places (the clock's HOUSEHOLD x DENSITY); his sleeping
++//   law (the palace's: a double bed sleeps COURT.sleepers = 2, "the children's bed sleeps two") -> only the large cottage
++//   sleeps a family of 4.
++// 1 familyOf: the parents and their dependants at home (under moveOutAge, unmarried) — never a married child, never a grown one.
++// 2 sleeps(): beds x 2 cover the family plus whoever already lives there; the inn's beds are guest beds (never a family's).
++// 3 dayStep MOVE: a family whose home's beds cannot sleep it takes a free home that does — classes kept in order: sleeps,
++//   then the best level it affords, then an empty house before a shared one, then nearest work; never past COMMUTE.far from
++//   work; never the inn; at most FAMILY.perDay a town a day (the most short of beds first); deeds and restorations as HD.
++// 4 dayStep SWAP: no free home sleeps it -> the family exchanges homes with a smaller household living alone in a home whose
++//   beds sleep the family, when the family's old beds sleep that household, both sets of places hold them, the family affords
++//   the level and nobody's rank falls; no deeds (an exchange inside the one purse); both homes are queued for restoration.
++// 5 kill switch, result counts, no beds known -> nothing happens (old callers unchanged).
++// 6 the clock: homeRoom carries each home's kind and beds (cut from pw_civ_clock.js, run on stand-ins); familyCensus for
++//   /scriptevent pw:clock homes.
++// 7 SIMULATION (the real dayStep over a growing town, the clock's HOUSEHOLD / DENSITY / TIER_ADDS read from its source): the
++//   families of 4 that sleep in their beds rise, the population holds.
++import { readFileSync } from "node:fs";
++import * as PEOPLE from "../pw_civ_people.js";
++import * as ECON from "../pw_civ_economy.js";
++import { CIV_BUILDINGS } from "../pw_civ_buildings.js";
++import { COURT } from "../pw_civ_court.js";
++let pass = 0, fail = 0;
++const ok = (c, m, extra) => { if (c) pass++; else { fail++; console.log("FAIL", m, extra === undefined ? "" : JSON.stringify(extra)); } };
++const { DIALS, HOUSING } = PEOPLE;
++const FAMILY = PEOPLE.FAMILY || {};
++const D = 300;
++
++function mk(P, o = {}) {
++  const p = PEOPLE.newPerson(P, D, { age: o.age ?? 40, home: o.home ?? null, sex: o.sex || "m", parents: o.parents ? o.parents.map((q) => q.id) : [], job: o.job ?? null, trade: o.trade ?? null, seed: P.next });
++  for (const q of o.parents || []) q.kids.push(p.id);
++  if (o.skill) p.skill = { ...o.skill };
++  return p;
++}
++const wed = (a, b) => { a.spouse = b.id; b.spouse = a.id; };
++/** a family of 4 at `home`: father (job 101) + mother (job 102) + two small children */
++function fam4(P, home, o = {}) {
++  const fa = mk(P, { age: 40, home, job: o.jobs === false ? null : 101, trade: "smithy" });
++  const mo = mk(P, { age: 38, home, sex: "f", job: o.jobs === false || o.oneEarner ? null : 102, trade: "bakery" });
++  wed(fa, mo);
++  const k1 = mk(P, { age: 5, home, parents: [fa, mo] }), k2 = mk(P, { age: 3, home, sex: "f", parents: [fa, mo] });
++  return { fa, mo, k1, k2, all: [fa, mo, k1, k2] };
++}
++function cx(o = {}) {
++  const homes = o.homes || [];
++  return { day: o.day ?? D, fed: 1, paid: true, homes, jobs: o.jobs || [{ id: 101, kind: "smithy", vacancies: 0, x: 0, z: 0 }, { id: 102, kind: "bakery", vacancies: 0, x: 0, z: 0 }],
++           seed: o.seed ?? 7, levels: o.levels || new Map(homes.map((h) => [h.id, h.lvl ?? 1])), foodDays: 15, wageOf: o.wageOf || (() => 72), health: 0 };
++}
++const ledger = (o = {}) => { const L = ECON.newLedger(); L.treasury = o.treasury ?? 100000; L.purse = o.purse ?? 100000; L.minted = L.treasury + L.purse; return L; };
++const money = (L) => L.treasury + L.purse + Object.values(L.tills).reduce((a, v) => a + v, 0);
++const homeOf = (q) => q.home;
++
++// ------------------------------------------------------------------------------------------------ 0. measure
++const clk = readFileSync(new URL("../pw_civ_clock.js", import.meta.url), "utf8");
++const grab = (re) => { const m = clk.match(re); if (!m) throw new Error(`not in the clock: ${re}`); return m[1]; };
++const HOUSEHOLD = Function(`return ${grab(/const HOUSEHOLD = (\{[^}]*\});/)}`)();
++const DENSITY = JSON.parse(grab(/const DENSITY = (\[[^\]]*\]);/));
++{
++  const bedsOf = (stem) => PEOPLE.bedsOf((CIV_BUILDINGS[`pw:mvv_${stem}_r1`] || {}).dir);
++  const skins = ["a", "b", "c", "d"];
++  ok(skins.every((k) => bedsOf(`cottage_s_${k}`) === 1) && skins.every((k) => bedsOf(`cottage_m_${k}`) === 1) && skins.every((k) => bedsOf(`cottage_l_${k}`) === 2),
++     "measure: beds per starter home (every skin) — cottage_s 1, cottage_m 1, cottage_l 2", skins.map((k) => [bedsOf(`cottage_s_${k}`), bedsOf(`cottage_m_${k}`), bedsOf(`cottage_l_${k}`)]));
++  ok(bedsOf("farm_cattle_a") === 0 && bedsOf("farm_wheat_a") === 1 && bedsOf("manor_a") === 11 && bedsOf("inn_a") === 32, "measure: farm_cattle 0, farm_wheat 1, manor 11, inn 32 (guest beds)");
++  ok(HOUSEHOLD.cottage_s === 2 && HOUSEHOLD.cottage_m === 2 && HOUSEHOLD.cottage_l === 3 && JSON.stringify(DENSITY) === "[1,1.5,3,6,10]",
++     "measure: places = HOUSEHOLD x DENSITY (village 2 / 2 / 3; unchanged by this round)", [HOUSEHOLD, DENSITY]);
++  ok(FAMILY.perBed === COURT.sleepers && FAMILY.perBed === 2, "his sleeping law: a bed sleeps two (the palace's COURT.sleepers; 'the children's bed sleeps two')", FAMILY.perBed);
++  const sleep4 = ["cottage_s_a", "cottage_m_a", "cottage_l_a"].filter((st) => PEOPLE.sleeps && PEOPLE.sleeps({ beds: bedsOf(st), kind: st.slice(0, -2) }, 4));
++  ok(sleep4.length === 1 && sleep4[0] === "cottage_l_a", "measure: of the starter homes only the large cottage sleeps a family of 4 (cottage_s / cottage_m sleep a couple)", sleep4);
++}
++
++// ------------------------------------------------------------------------------------------------ 1. familyOf
++{
++  const P = PEOPLE.newPeople();
++  const { fa, mo, k1, k2 } = fam4(P, 1);
++  const app = mk(P, { age: 15, home: 1, parents: [fa, mo] });                        // an apprentice: a dependant
++  const s22 = mk(P, { age: 22, home: 1, parents: [fa, mo] });                        // grown, unmarried, under moveOutAge
++  const d23 = mk(P, { age: 23, home: 1, sex: "f", parents: [fa, mo] });              // married: her own household
++  const sil = mk(P, { age: 24, home: 1 }); wed(d23, sil);
++  const s30 = mk(P, { age: 30, home: 1, parents: [fa, mo] });                        // grown (>= moveOutAge): moves out on his own
++  const away = mk(P, { age: 6, home: 9, parents: [fa, mo] });                        // a child living elsewhere
++  const F = typeof PEOPLE.familyOf === "function" ? PEOPLE.familyOf(P, fa, D) : [];
++  const ids = new Set(F.map((q) => q.id));
++  ok(F.length === 6 && [fa, mo, k1, k2, app, s22].every((q) => ids.has(q.id)), "familyOf: the parents, the children, the apprentice, the unmarried son under moveOutAge", F.map((q) => q.name));
++  ok(!ids.has(d23.id) && !ids.has(sil.id) && !ids.has(s30.id) && !ids.has(away.id), "familyOf: never a married child (nor her husband), a grown son, a child living elsewhere");
++  const Fm = typeof PEOPLE.familyOf === "function" ? PEOPLE.familyOf(P, mo, D) : [];
++  ok(Fm.length === 6, "familyOf: the same family from the mother");
++  const P2 = PEOPLE.newPeople();
++  const wid = mk(P2, { age: 50, home: 3, sex: "f" }), kid = mk(P2, { age: 4, home: 3, parents: [wid] });
++  ok(typeof PEOPLE.familyOf === "function" && PEOPLE.familyOf(P2, wid, D).length === 2 && PEOPLE.familyOf(P2, kid, D).length === 1, "familyOf: a widow and her child; a child alone is no family head");
++}
++
++// ------------------------------------------------------------------------------------------------ 2. sleeps
++{
++  const s = PEOPLE.sleeps || (() => null);
++  ok(s({ beds: 2 }, 4) === true && s({ beds: 2 }, 4, 1) === false && s({ beds: 1 }, 2) === true && s({ beds: 1 }, 3) === false,
++     "sleeps: two to a bed, counting whoever already lives there");
++  ok(s({ beds: 32, kind: "inn" }, 4) === false && s({ beds: 0 }, 1) === false && s({ room: 9 }, 2) === false, "sleeps: never the inn's guest beds; no beds or unknown beds sleep nobody");
++}
++
++// ------------------------------------------------------------------------------------------------ 3. dayStep: MOVE
++{
++  // a family of 4 in a 1-bed cottage (#1, crowded) — #2 a free 2-bed home -> they move, all of them; deeds + restorations
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  const homes = [{ id: 1, room: 0, over: 2, beds: 1, kind: "cottage_s", x: 0, z: 0, lvl: 1 }, { id: 2, room: 4, beds: 2, kind: "cottage_l", x: 10, z: 0, lvl: 2 }];
++  const r = PEOPLE.dayStep(P, cx({ homes }));
++  ok(f.all.every((q) => q.home === 2), "move: the whole family of 4 takes the free home whose beds sleep it", f.all.map(homeOf));
++  ok(r.events.some((e) => e.kind === "moved" && /family of 4/.test(e.text) && e.people.length === 4), "move: a 'moved' event names the family of 4", r.events.map((e) => e.text));
++  ok((r.deeds || []).some((d) => d.kind === "buy" && d.home === 2 && d.price === HOUSING.price[2]) && (r.deeds || []).some((d) => d.kind === "sell" && d.home === 1 && d.price === HOUSING.price[1]),
++     "move: they buy the new home (its level's price) and sell the old one they left empty", r.deeds);
++  ok((r.restore || []).includes(1) && (r.restore || []).includes(2), "move: both homes are queued for restoration (his 21:47 law)", r.restore);
++  ok(homes[1].room === 0 && homes[0].room === 2 && !homes[0].over, "move: the places follow (new 0 free, old 2 free, no longer over)", homes);
++  ok(r.family && r.family.moved === 1 && r.family.swapped === 0, "move: the result counts it", r.family);
++  // money: the shared purse pays the difference to the treasury; nothing created
++  const L = ledger(); const m0 = money(L);
++  PEOPLE.settleDeeds(L, r.deeds);
++  ok(money(L) === m0 && L.treasury === 100000 + HOUSING.price[2] - HOUSING.price[1], "move: money conserved (purse -> treasury the difference)", [money(L), m0, L.treasury]);
++}
++{
++  // CLASS ORDER: sleeping before nearest — #2 (1 bed, beside the work) vs #3 (2 beds, far but within COMMUTE.far)
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 2, room: 4, beds: 1, x: 1, z: 0 }, { id: 3, room: 4, beds: 2, x: 100, z: 0, lvl: 2 }] }));
++  ok(f.all.every((q) => q.home === 3), "class: a home that sleeps the family beats a nearer one that does not", f.all.map(homeOf));
++}
++{
++  // within the sleeping class: the best level they afford, then an empty house before a shared one, then nearest work
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  const lodger = mk(P, { age: 50, home: 4 });
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 2, room: 4, beds: 2, x: 5, z: 0, lvl: 1 }, { id: 3, room: 4, beds: 2, x: 60, z: 0, lvl: 2 },
++    { id: 4, room: 5, beds: 3, x: 3, z: 0, lvl: 2 }, { id: 5, room: 4, beds: 2, x: 40, z: 0, lvl: 2 }] }));
++  ok(f.all.every((q) => q.home === 5) && lodger.home === 4, "class: best affordable level (2), an empty house (#3/#5) before the shared #4, then the nearer (#5)", f.all.map(homeOf));
++}
++{
++  // AFFORD: one earner (72 a day x 20 = 1440) cannot buy the level-2 home; no swap partner -> they stay
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1, { oneEarner: true });
++  const r = PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 3, room: 4, beds: 2, x: 20, z: 0, lvl: 2 }] }));
++  ok(f.all.every((q) => q.home === 1) && !(r.deeds || []).length, "afford: a home above the family's means is never taken", f.all.map(homeOf));
++}
++{
++  // FAR: a sleeping home farther than COMMUTE.far from the father's work is not taken (the far rule would send them back)
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 3, room: 4, beds: 2, x: PEOPLE.COMMUTE.far + 40, z: 0, lvl: 2 }] }));
++  ok(f.all.every((q) => q.home === 1), "far: never a home past COMMUTE.far from work", f.all.map(homeOf));
++}
++{
++  // INN: a free inn with 32 guest beds and room is never a family's home
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 7, room: 6, beds: 32, kind: "inn", x: 5, z: 0, lvl: 2 }] }));
++  ok(f.all.every((q) => q.home === 1), "inn: the guest beds are never a family's", f.all.map(homeOf));
++}
++{
++  // PER DAY: three families short of beds, three free 2-bed homes -> FAMILY.perDay move, the most short of beds first
++  const P = PEOPLE.newPeople();
++  const a = fam4(P, 1), b = fam4(P, 2), c = fam4(P, 3);
++  const extra = mk(P, { age: 2, home: 2, parents: [b.fa, b.mo] });                   // family b: 5 (the most short)
++  const r = PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 2, room: 0, over: 3, beds: 1, x: 0, z: 1 }, { id: 3, room: 0, over: 2, beds: 1, x: 0, z: 2 },
++    { id: 11, room: 6, beds: 3, x: 9, z: 0, lvl: 2 }, { id: 12, room: 6, beds: 3, x: 9, z: 1, lvl: 2 }, { id: 13, room: 6, beds: 3, x: 9, z: 2, lvl: 2 }] }));
++  const moved = [a, b, c].filter((x) => x.fa.home !== x.k1.home || x.fa.home > 10).length;
++  ok(r.family && r.family.moved === FAMILY.perDay && moved === FAMILY.perDay, "per day: at most FAMILY.perDay families", [r.family, moved]);
++  ok(b.fa.home > 10 && extra.home === b.fa.home && a.fa.home > 10 && c.fa.home === 3, "per day: the most short of beds first (5 in 1 bed), then by id", [a.fa.home, b.fa.home, c.fa.home]);
++}
++{
++  // NO FAMILY: three grown strangers in a 1-bed home -> nobody moves by this rule
++  const P = PEOPLE.newPeople();
++  const xs = [mk(P, { age: 40, home: 1 }), mk(P, { age: 41, home: 1 }), mk(P, { age: 42, home: 1 })];
++  const r = PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 1, beds: 1, x: 0, z: 0 }, { id: 2, room: 4, beds: 2, x: 9, z: 0 }] }));
++  ok(xs.every((q) => q.home === 1) && (!r.family || r.family.moved === 0), "no family: unrelated adults are not moved by the family rule", xs.map(homeOf));
++}
++{
++  // STRANGERS DO NOT TRIGGER: a family of 3 sleeps in its 2 beds; a lodger shares the house (4 residents) -> no move
++  const P = PEOPLE.newPeople();
++  const fa = mk(P, { age: 40, home: 1, job: 101 }), mo = mk(P, { age: 38, home: 1, sex: "f", job: 102 }); wed(fa, mo);
++  const k = mk(P, { age: 4, home: 1, parents: [fa, mo] });
++  const lod = mk(P, { age: 33, home: 1 });
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, beds: 2, x: 0, z: 0 }, { id: 2, room: 4, beds: 2, x: 9, z: 0, lvl: 2 }] }));
++  ok([fa, mo, k, lod].every((q) => q.home === 1), "own need: a family that sleeps in its beds stays, whoever else lives there", [fa, mo, k, lod].map(homeOf));
++}
++{
++  // NOBODY SPLIT: the married daughter and her husband stay; the family (with its apprentice) moves whole
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  const app = mk(P, { age: 15, home: 1, parents: [f.fa, f.mo] });
++  const d23 = mk(P, { age: 23, home: 1, sex: "f", parents: [f.fa, f.mo] }), sil = mk(P, { age: 24, home: 1 }); wed(d23, sil);
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 5, beds: 1, x: 0, z: 0 }, { id: 2, room: 6, beds: 3, x: 9, z: 0, lvl: 2 }] }));
++  ok([...f.all, app].every((q) => q.home === 2) && d23.home === 1 && sil.home === 1, "split: the family of 5 moves whole; the married daughter's household stays", [...f.all, app, d23, sil].map(homeOf));
++}
++
++// ------------------------------------------------------------------------------------------------ 4. dayStep: SWAP
++{
++  // the family of 4 alone in a 1-bed cottage; a widower alone in a 2-bed cottage (town tier: 5 places); no free home sleeps
++  // the family -> they exchange homes
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  const wid = mk(P, { age: 70, home: 2 });
++  const homes = [{ id: 1, room: 0, over: 2, beds: 1, kind: "cottage_s", x: 0, z: 0, lvl: 1 }, { id: 2, room: 4, beds: 2, kind: "cottage_l", x: 20, z: 0, lvl: 2 }];
++  const r = PEOPLE.dayStep(P, cx({ homes }));
++  ok(f.all.every((q) => q.home === 2) && wid.home === 1, "swap: the family takes the 2-bed home, the widower the cottage", [f.all.map(homeOf), wid.home]);
++  ok(r.events.some((e) => e.kind === "moved" && /exchanged homes/.test(e.text)), "swap: the chronicle tells the exchange", r.events.map((e) => e.text));
++  ok(!(r.deeds || []).length && (r.restore || []).includes(1) && (r.restore || []).includes(2), "swap: no deeds (an exchange inside the one purse); both homes queued for restoration", [r.deeds, r.restore]);
++  ok(homes[0].room === 1 && !homes[0].over && homes[1].room === 1 && !homes[1].over, "swap: the places follow (#1 holds 1 of 2, #2 holds 4 of 5)", homes);
++  ok(r.family && r.family.swapped === 1 && r.family.moved === 0, "swap: the result counts it", r.family);
++}
++{
++  // the partner: a household that cannot grow first (a young couple would soon be short in the 1-bed house), then the smallest
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  const yh = mk(P, { age: 30, home: 2 }), yw = mk(P, { age: 28, home: 2, sex: "f" }); wed(yh, yw);   // may still have children
++  const wid = mk(P, { age: DIALS.fertile + 12, home: 3 }), wif = mk(P, { age: DIALS.fertile + 10, home: 3, sex: "f" }); wed(wid, wif); // past DIALS.fertile
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 2, room: 3, beds: 2, x: 10, z: 0, lvl: 2 }, { id: 3, room: 3, beds: 2, x: 120, z: 0, lvl: 2 }] }));
++  ok(f.all.every((q) => q.home === 3) && wid.home === 1 && yh.home === 2, "swap: the old couple (cannot grow) before the nearer young couple", [f.all.map(homeOf), wid.home, yh.home]);
++}
++{
++  // a free home that sleeps the family comes before a swap
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  const wid = mk(P, { age: 70, home: 2 });
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 2, room: 4, beds: 2, x: 20, z: 0, lvl: 2 }, { id: 3, room: 4, beds: 2, x: 90, z: 0, lvl: 2 }] }));
++  ok(f.all.every((q) => q.home === 3) && wid.home === 2, "swap: a free home that sleeps the family first", [f.all.map(homeOf), wid.home]);
++}
++{
++  // SWAP GUARDS
++  const run = (o) => {
++    const P = PEOPLE.newPeople();
++    const f = fam4(P, 1);
++    if (o.famMaster) f.fa.skill = { smithy: 90 };                                    // a master smith, held back at level 1
++    const extra = o.lodgerAt1 ? mk(P, { age: 30, home: 1 }) : null;
++    const G = [];
++    for (let i = 0; i < (o.gSize || 1); i++) G.push(mk(P, { age: 70 - i, home: 2, job: o.master ? 103 : null, trade: o.master ? "smithy" : null, skill: o.master ? { smithy: 90 } : undefined }));
++    const homes = [{ id: 1, room: 0, over: extra ? 3 : 2, beds: o.beds1 ?? 1, x: 0, z: 0, lvl: 1 }, { id: 2, room: (o.cap2 ?? 5) - G.length, beds: o.beds2 ?? 2, kind: o.kind2, x: 20, z: 0, lvl: o.lvl2 ?? 2 }];
++    PEOPLE.dayStep(P, cx({ homes, jobs: [{ id: 101, kind: "smithy", vacancies: 0, x: 0, z: 0 }, { id: 102, kind: "bakery", vacancies: 0, x: 0, z: 0 }, { id: 103, kind: "smithy", vacancies: 0, x: 0, z: 0 }], wageOf: o.wageOf }));
++    return f.fa.home === 2;
++  };
++  ok(!run({ gSize: 4 }), "swap guard: the other household must be smaller than the family");
++  ok(!run({ gSize: 3 }), "swap guard: the family's old beds must sleep the other household (1 bed sleeps 2, not 3)");
++  ok(!run({ lodgerAt1: true }), "swap guard: the family must live alone in its home (a lodger stays put: no exchange)");
++  ok(!run({ cap2: 3 }), "swap guard: the other home's places must hold the family (3 places < 4)");
++  ok(!run({ beds2: 1 }), "swap guard: the other home's beds must sleep the family");
++  ok(!run({ kind2: "inn", beds2: 32 }), "swap guard: never the inn");
++  ok(!run({ lvl2: 4 }), "swap guard: the family must afford the other home's level");
++  ok(!run({ master: true, wageOf: () => 200 }), "swap guard: the town's ranks at work never fall (a master smith keeps his level-2 house from a family with no master)");
++  ok(run({ master: true, famMaster: true, wageOf: () => 200 }), "swap guard: a family whose master the 1-bed cottage holds back may exchange with a master (ranks at work: 1 + 2 -> 2 + 1)");
++  ok(run({}), "swap guard: the plain case still swaps (control)");
++}
++
++// ------------------------------------------------------------------------------------------------ 5. switch, counts, old callers
++{
++  const P = PEOPLE.newPeople();
++  const f = fam4(P, 1);
++  const was = FAMILY.on;
++  FAMILY.on = false;
++  PEOPLE.dayStep(P, cx({ homes: [{ id: 1, room: 0, over: 2, beds: 1, x: 0, z: 0 }, { id: 2, room: 4, beds: 2, x: 9, z: 0, lvl: 2 }] }));
++  FAMILY.on = was;
++  ok(was === true && f.all.every((q) => q.home === 1), "switch: FAMILY.on (default true) = false turns the rule off", [was, f.all.map(homeOf)]);
++  const P2 = PEOPLE.newPeople();
++  const g = fam4(P2, 1);
++  const r2 = PEOPLE.dayStep(P2, cx({ homes: [{ id: 1, room: 0, over: 2, x: 0, z: 0 }, { id: 2, room: 4, x: 9, z: 0, lvl: 2 }] }));
++  ok(g.all.every((q) => q.home === 1) && r2.family && r2.family.moved === 0 && r2.family.swapped === 0, "old callers: no beds in the homes context -> nothing moves (the rule needs beds)", g.all.map(homeOf));
++}
++
++// ------------------------------------------------------------------------------------------------ 6. the clock
++{
++  const cut = (name) => {
++    const i = clk.indexOf(`function ${name}(`);
++    if (i < 0) return null;
++    let k = clk.indexOf("{", i), depth = 0, j = k;
++    for (; j < clk.length; j++) { if (clk[j] === "{") depth++; else if (clk[j] === "}" && --depth === 0) break; }
++    return clk.slice(i, j + 1);
++  };
++  const plots = [{ id: 1, family: "pw:mvv_cottage_l_a_r1", stage: 4 }, { id: 2, family: "pw:mvv_cottage_s_b_r1", stage: 4 }, { id: 3, family: "pw:mvv_inn_a_r1", stage: 4 }, { id: 4, family: "pw:mvv_bakery_a_r1", stage: 4 }];
++  const short = (b) => CIV_BUILDINGS[b.family].stem.replace(/^mvv_/, "").replace(/_[a-z]_r1$/, "");
++  const P = PEOPLE.newPeople(); mk(P, { home: 1 }); mk(P, { home: 1 });
++  const env = { DENSITY, TIER_CLASS: () => 1, census: () => P, PEOPLE, plotsOf: () => plots, hhOf: (b) => HOUSEHOLD[short(b)] || 0, bedsOfFamily: (fam) => PEOPLE.bedsOf(CIV_BUILDINGS[fam].dir),
++                placeOf: (b) => ({ x: b.id, y: 64, z: 0 }), short };
++  const src = cut("homeRoom");
++  const homeRoom = new Function(...Object.keys(env), `${src}; return homeRoom;`)(...Object.values(env));
++  const H = homeRoom({}, { tier: "town" });
++  const h1 = H.find((h) => h.id === 1), h2 = H.find((h) => h.id === 2), h3 = H.find((h) => h.id === 3);
++  ok(H.length === 3 && !H.some((h) => h.id === 4), "clock homeRoom: the dwellings (a shop is no home)", H.map((h) => h.id));
++  ok(h1.kind === "cottage_l" && h1.beds === 2 && h1.room === 3 && h2.kind === "cottage_s" && h2.beds === 1 && h3.kind === "inn",
++     "clock homeRoom: each home carries its kind and beds (the inn's guest beds can be told apart)", H);
++  ok(/cmd === "homes"/.test(clk), "clock: /scriptevent pw:clock homes exists");
++  // familyCensus (what pw:clock homes prints): the families by size, those that sleep in their beds, those short of beds
++  const Q = PEOPLE.newPeople();
++  const a = fam4(Q, 1), b = fam4(Q, 2);
++  const wid = mk(Q, { age: 50, home: 3, sex: "f" }); mk(Q, { age: 4, home: 3, parents: [wid] });
++  const c = PEOPLE.familyCensus ? PEOPLE.familyCensus(Q, [{ id: 1, beds: 1 }, { id: 2, beds: 2 }, { id: 3, beds: 1 }], D) : null;
++  ok(c && c.families === 3 && c.bySize[4] === 2 && c.bySize[2] === 1 && c.sleep === 2 && c.short === 1 && c.short4 === 1 && c.sleep4 === 1,
++     "familyCensus: 3 families (two of 4, one of 2); 2 sleep in their beds, the family of 4 in the 1-bed home is short", c);
++  ok(a && b, "familyCensus fixture");
++}
++
++// ------------------------------------------------------------------------------------------------ 7. simulation
++{
++  const TIER_ADDS = Function(`return ${grab(/const TIER_ADDS = (\{[\s\S]*?\n\});/)}`)();
++  const TIER_DAYS = Function(`return ${grab(/const TIER_DAYS = (\{[^}]*\});/)}`)();
++  const TIERS = Function(`return ${grab(/const TIERS = (\[[^\]]*\]);/)}`)();
++  const cls = (tier) => tier === "capital" ? 4 : tier.startsWith("metropolis") ? 3 : tier.startsWith("city") ? 2 : tier.startsWith("town") ? 1 : 0;
++  const bedsK = (k) => PEOPLE.bedsOf((CIV_BUILDINGS[`pw:mvv_${k}_a_r1`] || {}).dir);
++  const sim = (seed, days, on) => {
++    const was = FAMILY.on; FAMILY.on = on;
++    const P = PEOPLE.newPeople(), homes = [];
++    let nid = 1, tier = "village";
++    const build = (kind, day) => {
++      const h = { id: nid++, kind, x: (nid * 37) % 200, z: (nid * 53) % 200 }; homes.push(h);
++      for (let i = 0; i < (HOUSEHOLD[kind] || 0); i++) { const hs = (h.id * 7 + i * 11 + seed) >>> 0; PEOPLE.newPerson(P, day, { home: h.id, seed: h.id * 31 + i * 7 + seed, age: i < 2 ? 20 + (hs % 40) : hs % 15, sex: i === 0 ? "m" : i === 1 ? "f" : undefined, parents: [] }); }
++    };
++    for (const k of ["farm_wheat", "cottage_s", "inn", "cottage_m", "cottage_l", "farm_cattle"]) build(k, 0);
++    const pend = [];
++    let fam4 = 0, fam4Sleep = 0;
++    for (let day = 1; day <= days; day++) {
++      const nx = TIERS[TIERS.indexOf(tier) + 1];
++      if (nx && day >= TIER_DAYS[nx]) { tier = nx; for (const [k, n] of TIER_ADDS[tier]) if (HOUSEHOLD[k] !== undefined) for (let i = 0; i < n; i++) pend.push(k); }
++      for (let i = 0; i < 2 && pend.length; i++) build(pend.shift(), day);
++      const live = {}; for (const p of PEOPLE.alive(P)) if (p.home) live[p.home] = (live[p.home] || 0) + 1;
++      const H = homes.map((h) => { const cap = Math.round((HOUSEHOLD[h.kind] || 0) * DENSITY[cls(tier)]); return { id: h.id, kind: h.kind, beds: bedsK(h.kind), room: Math.max(0, cap - (live[h.id] || 0)), over: Math.max(0, (live[h.id] || 0) - cap), x: h.x, z: h.z }; });
++      const adults = PEOPLE.alive(P).filter((p) => PEOPLE.stage(p, day) !== "child").length, filled = PEOPLE.alive(P).filter((p) => p.job === "builders").length;
++      PEOPLE.dayStep(P, { day, fed: 1, paid: true, homes: H, jobs: [{ id: "builders", kind: "builder", vacancies: Math.max(0, adults - filled) + 2, x: 100, z: 100 }], seed, name: "Sim", events: [], sanitation: 1, health: 0,
++                          levels: new Map(homes.map((h) => [h.id, PEOPLE.homeLevel(h.kind)])), foodDays: 15, diet: 1, wageOf: () => 72 });
++      const c = PEOPLE.familyCensus(P, homes.map((h) => ({ id: h.id, beds: bedsK(h.kind), kind: h.kind })), day);
++      fam4 += c.bySize4plus; fam4Sleep += c.sleep4;
++    }
++    FAMILY.on = was;
++    return { fam4, fam4Sleep, pop: PEOPLE.alive(P).length };
++  };
++  if (PEOPLE.familyCensus) {
++    // four towns (seeds) to city I (260 days): one seed alone is noisy (a move changes who meets whom, so the births
++    // differ); the sum is the measure. Measured 10-07 on 8 seeds: the share of family-of-4+ days spent in beds that sleep
++    // the family rose from 13-31 % (mean 18.8) to 26-51 % (mean 38.4); population within 3 %.
++    const res = [3, 7, 23, 59].map((seed) => ({ seed, off: sim(seed, 260, false), on: sim(seed, 260, true) }));
++    const sum = (k, f) => res.reduce((a, x) => a + x[k][f], 0);
++    const shareOff = sum("off", "fam4Sleep") / sum("off", "fam4"), shareOn = sum("on", "fam4Sleep") / sum("on", "fam4");
++    ok(shareOn >= 2 * shareOff, `sim: the share of family-of-4+ days spent in beds that sleep the family at least doubles (${(100 * shareOff).toFixed(1)} % -> ${(100 * shareOn).toFixed(1)} %)`, res);
++    for (const x of res) ok(Math.abs(x.on.pop - x.off.pop) <= 0.08 * x.off.pop, `sim seed ${x.seed}: the population holds (off ${x.off.pop}, on ${x.on.pop})`, x);
++    console.log(`  sim: share ${(100 * shareOff).toFixed(1)} % -> ${(100 * shareOn).toFixed(1)} %; ${JSON.stringify(res)}`);
++  } else ok(false, "sim: familyCensus missing");
++}
++
++console.log(`test_homes: ${pass}/${pass + fail} passed`);
++if (fail) process.exit(1);
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/test_cross.mjs	1970-01-01 00:00:00.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-HOMES/tests/test_cross.mjs	2026-10-07 20:12:48.685539087 +0000
+@@ -0,0 +1,83 @@
++// test_cross.mjs — 1.3.232 (#28): CROSSROADS FIRST (his 04:12 CT 10-07: "We should also use more crossroads").
++// Mechanism (pw_civ_clock.js sideStreetJob): the side-street search lists its junction windows street by street (the main
++// street first), side +1 before side -1, nearest the middle first, and opens ONE street per run — so a town opened every
++// +1 side street of its main street before the first -1 one, and a crossroads (two tees at one t: the cross13 piece,
++// queueJunction) formed only when a -1 search happened to land where a +1 tee already stood. Now, INSIDE each base street's
++// own windows (the base order — main first — is kept: no runaway growth along one line), a window that completes a
++// crossroads (a tee already stands at that t on the other side) comes first; the rest keep their order. closeBlocks the
++// same, counting both ends of the connector.
++// 1 PLAN.crossFirst: stable; grouped by base street in first-seen order; completes desc inside a group; no tees -> unchanged.
++// 2 the clock's junction windows (cut from pw_civ_clock.js, run on stand-ins): after a +1 tee at t, the main street's next
++//   job is the -1 window at the same t (a crossroads), and the side street's outward reserved window (its own tee at `half`
++//   on the other side) completes a crossroads too.
++// 3 wiring: sideStreetJob and closeBlocks order their jobs through PLAN.crossFirst.
++import { readFileSync } from "node:fs";
++import * as PLAN from "../pw_civ_plan.js";
++let pass = 0, fail = 0;
++const ok = (c, m, extra) => { if (c) pass++; else { fail++; console.log("FAIL", m, extra === undefined ? "" : JSON.stringify(extra)); } };
++const crossFirst = PLAN.crossFirst || (() => null);
++
++// ------------------------------------------------------------------------------------------------ 1. PLAN.crossFirst
++{
++  const main = { id: 1, tees: [{ t: 56, side: 1 }] }, side2 = { id: 2, tees: [{ t: 70, side: -1 }] };
++  const completes = ([base, side, tj]) => ((base.tees || []).some((j) => j.t === tj && j.side === -side) ? 1 : 0);
++  const jobs = [[main, 1, 112], [main, 1, 0], [main, -1, 56], [main, -1, 112], [side2, 1, 70], [side2, 1, 126]];
++  const out = crossFirst(jobs, completes, (j) => j[0]);
++  const key = (j) => `${j[0].id}:${j[1]}:${j[2]}`;
++  ok(Array.isArray(out) && out.map(key).join(" ") === "1:-1:56 1:1:112 1:1:0 1:-1:112 2:1:70 2:1:126",
++     "crossFirst: inside the main street the window that completes a crossroads first, the rest in their order; the side street after the main (base order kept)", out && out.map(key));
++  ok(out !== jobs && jobs.map(key).join(" ") === "1:1:112 1:1:0 1:-1:56 1:-1:112 2:1:70 2:1:126", "crossFirst: the input list is not changed");
++  const none = [[{ id: 3, tees: [] }, 1, 5], [{ id: 3, tees: [] }, -1, 5]];
++  ok(crossFirst(none, completes, (j) => j[0]).map((j) => j[2] + ":" + j[1]).join(" ") === "5:1 5:-1", "crossFirst: no tees -> the order is unchanged");
++  // closeBlocks: a connector may complete a crossroads at both ends (2 before 1 before 0)
++  const b = { id: 10 }, o1 = { id: 11 }, o2 = { id: 12 };
++  const jobs2 = [[b, 1, o1, 0, 0], [b, 1, o1, 56, 1], [b, 1, o2, 112, 2], [b, -1, o2, 168, 1]];
++  const out2 = crossFirst(jobs2, (j) => j[4], (j) => j[0]);
++  ok(out2 && out2.map((j) => j[3]).join(" ") === "112 56 168 0", "crossFirst: closeBlocks counts both ends (2, then 1s in order, then 0)", out2 && out2.map((j) => j[3]));
++  ok(crossFirst([], completes, (j) => j[0]).length === 0, "crossFirst: an empty list");
++}
++
++// ------------------------------------------------------------------------------------------------ 2. the clock's windows
++const clk = readFileSync(new URL("../pw_civ_clock.js", import.meta.url), "utf8");
++const cut = (name, src = clk) => {
++  const i = src.indexOf(`function ${name}(`);
++  if (i < 0) return null;
++  let k = src.indexOf("{", i), depth = 0, j = k;
++  for (; j < src.length; j++) { if (src[j] === "{") depth++; else if (src[j] === "}" && --depth === 0) break; }
++  return src.slice(i, j + 1);
++};
++{
++  const env = { JW: 13, GRID_PITCH: 56, kitHAt: (street, q) => (q >= street.tmin && q < street.tmin + street.H.length ? 70 : undefined), winReleased: () => false, tOffOf: (s) => s.tOff || 0 };
++  const src = [cut("gridWindowsIn"), cut("junctionWindows")].join("\n");
++  const junctionWindows = new Function(...Object.keys(env), `${src}; return junctionWindows;`)(...Object.values(env));
++  // a main street 300 cells (t 0..299), middle 150, grid at 150 +- 56k; the square on its -1 side at t 150..161
++  const main = { id: 1, kind: "kit", tmin: 0, H: new Array(300).fill(70), tees: [], access: [], reserved: [], mid: 150, sqT: [150, 161] };
++  const st = { gridMid: 150, streets: [main] };
++  const build = () => { const jobs = []; for (const base of st.streets) for (const side of [1, -1]) for (const tj of junctionWindows(st, base, side)) jobs.push([base, side, tj]); return jobs; };
++  const completes = ([base, side, tj]) => ((base.tees || []).some((j) => j.t === tj && j.side === -side) ? 1 : 0);
++  const before = build();
++  ok(before.length && before[0][1] === 1 && before[0][2] === 150, "windows: the first search opens +1 at the grid line opposite the square (t 150)", before.map((j) => [j[1], j[2]]));
++  main.tees.push({ t: 94, side: 1 });                                     // a side street opened at +1, t 94
++  const old = build(), now = crossFirst(build(), completes, (j) => j[0]);
++  ok(old[0][1] === 1 && old[0][2] !== 94, "windows (old order): the next search would open another +1 street (no crossroads)", old.slice(0, 3).map((j) => [j[1], j[2]]));
++  ok(now[0][1] === -1 && now[0][2] === 94, "windows (crossFirst): the next search completes the crossroads at t 94 on the -1 side", now.slice(0, 3).map((j) => [j[1], j[2]]));
++  ok(!now.some((j) => j[1] === -1 && j[2] === 150), "windows: the square's frontage never takes a tee (unchanged)");
++  // the side street opened at +60 keeps its outward window reserved at its junction (`half`): it completes a crossroads
++  const side2 = { id: 2, kind: "kit", role: "side", tmin: 0, H: new Array(153).fill(72), tees: [{ t: 70, side: -1 }], access: [], reserved: [[70, 82, 1]], mid: 76, tOff: 24 };
++  st.streets.push(side2);
++  const now2 = crossFirst(build(), completes, (j) => j[0]);
++  const firstSide2 = now2.find((j) => j[0] === side2);
++  ok(firstSide2 && firstSide2[1] === 1 && firstSide2[2] === 70, "windows: the side street's outward reserved window (straight on through its junction) leads its own list", now2.filter((j) => j[0] === side2).map((j) => [j[1], j[2]]));
++  ok(now2[0][0] === main, "windows: the main street's windows still come first (base order kept)");
++}
++
++// ------------------------------------------------------------------------------------------------ 3. wiring
++{
++  const sj = cut("* sideStreetJob") || (() => { const i = clk.indexOf("function* sideStreetJob("); return i < 0 ? null : clk.slice(i, clk.indexOf("\n}\n", i)); })();
++  const cb = cut("closeBlocks");
++  ok(!!sj && /PLAN\.crossFirst\(/.test(sj), "wiring: sideStreetJob orders its jobs through PLAN.crossFirst");
++  ok(!!cb && /PLAN\.crossFirst\(/.test(cb), "wiring: closeBlocks orders its jobs through PLAN.crossFirst");
++}
++
++console.log(`test_cross: ${pass}/${pass + fail} passed`);
++if (fail) process.exit(1);

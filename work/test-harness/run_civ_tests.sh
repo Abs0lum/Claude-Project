@@ -19,6 +19,7 @@ for f in *.js; do node --check "$f" || { echo "SYNTAX FAIL $f"; fail=1; }; done
 for t in tests/test_*.mjs; do
   line="$(timeout 300 node "$t" 2>&1 | grep -E 'passed|pass,|[0-9]+/[0-9]+ PASS|Error|FAIL' | tail -1)"
   echo "$(basename "$t" .mjs): $line"
+  if ! echo "$line" | grep -Eq '(^|[^0-9])([0-9]+)/\2 (passed|PASS)|pass, 0 fail'; then echo "  ^ NOT FULLY PASSING"; fail=1; fi
 done
 echo "scratch copy: $TMP"
 exit $fail
