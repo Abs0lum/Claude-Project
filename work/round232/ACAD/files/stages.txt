@@ -1,0 +1,69 @@
+buildings without a stage: []
+
+== ground area added per stage (m2, roofed buildings / courts / walks)
+  AI-1  : buildings  16396  courts   7620  covered walks  3328
+  AI-2  : buildings   4905  courts   7400  covered walks     0
+  AII-1 : buildings  10754  courts  13432  covered walks   256
+  AII-2 : buildings      0  courts      0  covered walks     0
+
+== Academy I stages must lie in the core (x/z 64..319):
+  outside the core: none (with the Q5 trims applied)
+
+== in-place test: a later building may only take ground that was open at every earlier stage
+  violations: none
+  straddlers (core part laid by the core piece's tier version, on ground open until then):
+    FORECOURT            AII-1  core part (64, 100, 95, 283) in pieces ['r1c1', 'r1c2', 'r1c3', 'r1c4']; earlier buildings in the way: none
+    Junior School        AII-1  core part (100, 300, 149, 319) in pieces ['r1c4', 'r2c4']; earlier buildings in the way: none
+    House Tower I        AII-1  core part (64, 64, 79, 79) in pieces ['r1c1']; earlier buildings in the way: none
+    Dorm Range I         AII-1  core part (80, 64, 99, 79) in pieces ['r1c1']; earlier buildings in the way: none
+    House Tower II       AII-1  core part (64, 304, 79, 319) in pieces ['r1c4']; earlier buildings in the way: none
+    Dorm Range II        AII-1  core part (80, 304, 99, 319) in pieces ['r1c4']; earlier buildings in the way: none
+
+== secrets: the stage at which each opens (all hosts standing)
+   1 Masters' Spine (jib doors)                   G  AI-1   hosts ["Masters' Lodgings"] 
+   2 Stoking Passage                              G  AI-1   hosts ['Laboratories', 'Schools Wing'] 
+   3 Porter's Stair in the Wall                   G  AII-1  hosts ['FORECOURT', 'Gatehouse'] 
+   4 Mural Passage                                U  AII-1  hosts ['wall'] 
+   5 Panelled Carrel                              G  AI-2   hosts ['Library'] 
+   6 Roof Hide (T1 attic)                         U  AII-1  hosts ['House Tower I'] 
+   7 Founder's Scrittoio                          G  AI-1   hosts ["Rector's Lodge"] 
+   8 Studiolo                                     G  AI-1   hosts ['Laboratories'] 
+   9 Secret Drawers + Rector's Key                G  AI-1   hosts ["Rector's Lodge"] 
+  10 Closed Stack (lectern lock)                  G  AI-2   hosts ['Library'] 
+  11 Double Hide                                  U  AI-2   hosts ['Library'] 
+  12 Hall Roof Trusses                            U  AI-1   hosts ['GREAT HALL'] 
+  13 Map Room (dispatch room)                     U  AII-2  hosts ['Schools Wing'] Long Gallery + Map Room are the Schools Wing's _t2 upper floor
+  14 Rector's Vice Stair + Supper Closet          U  AI-1   hosts ["Rector's Lodge"] 
+  15 Oratory Window + Tribune Door                U  AI-2   hosts ['Chapel', "Rector's Lodge", 'open ground in the core'] 
+  16 Bricked-up Arch                              U  AI-1   hosts ["Rector's Lodge"] 
+  17 Flying High Table                            G  AI-1   hosts ['GREAT HALL'] 
+  18 Wardrobe Door (Proctors -> Council)          U  AI-1   hosts ['Entrance Range'] 
+  19 Proctors' Way (itinerary)                    U  AI-1   hosts ['Entrance Range'] 
+  20 Bursary Strongroom (weighing toll)           G  AI-1   hosts ['Entrance Range'] 
+  21 Governess's Doors                            U  AII-1  hosts ['Junior School'] 
+  22 Children's Stair                             U  AII-1  hosts ['Junior School'] 
+  23 Twin Stair                                   U  AII-2  hosts ['Central Tower'] Twin Stair = the tower's _t2 stair hall
+  24 Turning Bridges                              U  AII-2  hosts ['Central Tower'] one Turning Bridge at AII-2, all at AIII-2
+  25 Clock-Keeper's Room                          U  AI-1   hosts ['Central Tower'] 
+  26 Old Dry Well                                 G  AII-1  hosts ['HALL GARTH', 'LIBRARY COURT', 'quay/canal'] 
+  27 Garderobe Drop + Sewer Hide                  U  AII-1  hosts ['Dorm Range I'] 
+  28 Covered Bridge: 2nd corridor + lower way     G  AII-1  hosts ['Walk to T3', 'open ground of the ring'] 
+  29 Alchemist's Vault                            B  AI-2   hosts ['Observatory Wing'] 
+  30 Infirmary Stove Passage                      G  AI-2   hosts ['Infirmary'] 
+  31 Matron's Door under the Hangings             G  AI-2   hosts ['Infirmary'] 
+  32 Ice-House Hole                               G  AI-2   hosts ['Ice House', 'LIBRARY COURT'] 
+  33 Water Stair                                  G  AII-1  hosts ['B2 tunnel', 'Central Tower'] 
+  34 Water Gate                                   B  AII-1  hosts ['B2 network', 'B2 tunnel', 'quay/canal'] 
+  35 Way from the Lake                            G  AII-1  hosts ['LIBRARY COURT', 'quay/canal'] 
+  36 Tunnel Junction (three ways)                 B  AII-1  hosts ['B2 network', 'Central Tower'] 
+  37 Founders' Crypt                              B  AI-2   hosts ['Chapel'] 
+  38 Catacombs                                    B  AII-2  hosts ['CHAPEL COURT'] catacombs dug at AII-2 (v1 table)
+  39 Countermine                                  B  AII-1  hosts ['B2 network', 'B2 tunnel', 'Gatehouse'] 
+  AI-1  : 13 secrets [1, 2, 7, 8, 9, 12, 14, 16, 17, 18, 19, 20, 25]
+  AI-2  :  9 secrets [5, 10, 11, 15, 29, 30, 31, 32, 37]
+  AII-1 : 13 secrets [3, 4, 6, 21, 22, 26, 27, 28, 33, 34, 35, 36, 39]
+  AII-2 :  4 secrets [13, 23, 24, 38]
+  AIII-1:  0 secrets []
+  AIII-2:  0 secrets []
+
+wrote /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/out232/ACAD-files/ACAD-UPGRADE-STAGES.png (4848, 1644)

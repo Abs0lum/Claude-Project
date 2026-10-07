@@ -1,0 +1,106 @@
+=== acad2v2_check: /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-ACAD/academy/before/acad2v2_layout.py
+O1 overlaps(G) = []
+O1 overlaps(U) = []
+O1 overlaps(B) = []
+O2 passage-through-building (G, informational): 2
+     - Left Cloister (z0 side) runs through Schools Wing
+     - Left Cloister (z0 side) runs through Laboratories
+F1 upper/basement rooms without a G footprint: 0
+C1 covered (buildings + passages) from the Entrance Range: 22/33 reached; NOT reached: ['Gatehouse', 'Chapel', 'Junior School', 'House Tower II', 'Dorm Range II', 'House Tower III', 'House Tower IV', 'Ice House', 'Walk to T3', 'Walk to T4', 'Walk to T2']
+C2 paved (C1 + courts) from the Gatehouse: 30/39 reached; NOT reached: ['Chapel', 'Junior School', 'House Tower II', 'Dorm Range II', 'House Tower III', 'House Tower IV', 'Walk to T3', 'Walk to T4', 'Walk to T2']
+C3 open-ground flood from the gate (23,191): enclosed pockets inside the precinct = 1
+     - 960 cells, bbox x180-219 z228-251
+C3 buildings with no reached open cell beside them (entered only through other buildings): []
+C4 U-level clusters split: []
+C5 B2 network from the Guard cellar: 15/16 reached; required ['Basin', 'WATER GATE canal', "FOUNDERS' CRYPT", 'QUAY (-12)', 'MUNIMENT ARCHIVE', 'CATACOMBS']; missing ['CATACOMBS']
+   tunnel x sewer crossings (pre-existing design pattern; culvert needed at each): 4
+     - tunnel (23, 191, 235, 192) x sewer (97, 40, 98, 331)
+     - tunnel (236, 192, 295, 193) x sewer (253, 40, 254, 331)
+     - tunnel (236, 290, 282, 291) x sewer (253, 40, 254, 331)
+     - tunnel (184, 140, 319, 141) x sewer (253, 40, 254, 331)
+S1 secrets: # | level | marker | host
+      1 | G | (184, 270) | Masters' Lodgings  (Masters' Spine (jib doors))
+      2 | G | (200, 124) | Schools Wing  (Stoking Passage)
+      3 | G | (12, 206) | Gatehouse  (Porter's Stair in the Wall)
+      4 | U | (1, 120) | wall#0@(0, 0, 2, 383)  (Mural Passage)
+      5 | G | (262, 96) | Library  (Panelled Carrel)
+      6 | U | (44, 44) | T1 dorm  (Roof Hide (T1 attic))
+      7 | G | (244, 282) | Rector's Lodge  (Founder's Scrittoio)
+      8 | G | (246, 120) | Laboratories  (Studiolo)
+      9 | G | (228, 258) | Rector's Lodge  (Secret Drawers + Rector's Key)
+     10 | G | (300, 64) | Library  (Closed Stack (lectern lock))
+     11 | U | (302, 96) | Dbl hide  (Double Hide)
+     12 | U | (185, 192) | GREAT HALL (open roof)  (Hall Roof Trusses)
+     13 | U | (194, 118) | Map Room  (Map Room (dispatch room))
+     14 | U | (250, 286) | Supper  (Rector's Vice Stair + Supper Closet)
+     15 | U | (270, 296) | Tribune  (Oratory Window + Tribune Door)
+     16 | U | (220, 262) | Rector bed  (Bricked-up Arch)
+     17 | G | (210, 192) | GREAT HALL  (Flying High Table)
+     18 | U | (120, 191) | Proctors  (Wardrobe Door (Proctors -> Council))
+     19 | U | (114, 176) | Proctors  (Proctors' Way (itinerary))
+     20 | G | (140, 206) | Entrance Range  (Bursary Strongroom (weighing toll))
+     21 | U | (108, 320) | Governess  (Governess's Doors)
+     22 | U | (146, 316) | Day Room  (Children's Stair)
+     23 | U | (236, 192) | court#27@(232, 184, 239, 199)  (Twin Stair)
+     24 | U | (236, 186) | court#27@(232, 184, 239, 199)  (Turning Bridges)
+     25 | U | (250, 210) | Clock room  (Clock-Keeper's Room)
+     26 | G | (184, 140) | HALL GARTH  (Old Dry Well)
+     27 | U | (90, 68) | Dorm I upper  (Garderobe Drop + Sewer Hide)
+     28 | G | (264, 54) | Walk to T3  (Covered Bridge: 2nd corridor + lower way)
+     29 | B | (236, 78) | Alchemist's Vault  (Alchemist's Vault)
+     30 | G | (236, 249) | Infirmary  (Infirmary Stove Passage)
+     31 | G | (236, 240) | Infirmary  (Matron's Door under the Hangings)
+     32 | G | (294, 154) | Ice House  (Ice-House Hole)
+     33 | G | (248, 200) | Central Tower  (Water Stair)
+     34 | B | (376, 191) | WATER GATE canal  (Water Gate)
+     35 | G | (316, 141) | CLIFF  (Way from the Lake)
+     36 | B | (236, 192) | tunnel#28@(236, 192, 295, 193)  (Tunnel Junction (three ways))
+     37 | B | (282, 308) | FOUNDERS' CRYPT  (Founders' Crypt)
+     38 | B | (284, 258) | CATACOMBS  (Catacombs)
+     39 | B | (12, 180) | Guard cellar  (Countermine)
+   route points in no rect (open-ground ends / turns): ['15 U (256, 292)', '28 G (252, 54)', '28 G (272, 54)', '39 B (16, 166)', '39 B (10, 156)', '39 B (16, 146)', '39 B (11, 138)']
+T1 STAIRS: not defined in this layout (skipped)
+P1 piece census (core r1..r4 x c1..c4 = x/z 64..319):
+     STRADDLE court    FORECOURT                      (23, 100, 95, 283) pieces ['r0c1', 'r0c2', 'r0c3', 'r0c4', 'r1c1', 'r1c2', 'r1c3', 'r1c4'] | core part (64, 100, 95, 283)
+     core     court    SCHOLARS' COURT                (100, 100, 149, 155) pieces ['r1c1', 'r1c2', 'r2c1', 'r2c2']
+     core     court    MASTERS' COURT                 (100, 228, 149, 287) pieces ['r1c3', 'r1c4', 'r2c3', 'r2c4']
+     core     court    HALL GARTH                     (150, 128, 219, 153) pieces ['r2c2', 'r3c2']
+     core     court    LIBRARY COURT                  (256, 100, 305, 170) pieces ['r4c1', 'r4c2']
+     core     court    CHAPEL COURT                   (256, 214, 305, 290) pieces ['r4c3', 'r4c4']
+     ring     gate     Gatehouse                      (3, 176, 22, 207) pieces ['r0c2', 'r0c3']
+     core     hall     Entrance Range                 (110, 172, 149, 211) pieces ['r1c2', 'r1c3', 'r2c2', 'r2c3']
+     core     hall     GREAT HALL                     (150, 156, 219, 227) pieces ['r2c2', 'r2c3', 'r3c2', 'r3c3']
+     core     tower    Central Tower                  (220, 172, 251, 211) pieces ['r3c2', 'r3c3']
+     core     hall     Kitchens                       (150, 228, 179, 251) pieces ['r2c3']
+     core     learn    Schools Wing                   (150, 96, 219, 125) pieces ['r2c1', 'r3c1']
+     core     lab      Laboratories                   (220, 96, 251, 125) pieces ['r3c1']
+     STRADDLE lab      Observatory Wing               (220, 60, 251, 95) pieces ['r3c0', 'r3c1'] | core part (220, 64, 251, 95)
+     STRADDLE learn    Library                        (256, 60, 305, 99) pieces ['r4c0', 'r4c1'] | core part (256, 64, 305, 99)
+     core     sacred   Infirmary                      (220, 228, 251, 251) pieces ['r3c3']
+     core     lodge    Masters' Lodgings              (150, 252, 219, 287) pieces ['r2c3', 'r2c4', 'r3c3', 'r3c4']
+     core     lodge    Rector's Lodge                 (220, 252, 251, 287) pieces ['r3c3', 'r3c4']
+     STRADDLE sacred   Chapel                         (260, 292, 303, 325) pieces ['r4c4', 'r4c5'] | core part (260, 292, 303, 319)
+     STRADDLE child    Junior School                  (100, 300, 149, 340) pieces ['r1c4', 'r1c5', 'r2c4', 'r2c5'] | core part (100, 300, 149, 319)
+     ring     service  Stables + Stores               (24, 20, 39, 95) pieces ['r0c0', 'r0c1']
+     STRADDLE tower    House Tower I                  (40, 40, 79, 79) pieces ['r0c0', 'r0c1', 'r1c0', 'r1c1'] | core part (64, 64, 79, 79)
+     STRADDLE tower    Dorm Range I                   (80, 40, 99, 79) pieces ['r1c0', 'r1c1'] | core part (80, 64, 99, 79)
+     STRADDLE tower    House Tower II                 (40, 304, 79, 343) pieces ['r0c4', 'r0c5', 'r1c4', 'r1c5'] | core part (64, 304, 79, 319)
+     STRADDLE tower    Dorm Range II                  (80, 304, 99, 343) pieces ['r1c4', 'r1c5'] | core part (80, 304, 99, 319)
+     ring     tower    House Tower III                (272, 20, 303, 51) pieces ['r4c0']
+     ring     tower    House Tower IV                 (272, 332, 303, 363) pieces ['r4c5']
+     core     service  Ice House                      (290, 150, 298, 158) pieces ['r4c2']
+     core     passage  Porch Walk                     (96, 186, 109, 197) pieces ['r1c2', 'r1c3']
+     core     passage  Gate Cloister                  (96, 80, 99, 291) pieces ['r1c1', 'r1c2', 'r1c3', 'r1c4']
+     core     passage  Left Cloister (z0 side)        (100, 96, 255, 99) pieces ['r1c1', 'r2c1', 'r3c1']
+     core     passage  Right Cloister (z383 side)     (100, 288, 255, 291) pieces ['r1c4', 'r2c4', 'r3c4']
+     core     passage  Lake Cloister                  (252, 96, 255, 291) pieces ['r3c1', 'r3c2', 'r3c3', 'r3c4']
+     core     passage  passage#37@(150, 126, 219, 127) (150, 126, 219, 127) pieces ['r2c1', 'r3c1']
+     core     passage  passage#38@(150, 154, 219, 155) (150, 154, 219, 155) pieces ['r2c2', 'r3c2']
+     ring     passage  Walk to T3                     (256, 52, 271, 55) pieces ['r4c0']
+     ring     passage  Walk to T4                     (256, 328, 271, 331) pieces ['r4c5']
+     core     passage  Walk to T1                     (80, 80, 95, 83) pieces ['r1c1']
+     core     passage  Walk to T2                     (80, 300, 95, 303) pieces ['r1c4']
+
+problems (24): ['O2 Left Cloister (z0 side) runs through Schools Wing', 'O2 Left Cloister (z0 side) runs through Laboratories', 'C1 unreached Gatehouse', 'C1 unreached Chapel', 'C1 unreached Junior School', 'C1 unreached House Tower II', 'C1 unreached Dorm Range II', 'C1 unreached House Tower III', 'C1 unreached House Tower IV', 'C1 unreached Ice House', 'C1 unreached Walk to T3', 'C1 unreached Walk to T4', 'C1 unreached Walk to T2', 'C2 unreached Chapel', 'C2 unreached Junior School', 'C2 unreached House Tower II', 'C2 unreached Dorm Range II', 'C2 unreached House Tower III', 'C2 unreached House Tower IV', 'C2 unreached Walk to T3', 'C2 unreached Walk to T4', 'C2 unreached Walk to T2', 'C3 pocket bbox x180-219 z228-251 (960 cells)', 'C5 B2 missing CATACOMBS']
+
+RESULT: PASS
