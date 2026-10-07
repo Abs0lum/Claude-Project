@@ -1,0 +1,33 @@
+{
+ "O1_fails": 0,
+ "O1": [],
+ "O1_known_later": 120,
+ "O2_fail": false,
+ "dup_paths": 2423,
+ "dup_keys": 25,
+ "baseline": {
+  "dup_paths": 4805,
+  "dup_keys": 26,
+  "recorded_for": "RP-10 1.3.45",
+  "o1_known_keys": [
+   "mushroom_brown_bottom",
+   "mushroom_brown_east",
+   "mushroom_brown_north",
+   "mushroom_brown_south",
+   "mushroom_brown_top",
+   "mushroom_brown_west",
+   "mushroom_red_bottom",
+   "mushroom_red_east",
+   "mushroom_red_north",
+   "mushroom_red_south",
+   "mushroom_red_top",
+   "mushroom_red_west",
+   "mushroom_stem_bottom",
+   "mushroom_stem_top"
+  ],
+  "o1_known_note": "mushroom block keys in RP-01 -> image in RP-05 with the set in another pack (shadow class); later full ownership pass"
+ },
+ "info": {
+  "vanilla key (override)": 892
+ }
+}

@@ -1,0 +1,7176 @@
+{
+ "player_volume": 0.648,
+ "giant_x": 2.5,
+ "rows": [
+  {
+   "id": "pw:giant_ant_nba",
+   "rule": "G1 giant + G2 small",
+   "base": "sf_nba:ant",
+   "scale": [
+    1.691,
+    0.288
+   ],
+   "eff_h": [
+    0.85,
+    0.14
+   ],
+   "base_eff_h": 0.06,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.004,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_ant_wa",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:ant_wa",
+   "scale": [
+    1.688,
+    0.287
+   ],
+   "eff_h": [
+    1.69,
+    0.29
+   ],
+   "base_eff_h": 0.11,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.024,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_atlas_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_atlas_anf",
+   "scale": [
+    1.059,
+    0.27
+   ],
+   "eff_h": [
+    0.84,
+    0.22
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.006,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_coloradopotato_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_coloradopotato_anf",
+   "scale": [
+    2.084,
+    0.266
+   ],
+   "eff_h": [
+    1.14,
+    0.15
+   ],
+   "base_eff_h": 0.06,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.004,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_desert_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_desert_anf",
+   "scale": [
+    1.27,
+    0.298
+   ],
+   "eff_h": [
+    0.69,
+    0.16
+   ],
+   "base_eff_h": 0.07,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.005,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_elephant_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_elephant_anf",
+   "scale": [
+    1.037,
+    0.284
+   ],
+   "eff_h": [
+    0.83,
+    0.23
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.007,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_hercules_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_hercules_anf",
+   "scale": [
+    1.004,
+    0.292
+   ],
+   "eff_h": [
+    0.8,
+    0.23
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.007,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_mexicanbean_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_mexicanbean_anf",
+   "scale": [
+    2.311,
+    0.26
+   ],
+   "eff_h": [
+    1.26,
+    0.14
+   ],
+   "base_eff_h": 0.06,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.003,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_mountainpine_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_mountainpine_anf",
+   "scale": [
+    2.039,
+    0.207
+   ],
+   "eff_h": [
+    1.12,
+    0.11
+   ],
+   "base_eff_h": 0.05,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.002,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_stag_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:beetle_stag_anf",
+   "scale": [
+    1.07,
+    0.247
+   ],
+   "eff_h": [
+    0.85,
+    0.2
+   ],
+   "base_eff_h": 0.08,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.004,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_cave_snake_nba",
+   "rule": "G1 giant",
+   "base": "sf_nba:cave_snake",
+   "scale": [
+    2.663,
+    1.405
+   ],
+   "eff_h": [
+    1.86,
+    0.98
+   ],
+   "base_eff_h": 0.39,
+   "damage": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_brown_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:centipede_brown_anf",
+   "scale": [
+    1.211,
+    0.139
+   ],
+   "eff_h": [
+    0.48,
+    0.06
+   ],
+   "base_eff_h": null,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.001,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_common_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:centipede_common_anf",
+   "scale": [
+    1.206,
+    0.148
+   ],
+   "eff_h": [
+    0.19,
+    0.02
+   ],
+   "base_eff_h": 0.01,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.0,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_desert_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:centipede_desert_anf",
+   "scale": [
+    1.208,
+    1.25
+   ],
+   "eff_h": [
+    0.19,
+    0.2
+   ],
+   "base_eff_h": 0.08,
+   "damage": [
+    5,
+    5
+   ],
+   "vol": 0.11,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_pacificgiant_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:centipede_pacificgiant_anf",
+   "scale": [
+    1.21,
+    0.278
+   ],
+   "eff_h": [
+    0.19,
+    0.04
+   ],
+   "base_eff_h": 0.02,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.001,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_coral_snake_nba",
+   "rule": "G1 giant + G2 small",
+   "base": "sf_nba:coral_snake",
+   "scale": [
+    2.284,
+    1.205
+   ],
+   "eff_h": [
+    1.6,
+    0.84
+   ],
+   "base_eff_h": 0.34,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.441,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_crab_blue_anf",
+   "rule": "G1 giant",
+   "base": "pw:crab_blue_anf",
+   "scale": [
+    1.659,
+    0.655
+   ],
+   "eff_h": [
+    null,
+    null
+   ],
+   "base_eff_h": null,
+   "damage": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_crab_emerald_anf",
+   "rule": "G1 giant",
+   "base": "pw:crab_emerald_anf",
+   "scale": [
+    1.659,
+    0.454
+   ],
+   "eff_h": [
+    null,
+    null
+   ],
+   "base_eff_h": null,
+   "damage": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_crab_nba",
+   "rule": "G1 giant + G2 small",
+   "base": "sf_nba:crab",
+   "scale": [
+    2.902,
+    1.005
+   ],
+   "eff_h": [
+    1.74,
+    0.6
+   ],
+   "base_eff_h": 0.24,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.152,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_crab_stone_anf",
+   "rule": "G1 giant",
+   "base": "pw:crab_stone_anf",
+   "scale": [
+    1.659,
+    0.655
+   ],
+   "eff_h": [
+    null,
+    null
+   ],
+   "base_eff_h": null,
+   "damage": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_crab_wa",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:crab_wa",
+   "scale": [
+    2.907,
+    0.673
+   ],
+   "eff_h": [
+    2.47,
+    0.57
+   ],
+   "base_eff_h": 0.23,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.187,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_desert_scorpion_nba",
+   "rule": "G1 giant + G2 small",
+   "base": "sf_nba:desert_scorpion",
+   "scale": [
+    2.104,
+    0.518
+   ],
+   "eff_h": [
+    0.63,
+    0.16
+   ],
+   "base_eff_h": 0.06,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.02,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "delayed_attack",
+     1.5,
+     3.0
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_hornet_asian_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:hornet_asian_anf",
+   "scale": [
+    0.972,
+    0.275
+   ],
+   "eff_h": [
+    0.77,
+    0.22
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.006,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_hornet_european_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:hornet_european_anf",
+   "scale": [
+    0.97,
+    0.279
+   ],
+   "eff_h": [
+    0.77,
+    0.22
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.006,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_jungle_scorpion_nba",
+   "rule": "G1 giant + G2 small",
+   "base": "sf_nba:jungle_scorpion",
+   "scale": [
+    1.005,
+    0.278
+   ],
+   "eff_h": [
+    1.01,
+    0.28
+   ],
+   "base_eff_h": 0.11,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.031,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "delayed_attack",
+     1.5,
+     3.0
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_piranha_nba",
+   "rule": "G1 giant + G2 small",
+   "base": "sf_nba:piranha",
+   "scale": [
+    1.638,
+    1.478
+   ],
+   "eff_h": [
+    0.98,
+    0.89
+   ],
+   "base_eff_h": 0.35,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.31,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "delayed_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_rat_black_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:rat_black_anf",
+   "scale": [
+    1.018,
+    0.698
+   ],
+   "eff_h": [
+    0.31,
+    0.22
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.038,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_rat_brown_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:rat_brown_anf",
+   "scale": [
+    1.018,
+    0.751
+   ],
+   "eff_h": [
+    0.31,
+    0.23
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.047,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_rat_fancy_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:rat_fancy_anf",
+   "scale": [
+    1.018,
+    0.751
+   ],
+   "eff_h": [
+    0.31,
+    0.23
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.047,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_rat_marsh_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:rat_marsh_anf",
+   "scale": [
+    1.242,
+    0.617
+   ],
+   "eff_h": [
+    0.32,
+    0.16
+   ],
+   "base_eff_h": 0.06,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.022,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_rat_pack_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:rat_pack_anf",
+   "scale": [
+    1.244,
+    0.808
+   ],
+   "eff_h": [
+    0.33,
+    0.21
+   ],
+   "base_eff_h": 0.08,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.05,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_rat_wa",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:rat_wa",
+   "scale": [
+    0.923,
+    0.475
+   ],
+   "eff_h": [
+    0.32,
+    0.17
+   ],
+   "base_eff_h": 0.07,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.009,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_rattlesnake_nba",
+   "rule": "G1 giant",
+   "base": "sf_nba:rattlesnake",
+   "scale": [
+    2.284,
+    2.26
+   ],
+   "eff_h": [
+    1.6,
+    1.58
+   ],
+   "base_eff_h": 0.63,
+   "damage": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_rattlesnake_ws",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:rattlesnake_ws",
+   "scale": [
+    1.859,
+    0.736
+   ],
+   "eff_h": [
+    1.12,
+    0.44
+   ],
+   "base_eff_h": 0.18,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.193,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_deathstalker_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:scorpion_deathstalker_anf",
+   "scale": [
+    2.183,
+    0.426
+   ],
+   "eff_h": [
+    1.02,
+    0.2
+   ],
+   "base_eff_h": 0.08,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.013,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_giantdesert_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:scorpion_giantdesert_anf",
+   "scale": [
+    1.51,
+    0.361
+   ],
+   "eff_h": [
+    0.99,
+    0.24
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.011,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_giantforest_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:scorpion_giantforest_anf",
+   "scale": [
+    1.507,
+    0.395
+   ],
+   "eff_h": [
+    0.99,
+    0.26
+   ],
+   "base_eff_h": 0.1,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.015,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_indianred_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:scorpion_indianred_anf",
+   "scale": [
+    2.183,
+    0.426
+   ],
+   "eff_h": [
+    1.02,
+    0.2
+   ],
+   "base_eff_h": 0.08,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.013,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_boa_kenyansand_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_boa_kenyansand_anf",
+   "scale": [
+    0.621,
+    0.245
+   ],
+   "eff_h": [
+    0.17,
+    0.07
+   ],
+   "base_eff_h": 0.03,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.008,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_cobra_indian_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_cobra_indian_anf",
+   "scale": [
+    1.105,
+    1.02
+   ],
+   "eff_h": [
+    0.24,
+    0.22
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.455,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_coral_wa",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_coral_wa",
+   "scale": [
+    1.331,
+    0.658
+   ],
+   "eff_h": [
+    0.4,
+    0.2
+   ],
+   "base_eff_h": 0.08,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.192,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_corn_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_corn_anf",
+   "scale": [
+    1.435,
+    1.134
+   ],
+   "eff_h": [
+    0.17,
+    0.13
+   ],
+   "base_eff_h": 0.05,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.34,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_garter_butler_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_garter_butler_anf",
+   "scale": [
+    1.433,
+    0.426
+   ],
+   "eff_h": [
+    0.17,
+    0.05
+   ],
+   "base_eff_h": 0.02,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.018,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_garter_california_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_garter_california_anf",
+   "scale": [
+    1.435,
+    0.662
+   ],
+   "eff_h": [
+    0.17,
+    0.08
+   ],
+   "base_eff_h": 0.03,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.067,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_milk_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_milk_anf",
+   "scale": [
+    1.434,
+    0.851
+   ],
+   "eff_h": [
+    0.17,
+    0.1
+   ],
+   "base_eff_h": 0.04,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.143,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_nba",
+   "rule": "G1 giant",
+   "base": "sf_nba:snake",
+   "scale": [
+    2.665,
+    2.51
+   ],
+   "eff_h": [
+    1.87,
+    1.76
+   ],
+   "base_eff_h": 0.7,
+   "damage": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_snake_python_pastel_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_python_pastel_anf",
+   "scale": [
+    0.539,
+    0.427
+   ],
+   "eff_h": [
+    0.11,
+    0.09
+   ],
+   "base_eff_h": 0.04,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.031,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_python_royal_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_python_royal_anf",
+   "scale": [
+    0.539,
+    0.427
+   ],
+   "eff_h": [
+    0.11,
+    0.09
+   ],
+   "base_eff_h": 0.04,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.031,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_rattle_diamondback_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_rattle_diamondback_anf",
+   "scale": [
+    1.046,
+    1.035
+   ],
+   "eff_h": [
+    0.23,
+    0.23
+   ],
+   "base_eff_h": 0.09,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.545,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_rattle_timber_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_rattle_timber_anf",
+   "scale": [
+    1.046,
+    0.758
+   ],
+   "eff_h": [
+    0.23,
+    0.17
+   ],
+   "base_eff_h": 0.07,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.187,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_viper_blue_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_viper_blue_anf",
+   "scale": [
+    1.097,
+    0.506
+   ],
+   "eff_h": [
+    0.24,
+    0.11
+   ],
+   "base_eff_h": 0.04,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.055,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_viper_horned_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_viper_horned_anf",
+   "scale": [
+    1.097,
+    0.361
+   ],
+   "eff_h": [
+    0.24,
+    0.08
+   ],
+   "base_eff_h": 0.03,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.02,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_wa",
+   "rule": "G1 giant",
+   "base": "pw:snake_wa",
+   "scale": [
+    2.664,
+    1.757
+   ],
+   "eff_h": [
+    0.8,
+    0.53
+   ],
+   "base_eff_h": 0.21,
+   "damage": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_snake_water_brown_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_water_brown_anf",
+   "scale": [
+    1.434,
+    0.945
+   ],
+   "eff_h": [
+    0.17,
+    0.11
+   ],
+   "base_eff_h": 0.04,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.197,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_snake_water_plainbellied_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:snake_water_plainbellied_anf",
+   "scale": [
+    1.434,
+    0.851
+   ],
+   "eff_h": [
+    0.17,
+    0.1
+   ],
+   "base_eff_h": 0.04,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.143,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_termite_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:termite_anf",
+   "scale": [
+    1.095,
+    0.214
+   ],
+   "eff_h": [
+    0.27,
+    0.05
+   ],
+   "base_eff_h": 0.02,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.001,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_viper_ysav",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:viper_ysav",
+   "scale": [
+    3.792,
+    0.559
+   ],
+   "eff_h": [
+    3.79,
+    0.56
+   ],
+   "base_eff_h": 0.22,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.044,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_wasp_paper_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:wasp_paper_anf",
+   "scale": [
+    1.21,
+    0.323
+   ],
+   "eff_h": [
+    0.45,
+    0.12
+   ],
+   "base_eff_h": 0.05,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.005,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "pw:giant_wasp_yellowjacket_anf",
+   "rule": "G1 giant + G2 small",
+   "base": "pw:wasp_yellowjacket_anf",
+   "scale": [
+    1.265,
+    0.324
+   ],
+   "eff_h": [
+    0.47,
+    0.12
+   ],
+   "base_eff_h": 0.05,
+   "damage": [
+    5,
+    3
+   ],
+   "vol": 0.005,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "minecraft:endermite",
+   "rule": "G2 small hostile",
+   "vol": 0.02,
+   "damage2": [
+    2,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_box_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "id": "minecraft:goat",
+   "rule": "G2 small hostile",
+   "vol": 0.355,
+   "damage2": [
+    2,
+    2
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.9,
+    0.9
+   ]
+  },
+  {
+   "id": "pw:crane_common_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.243,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.2,
+    1.2
+   ]
+  },
+  {
+   "id": "pw:crane_hooden_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.303,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.3,
+    1.3
+   ]
+  },
+  {
+   "id": "pw:crane_siberian_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.438,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.47,
+    1.47
+   ]
+  },
+  {
+   "id": "pw:crane_whopping_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.579,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.61,
+    1.61
+   ]
+  },
+  {
+   "id": "pw:crow_carrion_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.035,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.38,
+    0.38
+   ]
+  },
+  {
+   "id": "pw:crow_collared_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.05,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.43,
+    0.43
+   ]
+  },
+  {
+   "id": "pw:crow_hooded_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.035,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.38,
+    0.38
+   ]
+  },
+  {
+   "id": "pw:crow_piping_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.014,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.28,
+    0.28
+   ]
+  },
+  {
+   "id": "pw:duck_bali_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.371,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.74,
+    0.74
+   ]
+  },
+  {
+   "id": "pw:duck_goldencascade_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.072,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.56,
+    0.56
+   ]
+  },
+  {
+   "id": "pw:duck_indianrunner_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.074,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.43,
+    0.43
+   ]
+  },
+  {
+   "id": "pw:duck_kingeider_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.072,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.51,
+    0.51
+   ]
+  },
+  {
+   "id": "pw:duck_madagascar_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.092,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.55,
+    0.55
+   ]
+  },
+  {
+   "id": "pw:duck_mallard_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.104,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.57,
+    0.57
+   ]
+  },
+  {
+   "id": "pw:duck_mandarin_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.043,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.43,
+    0.43
+   ]
+  },
+  {
+   "id": "pw:duck_pekin_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.115,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.65,
+    0.65
+   ]
+  },
+  {
+   "id": "pw:eagle_bald_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.136,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.11,
+    1.11
+   ]
+  },
+  {
+   "id": "pw:eagle_blackhawk_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.037,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.72,
+    0.72
+   ]
+  },
+  {
+   "id": "pw:eagle_crowned_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.072,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.9,
+    0.9
+   ]
+  },
+  {
+   "id": "pw:eagle_golden_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.116,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.05,
+    1.05
+   ]
+  },
+  {
+   "id": "pw:eagle_sea_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.144,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.13,
+    1.13
+   ]
+  },
+  {
+   "id": "pw:eagle_whitetailed_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.144,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.13,
+    1.13
+   ]
+  },
+  {
+   "id": "pw:egret_great_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.608,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.23,
+    1.23
+   ]
+  },
+  {
+   "id": "pw:egret_little_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.144,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.76,
+    0.76
+   ]
+  },
+  {
+   "id": "pw:egret_reddish_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.281,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.95,
+    0.95
+   ]
+  },
+  {
+   "id": "pw:flamingo_american_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.551,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.53,
+    1.53
+   ]
+  },
+  {
+   "id": "pw:flamingo_andean_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.213,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.11,
+    1.11
+   ]
+  },
+  {
+   "id": "pw:flamingo_greater_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.404,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.38,
+    1.38
+   ]
+  },
+  {
+   "id": "pw:flamingo_james_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.134,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.96,
+    0.96
+   ]
+  },
+  {
+   "id": "pw:goose_barnacle_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.076,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.66,
+    0.66
+   ]
+  },
+  {
+   "id": "pw:goose_canada_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.262,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.99,
+    0.99
+   ]
+  },
+  {
+   "id": "pw:goose_egyptian_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.096,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.71,
+    0.71
+   ]
+  },
+  {
+   "id": "pw:goose_magellan_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.084,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.68,
+    0.68
+   ]
+  },
+  {
+   "id": "pw:goose_roman_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.156,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.83,
+    0.83
+   ]
+  },
+  {
+   "id": "pw:gull_blackheaded_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.23,
+    0.23
+   ]
+  },
+  {
+   "id": "pw:gull_bonaparte_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.006,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.19,
+    0.19
+   ]
+  },
+  {
+   "id": "pw:gull_common_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.018,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "id": "pw:gull_greatblackbacked_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.048,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.37,
+    0.37
+   ]
+  },
+  {
+   "id": "pw:gull_herring_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.032,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.32,
+    0.32
+   ]
+  },
+  {
+   "id": "pw:gull_kittiwake_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.011,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "id": "pw:gull_lesserblackbacked_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.026,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.3,
+    0.3
+   ]
+  },
+  {
+   "id": "pw:hawk_grey_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.3,
+    0.3
+   ]
+  },
+  {
+   "id": "pw:hawk_harrier_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.066,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.53,
+    0.53
+   ]
+  },
+  {
+   "id": "pw:hawk_harris_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.024,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.38,
+    0.38
+   ]
+  },
+  {
+   "id": "pw:hawk_sparrow_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.006,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.23,
+    0.23
+   ]
+  },
+  {
+   "id": "pw:heron_agami_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.229,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.89,
+    0.89
+   ]
+  },
+  {
+   "id": "pw:heron_black_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.083,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.63,
+    0.63
+   ]
+  },
+  {
+   "id": "pw:heron_blackcrowned_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.159,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.78,
+    0.78
+   ]
+  },
+  {
+   "id": "pw:heron_greatblue_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.48,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.13,
+    1.13
+   ]
+  },
+  {
+   "id": "pw:heron_green_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.057,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.56,
+    0.56
+   ]
+  },
+  {
+   "id": "pw:heron_grey_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.309,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.98,
+    0.98
+   ]
+  },
+  {
+   "id": "pw:jay_brown_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.016,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.29,
+    0.29
+   ]
+  },
+  {
+   "id": "pw:magpie_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.023,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.33,
+    0.33
+   ]
+  },
+  {
+   "id": "pw:owl_barn_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.044,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.46,
+    0.46
+   ]
+  },
+  {
+   "id": "pw:owl_snowy_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.226,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.8,
+    0.8
+   ]
+  },
+  {
+   "id": "pw:owl_tawny_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.067,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.53,
+    0.53
+   ]
+  },
+  {
+   "id": "pw:pelican_americanwhite_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.224,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.24,
+    1.24
+   ]
+  },
+  {
+   "id": "pw:pelican_australian_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.268,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.32,
+    1.32
+   ]
+  },
+  {
+   "id": "pw:pelican_brown_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.094,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.93,
+    0.93
+   ]
+  },
+  {
+   "id": "pw:pelican_greatwhite_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.224,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.24,
+    1.24
+   ]
+  },
+  {
+   "id": "pw:pigeon_africanolive_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.021,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.31,
+    0.31
+   ]
+  },
+  {
+   "id": "pw:pigeon_passenger_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.024,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.33,
+    0.33
+   ]
+  },
+  {
+   "id": "pw:pigeon_rock_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "id": "pw:pigeon_wood_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.026,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.33,
+    0.33
+   ]
+  },
+  {
+   "id": "pw:puffin_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.047,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.28,
+    0.28
+   ]
+  },
+  {
+   "id": "pw:raven_common_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.091,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.55,
+    0.55
+   ]
+  },
+  {
+   "id": "pw:raven_whitenecked_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.025,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.36,
+    0.36
+   ]
+  },
+  {
+   "id": "pw:robin_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.008,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.2,
+    0.2
+   ]
+  },
+  {
+   "id": "pw:stork_adjutant_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.265,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.48,
+    1.48
+   ]
+  },
+  {
+   "id": "pw:stork_black_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.272,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.37,
+    1.37
+   ]
+  },
+  {
+   "id": "pw:stork_blacknecked_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.207,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.36,
+    1.36
+   ]
+  },
+  {
+   "id": "pw:stork_oriental_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.167,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.16,
+    1.16
+   ]
+  },
+  {
+   "id": "pw:stork_painted_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.248,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.33,
+    1.33
+   ]
+  },
+  {
+   "id": "pw:stork_saddlebilled_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.284,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.51,
+    1.51
+   ]
+  },
+  {
+   "id": "pw:stork_white_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.146,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.11,
+    1.11
+   ]
+  },
+  {
+   "id": "pw:stork_wood_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.272,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.37,
+    1.37
+   ]
+  },
+  {
+   "id": "pw:swan_black_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.2,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.05,
+    1.05
+   ]
+  },
+  {
+   "id": "pw:swan_white_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.517,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.44,
+    1.44
+   ]
+  },
+  {
+   "id": "pw:tern_black_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.007,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.19,
+    0.19
+   ]
+  },
+  {
+   "id": "pw:tern_caspian_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.079,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.42,
+    0.42
+   ]
+  },
+  {
+   "id": "pw:tern_common_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.016,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.25,
+    0.25
+   ]
+  },
+  {
+   "id": "pw:tern_crested_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.037,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.33,
+    0.33
+   ]
+  },
+  {
+   "id": "pw:tern_fairy_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.004,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "id": "pw:tern_largebilled_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.027,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.29,
+    0.29
+   ]
+  },
+  {
+   "id": "pw:tern_sooty_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.023,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.28,
+    0.28
+   ]
+  },
+  {
+   "id": "pw:tit_bearded_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "pw:tit_blue_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "pw:tit_coal_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.12,
+    0.12
+   ]
+  },
+  {
+   "id": "pw:tit_crested_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "pw:tit_great_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.004,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "id": "pw:tit_longtailed_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.1,
+    0.1
+   ]
+  },
+  {
+   "id": "pw:tit_marsh_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "pw:tit_willow_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "pw:toucan_aracari_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.008,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.24,
+    0.24
+   ]
+  },
+  {
+   "id": "pw:toucan_channelbilled_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.28,
+    0.28
+   ]
+  },
+  {
+   "id": "pw:toucan_toco_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.035,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.4,
+    0.4
+   ]
+  },
+  {
+   "id": "pw:vulture_king_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.052,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.62,
+    0.62
+   ]
+  },
+  {
+   "id": "pw:vulture_redheaded_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.083,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.72,
+    0.72
+   ]
+  },
+  {
+   "id": "pw:beetle_atlas_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:beetle_coloradopotato_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.06,
+    0.06
+   ]
+  },
+  {
+   "id": "pw:beetle_desert_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.07,
+    0.07
+   ]
+  },
+  {
+   "id": "pw:beetle_elephant_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:beetle_hercules_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:beetle_mexicanbean_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.06,
+    0.06
+   ]
+  },
+  {
+   "id": "pw:beetle_mountainpine_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:beetle_stag_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:butterfly_adonisblue_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.13,
+    0.13
+   ]
+  },
+  {
+   "id": "pw:butterfly_bluemorpho_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.005,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "pw:butterfly_crimsonrose_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.004,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.13,
+    0.13
+   ]
+  },
+  {
+   "id": "pw:butterfly_emeraldswallowtail_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.11,
+    0.11
+   ]
+  },
+  {
+   "id": "pw:butterfly_giantafrican_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.006,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.16,
+    0.16
+   ]
+  },
+  {
+   "id": "pw:butterfly_goliathbirdwing_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.07,
+    0.07
+   ]
+  },
+  {
+   "id": "pw:butterfly_monarch_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.009,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.18,
+    0.18
+   ]
+  },
+  {
+   "id": "pw:butterfly_queenalexandra_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:centipede_common_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.01,
+    0.01
+   ]
+  },
+  {
+   "id": "pw:centipede_desert_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.007,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:centipede_pacificgiant_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.02,
+    0.02
+   ]
+  },
+  {
+   "id": "pw:cricket_cave_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:cricket_greenbush_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:cricket_house_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:cricket_tobacco_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:grasshopper_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.07,
+    0.07
+   ]
+  },
+  {
+   "id": "pw:hornet_asian_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:hornet_european_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:ladybug_15spotted_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.03,
+    0.03
+   ]
+  },
+  {
+   "id": "pw:ladybug_22spotted_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.02,
+    0.02
+   ]
+  },
+  {
+   "id": "pw:ladybug_7spotted_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.03,
+    0.03
+   ]
+  },
+  {
+   "id": "pw:ladybug_9spotted_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.03,
+    0.03
+   ]
+  },
+  {
+   "id": "pw:ladybug_harlequin_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.03,
+    0.03
+   ]
+  },
+  {
+   "id": "pw:moth_atlas_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:moth_comet_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:moth_emperor_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.13,
+    0.13
+   ]
+  },
+  {
+   "id": "pw:moth_gardentiger_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.13,
+    0.13
+   ]
+  },
+  {
+   "id": "pw:moth_giantleopard_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.1,
+    0.1
+   ]
+  },
+  {
+   "id": "pw:moth_gypsy_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.023,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.25,
+    0.25
+   ]
+  },
+  {
+   "id": "pw:moth_luna_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:moth_rosymaple_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.11,
+    0.11
+   ]
+  },
+  {
+   "id": "pw:scorpion_deathstalker_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:scorpion_giantdesert_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:scorpion_giantforest_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.1,
+    0.1
+   ]
+  },
+  {
+   "id": "pw:scorpion_indianred_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:snail_candycane_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:snail_desert_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.07,
+    0.07
+   ]
+  },
+  {
+   "id": "pw:snail_garden_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:snail_giantafrican_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:snail_milk_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:stickinsect_goliath_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:wasp_paper_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:wasp_yellowjacket_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.0,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:bear_black_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.259,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.09,
+    1.09
+   ]
+  },
+  {
+   "id": "pw:beaver_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.052,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.33,
+    0.33
+   ]
+  },
+  {
+   "id": "pw:deer_roe_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.347,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.5,
+    1.5
+   ]
+  },
+  {
+   "id": "pw:dog_alsatian_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.506,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.41,
+    1.41
+   ]
+  },
+  {
+   "id": "pw:dog_lab_black_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.233,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.09,
+    1.09
+   ]
+  },
+  {
+   "id": "pw:dog_lab_chocolate_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.233,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.09,
+    1.09
+   ]
+  },
+  {
+   "id": "pw:dog_lab_golden_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.233,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.09,
+    1.09
+   ]
+  },
+  {
+   "id": "pw:dog_retriever_golden_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.259,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.13,
+    1.13
+   ]
+  },
+  {
+   "id": "pw:dog_retriever_white_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.259,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.13,
+    1.13
+   ]
+  },
+  {
+   "id": "pw:hare_arctic_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.072,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "id": "pw:hare_blacktailed_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.05,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.47,
+    0.47
+   ]
+  },
+  {
+   "id": "pw:hare_european_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.083,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.56,
+    0.56
+   ]
+  },
+  {
+   "id": "pw:hare_mountain_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.05,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.48,
+    0.48
+   ]
+  },
+  {
+   "id": "pw:hyena_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.349,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.97,
+    0.97
+   ]
+  },
+  {
+   "id": "pw:lemur_goldenbamboo_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.029,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.32,
+    0.32
+   ]
+  },
+  {
+   "id": "pw:lemur_redruffed_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.225,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.62,
+    0.62
+   ]
+  },
+  {
+   "id": "pw:lemur_ringtailed_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.225,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.62,
+    0.62
+   ]
+  },
+  {
+   "id": "pw:leopard_clouded_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.134,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.75,
+    0.75
+   ]
+  },
+  {
+   "id": "pw:leopard_jungle_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.281,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.92,
+    0.92
+   ]
+  },
+  {
+   "id": "pw:leopard_panther_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.281,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.92,
+    0.92
+   ]
+  },
+  {
+   "id": "pw:leopard_snow_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.234,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.87,
+    0.87
+   ]
+  },
+  {
+   "id": "pw:lioness_african_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.444,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.23,
+    1.23
+   ]
+  },
+  {
+   "id": "pw:lioness_asiatic_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.489,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.36,
+    1.36
+   ]
+  },
+  {
+   "id": "pw:mandrill_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.193,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.67,
+    0.67
+   ]
+  },
+  {
+   "id": "pw:meerkat_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.021,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.25,
+    0.25
+   ]
+  },
+  {
+   "id": "pw:moose_alaskan_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.602,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    2.24,
+    2.24
+   ]
+  },
+  {
+   "id": "pw:raccoon_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.035,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.37,
+    0.37
+   ]
+  },
+  {
+   "id": "pw:rhino_sumatran_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.538,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    2.01,
+    2.01
+   ]
+  },
+  {
+   "id": "pw:skunk_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.037,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.39,
+    0.39
+   ]
+  },
+  {
+   "id": "pw:tiger_southchina_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.346,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.27,
+    1.27
+   ]
+  },
+  {
+   "id": "pw:zebra_plains_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.636,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.77,
+    1.77
+   ]
+  },
+  {
+   "id": "pw:snake_anaconda_green_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.22,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.21,
+    0.21
+   ]
+  },
+  {
+   "id": "pw:snake_anaconda_yellow_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.065,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "pw:snake_boa_kenyansand_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.03,
+    0.03
+   ]
+  },
+  {
+   "id": "pw:snake_cobra_indian_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.029,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:snake_cobra_king_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.571,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.24,
+    0.24
+   ]
+  },
+  {
+   "id": "pw:snake_corn_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.022,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:snake_garter_butler_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.02,
+    0.02
+   ]
+  },
+  {
+   "id": "pw:snake_garter_california_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.004,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.03,
+    0.03
+   ]
+  },
+  {
+   "id": "pw:snake_mamba_black_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.052,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.1,
+    0.1
+   ]
+  },
+  {
+   "id": "pw:snake_mamba_easterngreen_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.019,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.07,
+    0.07
+   ]
+  },
+  {
+   "id": "pw:snake_milk_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.009,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:snake_python_greentree_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.004,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:snake_python_pastel_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:snake_python_royal_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:snake_rattle_diamondback_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.035,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:snake_rattle_timber_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.07,
+    0.07
+   ]
+  },
+  {
+   "id": "pw:snake_viper_blue_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.004,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:snake_viper_horned_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.03,
+    0.03
+   ]
+  },
+  {
+   "id": "pw:snake_water_brown_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.013,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:snake_water_plainbellied_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.009,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.04,
+    0.04
+   ]
+  },
+  {
+   "id": "pw:shark_lemon_anf",
+   "rule": "G2 small hostile",
+   "vol": 0.396,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.96,
+    0.96
+   ]
+  },
+  {
+   "id": "pw:ant_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.11,
+    0.11
+   ]
+  },
+  {
+   "id": "pw:capuchin_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.121,
+   "damage2": [
+    7,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.6,
+    0.6
+   ]
+  },
+  {
+   "id": "pw:caracal_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.1,
+   "damage2": [
+    9,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.56,
+    0.56
+   ]
+  },
+  {
+   "id": "pw:chimpanzee_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.207,
+   "damage2": [
+    9,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.72,
+    0.72
+   ]
+  },
+  {
+   "id": "pw:cougar_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.088,
+   "damage2": [
+    12,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "id": "pw:crab_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.23,
+    0.23
+   ]
+  },
+  {
+   "id": "pw:crocodile_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.169,
+   "damage2": [
+    14,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.3,
+    1.3
+   ]
+  },
+  {
+   "id": "pw:hedgehog_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.09,
+    0.09
+   ]
+  },
+  {
+   "id": "pw:gorilla_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.036,
+   "damage2": [
+    7,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.4,
+    0.4
+   ]
+  },
+  {
+   "id": "pw:komodo_dragon_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.219,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.73,
+    0.73
+   ]
+  },
+  {
+   "id": "pw:lantern_fish_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.13,
+    0.13
+   ]
+  },
+  {
+   "id": "pw:lion_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.383,
+   "damage2": [
+    12,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.88,
+    0.88
+   ]
+  },
+  {
+   "id": "pw:rat_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.07,
+    0.07
+   ]
+  },
+  {
+   "id": "pw:red_panda_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.087,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "id": "pw:snake_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.234,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.21,
+    0.21
+   ]
+  },
+  {
+   "id": "pw:snake_coral_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "id": "pw:snake_scarlet_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.05,
+    0.05
+   ]
+  },
+  {
+   "id": "pw:snow_leopard_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.076,
+   "damage2": [
+    12,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.51,
+    0.51
+   ]
+  },
+  {
+   "id": "pw:stingray_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.42,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.75,
+    0.75
+   ]
+  },
+  {
+   "id": "pw:swordfish_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.192,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.58,
+    0.58
+   ]
+  },
+  {
+   "id": "pw:tiger_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.416,
+   "damage2": [
+    12,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.9,
+    0.9
+   ]
+  },
+  {
+   "id": "pw:white_tiger_wa",
+   "rule": "G2 small hostile",
+   "vol": 0.454,
+   "damage2": [
+    12,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.93,
+    0.93
+   ]
+  },
+  {
+   "id": "pw:anaconda_ws",
+   "rule": "G2 small hostile",
+   "vol": 0.038,
+   "damage2": [
+    10,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.25,
+    0.25
+   ]
+  },
+  {
+   "id": "pw:gila_monster_ws",
+   "rule": "G2 small hostile",
+   "vol": 0.018,
+   "damage2": [
+    7,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_box_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.33,
+    0.33
+   ]
+  },
+  {
+   "id": "pw:rattlesnake_ws",
+   "rule": "G2 small hostile",
+   "vol": 0.012,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.18,
+    0.18
+   ]
+  },
+  {
+   "id": "pw:roadrunner_wwa",
+   "rule": "G2 small hostile",
+   "vol": 0.005,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.21,
+    0.21
+   ]
+  },
+  {
+   "id": "pw:shoebill_wwa",
+   "rule": "G2 small hostile",
+   "vol": 0.223,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.92,
+    0.92
+   ]
+  },
+  {
+   "id": "pw:swan_wwa",
+   "rule": "G2 small hostile",
+   "vol": 0.439,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.92,
+    0.92
+   ]
+  },
+  {
+   "id": "pw:aardvark_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.238,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.17,
+    1.17
+   ]
+  },
+  {
+   "id": "pw:african_black_eagle_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.193,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.69,
+    0.69
+   ]
+  },
+  {
+   "id": "pw:fisher_eagle_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.167,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    0.66,
+    0.66
+   ]
+  },
+  {
+   "id": "pw:baboon_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.212,
+   "damage2": [
+    6,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.77,
+    0.77
+   ]
+  },
+  {
+   "id": "pw:baby_lion_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.133,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.62,
+    0.62
+   ]
+  },
+  {
+   "id": "pw:cheetah_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.414,
+   "damage2": [
+    8,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.84,
+    0.84
+   ]
+  },
+  {
+   "id": "pw:boar_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.301,
+   "damage2": [
+    8,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.88,
+    0.88
+   ]
+  },
+  {
+   "id": "pw:leopard_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.582,
+   "damage2": [
+    12,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.96,
+    0.96
+   ]
+  },
+  {
+   "id": "pw:african_wild_dog_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.036,
+   "damage2": [
+    10,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.53,
+    0.53
+   ]
+  },
+  {
+   "id": "pw:monitor_lizard_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.037,
+   "damage2": [
+    6,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.39,
+    0.39
+   ]
+  },
+  {
+   "id": "pw:cobra_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.035,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.52,
+    0.52
+   ]
+  },
+  {
+   "id": "pw:pangolin_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.029,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.58,
+    0.58
+   ]
+  },
+  {
+   "id": "pw:honey_badger_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.101,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "id": "pw:serval_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.256,
+   "damage2": [
+    5,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.89,
+    0.89
+   ]
+  },
+  {
+   "id": "pw:viper_ysav",
+   "rule": "G2 small hostile",
+   "vol": 0.003,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "id": "pw:cassowary_ytri",
+   "rule": "G2 small hostile",
+   "vol": 0.123,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.65,
+    0.65
+   ]
+  },
+  {
+   "id": "pw:coyote_ytri",
+   "rule": "G2 small hostile",
+   "vol": 0.041,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.4,
+    0.4
+   ]
+  },
+  {
+   "id": "pw:alligator_ytri",
+   "rule": "G2 small hostile",
+   "vol": 0.347,
+   "damage2": [
+    14,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.7,
+    0.7
+   ]
+  },
+  {
+   "id": "pw:komodo_dragon_ytri",
+   "rule": "G2 small hostile",
+   "vol": 0.1,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.54,
+    0.54
+   ]
+  },
+  {
+   "id": "sf_nba:anglerfish",
+   "rule": "G2 small hostile",
+   "vol": 0.014,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.22,
+    0.22
+   ]
+  },
+  {
+   "id": "sf_nba:anteater",
+   "rule": "G2 small hostile",
+   "vol": 0.222,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     8,
+     16
+    ]
+   ],
+   "eff_h": [
+    0.68,
+    0.68
+   ]
+  },
+  {
+   "id": "sf_nba:badger",
+   "rule": "G2 small hostile",
+   "vol": 0.142,
+   "damage2": [
+    6,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.44,
+    0.44
+   ]
+  },
+  {
+   "id": "sf_nba:blobfish",
+   "rule": "G2 small hostile",
+   "vol": 0.256,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     0.5,
+     1.0
+    ]
+   ],
+   "eff_h": [
+    0.4,
+    0.4
+   ]
+  },
+  {
+   "id": "sf_nba:cave_snake",
+   "rule": "G2 small hostile",
+   "vol": 0.045,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.39,
+    0.39
+   ]
+  },
+  {
+   "id": "sf_nba:coral_snake",
+   "rule": "G2 small hostile",
+   "vol": 0.028,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.34,
+    0.34
+   ]
+  },
+  {
+   "id": "sf_nba:desert_scorpion",
+   "rule": "G2 small hostile",
+   "vol": 0.001,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1.5,
+     3.0
+    ]
+   ],
+   "eff_h": [
+    0.06,
+    0.06
+   ]
+  },
+  {
+   "id": "sf_nba:electric_eel",
+   "rule": "G2 small hostile",
+   "vol": 0.104,
+   "damage2": [
+    2,
+    2
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     2,
+     4
+    ]
+   ],
+   "eff_h": [
+    0.47,
+    0.47
+   ]
+  },
+  {
+   "id": "sf_nba:emperor_penguin",
+   "rule": "G2 small hostile",
+   "vol": 0.204,
+   "damage2": [
+    0,
+    0
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    1.04,
+    1.04
+   ]
+  },
+  {
+   "id": "sf_nba:goose",
+   "rule": "G2 small hostile",
+   "vol": 0.099,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.69,
+    0.69
+   ]
+  },
+  {
+   "id": "sf_nba:gorilla",
+   "rule": "G2 small hostile",
+   "vol": 0.343,
+   "damage2": [
+    6,
+    2
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.7,
+    0.7
+   ]
+  },
+  {
+   "id": "sf_nba:great_white_shark",
+   "rule": "G2 small hostile",
+   "vol": 0.392,
+   "damage2": [
+    14,
+    2
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.8,
+    0.8
+   ]
+  },
+  {
+   "id": "sf_nba:hammer_head_shark",
+   "rule": "G2 small hostile",
+   "vol": 0.392,
+   "damage2": [
+    14,
+    2
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.8,
+    0.8
+   ]
+  },
+  {
+   "id": "sf_nba:hyena",
+   "rule": "G2 small hostile",
+   "vol": 0.111,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ],
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.55,
+    0.55
+   ]
+  },
+  {
+   "id": "sf_nba:jungle_scorpion",
+   "rule": "G2 small hostile",
+   "vol": 0.002,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1.5,
+     3.0
+    ]
+   ],
+   "eff_h": [
+    0.11,
+    0.11
+   ]
+  },
+  {
+   "id": "sf_nba:moray",
+   "rule": "G2 small hostile",
+   "vol": 0.044,
+   "damage2": [
+    4,
+    2
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.35,
+    0.35
+   ]
+  },
+  {
+   "id": "sf_nba:otter",
+   "rule": "G2 small hostile",
+   "vol": 0.16,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.43,
+    0.43
+   ]
+  },
+  {
+   "id": "sf_nba:rattlesnake",
+   "rule": "G2 small hostile",
+   "vol": 0.186,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.63,
+    0.63
+   ]
+  },
+  {
+   "id": "sf_nba:ray",
+   "rule": "G2 small hostile",
+   "vol": 0.082,
+   "damage2": [
+    3,
+    2
+   ],
+   "cooldowns": [
+    [
+     "melee_box_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.2,
+    0.2
+   ]
+  },
+  {
+   "id": "sf_nba:secretary_bird",
+   "rule": "G2 small hostile",
+   "vol": 0.268,
+   "damage2": [
+    6,
+    2
+   ],
+   "cooldowns": [],
+   "eff_h": [
+    1.08,
+    1.08
+   ]
+  },
+  {
+   "id": "sf_nba:snake",
+   "rule": "G2 small hostile",
+   "vol": 0.255,
+   "damage2": [
+    1,
+    1
+   ],
+   "cooldowns": [
+    [
+     "melee_attack",
+     1,
+     2
+    ]
+   ],
+   "eff_h": [
+    0.7,
+    0.7
+   ]
+  },
+  {
+   "id": "sf_nba:spotted_moray",
+   "rule": "G2 small hostile",
+   "vol": 0.013,
+   "damage2": [
+    8,
+    2
+   ],
+   "cooldowns": [
+    [
+     "delayed_attack",
+     1.2,
+     2.4
+    ]
+   ],
+   "eff_h": [
+    0.23,
+    0.23
+   ]
+  }
+ ],
+ "unmapped_giants": [
+  "pw:giant_squid_wwa"
+ ],
+ "counts": {
+  "giants": 59,
+  "small": 324,
+  "unmapped": 1
+ }
+}

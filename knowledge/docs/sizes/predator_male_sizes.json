@@ -1,0 +1,332 @@
+[
+  {
+    "key": "polar_bear",
+    "basis": "hb",
+    "male_m": 2.25,
+    "male_range": "2.0-2.5 m (males); females 1.8-2.0 m",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Polar_bear",
+    "quote": "Males are generally 200–250 cm long with a weight of 300–800 kg. Females are smaller at 180–200 cm",
+    "note": "Wikipedia citing DeMaster & Stirling 1981, Mammalian Species 145. Current 2.1 is slightly low for males."
+  },
+  {
+    "key": "grizzly_bear",
+    "basis": "total",
+    "male_m": 2.0,
+    "male_range": "single adult-male reference 2.0 m total; subspecies average total length 1.98-2.40 m (sexes pooled)",
+    "female_larger": false,
+    "source_url": "https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Extinct_Carnivora/Ursus_arctos.php",
+    "quote": "External measurements of an adult male: total length, 2.0 m; length of tail, 76 mm; hind foot, 280 mm; height at shoulder, 1.0 m. Females smaller.",
+    "note": "Mammals of Texas (Schmidly & Bradley). Wikipedia Grizzly_bear gives 'Average total length in this subspecies is between 198 cm and 240 cm' (not sex-specific); Montana Field Guide: adults ~185 cm (Foresman 2012). Male range midpoint not published; 2.0 is a typical adult-male figure."
+  },
+  {
+    "key": "black_bear",
+    "basis": "total",
+    "male_m": 1.68,
+    "male_range": "5-6 ft (1.52-1.83 m) nose to tail tip, adult males (Maine)",
+    "female_larger": false,
+    "source_url": "https://www.maine.gov/ifw/fish-wildlife/wildlife/species-information/mammals/bear.html",
+    "quote": "In Maine, adult males average 250 pounds, and measure 5-6 feet from tip of nose to the tip of their tail. Females are smaller, with adult females averaging 150 pounds, and measuring 4-5 feet in length.",
+    "note": "Maine Dept. of Inland Fisheries & Wildlife."
+  },
+  {
+    "key": "lion",
+    "basis": "total",
+    "male_m": 2.84,
+    "male_range": "head-body 1.84-2.08 m + tail 0.825-0.935 m = 2.67-3.02 m total (males)",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Lion",
+    "quote": "Head-and-body length | Female lions 160-184 cm | Male lions 184-208 cm; Tail length | 72-89.5 cm | 82.5-93.5 cm",
+    "note": "Wikipedia size table citing West & Packer 2013, Mammals of Africa. Total = HB + tail (summed here). This is the MALE figure; generic 'lion' key gets the same adult-male value (female total ~2.32-2.74 m)."
+  },
+  {
+    "key": "male_lion",
+    "basis": "total",
+    "male_m": 2.84,
+    "male_range": "2.67-3.02 m total (HB 1.84-2.08 + tail 0.825-0.935)",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Lion",
+    "quote": "Head-and-body length | Female lions 160-184 cm | Male lions 184-208 cm; Tail length | 72-89.5 cm | 82.5-93.5 cm",
+    "note": "Same source as 'lion' (West & Packer 2013 via Wikipedia). Current 3.0 (2.7-3.3) is slightly high; midpoint of male range is ~2.84 m."
+  },
+  {
+    "key": "tiger",
+    "basis": "total",
+    "male_m": 2.97,
+    "male_range": "2.83-3.11 m total (male Bengal tigers, Panna TR); Siberian males avg HB 1.95 + tail 0.99 = ~2.94 m",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Bengal_tiger",
+    "quote": "Total length ranges from 283 to 311 cm for male tigers and 255–285 cm for female tigers.",
+    "note": "Wikipedia citing Sharma et al. 2021 (tiger growth-data booklet). Siberian_tiger article: Sikhote-Alin males avg 195 cm HB, tail avg 99 cm. Current 3.3 (2.7-3.9) is high; ~2.95-3.0 m is typical for adult males."
+  },
+  {
+    "key": "hyena",
+    "basis": "total",
+    "male_m": 1.52,
+    "male_range": "male mean total length 1.477 m (northern populations) and 1.570 m (southern; range 1.439-1.735 m)",
+    "female_larger": true,
+    "source_url": "https://academic.oup.com/mspecies/article/53/1000/1/6231977",
+    "quote": "Mean external measurements (mm; parenthetical range if available, n) of southern C. crocuta ... for females, males, and specimens of unknown sex, respectively, were: total length, 1,590.1 (1,440.0–1,794.0, 20), 1,569.8 (1,439.0–1,735.0, 19)",
+    "note": "Mammalian Species 53(1000), Crocuta crocuta account (2021). Northern: 'total length, 1,515 (NA, 23), 1,477 (NA, 24)' (female, male). Value is the average of the two regional male means. Quote obtained through a page-summarising fetch (site blocks direct download); wording should be spot-checked. Current 1.7 is high for males."
+  },
+  {
+    "key": "coyote",
+    "basis": "total",
+    "male_m": 1.22,
+    "male_range": "male average 48 in (1.22 m); species total 1.0-1.35 m",
+    "female_larger": false,
+    "source_url": "https://fieldguide.mt.gov/detail_AMAJA01010.aspx",
+    "quote": "Measurements from Foresman (2012): Total Length averages 44.5 inches in females and 48 inches in males",
+    "note": "Montana Field Guide (Montana Natural Heritage Program / FWP) citing Foresman 2012, Mammals of Montana."
+  },
+  {
+    "key": "fox",
+    "basis": "hb",
+    "male_m": 0.695,
+    "male_range": "0.67-0.72 m head-body, adult males (UK)",
+    "female_larger": false,
+    "source_url": "https://www.wildlifeonline.me.uk/animals/article/red-fox-size",
+    "quote": "In the UK, adult male foxes typically range in HBL between 67cm and 72cm (26 - 28in.), while females fall between 62cm and 68cm (2ft – 2ft 4in.).",
+    "note": "Wildlife Online (UK natural-history reference site, not an agency). Global HB range 45-90 cm (Wikipedia). Red fox size varies greatly by region; UK males used as representative."
+  },
+  {
+    "key": "fennec_fox",
+    "basis": "total",
+    "male_m": 0.63,
+    "male_range": "head-body 0.39-0.395 m + tail 0.23-0.25 m = 0.620-0.645 m total (males)",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Fennec_fox",
+    "quote": "Males are slightly larger, ranging in head-to-body size from 39 to 39.5 cm with a 23-25 cm long tail",
+    "note": "Wikipedia citing Cuzin 2004. Total = HB + tail (summed here)."
+  },
+  {
+    "key": "ocelot",
+    "basis": "hb",
+    "male_m": 0.745,
+    "male_range": "male average total 1.10 m minus tail 0.355 m = 0.745 m HB; species HB 0.55-1.00 m",
+    "female_larger": false,
+    "source_url": "https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Carnivora/Leopardus_pardalis.php",
+    "quote": "Averages for external measurements: of males, total length, 1.1 m; tail, 355 mm; hind foot, 157 mm; of females, 930-285-135 mm.",
+    "note": "Mammals of Texas (Schmidly & Bradley). HB derived as total minus tail. Current 0.75 matches."
+  },
+  {
+    "key": "badger",
+    "basis": "total",
+    "male_m": 0.89,
+    "male_range": "head-body 0.56-0.90 m + tail 0.115-0.202 m (sexes do not differ in HB)",
+    "female_larger": false,
+    "source_url": "https://animaldiversity.org/accounts/Meles_meles/",
+    "quote": "Males and females do not differ in head-body length, which ranges from 56 cm to 90 cm. Tail length ranges from 11.5 cm to 20.2 cm.",
+    "note": "no male-specific figure (ADW states the sexes do not differ in head-body length; males heavier). Total = midpoint HB + midpoint tail. Wikipedia: body 60-90 cm, tail 12-24 cm, 'Males (or boars) exceed females (or sows) slightly'."
+  },
+  {
+    "key": "otter",
+    "basis": "total",
+    "male_m": 1.23,
+    "male_range": "30-40 in body + 12-15 in tail = 42-55 in (1.07-1.40 m), mature males",
+    "female_larger": false,
+    "source_url": "https://www.pa.gov/agencies/pgc/wildlife/discover-pa-wildlife/river-otters",
+    "quote": "A mature male otter weighs 10 to 25 pounds and is 30 to 40 inches in length, plus a 12- to 15-inch tail. Females are about 25 percent smaller than males.",
+    "note": "Pennsylvania Game Commission. Mammals of Texas gives an average total of 1.2 m (sexes pooled)."
+  },
+  {
+    "key": "seal",
+    "basis": "total",
+    "male_m": 1.75,
+    "male_range": "1.60-1.90 m, adult males",
+    "female_larger": false,
+    "source_url": "https://animaldiversity.org/accounts/Phoca_vitulina/",
+    "quote": "Adult males are typically larger than females, measuring 160 to 190 cm in length, and weighing 80 to 170 kg. Females range from 160 to 170 cm long",
+    "note": "Animal Diversity Web. NOAA Fisheries: 'Males are slightly larger than females'; adults 5-6 ft."
+  },
+  {
+    "key": "walrus",
+    "basis": "total",
+    "male_m": 3.15,
+    "male_range": "2.7-3.6 m, male Pacific walruses (Atlantic males ~2.4 m+)",
+    "female_larger": false,
+    "source_url": "https://seaworld.org/animals/all-about/walrus/characteristics/",
+    "quote": "Male Pacific walruses weigh about 800 to 1,700 kg (1,764-3,748 lb.) and are about 2.7 to 3.6 m (9-12 ft.) long.",
+    "note": "SeaWorld Parks & Entertainment animal info book (quote obtained through a page-summarising fetch; spot-check wording). ADF&G: 'Males average: 7–12 feet long'. Current 3.3 is slightly above the male midpoint."
+  },
+  {
+    "key": "orca",
+    "basis": "total",
+    "male_m": 7.0,
+    "male_range": "6-8 m, adult males",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Orca",
+    "quote": "Males typically range from 6 to 8 m long and weigh in excess of 6 t.",
+    "note": "Wikipedia (Orca, Description section). Females 5-7 m. Current 7.5 is slightly high for a typical male."
+  },
+  {
+    "key": "dolphin",
+    "basis": "total",
+    "male_m": 3.12,
+    "male_range": "2.44-3.81 m, adult males",
+    "female_larger": false,
+    "source_url": "https://animaldiversity.org/accounts/Tursiops_truncatus/",
+    "quote": "Adult males are usually between 244 and 381 cm long, and weigh about 500 kg. Adult females are typically between 228 and 366 cm",
+    "note": "Animal Diversity Web. Range spans small coastal and large offshore ecotypes; coastal populations (e.g. Florida) are nearer 2.5-2.7 m. Wikipedia: adults generally 2.5-3.5 m."
+  },
+  {
+    "key": "alligator",
+    "basis": "total",
+    "male_m": 3.4,
+    "male_range": "average adult male 11.2 ft (3.4 m); Wikipedia adult-male range 3.4-4.8 m",
+    "female_larger": false,
+    "source_url": "https://nationalzoo.si.edu/animals/american-alligator",
+    "quote": "The average adult size for a female is 8.2 feet (2.6 meters), and the average size for a male is 11.2 feet (3.4 meters).",
+    "note": "Smithsonian's National Zoo. Wikipedia: 'Adult male American alligators measure 3.4 to 4.8 m' (midpoint 4.1) but also 'In mature males, most specimens grow up to about 3.4 m'."
+  },
+  {
+    "key": "komodo_dragon",
+    "basis": "total",
+    "male_m": 2.59,
+    "male_range": "average adult male 2.59 m; max ~3 m",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Komodo_dragon",
+    "quote": "According to Guinness World Records, an average adult male will weigh 79 to 91 kg and measure 2.59 m, while an average female will weigh 68 to 73 kg and measure 2.29 m.",
+    "note": "Wikipedia citing Wood 1983, Guinness Book of Animal Facts and Feats."
+  },
+  {
+    "key": "rattlesnake",
+    "basis": "total",
+    "male_m": 1.2,
+    "male_range": "adults commonly ~1.2 m; >1.5 m infrequent; males the larger sex",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Western_diamondback_rattlesnake",
+    "quote": "Adults commonly grow to 120 cm in length. ... Males become much larger than females, although this difference in size does not occur until after they have reached sexual maturity.",
+    "note": "no male-specific figure (Wikipedia citing Klauber 1997 and Norris 2004). Because males are the larger sex, typical adult males likely sit at or somewhat above 1.2 m."
+  },
+  {
+    "key": "snake",
+    "basis": "total",
+    "male_m": 1.43,
+    "male_range": "adult male SVL 0.908-1.710 m (mean 1.182); tail = 17.5% of total -> total ~1.10-2.07 m (mean 1.43)",
+    "female_larger": false,
+    "source_url": "https://virginiaherpetologicalsociety.com/reptiles/snakes/eastern-ratsnake/index.php",
+    "quote": "Adult male SVL (908-1,710, ave. = 1,182.1 ± 187.1, n = 124) was similar to adult female SVL (910-1,590, ave. = 1,136.1 ± 156.0, n = 54). ... Tail length relative to total length was higher in males (ave. = 17.5 ± 1.4%, 15.1-23.6, n = 107)",
+    "note": "Virginia Herpetological Society, Central/Eastern Ratsnake (Pantherophis alleghaniensis, the eastern 'black rat snake'). Total length derived: mean SVL / (1 - 0.175). Males reach longer maximum totals (2,028 mm vs 1,884 mm). Wikipedia (P. obsoletus): typically 106.7-183 cm total."
+  },
+  {
+    "key": "coral_snake",
+    "basis": "total",
+    "male_m": 0.62,
+    "male_range": "male SVL 0.539-0.547 m; male tail = 13.8% of SVL -> total ~0.61-0.62 m",
+    "female_larger": true,
+    "source_url": "https://animaldiversity.org/accounts/Micrurus_fulvius/",
+    "quote": "Females typically range from 62.0 to 72.7 cm in snout-vent length (SVL), whereas males range from 53.9 to 54.7 cm in SVL. On average, males have tails that are 13.8% the length of their SVL",
+    "note": "Animal Diversity Web. Total derived: mean male SVL x 1.138. Wikipedia: usually <80 cm total; 'Adult females are typically larger than males'. Current 0.8 fits females better than males."
+  },
+  {
+    "key": "moray",
+    "basis": "total",
+    "male_m": 1.5,
+    "male_range": "common length 150 cm TL; max 250 cm TL (male/unsexed)",
+    "female_larger": "unclear",
+    "source_url": "https://www.fishbase.se/summary/Gymnothorax-funebris.html",
+    "quote": "Max length : 250 cm TL male/unsexed; (Ref. 7251 ); common length : 150 cm TL male/unsexed",
+    "note": "no male-specific figure (FishBase 'male/unsexed' = sex not distinguished). Green moray, Gymnothorax funebris."
+  },
+  {
+    "key": "spotted_moray",
+    "basis": "total",
+    "male_m": 0.6,
+    "male_range": "common length 60 cm TL; max 200 cm TL (male/unsexed)",
+    "female_larger": "unclear",
+    "source_url": "https://www.fishbase.se/summary/Gymnothorax-moringa.html",
+    "quote": "Max length : 200 cm TL male/unsexed; (Ref. 57911 ); common length : 60.0 cm TL male/unsexed",
+    "note": "no male-specific figure. Wikipedia agrees: 'commonly 60 cm in length and can grow up to 2 m'. Current 1.0 is above the common length."
+  },
+  {
+    "key": "electric_eel",
+    "basis": "total",
+    "male_m": 1.6,
+    "male_range": "males mature at ~1.2 m and grow larger than females; species max ~2 m (E. electricus)",
+    "female_larger": false,
+    "source_url": "https://en.wikipedia.org/wiki/Electric_eel",
+    "quote": "Electric eels are sexually dimorphic, males becoming reproductively active at 1.2 m in length and growing larger than females",
+    "note": "Wikipedia. Representative value = midpoint between male maturity length (1.2 m) and E. electricus max length ('E. electricus can reach 2 m in length'); no published adult-male mean found. FishBase max 250 cm SL."
+  },
+  {
+    "key": "piranha",
+    "basis": "total",
+    "male_m": 0.305,
+    "male_range": "commonly ~12 in (0.30 m); reported to 16 in",
+    "female_larger": "unclear",
+    "source_url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=86499",
+    "quote": "Piranhas commonly grow to 12 inches in length and weigh less than two pounds, but have been reported to grow up to 16 inches and over 7 pounds.",
+    "note": "no male-specific figure. California Dept. of Fish and Wildlife invasive-species fact sheet (red-bellied piranha). Wikipedia: up to 50 cm SL 'but rarely surpass 35 cm'."
+  },
+  {
+    "key": "catfish",
+    "basis": "total",
+    "male_m": 0.56,
+    "male_range": "adults commonly 12-32 in (0.30-0.81 m)",
+    "female_larger": false,
+    "source_url": "https://mdc.mo.gov/discover-nature/field-guide/channel-catfish",
+    "quote": "Adult length: commonly 12–32 inches; weight: commonly 1–15 pounds.",
+    "note": "no male-specific figure. Missouri Dept. of Conservation. ADW gives average length 36-53 cm. female_larger=false: ADW notes males have larger heads, and males are generally reported as the faster-growing sex in culture (not confirmed by a size quote here)."
+  },
+  {
+    "key": "bass",
+    "basis": "total",
+    "male_m": 0.35,
+    "male_range": "typically 30-40 cm; males generally do not exceed 40 cm (females to 56 cm)",
+    "female_larger": true,
+    "source_url": "https://animaldiversity.org/accounts/Micropterus_salmoides/",
+    "quote": "This species typically ranges from 30-40 cm in length and weigh on average 0.45-1.36 kilograms. Females tend to be larger than males.",
+    "note": "Animal Diversity Web; the same account states males generally don't exceed 40 cm long while females can reach 56 cm (sentence is garbled on the page). Chesapeake Bay Program: 'females grow larger than males'. Current 0.45 fits females."
+  },
+  {
+    "key": "giant_salamander",
+    "basis": "total",
+    "male_m": 1.0,
+    "male_range": "adult average ~1 m (historic max 1.8 m); Wikipedia average 1.3 m",
+    "female_larger": false,
+    "source_url": "https://animaldiversity.org/accounts/Andrias_davidianus/",
+    "quote": "They average 1 m in length and weigh approximately 11 kg, though individuals as long as 1.8 m have been found in the past.",
+    "note": "no male-specific figure. ADW: 'There is little sexual dimorphism in Chinese giant salamanders.' Wikipedia gives average adult 1.3 m (25-30 kg); sources disagree, current 1.5 is above both."
+  },
+  {
+    "key": "octopus",
+    "basis": "span",
+    "male_m": 1.0,
+    "male_range": "derived: total length 0.3-0.9 m including arms (ADW); arms up to 1 m, mantle to 25 cm (Wikipedia max)",
+    "female_larger": "unclear",
+    "source_url": "https://animaldiversity.org/accounts/Octopus_vulgaris/",
+    "quote": "Reach 1-3 feet in length including arms.",
+    "note": "no male-specific figure and no direct arm-span figure found. Span estimated as ~2 x arm length + head width from ADW total length (mid ~0.6 m, arms ~75-80% of total) -> ~1.0 m; Wikipedia max ('grows to 25 cm in mantle length with arms up to 1 m long') implies a maximum span of ~2 m. Treat as an estimate."
+  },
+  {
+    "key": "eagle",
+    "basis": "total",
+    "male_m": 0.86,
+    "male_range": "adults 0.79-0.94 m (ADW) / 0.70-1.02 m (Wikipedia), sexes pooled",
+    "female_larger": true,
+    "source_url": "https://animaldiversity.org/accounts/Haliaeetus_leucocephalus/",
+    "quote": "Bald eagles have sexually monomorphic plumage coloration, although females generally have a somewhat larger body size. ... their bodies are 79 to 94 cm long and they weigh about 4.3 kg.",
+    "note": "no male-specific figure. Females ~25% larger (Wikipedia) and average 35-38 in (0.89-0.97 m) per American Eagle Foundation, so a typical male is likely below 0.86 m (roughly 0.75-0.85 m)."
+  },
+  {
+    "key": "owl",
+    "basis": "total",
+    "male_m": 0.55,
+    "male_range": "adults 0.43-0.64 m, average 0.55 m (sexes pooled)",
+    "female_larger": true,
+    "source_url": "https://en.wikipedia.org/wiki/Great_horned_owl",
+    "quote": "Adult great horned owls range in length from 43 to 64 cm, with an average of 55 cm",
+    "note": "no male-specific figure. Great horned owl. ADW: 'They exhibit reverse sexual dimorphism, where females are slightly larger than males' (10-20% larger per other sources), so a typical male is likely ~0.50-0.53 m."
+  },
+  {
+    "key": "secretary_bird",
+    "basis": "tall",
+    "male_m": 1.2,
+    "male_range": "stands 0.9-1.2 m (ADW); 'over four feet' (San Diego Zoo); up to ~1.3 m (Wikipedia)",
+    "female_larger": false,
+    "source_url": "https://animaldiversity.org/accounts/Sagittarius_serpentarius/",
+    "quote": "Secretary birds stand around 0.9 to 1.2 meters tall and weigh between 2.3 to 4.27 kg. Females tend to be slightly smaller than males.",
+    "note": "no male-specific figure. 1.2 m chosen (top of ADW range) because males are the larger sex and San Diego Zoo says 'Standing over four feet tall'. Current 1.3 matches Wikipedia 'stands about 1.3 m tall'."
+  }
+]

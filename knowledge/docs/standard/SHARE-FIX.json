@@ -1,0 +1,2252 @@
+[
+ {
+  "to": "pw:eagle_wa",
+  "kind": "attack",
+  "from": "pw:eagle_bald_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:eagle",
+  "kind": "attack",
+  "from": "pw:eagle_bald_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:eagle_bald_anf",
+  "kind": "fly",
+  "from": "sf_nba:eagle",
+  "from_clip": "fly",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:eagle_wa",
+  "kind": "fly",
+  "from": "sf_nba:eagle",
+  "from_clip": "fly",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:eagle_wa",
+  "kind": "idle",
+  "from": "pw:eagle_bald_anf",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:eagle",
+  "kind": "idle",
+  "from": "pw:eagle_bald_anf",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:eagle_bald_anf",
+  "kind": "sit",
+  "from": "sf_nba:eagle",
+  "from_clip": "sit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:eagle_wa",
+  "kind": "sit",
+  "from": "sf_nba:eagle",
+  "from_clip": "sit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:eagle_bald_anf",
+  "kind": "walk",
+  "from": "sf_nba:eagle",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:eagle_wa",
+  "kind": "walk",
+  "from": "sf_nba:eagle",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:owl_barn_anf",
+  "kind": "fly",
+  "from": "pw:barn_owl_ytri",
+  "from_clip": "flying",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:barn_owl_ytri",
+  "kind": "idle",
+  "from": "pw:owl_barn_anf",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:owl_barn_anf",
+  "kind": "sit",
+  "from": "pw:barn_owl_ytri",
+  "from_clip": "sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:bear_black_anf",
+  "kind": "eat",
+  "from": "sf_nba:black_bear",
+  "from_clip": "eat",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:beaver_anf",
+  "kind": "idle",
+  "from": "sf_nba:beaver",
+  "from_clip": "baby_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:beaver_anf",
+  "kind": "run",
+  "from": "sf_nba:beaver",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:beaver_anf",
+  "kind": "sit",
+  "from": "sf_nba:beaver",
+  "from_clip": "baby_unsit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:beaver_anf",
+  "kind": "swim",
+  "from": "sf_nba:beaver",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:beaver_anf",
+  "kind": "walk",
+  "from": "sf_nba:beaver",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:blue_jay_wa",
+  "kind": "fly",
+  "from": "sf_nba:bluejay",
+  "from_clip": "fly",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:blue_jay_wa",
+  "kind": "sit",
+  "from": "sf_nba:bluejay",
+  "from_clip": "sit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:blue_jay_wa",
+  "kind": "walk",
+  "from": "sf_nba:bluejay",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:coyote_ytri",
+  "kind": "attack",
+  "from": "sf_nba:coyote",
+  "from_clip": "attack",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:coyote_ytri",
+  "kind": "idle",
+  "from": "sf_nba:coyote",
+  "from_clip": "idle",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:coyote_ytri",
+  "kind": "run",
+  "from": "sf_nba:coyote",
+  "from_clip": "run",
+  "loose_px": 0.3,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:coyote",
+  "kind": "sit",
+  "from": "pw:coyote_ytri",
+  "from_clip": "sit",
+  "loose_px": 1.9,
+  "loose_part": [
+   "skull",
+   "body"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 1.083,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:coyote_ytri",
+  "kind": "walk",
+  "from": "sf_nba:coyote",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:croc_nile_anf",
+  "kind": "swim",
+  "from": "pw:crocodile_ysav",
+  "from_clip": "swim",
+  "loose_px": 1.5,
+  "loose_part": [
+   "hind_foot_r",
+   "shin_r"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 1.478,
+   "sink": 11.62,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:crocodile_wa",
+  "kind": "walk",
+  "from": "pw:croc_nile_anf",
+  "from_clip": "walk",
+  "loose_px": 1.7,
+  "loose_part": [
+   "thigh_l",
+   "body"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.83,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:crocodile_ysav",
+  "kind": "walk",
+  "from": "pw:croc_nile_anf",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:african_elephant_wa",
+  "kind": "eat",
+  "from": "sf_nba:elephant",
+  "from_clip": "drink",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:african_elephant_wa",
+  "kind": "idle",
+  "from": "sf_nba:elephant",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:african_elephant_wa",
+  "kind": "run",
+  "from": "sf_nba:elephant",
+  "from_clip": "baby_run",
+  "loose_px": 0.6,
+  "result": "OK"
+ },
+ {
+  "to": "pw:elephant_african_anf",
+  "kind": "run",
+  "from": "sf_nba:elephant",
+  "from_clip": "baby_run",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:elephant_ysav",
+  "kind": "run",
+  "from": "sf_nba:elephant",
+  "from_clip": "baby_run",
+  "loose_px": 0.3,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:elephant",
+  "kind": "sit",
+  "from": "pw:african_elephant_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:african_elephant_wa",
+  "kind": "sleep",
+  "from": "sf_nba:elephant",
+  "from_clip": "baby_playful",
+  "loose_px": 1.6,
+  "loose_part": [
+   "trunk",
+   "body"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (trunk from body, 1.4 px)"
+ },
+ {
+  "to": "pw:elephant_african_anf",
+  "kind": "sleep",
+  "from": "sf_nba:elephant",
+  "from_clip": "baby_playful",
+  "loose_px": 2.5,
+  "loose_part": [
+   "ear_l",
+   "body"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (ear_l from body, 1.7 px)"
+ },
+ {
+  "to": "pw:elephant_ysav",
+  "kind": "sleep",
+  "from": "sf_nba:elephant",
+  "from_clip": "baby_playful",
+  "loose_px": 1.3,
+  "loose_part": [
+   "eat",
+   "neck"
+  ],
+  "result": "DROPPED",
+  "why": "cannot get as low as the source (body 16 % of its height off)"
+ },
+ {
+  "to": "pw:african_elephant_wa",
+  "kind": "walk",
+  "from": "sf_nba:elephant",
+  "from_clip": "walk",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:elephant_african_anf",
+  "kind": "walk",
+  "from": "sf_nba:elephant",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:asian_elephant_wa",
+  "kind": "idle",
+  "from": "pw:elephant_asian_anf",
+  "from_clip": "idle",
+  "loose_px": 0.5,
+  "result": "OK"
+ },
+ {
+  "to": "pw:elephant_asian_anf",
+  "kind": "walk",
+  "from": "pw:asian_elephant_wa",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:giraffe_reticulated_anf",
+  "kind": "idle",
+  "from": "sf_nba:giraffe",
+  "from_clip": "baby_idle",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:gorilla_wa",
+  "kind": "eat",
+  "from": "sf_nba:gorilla",
+  "from_clip": "beat_chest",
+  "loose_px": 2.0,
+  "loose_part": [
+   "forearm_r",
+   "body"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 1.113,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:gorilla_ytri",
+  "kind": "eat",
+  "from": "sf_nba:gorilla",
+  "from_clip": "beat_chest",
+  "loose_px": 16.2,
+  "loose_part": [
+   "skull",
+   "body"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (upper_arm_r from leg3, 13.4 px)"
+ },
+ {
+  "to": "pw:gorilla_wa",
+  "kind": "run",
+  "from": "sf_nba:gorilla",
+  "from_clip": "run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:gorilla_ytri",
+  "kind": "run",
+  "from": "sf_nba:gorilla",
+  "from_clip": "run",
+  "loose_px": 3.4,
+  "loose_part": [
+   "upper_arm_r",
+   "leg3"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (thigh_l from leg2, 1.9 px)"
+ },
+ {
+  "to": "pw:gorilla_ytri",
+  "kind": "sit",
+  "from": "pw:gorilla_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 8.9,
+  "loose_part": [
+   "skull",
+   "body"
+  ],
+  "result": "DROPPED",
+  "why": "body joints cover 0.86"
+ },
+ {
+  "to": "sf_nba:gorilla",
+  "kind": "sit",
+  "from": "pw:gorilla_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:gorilla_wa",
+  "kind": "walk",
+  "from": "sf_nba:gorilla",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:gorilla_ytri",
+  "kind": "walk",
+  "from": "sf_nba:gorilla",
+  "from_clip": "walk",
+  "loose_px": 3.0,
+  "loose_part": [
+   "upper_arm_r",
+   "leg3"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (thigh_l from leg2, 1.9 px)"
+ },
+ {
+  "to": "pw:hyena_anf",
+  "kind": "attack",
+  "from": "sf_nba:hyena",
+  "from_clip": "attack",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "pw:hyena_ysav",
+  "kind": "attack",
+  "from": "sf_nba:hyena",
+  "from_clip": "attack",
+  "loose_px": 1.9,
+  "loose_part": [
+   "eat",
+   "neck"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.879,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:hyenas_wa",
+  "kind": "attack",
+  "from": "sf_nba:hyena",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:hyena_anf",
+  "kind": "idle",
+  "from": "sf_nba:hyena",
+  "from_clip": "idle_event",
+  "loose_px": 2.1,
+  "loose_part": [
+   "ear_r",
+   "neck"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.74,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:hyena_anf",
+  "kind": "run",
+  "from": "sf_nba:hyena",
+  "from_clip": "run",
+  "loose_px": 0.3,
+  "result": "OK"
+ },
+ {
+  "to": "pw:hyena_anf",
+  "kind": "walk",
+  "from": "pw:hyena_ysav",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:hyenas_wa",
+  "kind": "walk",
+  "from": "pw:hyena_ysav",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:hyena",
+  "kind": "walk",
+  "from": "pw:hyena_ysav",
+  "from_clip": "walk",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:kakapo",
+  "kind": "fly",
+  "from": "pw:kakapo_wwa",
+  "from_clip": "fly",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:kakapo_wwa",
+  "kind": "idle",
+  "from": "sf_nba:kakapo",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:kakapo_wwa",
+  "kind": "run",
+  "from": "sf_nba:kakapo",
+  "from_clip": "run",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:kakapo_wwa",
+  "kind": "sit",
+  "from": "sf_nba:kakapo",
+  "from_clip": "sit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:kakapo_wwa",
+  "kind": "sleep",
+  "from": "sf_nba:kakapo",
+  "from_clip": "sleep",
+  "loose_px": 0.9,
+  "result": "OK"
+ },
+ {
+  "to": "pw:kakapo_wwa",
+  "kind": "walk",
+  "from": "sf_nba:kakapo",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:komodo_dragon_ytri",
+  "kind": "idle",
+  "from": "sf_nba:komodo_dragon",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:komodo_dragon_ytri",
+  "kind": "sit",
+  "from": "pw:komodo_dragon_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 1.6,
+  "loose_part": [
+   "upper_arm_r",
+   "leg3"
+  ],
+  "result": "DROPPED",
+  "why": "body joints cover 0.80"
+ },
+ {
+  "to": "sf_nba:komodo_dragon",
+  "kind": "sit",
+  "from": "pw:komodo_dragon_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lemur_ytri",
+  "kind": "idle",
+  "from": "pw:lemur_ringtailed_anf",
+  "from_clip": "idle",
+  "loose_px": 0.5,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lemur_ytri",
+  "kind": "jump",
+  "from": "pw:lemur_ringtailed_anf",
+  "from_clip": "jump",
+  "loose_px": 21.2,
+  "loose_part": [
+   "tail_3",
+   "tail"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail_3 from tail, 13.7 px)"
+ },
+ {
+  "to": "pw:lemur_ytri",
+  "kind": "walk",
+  "from": "pw:lemur_ringtailed_anf",
+  "from_clip": "walk",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "pw:leopard_jungle_anf",
+  "kind": "attack",
+  "from": "pw:leopard_ysav",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:leopard_panther_anf",
+  "kind": "attack",
+  "from": "pw:leopard_ysav",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:leopard_jungle_anf",
+  "kind": "call",
+  "from": "pw:leopard_ysav",
+  "from_clip": "roar",
+  "loose_px": 1.0,
+  "loose_part": [
+   "snout",
+   "neck"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.594,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:leopard_panther_anf",
+  "kind": "call",
+  "from": "pw:leopard_ysav",
+  "from_clip": "roar",
+  "loose_px": 1.0,
+  "loose_part": [
+   "snout",
+   "neck"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.594,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:leopard_jungle_anf",
+  "kind": "jump",
+  "from": "pw:leopard_ysav",
+  "from_clip": "jump",
+  "loose_px": 0.3,
+  "result": "OK"
+ },
+ {
+  "to": "pw:leopard_panther_anf",
+  "kind": "jump",
+  "from": "pw:leopard_ysav",
+  "from_clip": "jump",
+  "loose_px": 0.3,
+  "result": "OK"
+ },
+ {
+  "to": "pw:leopard_ysav",
+  "kind": "run",
+  "from": "pw:leopard_jungle_anf",
+  "from_clip": "run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_wa",
+  "kind": "attack",
+  "from": "pw:lion_african_anf",
+  "from_clip": "attack",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_ysav",
+  "kind": "attack",
+  "from": "pw:lion_african_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_lion_ysav",
+  "kind": "attack",
+  "from": "pw:lion_african_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:male_lion",
+  "kind": "attack",
+  "from": "pw:lion_african_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_african_anf",
+  "kind": "idle",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_sit_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_wa",
+  "kind": "idle",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_sit_idle",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_african_anf",
+  "kind": "run",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_wa",
+  "kind": "run",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_run",
+  "loose_px": 3.5,
+  "loose_part": [
+   "forearm_l",
+   "skull"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (forearm_l from skull, 1.4 px)"
+ },
+ {
+  "to": "pw:lion_ysav",
+  "kind": "run",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_lion_ysav",
+  "kind": "run",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_african_anf",
+  "kind": "sit",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_unsit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_wa",
+  "kind": "sit",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_unsit",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_ysav",
+  "kind": "sit",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_unsit",
+  "loose_px": 10.4,
+  "loose_part": [
+   "tail",
+   "body_2"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_2, 23.9 px)"
+ },
+ {
+  "to": "pw:white_lion_ysav",
+  "kind": "sit",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_unsit",
+  "loose_px": 10.4,
+  "loose_part": [
+   "tail",
+   "body_2"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_2, 24.4 px)"
+ },
+ {
+  "to": "pw:lion_african_anf",
+  "kind": "sleep",
+  "from": "pw:lion_ysav",
+  "from_clip": "lay",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_lion_ysav",
+  "kind": "sleep",
+  "from": "pw:lion_ysav",
+  "from_clip": "lay",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_african_anf",
+  "kind": "walk",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lion_wa",
+  "kind": "walk",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_walk",
+  "loose_px": 1.4,
+  "loose_part": [
+   "forearm_r",
+   "skull"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (forearm_r from skull, 1.1 px)"
+ },
+ {
+  "to": "pw:lion_ysav",
+  "kind": "walk",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_walk",
+  "loose_px": 6.2,
+  "loose_part": [
+   "tail",
+   "body_2"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_2, 21.4 px)"
+ },
+ {
+  "to": "pw:white_lion_ysav",
+  "kind": "walk",
+  "from": "sf_nba:male_lion",
+  "from_clip": "baby_walk",
+  "loose_px": 6.2,
+  "loose_part": [
+   "tail",
+   "body_2"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_2, 21.9 px)"
+ },
+ {
+  "to": "pw:lioness_ysav",
+  "kind": "attack",
+  "from": "pw:lioness_african_anf",
+  "from_clip": "attack",
+  "loose_px": 0.7,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_lioness_ysav",
+  "kind": "attack",
+  "from": "pw:lioness_african_anf",
+  "from_clip": "attack",
+  "loose_px": 2.6,
+  "loose_part": [
+   "upper_arm_l",
+   "body_2"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_3, 1.1 px)"
+ },
+ {
+  "to": "sf_nba:female_lion",
+  "kind": "attack",
+  "from": "pw:lioness_african_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_lioness_ysav",
+  "kind": "eat",
+  "from": "pw:lioness_ysav",
+  "from_clip": "eat",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lioness_african_anf",
+  "kind": "idle",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_sit_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lioness_african_anf",
+  "kind": "run",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lioness_ysav",
+  "kind": "run",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_run",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_lioness_ysav",
+  "kind": "run",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lioness_african_anf",
+  "kind": "sit",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_unsit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lioness_ysav",
+  "kind": "sit",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_unsit",
+  "loose_px": 9.7,
+  "loose_part": [
+   "tail",
+   "body_3"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_3, 20.3 px)"
+ },
+ {
+  "to": "pw:white_lioness_ysav",
+  "kind": "sit",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_unsit",
+  "loose_px": 9.7,
+  "loose_part": [
+   "tail",
+   "body_3"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_3, 20.1 px)"
+ },
+ {
+  "to": "pw:lioness_african_anf",
+  "kind": "sleep",
+  "from": "pw:lioness_ysav",
+  "from_clip": "lay",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_lioness_ysav",
+  "kind": "sleep",
+  "from": "pw:lioness_ysav",
+  "from_clip": "lay",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lioness_african_anf",
+  "kind": "walk",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:lioness_ysav",
+  "kind": "walk",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_walk",
+  "loose_px": 5.8,
+  "loose_part": [
+   "tail",
+   "body_3"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_3, 20.0 px)"
+ },
+ {
+  "to": "pw:white_lioness_ysav",
+  "kind": "walk",
+  "from": "sf_nba:female_lion",
+  "from_clip": "baby_walk",
+  "loose_px": 5.8,
+  "loose_part": [
+   "tail",
+   "body_3"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body_3, 19.9 px)"
+ },
+ {
+  "to": "pw:duck_wa",
+  "kind": "idle",
+  "from": "sf_nba:duck",
+  "from_clip": "baby_swim_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:duck_wa",
+  "kind": "run",
+  "from": "sf_nba:duck",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:duck_wa",
+  "kind": "sit",
+  "from": "sf_nba:duck",
+  "from_clip": "baby_sit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:duck_wa",
+  "kind": "swim",
+  "from": "sf_nba:duck",
+  "from_clip": "baby_swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:duck_wa",
+  "kind": "walk",
+  "from": "sf_nba:duck",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:meerkat_ytri",
+  "kind": "idle",
+  "from": "pw:meerkat_anf",
+  "from_clip": "idle",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:meerkat_anf",
+  "kind": "sit",
+  "from": "pw:meerkat_ytri",
+  "from_clip": "sit",
+  "loose_px": 7.0,
+  "loose_part": [
+   "ear_l",
+   "body"
+  ],
+  "result": "DROPPED",
+  "why": "cannot get as low as the source (body 47 % of its height off)"
+ },
+ {
+  "to": "pw:meerkat_anf",
+  "kind": "walk",
+  "from": "pw:meerkat_ytri",
+  "from_clip": "walk",
+  "loose_px": 0.7,
+  "result": "OK"
+ },
+ {
+  "to": "pw:orca_wa",
+  "kind": "idle",
+  "from": "sf_nba:orca",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:orca_ytri",
+  "kind": "idle",
+  "from": "sf_nba:orca",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:orca_wa",
+  "kind": "swim",
+  "from": "sf_nba:orca",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:orca_ytri",
+  "kind": "swim",
+  "from": "sf_nba:orca",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_wa",
+  "kind": "attack",
+  "from": "sf_nba:ostrich",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ws",
+  "kind": "attack",
+  "from": "sf_nba:ostrich",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ysav",
+  "kind": "attack",
+  "from": "sf_nba:ostrich",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_wa",
+  "kind": "eat",
+  "from": "pw:ostrich_ysav",
+  "from_clip": "graze",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_wa",
+  "kind": "fly",
+  "from": "sf_nba:ostrich",
+  "from_clip": "flap",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ws",
+  "kind": "fly",
+  "from": "sf_nba:ostrich",
+  "from_clip": "flap",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ysav",
+  "kind": "fly",
+  "from": "sf_nba:ostrich",
+  "from_clip": "flap",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_wa",
+  "kind": "idle",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_idle",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ws",
+  "kind": "idle",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ysav",
+  "kind": "idle",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_wa",
+  "kind": "run",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ws",
+  "kind": "run",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ysav",
+  "kind": "run",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_run",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_wa",
+  "kind": "walk",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ws",
+  "kind": "walk",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:ostrich_ysav",
+  "kind": "walk",
+  "from": "sf_nba:ostrich",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:platypus",
+  "kind": "idle",
+  "from": "pw:platypus_ytri",
+  "from_clip": "look_at_target",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:platypus_ytri",
+  "kind": "run",
+  "from": "sf_nba:platypus",
+  "from_clip": "run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:platypus_ytri",
+  "kind": "sit",
+  "from": "sf_nba:platypus",
+  "from_clip": "sit",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:platypus_ytri",
+  "kind": "sleep",
+  "from": "sf_nba:platypus",
+  "from_clip": "sleep",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:platypus_ytri",
+  "kind": "swim",
+  "from": "sf_nba:platypus",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:platypus_ytri",
+  "kind": "walk",
+  "from": "sf_nba:platypus",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:raccoon_wwa",
+  "kind": "attack",
+  "from": "pw:raccoon_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:raccoon",
+  "kind": "attack",
+  "from": "pw:raccoon_anf",
+  "from_clip": "attack",
+  "loose_px": 0.8,
+  "result": "OK"
+ },
+ {
+  "to": "pw:raccoon_anf",
+  "kind": "idle",
+  "from": "sf_nba:raccoon",
+  "from_clip": "idle_event",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:raccoon_wwa",
+  "kind": "idle",
+  "from": "sf_nba:raccoon",
+  "from_clip": "idle_event",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:raccoon_anf",
+  "kind": "run",
+  "from": "sf_nba:raccoon",
+  "from_clip": "run",
+  "loose_px": 3.2,
+  "loose_part": [
+   "upper_arm_r",
+   "thigh_r"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (upper_arm_l from thigh_l, 1.4 px)"
+ },
+ {
+  "to": "pw:raccoon_wwa",
+  "kind": "run",
+  "from": "sf_nba:raccoon",
+  "from_clip": "run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:raccoon_anf",
+  "kind": "walk",
+  "from": "sf_nba:raccoon",
+  "from_clip": "walk",
+  "loose_px": 1.5,
+  "loose_part": [
+   "upper_arm_r",
+   "thigh_r"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 1.024,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:raccoon_wwa",
+  "kind": "walk",
+  "from": "sf_nba:raccoon",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rat_wa",
+  "kind": "run",
+  "from": "pw:rat_brown_anf",
+  "from_clip": "run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rat_brown_anf",
+  "kind": "sit",
+  "from": "pw:rat_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rat_fancy_anf",
+  "kind": "sit",
+  "from": "pw:rat_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rat_wa",
+  "kind": "walk",
+  "from": "pw:rat_brown_anf",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:red_panda_wwa",
+  "kind": "idle",
+  "from": "sf_nba:red_panda",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:red_panda_wa",
+  "kind": "run",
+  "from": "sf_nba:red_panda",
+  "from_clip": "run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:red_panda_wwa",
+  "kind": "run",
+  "from": "sf_nba:red_panda",
+  "from_clip": "run",
+  "loose_px": 0.4,
+  "result": "OK"
+ },
+ {
+  "to": "pw:red_panda_wa",
+  "kind": "sit",
+  "from": "pw:red_panda_wwa",
+  "from_clip": "sit",
+  "loose_px": 1.4,
+  "loose_part": [
+   "tail",
+   "body"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.952,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "sf_nba:red_panda",
+  "kind": "sit",
+  "from": "pw:red_panda_wwa",
+  "from_clip": "sit",
+  "loose_px": 2.2,
+  "loose_part": [
+   "tail",
+   "body"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.731,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:red_panda_wa",
+  "kind": "sleep",
+  "from": "sf_nba:red_panda",
+  "from_clip": "sleep",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:red_panda_wwa",
+  "kind": "sleep",
+  "from": "sf_nba:red_panda",
+  "from_clip": "sleep",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:red_panda_wwa",
+  "kind": "walk",
+  "from": "sf_nba:red_panda",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_white_anf",
+  "kind": "attack",
+  "from": "pw:rhino_wa",
+  "from_clip": "attack",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_ysav",
+  "kind": "attack",
+  "from": "pw:rhino_wa",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_wa",
+  "kind": "eat",
+  "from": "pw:rhino_ysav",
+  "from_clip": "graze",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_white_anf",
+  "kind": "eat",
+  "from": "pw:rhino_ysav",
+  "from_clip": "graze",
+  "loose_px": 3.5,
+  "loose_part": [
+   "horn_2",
+   "neck"
+  ],
+  "result": "DROPPED",
+  "why": "body joints cover 0.86"
+ },
+ {
+  "to": "pw:rhino_wa",
+  "kind": "idle",
+  "from": "pw:rhino_white_anf",
+  "from_clip": "idle",
+  "loose_px": 1.3,
+  "loose_part": [
+   "horn",
+   "neck"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (horn from neck, 1.3 px)"
+ },
+ {
+  "to": "pw:rhino_ysav",
+  "kind": "idle",
+  "from": "pw:rhino_white_anf",
+  "from_clip": "idle",
+  "loose_px": 0.3,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_white_anf",
+  "kind": "sit",
+  "from": "pw:rhino_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_ysav",
+  "kind": "sit",
+  "from": "pw:rhino_wa",
+  "from_clip": "wolf_sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_wa",
+  "kind": "sleep",
+  "from": "pw:rhino_ysav",
+  "from_clip": "lay",
+  "loose_px": 2.2,
+  "loose_part": [
+   "horn",
+   "neck"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (horn from neck, 2.2 px)"
+ },
+ {
+  "to": "pw:rhino_white_anf",
+  "kind": "sleep",
+  "from": "pw:rhino_ysav",
+  "from_clip": "lay",
+  "loose_px": 1.2,
+  "loose_part": [
+   "horn_2",
+   "neck"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (horn_2 from neck, 1.2 px)"
+ },
+ {
+  "to": "pw:rhino_white_anf",
+  "kind": "walk",
+  "from": "pw:rhino_wa",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:rhino_ysav",
+  "kind": "walk",
+  "from": "pw:rhino_wa",
+  "from_clip": "walk",
+  "loose_px": 0.2,
+  "result": "OK"
+ },
+ {
+  "to": "pw:seal_wwa",
+  "kind": "idle",
+  "from": "pw:seal_common_anf",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:hammer_head_shark",
+  "kind": "attack",
+  "from": "pw:shark_hammerhead_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:shark_hammerhead_anf",
+  "kind": "idle",
+  "from": "sf_nba:hammer_head_shark",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:shark_hammerhead_anf",
+  "kind": "swim",
+  "from": "sf_nba:hammer_head_shark",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:shark_greatwhite_anf",
+  "kind": "idle",
+  "from": "sf_nba:great_white_shark",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:shark_wa",
+  "kind": "idle",
+  "from": "sf_nba:great_white_shark",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_shark_wa",
+  "kind": "idle",
+  "from": "sf_nba:great_white_shark",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:shark_greatwhite_anf",
+  "kind": "swim",
+  "from": "sf_nba:great_white_shark",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:shark_wa",
+  "kind": "swim",
+  "from": "sf_nba:great_white_shark",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_shark_wa",
+  "kind": "swim",
+  "from": "sf_nba:great_white_shark",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_shark_wa",
+  "kind": "idle",
+  "from": "pw:shark_tiger_anf",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_shark_wa",
+  "kind": "swim",
+  "from": "pw:shark_tiger_anf",
+  "from_clip": "swim",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:skunk_anf",
+  "kind": "attack",
+  "from": "sf_nba:skunk",
+  "from_clip": "attack_1",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:skunk_ytri",
+  "kind": "attack",
+  "from": "sf_nba:skunk",
+  "from_clip": "attack_1",
+  "loose_px": 1.5,
+  "loose_part": [
+   "upper_arm_r",
+   "body"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (upper_arm_r from body, 1.5 px)"
+ },
+ {
+  "to": "pw:skunk_anf",
+  "kind": "idle",
+  "from": "sf_nba:skunk",
+  "from_clip": "idle_event",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:skunk_ytri",
+  "kind": "idle",
+  "from": "sf_nba:skunk",
+  "from_clip": "idle_event",
+  "loose_px": 8.4,
+  "loose_part": [
+   "skull",
+   "skull_2"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (skull from skull_2, 3.8 px)"
+ },
+ {
+  "to": "pw:skunk_ytri",
+  "kind": "sleep",
+  "from": "pw:skunk_anf",
+  "from_clip": "playing",
+  "loose_px": 8.7,
+  "loose_part": [
+   "skull",
+   "skull_2"
+  ],
+  "result": "DROPPED",
+  "why": "cannot get as low as the source (body 58 % of its height off)"
+ },
+ {
+  "to": "sf_nba:skunk",
+  "kind": "sleep",
+  "from": "pw:skunk_anf",
+  "from_clip": "playing",
+  "loose_px": 2.3,
+  "loose_part": [
+   "upper_arm_l",
+   "body"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (tail from body, 4.0 px)"
+ },
+ {
+  "to": "pw:swan_wwa",
+  "kind": "attack",
+  "from": "pw:swan_white_anf",
+  "from_clip": "attack",
+  "loose_px": 7.3,
+  "loose_part": [
+   "head",
+   "neck_2"
+  ],
+  "result": "DROPPED",
+  "why": "a part comes loose (neck_2 from body, 5.8 px)"
+ },
+ {
+  "to": "pw:swan_wwa",
+  "kind": "idle",
+  "from": "pw:swan_white_anf",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:swan_white_anf",
+  "kind": "walk",
+  "from": "pw:swan_wwa",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_wa",
+  "kind": "attack",
+  "from": "pw:tiger_bengal_anf",
+  "from_clip": "attack",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_ws",
+  "kind": "attack",
+  "from": "pw:tiger_bengal_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_tiger_wa",
+  "kind": "attack",
+  "from": "pw:tiger_bengal_anf",
+  "from_clip": "attack",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:tiger",
+  "kind": "attack",
+  "from": "pw:tiger_bengal_anf",
+  "from_clip": "attack",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_bengal_anf",
+  "kind": "idle",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_wa",
+  "kind": "idle",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_ws",
+  "kind": "idle",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_tiger_wa",
+  "kind": "idle",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_bengal_anf",
+  "kind": "run",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_run",
+  "loose_px": 0.4,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_wa",
+  "kind": "run",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_ws",
+  "kind": "run",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_tiger_wa",
+  "kind": "run",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_run",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_bengal_anf",
+  "kind": "sleep",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_sleep",
+  "loose_px": 1.2,
+  "loose_part": [
+   "ear_r",
+   "neck"
+  ],
+  "result": "DROPPED",
+  "why": "cannot get as low as the source (body 20 % of its height off)"
+ },
+ {
+  "to": "pw:tiger_wa",
+  "kind": "sleep",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_sleep",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_ws",
+  "kind": "sleep",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_sleep",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_tiger_wa",
+  "kind": "sleep",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_sleep",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_bengal_anf",
+  "kind": "walk",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_wa",
+  "kind": "walk",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_walk",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:tiger_ws",
+  "kind": "walk",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:white_tiger_wa",
+  "kind": "walk",
+  "from": "sf_nba:tiger",
+  "from_clip": "baby_walk",
+  "loose_px": 0.1,
+  "result": "OK"
+ },
+ {
+  "to": "pw:toucan_toco_anf",
+  "kind": "sit",
+  "from": "pw:toucan_wa",
+  "from_clip": "sitting",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_wa",
+  "kind": "attack",
+  "from": "pw:boar_ifs",
+  "from_clip": "attack",
+  "loose_px": 2.6,
+  "loose_part": [
+   "snout",
+   "body"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.676,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:boar_ysav",
+  "kind": "attack",
+  "from": "pw:boar_ifs",
+  "from_clip": "attack",
+  "loose_px": 3.6,
+  "loose_part": [
+   "nail",
+   "neck"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.797,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:boar_wa",
+  "kind": "call",
+  "from": "pw:boar_ifs",
+  "from_clip": "roaring",
+  "loose_px": 2.4,
+  "loose_part": [
+   "forearm_l",
+   "body"
+  ],
+  "result": "REBAKED",
+  "gates": {
+   "cover": 1.0,
+   "same_deg": 0.0,
+   "scale": 0.676,
+   "sink": 0.0,
+   "baked": true
+  }
+ },
+ {
+  "to": "pw:boar_ysav",
+  "kind": "call",
+  "from": "pw:boar_ifs",
+  "from_clip": "roaring",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_ifs",
+  "kind": "eat",
+  "from": "pw:boar_ysav",
+  "from_clip": "graze",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_wa",
+  "kind": "eat",
+  "from": "pw:boar_ysav",
+  "from_clip": "graze",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_wa",
+  "kind": "idle",
+  "from": "pw:boar_ifs",
+  "from_clip": "idle_0",
+  "loose_px": 0.3,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_wa",
+  "kind": "jump",
+  "from": "pw:boar_ifs",
+  "from_clip": "jump",
+  "loose_px": 0.4,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_wa",
+  "kind": "run",
+  "from": "pw:boar_ifs",
+  "from_clip": "run",
+  "loose_px": 0.4,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_wa",
+  "kind": "sleep",
+  "from": "pw:boar_ysav",
+  "from_clip": "lay",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_ifs",
+  "kind": "walk",
+  "from": "pw:boar_wa",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:boar_ysav",
+  "kind": "walk",
+  "from": "pw:boar_wa",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "sf_nba:turkey",
+  "kind": "fly",
+  "from": "pw:turkey_wa",
+  "from_clip": "fly",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:turkey_wa",
+  "kind": "idle",
+  "from": "sf_nba:turkey",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:turkey_wa",
+  "kind": "walk",
+  "from": "sf_nba:turkey",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:zebra_ysav",
+  "kind": "idle",
+  "from": "pw:zebra_plains_anf",
+  "from_clip": "idle",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:zebra_plains_anf",
+  "kind": "sleep",
+  "from": "pw:zebra_ysav",
+  "from_clip": "lay",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:zebra_plains_anf",
+  "kind": "walk",
+  "from": "pw:zebra_wa",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ },
+ {
+  "to": "pw:zebra_ysav",
+  "kind": "walk",
+  "from": "pw:zebra_wa",
+  "from_clip": "walk",
+  "loose_px": 0.0,
+  "result": "OK"
+ }
+]

@@ -1,0 +1,370 @@
+[
+ {
+  "id": "pw:african_elephant_wa",
+  "clip": "shared_sleep",
+  "loose_px": 1.6,
+  "part": "trunk",
+  "from": "body",
+  "at_s": 0.917
+ },
+ {
+  "id": "pw:boar_wa",
+  "clip": "shared_attack",
+  "loose_px": 2.6,
+  "part": "snout",
+  "from": "body",
+  "at_s": 0.467
+ },
+ {
+  "id": "pw:boar_wa",
+  "clip": "shared_call",
+  "loose_px": 2.4,
+  "part": "forearm_l",
+  "from": "body",
+  "at_s": 0.562
+ },
+ {
+  "id": "pw:boar_ysav",
+  "clip": "shared_attack",
+  "loose_px": 3.6,
+  "part": "nail",
+  "from": "neck",
+  "at_s": 0.467
+ },
+ {
+  "id": "pw:croc_nile_anf",
+  "clip": "shared_swim",
+  "loose_px": 1.5,
+  "part": "hind_foot_r",
+  "from": "shin_r",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:crocodile_wa",
+  "clip": "shared_walk",
+  "loose_px": 1.7,
+  "part": "thigh_l",
+  "from": "body",
+  "at_s": 0.9
+ },
+ {
+  "id": "pw:elephant_african_anf",
+  "clip": "shared_sleep",
+  "loose_px": 2.5,
+  "part": "ear_l",
+  "from": "body",
+  "at_s": 0.417
+ },
+ {
+  "id": "pw:elephant_ysav",
+  "clip": "shared_sleep",
+  "loose_px": 1.3,
+  "part": "eat",
+  "from": "neck",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:gorilla_wa",
+  "clip": "shared_eat",
+  "loose_px": 2.0,
+  "part": "forearm_r",
+  "from": "body",
+  "at_s": 0.194
+ },
+ {
+  "id": "pw:gorilla_ytri",
+  "clip": "shared_eat",
+  "loose_px": 16.2,
+  "part": "skull",
+  "from": "body",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:gorilla_ytri",
+  "clip": "shared_run",
+  "loose_px": 3.4,
+  "part": "upper_arm_r",
+  "from": "leg3",
+  "at_s": 1.222
+ },
+ {
+  "id": "pw:gorilla_ytri",
+  "clip": "shared_sit",
+  "loose_px": 8.9,
+  "part": "skull",
+  "from": "body",
+  "at_s": 1.25
+ },
+ {
+  "id": "pw:gorilla_ytri",
+  "clip": "shared_walk",
+  "loose_px": 3.0,
+  "part": "upper_arm_r",
+  "from": "leg3",
+  "at_s": 0.333
+ },
+ {
+  "id": "pw:hyena_anf",
+  "clip": "shared_idle",
+  "loose_px": 2.1,
+  "part": "ear_r",
+  "from": "neck",
+  "at_s": 0.451
+ },
+ {
+  "id": "pw:hyena_ysav",
+  "clip": "shared_attack",
+  "loose_px": 1.9,
+  "part": "eat",
+  "from": "neck",
+  "at_s": 0.104
+ },
+ {
+  "id": "pw:komodo_dragon_ytri",
+  "clip": "shared_sit",
+  "loose_px": 1.6,
+  "part": "upper_arm_r",
+  "from": "leg3",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:lemur_ytri",
+  "clip": "shared_jump",
+  "loose_px": 21.2,
+  "part": "tail_3",
+  "from": "tail",
+  "at_s": 0.723
+ },
+ {
+  "id": "pw:leopard_jungle_anf",
+  "clip": "shared_call",
+  "loose_px": 1.0,
+  "part": "snout",
+  "from": "neck",
+  "at_s": 1.667
+ },
+ {
+  "id": "pw:leopard_panther_anf",
+  "clip": "shared_call",
+  "loose_px": 1.0,
+  "part": "snout",
+  "from": "neck",
+  "at_s": 1.667
+ },
+ {
+  "id": "pw:lion_wa",
+  "clip": "shared_run",
+  "loose_px": 3.5,
+  "part": "forearm_l",
+  "from": "skull",
+  "at_s": 0.167
+ },
+ {
+  "id": "pw:lion_wa",
+  "clip": "shared_walk",
+  "loose_px": 1.4,
+  "part": "forearm_r",
+  "from": "skull",
+  "at_s": 0.417
+ },
+ {
+  "id": "pw:lion_ysav",
+  "clip": "shared_sit",
+  "loose_px": 10.4,
+  "part": "tail",
+  "from": "body_2",
+  "at_s": 0.076
+ },
+ {
+  "id": "pw:lion_ysav",
+  "clip": "shared_walk",
+  "loose_px": 6.2,
+  "part": "tail",
+  "from": "body_2",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:lioness_ysav",
+  "clip": "shared_sit",
+  "loose_px": 9.7,
+  "part": "tail",
+  "from": "body_3",
+  "at_s": 0.076
+ },
+ {
+  "id": "pw:lioness_ysav",
+  "clip": "shared_walk",
+  "loose_px": 5.8,
+  "part": "tail",
+  "from": "body_3",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:meerkat_anf",
+  "clip": "shared_sit",
+  "loose_px": 7.0,
+  "part": "ear_l",
+  "from": "body",
+  "at_s": 0.116
+ },
+ {
+  "id": "pw:raccoon_anf",
+  "clip": "shared_run",
+  "loose_px": 3.2,
+  "part": "upper_arm_r",
+  "from": "thigh_r",
+  "at_s": 0.33
+ },
+ {
+  "id": "pw:raccoon_anf",
+  "clip": "shared_walk",
+  "loose_px": 1.5,
+  "part": "upper_arm_r",
+  "from": "thigh_r",
+  "at_s": 0.34
+ },
+ {
+  "id": "pw:red_panda_wa",
+  "clip": "shared_sit",
+  "loose_px": 1.4,
+  "part": "tail",
+  "from": "body",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:rhino_wa",
+  "clip": "shared_idle",
+  "loose_px": 1.3,
+  "part": "horn",
+  "from": "neck",
+  "at_s": 2.1
+ },
+ {
+  "id": "pw:rhino_wa",
+  "clip": "shared_sleep",
+  "loose_px": 2.2,
+  "part": "horn",
+  "from": "neck",
+  "at_s": 6.73
+ },
+ {
+  "id": "pw:rhino_white_anf",
+  "clip": "shared_eat",
+  "loose_px": 3.5,
+  "part": "horn_2",
+  "from": "neck",
+  "at_s": 2.5
+ },
+ {
+  "id": "pw:rhino_white_anf",
+  "clip": "shared_sleep",
+  "loose_px": 1.2,
+  "part": "horn_2",
+  "from": "neck",
+  "at_s": 6.73
+ },
+ {
+  "id": "pw:skunk_ytri",
+  "clip": "shared_attack",
+  "loose_px": 1.5,
+  "part": "upper_arm_r",
+  "from": "body",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:skunk_ytri",
+  "clip": "shared_idle",
+  "loose_px": 8.4,
+  "part": "skull",
+  "from": "skull_2",
+  "at_s": 0.365
+ },
+ {
+  "id": "pw:skunk_ytri",
+  "clip": "shared_sleep",
+  "loose_px": 8.7,
+  "part": "skull",
+  "from": "skull_2",
+  "at_s": 1.867
+ },
+ {
+  "id": "pw:swan_wwa",
+  "clip": "shared_attack",
+  "loose_px": 7.3,
+  "part": "head",
+  "from": "neck_2",
+  "at_s": 0.397
+ },
+ {
+  "id": "pw:tiger_bengal_anf",
+  "clip": "shared_sleep",
+  "loose_px": 1.2,
+  "part": "ear_r",
+  "from": "neck",
+  "at_s": 0.917
+ },
+ {
+  "id": "pw:white_lion_ysav",
+  "clip": "shared_sit",
+  "loose_px": 10.4,
+  "part": "tail",
+  "from": "body_2",
+  "at_s": 0.076
+ },
+ {
+  "id": "pw:white_lion_ysav",
+  "clip": "shared_walk",
+  "loose_px": 6.2,
+  "part": "tail",
+  "from": "body_2",
+  "at_s": 0.083
+ },
+ {
+  "id": "pw:white_lioness_ysav",
+  "clip": "shared_attack",
+  "loose_px": 2.6,
+  "part": "upper_arm_l",
+  "from": "body_2",
+  "at_s": 0.16
+ },
+ {
+  "id": "pw:white_lioness_ysav",
+  "clip": "shared_sit",
+  "loose_px": 9.7,
+  "part": "tail",
+  "from": "body_3",
+  "at_s": 0.076
+ },
+ {
+  "id": "pw:white_lioness_ysav",
+  "clip": "shared_walk",
+  "loose_px": 5.8,
+  "part": "tail",
+  "from": "body_3",
+  "at_s": 0.083
+ },
+ {
+  "id": "sf_nba:coyote",
+  "clip": "shared_sit",
+  "loose_px": 1.9,
+  "part": "skull",
+  "from": "body",
+  "at_s": 0.083
+ },
+ {
+  "id": "sf_nba:red_panda",
+  "clip": "shared_sit",
+  "loose_px": 2.2,
+  "part": "tail",
+  "from": "body",
+  "at_s": 0.083
+ },
+ {
+  "id": "sf_nba:skunk",
+  "clip": "shared_sleep",
+  "loose_px": 2.3,
+  "part": "upper_arm_l",
+  "from": "body",
+  "at_s": 0.8
+ }
+]

@@ -1,0 +1,341 @@
+{
+ "locators_removed": 106,
+ "entities": [
+  {
+   "entity": "minecraft:armadillo",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 12,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "pw:lion_wa",
+   "renamed": {
+    "female_lion": "head_female_lion"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:alligator",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 8,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:beaver",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 14,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:black_bear",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 13,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:blobfish",
+   "renamed": {
+    "land": "head_land"
+   },
+   "channels_duplicated": 1,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:bluejay",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:boar",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 11,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:canary",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:capybara",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 12,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:cardinal",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:crow",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 6,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:deer",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 6,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:duck",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 9,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:eagle",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:elephant",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 9,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:female_lion",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 13,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:finch",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:flamingo",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 12,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:giraffe",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 10,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:goose",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 12,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:grizzly_bear",
+   "renamed": {
+    "baby": "skullRot"
+   },
+   "channels_duplicated": 2,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:hippo",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 12,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:kangaroo",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 13,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:kiwi",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 8,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:lion",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 13,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:male_lion",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 13,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:mammoth",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 9,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:moose",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 15,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:ostrich",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 12,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:otter",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 8,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:raven",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 6,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:robin",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:seal",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 8,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:skunk",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 17,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:sparrow",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:tiger",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 10,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:tortoise",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 7,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:toucan",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 6,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:vulture",
+   "renamed": {
+    "baby": "skull"
+   },
+   "channels_duplicated": 11,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:whale",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 3,
+   "visibility_duplicated": 0
+  },
+  {
+   "entity": "sf_nba:zebra",
+   "renamed": {
+    "baby": "head_baby"
+   },
+   "channels_duplicated": 5,
+   "visibility_duplicated": 0
+  }
+ ]
+}

@@ -1,0 +1,312 @@
+{
+ "fox": {
+  "identifier": "geometry.pw_fox",
+  "file": "pw_fox.geo.json",
+  "stem": "fox",
+  "bones": 16,
+  "cubes": 11,
+  "mapping": {},
+  "unbound": [],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {
+   "head": [
+    -1.0,
+    2.498,
+    0.0
+   ],
+   "body": [
+    0,
+    -8.5,
+    -9.5
+   ],
+   "leg1": [
+    0.1,
+    0.0,
+    0.0
+   ],
+   "leg2": [
+    -0.1,
+    0.0,
+    0.0
+   ],
+   "leg3": [
+    -0.6,
+    0.0,
+    0.0
+   ],
+   "leg4": [
+    0.6,
+    0.0,
+    0.0
+   ]
+  },
+  "texture": [
+   48,
+   32
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 3.21,
+   "visible_bounds_height": 2.51,
+   "visible_bounds_offset": [
+    0.0,
+    0.75,
+    0.0
+   ],
+   "mojang_box": [
+    -0.5,
+    2.0,
+    3.0
+   ]
+  }
+ },
+ "goat": {
+  "identifier": "geometry.pw_goat",
+  "file": "pw_goat.geo.json",
+  "stem": "goat",
+  "bones": 25,
+  "cubes": 17,
+  "mapping": {},
+  "unbound": [],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {
+   "body": [
+    -0.0,
+    -0.228,
+    0.0
+   ],
+   "leg1": [
+    -0.2,
+    0.0,
+    -1.283
+   ],
+   "leg2": [
+    0.2,
+    0.0,
+    1.283
+   ],
+   "leg3": [
+    -0.2,
+    0.0,
+    0.0
+   ],
+   "leg4": [
+    0.198,
+    0.025,
+    0.033
+   ]
+  },
+  "texture": [
+   64,
+   64
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 3.0,
+   "visible_bounds_height": 2.62,
+   "visible_bounds_offset": [
+    0.0,
+    0.79,
+    0.0
+   ],
+   "mojang_box": [
+    -0.4,
+    1.4,
+    2.0
+   ]
+  }
+ },
+ "cat": {
+  "identifier": "geometry.pw_cat",
+  "file": "pw_cat.geo.json",
+  "stem": "cat",
+  "bones": 19,
+  "cubes": 13,
+  "mapping": {},
+  "unbound": [
+   "pw_render"
+  ],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {
+   "body": [
+    -0.0,
+    2.3,
+    0.0
+   ],
+   "front_left_leg": [
+    0.1,
+    0.0,
+    -0.0
+   ],
+   "front_right_leg": [
+    -0.1,
+    0.0,
+    -0.0
+   ],
+   "back_left_leg": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "back_right_leg": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "texture": [
+   128,
+   64
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 4.0,
+   "visible_bounds_height": 2.52,
+   "visible_bounds_offset": [
+    0.0,
+    0.75,
+    0.0
+   ],
+   "mojang_box": [
+    0.0,
+    2.0,
+    4.0
+   ]
+  }
+ },
+ "ocelot": {
+  "identifier": "geometry.pw_ocelot",
+  "file": "pw_ocelot.geo.json",
+  "stem": "ocelot",
+  "bones": 19,
+  "cubes": 13,
+  "mapping": {},
+  "unbound": [],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {
+   "body": [
+    -0.0,
+    2.3,
+    0.0
+   ],
+   "front_left_leg": [
+    0.1,
+    0.0,
+    -0.0
+   ],
+   "front_right_leg": [
+    -0.1,
+    0.0,
+    -0.0
+   ],
+   "back_left_leg": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "back_right_leg": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "texture": [
+   128,
+   64
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 3.74,
+   "visible_bounds_height": 1.8,
+   "visible_bounds_offset": [
+    0.0,
+    0.38,
+    0.0
+   ],
+   "mojang_box": [
+    0.0,
+    1.0,
+    2.5
+   ]
+  }
+ },
+ "cod": {
+  "identifier": "geometry.cod.patrix",
+  "file": "cod.geo.json",
+  "stem": "cod",
+  "bones": 17,
+  "cubes": 11,
+  "mapping": {},
+  "unbound": [
+   "pw_render_roll",
+   "pw_render_yaw"
+  ],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {},
+  "texture": [
+   32,
+   32
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 2.13,
+   "visible_bounds_height": 1.56,
+   "visible_bounds_offset": [
+    0.0,
+    0.22,
+    0.0
+   ],
+   "mojang_box": null
+  }
+ },
+ "iron_golem": {
+  "identifier": "geometry.pw_iron_golem",
+  "file": "pw_iron_golem.geo.json",
+  "stem": "iron_golem",
+  "bones": 26,
+  "cubes": 23,
+  "mapping": {},
+  "unbound": [
+   "pw_render",
+   "root"
+  ],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {
+   "right_arm": [
+    -0.0,
+    -2.0,
+    0.01
+   ],
+   "left_arm": [
+    -0.0,
+    -2.0,
+    0.002
+   ]
+  },
+  "texture": [
+   128,
+   128
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 3.0,
+   "visible_bounds_height": 3.7,
+   "visible_bounds_offset": [
+    0.0,
+    1.34,
+    0.0
+   ],
+   "mojang_box": [
+    0.0,
+    3.0,
+    3.0
+   ]
+  }
+ }
+}

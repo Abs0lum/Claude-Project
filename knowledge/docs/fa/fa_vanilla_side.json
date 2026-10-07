@@ -1,0 +1,1129 @@
+{
+ "parrot": {
+  "vanilla_file": "parrot.entity.json",
+  "geometry": {
+   "default": "geometry.parrot"
+  },
+  "textures": [
+   "blue",
+   "green",
+   "red_blue",
+   "yellow_blue",
+   "grey"
+  ],
+  "animations": {
+   "moving": "animation.parrot.moving",
+   "base": "animation.parrot.base",
+   "dance": "animation.parrot.dance",
+   "sitting": "animation.parrot.sitting",
+   "flying": "animation.parrot.flying",
+   "standing": "animation.parrot.standing",
+   "look_at_target": "animation.common.look_at_target"
+  },
+  "controllers": [
+   {
+    "setup": "controller.animation.parrot.setup"
+   },
+   {
+    "move": "controller.animation.parrot.move"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.parrot"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 1,
+    "width": 0.5
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.fly",
+    "minecraft:navigation.fly"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "bat": {
+  "vanilla_file": "bat.entity.json",
+  "geometry": {
+   "default": "geometry.bat_v2"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "resting": "animation.bat.resting",
+   "flying": "animation.bat.flying"
+  },
+  "controllers": [
+   {
+    "move": "controller.animation.bat.move"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.bat"
+  ],
+  "scale": "1.0",
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.9,
+    "width": 0.5
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.basic",
+    "minecraft:navigation.float"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "allay": {
+  "vanilla_file": "allay.entity.json",
+  "geometry": {
+   "default": "geometry.allay"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "idle": "animation.allay.idle",
+   "fly": "animation.allay.fly",
+   "hold_item": "animation.allay.hold_item",
+   "dance": "animation.allay.dance",
+   "hold_item_fly": "animation.allay.hold_item_fly",
+   "look_at_target_default": "animation.allay.look_at_target.default"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.allay.general"
+   },
+   {
+    "look_at_target": "controller.animation.allay.look_at_target"
+   },
+   {
+    "holding": "controller.animation.allay.holding"
+   },
+   {
+    "dancing": "controller.animation.allay.dancing"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.allay"
+  ],
+  "scale": null,
+  "enable_attachables": true,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.6,
+    "width": 0.35
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.hover",
+    "minecraft:navigation.hover"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "vex": {
+  "vanilla_file": "vex.entity.json",
+  "geometry": {
+   "default": "geometry.vex.v1.8"
+  },
+  "textures": [
+   "default",
+   "charging"
+  ],
+  "animations": {
+   "look_at_target_default": "animation.humanoid.look_at_target.default",
+   "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+   "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+   "move": "animation.humanoid.move",
+   "riding.arms": "animation.humanoid.riding.arms",
+   "riding.legs": "animation.humanoid.riding.legs",
+   "holding": "animation.humanoid.holding",
+   "brandish_spear": "animation.humanoid.brandish_spear",
+   "charging": "animation.humanoid.charging",
+   "attack.rotations": "animation.humanoid.attack.rotations",
+   "sneaking": "animation.humanoid.sneaking",
+   "bob": "animation.humanoid.bob",
+   "damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+   "bow_and_arrow": "animation.humanoid.bow_and_arrow",
+   "swimming": "animation.humanoid.swimming",
+   "use_item_progress": "animation.humanoid.use_item_progress",
+   "vex_move": "animation.vex.move",
+   "vex_charge": "animation.vex.charge",
+   "vex_idle": "animation.vex.idle"
+  },
+  "controllers": [
+   {
+    "look_at_target": "controller.animation.humanoid.look_at_target"
+   },
+   {
+    "vex_charge": "controller.animation.vex.charge"
+   },
+   {
+    "vex_idle": "controller.animation.vex.idle"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.vex"
+  ],
+  "scale": "1.0",
+  "enable_attachables": null,
+  "min_engine": "1.8.0",
+  "bp": {
+   "collision": {
+    "height": 0.8,
+    "width": 0.4
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.basic",
+    "minecraft:navigation.walk"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "phantom": {
+  "vanilla_file": "phantom.entity.json",
+  "geometry": {
+   "default": "geometry.phantom"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "phantom_base_pose": "animation.phantom.base_pose",
+   "move": "animation.phantom.move",
+   "phantom_base_pose_controller": "controller.animation.phantom.base_pose"
+  },
+  "controllers": [
+   {
+    "phantom_base_pose": "controller.animation.phantom.base_pose"
+   },
+   {
+    "move": "controller.animation.phantom.move"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.phantom"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.5,
+    "width": 0.9
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.glide"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "ghast": {
+  "vanilla_file": "ghast.entity.json",
+  "geometry": {
+   "default": "geometry.ghast"
+  },
+  "textures": [
+   "default",
+   "shooting"
+  ],
+  "animations": {
+   "move": "animation.ghast.move",
+   "scale": "animation.ghast.scale"
+  },
+  "controllers": [
+   {
+    "move": "controller.animation.ghast.move"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.ghast"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 4,
+    "width": 4.02
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:navigation.float"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "happy_ghast": {
+  "vanilla_file": "happy_ghast.entity.json",
+  "geometry": {
+   "default": "geometry.happy_ghast",
+   "ropes": "geometry.happy_ghast_ropes"
+  },
+  "textures": [
+   "ghastling",
+   "happy_ghast",
+   "ropes"
+  ],
+  "animations": {
+   "move": "animation.happy_ghast.move",
+   "move_controller": "controller.animation.happy_ghast.move",
+   "scale": "animation.happy_ghast.scale",
+   "scale_controller": "controller.animation.happy_ghast.scale"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.happy_ghast",
+   "controller.render.happy_ghast_ropes"
+  ],
+  "scale": null,
+  "enable_attachables": true,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "width": 4.0,
+    "height": 4.0
+   },
+   "scale": null,
+   "movement": [],
+   "groups_with_scale": [
+    "minecraft:baby"
+   ],
+   "is_baby_groups": [
+    "minecraft:baby"
+   ]
+  }
+ },
+ "blaze": {
+  "vanilla_file": "blaze.entity.json",
+  "geometry": {
+   "default": "geometry.blaze"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "look_at_target": "animation.common.look_at_target",
+   "move": "animation.blaze.move"
+  },
+  "controllers": [
+   {
+    "move": "controller.animation.blaze.move"
+   },
+   {
+    "flame": "controller.animation.blaze.flame"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.blaze"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": "1.8.0",
+  "bp": {
+   "collision": {
+    "height": 1.8,
+    "width": 0.5
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.basic",
+    "minecraft:navigation.walk"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "breeze": {
+  "vanilla_file": "breeze.entity.json",
+  "geometry": {
+   "default": "geometry.breeze",
+   "breeze_eyes": "geometry.breeze_eyes",
+   "breeze_wind_top": "geometry.breeze_wind_top",
+   "breeze_wind_mid": "geometry.breeze_wind_mid",
+   "breeze_wind_bottom": "geometry.breeze_wind_bottom"
+  },
+  "textures": [
+   "default",
+   "breeze_wind",
+   "breeze_eyes"
+  ],
+  "animations": {
+   "look_at": "animation.common.look_at_target",
+   "idle": "animation.breeze.idle",
+   "jump": "animation.breeze.jump",
+   "shoot": "animation.breeze.shoot",
+   "slide": "animation.breeze.slide",
+   "idle_ground_particles": "animation.breeze.idle_ground_particles",
+   "slide_ground_particles": "animation.breeze.slide_ground_particles",
+   "whirl_sound": "animation.breeze.whirl_sound",
+   "idle_ground_sound": "animation.breeze.idle_ground_sound",
+   "look_at_controller": "controller.animation.breeze.look_at",
+   "idle_controller": "controller.animation.breeze.idle",
+   "move_controller": "controller.animation.breeze.move",
+   "ground_particles_controller": "controller.animation.breeze.ground_particles",
+   "shoot_controller": "controller.animation.breeze.shoot",
+   "jump_controller": "controller.animation.breeze.jump",
+   "idle_ground_sound_controller": "controller.animation.breeze.idle_ground_sound"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.breeze",
+   "controller.render.breeze_eyes",
+   "controller.render.breeze_wind_top",
+   "controller.render.breeze_wind_mid",
+   "controller.render.breeze_wind_bottom"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 1.77,
+    "width": 0.6
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.basic",
+    "minecraft:navigation.walk"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "wither": {
+  "vanilla_file": "wither.entity.json",
+  "geometry": {
+   "default": "geometry.witherBoss",
+   "armor": "geometry.witherBoss.armor.v1.8"
+  },
+  "textures": [
+   "default",
+   "armor_white",
+   "armor_blue",
+   "invulnerable"
+  ],
+  "animations": {
+   "scale": "animation.wither_boss.scale",
+   "move": "animation.wither_boss.move",
+   "look_at_target": "animation.wither_boss.look_at_target"
+  },
+  "controllers": [
+   {
+    "move": "controller.animation.wither_boss.move"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.wither_boss",
+   "controller.render.wither_boss_armor_white",
+   "controller.render.wither_boss_armor_blue"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": "1.8.0",
+  "bp": {
+   "collision": {
+    "height": 3,
+    "width": 1
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.basic",
+    "minecraft:navigation.walk"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "squid": {
+  "vanilla_file": "squid.entity.json",
+  "geometry": {
+   "default": "geometry.squid",
+   "baby": "geometry.squid.baby"
+  },
+  "textures": [
+   "default",
+   "baby"
+  ],
+  "animations": {
+   "move": "animation.squid.move",
+   "squid_rotate": "animation.squid.rotate"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.squid.v2"
+  ],
+  "scale": "query.is_baby ? 2.0 : 1.0",
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.8,
+    "width": 0.8
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.basic",
+    "minecraft:navigation.walk"
+   ],
+   "groups_with_scale": [
+    "minecraft:squid_baby"
+   ],
+   "is_baby_groups": [
+    "minecraft:squid_baby"
+   ]
+  }
+ },
+ "glow_squid": {
+  "vanilla_file": "glow_squid.entity.json",
+  "geometry": {
+   "default": "geometry.squid",
+   "baby": "geometry.squid.baby"
+  },
+  "textures": [
+   "default",
+   "baby"
+  ],
+  "animations": {
+   "move": "animation.squid.move",
+   "squid_rotate": "animation.squid.rotate"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.glow_squid.v2"
+  ],
+  "scale": "query.is_baby ? 2.0 : 1.0",
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.8,
+    "width": 0.8
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.basic",
+    "minecraft:navigation.walk"
+   ],
+   "groups_with_scale": [
+    "minecraft:squid_baby"
+   ],
+   "is_baby_groups": [
+    "minecraft:squid_baby"
+   ]
+  }
+ },
+ "cod": {
+  "vanilla_file": "cod.entity.json",
+  "geometry": {
+   "default": "geometry.cod"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "flop": "animation.cod.flop",
+   "swim": "animation.cod.swim"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.fish.general"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.cod"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": null
+ },
+ "salmon": {
+  "vanilla_file": "salmon.entity.json",
+  "geometry": {
+   "default": "geometry.salmon"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "flop": "animation.salmon.flop",
+   "swim": "animation.salmon.swim"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.fish.general"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.salmon"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.5,
+    "width": 0.5
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.sway",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [
+    "scale_large",
+    "scale_normal",
+    "scale_small"
+   ],
+   "is_baby_groups": []
+  }
+ },
+ "pufferfish": {
+  "vanilla_file": "pufferfish.entity.json",
+  "geometry": {
+   "default": "geometry.pufferfish.small.v1.8",
+   "mid": "geometry.pufferfish.mid.v1.8",
+   "large": "geometry.pufferfish.large.v1.8"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "flop": "animation.pufferfish.flop",
+   "swim": "animation.pufferfish.swim",
+   "general": "controller.animation.fish.general"
+  },
+  "controllers": null,
+  "render_controllers": [
+   {
+    "controller.render.pufferfish.small": "query.variant == 0"
+   },
+   {
+    "controller.render.pufferfish.medium": "query.variant == 1"
+   },
+   {
+    "controller.render.pufferfish.large": "query.variant == 2"
+   }
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": "1.8.0",
+  "bp": {
+   "collision": {
+    "height": 0.8,
+    "width": 0.8
+   },
+   "scale": 1.2,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.sway",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "tropicalfish": {
+  "vanilla_file": "tropicalfish.entity.json",
+  "geometry": {
+   "typeA": "geometry.tropicalfish_a",
+   "typeB": "geometry.tropicalfish_b"
+  },
+  "textures": [
+   "typeA",
+   "typeB",
+   "aPattern1",
+   "aPattern2",
+   "aPattern3",
+   "aPattern4",
+   "aPattern5",
+   "aPattern6",
+   "bPattern1",
+   "bPattern2",
+   "bPattern3",
+   "bPattern4"
+  ],
+  "animations": {
+   "flop": "animation.tropicalfish.flop",
+   "swim": "animation.tropicalfish.swim"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.fish.general"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.tropicalfish"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.4,
+    "width": 0.4
+   },
+   "scale": 1.3,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.sway",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "turtle": {
+  "vanilla_file": "turtle.entity.json",
+  "geometry": {
+   "default": "geometry.turtle",
+   "baby": "geometry.turtle.baby"
+  },
+  "textures": [
+   "default",
+   "baby"
+  ],
+  "animations": {
+   "general": "animation.turtle.general",
+   "move": "animation.turtle.move",
+   "ground_move": "animation.turtle.ground_move",
+   "look_at_target": "animation.common.look_at_target",
+   "move_baby": "animation.turtle.baby_move"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.turtle.general"
+   },
+   {
+    "move": "controller.animation.turtle.move"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.turtle.v2"
+  ],
+  "scale": "query.is_baby ? (1 / 0.16) : 1.0",
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": null,
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:navigation.generic",
+    "minecraft:movement.amphibious"
+   ],
+   "groups_with_scale": [
+    "minecraft:baby"
+   ],
+   "is_baby_groups": [
+    "minecraft:baby"
+   ]
+  }
+ },
+ "axolotl": {
+  "vanilla_file": "axolotl.entity.json",
+  "geometry": {
+   "default": "geometry.axolotl",
+   "baby": "geometry.axolotl.baby"
+  },
+  "textures": [
+   "blue",
+   "cyan",
+   "gold",
+   "lucy",
+   "wild",
+   "baby_blue",
+   "baby_cyan",
+   "baby_gold",
+   "baby_lucy",
+   "baby_wild"
+  ],
+  "animations": {
+   "idle_float": "animation.axolotl.idle_underwater",
+   "idle_floor": "animation.axolotl.idle_floor",
+   "idle_floor_water": "animation.axolotl.idle_floor_underwater",
+   "swim": "animation.axolotl.swim",
+   "walk_floor": "animation.axolotl.walk_floor",
+   "walk_floor_water": "animation.axolotl.walk_floor_underwater",
+   "play_dead": "animation.axolotl.play_dead",
+   "swim_angle": "animation.axolotl.swim_angle",
+   "look_at_target": "animation.common.look_at_target",
+   "baby_idle_floor": "animation.axolotl.baby_idle_floor",
+   "baby_idle_floor_water": "animation.axolotl.baby_idle_floor_underwater",
+   "baby_idle_float": "animation.axolotl.baby_idle_underwater",
+   "baby_swim": "animation.axolotl.baby_swim",
+   "baby_walk_floor": "animation.axolotl.baby_walk_floor",
+   "baby_walk_floor_water": "animation.axolotl.baby_walk_floor_underwater"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.axolotl.general"
+   },
+   {
+    "move": "controller.animation.axolotl.move.v2"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.axolotl.v2"
+  ],
+  "scale": "query.is_baby ? 2.0 : 1.0",
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "width": 0.75,
+    "height": 0.42
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:navigation.generic",
+    "minecraft:movement.amphibious",
+    "minecraft:movement"
+   ],
+   "groups_with_scale": [
+    "axolotl_baby"
+   ],
+   "is_baby_groups": [
+    "axolotl_baby"
+   ]
+  }
+ },
+ "frog": {
+  "vanilla_file": "frog.entity.json",
+  "geometry": {
+   "default": "geometry.frog"
+  },
+  "textures": [
+   "temperate",
+   "cold",
+   "warm"
+  ],
+  "animations": {
+   "croak": "animation.frog.croak",
+   "jump": "animation.frog.jump",
+   "tongue": "animation.frog.tongue",
+   "walk": "animation.frog.walk",
+   "swim": "animation.frog.swim",
+   "idle_water": "animation.frog.idle.water",
+   "look_at_target": "animation.common.look_at_target"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.frog.general"
+   },
+   {
+    "croaking": "controller.animation.frog.croaking"
+   },
+   {
+    "eat_mob": "controller.animation.frog.eat_mob"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.frog"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "height": 0.55,
+    "width": 0.5
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.amphibious",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "tadpole": {
+  "vanilla_file": "tadpole.entity.json",
+  "geometry": {
+   "default": "geometry.tadpole"
+  },
+  "textures": [
+   "default"
+  ],
+  "animations": {
+   "swim": "animation.tadpole.swim"
+  },
+  "controllers": [
+   {
+    "general": "controller.animation.tadpole.general"
+   }
+  ],
+  "render_controllers": [
+   "controller.render.tadpole"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "width": 0.8,
+    "height": 0.6
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:navigation.generic",
+    "minecraft:movement.sway",
+    "minecraft:movement"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "guardian": {
+  "vanilla_file": "guardian.entity.json",
+  "geometry": {
+   "default": "geometry.guardian.v1.8",
+   "ghost": "geometry.guardian"
+  },
+  "textures": [
+   "default",
+   "elder",
+   "beam"
+  ],
+  "animations": {
+   "setup": "animation.guardian.setup",
+   "spikes": "animation.guardian.spikes",
+   "swim": "animation.guardian.swim",
+   "look_at_target": "animation.common.look_at_target",
+   "move_eye": "animation.guardian.move_eye"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.guardian"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": "1.8.0",
+  "bp": {
+   "collision": {
+    "height": 0.85,
+    "width": 0.85
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.sway",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "elder_guardian": {
+  "vanilla_file": "elder_guardian.entity.json",
+  "geometry": {
+   "default": "geometry.guardian.v1.8",
+   "ghost": "geometry.guardian"
+  },
+  "textures": [
+   "default",
+   "elder",
+   "beam"
+  ],
+  "animations": {
+   "setup": "animation.guardian.setup",
+   "spikes": "animation.guardian.spikes",
+   "swim": "animation.guardian.swim",
+   "look_at_target": "animation.common.look_at_target",
+   "move_eye": "animation.guardian.move_eye"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.guardian"
+  ],
+  "scale": "2.35",
+  "enable_attachables": null,
+  "min_engine": "1.8.0",
+  "bp": {
+   "collision": {
+    "height": 1.99,
+    "width": 1.99
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:movement.sway",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ },
+ "dolphin": {
+  "vanilla_file": "dolphin.entity.json",
+  "geometry": {
+   "default": "geometry.dolphin",
+   "baby": "geometry.dolphin.baby"
+  },
+  "textures": [
+   "default",
+   "baby"
+  ],
+  "animations": {
+   "move": "animation.dolphin.move",
+   "move_controller": "controller.animation.dolphin.general"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.dolphin.v2"
+  ],
+  "scale": "query.is_baby ? (1 / 0.65) : 1.0",
+  "enable_attachables": null,
+  "min_engine": null,
+  "bp": {
+   "collision": {
+    "width": 0.9,
+    "height": 0.6
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [
+    "dolphin_baby"
+   ],
+   "is_baby_groups": [
+    "dolphin_baby"
+   ]
+  }
+ },
+ "nautilus": {
+  "vanilla_file": "nautilus.entity.json",
+  "geometry": {
+   "default": "geometry.nautilus",
+   "baby": "geometry.nautilus.baby",
+   "saddle": "geometry.nautilus_saddle",
+   "armor": "geometry.nautilus_armor"
+  },
+  "textures": [
+   "default",
+   "baby",
+   "saddle",
+   "armor_none",
+   "armor_copper",
+   "armor_iron",
+   "armor_gold",
+   "armor_diamond",
+   "armor_netherite"
+  ],
+  "animations": {
+   "breathe": "animation.nautilus.breathe",
+   "swim": "animation.nautilus.swim",
+   "look_at_target": "animation.nautilus.look_at_target",
+   "dashing": "animation.nautilus.dashing",
+   "sound_controller": "controller.animation.nautilus.sound",
+   "general_controller": "controller.animation.nautilus.general"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.nautilus",
+   "controller.render.nautilus_saddle",
+   "controller.render.nautilus_armor"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": "1.12.0",
+  "bp": {
+   "collision": null,
+   "scale": null,
+   "movement": [
+    "minecraft:navigation.generic",
+    "minecraft:movement.sway"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": [
+    "minecraft:nautilus_baby"
+   ]
+  }
+ },
+ "zombie_nautilus": {
+  "vanilla_file": "zombie_nautilus.entity.json",
+  "geometry": {
+   "default": "geometry.nautilus",
+   "coral": "geometry.zombie_nautilus_coral",
+   "saddle": "geometry.nautilus_saddle",
+   "armor": "geometry.nautilus_armor"
+  },
+  "textures": [
+   "default",
+   "coral",
+   "saddle",
+   "armor_none",
+   "armor_copper",
+   "armor_iron",
+   "armor_gold",
+   "armor_diamond",
+   "armor_netherite"
+  ],
+  "animations": {
+   "breathe": "animation.nautilus.breathe",
+   "swim": "animation.nautilus.swim",
+   "look_at_target": "animation.nautilus.look_at_target",
+   "dashing": "animation.nautilus.dashing",
+   "sound_controller": "controller.animation.nautilus.sound",
+   "general_controller": "controller.animation.nautilus.general"
+  },
+  "controllers": null,
+  "render_controllers": [
+   "controller.render.zombie_nautilus",
+   "controller.render.nautilus_saddle",
+   "controller.render.nautilus_armor"
+  ],
+  "scale": null,
+  "enable_attachables": null,
+  "min_engine": "1.12.0",
+  "bp": {
+   "collision": {
+    "height": 0.95,
+    "width": 0.875
+   },
+   "scale": null,
+   "movement": [
+    "minecraft:movement.sway",
+    "minecraft:navigation.generic"
+   ],
+   "groups_with_scale": [],
+   "is_baby_groups": []
+  }
+ }
+}

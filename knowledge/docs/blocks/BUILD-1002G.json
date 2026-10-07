@@ -1,0 +1,25 @@
+{
+ "images": 69,
+ "rewritten": {
+  "RP-04": {
+   "color": 36,
+   "normal": 36,
+   "mers": 36
+  },
+  "RP-05": {
+   "color": 1,
+   "normal": 1,
+   "mers": 1
+  },
+  "RP-10": {
+   "color": 32,
+   "normal": 32,
+   "mers": 32
+  }
+ },
+ "dirs": {
+  "RP-04": "rp04-152",
+  "RP-05": "rp05-57",
+  "RP-10": "rp10-150"
+ }
+}

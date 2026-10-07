@@ -1,0 +1,36 @@
+{
+ "changed": [
+  "entity/cat.entity.json",
+  "entity/cod.entity.json",
+  "entity/fox.entity.json",
+  "entity/goat.entity.json",
+  "entity/iron_golem.entity.json",
+  "entity/ocelot.entity.json",
+  "models/entity/cod.geo.json",
+  "models/entity/pw_cat.geo.json",
+  "models/entity/pw_fox.geo.json",
+  "models/entity/pw_goat.geo.json"
+ ],
+ "added": [
+  "animations/pw_cat_jem.animation.json",
+  "animations/pw_cod_jem.animation.json",
+  "animations/pw_fox_jem.animation.json",
+  "animations/pw_goat_jem.animation.json",
+  "animations/pw_iron_golem_jem.animation.json",
+  "animations/pw_ocelot_jem.animation.json",
+  "models/entity/pw_iron_golem.geo.json",
+  "models/entity/pw_ocelot.geo.json"
+ ],
+ "removed": [],
+ "ports": {
+  "fox": [
+   "head",
+   "tail_rotation"
+  ],
+  "goat": [],
+  "cat": [],
+  "ocelot": [],
+  "cod": [],
+  "iron_golem": []
+ }
+}

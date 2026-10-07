@@ -1,0 +1,38 @@
+# p21 — shared_ clips predicted to pull a part loose (static audit, 17:28 CT 10-01)
+
+These are my PREDICTIONS from the files (posed at 6 moments; a part's gap to what it hangs on grows > 1 px). Your eyes decide.
+Renders of 8 of the worst: SHARED-LOOSE-1.png — 6 clearly broken (lemur shared_jump, gorilla (YTri) shared_eat, lion (YSav) shared_sit, skunk (YTri) shared_idle, meerkat shared_sit, swan (WWA) shared_attack).
+
+In p21 these can be marked FAIL / drop without a long look. p22 fixes them automatically (re-copied the careful way, or removed).
+
+- **pw:african_elephant_wa**: shared_sleep (1.6 px, trunk)
+- **pw:boar_wa**: shared_attack (2.6 px, snout); shared_call (2.4 px, forearm_l)
+- **pw:boar_ysav**: shared_attack (3.6 px, nail)
+- **pw:croc_nile_anf**: shared_swim (1.5 px, hind_foot_r)
+- **pw:crocodile_wa**: shared_walk (1.7 px, thigh_l)
+- **pw:elephant_african_anf**: shared_sleep (2.5 px, ear_l)
+- **pw:elephant_ysav**: shared_sleep (1.3 px, eat)
+- **pw:gorilla_wa**: shared_eat (2.0 px, forearm_r)
+- **pw:gorilla_ytri**: shared_eat (16.2 px, skull); shared_run (3.4 px, upper_arm_r); shared_sit (8.9 px, skull); shared_walk (3.0 px, upper_arm_r)
+- **pw:hyena_anf**: shared_idle (2.1 px, ear_r)
+- **pw:hyena_ysav**: shared_attack (1.9 px, eat)
+- **pw:komodo_dragon_ytri**: shared_sit (1.6 px, upper_arm_r)
+- **pw:lemur_ytri**: shared_jump (21.2 px, tail_3)
+- **pw:leopard_jungle_anf**: shared_call (1.0 px, snout)
+- **pw:leopard_panther_anf**: shared_call (1.0 px, snout)
+- **pw:lion_wa**: shared_run (3.5 px, forearm_l); shared_walk (1.4 px, forearm_r)
+- **pw:lion_ysav**: shared_sit (10.4 px, tail); shared_walk (6.2 px, tail)
+- **pw:lioness_ysav**: shared_sit (9.7 px, tail); shared_walk (5.8 px, tail)
+- **pw:meerkat_anf**: shared_sit (7.0 px, ear_l)
+- **pw:raccoon_anf**: shared_run (3.2 px, upper_arm_r); shared_walk (1.5 px, upper_arm_r)
+- **pw:red_panda_wa**: shared_sit (1.4 px, tail)
+- **pw:rhino_wa**: shared_idle (1.3 px, horn); shared_sleep (2.2 px, horn)
+- **pw:rhino_white_anf**: shared_eat (3.5 px, horn_2); shared_sleep (1.2 px, horn_2)
+- **pw:skunk_ytri**: shared_attack (1.5 px, upper_arm_r); shared_idle (8.4 px, skull); shared_sleep (8.7 px, skull)
+- **pw:swan_wwa**: shared_attack (7.3 px, head)
+- **pw:tiger_bengal_anf**: shared_sleep (1.2 px, ear_r)
+- **pw:white_lion_ysav**: shared_sit (10.4 px, tail); shared_walk (6.2 px, tail)
+- **pw:white_lioness_ysav**: shared_attack (2.6 px, upper_arm_l); shared_sit (9.7 px, tail); shared_walk (5.8 px, tail)
+- **sf_nba:coyote**: shared_sit (1.9 px, skull)
+- **sf_nba:red_panda**: shared_sit (2.2 px, tail)
+- **sf_nba:skunk**: shared_sleep (2.3 px, upper_arm_l)

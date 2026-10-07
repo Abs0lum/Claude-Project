@@ -1,0 +1,22 @@
+{
+ "format_version": "1.21.30",
+ "minecraft:item": {
+  "description": {
+   "identifier": "pw:framed_painting",
+   "menu_category": {
+    "category": "none"
+   }
+  },
+  "components": {
+   "minecraft:icon": {
+    "textures": {
+     "default": "pw_framed_painting"
+    }
+   },
+   "minecraft:max_stack_size": 1,
+   "minecraft:display_name": {
+    "value": "item.pw:framed_painting.name"
+   }
+  }
+ }
+}

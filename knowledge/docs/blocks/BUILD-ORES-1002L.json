@@ -1,0 +1,192 @@
+{
+ "rp11_dropped": [
+  "nether_quartz_ore_mer.png",
+  "redstone_ore.png",
+  "iron_ore.png",
+  "gold_ore.texture_set.json",
+  "gold_ore.png",
+  "deepslate_gold_ore_mer.png",
+  "diamond_ore.texture_set.json",
+  "deepslate_coal_ore_mer.png",
+  "redstone_ore_mer_fix.png",
+  "diamond_ore_mer.png",
+  "nether_gold_ore.texture_set.json",
+  "coal_ore.png",
+  "lapis_ore_mer_fix.png",
+  "iron_ore_mer.png",
+  "deepslate_lapis_ore_mer.png",
+  "diamond_ore_mer_fix.png",
+  "deepslate_copper_ore_mer.png",
+  "copper_ore.texture_set.json",
+  "diamond_ore_n.png",
+  "emerald_ore_mer_fix.png",
+  "copper_ore_mer.png",
+  "emerald_ore_mer.png",
+  "emerald_ore.png",
+  "lapis_ore.png",
+  "nether_gold_ore.png",
+  "redstone_ore.texture_set.json",
+  "emerald_ore.texture_set.json",
+  "lapis_ore_mer.png",
+  "coal_ore_n.png",
+  "nether_quartz_ore.png",
+  "lapis_ore.texture_set.json",
+  "copper_ore.png",
+  "coal_ore_mer.png",
+  "iron_ore.texture_set.json",
+  "redstone_ore_mer.png",
+  "nether_gold_ore_n.png",
+  "gold_ore_mer.png",
+  "deepslate_diamond_ore_mer.png",
+  "diamond_ore.png",
+  "coal_ore_mer_fix.png",
+  "nether_gold_ore_mer.png",
+  "coal_ore.texture_set.json"
+ ],
+ "rp04_dropped": [
+  "deepslate_diamond_ore_mer_256x256.png",
+  "deepslate_iron_ore.png",
+  "deepslate_coal_ore.texture_set.json",
+  "deepslate_copper_ore_mer_256x256.png",
+  "redstone_ore.png",
+  "iron_ore.png",
+  "gold_ore.png",
+  "deepslate_emerald_ore.texture_set.json",
+  "deepslate_emerald_ore_mer.png",
+  "deepslate_emerald_ore.png",
+  "deepslate_iron_ore_mer.png",
+  "deepslate_coal_ore_mer_256x256.png",
+  "deepslate_gold_ore.texture_set.json",
+  "diamond_ore.texture_set.json",
+  "deepslate_coal_ore_n.png",
+  "deepslate_redstone_ore.png",
+  "deepslate_diamond_ore.texture_set.json",
+  "deepslate_gold_ore.png",
+  "deepslate_redstone_ore_mer.png",
+  "diamond_ore_mer.png",
+  "deepslate_diamond_ore_n.png",
+  "coal_ore.png",
+  "deepslate_lapis_ore.texture_set.json",
+  "deepslate_lapis_ore_mer_256x256.png",
+  "deepslate_diamond_ore.png",
+  "deepslate_lapis_ore.png",
+  "diamond_ore_n.png",
+  "emerald_ore.png",
+  "lapis_ore.png",
+  "deepslate_iron_ore.texture_set.json",
+  "coal_ore_n.png",
+  "copper_ore.png",
+  "coal_ore_mer.png",
+  "deepslate_coal_ore.png",
+  "deepslate_copper_ore.png",
+  "deepslate_copper_ore.texture_set.json",
+  "diamond_ore.png",
+  "coal_ore_mer_fix.png",
+  "deepslate_redstone_ore.texture_set.json",
+  "deepslate_gold_ore_mer_256x256.png",
+  "coal_ore.texture_set.json"
+ ],
+ "keys": {
+  "coal_ore": {
+   "mineral_pct": 25.9,
+   "glint_px": 1030,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "iron_ore": {
+   "mineral_pct": 30.5,
+   "glint_px": 1183,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "copper_ore": {
+   "mineral_pct": 21.0,
+   "glint_px": 844,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "gold_ore": {
+   "mineral_pct": 37.2,
+   "glint_px": 1462,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "redstone_ore": {
+   "mineral_pct": 38.8,
+   "glint_px": 1485,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "emerald_ore": {
+   "mineral_pct": 36.4,
+   "glint_px": 1374,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "lapis_ore": {
+   "mineral_pct": 29.8,
+   "glint_px": 1236,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "diamond_ore": {
+   "mineral_pct": 26.9,
+   "glint_px": 1080,
+   "base": "RP-04 1.3.15 textures/blocks/stone.png"
+  },
+  "deepslate_coal_ore": {
+   "mineral_pct": 14.9,
+   "glint_px": 622,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "deepslate_iron_ore": {
+   "mineral_pct": 42.5,
+   "glint_px": 1643,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "deepslate_copper_ore": {
+   "mineral_pct": 25.0,
+   "glint_px": 1001,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "deepslate_gold_ore": {
+   "mineral_pct": 43.3,
+   "glint_px": 1742,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "deepslate_redstone_ore": {
+   "mineral_pct": 24.4,
+   "glint_px": 970,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "deepslate_emerald_ore": {
+   "mineral_pct": 24.4,
+   "glint_px": 880,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "deepslate_lapis_ore": {
+   "mineral_pct": 41.8,
+   "glint_px": 1622,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "deepslate_diamond_ore": {
+   "mineral_pct": 23.7,
+   "glint_px": 954,
+   "base": "RP-04 1.3.15 textures/blocks/deepslate_0.png"
+  },
+  "nether_gold_ore": {
+   "mineral_pct": 4.6,
+   "glint_px": 167,
+   "base": "RP-04 1.3.15 textures/blocks/netherrack_v0.png"
+  },
+  "quartz_ore": {
+   "mineral_pct": 21.4,
+   "glint_px": 811,
+   "base": "RP-04 1.3.15 textures/blocks/netherrack_v0.png"
+  }
+ },
+ "rp04_keys_removed": [
+  "deepslate_coal_ore",
+  "deepslate_iron_ore",
+  "deepslate_copper_ore",
+  "deepslate_gold_ore",
+  "deepslate_redstone_ore",
+  "deepslate_emerald_ore",
+  "deepslate_lapis_ore",
+  "deepslate_diamond_ore"
+ ],
+ "rp04_textures_list_removed": 24
+}

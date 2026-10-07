@@ -1,0 +1,35 @@
+{
+ "RP-01": {
+  "dir": "rp01-115",
+  "strips": 26,
+  "flipbooks": 27,
+  "stills_kept": [
+   "vine_v0.png",
+   "vine_v0.texture_set.json",
+   "vine_v0_mer256.png",
+   "vine_v0_n256.png"
+  ]
+ },
+ "RP-04_textures_list_removed": 15,
+ "RP-04": {
+  "dir": "rp04-153",
+  "files_dropped": 51,
+  "keys_removed": [
+   "vine",
+   "vine_single"
+  ]
+ },
+ "BP-02": {
+  "dir": "bp02-203",
+  "permutations": 40,
+  "states": {
+   "pw:bits": 16,
+   "pw:v": 12,
+   "pw:r": 2
+  }
+ },
+ "SM-BP": {
+  "dir": "stripmine-bp-1313",
+  "fixed": "spawn_rules/pw_menagerie/ws/skinscraft_desert_owl.json"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "C": {
+  "title": "reference: 6 cards on every leaf",
+  "leaves_with_2nd_set": 59,
+  "of": 59
+ },
+ "C-W": {
+  "title": "no 2nd card set beside the wood",
+  "leaves_with_2nd_set": 23,
+  "of": 59
+ },
+ "C-S": {
+  "title": "C-W + no 2nd set on each canopy's bottom third",
+  "leaves_with_2nd_set": 17,
+  "of": 59
+ },
+ "C-H": {
+  "title": "2nd card set at 60 % size (twig layer)",
+  "leaves_with_2nd_set": 59,
+  "of": 59
+ }
+}

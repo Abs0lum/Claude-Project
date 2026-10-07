@@ -1,0 +1,1086 @@
+[
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_black.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_blue.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_brown.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_cyan.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_gray.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_green.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_light_blue.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_lime.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_magenta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_orange.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_black.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_blue.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_brown.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_cyan.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_gray.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_green.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_light_blue.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_lime.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_magenta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_orange.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_pink.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_purple.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_red.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_silver.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_white.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pane_top_yellow.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_pink.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_purple.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_red.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_silver.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_white.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/glass_yellow.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v11.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v12.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v13.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v14.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v15.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v2.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v3.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v4.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v5.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v6.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v7.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v8.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/packed_mud_v9.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_candle.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_glazed_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_petals.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v0.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v1.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v2.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v3.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v4.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v5.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v6.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/pink_terracotta_v7.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_candle.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_glazed_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v0.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v1.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v2.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v3.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v4.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v5.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v6.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/purple_terracotta_v7.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_candle.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_glazed_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v0.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v1.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v2.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v3.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v4.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v5.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v6.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/red_terracotta_v7.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/redstone_ore.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/repeater.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/rooted_dirt.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/sea_lantern.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/seagrass.texture_set.json",
+  "fixes": [
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/smoker_bottom.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/smoker_front.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/smoker_front_on.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/smoker_side.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/smoker_top.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/snow.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/snow_v11.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/snow_v13.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/snow_v8.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/soul_sand.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/soul_soil.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stonecutter2_saw.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stonecutter_saw.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_top.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_top_v0.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_top_v1.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_top_v2.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_v0.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_v1.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_v2.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/stripped_cherry_log_v3.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/tuff.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/weathered_copper_chain.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/white_candle.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/white_glazed_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_candle.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_glazed_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v0.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v1.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v2.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v3.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v4.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v5.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v6.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp03-61",
+  "set": "textures/blocks/yellow_terracotta_v7.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/black_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/blue_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/brown_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/cherry_log_top.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/coal_ore.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/cyan_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/dirt_path_side.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/farmland.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/farmland_moist.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/gray_glazed_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/gray_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/green_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/light_blue_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/light_gray_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/lime_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/magenta_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/nether_portal.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/orange_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/pink_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/purple_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/red_glazed_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/red_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/rooted_dirt.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/soul_soil.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/stripped_cherry_log_top.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp04-145",
+  "set": "textures/blocks/yellow_terracotta.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp05-52",
+  "set": "textures/blocks/kelp_plant.texture_set.json",
+  "fixes": [
+   "normal resampled",
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp05-52",
+  "set": "textures/blocks/seagrass.texture_set.json",
+  "fixes": [
+   "metalness resampled"
+  ]
+ },
+ {
+  "build": "rp05-52",
+  "set": "textures/particle/firefly.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> derived default"
+  ]
+ },
+ {
+  "build": "rp08-1410",
+  "set": "textures/items/copper_chain.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp08-1410",
+  "set": "textures/items/oxidized_copper_chain.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp08-1410",
+  "set": "textures/items/weathered_copper_chain.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp08-1410",
+  "set": "textures/models/armor/turtle_scute_layer_1.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> derived default"
+  ]
+ },
+ {
+  "build": "rp11-136",
+  "set": "textures/blocks/deepslate/deepslate_coal_ore.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp11-136",
+  "set": "textures/blocks/deepslate/deepslate_lapis_ore.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ },
+ {
+  "build": "rp11-136",
+  "set": "textures/blocks/deepslate/deepslate_redstone_ore.texture_set.json",
+  "fixes": [
+   "MERS blank/mirror -> patrix256"
+  ]
+ }
+]

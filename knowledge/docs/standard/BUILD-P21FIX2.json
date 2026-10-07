@@ -1,0 +1,73 @@
+{
+ "report": {
+  "rp07-1442": {
+   "entities_replaced": 590,
+   "entities_added": 3
+  },
+  "rp06-1428": {
+   "entities_replaced": 14,
+   "entities_added": 0
+  }
+ },
+ "gate_ok": true,
+ "checks": [
+  {
+   "pack": "rp06-1428",
+   "json_errors": [],
+   "n_json_errors": 0,
+   "comment_json_files": 1,
+   "duplicate_ids": [],
+   "unresolved_std_refs": [],
+   "n_unresolved": 0,
+   "entities": 44
+  },
+  {
+   "pack": "rp07-1442",
+   "json_errors": [],
+   "n_json_errors": 0,
+   "comment_json_files": 2,
+   "duplicate_ids": [],
+   "unresolved_std_refs": [],
+   "n_unresolved": 0,
+   "entities": 604
+  },
+  {
+   "pack": "rp08-149",
+   "json_errors": [],
+   "n_json_errors": 0,
+   "comment_json_files": 0,
+   "duplicate_ids": [],
+   "unresolved_std_refs": [],
+   "n_unresolved": 0,
+   "entities": 29
+  },
+  {
+   "staged_vs_built_mismatch": [],
+   "n": 0
+  },
+  {
+   "game_log_gates": {
+    "ok": true,
+    "empty_anim_files": [],
+    "n_empty_files": 0,
+    "unconverted": [],
+    "n_unconverted": 0,
+    "fmt_errors": [],
+    "n_fmt": 0,
+    "empty_bones": {
+     "rp06-1428": [],
+     "rp07-1442": [],
+     "rp08-149": []
+    },
+    "n_empty": 0,
+    "locator_clashes": [],
+    "n_locator": 0,
+    "nwr_shared": [],
+    "n_nwr_shared": 0,
+    "nwr_own_new": [],
+    "n_nwr_own_new": 0,
+    "nwr_own_baseline": 33
+   }
+  }
+ ]
+}

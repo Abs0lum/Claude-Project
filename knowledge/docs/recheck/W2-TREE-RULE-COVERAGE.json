@@ -1,0 +1,250 @@
+{
+ "rules": [
+  "bamboo_jungle_surface_trees_feature.json",
+  "birch_forest_mutated_surface_trees_feature.json",
+  "birch_forest_surface_trees_feature.json",
+  "emerald_jungle_canopy_rule.json",
+  "extreme_hills_plus_trees_surface_trees_feature.json",
+  "flower_forest_surface_trees_feature.json",
+  "forest_sparse_birch_rule.json",
+  "forest_sparse_oak_rule.json",
+  "forest_surface_trees_feature.json",
+  "ice_surface_trees_feature.json",
+  "jungle_bushes_rule.json",
+  "jungle_edge_surface_trees_feature.json",
+  "jungle_surface_trees_feature.json",
+  "mega_taiga_surface_trees_feature.json",
+  "mesa_plateau_stone_surface_trees_feature.json",
+  "misty_dark_canopy_rule.json",
+  "old_growth_pines_rule.json",
+  "plains_surface_trees_feature.json",
+  "redwood_taiga_hills_mutated_surface_trees_feature.json",
+  "redwood_taiga_mutated_surface_trees_feature.json",
+  "savanna_mutated_surface_trees_feature.json",
+  "savanna_surface_trees_feature.json",
+  "snowy_taiga_sparse_spruce_rule.json",
+  "taiga_sparse_spruce_rule.json",
+  "taiga_surface_trees_feature.json"
+ ],
+ "coverage": {
+  "minecraft:bamboo_jungle": [
+   "bamboo_jungle_surface_trees_feature.json"
+  ],
+  "minecraft:bamboo_jungle_hills": [
+   "bamboo_jungle_surface_trees_feature.json"
+  ],
+  "minecraft:basalt_deltas": [],
+  "minecraft:beach": [],
+  "minecraft:birch_forest": [
+   "birch_forest_surface_trees_feature.json"
+  ],
+  "minecraft:birch_forest_hills": [
+   "birch_forest_surface_trees_feature.json"
+  ],
+  "minecraft:birch_forest_hills_mutated": [
+   "birch_forest_mutated_surface_trees_feature.json"
+  ],
+  "minecraft:birch_forest_mutated": [
+   "birch_forest_mutated_surface_trees_feature.json"
+  ],
+  "minecraft:cherry_grove": [],
+  "minecraft:cold_beach": [],
+  "minecraft:cold_ocean": [],
+  "minecraft:cold_taiga": [
+   "taiga_surface_trees_feature.json"
+  ],
+  "minecraft:cold_taiga_hills": [
+   "taiga_surface_trees_feature.json"
+  ],
+  "minecraft:cold_taiga_mutated": [
+   "taiga_surface_trees_feature.json"
+  ],
+  "minecraft:crimson_forest": [],
+  "minecraft:dappled_forest": [
+   "forest_surface_trees_feature.json"
+  ],
+  "minecraft:deep_cold_ocean": [],
+  "minecraft:deep_dark": [],
+  "minecraft:deep_frozen_ocean": [],
+  "minecraft:deep_lukewarm_ocean": [],
+  "minecraft:deep_ocean": [],
+  "minecraft:deep_warm_ocean": [],
+  "minecraft:desert": [],
+  "minecraft:desert_hills": [],
+  "minecraft:desert_mutated": [],
+  "minecraft:dripstone_caves": [],
+  "minecraft:extreme_hills": [],
+  "minecraft:extreme_hills_edge": [
+   "extreme_hills_plus_trees_surface_trees_feature.json"
+  ],
+  "minecraft:extreme_hills_mutated": [],
+  "minecraft:extreme_hills_plus_trees": [
+   "extreme_hills_plus_trees_surface_trees_feature.json"
+  ],
+  "minecraft:extreme_hills_plus_trees_mutated": [
+   "extreme_hills_plus_trees_surface_trees_feature.json"
+  ],
+  "minecraft:flower_forest": [
+   "flower_forest_surface_trees_feature.json"
+  ],
+  "minecraft:forest": [
+   "forest_surface_trees_feature.json"
+  ],
+  "minecraft:forest_hills": [
+   "forest_surface_trees_feature.json"
+  ],
+  "minecraft:frozen_ocean": [],
+  "minecraft:frozen_peaks": [],
+  "minecraft:frozen_river": [],
+  "minecraft:grove": [],
+  "minecraft:hell": [],
+  "minecraft:ice_mountains": [
+   "ice_surface_trees_feature.json"
+  ],
+  "minecraft:ice_plains": [
+   "ice_surface_trees_feature.json"
+  ],
+  "minecraft:ice_plains_spikes": [],
+  "minecraft:jagged_peaks": [],
+  "minecraft:jungle": [
+   "jungle_bushes_rule.json",
+   "jungle_surface_trees_feature.json"
+  ],
+  "minecraft:jungle_edge": [
+   "jungle_bushes_rule.json",
+   "jungle_edge_surface_trees_feature.json"
+  ],
+  "minecraft:jungle_edge_mutated": [
+   "jungle_bushes_rule.json",
+   "jungle_edge_surface_trees_feature.json"
+  ],
+  "minecraft:jungle_hills": [
+   "jungle_bushes_rule.json",
+   "jungle_surface_trees_feature.json"
+  ],
+  "minecraft:jungle_mutated": [
+   "jungle_bushes_rule.json",
+   "jungle_surface_trees_feature.json"
+  ],
+  "minecraft:legacy_frozen_ocean": [],
+  "minecraft:lukewarm_ocean": [],
+  "minecraft:lush_caves": [],
+  "minecraft:mangrove_swamp": [],
+  "minecraft:meadow": [],
+  "minecraft:mega_taiga": [
+   "mega_taiga_surface_trees_feature.json"
+  ],
+  "minecraft:mega_taiga_hills": [
+   "mega_taiga_surface_trees_feature.json"
+  ],
+  "minecraft:mesa": [],
+  "minecraft:mesa_bryce": [],
+  "minecraft:mesa_plateau": [],
+  "minecraft:mesa_plateau_mutated": [
+   "mesa_plateau_stone_surface_trees_feature.json"
+  ],
+  "minecraft:mesa_plateau_stone": [
+   "mesa_plateau_stone_surface_trees_feature.json"
+  ],
+  "minecraft:mesa_plateau_stone_mutated": [],
+  "minecraft:mushroom_island": [],
+  "minecraft:mushroom_island_shore": [],
+  "minecraft:ocean": [],
+  "minecraft:pale_garden": [],
+  "minecraft:plains": [
+   "plains_surface_trees_feature.json"
+  ],
+  "minecraft:redwood_taiga_hills_mutated": [
+   "redwood_taiga_hills_mutated_surface_trees_feature.json"
+  ],
+  "minecraft:redwood_taiga_mutated": [
+   "redwood_taiga_mutated_surface_trees_feature.json"
+  ],
+  "minecraft:river": [],
+  "minecraft:roofed_forest": [],
+  "minecraft:roofed_forest_mutated": [],
+  "minecraft:savanna": [
+   "savanna_surface_trees_feature.json"
+  ],
+  "minecraft:savanna_mutated": [
+   "savanna_mutated_surface_trees_feature.json"
+  ],
+  "minecraft:savanna_plateau": [
+   "savanna_surface_trees_feature.json"
+  ],
+  "minecraft:savanna_plateau_mutated": [
+   "savanna_mutated_surface_trees_feature.json"
+  ],
+  "minecraft:snowy_slopes": [],
+  "minecraft:soulsand_valley": [],
+  "minecraft:stone_beach": [],
+  "minecraft:stony_peaks": [],
+  "minecraft:sulfur_caves": [],
+  "minecraft:sunflower_plains": [
+   "plains_surface_trees_feature.json"
+  ],
+  "minecraft:swampland": [],
+  "minecraft:swampland_mutated": [],
+  "minecraft:taiga": [
+   "taiga_surface_trees_feature.json"
+  ],
+  "minecraft:taiga_hills": [
+   "taiga_surface_trees_feature.json"
+  ],
+  "minecraft:taiga_mutated": [
+   "taiga_surface_trees_feature.json"
+  ],
+  "minecraft:the_end": [],
+  "minecraft:warm_ocean": [],
+  "minecraft:warped_forest": [],
+  "pw:alpine_meadow": [],
+  "pw:alpine_peak": [],
+  "pw:amber_wooded_badlands": [
+   "mesa_plateau_stone_surface_trees_feature.json"
+  ],
+  "pw:badlands_mesa": [],
+  "pw:boreal_forest": [
+   "taiga_surface_trees_feature.json"
+  ],
+  "pw:cherry_valley": [
+   "forest_surface_trees_feature.json"
+  ],
+  "pw:coastal_bluff": [],
+  "pw:desert_dunes": [],
+  "pw:emerald_jungle": [
+   "bamboo_jungle_surface_trees_feature.json",
+   "emerald_jungle_canopy_rule.json"
+  ],
+  "pw:forest_sparse": [
+   "forest_sparse_birch_rule.json",
+   "forest_sparse_oak_rule.json",
+   "forest_surface_trees_feature.json"
+  ],
+  "pw:icy_cliffs": [],
+  "pw:misty_dark_forest": [
+   "misty_dark_canopy_rule.json"
+  ],
+  "pw:misty_river": [],
+  "pw:old_growth_pines": [
+   "old_growth_pines_rule.json",
+   "taiga_surface_trees_feature.json"
+  ],
+  "pw:pale_hills": [
+   "forest_surface_trees_feature.json"
+  ],
+  "pw:river_canyon": [
+   "savanna_surface_trees_feature.json"
+  ],
+  "pw:snowy_taiga_sparse": [
+   "old_growth_pines_rule.json",
+   "snowy_taiga_sparse_spruce_rule.json",
+   "taiga_surface_trees_feature.json"
+  ],
+  "pw:swamp_lagoon": [],
+  "pw:taiga_sparse": [
+   "old_growth_pines_rule.json",
+   "taiga_sparse_spruce_rule.json",
+   "taiga_surface_trees_feature.json"
+  ]
+ }
+}

@@ -1,0 +1,669 @@
+{
+ "bp02": [
+  {
+   "id": "minecraft:cow",
+   "file": "entities/cow.json",
+   "factor": 1.276,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 1.736,
+   "to_blocks": 2.215
+  },
+  {
+   "id": "minecraft:mooshroom",
+   "file": "entities/mooshroom.json",
+   "factor": 1.268,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 1.746,
+   "to_blocks": 2.215
+  },
+  {
+   "id": "minecraft:llama",
+   "file": "entities/llama.json",
+   "factor": 1.214,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 1.65,
+   "to_blocks": 2.004
+  },
+  {
+   "id": "minecraft:trader_llama",
+   "file": "entities/trader_llama.json",
+   "factor": 1.214,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 1.65,
+   "to_blocks": 2.004
+  },
+  {
+   "id": "minecraft:horse",
+   "file": "entities/horse.json",
+   "factor": 1.102,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.296,
+   "to_blocks": 2.531
+  },
+  {
+   "id": "minecraft:mule",
+   "file": "entities/mule.json",
+   "factor": 1.153,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 1.92,
+   "to_blocks": 2.215
+  },
+  {
+   "id": "minecraft:skeleton_horse",
+   "file": "entities/skeleton_horse.json",
+   "factor": 1.213,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.087,
+   "to_blocks": 2.531
+  },
+  {
+   "id": "minecraft:zombie_horse",
+   "file": "entities/zombie_horse.json",
+   "factor": 1.213,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.087,
+   "to_blocks": 2.531
+  },
+  {
+   "id": "minecraft:camel",
+   "file": "entities/camel.json",
+   "factor": 1.15,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.75,
+   "to_blocks": 3.164
+  },
+  {
+   "id": "minecraft:dolphin",
+   "file": "entities/dolphin.json",
+   "factor": 1.114,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.366,
+   "to_blocks": 2.636
+  },
+  {
+   "id": "minecraft:goat",
+   "file": "entities/goat.json",
+   "factor": 0.696,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 1.818,
+   "to_blocks": 1.265
+  },
+  {
+   "id": "minecraft:panda",
+   "file": "entities/panda.json",
+   "factor": 0.684,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 2.312,
+   "to_blocks": 1.582
+  },
+  {
+   "id": "minecraft:polar_bear",
+   "file": "entities/polar_bear.json",
+   "factor": 0.877,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.525,
+   "to_blocks": 2.215
+  },
+  {
+   "id": "minecraft:turtle",
+   "file": "entities/turtle.json",
+   "factor": 0.634,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.328,
+   "to_blocks": 1.476
+  },
+  {
+   "id": "minecraft:salmon",
+   "file": "entities/salmon.json",
+   "factor": 0.518,
+   "scales_changed": 3,
+   "base_inserted": true,
+   "from_blocks": 1.527,
+   "to_blocks": 0.791
+  },
+  {
+   "id": "minecraft:cod",
+   "file": "entities/fish.json",
+   "factor": 0.905,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.932,
+   "to_blocks": 0.844
+  },
+  {
+   "id": "minecraft:tropicalfish",
+   "file": "entities/tropicalfish.json",
+   "factor": 0.769,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.641,
+   "to_blocks": 0.493
+  },
+  {
+   "id": "minecraft:armadillo",
+   "file": "entities/armadillo.json",
+   "factor": 0.603,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 0.982,
+   "to_blocks": 0.592
+  }
+ ],
+ "stripmine": [
+  {
+   "id": "sf_nba:ant",
+   "file": "entities/ant.behavior.json",
+   "factor": 1.128,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.195,
+   "to_blocks": 0.22
+  },
+  {
+   "id": "sf_nba:anteater",
+   "file": "entities/anteater.behavior.json",
+   "factor": 0.675,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 3.125,
+   "to_blocks": 2.109
+  },
+  {
+   "id": "sf_nba:badger",
+   "file": "entities/badger.behavior.json",
+   "factor": 1.18,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 0.804,
+   "to_blocks": 0.949
+  },
+  {
+   "id": "sf_nba:bass",
+   "file": "entities/bass.behavior.json",
+   "factor": 1.193,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.506,
+   "to_blocks": 0.604
+  },
+  {
+   "id": "sf_nba:beaver",
+   "file": "entities/beaver.behavior.json",
+   "factor": 1.164,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.997,
+   "to_blocks": 1.16
+  },
+  {
+   "id": "sf_nba:beetle",
+   "file": "entities/beetle.behavior.json",
+   "factor": 1.596,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.251,
+   "to_blocks": 0.401
+  },
+  {
+   "id": "sf_nba:black_bear",
+   "file": "entities/black_bear.behavior.json",
+   "factor": 1.123,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 1.597,
+   "to_blocks": 1.793
+  },
+  {
+   "id": "sf_nba:bluejay",
+   "file": "entities/bluejay.behavior.json",
+   "factor": 1.281,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.434,
+   "to_blocks": 0.556
+  },
+  {
+   "id": "sf_nba:boar",
+   "file": "entities/boar.behavior.json",
+   "factor": 1.674,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 1.008,
+   "to_blocks": 1.687
+  },
+  {
+   "id": "sf_nba:budgie",
+   "file": "entities/budgie.behavior.json",
+   "factor": 1.154,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.443,
+   "to_blocks": 0.511
+  },
+  {
+   "id": "sf_nba:butterfly",
+   "file": "entities/butterfly.behavior.json",
+   "factor": 2.691,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.168,
+   "to_blocks": 0.452
+  },
+  {
+   "id": "sf_nba:canary",
+   "file": "entities/canary.behavior.json",
+   "factor": 1.3,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.368,
+   "to_blocks": 0.479
+  },
+  {
+   "id": "sf_nba:cardinal",
+   "file": "entities/cardinal.behavior.json",
+   "factor": 1.266,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.42,
+   "to_blocks": 0.532
+  },
+  {
+   "id": "sf_nba:caterpillar",
+   "file": "entities/caterpillar.behavior.json",
+   "factor": 1.125,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.356,
+   "to_blocks": 0.401
+  },
+  {
+   "id": "sf_nba:cave_snake",
+   "file": "entities/cave_snake.behavior.json",
+   "factor": 0.562,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "from_blocks": 1.501,
+   "to_blocks": 0.844
+  },
+  {
+   "id": "sf_nba:cavefish",
+   "file": "entities/cavefish.behavior.json",
+   "factor": 1.162,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.389,
+   "to_blocks": 0.452
+  },
+  {
+   "id": "sf_nba:coral_snake",
+   "file": "entities/coral_snake.behavior.json",
+   "factor": 0.482,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "from_blocks": 1.751,
+   "to_blocks": 0.844
+  },
+  {
+   "id": "sf_nba:coyote",
+   "file": "entities/coyote.behavior.json",
+   "factor": 1.365,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 1.004,
+   "to_blocks": 1.371
+  },
+  {
+   "id": "sf_nba:crow",
+   "file": "entities/crow.behavior.json",
+   "factor": 1.473,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.41,
+   "to_blocks": 0.604
+  },
+  {
+   "id": "sf_nba:desert_scorpion",
+   "file": "entities/desert_scorpion.behavior.json",
+   "factor": 0.409,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 1.188,
+   "to_blocks": 0.486
+  },
+  {
+   "id": "sf_nba:dragonfly",
+   "file": "entities/dragonfly.behavior.json",
+   "factor": 1.159,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.406,
+   "to_blocks": 0.47
+  },
+  {
+   "id": "sf_nba:eagle",
+   "file": "entities/eagle.behavior.json",
+   "factor": 1.141,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.832,
+   "to_blocks": 0.949
+  },
+  {
+   "id": "sf_nba:electric_eel",
+   "file": "entities/electric_eel.behavior.json",
+   "factor": 0.587,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "from_blocks": 3.594,
+   "to_blocks": 2.109
+  },
+  {
+   "id": "sf_nba:elephant",
+   "file": "entities/elephant.behavior.json",
+   "factor": 1.19,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 5.759,
+   "to_blocks": 6.855
+  },
+  {
+   "id": "sf_nba:finch",
+   "file": "entities/finch.behavior.json",
+   "factor": 1.296,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.375,
+   "to_blocks": 0.486
+  },
+  {
+   "id": "sf_nba:firefly",
+   "file": "entities/firefly.behavior.json",
+   "factor": 1.778,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.163,
+   "to_blocks": 0.29
+  },
+  {
+   "id": "sf_nba:flying_fish",
+   "file": "entities/flying_fish.behavior.json",
+   "factor": 0.458,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 1.228,
+   "to_blocks": 0.563
+  },
+  {
+   "id": "sf_nba:giant_isopod",
+   "file": "entities/giant_isopod.behavior.json",
+   "factor": 1.17,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 0.506,
+   "to_blocks": 0.592
+  },
+  {
+   "id": "sf_nba:grizzly_bear",
+   "file": "entities/grizzly_bear.behavior.json",
+   "factor": 1.236,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 1.877,
+   "to_blocks": 2.32
+  },
+  {
+   "id": "sf_nba:hamster",
+   "file": "entities/hamster.behavior.json",
+   "factor": 2.089,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 0.236,
+   "to_blocks": 0.493
+  },
+  {
+   "id": "sf_nba:iguana",
+   "file": "entities/iguana.behavior.json",
+   "factor": 1.086,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 1.553,
+   "to_blocks": 1.687
+  },
+  {
+   "id": "sf_nba:jellyfish",
+   "file": "entities/jellyfish.behavior.json",
+   "factor": 1.087,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.582,
+   "to_blocks": 0.633
+  },
+  {
+   "id": "sf_nba:jungle_scorpion",
+   "file": "entities/jungle_scorpion.behavior.json",
+   "factor": 0.21,
+   "scales_changed": 1,
+   "base_inserted": true,
+   "from_blocks": 2.489,
+   "to_blocks": 0.522
+  },
+  {
+   "id": "sf_nba:kangaroo",
+   "file": "entities/kangaroo.behavior.json",
+   "factor": 1.145,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 2.211,
+   "to_blocks": 2.531
+  },
+  {
+   "id": "sf_nba:female_lion",
+   "file": "entities/lion_female.behavior.json",
+   "factor": 0.91,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 3.012,
+   "to_blocks": 2.742
+  },
+  {
+   "id": "sf_nba:lizard",
+   "file": "entities/lizard.behavior.json",
+   "factor": 1.685,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 0.334,
+   "to_blocks": 0.563
+  },
+  {
+   "id": "sf_nba:mammoth",
+   "file": "entities/mammoth.behavior.json",
+   "factor": 1.164,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 4.982,
+   "to_blocks": 5.8
+  },
+  {
+   "id": "sf_nba:monkey",
+   "file": "entities/monkey.behavior.json",
+   "factor": 1.249,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 0.76,
+   "to_blocks": 0.949
+  },
+  {
+   "id": "sf_nba:moray",
+   "file": "entities/moray.behavior.json",
+   "factor": 0.44,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "from_blocks": 3.594,
+   "to_blocks": 1.582
+  },
+  {
+   "id": "sf_nba:owl",
+   "file": "entities/owl.behavior.json",
+   "factor": 1.14,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.539,
+   "to_blocks": 0.614
+  },
+  {
+   "id": "sf_nba:peafowl",
+   "file": "entities/peafowl.behavior.json",
+   "factor": 1.239,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 1.277,
+   "to_blocks": 1.582
+  },
+  {
+   "id": "sf_nba:piranha",
+   "file": "entities/piranha.behavior.json",
+   "factor": 0.769,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "from_blocks": 0.732,
+   "to_blocks": 0.563
+  },
+  {
+   "id": "sf_nba:rattlesnake",
+   "file": "entities/rattlesnake.behavior.json",
+   "factor": 0.723,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "from_blocks": 1.751,
+   "to_blocks": 1.265
+  },
+  {
+   "id": "sf_nba:raven",
+   "file": "entities/raven.behavior.json",
+   "factor": 1.098,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.624,
+   "to_blocks": 0.685
+  },
+  {
+   "id": "sf_nba:robin",
+   "file": "entities/robin.behavior.json",
+   "factor": 1.296,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.375,
+   "to_blocks": 0.486
+  },
+  {
+   "id": "sf_nba:sloth",
+   "file": "entities/sloth.behavior.json",
+   "factor": 0.9,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 0.82,
+   "to_blocks": 0.738
+  },
+  {
+   "id": "sf_nba:snake",
+   "file": "entities/snake.behavior.json",
+   "factor": 1.225,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 1.291,
+   "to_blocks": 1.582
+  },
+  {
+   "id": "sf_nba:sparrow",
+   "file": "entities/sparrow.behavior.json",
+   "factor": 1.291,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.382,
+   "to_blocks": 0.493
+  },
+  {
+   "id": "sf_nba:spotted_moray",
+   "file": "entities/spotted_moray.behavior.json",
+   "factor": 0.293,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "from_blocks": 3.594,
+   "to_blocks": 1.055
+  },
+  {
+   "id": "sf_nba:squirrel",
+   "file": "entities/squirrel.behavior.json",
+   "factor": 1.108,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 0.545,
+   "to_blocks": 0.604
+  },
+  {
+   "id": "sf_nba:starfish",
+   "file": "entities/starfish.behavior.json",
+   "factor": 1.125,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.484,
+   "to_blocks": 0.544
+  },
+  {
+   "id": "sf_nba:tortoise",
+   "file": "entities/tortoise.behavior.json",
+   "factor": 1.475,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.858,
+   "to_blocks": 1.265
+  },
+  {
+   "id": "sf_nba:tree_frog",
+   "file": "entities/tree_frog.behavior.json",
+   "factor": 1.351,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 0.308,
+   "to_blocks": 0.416
+  },
+  {
+   "id": "sf_nba:turkey",
+   "file": "entities/turkey.behavior.json",
+   "factor": 1.136,
+   "scales_changed": 2,
+   "base_inserted": false,
+   "from_blocks": 1.021,
+   "to_blocks": 1.16
+  },
+  {
+   "id": "sf_nba:whale",
+   "file": "entities/whale.behavior.json",
+   "factor": 1.098,
+   "scales_changed": 1,
+   "base_inserted": false,
+   "from_blocks": 14.4,
+   "to_blocks": 15.818
+  }
+ ],
+ "stripmine_missing": [],
+ "rp06": {
+  "file": "entity/warden.entity.json",
+  "scale": 1.2,
+  "old_desc": "v1.4.18 (2026-09-29) R10 FIX (D-C288): the bogged holds its bow for real (the sw"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "rp01-117": {
+  "files_added": 0,
+  "sets_written": 9
+ },
+ "rp03-67": {
+  "files_added": 0,
+  "sets_written": 23
+ },
+ "rp04-156": {
+  "files_added": 12,
+  "sets_written": 18
+ },
+ "rp06-1429": {
+  "files_added": 4,
+  "sets_written": 5
+ },
+ "rp07-1444": {
+  "files_added": 1089,
+  "sets_written": 755
+ },
+ "rp08-1413": {
+  "files_added": 827,
+  "sets_written": 792
+ },
+ "kept_existing_normals": [
+  "textures/entity/bed/red_n.png",
+  "textures/entity/blaze_n.png"
+ ]
+}

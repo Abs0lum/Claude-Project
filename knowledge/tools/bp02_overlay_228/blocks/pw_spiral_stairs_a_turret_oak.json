@@ -1,0 +1,6790 @@
+{
+ "format_version": "1.26.0",
+ "minecraft:block": {
+  "description": {
+   "identifier": "pw:spiral_stairs_a_turret_oak",
+   "menu_category": {
+    "category": "construction"
+   },
+   "traits": {
+    "minecraft:placement_direction": {
+     "enabled_states": [
+      "minecraft:cardinal_direction"
+     ],
+     "y_rotation_offset": 0
+    }
+   },
+   "states": {
+    "pw:part": [
+     "start",
+     "mid",
+     "end",
+     "door"
+    ],
+    "pw:hand": [
+     "ccw",
+     "cw"
+    ]
+   }
+  },
+  "components": {
+   "minecraft:geometry": {
+    "identifier": "geometry.pw_spiral_A_turret_r_mid_c00"
+   },
+   "minecraft:material_instances": {
+    "tread": {
+     "texture": "pw_sp_oak_tread",
+     "render_method": "opaque"
+    },
+    "soffit": {
+     "texture": "pw_sp_oak_soffit",
+     "render_method": "opaque"
+    },
+    "string": {
+     "texture": "pw_sp_oak_string",
+     "render_method": "opaque"
+    },
+    "rail": {
+     "texture": "pw_sp_oak_rail",
+     "render_method": "opaque"
+    },
+    "baluster": {
+     "texture": "pw_sp_oak_baluster",
+     "render_method": "opaque"
+    },
+    "post": {
+     "texture": "pw_sp_oak_post",
+     "render_method": "opaque"
+    },
+    "*": {
+     "texture": "pw_sp_oak_tread",
+     "render_method": "opaque"
+    }
+   },
+   "minecraft:collision_box": [
+    {
+     "origin": [
+      -8,
+      0,
+      -8
+     ],
+     "size": [
+      16,
+      16,
+      16
+     ]
+    }
+   ],
+   "minecraft:selection_box": {
+    "origin": [
+     -8,
+     0,
+     -8
+    ],
+    "size": [
+     16,
+     16,
+     16
+    ]
+   },
+   "minecraft:destructible_by_mining": {
+    "seconds_to_destroy": 1.5
+   },
+   "minecraft:destructible_by_explosion": {
+    "explosion_resistance": 6
+   },
+   "minecraft:light_dampening": 0,
+   "minecraft:display_name": "Spiral stairs turret (oak)"
+  },
+  "permutations": [
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'start' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_start_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        12
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'mid' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_mid_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        12,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        4
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        4
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        4
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        4
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        6
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'end' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_end_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        -2
+       ],
+       "size": [
+        4,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        24,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        6,
+        24,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        0
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        0
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        0
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'ccw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_r_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        2,
+        16,
+        16
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -8
+       ],
+       "size": [
+        10,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        16,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -6
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        16,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -4
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        12,
+        8
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        4,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -2
+       ],
+       "size": [
+        6,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        12,
+        6
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        0
+       ],
+       "size": [
+        4,
+        8,
+        2
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -8
+       ],
+       "size": [
+        4,
+        24,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        4,
+        2
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('pw:part') == 'door' && q.block_state('pw:hand') == 'cw' && q.block_state('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_spiral_A_turret_l_door_c00"
+     },
+     "minecraft:collision_box": [
+      {
+       "origin": [
+        -8,
+        0,
+        -8
+       ],
+       "size": [
+        16,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        -6
+       ],
+       "size": [
+        2,
+        4,
+        10
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -6
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        -6
+       ],
+       "size": [
+        8,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        -4
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -4
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        4,
+        0,
+        -4
+       ],
+       "size": [
+        4,
+        16,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        -2
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        -2
+       ],
+       "size": [
+        8,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        4,
+        8
+       ]
+      },
+      {
+       "origin": [
+        -2,
+        0,
+        0
+       ],
+       "size": [
+        2,
+        8,
+        6
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        0
+       ],
+       "size": [
+        6,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        0,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        8,
+        4
+       ]
+      },
+      {
+       "origin": [
+        2,
+        0,
+        2
+       ],
+       "size": [
+        2,
+        12,
+        2
+       ]
+      },
+      {
+       "origin": [
+        -8,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        24,
+        4
+       ]
+      },
+      {
+       "origin": [
+        -4,
+        0,
+        4
+       ],
+       "size": [
+        2,
+        4,
+        4
+       ]
+      }
+     ],
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     }
+    }
+   }
+  ]
+ }
+}

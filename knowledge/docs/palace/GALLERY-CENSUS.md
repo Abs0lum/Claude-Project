@@ -1,0 +1,178 @@
+# GALLERY CENSUS — 6256 works, 1791 artists (2026-10-05 01:55 CT)
+
+## subject
+- portrait: 2890
+- landscape: 1003
+- religious: 963
+- genre: 717
+- still_life: 408
+- myth_history: 275
+
+## by
+- wikidata genre: 3675
+- title: 803
+- default: 737
+- met tag: 450
+- nga theme: 296
+- wikidata depicts: 295
+
+## period
+- nineteenth: 3380
+- baroque: 1073
+- renaissance: 856
+- rococo_neoclassical: 835
+- gothic: 112
+
+## source
+- met: 3234
+- nga: 2568
+- cma: 454
+
+## class
+- 0.75x1: 1294
+- 1x0.75: 1030
+- 1x1.25: 534
+- 1.5x1.75: 266
+- 1.25x1.5: 250
+- 1.25x1.75: 219
+- 1.5x2: 188
+- 1.25x1: 188
+- 1x1: 148
+- 1.5x1: 128
+- 1x0.5: 125
+- 2x1.5: 122
+- 1.75x1.25: 99
+- 1.5x1.25: 99
+- 1.75x1.75: 95
+- 1.25x0.75: 79
+- 0.5x1: 72
+- 1x1.5: 65
+- 2x2.5: 63
+- 2x1.25: 56
+- 2.5x1.75: 55
+- 1.75x2.5: 48
+- 1.75x1.5: 44
+- 1.75x2: 43
+- 2.5x1.5: 41
+- 2.5x3.5: 38
+- 2.5x2: 38
+- 3x2: 38
+- 0.75x1.25: 34
+- 1.75x1: 33
+- 2.5x4: 30
+- 3.5x2.5: 28
+- 1.25x2: 28
+- 2x3: 27
+- 3x2.5: 25
+- 2.5x3: 25
+- 1x1.75: 22
+- 1.25x1.25: 22
+- 2x3.5: 22
+- 2.5x1: 21
+- 2x1: 21
+- 1.5x2.5: 20
+- 1.5x1.5: 20
+- 1x2: 19
+- 0.75x1.5: 19
+- 1.75x3: 19
+- 2x1.75: 18
+- 1.5x0.75: 18
+- 1x2.5: 18
+- 3x4: 16
+- 1.75x4: 15
+- 4x2.5: 13
+- 1.75x0.75: 13
+- 3x3.5: 12
+- 4x3: 12
+- 3x5: 12
+- 1.5x3: 11
+- 2.5x2.5: 11
+- 1.25x2.5: 11
+- 1.75x3.5: 11
+- 0.75x1.75: 10
+- 3x1.75: 10
+- 2.5x1.25: 9
+- 6x4: 8
+- 1.25x0.5: 8
+- 2x2: 7
+- 5x3: 7
+- 4x3.5: 6
+- 3x3: 6
+- 2x5: 6
+- 3.5x3: 6
+- 5x3.5: 6
+- 3.5x2: 6
+- 3x1.25: 6
+- 0.5x1.25: 5
+- 6x2.5: 4
+- 5x4: 4
+- 2x4: 4
+- 6x3.5: 4
+- 3.5x4: 4
+- 2.5x6: 4
+- 6x3: 3
+- 1.5x3.5: 3
+- 1.25x3: 3
+- 3x1.5: 3
+- 5x6: 2
+- 4x5: 2
+- 4x1.75: 2
+- 4x4: 2
+- 3.5x6: 2
+- 6x6: 2
+- 5x2.5: 1
+- 3.5x1.5: 1
+- 6x5: 1
+- 4x6: 1
+- 5x5: 1
+- 4x2: 1
+- 2.5x5: 1
+- 3x6: 1
+- 3.5x3.5: 1
+- 3.5x1.75: 1
+- 5x2: 1
+
+famous (sitelinks >= 6 or museum highlight): 277
+palace-eligible (<= 1800): 2925
+
+## top artists
+- Catlin, George (American, 1796–1872): 355
+- American 19th Century (American, 1800–1899): 113
+- Stuart, Gilbert (American, 1755–1828): 76
+- Renoir, Auguste (French, 1841–1919): 63
+- Corot, Jean-Baptiste-Camille (French, 1796–1875): 55
+- Degas, Edgar (French, 1834–1917): 43
+- Cezanne, Paul (French, 1839–1906): 40
+- Rembrandt van Rijn (Dutch, 1606–1669): 39
+- Sully, Thomas (American, 1783–1872): 38
+- Manet, Edouard (French, 1832–1883): 38
+- Copley, John Singleton (American, 1738–1815): 36
+- Courbet, Gustave (French, 1819–1877): 36
+- Pissarro, Camille (French, 1830–1903): 36
+- French Painter (ca. 1835, ): 36
+- Boudin, Eugène (French, 1824–1898): 33
+- Peale, James (American, 1749–1831): 33
+- Tiepolo, Giovanni Battista (Italian, 1696–1770): 32
+- Homer, Winslow (American, 1836–1910): 32
+- Dyck, Anthony van, Sir (Flemish, 1599–1641): 31
+- Sargent, John Singer (American, 1856–1925): 31
+- Peale, Charles Willson (American, 1741–1827): 30
+- Inness, George (American, 1825–1894): 29
+- Kensett, John Frederick (American, 1816–1872): 29
+- American 18th Century (American, 1700–1799): 28
+- Pierre Rousseau (French, 1751–1829): 28
+- Rubens, Peter Paul, Sir (Flemish, 1577–1640): 27
+- Gogh, Vincent van (Dutch, 1853–1890): 27
+- William P. Chappel (American, 1801–1878): 27
+- Guardi, Francesco (Italian, 1712–1793): 26
+- Gainsborough, Thomas (British, 1727–1788): 25
+- Seurat, Georges (French, 1859–1891): 24
+- Fragonard, Jean Honoré (French, 1732–1806): 23
+- Boucher, François (French, 1703–1770): 22
+- Johnson, Eastman (American, 1824–1906): 22
+- Monet, Claude (French, 1840–1926): 22
+- Hals, Frans (Dutch, 1582–1666): 21
+- Fantin-Latour, Henri (French, 1836–1904): 21
+- Cole, Thomas (American, 1801–1848): 21
+- Toulouse-Lautrec, Henri de (French, 1864–1901): 20
+- Nathaniel Rogers (American, 1788–1844): 20

@@ -1,0 +1,554 @@
+{
+ "rp11_dropped": [
+  "textures/blocks/nether_quartz_ore_mer.png",
+  "textures/blocks/redstone_ore.png",
+  "textures/blocks/iron_ore.png",
+  "textures/blocks/gold_ore.texture_set.json",
+  "textures/blocks/gold_ore.png",
+  "textures/blocks/deepslate_gold_ore_mer.png",
+  "textures/blocks/diamond_ore.texture_set.json",
+  "textures/blocks/deepslate_coal_ore_mer.png",
+  "textures/blocks/redstone_ore_mer_fix.png",
+  "textures/blocks/diamond_ore_mer.png",
+  "textures/blocks/nether_gold_ore.texture_set.json",
+  "textures/blocks/coal_ore.png",
+  "textures/blocks/lapis_ore_mer_fix.png",
+  "textures/blocks/iron_ore_mer.png",
+  "textures/blocks/deepslate_lapis_ore_mer.png",
+  "textures/blocks/diamond_ore_mer_fix.png",
+  "textures/blocks/deepslate_copper_ore_mer.png",
+  "textures/blocks/copper_ore.texture_set.json",
+  "textures/blocks/diamond_ore_n.png",
+  "textures/blocks/emerald_ore_mer_fix.png",
+  "textures/blocks/copper_ore_mer.png",
+  "textures/blocks/emerald_ore_mer.png",
+  "textures/blocks/emerald_ore.png",
+  "textures/blocks/lapis_ore.png",
+  "textures/blocks/nether_gold_ore.png",
+  "textures/blocks/redstone_ore.texture_set.json",
+  "textures/blocks/emerald_ore.texture_set.json",
+  "textures/blocks/lapis_ore_mer.png",
+  "textures/blocks/coal_ore_n.png",
+  "textures/blocks/nether_quartz_ore.png",
+  "textures/blocks/lapis_ore.texture_set.json",
+  "textures/blocks/copper_ore.png",
+  "textures/blocks/coal_ore_mer.png",
+  "textures/blocks/iron_ore.texture_set.json",
+  "textures/blocks/redstone_ore_mer.png",
+  "textures/blocks/nether_gold_ore_n.png",
+  "textures/blocks/gold_ore_mer.png",
+  "textures/blocks/deepslate_diamond_ore_mer.png",
+  "textures/blocks/diamond_ore.png",
+  "textures/blocks/coal_ore_mer_fix.png",
+  "textures/blocks/nether_gold_ore_mer.png",
+  "textures/blocks/coal_ore.texture_set.json",
+  "textures/blocks/deepslate"
+ ],
+ "rp04_dropped": [],
+ "rp03_dropped": [
+  "textures/blocks/deepslate_diamond_ore_mer_256x256.png",
+  "textures/blocks/deepslate_iron_ore.png",
+  "textures/blocks/deepslate_coal_ore.texture_set.json",
+  "textures/blocks/deepslate_copper_ore_mer_256x256.png",
+  "textures/blocks/redstone_ore.png",
+  "textures/blocks/iron_ore.png",
+  "textures/blocks/gold_ore.texture_set.json",
+  "textures/blocks/gold_ore.png",
+  "textures/blocks/deepslate_emerald_ore.texture_set.json",
+  "textures/blocks/deepslate_emerald_ore_mer.png",
+  "textures/blocks/deepslate_emerald_ore.png",
+  "textures/blocks/deepslate_gold_ore_mer.png",
+  "textures/blocks/deepslate_iron_ore_mer.png",
+  "textures/blocks/deepslate_coal_ore_mer_256x256.png",
+  "textures/blocks/deepslate_gold_ore.texture_set.json",
+  "textures/blocks/diamond_ore.texture_set.json",
+  "textures/blocks/deepslate_coal_ore_n.png",
+  "textures/blocks/deepslate_coal_ore_mer.png",
+  "textures/blocks/quartz_ore.png",
+  "textures/blocks/deepslate_redstone_ore.png",
+  "textures/blocks/redstone_ore_mer_fix.png",
+  "textures/blocks/deepslate_diamond_ore.texture_set.json",
+  "textures/blocks/deepslate_gold_ore.png",
+  "textures/blocks/deepslate_redstone_ore_mer.png",
+  "textures/blocks/diamond_ore_mer.png",
+  "textures/blocks/deepslate_diamond_ore_n.png",
+  "textures/blocks/nether_gold_ore.texture_set.json",
+  "textures/blocks/coal_ore.png",
+  "textures/blocks/lapis_ore_mer_fix.png",
+  "textures/blocks/deepslate_lapis_ore.texture_set.json",
+  "textures/blocks/iron_ore_mer.png",
+  "textures/blocks/deepslate_lapis_ore_mer.png",
+  "textures/blocks/deepslate_lapis_ore_mer_256x256.png",
+  "textures/blocks/deepslate_diamond_ore.png",
+  "textures/blocks/deepslate_copper_ore_mer.png",
+  "textures/blocks/deepslate_lapis_ore.png",
+  "textures/blocks/copper_ore.texture_set.json",
+  "textures/blocks/diamond_ore_n.png",
+  "textures/blocks/copper_ore_mer.png",
+  "textures/blocks/emerald_ore_mer.png",
+  "textures/blocks/emerald_ore.png",
+  "textures/blocks/lapis_ore.png",
+  "textures/blocks/nether_gold_ore.png",
+  "textures/blocks/redstone_ore.texture_set.json",
+  "textures/blocks/emerald_ore.texture_set.json",
+  "textures/blocks/deepslate_iron_ore.texture_set.json",
+  "textures/blocks/lapis_ore_mer.png",
+  "textures/blocks/coal_ore_n.png",
+  "textures/blocks/lapis_ore.texture_set.json",
+  "textures/blocks/copper_ore.png",
+  "textures/blocks/coal_ore_mer.png",
+  "textures/blocks/iron_ore.texture_set.json",
+  "textures/blocks/redstone_ore_mer.png",
+  "textures/blocks/nether_gold_ore_n.png",
+  "textures/blocks/gold_ore_mer.png",
+  "textures/blocks/quartz_ore_n.png",
+  "textures/blocks/deepslate_coal_ore.png",
+  "textures/blocks/quartz_ore.texture_set.json",
+  "textures/blocks/quartz_ore_mer.png",
+  "textures/blocks/deepslate_diamond_ore_mer.png",
+  "textures/blocks/deepslate_copper_ore.png",
+  "textures/blocks/deepslate_copper_ore.texture_set.json",
+  "textures/blocks/diamond_ore.png",
+  "textures/blocks/coal_ore_mer_fix.png",
+  "textures/blocks/nether_gold_ore_mer.png",
+  "textures/blocks/deepslate_redstone_ore.texture_set.json",
+  "textures/blocks/deepslate_gold_ore_mer_256x256.png",
+  "textures/blocks/coal_ore.texture_set.json"
+ ],
+ "keys": {
+  "coal_ore_0": {
+   "mineral_pct": 11.4,
+   "glints": 453,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "coal_ore_1": {
+   "mineral_pct": 13.6,
+   "glints": 561,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/coal/6"
+  },
+  "coal_ore_2": {
+   "mineral_pct": 11.3,
+   "glints": 421,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/coal/11"
+  },
+  "coal_ore_3": {
+   "mineral_pct": 14.2,
+   "glints": 573,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/coal/16"
+  },
+  "iron_ore_0": {
+   "mineral_pct": 30.5,
+   "glints": 1166,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "iron_ore_1": {
+   "mineral_pct": 36.0,
+   "glints": 1410,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/iron/6"
+  },
+  "iron_ore_2": {
+   "mineral_pct": 29.5,
+   "glints": 1201,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/iron/11"
+  },
+  "iron_ore_3": {
+   "mineral_pct": 35.7,
+   "glints": 1362,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/iron/16"
+  },
+  "copper_ore_0": {
+   "mineral_pct": 21.0,
+   "glints": 835,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "copper_ore_1": {
+   "mineral_pct": 26.3,
+   "glints": 993,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/copper/6"
+  },
+  "copper_ore_2": {
+   "mineral_pct": 21.2,
+   "glints": 826,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/copper/11"
+  },
+  "copper_ore_3": {
+   "mineral_pct": 25.4,
+   "glints": 971,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/copper/16"
+  },
+  "gold_ore_0": {
+   "mineral_pct": 37.2,
+   "glints": 1456,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "gold_ore_1": {
+   "mineral_pct": 39.5,
+   "glints": 1634,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/gold/6"
+  },
+  "gold_ore_2": {
+   "mineral_pct": 32.7,
+   "glints": 1248,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/gold/11"
+  },
+  "gold_ore_3": {
+   "mineral_pct": 40.1,
+   "glints": 1657,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/gold/16"
+  },
+  "redstone_ore_0": {
+   "mineral_pct": 38.8,
+   "glints": 1487,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "redstone_ore_1": {
+   "mineral_pct": 28.9,
+   "glints": 1136,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/redstone/6"
+  },
+  "redstone_ore_2": {
+   "mineral_pct": 34.2,
+   "glints": 1305,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/redstone/11"
+  },
+  "redstone_ore_3": {
+   "mineral_pct": 33.4,
+   "glints": 1252,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/redstone/16"
+  },
+  "emerald_ore_0": {
+   "mineral_pct": 36.4,
+   "glints": 1393,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "emerald_ore_1": {
+   "mineral_pct": 27.2,
+   "glints": 1004,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/emerald/6"
+  },
+  "emerald_ore_2": {
+   "mineral_pct": 31.3,
+   "glints": 1239,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/emerald/11"
+  },
+  "emerald_ore_3": {
+   "mineral_pct": 31.3,
+   "glints": 1227,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/emerald/16"
+  },
+  "lapis_ore_0": {
+   "mineral_pct": 29.8,
+   "glints": 1179,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "lapis_ore_1": {
+   "mineral_pct": 31.3,
+   "glints": 1263,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/lapis/6"
+  },
+  "lapis_ore_2": {
+   "mineral_pct": 26.0,
+   "glints": 1015,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/lapis/11"
+  },
+  "lapis_ore_3": {
+   "mineral_pct": 34.8,
+   "glints": 1393,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/lapis/16"
+  },
+  "diamond_ore_0": {
+   "mineral_pct": 26.9,
+   "glints": 1086,
+   "rock": "RP-04 1.3.154 textures/blocks/stone.png",
+   "mineral_src": "Patrix default"
+  },
+  "diamond_ore_1": {
+   "mineral_pct": 23.3,
+   "glints": 961,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v1.png",
+   "mineral_src": "Patrix CTM ore/diamond/6"
+  },
+  "diamond_ore_2": {
+   "mineral_pct": 25.5,
+   "glints": 981,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v2.png",
+   "mineral_src": "Patrix CTM ore/diamond/11"
+  },
+  "diamond_ore_3": {
+   "mineral_pct": 24.8,
+   "glints": 955,
+   "rock": "RP-04 1.3.154 textures/blocks/stone_v3.png",
+   "mineral_src": "Patrix CTM ore/diamond/16"
+  },
+  "deepslate_coal_ore_0": {
+   "mineral_pct": 11.5,
+   "glints": 446,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_coal_ore_1": {
+   "mineral_pct": 18.2,
+   "glints": 703,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/coal/deepslate/6"
+  },
+  "deepslate_coal_ore_2": {
+   "mineral_pct": 16.2,
+   "glints": 614,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/coal/deepslate/11"
+  },
+  "deepslate_coal_ore_3": {
+   "mineral_pct": 14.4,
+   "glints": 547,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/coal/deepslate/16"
+  },
+  "deepslate_iron_ore_0": {
+   "mineral_pct": 42.5,
+   "glints": 1642,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_iron_ore_1": {
+   "mineral_pct": 37.2,
+   "glints": 1484,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/iron/deepslate/6"
+  },
+  "deepslate_iron_ore_2": {
+   "mineral_pct": 29.3,
+   "glints": 1124,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/iron/deepslate/11"
+  },
+  "deepslate_iron_ore_3": {
+   "mineral_pct": 33.8,
+   "glints": 1306,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/iron/deepslate/16"
+  },
+  "deepslate_copper_ore_0": {
+   "mineral_pct": 25.0,
+   "glints": 965,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_copper_ore_1": {
+   "mineral_pct": 20.7,
+   "glints": 805,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/copper/deepslate/6"
+  },
+  "deepslate_copper_ore_2": {
+   "mineral_pct": 19.2,
+   "glints": 775,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/copper/deepslate/11"
+  },
+  "deepslate_copper_ore_3": {
+   "mineral_pct": 20.7,
+   "glints": 816,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/copper/deepslate/16"
+  },
+  "deepslate_gold_ore_0": {
+   "mineral_pct": 43.3,
+   "glints": 1747,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_gold_ore_1": {
+   "mineral_pct": 37.5,
+   "glints": 1522,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/gold/deepslate/6"
+  },
+  "deepslate_gold_ore_2": {
+   "mineral_pct": 29.2,
+   "glints": 1148,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/gold/deepslate/11"
+  },
+  "deepslate_gold_ore_3": {
+   "mineral_pct": 31.7,
+   "glints": 1229,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/gold/deepslate/16"
+  },
+  "deepslate_redstone_ore_0": {
+   "mineral_pct": 24.4,
+   "glints": 966,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_redstone_ore_1": {
+   "mineral_pct": 21.7,
+   "glints": 836,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/redstone/deepslate/6"
+  },
+  "deepslate_redstone_ore_2": {
+   "mineral_pct": 22.6,
+   "glints": 907,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/redstone/deepslate/11"
+  },
+  "deepslate_redstone_ore_3": {
+   "mineral_pct": 19.5,
+   "glints": 781,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/redstone/deepslate/16"
+  },
+  "deepslate_emerald_ore_0": {
+   "mineral_pct": 24.4,
+   "glints": 939,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_emerald_ore_1": {
+   "mineral_pct": 21.7,
+   "glints": 858,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/emerald/deepslate/6"
+  },
+  "deepslate_emerald_ore_2": {
+   "mineral_pct": 22.5,
+   "glints": 839,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/emerald/deepslate/11"
+  },
+  "deepslate_emerald_ore_3": {
+   "mineral_pct": 19.4,
+   "glints": 777,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/emerald/deepslate/16"
+  },
+  "deepslate_lapis_ore_0": {
+   "mineral_pct": 41.8,
+   "glints": 1617,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_lapis_ore_1": {
+   "mineral_pct": 37.9,
+   "glints": 1512,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/lapis/deepslate/6"
+  },
+  "deepslate_lapis_ore_2": {
+   "mineral_pct": 30.7,
+   "glints": 1264,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/lapis/deepslate/11"
+  },
+  "deepslate_lapis_ore_3": {
+   "mineral_pct": 32.8,
+   "glints": 1279,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/lapis/deepslate/16"
+  },
+  "deepslate_diamond_ore_0": {
+   "mineral_pct": 23.7,
+   "glints": 955,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_0.png",
+   "mineral_src": "Patrix default"
+  },
+  "deepslate_diamond_ore_1": {
+   "mineral_pct": 21.4,
+   "glints": 838,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v1.png",
+   "mineral_src": "Patrix CTM ore/diamond/deepslate/6"
+  },
+  "deepslate_diamond_ore_2": {
+   "mineral_pct": 22.1,
+   "glints": 924,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v2.png",
+   "mineral_src": "Patrix CTM ore/diamond/deepslate/11"
+  },
+  "deepslate_diamond_ore_3": {
+   "mineral_pct": 18.6,
+   "glints": 735,
+   "rock": "RP-04 1.3.154 textures/blocks/deepslate_v3.png",
+   "mineral_src": "Patrix CTM ore/diamond/deepslate/16"
+  },
+  "nether_gold_ore_0": {
+   "mineral_pct": 4.6,
+   "glints": 162,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v0.png",
+   "mineral_src": "Patrix default"
+  },
+  "nether_gold_ore_1": {
+   "mineral_pct": 3.7,
+   "glints": 140,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v1.png",
+   "mineral_src": "Patrix CTM nether/gold/6"
+  },
+  "nether_gold_ore_2": {
+   "mineral_pct": 2.8,
+   "glints": 106,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v2.png",
+   "mineral_src": "Patrix CTM nether/gold/11"
+  },
+  "nether_gold_ore_3": {
+   "mineral_pct": 2.3,
+   "glints": 100,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v3.png",
+   "mineral_src": "Patrix CTM nether/gold/16"
+  },
+  "quartz_ore_0": {
+   "mineral_pct": 7.5,
+   "glints": 280,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v0.png",
+   "mineral_src": "Stratum 256x nether_quartz_ore none"
+  },
+  "quartz_ore_1": {
+   "mineral_pct": 7.5,
+   "glints": 300,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v1.png",
+   "mineral_src": "Stratum 256x nether_quartz_ore h"
+  },
+  "quartz_ore_2": {
+   "mineral_pct": 7.5,
+   "glints": 281,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v2.png",
+   "mineral_src": "Stratum 256x nether_quartz_ore v"
+  },
+  "quartz_ore_3": {
+   "mineral_pct": 7.5,
+   "glints": 311,
+   "rock": "RP-04 1.3.154 textures/blocks/netherrack_v3.png",
+   "mineral_src": "Stratum 256x nether_quartz_ore hv"
+  }
+ },
+ "rp04_keys_removed": [],
+ "rp03_keys_removed": []
+}

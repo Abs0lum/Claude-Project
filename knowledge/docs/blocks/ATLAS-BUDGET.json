@@ -1,0 +1,33 @@
+{
+ "all keys": {
+  "now": 69.6,
+  "a planks 192": 68.3,
+  "b 16-variant families 192": 68.2,
+  "a+b": 66.9,
+  "a+b + every other 256 texture 192": 61.0
+ },
+ "used keys": {
+  "now": 56.2,
+  "a planks 192": 54.9,
+  "b 16-variant families 192": 54.8,
+  "a+b": 53.5,
+  "a+b + every other 256 texture 192": 47.5
+ },
+ "used breakdown Mpx": {
+  "128px other": 30.7,
+  "256px other": 13.7,
+  "192px other": 5.5,
+  "16+ variant families @256": 3.1,
+  "planks grid": 2.9,
+  "64px other": 0.1,
+  "181px other": 0.0,
+  "16px other": 0.0,
+  "32px other": 0.0
+ },
+ "counts": {
+  "images all": 3392,
+  "images used": 2605,
+  "planks tiles": 176,
+  "16+variant 256 images": 48
+ }
+}

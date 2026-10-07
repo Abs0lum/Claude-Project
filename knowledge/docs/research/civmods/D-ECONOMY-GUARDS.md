@@ -1,0 +1,653 @@
+# D-ECONOMY-GUARDS — civ-mod study for CIVITAS (2026-10-06)
+
+Group: guards, soldiers, workers, money, bounty boards, villager trading, guides.
+Method: I read each item's source (tar.gz), decompiled the needed classes with CFR (closed jars) or read the data JSON.
+Every mechanism below comes from a file I opened; the file or class is named. Numbers are game ticks (20 t = 1 s) unless marked.
+Where a ledger licence and the licence inside the file disagree, both are given.
+Idea format: **idea → how on Bedrock → effort S/M/L → value 1-5**.
+Our side is read from `/home/claude/tools/bp02_src_227/pw_civ_{watch,economy,coin,work,people,shop}.js`. Everything here is a static read: nothing has been tested in game (P1).
+
+---
+
+### Guard Villagers (source, seymourimadeit/guardvillagers @3da0258; licence: code MIT, `/src/main/resources/` All Rights Reserved; ledger "LicenseRef-Custom"; files examined: LICENSE, GuardConfig.java, Guard.java, HandlerEvents.java, ai/tasks/{VillagerHelp, ShareGossipWithGuard, RepairGuardEquipment, HealGuardAndHero}.java, networking/GuardSetPatrolPosPacket.java, loot_table/entities/{guard,guard_armor}.json)
+- **What it does:** adds a Guard mob to villages, made by converting an unemployed villager or nitwit. Guards patrol around village job sites or hold a set point, follow a player who has Hero of the Village, and fight hostile mobs and players the village dislikes. Villagers of some trades heal guards and repair their gear.
+- **Mechanisms found:**
+  - *Spawning and conversion* (HandlerEvents, GuardConfig):
+    - 6 guards spawn per village, placed in the middle of the `village/common/iron_golem` structure piece.
+    - A player sneaking with an item tagged `convertible_guard_items` turns an adult `nitwit` or `none` villager into a guard. Hero of the Village can be made a requirement.
+    - Ringing a bell orders all guards within 32 blocks to follow the player (`multiFollow`).
+  - *Stats* (StartUpConfig): 20 HP, speed 0.5, follow range 20. Regenerates 1 HP every 200 ticks (`aiStep`, `tickCount % 200`).
+  - *Gear* (guard_armor.json): pool 0 is an armour set. Pool 1 is an even 25/25/25/25 pick of iron sword, crossbow, bow or iron axe. Pool 2 adds bread and a shield.
+    - Variant: the guard's look follows the biome's villager type (`getVariantFromBiome`).
+    - `chanceToBreakEquipment` 1.0 and `chanceToDropEquipment` 100 (config).
+  - *Goal priorities* (Guard.registerGoals):
+    - 0: kick, eat, raise shield. 1: run away to eat. 3: crossbow (radius 8), spear, bow, melee, walk back to checkpoint.
+    - 4: follow hero (start 10, stop 4), move back to village, open doors.
+    - 5: patrol around job sites (golem-style), or MoveThroughVillage (off by default — "can cause lag").
+    - 6: phalanx (FollowShieldGuards). 8: random stroll.
+  - *Target priorities*: HurtBy (alerts other guards and golems) = 2, Ravager = 3, Witch = 4, Raider and Zombie = 5 (not zombified piglin), angry-at-player = 4.
+    - If `AttackAllMobs` is on, any `Enemy` not on the blacklist (villager, iron_golem, wandering_trader, guard, creeper, enderman) is a target.
+  - *DefendVillageGuardGoal*: scans a 10×8×10 box. If any villager's reputation toward a player is −100 or lower, that player becomes the target (not players with Hero of the Village, in creative or spectating).
+  - *Help range*: guards help villagers under attack within 50 blocks ("higher values more resource intensive").
+  - *Ranged fire*: a guard will not shoot when a friendly is inside the cone `dot ≤ −0.9` (friendlyFireCheckValue), unless it is patrolling.
+  - *Eating*: under 50% HP with food in the off-hand, it runs 16 blocks away from its attacker (DefaultRandomPos.getPosAway 16,7), then eats. In a fight it eats only back above half HP plus 2, then rejoins.
+  - *Kick*: when the target is within 2.5 blocks, kick for 10 ticks with a 50-tick cooldown.
+  - *Shield*: raised when the target is within 4 blocks, is a creeper or ravager, or is a ranged mob at 5+ blocks.
+  - *Patrol point* (GuardSetPatrolPosPacket): a player button sets patrol = player's block position and `Patrolling = true`.
+    - WalkBackToCheckPointGoal: when idle and away from the point, it paths back. If the path cannot reach it for 200 ticks, it stops and waits 200 ticks before trying again.
+  - *Phalanx* (FollowShieldGuards): a melee guard joins a shield guard within 8 blocks that is blocking, if fewer than 5 guards are within 5. It moves at 0.4 to a point near that guard (getPosTowards 16,7, ±90°).
+  - *Villager services* (VillagerHelp family): each acts at most 3 times per day (24000 t); after the 3rd, a cooldown of a day starts.
+    - Cleric (HealGuardAndHero): throws a potion at a guard, villager or hero within 4 blocks below max HP. Regeneration if HP > 4, otherwise Healing. Waits 40 ticks between throws; line of sight is needed.
+    - Armorer repairs armour at ≥50% damage; weaponsmith and toolsmith repair hand slots 4-5. Each repair removes a random 0-4 durability.
+  - *Gossip*: a villager interacting with a guard walks to it. Within √5 blocks the guard copies the villager's gossip (max 10 entries, at most once per 1200 ticks). Gossip decays every 24000 ticks.
+    - The villager also throws half of its spare food to a guard with an empty off-hand (ShareGossipWithGuard).
+  - *Inventory access*: a player may open a guard's inventory at reputation 15 or more (`reputationRequirement`).
+- **Usable for CIVITAS:**
+  - **Crime targeting from our trust/opinion data** → the watch sets a player as a target when the town's opinion of them is at or below a threshold (the Guard rule is reputation ≤ −100 among villagers within 10 blocks). We already keep opinions in pw_civ_people; add one check to the watch beat. Players in creative are excluded → S → 4. *Narrative timing: crime belongs to his narrative phase; build the hook, keep it off by default.*
+  - **Target priority list** → order our HOSTILE list as ravager > witch > raider (pillager, vindicator, evoker) > zombie family > the rest, and re-pick the nearest threat when hurt. Today the watch picks any HOSTILE within 16 → S → 3.
+  - **Retreat to eat and regenerate** → a watchman under 50% HP steps back about 16 blocks, eats a ration (`EAT.bread` from the ledger) and rejoins; regenerate 1 HP every 200 ticks off duty. Script: `entity.getComponent('health')` and our lead entity → S → 3.
+  - **Smith repairs and cleric healing as trades between jobs** → each watch weapon has wear. Once a day the smithy repairs it (consuming iron from `L.stock`) and a chapel keeper heals. Cap 3 per day per worker, as in VillagerHelp → M → 3.
+  - **Gossip into the watch** → the watch learns villager opinions by meeting them (copy up to 10 entries, at most once per minute). We already pass rumours friend to friend; add the watchman as a listener so the watch "hears" about thieves → S → 3.
+  - **Phalanx and hold point** → for the palace guard (his castle ruling: "a separate paid guard body recruited over time"). Melee guards hold a point and gather near a shield-bearer when one blocks → M → 2.
+
+### Villager Workers 2 (CurseForge/Modrinth, workers-1.20.1-2.0.3, All Rights Reserved (mods.toml); needs Villager Recruits; files examined: META-INF/mods.toml, entities/{AbstractWorkerEntity, MerchantEntity}, entities/workarea/{AbstractWorkAreaEntity, StorageArea, CropArea, LumberArea, MiningArea, MarketArea, HomeArea, KitchenArea(grep), AnimalPenArea(grep)}, entities/ai/{AbstractChestGoal, DepositItemsToStorage, GetNeededItemsFromStorage, FarmerWorkGoal, LumberjackWorkGoal, MinerWorkGoal(states), FishermanWorkGoal, BuilderWorkGoal, MerchantWorkGoal, CourierWorkGoal, CookWorkGoal(constants), AnimalFarmerWorkGoal, WorkerGoHomeGoal, WorkerTakeCoverGoal, VillagerPickupFoodGoal, RecruitStorageUpkeepGoal(header)}, world/{NeededItem, WorkersMerchantTrade, CourierRoute, CourierAction}, config/WorkersServerConfig)
+- **What it does:** hired worker NPCs (farmer, lumberjack, miner, builder, fisherman, animal farmer, cook, merchant, courier) run state machines inside player-drawn **work areas**. They bring output to **storage areas** (chests), fetch what they lack, and sleep in **home areas**. This matches our jobs almost one to one.
+- **Mechanisms found — shared framework:**
+  - *Work area = invisible entity holding a box* (AbstractWorkAreaEntity):
+    - Fields: width, depth, height, facing, owner, team, `isBeingWorkedOn`, `isDone`, `time` (+1 every 20 ticks), `DONE_TIME` 1200.
+    - Areas may not overlap, except build areas (`isAreaOverlapping`, 64-block search).
+  - *Choosing an area* (Farmer/Lumber/BuilderWorkGoal.getAvailableWorkAreasByPriority): areas within 64 blocks, scored as:
+    - +10 for a "perfect candidate" (already holds the tool and the seed or sapling; `CropArea.isWorkerPerfectCandidate`), otherwise +1.
+    - +10 if nobody is working it.
+    - + `time` × 10, so the area left alone longest wins.
+    - On picking: `setBeingWorkedOn(true)` and `time = 0`.
+    - Selection is staggered: a counter is compared with `nextInt(300)`, ticked every 5 ticks.
+    - The claim is released on DONE, on the worker's death, or when the worker is more than √1000 ≈ 31.6 blocks away (`AbstractWorkerEntity.aiStep`; `getHorizontalDistanceTo` returns the squared distance).
+  - *Movement thresholds* (moveToPosition): all compare squared distance — area 20 (≈4.5 blocks), tree 30 (≈5.5), builder block 40 (≈6.3), chest 20. Speeds 0.8-0.9.
+  - *Breaking blocks* (AbstractWorkerEntity.mineBlock):
+    - `breakingTime = hardness × 30`; each tick adds `toolDestroySpeed × 2`.
+    - Crack stage = progress/breakingTime × 10; a hit sound every 5th step. Leaves cut with shears drop as items.
+  - *Storage* (StorageArea, AbstractChestGoal, DepositItemsToStorage, GetNeededItemsFromStorage):
+    - A storage area records every container in its box that has air above it (double chests deduplicated). It carries a **trade mask** (MINERS 0, LUMBERS 1, BUILDERS 2, FARMERS 3, MERCHANTS 4, FISHERMAN 5, ANIMAL_FARMERS 6, COOK 7, COURIER 8), and a worker only uses areas whose mask includes its trade.
+    - Deposit trigger: `farmedItems > 128` (items picked up since the last deposit) or `forcedDeposit` (inventory full).
+    - Deposit state machine: SELECT_STORAGE (within 64, nearest first, the last-used storage preferred) → MOVE → SCAN → SELECT_CHEST (nearest) → MOVE → CHECK (full? next chest) → OPEN (40 ticks, chest lid animates) → DEPOSIT (merge into matching stacks, then empty slots; armour and good food kept) → CLOSE (20 ticks) → DONE.
+    - Errors: "No available Storage found nearby", "<area> is full!", "<area> has no containers!". Retry after 1200 ticks.
+  - *Needed items* (world/NeededItem): `{matcher, count, required, sourceKey}`.
+    - Requests from the same source for the same item merge by `max(count)`. Picked-up items reduce the matching request.
+    - Required requests send the worker to fetch from storage (open 20 ticks).
+  - *Owner messages*: at most one per in-game day unless the owner interacts (`canNotifyOwner`, `lastNotifyDay`).
+  - *Home* (WorkerGoHomeGoal, HomeArea):
+    - At night the worker finds its assigned or the nearest free home area, walks there (threshold 5), then to the bed (within √35).
+    - While asleep it heals 1 HP every 200 ticks and refreshes `lastResidentSeen`.
+    - A home is freed if its resident has not been seen for 72000 ticks (3 days; `EVICTION_TIMEOUT_TICKS`). Death also frees the home.
+  - *Morale* (AbstractWorkerEntity.tickMorale), once per night:
+    - No home: −10, and the owner is told when morale reaches 50 or less.
+    - With a home: +5, up to 60.
+  - *Take cover* (WorkerTakeCoverGoal): a bell rung within 48 blocks, or a raid within 64, makes workers hold position for 1200 ticks.
+  - *Hire cost* (WorkersServerConfig): farmer 10, lumberjack 12, miner 16, builder 20, merchant 30, courier 20 (the comment says 30), cook 25. Animal pen limit 32.
+  - *Villager breeding by food* (VillagerBreedSaturationThreshold 15): Σ nutrition × saturationModifier × 2 over the villager's inventory, so 3 bread = 18 ≥ 15 and 2 cooked beef = 25.
+- **Mechanisms found — per job:**
+  - **Farmer** (FarmerWorkGoal, CropArea): one step every 5 ticks.
+    - Order: SELECT → MOVE → bone meal → pick bushes → harvest mature crops and stray bushes → put water in the centre → till → plant → DONE.
+    - Field template: a 9×9 box with the water source at (4,4) from the origin, rotated by facing (`getWaterPosCenter`).
+    - Stem fields (melon, pumpkin) till and plant only columns 2, 3, 7 and 8.
+    - Missing hoe or seed: the step is skipped and a NeededItem is added at DONE.
+  - **Lumberjack** (LumberjackWorkGoal, LumberArea): one step every 10 ticks.
+    - Order: bone meal saplings → scan trees → nearest tree → shear leaves (option) → strip logs (option) → cut every log → replant (option).
+    - Tree test (`scanForTrees`):
+      - Flood-fill connected logs over 6 neighbours.
+      - Accept the cluster only if **natural leaves (`persistent=false`) lie within ±4 of any of its logs** (`hasNaturalLeavesConnected`); player-built log structures are never cut.
+      - Leaves within ±4 of each log are listed for shearing.
+      - Logs are cut from the top down (reverse-sorted).
+    - Replanting (`scanPlantArea`): 9 fixed spots — the area centre, ±5 on each axis and the four ±5 diagonals. Each needs a block that can hold a sapling and **4 air blocks above**. One spot is planted per column.
+  - **Miner** (MiningArea, MinerWorkGoal):
+    - Modes: CUSTOM digs every block in the box except the top layer; STAIRS_UP and STAIRS_DOWN keep a 4-high air band along the diagonal (`isStairsAir`: keep if i < r−1 or i ≥ r+4).
+    - Optional: mine ores within 3 blocks of the walls that touch air, and fill floor holes.
+    - Blocks on the ignore list are skipped (e.g. torches, chests).
+  - **Fisherman** (FishermanWorkGoal):
+    - Casts at the centre of the fishing area and waits up to 130 steps × 5 ticks = 650 ticks, or until the bobber hooks.
+    - Uses the vanilla fishing loot table with luck = 0.1 + tool luck + min(25, water depth)/10.
+    - The rod loses durability on every 2nd catch. A full inventory forces a deposit.
+  - **Builder** (BuilderWorkGoal, BuildArea):
+    - FREE_AREA: clears the site.
+    - BREAK: removes blocks that differ from the template. The next block to break must be visible; it prefers the block above or below the last one, otherwise the nearest.
+    - PLACE: **only the lowest unfinished layer**, and only blocks whose item the builder holds. When stuck it requests the most-needed material of that layer, at most 64 at once.
+    - Multi-blocks (doors, beds) are placed last. At DONE, entities saved with the structure are spawned and the area is marked done.
+  - **Merchant** (MerchantWorkGoal, MerchantEntity, MarketArea, WorkersMerchantTrade):
+    - Claims a market area, walks to its centre (within 3), faces outward and looks at a player within 8. Stock is whatever sits in the market area's chests.
+    - Trade record: `{currencyItem, tradeItem, maxTrades (default 16), currentTrades, enabled, isVillagerTrade}`. Counts reset at dawn (time of day < 2000) when daily refresh is on.
+    - **Villager customers:**
+      - Every 200 ticks in daytime it invites one random villager within 60 that is awake, not trading and not invited elsewhere (global `VillagerInviteRegistry`).
+      - It only offers what that villager's own offers will buy for emeralds, and only if the stall stock covers it.
+      - The villager walks over; trades happen within 3.5 blocks.
+      - A session is 3-8 trades with 50 ticks between trades and a 500-tick timeout. The villager earns trade XP; happy particles and a sound play.
+  - **Cook** (CookWorkGoal constants): kitchen area with furnaces. Checks furnaces every 120 ticks, stores output every 180, scans for villager customers every 100, customer timeout 600.
+  - **Courier** (CourierRoute, CourierAction, CourierWorkGoal):
+    - A route is a list of waypoints, each with up to 8 actions: TAKE, PUT, TAKE_ANY, PUT_ANY, TAKE_ALL, PUT_ALL, PUT_FILL, TAKE_FILL (source CHEST, STORAGE, MARKET or KITCHEN, plus an item), or WAIT(seconds).
+    - Arrival within 3 blocks (squared distance ≤ 9). Re-paths every 20 ticks. Gives up on a waypoint after 2000 ticks.
+    - Cycle mode or out-and-back mode. At night it goes home **only once back at waypoint 0** (`isSafeToGoHome`).
+  - **Animal farmer** (AnimalFarmerWorkGoal): breeds in pairs during breed time and culls with an axe down to `maxAnimals` (default 32).
+- **Usable for CIVITAS:**
+  - **The real-tree test for woodcutters** → before choosing a trunk, flood-fill its connected logs (max 64) and require natural leaves within ±4. On Bedrock: leaves `persistent_bit == false` via `block.permutation.getState("persistent_bit")`.
+    - Our `nextTree` today accepts any log 1-2 blocks above ground outside plots (pw_civ_work.js nextTree), so it could take a player's log cabin.
+    - This matches his standing BIGCANOPY rule: "a real tree… not a random log… player-placed logs must never trigger". Use the same predicate in both systems → S → 5.
+  - **Workplace claim and "oldest untouched first" scoring** → each quarry face, coppice and field cell gets `busy`, `lastWorked`; workers pick by `+10 free + 10·minutesIdle (+10 holds the tool)`; release on death, on leaving or at the end of the beat. Stops two quarrymen sharing one face and spreads labour → S → 4.
+  - **Visible builder: lowest layer first, only what is "carried"** → our builders already work stages. Show it as layer-by-layer placement from the stage's template (lowest Y first), limited by the materials the site holds from the ledger (`missing(L,bill)`).
+    - When a layer is short, a builder walks to the yard or store (the NeededItem pattern, ≤ 64) and comes back. Doors and beds go last.
+    - Watchdog: one layer slice per runJob step → M → 4.
+  - **Stall merchant who invites villager customers** → at counters and market stalls, each beat invite one free villager within 60 (one global invite map so no villager is double-booked). It walks to the counter and does 3-8 sales 2.5 s apart, timeout 25 s.
+    - Each sale moves goods out of the stall stock and coin into the ledger — a living market built on the sales we already compute (`INN_SALES`, `EAT`). Script on our lead entity and the routes we have → M → 5.
+  - **Storage typed by trade** → each store or yard chest gets a trade mask (builder, quarry, woodcutter, farmer, market). Workers deposit after a threshold (Workers: 128 items) or when full. Messages to the player at most once per day per worker → S → 3.
+  - **Porter/courier with routes** → a porter job walks the street route graph between store chests with TAKE/PUT/WAIT steps and finishes its round before going home.
+    - It makes the ledger flows visible (quarry → building site, mill → bakery). Our A* already gives the route; actions are container moves via `block.getComponent('minecraft:inventory').container` → M → 4.
+  - **Bell → take cover** → when the watch rings the square's bell (or a raid starts), every civilian within 48 holds position or goes home for 60 s. Our schedules already have a "home" state → S → 4.
+  - **Home eviction after 3 days unseen, nightly morale ±** → frees homes of people who left or died. A homeless night costs −10 mood and a homed night gives +5 (capped). Fits pw_civ_people `mood`, `leaveMood` → S → 3.
+  - **Breeding by food in the larder** → births need a household food store of saturation ≥ 15 (3 bread). We have `birthChance` 0.03 and a ration price; tie births to the house's stored food → S → 3.
+  - **Replant grid** → our coppice uses a 3-block grid up to 24 saplings. Workers' 9 fixed spots at ±5 with 4 free air above is a cheaper check (no searching) → S → 2.
+  - **Fisherman numbers** → a catch at most every 650 ticks, luck from water depth min(25, depth)/10. Use for `REAL.fishery` real output → S → 2.
+
+### Villager Recruits (Modrinth/CurseForge, recruits-1.20.1-1.15.2, All Rights Reserved (mods.toml); files examined: META-INF/mods.toml, config/RecruitsServerConfig, entities/AbstractRecruitEntity, entities/ai/RecruitUpkeepPosGoal, ClaimEvents, world/{RecruitsClaim, RecruitsDiplomacyManager, RecruitsTreatyManager, RecruitsPatrolSpawn}, util/FormationUtils, VillagerEvents(grep))
+- **What it does:** hireable soldiers (recruit, bowman, crossbowman, shieldman, horseman, nomad) with hunger, morale, pay and upkeep chests. Also formations, factions with chunk claims, sieges that transfer a claim, diplomacy (neutral, ally, enemy) with treaties, and roaming patrols and caravans.
+- **Mechanisms found:**
+  - *Hiring* (RecruitsServerConfig): cost in emeralds — recruit 4, bowman 6, crossbowman 8, shieldman 10, horseman 20, nomad 19. Max 100 per player.
+    - A villager becomes a "noble" (hirer) when there are 7 villagers and no noble nearby (`NobleVillagerSpawns`).
+  - *Pay* (AbstractRecruitEntity.checkPayment): off by default.
+    - Every `1200 × 15` ticks (15 minutes) a recruit takes 1 currency, from its upkeep chest first, then its own inventory.
+    - If it cannot, NoPaymentAction applies: MORALE_LOSS (morale × 0.7, the default), DISBAND, DISBAND_KEEP_TEAM or DESPAWN. The owner is told.
+  - *Hunger* (updateHunger): −1/30 per update (−1/60 while holding position). Starving at hunger ≤ 1, saturated at ≥ 90.
+    - It needs to eat at hunger ≤ 50, at ≤ 70 when hurt and idle, or at HP ≤ 30%. It then takes up to 3 food from the upkeep chest (RecruitUpkeepPosGoal).
+    - It heals 0.02 per tick when hunger is 70 or more.
+  - *Morale* (updateMorale, applyMoralEffects):
+    - Changes: starving −2; owned and not saturated with morale > 35: −1; saturated or HP ≥ 85% with morale < 65: +2.
+    - Each hit taken −0.25, each hit landed +0.25. Kills: +1; player +9; raider +2; iron golem −1; baby villager −10.
+    - Bands: 0-20 = "confused" (three debuffs); 20-40 = low (two debuffs); 90-100 = high (two buffs).
+  - *Formations* (FormationUtils): line, square, triangle, hollow circle, circle, hollow square, V.
+    - Line: `rowDistance = spacing × 1.75`; position = target − forward × rowDistance × row + left × (posInRow − (inRow − 1)/2) × spacing.
+    - Each soldier keeps its slot index (`formationPos`) so slots stay stable. Positions are dropped to the surface (`getPositionOrSurface`).
+  - *Claims* (config, ClaimEvents, RecruitsClaim):
+    - A 5×5-chunk claim costs 64; each extra chunk 15; maximum 50 chunks.
+    - Villagers inside a claim join the owner's team (`takeOverVillager`).
+  - *Siege*:
+    - Checked every 100 ticks. It needs at least 10 living members of an **enemy** faction inside the claim.
+    - Claim HP = 60 × conquerTime (10) = 600, losing a base of 3 per check (an event may change this).
+    - `siegeSpeedPercent = attackers/defenders` (2.0 with no defenders) is stored for display.
+    - When HP reaches 0, ownership passes to the strongest attacking faction.
+    - At the start, villagers inside are **sent home** (`sendVillagersHome`) and released at the end. An optional rule requires the owner to be online.
+  - *Diplomacy*: NEUTRAL 0, ALLY 1, ENEMY 2. Allies count as defenders and only ENEMY counts as attacker. Treaties expire after real-time hours (`addTreaty(..., durationHours)`).
+  - *Patrols* (RecruitsPatrolSpawn): every 30 minutes with a 15% chance, one of tiny, small, medium, large, huge, road or caravan.
+    - Caravan: 3 recruits, 2 shieldmen, 3 horsemen and 3 nomads (all "Caravan Guard"), a commander, 6 villagers with 2 llamas, 4 mules and 2 horses, and 2 wandering traders.
+    - Route: 4-6 waypoints within 50 blocks. Each is the best of 5 random surface points by "openness" (open blocks within 3).
+    - Despawn after 45 minutes.
+- **Usable for CIVITAS:**
+  - **Paid watch with morale** → watchmen draw `WAGE.keeper` daily from the treasury, as today. Add: if the treasury cannot pay, morale × 0.7. Low morale (< 40) slows patrols and skips beats; under 20 they desert (leave the census).
+    - Fed and housed: +2 per day. Morale is a byte per person in the census.
+    - This is the "paid guard body recruited over time" of his castle ruling → S → 4.
+  - **Guard recruiting tied to population** → our `WATCH_POSTS` already scale with tier. Add a hiring price paid from the treasury (Recruits: 4-20 per type) so a poor town cannot fill its posts → S → 3.
+  - **Caravan composition and patrol routes** → visible merchant caravans between towns (our ledger has `neighbours` and `MERCHANT_DAYS`): a train of a merchant, porters, pack animals and 2-4 guards on the road graph.
+    - Route waypoints: best of 5 by openness, which on Bedrock is a cheap `getBlock` air count → L → 3.
+  - **Bell or siege → civilians home** → same as the Workers bell rule: on a raid, set every villager's schedule to "home" until clear → S → 4.
+  - **Formation line math** → a muster or parade line on the square for the palace guard at dawn and dusk; slot index kept per guard → S → 2.
+  - **Claims and sieges** → a model for later contests between towns (claim HP 600, −3 per 5 s while ≥ 10 enemies are inside). *Narrative phase only — he wants Utopia-first witness before conflict* → L → 2.
+
+### Human Companions (CurseForge Java humancompanions-1.20.1-1.7.6, licence "GNU" (mods.toml); plus the Bedrock add-on "Human Companions (2).mcaddon" in the same LEDGER, no licence file seen; files examined: META-INF/mods.toml, entity/{AbstractHumanCompanionEntity, CompanionData}, entity/ai/{PatrolGoal, MoveBackToPatrolGoal, MoveBackToGuardGoal, LowHealthGoal}, core/Config; mcaddon: Person Behavior/manifest.json, entities/{people_melee, general_assistant}.behavior.json, items/gold_coin.item.json, scripts/{main, LightHuman, DistanceMovement}.js)
+- **What it does:** human NPCs that live in small houses. Java: tame one by feeding two foods it asks for; it follows, patrols, guards a spot, hunts or alerts. Bedrock add-on: humans hired with coins, with "contracts" (follow, patrol, defend, rest, carry items, carry a torch).
+- **Mechanisms found (Java):**
+  - *Taming* (setFoodRequirements): two different random foods from ALL_FOODS, 1-5 of each. Wrong food or enough food produces one of several canned replies (CompanionData).
+  - *Patrol* (PatrolGoal): a random stroll that only keeps destinations within `radius` of the patrol position, every 60 ticks (`interval`). MoveBackToPatrolGoal walks back when it drifts outside the radius.
+  - *Guard* (MoveBackToGuardGoal): returns to within 1 block of the guard position whenever it has no target.
+  - *Low health* (LowHealthGoal): below 50% HP without food, it says "I need food!" to the owner every 300 ticks.
+  - Base HP 20 ±4. Houses about every 20 chunks (`averageHouseSeparation`).
+- **Mechanisms found (Bedrock add-on — directly portable patterns):**
+  - *Contract modes as component groups* (general_assistant): events `contract_follow`, `contract_patrol`, `contract_defend`, `contract_rest`, `contract_follow_torch`, `contract_patrol_torch`, `contract_trasport_items`, `contract_inventory_human`. Each event adds one group and removes the others; `minecraft:sittable` sit/stand events cycle between them.
+    - patrol = `behavior.move_to_village` (prio 2) + `behavior.move_towards_dwelling_restriction` (3) + `random_stroll`.
+    - follow = `follow_owner` (start 6, stop 3, speed 1.15) + `teleport_to_owner` (owner > 10 while panicking, or > 20 with a target) + owner_hurt goals.
+  - *Hiring with coins* (`minecraft:interact` → `minecraft:tameable`): tame chance per coin — copper 0.10, iron 0.33, gold 0.75, diamond 1.0 (items `survivor_human:*_coin`, stack 64).
+  - *Target filters* (`behavior.nearest_attackable_target` in group list_monsters): `within_radius` 25, must see, forget after 17 s. Entries by tag "monster" (max_dist 16) or family "monster", excluding piglin, enderman, zombie_nautilus and the owner (max_dist 32). Separate "list_animals" and "list_players" groups switch target sets.
+  - *Rest schedule*: `minecraft:scheduler` (5-15 s) with `hourly_clock_time` filters fires `sunrise` (0-14000) and sleep events; `behavior.sleep` at goal_radius 1.5.
+  - **`minecraft:behavior.transport_items`** (group transport_items; the copper golem behaviour on a custom entity):
+    - Moves items from any copper-chest type or trapped chest to `minecraft:chest`, `max_stack_size` 64.
+    - Search: nearest, `search_distance` [32, 8], up to 16 containers visited. Cooldowns 3 s initial and 7 s idle. Placement "with_matching_or_empty".
+  - *Torch-bearer light* (scripts/LightHuman.js): every interval, a `minecraft:light_block` with `block_light_level` = the held light is placed at the head position. When the NPC moves, the old block is removed and a new one placed.
+    - The positions live in a script `Map` only, so a reload leaves orphan light blocks. That is a lesson, not something to copy.
+  - *Kiting* (DistanceMovement.js): ranged-tagged NPCs strafe (force 0.1, switch every 25) when a monster is within 6.
+- **Usable for CIVITAS:**
+  - **Test `minecraft:behavior.transport_items` on our villager component groups** → a "porter" group that empties yard "output" chests (copper chest = source) into the store chest (chest = destination) natively, with no script cost.
+    - If it works on villager_v2 under BDS 1.26.52 it removes a whole class of hauling script. Static evidence only (their JSON uses it); **witness test first** (P1) → S (test) → 4.
+  - **Night-watch lantern light** → a watchman carrying a lantern lights his patrol, using the light_block approach.
+    - We must keep the placed positions in a dynamic property (or re-scan a radius at load) and only replace air → S → 3.
+  - **Contract modes as component-group events** → our watch, palace guard and porter states as entity events, so vanilla behaviours (follow, patrol, sleep) run without script ticks. Use the scheduler with `hourly_clock_time` for duty hours → M → 3.
+  - **Coin-tier hire odds** → hiring a mercenary or recruit with gold coins succeeds more often than with small change (0.1 / 0.33 / 0.75 / 1.0); or simply a set price → S → 2.
+
+### Citizens2 + Sentinel (Spigot source; Citizens OSL-3.0, Sentinel MIT; files examined: Citizens2/LICENSE, npc/ai/{CitizensNavigator, AStarNavigationStrategy}.java, trait/waypoint/{GuidedWaypointProvider, WanderWaypointProvider, LinearWaypointProvider, Waypoint, Waypoints}.java, Settings.java; Sentinel/LICENSE.txt, SentinelTrait.java, SentinelPlugin.java, targeting/{SentinelTarget, SentinelTargetList, SentinelTargetingHelper}.java, resources/config.yml)
+- **What it does:** Citizens is a general NPC framework (navigation, waypoints, triggers). Sentinel adds combat NPCs on top: target, ignore and avoid lists; chasing; guarding a player.
+- **Mechanisms found:**
+  - *Citizens path settings* (Settings.java): A* is spread over ticks at **250 blocks per tick**, with at most **1024 blocks searched** and a default range of **100** ("try pathfinding in shorter segments instead").
+    - Movement margin 1 block, path margin 0. Re-path 1 s for moving targets; walk **straight when within 5** of a moving target.
+    - Stuck: "stationary duration" (off by default) → stuck action none or *teleport to destination*. `cache-paths` option for repeated static routes. Destination teleport margin option.
+  - *Stuck detector* (CitizensNavigator): if the NPC's block position is unchanged for `stationaryTicks` while navigating → STUCK → run the stuck action.
+  - *Waypoint providers*:
+    - Linear: an ordered list with a cycle flag.
+    - Wander: random points in region centres, xrange 25, yrange 3, with a delay.
+    - **Guided** (GuidedWaypointProvider): *destinations* and *guide* nodes. A* runs over the waypoint graph, where **edges are implicit** — every waypoint within `distance` (default = path range) is a neighbour, found by a 3-D spatial index range query (PhTree). The cost g and the estimate h are both straight-line distance.
+    - It picks a random destination, walks node to node, and runs the destination's triggers on arrival.
+  - *Triggers* (triggers/*): delay, chat, animation, command, speed, teleport.
+  - *Sentinel defaults* (SentinelTrait @Persist):
+    - Ranges: range 20, chaseRange 100, avoidRange 10, reach 3.
+    - Rates: attackRate 30 (ranged 30), healRate 100, respawnTime 100.
+    - `realistic`: targets only inside a 90°/110° view cone. `ignoreLOS` false.
+    - Update cycle every 10 ticks (`update rate`).
+  - *Target lists* (SentinelTargetList): byType, player name, NPC name, entity name, held item, offhand, equipped, inventory item, group, event (`pvp`, `pve`, `pvnpc`, `eve`, "message:"), status, other, multiple, all-in-one.
+    - `shouldTarget = isTargeted && !isIgnored`: **ignores override targets**. Avoids have their own list and return point.
+  - *Guarding a player* (runUpdate): more than 60 blocks away → teleport. More than `guardDistanceMinimum` (7) → every 30 ticks pick a random point within `guardSelectionRange` (4) of the guarded player, with distance margin 7 × 0.75.
+  - *After a chase*: return to the **nearest path point** (waypoint) instead of the start. Workaround: an NPC that has not moved for over 100 ticks at its spawn point switches pathfinder.
+- **Usable for CIVITAS:**
+  - **Spread path search over ticks with a hard cap** → our route A* runs in script. Copy the budget idea: N nodes per tick inside a runJob generator, with a node cap and long trips cut into street segments (Citizens: 250 per tick, 1024 cap, range 100) → S → 4.
+  - **Cache frequent routes** → cache home→work and home→market routes per person (or per street node pair) in memory, rebuilt when streets change. Citizens offers path caching for repeated static paths → S → 4.
+  - **Stuck rule** → if a walker's lead has not changed block for N beats while routing, skip to the next route node, then teleport the body to the destination (Citizens stuck action). We have `climbs` and `skipFaces`; make it one general rule → S → 3.
+  - **Implicit-edge waypoint graph** → for districts without kit streets (hill contour lanes, parks), link nodes by distance-within-R instead of storing edges. Saves dynamic-property space → M → 3.
+  - **Target, ignore and avoid lists with ignores winning** → watch rules as data: target = HOSTILE + players marked "wanted"; ignore = villagers, iron golems, the player if lawful; avoid = creepers (step back 10). Easy to keep in one table → S → 3.
+  - **Return to the nearest patrol stop after a chase** → our watch has `CHASE` 16 and stops every 24 cells. After a kill, resume at the nearest stop (`stopsOf(st)`) instead of the beat's start → S → 3.
+  - **Guard follow with a random point within 4** → an escort for the player or a noble keeps a loose spacing without stacking → S → 2.
+
+### Numismatic Overhaul (source, gliscowo/numismatic-overhaul @c0e77a0, MIT; files examined: LICENSE, currency/{Currency, CurrencyConverter, CurrencyResolver}.java, NumismaticOverhaulConfigModel.java, NumismaticOverhaul.java, mixin/{LivingEntityMixin, ServerPlayerEntityMixin}.java, villagers/data/RemappingTradeWrapper.java, block/pawn/{PawnShopOffer, PawnShopMerchant}.java, data/.../villager_trades/farmer.json)
+- **What it does:** replaces emeralds with a three-coin money (bronze, silver, gold) held in a purse. Villager trades are rewritten in coins. Adds a pawn shop, a player shop block, money bags, coin loot, mob coin drops and a death penalty.
+- **Mechanisms found:**
+  - *Denominations* (Currency): BRONZE 1, SILVER 100, GOLD 10000.
+    - `CurrencyResolver.splitValues` splits a raw value into gold, then silver, then bronze; `combineValues` reverses it.
+    - Stacks over the maximum are split (`splitAtMaxCount`). A value needing several coin types is given as a **money bag** item.
+  - *Emerald remap* (RemappingTradeWrapper): 1 emerald = 125 bronze (1.25 silver) in converted vanilla trades.
+  - *Trades as data* (villager_trades/farmer.json): `{"type":"numismatic-overhaul:buy_stack","price":40,"buy":{"item":"wheat","count":15},"max_uses":16}`, grouped by level (novice to master). Sell bread 5 for 90.
+  - *Purse*: money is a player component, not an item. Death drops `moneyDropPercentage` = **10%** (game rule).
+  - *Mob drops*: base value per entity, type tag or spawn group × `moneyMobDropVariancePercentage` 50%, optionally scaled by HP.
+  - *Loot*: desert temple 300-1200, dungeon/mineshaft 500-2000, structures 1500-4000, stronghold library 2000-6000, each with a chance condition (0.45-0.85).
+  - *Pawn shop* (PawnShopOffer): the owner sets offers `{buy item, price}`. The number of times an offer can be used = **stored currency / price**, so the shop buys only while it has money.
+- **Usable for CIVITAS:**
+  - **Small coins** → our gold coin is 12 pennies; bread at 24 p is 2 coins, but rations (36 p) and stallage (6 p) do not divide. Add `pw:silver_penny` (1 p) and maybe `pw:silver_groat` (4 p).
+    - Pay change by splitting from the largest coin down (splitValues), and log serials per batch as the coin ledger does now → M → 3.
+  - **A town buys only while it can pay** → our `sell()` already refuses when `treasury < coin×12`. Show the town's remaining buy budget per good at the counter (pawn shop: uses = funds / price) → S → 2.
+  - **Death penalty on carried coin** → 10% of carried pw:gold_coin dropped on death. Optional; his call → S → 1.
+  - **Trades as JSON by level** → if counters get "levels" (apprentice to master shop), keep the offer tables as data rather than code → S → 2.
+
+### Lightman's Currency (manual upload, lightmanscurrency-1.21-2.3.0.6, Apache-2.0 (neoforge.mods.toml); files examined: META-INF/neoforge.mods.toml, common/impl/CoinAPIImpl, common/traders/rules/types/{DemandPricing, PriceFluctuation, DailyTrades(grep)}, common/taxes/TaxEntry, api/money/bank/salary/SalaryData, LCConfig)
+- **What it does:** a full coin economy. Coin chains with conversion; wallets; ATM and bank accounts with interest and salaries; trader blocks (vending machines, shelves, auction house) with **trade rules**; tax collectors.
+- **Mechanisms found:**
+  - *Coin chain* (CoinAPIImpl default): copper 1 → iron ×10 → gold ×10 → emerald ×10 → diamond ×10 → netherite ×10, so 1 netherite = 100 000 copper.
+    - Side chains: a coin pile = 9 coins, a coin block = 4 piles.
+    - A separate "emeralds" chain: block = 9 emeralds.
+  - **DemandPricing** (sales only):
+    - At stock ≤ smallStock (default 1) the price is `otherPrice` (high); at stock ≥ largeStock (default 100) it is the base price (low).
+    - In between: `price = max − round((max−min) × (stock−small)/(large−small))`.
+  - **PriceFluctuation**:
+    - `seed = currentTimeMillis / duration` (default duration 86 400 000 ms = 1 real day, minimum 60 000).
+    - `flux = new Random(seed × ((traderID+1)<<32 + tradeIndex)).nextInt(−f, f+1)`, with f = 10% by default (1-100). Applied as a discount or surcharge.
+    - **Nothing is stored**: the price is recomputed from the seed.
+  - *Tax collector* (TaxEntry, LCConfig): area radius 10 by default (16-256), height and vertical offset. The rate is clamped to ≤ 25% (`taxCollectorMaxRate`). It takes `percentageOfValue(rate)` of each taxable trade by machines in its area and notifies.
+  - *Bank interest* (LCConfig): rate 0 (off) by default, applied every 1 728 000 ticks (24 real hours), with upper limits per coin and a blacklist.
+  - *Salary* (SalaryData.forcePaySalaries): a bank account pays a list of targets each interval.
+    - **All or nothing**: if it cannot afford the whole payroll, nobody is paid and `failedLastSalary` is set.
+    - Option: pay only members who were online.
+- **Usable for CIVITAS:**
+  - **Stateless daily price noise per counter** → `flux = seededRandom(day × counterId)` within ±10% on top of our stock-based price. It costs no dynamic property and the same day always gives the same price, so it is consistent across saves → S → 4.
+  - **Per-counter demand price** → at the counter, the price per item slides linearly between the high and low price by that counter's stock (DemandPricing). Our `dayStep` sets town-wide prices daily, and this adds a local in-day response → S → 3.
+  - **Payroll order rule** → Lightman pays all or none. For CIVITAS pay in priority order (watch, then builders, then the rest) and record who went unpaid; that person's morale drops (the Recruits rule). It also feeds the "fallout of turmoil" thread he wants later → S → 3.
+  - **Coin chain ×10 with piles of 9 and blocks of 4** → our coin pile is 1-16 per block. A denomination ladder (penny, shilling, gold) could reuse the pile and block models → M → 2.
+  - **Tax by area** → we already charge `TOLL` 0.02 and `STALLAGE`. Lightman confirms a cap (≤ 25%) and a per-area collector; nothing new beyond a district tax rate → S → 1.
+
+### Bountiful (source ejektaflex/Bountiful @11a7cb7, GPL-3.0; plus the manual bountiful-neoforge-8.0.0-beta.2.jar (listing only); files examined: LICENSE, content/BountyCreator.kt, bounty/BountyRarity.kt, config/BountifulConfigData.kt, content/board/BoardBlockEntity.kt, content/board/{BoardBlock, BoardInventory}.kt (BOUNTY_SIZE), content/villager/WalkToBoardTask.kt, data/PoolEntry.kt, data/bountiful/bounty_decrees/bountiful/farmer.json, bounty_pools/bountiful/{farmer_objs, farmer_rews}.json)
+- **What it does:** a bounty-board block in villages. The board generates task slips: deliver or obtain X, get reward Y. Pools of objectives and rewards come from **decrees** (one per profession) placed into the board. The board gains reputation (level), which unlocks rarer rewards and discounts.
+- **Mechanisms found:**
+  - *Data*: a decree `{linkedProfessions, objectives:[pools], rewards:[pools]}`.
+    - A pool entry: `{type, content, amount:{min,max}, unitWorth, rarity, weightMult(1), timeMult(1), repRequired(0), biomes, forbids, markers}`.
+    - Example: wheat 4-24 at 50 each; bread 2-16 at 165; cake (RARE) at 1000.
+  - *Generation* (BountyCreator.create), rewards first by default:
+    - Pick 1-2 rewards (`initialCountPreference`) weighted by `weightMult × rarity.weightAdjustedFor(rep)`. Sum their worth.
+    - Objective worth needed = that sum × `getDiscount(rep)`.
+    - Split it into 1-2 random parts. For each part, pick an objective whose worth is within **±25%** (otherwise the closest).
+    - If an objective covers less than 50% of its part, the remainder becomes another part.
+    - Time to complete = 750 + Σ timeMult × worth × 0.35 (ticks; plus a flat bonus).
+  - *Discount* (getDiscount): `1 − (clamp(rep,−30,30)/75 + hiTier)`, so a 40% discount at rep 30, approaching 66.7% beyond that. At rep −30 objectives cost 1.4×.
+  - *Rarity* (BountyRarity): weights COMMON 1024 / UNCOMMON 512 / RARE 256 / EPIC 128 / LEGENDARY 6. Rep tiers −30 / 5 / 15 / 25 / 30.
+    - A rarity above the board's tier has its weight divided by 2.25^(gap).
+  - *Board* (BoardBlockEntity):
+    - Updates every 45 s (`updateFrequencySecs`). Catches up on missed updates, at most the slot count.
+    - When ≥ 12 slots are taken it prunes 1-2 (weights 4:3).
+    - It adds a bounty if more than 1 slot is free, and 2 if 18 or more are free (21-24 slots).
+    - Expired slips are removed. One board per village (`villageGenFrequency` 1.0).
+  - *Board level* (`levelProgress(done, per=2)`): first 2 bounties per level, rising by 1 per level after every 5 levels.
+  - *Villagers and the board*:
+    - Completed objectives are kept by profession.
+    - A villager visiting the board (WalkToBoardTask, run 1200 ticks, arrival < 1.75) picks up an item matching its profession. It gets trade XP of (rep/5)+1, hearts and a **restock**.
+    - Otherwise it takes a random item, gets XP 1 and happy particles.
+- **Usable for CIVITAS:**
+  - **The town board posts real shortages** → each day, the board lists the ledger's real gaps as delivery bounties: `missing(L, bill)` for the next building stage, food short of 10 days of need, tools.
+    - Value = units × `L.prices[g]`, and the reward in pw:gold_coin is paid from the treasury (minted by the coin ledger, so it stays auditable).
+    - The player helps the town's real growth instead of random fetch quests. Bountiful's worth-matching (±25%, split into 1-2 lines) keeps rewards fair.
+    - Bedrock: a board block plus an `ActionFormData` list of slips. Our `quote()` already prices goods → M → 5.
+  - **Board reputation lowers the cost** → per-town player standing (we have `playerNet`, trust) sets the discount: `1 − clamp(rep,−30,30)/75`. A good name means smaller objectives for the same pay → S → 3.
+  - **Delivered goods get carried away** → after a delivery, a villager of the matching trade walks to the board and carries the goods to its workplace (a builder takes the stone to the site). Ties to the "visible goods" ideas → M → 3.
+  - **Time limits** → each slip expires after 750 + 0.35 × worth ticks, scaled to our day lengths. Expired slips are pruned at random so the board keeps turning over → S → 2.
+
+### Bountiful Villager (CurseForge bountiful_npc-forge-1.20.1-1.0.6; also the manual bountiful_npc-neoforge-1.21.1-1.0.6 (listing); licence "GNU LGPL 3.0" in mods.toml, ledger says All Rights Reserved; files examined: META-INF/mods.toml, villager/BountifulVillagers, dialog/ReceptionistDialogExtension, events/ForgeEvents, BountifulNpcMod, mixin/BountifulModForgeMixin, datagen/{BNDataGenerators, BNPoiTypeTagsProvider, sound/BNSoundGenerator, sound/BNSoundProvider}, client/sound/BountifulNpcSounds, data/bountiful_npc/lithostitched/worldgen_modifier/add_to_vanilla.json)
+- **What it does:** a **receptionist** villager profession whose job site is Bountiful's bounty board. Talking to them opens their board; handing them a finished slip cashes it in. An "adventurers_guild" building is added to every village type.
+- **Mechanisms found:**
+  - *Profession*: a POI type built from all board block states (`BOARD_POI`), tagged `acquirable_job_site`. A villager that claims a board becomes a receptionist.
+  - *Interaction* (ForgeEvents.onVillagerInteract): the villager stops and looks at the player, then reads its `JOB_SITE` memory (GlobalPos).
+    - Player holding a bounty: `BountyData.tryCashIn` → `board.updateCompletedBounties(player)`.
+    - Otherwise: the board's menu opens at the job-site position. A dialogue variant offers "about", "open board" and "hand in" (shown only when holding a bounty or decree).
+    - It cancels Bountiful's own server-start hook (BountifulModForgeMixin).
+  - *Guild building*: lithostitched `add_template_pool_elements` into plains, desert, savanna, snowy and taiga `village/<biome>/houses` with weight 1 and **forced_count 1** (exactly one guild per village).
+- **Usable for CIVITAS:**
+  - **A board clerk at the guild or town hall** → our "market clerk on the square" pattern: a clerk standing at the board building. Talking to them opens the board (ActionFormData) and holding goods hands them in.
+    - The job site is the board block in the structure. One guild per town of tier ≥ town (forced count 1) → S → 4 (together with the town board above).
+
+### Village Bounties (Modrinth village_bounties-1.2_26.2, NeoForge 26.2, MIT; files examined: data/village_bounties/bounty_pools/{README.md, generic_builder.json}, data/{BoardRoller}, BoardContracts, VillageBountiesConfig, block/entity/BountyBoardBlockEntity, VillageBountiesState, VillageBountiesEvents(grep))
+- **What it does:** bounty boards placed in villages. Each roll offers kill and deliver contracts in difficulties easy, medium, hard and elite, with a "flavour" from the biome. Rewards are emeralds (configurable), and each player has one active bounty.
+- **Mechanisms found:**
+  - *Pool data*: `{flavors:[...], templates:[{id, type: kill|deliver, targets:[ids], difficulties:{easy:{count:[a,b], emerald_reward:[a,b]}, ...}}]}`. Example: builder torches, easy 12-28 for 4-6 emeralds, medium 32-64 for 8-11.
+  - **Deterministic roll** (BoardRoller.roll): `Random(boardId.msb ^ boardId.lsb ^ rollIndex × −7046029254386353131)`.
+    - Slots drawn from {3,3,3,4×6,5×6,6×5}.
+    - Difficulty sequence: 3 = E,M,H; 4 = E,E,M,H; 5 = E,E,M,M,H; 6 = E,E,M,M,H,H.
+    - No two contracts share a target. At least one kill and one delivery are guaranteed (`ensureKillBounty`, `ensureDeliveryBounty`).
+    - A hard kill has a 15% chance to become elite.
+    - **Only `rollIndex` is saved** (BountyBoardBlockEntity), and `refresh()` increments it.
+  - *Player limits* (VillageBountiesState): 10 bounties per 24000-tick window, then a 48000-tick cooldown.
+    - Completing a bounty grants one **refresh charge**; refreshing the board costs one charge.
+    - The player must be within 8 blocks (√64) of the board (BoardContracts.isWithinDistance). Delivery progress updates every 30 ticks.
+- **Usable for CIVITAS:**
+  - **Save only a seed and a counter** → whatever the town board offers can be recomputed from `(townId, day, rollIndex)`. Dynamic properties hold 2 integers, not a list.
+    - This applies to any "list of today's things": market table, rumours of the day, which villagers are idle → S → 5.
+  - **Difficulty ladder and guaranteed mix** → 3-6 slips per day, easy to hard, always at least one watch (kill) bounty and one supply (deliver) bounty → S → 3.
+  - **Daily cap and refresh charges** → stops the player emptying the treasury: 10 per day, and finishing one earns a reroll → S → 2.
+
+### VillagerQuests (source Globox1997/VillagerQuests @6cf11a9, MIT; files examined: LICENSE, config/VillagerQuestsConfig.java, ftb/{VillagerTalkTask, VillagerPerPlayerQuestData}.java, util/QuestHelper.java, mixin/MerchantEntityMixin.java)
+- **What it does:** binds FTB Quests quests to a specific villager (by UUID). Shows a quest mark above that villager and adds a quest tab to the trade screen. Adds a "talk to villager" task.
+- **Mechanisms found:**
+  - *Quest mark* (QuestHelper.getVillagerQuestMarkType): 0 = none, 1 = "?" (a visible, unstarted quest exists), 2 = "!" (completed with unclaimed rewards). Recomputed per team member and sent to clients.
+  - *Config*: glow 60 ticks; icon shown within squared distance 30; flat or 3-D icon; talk sound.
+  - *Talk task* (VillagerTalkTask): stores villager UUID, name and lines of talk text. Done by opening the dialogue.
+  - *Death* (MerchantEntityMixin.onDeath): the villager's quests are unbound and the mark cleared.
+- **Usable for CIVITAS:**
+  - **Marks over people who want something from the player** → a `?` or `!` in the villager's nameTag (or a small particle every few seconds) when the census holds an open request or bounty for the player from that person. Clear it on death or migration → S → 3.
+  - **A talk-to-person task** → board or thread tasks such as "speak to the master mason" use the census id, not an entity id (ours survive reloads) → S → 2.
+
+### Mebahel's RPG — Villager Quests and Companions (Modrinth mebahelrpgrquest-3.4.1-fabric-1.20.1; ledger says All Rights Reserved, the jar's `LICENSE_mebahelrpgrquest` is **CC0 1.0**; files examined: LICENSE_mebahelrpgrquest, data/mebahelrpgrquest/ambient_dialogues/{market_gossip, night_warning_passby}.json, rumors/roads_not_safe.json, quest_board_values/default_values.json, quest_board_contracts/{deliveries/deliveries, protection/protection, incursions/incursions, escorts/escorts}.json, block/QuestBoardReputationState, block/QuestBoardVillageSpawner (grep))
+- **What it does:** data-driven village RPG content: a quest board with contracts (deliveries to other villages, escorts, protecting iron golems, incursions into structures, kills, elites); story questlines with flags; companions; **ambient dialogues** between villagers; rumours.
+- **Mechanisms found:**
+  - *Ambient conversations*:
+    - `type: villager_conversation`: lines `{speaker 0|1, look_at, text}`, `weight` 8, `cooldown` 18000, `max_player_distance` 16, with required and forbidden story flags.
+    - `type: player_passby`: `trigger_radius` 4.5, `max_player_distance` 12, cooldown 18000. Example: "Keep a torch ready. The roads get ideas after dark."
+  - *Rumours*: `{id, weight, line}`.
+  - *Contract value model* (default_values.json):
+    - Item values (emerald 10, iron 6, diamond 40, bell 80…), danger point value 2.0, base contract cost 10.
+    - Delivery travel cost 10, escort risk 25, iron-golem protection 165.
+    - Payout ranges by rarity, e.g. normal ×0.90-1.10, deadly ×1.00-1.20.
+  - *Deliveries to another village*: item and count range, `structures:["minecraft:villages"]`, `search_radius` 3000, `min_structure_distance` 128, `ignore_current_structure` true. A recipient NPC spawns 0-24 from the target village.
+  - *Escort*: a displaced villager to another village (128-3500). *Protection*: protect 1-3 iron golems in a village up to 5000 away (completion range 72).
+  - *Incursion*: themed guard group of 3-5 placed at a structure up to 3500 away, with a block patch (radius 6) to mark the site.
+  - *Board placement*: per-village chance through a **deterministic per-structure roll** (`deterministicStructureRoll`); a placement search radius from config.
+- **Usable for CIVITAS:**
+  - **Ambient lines driven by our real data** → when the player is within 16, two villagers who are friends exchange a 2-line conversation drawn from a weighted table (cooldown per pair).
+    - Fill the text from the ledger and census: "Bread went up to 30 pence", "The new mill on the east lane is near done", today's rumour.
+    - Passby lines (radius 4.5) from watchmen at night. This turns our rumour and price systems into something the player hears. Bedrock: `player.sendMessage` or the nameTag on the speaker's entity, plus a look-at → S → 4.
+  - **Deliveries between towns** → contracts to carry goods to a named recipient in another CIVITAS town at least 128 blocks away; the price includes travel (Mebahel: base 10 + travel 10). Uses our `neighbours` in the ledger → M → 3.
+  - **Story flags gate content** → a set of flags on the town or player to gate rumours and lines (for his narrative phase; the data schema is ready to copy) → S → 2.
+
+### Dynamic Villager Trades (Modrinth dynamicvillagertrades-1.3.1-forge-1.20, CC0 ("CC-0" in mods.toml); files examined: META-INF/mods.toml, DynamicVillagerTradesMod.java, mixin/VillagerEntityMixin.java, trade_offers/TradeGroup.java, trade_offers/generators/TieredItemGenerator.java)
+- **Correction to the brief:** this mod drives **which offers a villager stocks** from what is bought. It does not change prices (vanilla demand pricing stays as it is).
+- **Mechanisms found:**
+  - Each villager has an **attribute map** (e.g. "iron": x, "diamond": y). Each trade carries `attributeIncrement`; using a trade adds those increments (`updateAttributesAfterUse`).
+  - On every restock (`REFRESH_DELAY` 0) and level-up, the offer list is **regenerated**: `level × 2` offers chosen from trade groups.
+    - Weight = `1 + affinity^exp` if affinity ≥ 0, else `1/(−affinity)^exp`, where affinity = Σ(value/normalisation × attribute) and exp = base_rate (0.5) / randomness (group randomness × GLOBAL_RANDOMNESS 1.0).
+    - Offers above the villager's level are invalid. Unique keys stop duplicates. Groups can be nested and merged (`replace`, min/max trades).
+  - Generators group offers by material or tier (TieredItemGenerator: ingot or tool material, mod name).
+- **Usable for CIVITAS:**
+  - **Shops specialise in what sells** → each counter keeps a small "sold" tally per good. When restocking, the shopkeeper shifts the counter's stock mix toward those goods (weight 1 + sold^0.5). A smith who sells many tools stocks more tools.
+    - A few numbers per counter; restock happens daily already (pw_civ_shop) → S → 3.
+
+### Village Business (Modrinth village_business-1.0.1, MIT; files examined: LICENSE_village_business, block/entity/SalesStandBlockEntity.java, block/entity/RequestStandBlockEntity.java (constants), pricing/{ItemPrice, ItemPrices}.java, config/VillageBusinessPricesConfigProvider.java (grep))
+- **What it does:** a **sales stand** where the player puts goods and villagers come to buy them, paying emerald nuggets (9 = 1 emerald). The **request stand** is the reverse: villagers come and sell you items.
+- **Mechanisms found** (SalesStandBlockEntity.tick):
+  - Every 400 ticks (± a random 10) it lists villagers within **50** blocks.
+  - Every 100 ticks, if it can sell, each adult, non-busy villager has a **5%** chance to be lured (request stand: 1%).
+    - Skipped if lured in the last 1 s (real time) or if that villager's `BusinessRecords[item]` cooldown has not expired.
+    - A lure lasts **180** checks of 10 ticks.
+  - The lured villager's brain gets `WALK_TARGET` to the stand (speed 0.5, margin 2). Within 3 blocks: sale if `random(100) < saleChance`, otherwise rejection.
+  - Rejection: `BusinessRecords[item] = now + cooldown s` (default 120 s).
+  - Frustration (the lure expires before the villager arrives): a 5-minute cooldown on that item, angry particles, a sound and a head shake.
+  - *Price settings* (ItemPrice), with defaults sale chance 50%, request chance 10%, cooldown 120 s:
+    - Cheap (0): price ÷2, or the amount ×2 for cheap items; chance (100+2s)/3; cooldown ÷2.
+    - Normal (1).
+    - Dear (2): price ×2; chance s/4; cooldown ×4.
+  - *Derived prices* (ItemPrices): items with no listed price get one from recipes = Σ cheapest ingredient price ÷ output count. If below 1, the sell amount doubles until ≥ 1. Ingredients pass on the lowest sale chance and the highest cooldown.
+  - *Busy check* (villagerIsBusy): skip villagers whose brain is in rest, panic, raid or pre-raid, among others.
+- **Usable for CIVITAS:**
+  - **The player's own stall** → a player-placed stall block: villagers within 50 have a 5% chance per 5 s to come and buy. Pay comes from the person's purse (census coin) into the player's hand. Price setting cheap/normal/dear trades sale chance against margin.
+    - The town's own goods compete (if the market price is lower, the chance drops). This answers "villagers buy the player's goods" with our real people and money → M → 4.
+  - **Per-person, per-good cooldowns ("frustration")** → a person turned away (no stock, too dear) avoids that counter for that good for a while. Small in-memory map, cleared daily → S → 3.
+  - **Prices from recipes** → fills in prices for goods we add later (lime, glass, tools) from their inputs. Our `BASE` table is hand-set; a derived check flags goods priced below their inputs → S → 2.
+
+### TuDiGong : Wayfinder (CurseForge tudigong-forge1.20.1-1.4.1, All Rights Reserved (mods.toml); files examined: META-INF/mods.toml, entity/XianQiEntity.java, entity/TudiGongEntity.java (grep), TDGConfig.java, network/packet/server/HandleSearchPacket.java (grep))
+- **What it does:** a "land god" NPC (TuDiGong) summoned at a village temple. The player asks for a structure or biome; a floating cloud spirit (XianQi) then **leads the player there** and highlights the structure on arrival.
+- **Mechanisms found:**
+  - *Summoning* (TDGConfig): sneak 3 times within 60 ticks near a TuDi temple (cooldown 40); the god lasts 1200 ticks.
+    - Search radius 100 chunks for structures, 6400 blocks for biomes. Prefers unexplored chunks; a blacklist applies.
+  - *Guide movement* (XianQiEntity.tick, no physics, flying):
+    - Goal point = player eye + 10 × (unit direction to target).
+    - Speed toward the goal: **0.25 if the player is within 3, 0.1 if within 5, 0.5 only if the spirit is farther from the target than the player** (the player has overtaken it). Otherwise it waits, so it never runs away.
+    - More than 30 from the player → teleport to the player.
+    - Within 20 of the target (`xianqi_discard_distance_blocks`) → message and despawn.
+    - When the player is within 144 of the structure, its bounding box sparkles for 600 ticks. A chime plays every 40 ticks; there is a particle trail.
+- **Usable for CIVITAS:**
+  - **"Show me the way" guide** → ask any watchman or the market clerk for the inn, the market, your house or a named building. A link-boy (a villager body on our lead entity) walks our street route graph ahead of the player.
+    - Keep the rules: wait if the player is more than 5 behind, a slower pace within 3, catch up if overtaken, teleport if more than 30 apart, end within 4 of the door. Mark the door with particles for 30 s.
+    - We already have the route graph and walkers, so this is mostly a "pace to the player" rule → M → 3.
+
+---
+
+## Top ideas from this group (ranked)
+1. **Real-tree test for woodcutters** (Workers LumberArea): a connected log cluster with natural leaves (`persistent_bit=false`) within ±4, felled top-down. Shares one predicate with the BIGCANOPY rules ("player logs never count"). S, 5.
+2. **Living market: stalls invite villager customers** (Workers MerchantWorkGoal + Village Business SalesStand): one invite per beat within 60 (Village Business: 5% per villager every 5 s, within 50), a global invite map, 3-8 sales 50 ticks apart, 500-tick timeout, per-good cooldowns. Sales flow into our ledger. M, 5.
+3. **Town board posts the ledger's real shortages as paid bounties** (Bountiful worth-matching ±25% and rep discount + Village Bounties difficulty ladder + Bountiful Villager receptionist). Paid in minted pw:gold_coin; a clerk at the board. M, 5.
+4. **Save seeds, not lists** (Village Bounties `Random(boardId ^ rollIndex·K)`, Lightman `Random(day·traderFactor)` ±10%): today's board, today's price noise and today's market table are recomputed from 1-2 integers, which fits the small dynamic-property budget. S, 5.
+5. **Workplace claim and "longest untouched first" scoring** (Workers): free +10, idle time ×10, already holds the tool +10; released on death, on leaving or at the end of the beat. S, 4.
+6. **Builder lays the lowest layer first, only with materials on site, fetching ≤ 64 when short; doors and beds last** (Workers BuilderWorkGoal) → visible construction driven by `missing(L,bill)`. M, 4.
+7. **Paid watch with morale and desertion** (Recruits pay → morale ×0.7 on a missed pay, morale bands; Workers −10 per homeless night): the "paid guard body" of his castle ruling. Payroll in priority order. S, 4.
+8. **Bell or raid → civilians take cover / go home** (Workers 48-block bell, 1200 t; Recruits siege → villagers home). S, 4.
+9. **Path search spread over ticks with a hard cap, plus route caching and one stuck rule** (Citizens: 250 nodes per tick, 1024 cap, segments ≤ 100, cache static paths, stationary → skip or teleport). S, 4.
+10. **Two-person ambient conversations and night passby lines filled from ledger and rumour data** (Mebahel schema: weight, cooldown 18000, player within 16, passby 4.5). S, 4.
+11. **Test the native `minecraft:behavior.transport_items` on a porter component group** (Human Companions Bedrock add-on: copper chests → chests, search [32,8], 16 containers) — could replace scripted hauling. Witness test first. S to test, 4 if it works.
+12. **Porter/courier routes** with TAKE/PUT/WAIT steps per stop, arrival within 3, 2000-tick give-up, finish the round before going home (Workers Courier). M, 4.
+13. **Watch target rules as data, ignores winning, return to the nearest patrol stop after a chase** (Sentinel), plus target priority ravager > witch > raider > zombie (Guard Villagers). Crime targeting from town opinion (reputation ≤ −100) built as a hook, off until his narrative phase. S, 3-4.
+14. **Player's own sales stall** (Village Business): census villagers buy from the player at cheap/normal/dear, which trades sale chance against price. M, 4.
+15. **"Show me the way" link-boy** (TuDiGong pacing: wait > 5, slow < 3, catch up if overtaken, teleport > 30). M, 3.
+16. **Daily per-counter price noise ±10% (stateless) and per-counter demand slope** (Lightman PriceFluctuation, DemandPricing); shop stock mix leans toward what sells (DVT attribute weights). S, 3.
+17. **Small coins / change** (Numismatic 1/100/10000, Lightman ×10 chain with piles 9 and blocks 4): a penny coin so 6 p stallage and 36 p rations can be paid exactly. M, 3.
+
+Narrative-phase items, kept for later (he wants Utopia-first witness): crime targeting, claims and sieges (Recruits), incursions and escort contracts (Mebahel), story flags.
+
+## Files examined
+- /home/claude/_docs/research/civmods/BRIEF.md
+- /home/claude/_intake/civmods/modrinth/LEDGER.json
+- /home/claude/_intake/civmods/curseforge/LEDGER.json
+- /home/claude/_intake/civmods/source/LEDGER.json
+- /home/claude/tools/bp02_src_227/pw_civ_watch.js
+- /home/claude/tools/bp02_src_227/pw_civ_economy.js
+- /home/claude/tools/bp02_src_227/pw_civ_coin.js
+- /home/claude/tools/bp02_src_227/pw_civ_work.js
+- /home/claude/tools/bp02_src_227/pw_civ_people.js (grep)
+- /home/claude/tools/bp02_src_227/pw_civ_shop.js (grep)
+- source/seymourimadeit__guardvillagers.tar.gz: LICENSE
+- …/guardvillagers/configuration/GuardConfig.java
+- …/guardvillagers/common/entities/Guard.java
+- …/guardvillagers/HandlerEvents.java
+- …/guardvillagers/common/entities/ai/tasks/VillagerHelp.java
+- …/guardvillagers/common/entities/ai/tasks/ShareGossipWithGuard.java
+- …/guardvillagers/common/entities/ai/tasks/RepairGuardEquipment.java
+- …/guardvillagers/common/entities/ai/tasks/HealGuardAndHero.java
+- …/guardvillagers/networking/GuardSetPatrolPosPacket.java
+- …/data/guardvillagers/loot_table/entities/guard.json
+- …/data/guardvillagers/loot_table/entities/guard_armor.json
+- modrinth/villager-workers__workers-1.20.1-2.0.3.jar: META-INF/mods.toml
+- …/workers/entities/workarea/AbstractWorkAreaEntity (decompiled)
+- …/workers/entities/AbstractWorkerEntity
+- …/workers/world/NeededItem
+- …/workers/entities/ai/AbstractChestGoal
+- …/workers/entities/ai/DepositItemsToStorage
+- …/workers/entities/ai/GetNeededItemsFromStorage
+- …/workers/entities/workarea/StorageArea
+- …/workers/entities/ai/FarmerWorkGoal
+- …/workers/entities/workarea/CropArea
+- …/workers/entities/ai/LumberjackWorkGoal
+- …/workers/entities/workarea/LumberArea
+- …/workers/entities/workarea/MiningArea
+- …/workers/entities/ai/MinerWorkGoal
+- …/workers/entities/ai/FishermanWorkGoal
+- …/workers/entities/ai/BuilderWorkGoal
+- …/workers/entities/ai/MerchantWorkGoal
+- …/workers/entities/MerchantEntity
+- …/workers/world/WorkersMerchantTrade
+- …/workers/entities/workarea/MarketArea
+- …/workers/world/CourierRoute
+- …/workers/world/CourierAction
+- …/workers/entities/ai/CourierWorkGoal
+- …/workers/entities/ai/WorkerGoHomeGoal
+- …/workers/entities/workarea/HomeArea
+- …/workers/entities/ai/WorkerTakeCoverGoal
+- …/workers/VillagerEvents (grep)
+- …/workers/entities/ai/RecruitStorageUpkeepGoal (header)
+- …/workers/config/WorkersServerConfig
+- …/workers/entities/ai/AnimalFarmerWorkGoal
+- …/workers/entities/ai/CookWorkGoal (constants)
+- …/workers/entities/workarea/KitchenArea (grep)
+- …/workers/entities/workarea/AnimalPenArea (grep)
+- …/workers/entities/ai/VillagerPickupFoodGoal
+- modrinth/villager-recruits__recruits-1.20.1-1.15.2.jar: META-INF/mods.toml
+- …/recruits/config/RecruitsServerConfig
+- …/recruits/entities/AbstractRecruitEntity
+- …/recruits/entities/ai/RecruitUpkeepPosGoal
+- …/recruits/ClaimEvents
+- …/recruits/world/RecruitsClaim
+- …/recruits/world/RecruitsDiplomacyManager
+- …/recruits/world/RecruitsTreatyManager
+- …/recruits/util/FormationUtils
+- …/recruits/world/RecruitsPatrolSpawn
+- …/recruits/VillagerEvents (grep)
+- …/recruits/SiegeEvent$Tick (decompile attempted)
+- curseforge/human-companions__humancompanions-1.20.1-1.7.6.jar: META-INF/mods.toml
+- …/humancompanions/entity/AbstractHumanCompanionEntity
+- …/humancompanions/entity/CompanionData
+- …/humancompanions/entity/ai/PatrolGoal
+- …/humancompanions/entity/ai/MoveBackToPatrolGoal
+- …/humancompanions/entity/ai/MoveBackToGuardGoal
+- …/humancompanions/entity/ai/LowHealthGoal
+- …/humancompanions/core/Config
+- curseforge/human-companions__Human Companions (2).mcaddon: Person Behavior/manifest.json
+- …/Person Behavior/entities/people_melee.behavior.json
+- …/Person Behavior/entities/general_assistant.behavior.json
+- …/Person Behavior/items/gold_coin.item.json
+- …/Person Behavior/scripts/main.js
+- …/Person Behavior/scripts/LightHuman.js
+- …/Person Behavior/scripts/DistanceMovement.js
+- source/CitizensDev__Citizens2.tar.gz: LICENSE
+- …/citizensnpcs/npc/ai/CitizensNavigator.java
+- …/citizensnpcs/npc/ai/AStarNavigationStrategy.java (extracted)
+- …/citizensnpcs/trait/waypoint/GuidedWaypointProvider.java
+- …/citizensnpcs/trait/waypoint/WanderWaypointProvider.java
+- …/citizensnpcs/trait/waypoint/LinearWaypointProvider.java (grep)
+- …/citizensnpcs/Settings.java
+- source/mcmonkeyprojects__Sentinel.tar.gz: LICENSE.txt
+- …/sentinel/SentinelTrait.java
+- …/sentinel/SentinelPlugin.java (grep)
+- …/sentinel/targeting/SentinelTarget.java
+- …/sentinel/targeting/SentinelTargetList.java
+- …/sentinel/targeting/SentinelTargetingHelper.java
+- …/sentinel/resources/config.yml
+- source/gliscowo__numismatic-overhaul.tar.gz: LICENSE
+- …/numismaticoverhaul/currency/Currency.java
+- …/numismaticoverhaul/currency/CurrencyConverter.java
+- …/numismaticoverhaul/currency/CurrencyResolver.java
+- …/numismaticoverhaul/NumismaticOverhaulConfigModel.java
+- …/numismaticoverhaul/NumismaticOverhaul.java (grep)
+- …/numismaticoverhaul/mixin/LivingEntityMixin.java (grep)
+- …/numismaticoverhaul/mixin/ServerPlayerEntityMixin.java (grep)
+- …/numismaticoverhaul/villagers/data/RemappingTradeWrapper.java
+- …/numismaticoverhaul/block/pawn/PawnShopOffer.java
+- …/numismaticoverhaul/block/pawn/PawnShopMerchant.java (grep)
+- …/data/numismatic-overhaul/villager_trades/farmer.json
+- manual/lightmanscurrency-1.21-2.3.0.6.jar: META-INF/neoforge.mods.toml
+- …/lightmanscurrency/common/impl/CoinAPIImpl
+- …/lightmanscurrency/common/traders/rules/types/DemandPricing
+- …/lightmanscurrency/common/traders/rules/types/PriceFluctuation
+- …/lightmanscurrency/common/traders/rules/types/DailyTrades (grep)
+- …/lightmanscurrency/common/taxes/TaxEntry
+- …/lightmanscurrency/api/money/bank/salary/SalaryData
+- …/lightmanscurrency/LCConfig
+- source/ejektaflex__Bountiful.tar.gz: LICENSE
+- …/bountiful/content/BountyCreator.kt
+- …/bountiful/bounty/BountyRarity.kt
+- …/bountiful/config/BountifulConfigData.kt
+- …/bountiful/content/board/BoardBlockEntity.kt
+- …/bountiful/content/board/BoardBlock.kt (grep)
+- …/bountiful/content/board/BoardInventory.kt (grep)
+- …/bountiful/content/villager/WalkToBoardTask.kt
+- …/bountiful/data/PoolEntry.kt
+- …/data/bountiful/bounty_decrees/bountiful/farmer.json
+- …/data/bountiful/bounty_pools/bountiful/farmer_objs.json
+- …/data/bountiful/bounty_pools/bountiful/farmer_rews.json
+- manual/bountiful-neoforge-8.0.0-beta.2.jar (listing only)
+- curseforge/bountiful-villager__bountiful_npc-forge-1.20.1-1.0.6.jar: META-INF/mods.toml
+- …/bountiful_npc/villager/BountifulVillagers
+- …/bountiful_npc/dialog/ReceptionistDialogExtension
+- …/bountiful_npc/events/ForgeEvents
+- …/bountiful_npc/BountifulNpcMod
+- …/bountiful_npc/mixin/BountifulModForgeMixin
+- …/bountiful_npc/datagen/BNDataGenerators
+- …/bountiful_npc/datagen/BNPoiTypeTagsProvider
+- …/bountiful_npc/datagen/sound/BNSoundGenerator
+- …/bountiful_npc/datagen/sound/BNSoundProvider
+- …/bountiful_npc/client/sound/BountifulNpcSounds
+- …/data/bountiful_npc/lithostitched/worldgen_modifier/add_to_vanilla.json
+- manual/bountiful_npc-neoforge-1.21.1-1.0.6.jar (listing only)
+- modrinth/village-bounties__village_bounties-1.2_26.2.jar: data/village_bounties/bounty_pools/README.md
+- …/data/village_bounties/bounty_pools/generic_builder.json
+- …/villagebounties/data/BoardRoller
+- …/villagebounties/BoardContracts
+- …/villagebounties/VillageBountiesConfig
+- …/villagebounties/block/entity/BountyBoardBlockEntity
+- …/villagebounties/VillageBountiesState
+- …/villagebounties/VillageBountiesEvents (grep)
+- source/Globox1997__VillagerQuests.tar.gz: LICENSE
+- …/villagerquests/config/VillagerQuestsConfig.java
+- …/villagerquests/ftb/VillagerTalkTask.java
+- …/villagerquests/ftb/VillagerPerPlayerQuestData.java
+- …/villagerquests/util/QuestHelper.java
+- …/villagerquests/mixin/MerchantEntityMixin.java (grep)
+- modrinth/mebahels-rpg-villager-quests-and-companions__mebahelrpgrquest-3.4.1-fabric-1.20.1.jar: LICENSE_mebahelrpgrquest
+- …/data/mebahelrpgrquest/ambient_dialogues/market_gossip.json
+- …/data/mebahelrpgrquest/ambient_dialogues/night_warning_passby.json
+- …/data/mebahelrpgrquest/rumors/roads_not_safe.json
+- …/data/mebahelrpgrquest/quest_board_values/default_values.json
+- …/data/mebahelrpgrquest/quest_board_contracts/deliveries/deliveries.json
+- …/data/mebahelrpgrquest/quest_board_contracts/protection/protection.json
+- …/data/mebahelrpgrquest/quest_board_contracts/incursions/incursions.json
+- …/data/mebahelrpgrquest/quest_board_contracts/escorts/escorts.json
+- …/mebahelrpgrquest/block/QuestBoardReputationState (grep)
+- …/mebahelrpgrquest/block/QuestBoardVillageSpawner (grep)
+- modrinth/dynamic-villager-trades__dynamicvillagertrades-1.3.1-forge-1.20.jar: META-INF/mods.toml
+- …/dynamicvillagertrades/DynamicVillagerTradesMod
+- …/dynamicvillagertrades/mixin/VillagerEntityMixin
+- …/dynamicvillagertrades/trade_offers/TradeGroup
+- …/dynamicvillagertrades/trade_offers/generators/TieredItemGenerator (grep)
+- modrinth/village-business__village_business-1.0.1.jar: LICENSE_village_business
+- …/villagebusiness/block/entity/SalesStandBlockEntity
+- …/villagebusiness/block/entity/RequestStandBlockEntity (constants)
+- …/villagebusiness/pricing/ItemPrice
+- …/villagebusiness/pricing/ItemPrices
+- …/villagebusiness/config/VillageBusinessPricesConfigProvider (grep)
+- curseforge/tudigong-wayfinder__tudigong-forge1.20.1-1.4.1.jar: META-INF/mods.toml
+- …/tudigong/entity/XianQiEntity
+- …/tudigong/entity/TudiGongEntity (grep)
+- …/tudigong/TDGConfig
+- …/tudigong/network/packet/server/HandleSearchPacket (grep)
+
+Not examined (out of scope or duplicates): modrinth `bountiful-villager__bountiful_npc-forge-1.20.1-1.0.5.jar` (an older copy of the 1.0.6 that was examined); modrinth and curseforge `bountiful__Bountiful-6.0.4+1.20.1-forge.jar` and curseforge `guard-villagers__guardvillagers-1.20.1-1.6.19.jar` (I read the source of both instead); curseforge `guard-villager-add-on__GuardVillager12.mcaddon` (a Bedrock guard add-on in the LEDGER but not on my item list — worth a look by whoever owns Bedrock add-ons).

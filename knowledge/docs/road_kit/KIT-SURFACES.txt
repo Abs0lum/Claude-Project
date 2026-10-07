@@ -1,0 +1,140 @@
+== t_straight1 (1, 15, 13)  open: -x +x
+x 0 sstccccccctss
+== v_straight1
+x 0 gsstccccctssg
+== t_access3 (3, 15, 13)  open: -x +x
+x 0 sstccccccctss
+x 1 sstccccccctss
+x 2 sstccccccctss
+== v_access3
+x 0 gsstccccctssg
+x 1 gsstccccctssg
+x 2 gsstccccctssg
+== t_ramp7 (7, 16, 13)  open: -x
+x 0 sstrrrrrrrtss
+x 1 sstrrrrrrrtss
+x 2 __BrrrrrrrB__
+x 3 __?rrrrrrr?__
+x 4 __-ccccccc-__
+x 5 sstccccccctss
+x 6 sstccccccctss
+== v_ramp7
+x 0 gsstrrrrrtssg
+x 1 gsstrrrrrtssg
+x 2 ___BrrrrrB___
+x 3 ___?rrrrr?___
+x 4 ___-ccccc-___
+x 5 gsstccccctssg
+x 6 gsstccccctssg
+== t_cross13 (13, 15, 13)  open: -x +x -z +z
+x 0 sstccccccctss
+x 1 sstccccccctss
+x 2 tttcccccccttt
+x 3 ccccccccccccc
+x 4 ccccccccccccc
+x 5 ccccccccccccc
+x 6 ccccccccccccc
+x 7 ccccccccccccc
+x 8 ccccccccccccc
+x 9 ccccccccccccc
+x10 tttcccccccttt
+x11 sstccccccctss
+x12 sstccccccctss
+== v_cross13
+x 0 gsstccccctssg
+x 1 ssstccccctsss
+x 2 ssstccccctsss
+x 3 ttttccccctttt
+x 4 ccccccccccccc
+x 5 ccccccccccccc
+x 6 ccccccccccccc
+x 7 ccccccccccccc
+x 8 ccccccccccccc
+x 9 ttttccccctttt
+x10 ssstccccctsss
+x11 ssstccccctsss
+x12 gsstccccctssg
+== t_dead13 (13, 15, 13)  open: -z
+x 0 sstssssssstss
+x 1 sstssssssstss
+x 2 ttttttttttttt
+x 3 cccccccccctss
+x 4 cccccccccctss
+x 5 cccccccccctss
+x 6 cccccccccctss
+x 7 cccccccccctss
+x 8 cccccccccctss
+x 9 cccccccccctss
+x10 ttttttttttttt
+x11 sstssssssstss
+x12 sstssssssstss
+== v_dead13
+x 0 ggggggggggggg
+x 1 ssstssssstssg
+x 2 ssstssssstssg
+x 3 ttttttttttttg
+x 4 ccccccccctssg
+x 5 ccccccccctssg
+x 6 ccccccccctssg
+x 7 ccccccccctssg
+x 8 ccccccccctssg
+x 9 ttttttttttttg
+x10 ssstssssstssg
+x11 ssstssssstssg
+x12 ggggggggggggg
+== t_elbow13 (13, 15, 13)  open: +x -z
+x 0 sstssssssstss
+x 1 sstssssssstss
+x 2 ttttttttttttt
+x 3 cccccccccctss
+x 4 cccccccccctss
+x 5 cccccccccctss
+x 6 cccccccccctss
+x 7 cccccccccctss
+x 8 cccccccccctss
+x 9 cccccccccctss
+x10 tttcccccccttt
+x11 sstccccccctss
+x12 sstccccccctss
+== v_elbow13
+x 0 ggggggggggggg
+x 1 ssstssssstssg
+x 2 ssstssssstssg
+x 3 ttttttttttttg
+x 4 ccccccccctssg
+x 5 ccccccccctssg
+x 6 ccccccccctssg
+x 7 ccccccccctssg
+x 8 ccccccccctssg
+x 9 ttttccccctttg
+x10 ssstccccctssg
+x11 ssstccccctssg
+x12 gsstccccctssg
+== t_tee13 (13, 15, 13)  open: +x -z +z
+x 0 sstssssssstss
+x 1 sstssssssstss
+x 2 ttttttttttttt
+x 3 ccccccccccccc
+x 4 ccccccccccccc
+x 5 ccccccccccccc
+x 6 ccccccccccccc
+x 7 ccccccccccccc
+x 8 ccccccccccccc
+x 9 ccccccccccccc
+x10 tttcccccccttt
+x11 sstccccccctss
+x12 sstccccccctss
+== v_tee13
+x 0 ggggggggggggg
+x 1 ssstssssstsss
+x 2 ssstssssstsss
+x 3 ttttttttttttt
+x 4 ccccccccccccc
+x 5 ccccccccccccc
+x 6 ccccccccccccc
+x 7 ccccccccccccc
+x 8 ccccccccccccc
+x 9 ttttccccctttt
+x10 ssstccccctsss
+x11 ssstccccctsss
+x12 gsstccccctssg

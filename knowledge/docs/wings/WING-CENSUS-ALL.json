@@ -1,0 +1,906 @@
+{
+ "vex@rp06-1421": {
+  "flap": {
+   "right_wing3 | on body": {
+    "shown": true,
+    "edge_max": 0.045,
+    "edge_median": 0.021,
+    "face_max": 0.045,
+    "at_t": 1.35,
+    "rest_gap": null
+   },
+   "right_wing3 | right_wing4": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 2.25,
+    "rest_gap": null
+   },
+   "left_wing3 | on body": {
+    "shown": true,
+    "edge_max": 0.045,
+    "edge_median": 0.021,
+    "face_max": 0.045,
+    "at_t": 1.35,
+    "rest_gap": null
+   },
+   "left_wing3 | left_wing4": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 2.4,
+    "rest_gap": null
+   }
+  }
+ },
+ "allay@rp07-1427": {
+  "flap": {
+   "left_wing3 | on body": {
+    "shown": true,
+    "edge_max": 0.027,
+    "edge_median": 0.016,
+    "face_max": 0.027,
+    "at_t": 3.5,
+    "rest_gap": null
+   },
+   "left_wing3 | left_wing4": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.85,
+    "rest_gap": null
+   },
+   "right_wing3 | on body": {
+    "shown": true,
+    "edge_max": 0.027,
+    "edge_median": 0.016,
+    "face_max": 0.027,
+    "at_t": 3.5,
+    "rest_gap": null
+   },
+   "right_wing3 | right_wing4": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 3.65,
+    "rest_gap": null
+   }
+  }
+ },
+ "bat@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.011,
+    "edge_median": 0.0,
+    "face_max": 0.011,
+    "at_t": 0.15,
+    "rest_gap": null
+   },
+   "leftWing | leftWingTip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.02,
+    "at_t": 1.4,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.011,
+    "edge_median": 0.0,
+    "face_max": 0.011,
+    "at_t": 0.15,
+    "rest_gap": null
+   },
+   "rightWing | rightWingTip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.02,
+    "at_t": 0.2,
+    "rest_gap": null
+   }
+  }
+ },
+ "bee@rp07-1427": {
+  "flap": {
+   "rightwing_bone | on torso2": {
+    "shown": true,
+    "edge_max": 0.223,
+    "edge_median": 0.015,
+    "face_max": 0.223,
+    "at_t": 0.45,
+    "rest_gap": null
+   },
+   "leftwing_bone | on torso2": {
+    "shown": true,
+    "edge_max": 0.223,
+    "edge_median": 0.015,
+    "face_max": 0.223,
+    "at_t": 0.45,
+    "rest_gap": null
+   }
+  }
+ },
+ "beetle@rp07-1427": {
+  "flap": {
+   "body_open_wings | left_wing": {
+    "shown": true,
+    "edge_max": 0.47,
+    "edge_median": 0.0,
+    "face_max": 0.47,
+    "at_t": 3.1,
+    "rest_gap": null
+   },
+   "body_open_wings | right_wing": {
+    "shown": true,
+    "edge_max": 0.47,
+    "edge_median": 0.0,
+    "face_max": 0.47,
+    "at_t": 0.1,
+    "rest_gap": null
+   }
+  }
+ },
+ "bluejay@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   }
+  }
+ },
+ "budgie@rp07-1427": {
+  "flap": {
+   "left_wing | on body": {
+    "shown": true,
+    "edge_max": 1.388,
+    "edge_median": 1.072,
+    "face_max": 1.388,
+    "at_t": 3.05,
+    "rest_gap": null
+   },
+   "right_wing | on body": {
+    "shown": true,
+    "edge_max": 1.388,
+    "edge_median": 1.072,
+    "face_max": 1.388,
+    "at_t": 3.3,
+    "rest_gap": null
+   }
+  }
+ },
+ "butterfly@rp07-1427": {
+  "flap": {
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  }
+ },
+ "canary@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   }
+  }
+ },
+ "cardinal@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   }
+  }
+ },
+ "crow@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.083,
+    "edge_median": 0.774,
+    "face_max": 1.083,
+    "at_t": 0.95,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.083,
+    "edge_median": 0.774,
+    "face_max": 1.083,
+    "at_t": 0.95,
+    "rest_gap": null
+   }
+  }
+ },
+ "dragonfly@rp07-1427": {
+  "flap": {
+   "wingLeftBack | on body": {
+    "shown": true,
+    "edge_max": 0.304,
+    "edge_median": 0.223,
+    "face_max": 0.304,
+    "at_t": 0.2,
+    "rest_gap": 0.2000000000369242
+   },
+   "wingRightBack | on body": {
+    "shown": true,
+    "edge_max": 0.304,
+    "edge_median": 0.223,
+    "face_max": 0.304,
+    "at_t": 0.2,
+    "rest_gap": 0.2000000000369242
+   },
+   "wingRightFront | on body": {
+    "shown": true,
+    "edge_max": 0.044,
+    "edge_median": 0.0,
+    "face_max": 0.044,
+    "at_t": 1.85,
+    "rest_gap": null
+   },
+   "wingLeftFront | on body": {
+    "shown": true,
+    "edge_max": 0.044,
+    "edge_median": 0.0,
+    "face_max": 0.044,
+    "at_t": 1.85,
+    "rest_gap": null
+   }
+  }
+ },
+ "duck@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.311,
+    "edge_median": 0.311,
+    "face_max": 0.311,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.311,
+    "edge_median": 0.311,
+    "face_max": 0.311,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  }
+ },
+ "eagle@rp07-1427": {
+  "flap": {
+   "right_Wing_1 | on body": {
+    "shown": true,
+    "edge_max": 0.83,
+    "edge_median": 0.781,
+    "face_max": 0.83,
+    "at_t": 0.4,
+    "rest_gap": null
+   },
+   "right_Wing_1 | right_Wing_2": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "left_Wing_1 | on body": {
+    "shown": true,
+    "edge_max": 0.83,
+    "edge_median": 0.781,
+    "face_max": 0.83,
+    "at_t": 0.4,
+    "rest_gap": null
+   },
+   "left_Wing_1 | left_Wing_2": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  }
+ },
+ "emperor_penguin@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.014,
+    "edge_median": 0.008,
+    "face_max": 0.014,
+    "at_t": 1.0,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.014,
+    "edge_median": 0.008,
+    "face_max": 0.014,
+    "at_t": 1.0,
+    "rest_gap": null
+   }
+  }
+ },
+ "finch@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   }
+  }
+ },
+ "firefly@rp07-1427": {
+  "flap": {
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.519,
+    "edge_median": 0.369,
+    "face_max": 0.519,
+    "at_t": 0.45,
+    "rest_gap": 0.24999999999999978
+   },
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.519,
+    "edge_median": 0.369,
+    "face_max": 0.519,
+    "at_t": 0.45,
+    "rest_gap": 0.24999999999999978
+   }
+  }
+ },
+ "flamingo@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.37,
+    "edge_median": 0.0,
+    "face_max": 1.37,
+    "at_t": 0.7,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.37,
+    "edge_median": 0.0,
+    "face_max": 1.37,
+    "at_t": 0.7,
+    "rest_gap": null
+   }
+  }
+ },
+ "goose@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.103,
+    "edge_median": 0.07,
+    "face_max": 0.103,
+    "at_t": 0.5,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.103,
+    "edge_median": 0.07,
+    "face_max": 0.103,
+    "at_t": 0.5,
+    "rest_gap": null
+   }
+  }
+ },
+ "kakapo@rp07-1427": {
+  "flap": {
+   "left_wing | on body": {
+    "shown": true,
+    "edge_max": 0.711,
+    "edge_median": 0.711,
+    "face_max": 0.711,
+    "at_t": 3.8,
+    "rest_gap": null
+   },
+   "right_wing | on body": {
+    "shown": true,
+    "edge_max": 0.711,
+    "edge_median": 0.711,
+    "face_max": 0.711,
+    "at_t": 0.4,
+    "rest_gap": null
+   }
+  }
+ },
+ "ostrich@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.105,
+    "edge_median": 0.074,
+    "face_max": 0.105,
+    "at_t": 1.2,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.105,
+    "edge_median": 0.074,
+    "face_max": 0.105,
+    "at_t": 1.2,
+    "rest_gap": null
+   }
+  }
+ },
+ "owl@rp07-1427": {
+  "flap": {
+   "left_wing | on body": {
+    "shown": true,
+    "edge_max": 0.938,
+    "edge_median": 0.784,
+    "face_max": 0.938,
+    "at_t": 0.05,
+    "rest_gap": null
+   },
+   "right_wing | on body": {
+    "shown": true,
+    "edge_max": 0.938,
+    "edge_median": 0.784,
+    "face_max": 0.938,
+    "at_t": 0.7,
+    "rest_gap": null
+   }
+  }
+ },
+ "peafowl@rp07-1427": {
+  "flap": {
+   "right_wing | on body": {
+    "shown": true,
+    "edge_max": 1.147,
+    "edge_median": 0.0,
+    "face_max": 1.147,
+    "at_t": 0.35,
+    "rest_gap": null
+   },
+   "left_wing | on body": {
+    "shown": true,
+    "edge_max": 1.147,
+    "edge_median": 0.0,
+    "face_max": 1.147,
+    "at_t": 0.9,
+    "rest_gap": null
+   }
+  }
+ },
+ "raven@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.083,
+    "edge_median": 0.774,
+    "face_max": 1.083,
+    "at_t": 0.95,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.083,
+    "edge_median": 0.774,
+    "face_max": 1.083,
+    "at_t": 0.95,
+    "rest_gap": null
+   }
+  }
+ },
+ "robin@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   }
+  }
+ },
+ "secretary_bird@rp07-1427": {
+  "flap": {
+   "right_wing | on body": {
+    "shown": true,
+    "edge_max": 0.183,
+    "edge_median": 0.131,
+    "face_max": 0.183,
+    "at_t": 1.2,
+    "rest_gap": null
+   },
+   "left_wing | on body": {
+    "shown": true,
+    "edge_max": 0.183,
+    "edge_median": 0.131,
+    "face_max": 0.183,
+    "at_t": 1.2,
+    "rest_gap": null
+   }
+  }
+ },
+ "sparrow@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 1.288,
+    "edge_median": 0.8,
+    "face_max": 1.288,
+    "at_t": 0.8,
+    "rest_gap": null
+   }
+  }
+ },
+ "toucan@rp07-1427": {
+  "flap": {
+   "left_wing | on body": {
+    "shown": true,
+    "edge_max": 1.7,
+    "edge_median": 1.484,
+    "face_max": 1.7,
+    "at_t": 0.25,
+    "rest_gap": null
+   },
+   "right_wing | on body": {
+    "shown": true,
+    "edge_max": 1.661,
+    "edge_median": 1.484,
+    "face_max": 1.661,
+    "at_t": 1.25,
+    "rest_gap": null
+   }
+  }
+ },
+ "turkey@rp07-1427": {
+  "flap": {
+   "leftWing | on body": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.4,
+    "rest_gap": null
+   },
+   "rightWing | on body": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 1.25,
+    "rest_gap": null
+   }
+  }
+ },
+ "vulture@rp07-1427": {
+  "flap": {
+   "right_wing | on body": {
+    "shown": true,
+    "edge_max": 0.69,
+    "edge_median": 0.0,
+    "face_max": 0.69,
+    "at_t": 0.75,
+    "rest_gap": null
+   },
+   "right_wing | right_wing_tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.5,
+    "at_t": 0.75,
+    "rest_gap": null
+   },
+   "left_wing | on body": {
+    "shown": true,
+    "edge_max": 0.69,
+    "edge_median": 0.0,
+    "face_max": 0.69,
+    "at_t": 0.75,
+    "rest_gap": null
+   },
+   "left_wing | left_wing_tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.5,
+    "at_t": 0.85,
+    "rest_gap": null
+   }
+  }
+ },
+ "parrot": {
+  "fly slow": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 2.728,
+    "edge_median": 1.428,
+    "face_max": 2.728,
+    "at_t": 3.75,
+    "rest_gap": 0.8811622381821221
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 2.728,
+    "edge_median": 1.428,
+    "face_max": 2.728,
+    "at_t": 3.75,
+    "rest_gap": 0.8811622381821222
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.694,
+    "edge_median": 0.412,
+    "face_max": 0.694,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.694,
+    "edge_median": 0.412,
+    "face_max": 0.694,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  },
+  "fly": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 2.745,
+    "edge_median": 1.346,
+    "face_max": 2.745,
+    "at_t": 3.75,
+    "rest_gap": 0.8811622381821221
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 2.745,
+    "edge_median": 1.346,
+    "face_max": 2.745,
+    "at_t": 3.75,
+    "rest_gap": 0.8811622381821222
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.746,
+    "edge_median": 0.391,
+    "face_max": 0.746,
+    "at_t": 0.2,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.746,
+    "edge_median": 0.391,
+    "face_max": 0.746,
+    "at_t": 0.2,
+    "rest_gap": null
+   }
+  },
+  "fly fast": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 2.779,
+    "edge_median": 1.184,
+    "face_max": 2.779,
+    "at_t": 3.75,
+    "rest_gap": 0.8811622381821221
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 2.779,
+    "edge_median": 1.184,
+    "face_max": 2.779,
+    "at_t": 3.75,
+    "rest_gap": 0.8811622381821222
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.899,
+    "edge_median": 0.416,
+    "face_max": 0.899,
+    "at_t": 0.2,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.899,
+    "edge_median": 0.416,
+    "face_max": 0.899,
+    "at_t": 0.2,
+    "rest_gap": null
+   }
+  }
+ },
+ "phantom": {
+  "glide": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 2.653,
+    "edge_median": 0.068,
+    "face_max": 2.674,
+    "at_t": 1.45,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 2.653,
+    "edge_median": 0.068,
+    "face_max": 2.674,
+    "at_t": 1.45,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.02,
+    "edge_median": 0.008,
+    "face_max": 0.02,
+    "at_t": 3.0,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.02,
+    "edge_median": 0.008,
+    "face_max": 0.02,
+    "at_t": 3.0,
+    "rest_gap": null
+   }
+  },
+  "swoop": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 2.685,
+    "edge_median": 0.1,
+    "face_max": 2.716,
+    "at_t": 1.7,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 2.685,
+    "edge_median": 0.1,
+    "face_max": 2.716,
+    "at_t": 1.7,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.02,
+    "edge_median": 0.009,
+    "face_max": 0.02,
+    "at_t": 2.15,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.02,
+    "edge_median": 0.009,
+    "face_max": 0.02,
+    "at_t": 2.15,
+    "rest_gap": null
+   }
+  },
+  "hover": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 1.115,
+    "edge_median": 0.235,
+    "face_max": 1.139,
+    "at_t": 0.1,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 1.115,
+    "edge_median": 0.235,
+    "face_max": 1.139,
+    "at_t": 0.1,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.011,
+    "edge_median": 0.008,
+    "face_max": 0.011,
+    "at_t": 3.4,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.011,
+    "edge_median": 0.008,
+    "face_max": 0.011,
+    "at_t": 3.4,
+    "rest_gap": null
+   }
+  }
+ }
+}

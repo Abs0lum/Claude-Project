@@ -1,0 +1,3392 @@
+{
+ "total_if_all_mpx": 12.41,
+ "rows": [
+  {
+   "family": "grass_block",
+   "images": 33,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.676,
+   "now_mpx": 1.217,
+   "keys": [
+    "grass_side",
+    "grass_top",
+    "grass_top_g9"
+   ],
+   "blocks": [
+    "minecraft:grass",
+    "pw:grass_block",
+    "pw:slab_grass"
+   ]
+  },
+  {
+   "family": "crimson_nylium",
+   "images": 31,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.635,
+   "now_mpx": 1.143,
+   "keys": [
+    "crimson_nylium_side_g0",
+    "crimson_nylium_side_g1",
+    "crimson_nylium_side_g10",
+    "crimson_nylium_side_g11",
+    "crimson_nylium_side_g12",
+    "crimson_nylium_side_g13"
+   ],
+   "blocks": [
+    "minecraft:crimson_nylium",
+    "pw:crimson_nylium"
+   ]
+  },
+  {
+   "family": "warped_nylium",
+   "images": 31,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.635,
+   "now_mpx": 1.143,
+   "keys": [
+    "warped_nylium_side_g0",
+    "warped_nylium_side_g1",
+    "warped_nylium_side_g10",
+    "warped_nylium_side_g11",
+    "warped_nylium_side_g12",
+    "warped_nylium_side_g13"
+   ],
+   "blocks": [
+    "pw:warped_nylium"
+   ]
+  },
+  {
+   "family": "muddy_mangrove_roots",
+   "images": 30,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.614,
+   "now_mpx": 1.106,
+   "keys": [
+    "muddy_mangrove_roots_side",
+    "muddy_mangrove_roots_top"
+   ],
+   "blocks": [
+    "minecraft:muddy_mangrove_roots"
+   ]
+  },
+  {
+   "family": "oak_log",
+   "images": 17,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.348,
+   "now_mpx": 0.627,
+   "keys": [
+    "pw_oak_elder_log_v4",
+    "pw_oak_log_top_v0",
+    "pw_oak_log_top_v1",
+    "pw_oak_log_top_v2",
+    "pw_oak_log_top_v3",
+    "pw_oak_log_top_v4"
+   ],
+   "blocks": [
+    "pw:oak_elder",
+    "pw:oak_mature",
+    "pw:oak_old",
+    "pw:oak_young"
+   ]
+  },
+  {
+   "family": "mud",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "mud"
+   ],
+   "blocks": [
+    "minecraft:mud"
+   ]
+  },
+  {
+   "family": "mycelium",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "mycelium_top"
+   ],
+   "blocks": [
+    "minecraft:mycelium"
+   ]
+  },
+  {
+   "family": "packed_mud",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "packed_mud"
+   ],
+   "blocks": [
+    "minecraft:packed_mud"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) spruce",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_spruce_1",
+    "pw_planks_spruce_10",
+    "pw_planks_spruce_11",
+    "pw_planks_spruce_12",
+    "pw_planks_spruce_13",
+    "pw_planks_spruce_14"
+   ],
+   "blocks": [
+    "pw:spruce_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) warped",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_warped_1",
+    "pw_planks_warped_10",
+    "pw_planks_warped_11",
+    "pw_planks_warped_12",
+    "pw_planks_warped_13",
+    "pw_planks_warped_14"
+   ],
+   "blocks": [
+    "pw:warped_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) crimson",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_crimson_1",
+    "pw_planks_crimson_10",
+    "pw_planks_crimson_11",
+    "pw_planks_crimson_12",
+    "pw_planks_crimson_13",
+    "pw_planks_crimson_14"
+   ],
+   "blocks": [
+    "pw:crimson_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) jungle",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_jungle_1",
+    "pw_planks_jungle_10",
+    "pw_planks_jungle_11",
+    "pw_planks_jungle_12",
+    "pw_planks_jungle_13",
+    "pw_planks_jungle_14"
+   ],
+   "blocks": [
+    "pw:jungle_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) oak",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_oak_1",
+    "pw_planks_oak_10",
+    "pw_planks_oak_11",
+    "pw_planks_oak_12",
+    "pw_planks_oak_13",
+    "pw_planks_oak_14"
+   ],
+   "blocks": [
+    "pw:oak_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) acacia",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_acacia_1",
+    "pw_planks_acacia_10",
+    "pw_planks_acacia_11",
+    "pw_planks_acacia_12",
+    "pw_planks_acacia_13",
+    "pw_planks_acacia_14"
+   ],
+   "blocks": [
+    "pw:acacia_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) cherry",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_cherry_1",
+    "pw_planks_cherry_10",
+    "pw_planks_cherry_11",
+    "pw_planks_cherry_12",
+    "pw_planks_cherry_13",
+    "pw_planks_cherry_14"
+   ],
+   "blocks": [
+    "pw:cherry_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) mangrove",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_mangrove_1",
+    "pw_planks_mangrove_10",
+    "pw_planks_mangrove_11",
+    "pw_planks_mangrove_12",
+    "pw_planks_mangrove_13",
+    "pw_planks_mangrove_14"
+   ],
+   "blocks": [
+    "pw:mangrove_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) birch",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_birch_1",
+    "pw_planks_birch_10",
+    "pw_planks_birch_11",
+    "pw_planks_birch_12",
+    "pw_planks_birch_13",
+    "pw_planks_birch_14"
+   ],
+   "blocks": [
+    "pw:birch_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) pale",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_pale_oak_1",
+    "pw_planks_pale_oak_10",
+    "pw_planks_pale_oak_11",
+    "pw_planks_pale_oak_12",
+    "pw_planks_pale_oak_13",
+    "pw_planks_pale_oak_14"
+   ],
+   "blocks": [
+    "pw:pale_oak_planks_grid"
+   ]
+  },
+  {
+   "family": "planks grid (pw_planks) dark",
+   "images": 16,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.328,
+   "now_mpx": 0.59,
+   "keys": [
+    "pw_planks_dark_oak_1",
+    "pw_planks_dark_oak_10",
+    "pw_planks_dark_oak_11",
+    "pw_planks_dark_oak_12",
+    "pw_planks_dark_oak_13",
+    "pw_planks_dark_oak_14"
+   ],
+   "blocks": [
+    "pw:dark_oak_planks_grid"
+   ]
+  },
+  {
+   "family": "snow",
+   "images": 7,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.143,
+   "now_mpx": 0.258,
+   "keys": [
+    "pw_snowcap",
+    "pw_veg_snow",
+    "snow_g4",
+    "snow_g5",
+    "snow_g7",
+    "snow_g9"
+   ],
+   "blocks": [
+    "minecraft:snow",
+    "pw:seated_polished_blackstone_stairs",
+    "pw:seated_snow",
+    "pw:seated_weathered_cut_copper_stairs",
+    "pw:slab_coarse_dirt",
+    "pw:slab_snow"
+   ]
+  },
+  {
+   "family": "jungle_log",
+   "images": 7,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.143,
+   "now_mpx": 0.258,
+   "keys": [
+    "pw_jungle_log_top_v0",
+    "pw_jungle_log_top_v1",
+    "pw_jungle_log_top_v2",
+    "pw_jungle_log_top_v3",
+    "pw_jungle_log_top_v4",
+    "pw_jungle_log_top_v5"
+   ],
+   "blocks": [
+    "pw:jungle_elder",
+    "pw:jungle_old",
+    "pw:jungle_young"
+   ]
+  },
+  {
+   "family": "pale_oak_log",
+   "images": 7,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.143,
+   "now_mpx": 0.258,
+   "keys": [
+    "pw_pale_oak_log_top_v0",
+    "pw_pale_oak_log_top_v1",
+    "pw_pale_oak_log_top_v2",
+    "pw_pale_oak_log_top_v3",
+    "pw_pale_oak_log_top_v4",
+    "pw_pale_oak_log_top_v5"
+   ],
+   "blocks": [
+    "pw:pale_oak_elder"
+   ]
+  },
+  {
+   "family": "spruce_log",
+   "images": 7,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.143,
+   "now_mpx": 0.258,
+   "keys": [
+    "pw_spruce_log_top_v0",
+    "pw_spruce_log_top_v1",
+    "pw_spruce_log_top_v2",
+    "pw_spruce_log_top_v3",
+    "pw_spruce_log_top_v4",
+    "pw_spruce_log_top_v5"
+   ],
+   "blocks": [
+    "pw:spruce_elder",
+    "pw:spruce_old",
+    "pw:spruce_young"
+   ]
+  },
+  {
+   "family": "birch_log",
+   "images": 7,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.143,
+   "now_mpx": 0.258,
+   "keys": [
+    "pw_birch_log_top_v0",
+    "pw_birch_log_top_v1",
+    "pw_birch_log_top_v2",
+    "pw_birch_log_top_v3",
+    "pw_birch_log_top_v4",
+    "pw_birch_log_top_v5"
+   ],
+   "blocks": [
+    "pw:birch_mature",
+    "pw:birch_old",
+    "pw:birch_young"
+   ]
+  },
+  {
+   "family": "dark_oak_log",
+   "images": 7,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.143,
+   "now_mpx": 0.258,
+   "keys": [
+    "pw_dark_oak_log_top_v0",
+    "pw_dark_oak_log_top_v1",
+    "pw_dark_oak_log_top_v2",
+    "pw_dark_oak_log_top_v3",
+    "pw_dark_oak_log_top_v4",
+    "pw_dark_oak_log_top_v5"
+   ],
+   "blocks": [
+    "pw:dark_oak_elder"
+   ]
+  },
+  {
+   "family": "stonecutter",
+   "images": 4,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.082,
+   "now_mpx": 0.147,
+   "keys": [
+    "stonecutter2_side",
+    "stonecutter2_top",
+    "stonecutter_side",
+    "stonecutter_top"
+   ],
+   "blocks": [
+    "minecraft:stonecutter",
+    "minecraft:stonecutter_block"
+   ]
+  },
+  {
+   "family": "oak_elder_log",
+   "images": 4,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.082,
+   "now_mpx": 0.147,
+   "keys": [
+    "pw_oak_elder_log_v0",
+    "pw_oak_elder_log_v1",
+    "pw_oak_elder_log_v2",
+    "pw_oak_elder_log_v3"
+   ],
+   "blocks": [
+    "pw:oak_elder"
+   ]
+  },
+  {
+   "family": "smoker",
+   "images": 3,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.061,
+   "now_mpx": 0.111,
+   "keys": [
+    "smoker_bottom",
+    "smoker_side",
+    "smoker_top"
+   ],
+   "blocks": [
+    "minecraft:lit_smoker",
+    "minecraft:smoker"
+   ]
+  },
+  {
+   "family": "blast_furnace",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "blast_furnace_side",
+    "blast_furnace_top"
+   ],
+   "blocks": [
+    "minecraft:blast_furnace",
+    "minecraft:lit_blast_furnace"
+   ]
+  },
+  {
+   "family": "blast_furnace_front",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "blast_furnace_front_off",
+    "blast_furnace_front_on"
+   ],
+   "blocks": [
+    "minecraft:blast_furnace",
+    "minecraft:lit_blast_furnace"
+   ]
+  },
+  {
+   "family": "furnace",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "dispenser_side",
+    "dispenser_top"
+   ],
+   "blocks": [
+    "minecraft:dispenser"
+   ]
+  },
+  {
+   "family": "firefly_bush",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "firefly_bush",
+    "firefly_bush_carried"
+   ],
+   "blocks": [
+    "minecraft:firefly_bush"
+   ]
+  },
+  {
+   "family": "furnace_front",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "furnace_front_off",
+    "furnace_front_on"
+   ],
+   "blocks": [
+    "minecraft:furnace",
+    "minecraft:lit_furnace"
+   ]
+  },
+  {
+   "family": "lectern",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "lectern_front",
+    "lectern_top"
+   ],
+   "blocks": [
+    "minecraft:lectern"
+   ]
+  },
+  {
+   "family": "redstone_lamp",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "redstone_lamp_off",
+    "redstone_lamp_on"
+   ],
+   "blocks": [
+    "minecraft:lit_redstone_lamp",
+    "minecraft:redstone_lamp"
+   ]
+  },
+  {
+   "family": "smoker_front",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "smoker_front_off",
+    "smoker_front_on"
+   ],
+   "blocks": [
+    "minecraft:lit_smoker",
+    "minecraft:smoker"
+   ]
+  },
+  {
+   "family": "mangrove_propagule",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "mangrove_propagule",
+    "mangrove_propagule_item"
+   ],
+   "blocks": [
+    "minecraft:mangrove_propagule"
+   ]
+  },
+  {
+   "family": "pink_petals",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "pink_petals",
+    "pink_petals_carried"
+   ],
+   "blocks": [
+    "minecraft:pink_petals"
+   ]
+  },
+  {
+   "family": "tall_grass",
+   "images": 2,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.041,
+   "now_mpx": 0.074,
+   "keys": [
+    "tall_grass_bottom",
+    "tall_grass_top"
+   ],
+   "blocks": [
+    "minecraft:tall_grass"
+   ]
+  },
+  {
+   "family": "anvil_base",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "flattened_anvil_base"
+   ],
+   "blocks": [
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil"
+   ]
+  },
+  {
+   "family": "anvil_top_damaged",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "flattened_anvil_top"
+   ],
+   "blocks": [
+    "minecraft:anvil"
+   ]
+  },
+  {
+   "family": "bamboo",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "bamboo_carried"
+   ],
+   "blocks": [
+    "minecraft:bamboo",
+    "minecraft:bamboo_sapling"
+   ]
+  },
+  {
+   "family": "obsidian",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "beacon_base"
+   ],
+   "blocks": [
+    "minecraft:beacon"
+   ]
+  },
+  {
+   "family": "blue_ice",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "blue_ice"
+   ],
+   "blocks": [
+    "minecraft:blue_ice"
+   ]
+  },
+  {
+   "family": "cherry_log",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "cherry_log_side"
+   ],
+   "blocks": [
+    "minecraft:cherry_log",
+    "minecraft:cherry_wood"
+   ]
+  },
+  {
+   "family": "coal_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "coal_ore"
+   ],
+   "blocks": [
+    "minecraft:coal_ore"
+   ]
+  },
+  {
+   "family": "copper_chain",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "copper_chain_carried"
+   ],
+   "blocks": [
+    "minecraft:copper_chain",
+    "minecraft:waxed_copper_chain"
+   ]
+  },
+  {
+   "family": "copper_lantern",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "copper_lantern_carried"
+   ],
+   "blocks": [
+    "minecraft:copper_lantern",
+    "minecraft:waxed_copper_lantern"
+   ]
+  },
+  {
+   "family": "copper_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "copper_ore"
+   ],
+   "blocks": [
+    "minecraft:copper_ore"
+   ]
+  },
+  {
+   "family": "soul_sand",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "skull"
+   ],
+   "blocks": [
+    "minecraft:dragon_head",
+    "minecraft:player_head",
+    "minecraft:wither_skeleton_skull"
+   ]
+  },
+  {
+   "family": "crying_obsidian",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "crying_obsidian"
+   ],
+   "blocks": [
+    "minecraft:crying_obsidian"
+   ]
+  },
+  {
+   "family": "deepslate_coal_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_coal_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_coal_ore"
+   ]
+  },
+  {
+   "family": "deepslate_copper_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_copper_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_copper_ore"
+   ]
+  },
+  {
+   "family": "deepslate_diamond_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_diamond_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_diamond_ore"
+   ]
+  },
+  {
+   "family": "deepslate_emerald_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_emerald_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_emerald_ore"
+   ]
+  },
+  {
+   "family": "deepslate_gold_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_gold_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_gold_ore"
+   ]
+  },
+  {
+   "family": "deepslate_iron_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_iron_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_iron_ore"
+   ]
+  },
+  {
+   "family": "deepslate_lapis_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_lapis_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_lapis_ore"
+   ]
+  },
+  {
+   "family": "deepslate_redstone_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "deepslate_redstone_ore"
+   ],
+   "blocks": [
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:lit_deepslate_redstone_ore"
+   ]
+  },
+  {
+   "family": "diamond_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "diamond_ore"
+   ],
+   "blocks": [
+    "minecraft:diamond_ore"
+   ]
+  },
+  {
+   "family": "emerald_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "emerald_ore"
+   ],
+   "blocks": [
+    "minecraft:emerald_ore"
+   ]
+  },
+  {
+   "family": "enchanting_table",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "enchanting_table_bottom"
+   ],
+   "blocks": [
+    "minecraft:enchanting_table"
+   ]
+  },
+  {
+   "family": "exposed_copper_chain",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "exposed_copper_chain_carried"
+   ],
+   "blocks": [
+    "minecraft:exposed_copper_chain",
+    "minecraft:waxed_exposed_copper_chain"
+   ]
+  },
+  {
+   "family": "exposed_copper_lantern",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "exposed_copper_lantern_carried"
+   ],
+   "blocks": [
+    "minecraft:exposed_copper_lantern",
+    "minecraft:waxed_exposed_copper_lantern"
+   ]
+  },
+  {
+   "family": "farmland_wet",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "farmland"
+   ],
+   "blocks": [
+    "minecraft:farmland"
+   ]
+  },
+  {
+   "family": "farmland_dry",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "farmland"
+   ],
+   "blocks": [
+    "minecraft:farmland"
+   ]
+  },
+  {
+   "family": "firefly_bush_firefly",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "firefly_bush"
+   ],
+   "blocks": [
+    "minecraft:firefly_bush"
+   ]
+  },
+  {
+   "family": "gold_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "gold_ore"
+   ],
+   "blocks": [
+    "minecraft:gold_ore"
+   ]
+  },
+  {
+   "family": "grass",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "grass_carried"
+   ],
+   "blocks": [
+    "minecraft:grass"
+   ]
+  },
+  {
+   "family": "ice",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "ice"
+   ],
+   "blocks": [
+    "minecraft:ice"
+   ]
+  },
+  {
+   "family": "iron_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "iron_ore"
+   ],
+   "blocks": [
+    "minecraft:iron_ore"
+   ]
+  },
+  {
+   "family": "kelp_d",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "kelp_d"
+   ],
+   "blocks": [
+    "minecraft:kelp"
+   ]
+  },
+  {
+   "family": "kelp",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "kelp_top"
+   ],
+   "blocks": [
+    "minecraft:kelp"
+   ]
+  },
+  {
+   "family": "kelp_a",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "kelp_a"
+   ],
+   "blocks": [
+    "minecraft:kelp"
+   ]
+  },
+  {
+   "family": "kelp_b",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "kelp_b"
+   ],
+   "blocks": [
+    "minecraft:kelp"
+   ]
+  },
+  {
+   "family": "kelp_c",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "kelp_c"
+   ],
+   "blocks": [
+    "minecraft:kelp"
+   ]
+  },
+  {
+   "family": "kelp_top_bulb",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "kelp_top_bulb"
+   ],
+   "blocks": [
+    "minecraft:kelp"
+   ]
+  },
+  {
+   "family": "lantern",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "lantern_carried"
+   ],
+   "blocks": [
+    "minecraft:lantern"
+   ]
+  },
+  {
+   "family": "lapis_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "lapis_ore"
+   ],
+   "blocks": [
+    "minecraft:lapis_ore"
+   ]
+  },
+  {
+   "family": "lectern_base",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "lectern_base"
+   ],
+   "blocks": [
+    "minecraft:lectern"
+   ]
+  },
+  {
+   "family": "lectern_sides",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "lectern_sides"
+   ],
+   "blocks": [
+    "minecraft:lectern"
+   ]
+  },
+  {
+   "family": "redstone_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "redstone_ore"
+   ],
+   "blocks": [
+    "minecraft:lit_redstone_ore",
+    "minecraft:redstone_ore"
+   ]
+  },
+  {
+   "family": "log_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "log_side"
+   ],
+   "blocks": [
+    "minecraft:log"
+   ]
+  },
+  {
+   "family": "moss_block",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "moss_block"
+   ],
+   "blocks": [
+    "minecraft:moss_carpet",
+    "pw:slab_moss"
+   ]
+  },
+  {
+   "family": "nether_gold_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "nether_gold_ore"
+   ],
+   "blocks": [
+    "minecraft:nether_gold_ore"
+   ]
+  },
+  {
+   "family": "oxidized_copper_chain",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "oxidized_copper_chain_carried"
+   ],
+   "blocks": [
+    "minecraft:oxidized_copper_chain",
+    "minecraft:waxed_oxidized_copper_chain"
+   ]
+  },
+  {
+   "family": "oxidized_copper_lantern",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "oxidized_copper_lantern_carried"
+   ],
+   "blocks": [
+    "minecraft:oxidized_copper_lantern",
+    "minecraft:waxed_oxidized_copper_lantern"
+   ]
+  },
+  {
+   "family": "ice_packed",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "packed_ice"
+   ],
+   "blocks": [
+    "minecraft:packed_ice",
+    "pw:slab_packed_ice"
+   ]
+  },
+  {
+   "family": "comparator",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "comparator_up"
+   ],
+   "blocks": [
+    "minecraft:powered_comparator",
+    "minecraft:unpowered_comparator"
+   ]
+  },
+  {
+   "family": "repeater",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "repeater_up"
+   ],
+   "blocks": [
+    "minecraft:powered_repeater",
+    "minecraft:unpowered_repeater"
+   ]
+  },
+  {
+   "family": "quartz_ore",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "quartz_ore"
+   ],
+   "blocks": [
+    "minecraft:quartz_ore"
+   ]
+  },
+  {
+   "family": "resin_clump",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "resin_clump_carried"
+   ],
+   "blocks": [
+    "minecraft:resin_clump"
+   ]
+  },
+  {
+   "family": "sea_pickle",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "sea_pickle_carried"
+   ],
+   "blocks": [
+    "minecraft:sea_pickle"
+   ]
+  },
+  {
+   "family": "seagrass_tall_bot_a",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "seagrass_tall_bot_a"
+   ],
+   "blocks": [
+    "minecraft:seagrass"
+   ]
+  },
+  {
+   "family": "seagrass_tall_top_a",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "seagrass_tall_top_a"
+   ],
+   "blocks": [
+    "minecraft:seagrass"
+   ]
+  },
+  {
+   "family": "seagrass_tall_bot_b",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "seagrass_tall_bot_b"
+   ],
+   "blocks": [
+    "minecraft:seagrass"
+   ]
+  },
+  {
+   "family": "seagrass_short",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "seagrass_short"
+   ],
+   "blocks": [
+    "minecraft:seagrass"
+   ]
+  },
+  {
+   "family": "seagrass_tall_top_b",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "seagrass_tall_top_b"
+   ],
+   "blocks": [
+    "minecraft:seagrass"
+   ]
+  },
+  {
+   "family": "short_dry_grass",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "short_dry_grass"
+   ],
+   "blocks": [
+    "minecraft:short_dry_grass"
+   ]
+  },
+  {
+   "family": "short_grass",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "short_grass"
+   ],
+   "blocks": [
+    "minecraft:short_grass"
+   ]
+  },
+  {
+   "family": "sniffer_egg",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "sniffer_egg_carried"
+   ],
+   "blocks": [
+    "minecraft:sniffer_egg"
+   ]
+  },
+  {
+   "family": "soul_lantern",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "soul_lantern_carried"
+   ],
+   "blocks": [
+    "minecraft:soul_lantern"
+   ]
+  },
+  {
+   "family": "stonecutter_other",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "stonecutter_other_side"
+   ],
+   "blocks": [
+    "minecraft:stonecutter"
+   ]
+  },
+  {
+   "family": "stonecutter2_saw",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "stonecutter2_saw"
+   ],
+   "blocks": [
+    "minecraft:stonecutter_block"
+   ]
+  },
+  {
+   "family": "stripped_cherry_log",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "stripped_cherry_log_side"
+   ],
+   "blocks": [
+    "minecraft:stripped_cherry_log",
+    "minecraft:stripped_cherry_wood"
+   ]
+  },
+  {
+   "family": "sweet_berries",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "sweet_berry_bush_carried"
+   ],
+   "blocks": [
+    "minecraft:sweet_berry_bush"
+   ]
+  },
+  {
+   "family": "tall_dry_grass",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "tall_dry_grass"
+   ],
+   "blocks": [
+    "minecraft:tall_dry_grass"
+   ]
+  },
+  {
+   "family": "tallgrass",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "tallgrass"
+   ],
+   "blocks": [
+    "minecraft:tallgrass"
+   ]
+  },
+  {
+   "family": "tuff",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "tuff"
+   ],
+   "blocks": [
+    "minecraft:tuff_double_slab",
+    "minecraft:tuff_slab",
+    "pw:slab_tuff"
+   ]
+  },
+  {
+   "family": "turtle_egg",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "turtle_egg_carried"
+   ],
+   "blocks": [
+    "minecraft:turtle_egg"
+   ]
+  },
+  {
+   "family": "vine",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "vine"
+   ],
+   "blocks": [
+    "minecraft:vine"
+   ]
+  },
+  {
+   "family": "weathered_copper_chain",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "weathered_copper_chain_carried"
+   ],
+   "blocks": [
+    "minecraft:waxed_weathered_copper_chain",
+    "minecraft:weathered_copper_chain"
+   ]
+  },
+  {
+   "family": "weathered_copper_lantern",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "weathered_copper_lantern_carried"
+   ],
+   "blocks": [
+    "minecraft:waxed_weathered_copper_lantern",
+    "minecraft:weathered_copper_lantern"
+   ]
+  },
+  {
+   "family": "wildflowers",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "wildflowers_carried"
+   ],
+   "blocks": [
+    "minecraft:wildflowers"
+   ]
+  },
+  {
+   "family": "furn_iron",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_furn_iron"
+   ],
+   "blocks": [
+    "pw:furn_mantel_spruce",
+    "pw:furn_table_spruce",
+    "pw:furn_wall_shelf_dark_oak"
+   ]
+  },
+  {
+   "family": "roof_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_roof_oak"
+   ],
+   "blocks": [
+    "pw:disc_1",
+    "pw:roof63_lower_oak",
+    "pw:roof63_upper_oak"
+   ]
+  },
+  {
+   "family": "fill_45_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_45_oak"
+   ],
+   "blocks": [
+    "pw:roof_gusset_upper_oak",
+    "pw:sweep_s2",
+    "pw:sweep_s7"
+   ]
+  },
+  {
+   "family": "fill_tri_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_tri_oak"
+   ],
+   "blocks": [
+    "pw:roof_gusset_lower_oak",
+    "pw:roof_gusset_upper_oak"
+   ]
+  },
+  {
+   "family": "fill_tri_m_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_tri_m_oak"
+   ],
+   "blocks": [
+    "pw:roof_gusset_lower_oak",
+    "pw:roof_gusset_upper_oak"
+   ]
+  },
+  {
+   "family": "glyph_f",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_glyph_f"
+   ],
+   "blocks": [
+    "pw:rotation_probe"
+   ]
+  },
+  {
+   "family": "glyph_b",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_glyph_b"
+   ],
+   "blocks": [
+    "pw:rotation_probe"
+   ]
+  },
+  {
+   "family": "glyph_l",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_glyph_l"
+   ],
+   "blocks": [
+    "pw:rotation_probe"
+   ]
+  },
+  {
+   "family": "glyph_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_glyph_r"
+   ],
+   "blocks": [
+    "pw:rotation_probe"
+   ]
+  },
+  {
+   "family": "glyph_u",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_glyph_u"
+   ],
+   "blocks": [
+    "pw:rotation_probe"
+   ]
+  },
+  {
+   "family": "glyph_d",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_glyph_d"
+   ],
+   "blocks": [
+    "pw:rotation_probe"
+   ]
+  },
+  {
+   "family": "fill26l_cobble",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill26l_cobble"
+   ],
+   "blocks": [
+    "pw:ramp_cobble_2_lo"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_blue",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_blue"
+   ],
+   "blocks": [
+    "pw:blue_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "grass_skirt",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_grass_skirt"
+   ],
+   "blocks": [
+    "pw:slab_grass"
+   ]
+  },
+  {
+   "family": "roof_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_roof_spruce"
+   ],
+   "blocks": [
+    "pw:crown_ring_spruce",
+    "pw:roof45_spruce",
+    "pw:roof_gusset_lower_spruce"
+   ]
+  },
+  {
+   "family": "fill_ridge_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_ridge_spruce"
+   ],
+   "blocks": [
+    "pw:roof45_ridge_spruce",
+    "pw:roof_ridge_end_spruce"
+   ]
+  },
+  {
+   "family": "mitre_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_mitre_spruce"
+   ],
+   "blocks": [
+    "pw:roof45_ridge_spruce",
+    "pw:roof45_spruce",
+    "pw:roof_ridge_end_spruce"
+   ]
+  },
+  {
+   "family": "sawcut",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_sawcut"
+   ],
+   "blocks": [
+    "pw:room_wall",
+    "pw:room_wall_corner",
+    "pw:wall_prism"
+   ]
+  },
+  {
+   "family": "fill14q2_stonebrick",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q2_stonebrick"
+   ],
+   "blocks": [
+    "pw:ramp_stonebrick_4_q2"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_black",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_black"
+   ],
+   "blocks": [
+    "pw:black_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "mycelium_skirt",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_mycelium_skirt_g0"
+   ],
+   "blocks": [
+    "pw:mycelium"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_red",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_red"
+   ],
+   "blocks": [
+    "pw:red_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill_45_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_45_spruce"
+   ],
+   "blocks": [
+    "pw:crown_ring_spruce",
+    "pw:roof45_spruce",
+    "pw:roof_gusset_lower_spruce"
+   ]
+  },
+  {
+   "family": "podzol_skirt",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_podzol_skirt_g0"
+   ],
+   "blocks": [
+    "pw:podzol"
+   ]
+  },
+  {
+   "family": "fill_63l_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_63l_oak"
+   ],
+   "blocks": [
+    "pw:roof63_lower_oak"
+   ]
+  },
+  {
+   "family": "fill_tri_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_tri_spruce"
+   ],
+   "blocks": [
+    "pw:roof_gusset_lower_spruce",
+    "pw:roof_gusset_upper_spruce"
+   ]
+  },
+  {
+   "family": "fill_tri_m_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_tri_m_spruce"
+   ],
+   "blocks": [
+    "pw:roof_gusset_lower_spruce",
+    "pw:roof_gusset_upper_spruce"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_yellow",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_yellow"
+   ],
+   "blocks": [
+    "pw:yellow_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill26u_stonebrick",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill26u_stonebrick"
+   ],
+   "blocks": [
+    "pw:ramp_stonebrick_2_hi"
+   ]
+  },
+  {
+   "family": "fill14q4_cobble",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q4_cobble"
+   ],
+   "blocks": [
+    "pw:ramp_cobble_4_q4"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_purple",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_purple"
+   ],
+   "blocks": [
+    "pw:purple_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_cyan",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_cyan"
+   ],
+   "blocks": [
+    "pw:cyan_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill14q4_stonebrick",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q4_stonebrick"
+   ],
+   "blocks": [
+    "pw:ramp_stonebrick_4_q4"
+   ]
+  },
+  {
+   "family": "fill_63l_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_63l_spruce"
+   ],
+   "blocks": [
+    "pw:roof63_lower_spruce"
+   ]
+  },
+  {
+   "family": "fill14q3_smooth_stone",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q3_smooth_stone"
+   ],
+   "blocks": [
+    "pw:ramp_smooth_stone_4_q3"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_pink",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_pink"
+   ],
+   "blocks": [
+    "pw:pink_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill_ridge_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_ridge_oak"
+   ],
+   "blocks": [
+    "pw:roof45_ridge_oak",
+    "pw:roof_ridge_end_oak"
+   ]
+  },
+  {
+   "family": "mitre_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_mitre_oak"
+   ],
+   "blocks": [
+    "pw:roof45_oak",
+    "pw:roof45_ridge_oak",
+    "pw:roof_ridge_end_oak"
+   ]
+  },
+  {
+   "family": "fill14q4_smooth_stone",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q4_smooth_stone"
+   ],
+   "blocks": [
+    "pw:ramp_smooth_stone_4_q4"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_light_blue",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_light_blue"
+   ],
+   "blocks": [
+    "pw:light_blue_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill14q1_stonebrick",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q1_stonebrick"
+   ],
+   "blocks": [
+    "pw:ramp_stonebrick_4_q1"
+   ]
+  },
+  {
+   "family": "fill26u_smooth_stone",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill26u_smooth_stone"
+   ],
+   "blocks": [
+    "pw:ramp_smooth_stone_2_hi"
+   ]
+  },
+  {
+   "family": "fill14q3_stonebrick",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q3_stonebrick"
+   ],
+   "blocks": [
+    "pw:ramp_stonebrick_4_q3"
+   ]
+  },
+  {
+   "family": "fill_45_thatch",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_45_thatch"
+   ],
+   "blocks": [
+    "pw:roof45_thatch"
+   ]
+  },
+  {
+   "family": "mitre_thatch",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_mitre_thatch"
+   ],
+   "blocks": [
+    "pw:roof45_ridge_thatch",
+    "pw:roof45_thatch"
+   ]
+  },
+  {
+   "family": "fill14q1_cobble",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q1_cobble"
+   ],
+   "blocks": [
+    "pw:ramp_cobble_4_q1"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_green",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_green"
+   ],
+   "blocks": [
+    "pw:green_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_white",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_white"
+   ],
+   "blocks": [
+    "pw:white_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill26u_cobble",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill26u_cobble"
+   ],
+   "blocks": [
+    "pw:ramp_cobble_2_hi"
+   ]
+  },
+  {
+   "family": "warped_skirt",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_warped_skirt_g0"
+   ],
+   "blocks": [
+    "pw:warped_nylium"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_light_gray",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_light_gray"
+   ],
+   "blocks": [
+    "pw:light_gray_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill14q2_smooth_stone",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q2_smooth_stone"
+   ],
+   "blocks": [
+    "pw:ramp_smooth_stone_4_q2"
+   ]
+  },
+  {
+   "family": "terracotta_tiles",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles"
+   ],
+   "blocks": [
+    "pw:terracotta_tiles"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_lime",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_lime"
+   ],
+   "blocks": [
+    "pw:lime_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill_63u_spruce",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_63u_spruce"
+   ],
+   "blocks": [
+    "pw:roof63_upper_spruce"
+   ]
+  },
+  {
+   "family": "fill14q1_smooth_stone",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q1_smooth_stone"
+   ],
+   "blocks": [
+    "pw:ramp_smooth_stone_4_q1"
+   ]
+  },
+  {
+   "family": "fill_ridge_thatch",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_ridge_thatch"
+   ],
+   "blocks": [
+    "pw:roof45_ridge_thatch"
+   ]
+  },
+  {
+   "family": "vine_v0_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v0"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_extra_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_extra"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v0_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r0"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_extra_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_extra_r"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v1_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v1"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v1_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r1"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v2_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v2"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v2_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r2"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v3_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v3"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v3_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r3"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v4_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v4"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v4_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r4"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v5_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v5"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v5_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r5"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v6_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v6"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v6_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r6"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v7_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v7"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v7_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r7"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v8_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v8"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v8_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r8"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v9_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v9"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v9_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r9"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v10_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v10"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v10_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r10"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v11_w",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_v11"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "vine_v11_r",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_vine_r11"
+   ],
+   "blocks": [
+    "pw:vine"
+   ]
+  },
+  {
+   "family": "fill14q2_cobble",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q2_cobble"
+   ],
+   "blocks": [
+    "pw:ramp_cobble_4_q2"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_gray",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_gray"
+   ],
+   "blocks": [
+    "pw:gray_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "fill14q3_cobble",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill14q3_cobble"
+   ],
+   "blocks": [
+    "pw:ramp_cobble_4_q3"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_orange",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_orange"
+   ],
+   "blocks": [
+    "pw:orange_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_brown",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_brown"
+   ],
+   "blocks": [
+    "pw:brown_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "terracotta_tiles_magenta",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_terracotta_tiles_magenta"
+   ],
+   "blocks": [
+    "pw:magenta_terracotta_tiles"
+   ]
+  },
+  {
+   "family": "crimson_skirt",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_crimson_skirt_g0"
+   ],
+   "blocks": [
+    "pw:crimson_nylium"
+   ]
+  },
+  {
+   "family": "builders_table",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_builders_table_top"
+   ],
+   "blocks": [
+    "pw:builders_table"
+   ]
+  },
+  {
+   "family": "fill_63u_oak",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill_63u_oak"
+   ],
+   "blocks": [
+    "pw:roof63_upper_oak"
+   ]
+  },
+  {
+   "family": "fill26l_stonebrick",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill26l_stonebrick"
+   ],
+   "blocks": [
+    "pw:ramp_stonebrick_2_lo"
+   ]
+  },
+  {
+   "family": "fill26l_smooth_stone",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.02,
+   "now_mpx": 0.037,
+   "keys": [
+    "pw_fill26l_smooth_stone"
+   ],
+   "blocks": [
+    "pw:ramp_smooth_stone_2_lo"
+   ]
+  },
+  {
+   "family": "deck45_thatch",
+   "images": 1,
+   "widths": [
+    181
+   ],
+   "save_mpx": 0.016,
+   "now_mpx": 0.033,
+   "keys": [
+    "pw_deck45_thatch"
+   ],
+   "blocks": [
+    "pw:roof45_thatch"
+   ]
+  },
+  {
+   "family": "fbox_sheet",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.004,
+   "now_mpx": 0.021,
+   "keys": [
+    "pw_fbox_sheet"
+   ],
+   "blocks": [
+    "pw:fcube_boxuv"
+   ]
+  },
+  {
+   "family": "deck45h_thatch",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": 0.002,
+   "now_mpx": 0.018,
+   "keys": [
+    "pw_deck45h_thatch"
+   ],
+   "blocks": [
+    "pw:roof45_ridge_thatch"
+   ]
+  },
+  {
+   "family": "conduit_base",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": -0.007,
+   "now_mpx": 0.009,
+   "keys": [
+    "conduit"
+   ],
+   "blocks": [
+    "minecraft:conduit"
+   ]
+  },
+  {
+   "family": "rotation_probe",
+   "images": 1,
+   "widths": [
+    192
+   ],
+   "save_mpx": -0.016,
+   "now_mpx": 0.001,
+   "keys": [
+    "pw_rotation_probe"
+   ],
+   "blocks": [
+    "pw:rotation_probe"
+   ]
+  }
+ ]
+}

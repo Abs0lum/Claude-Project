@@ -19,3 +19,11 @@
 *.exe
 *.dll
 bedrock-server*
+
+# AbsolutRealism standing rules (knowledge sync 2026-10-07)
+_inbox/*.zip
+_intake/secrets/
+*.mcworld
+.env
+node_modules/
+__pycache__/

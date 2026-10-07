@@ -1,0 +1,614 @@
+{
+ "packs": [
+  {
+   "archive": "BP-02-AbsolutRealism-Tectonic-BP-v1_3_206.mcpack",
+   "build": "bp02-206",
+   "uuid": "c3e09ed5-d121-40d1-9ea8-65b4701dbc67",
+   "version": [
+    1,
+    3,
+    206
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "data",
+     "4faf5e0d-f2db-4dff-ace4-c66663984d5e",
+     [
+      1,
+      3,
+      206
+     ],
+     null
+    ],
+    [
+     "script",
+     "17ec77a3-b9dc-4d87-ac0c-87af52b722dc",
+     [
+      1,
+      3,
+      206
+     ],
+     "scripts/main.js"
+    ]
+   ],
+   "dependencies": [
+    {
+     "module_name": "@minecraft/server",
+     "version": "2.3.0"
+    },
+    {
+     "module_name": "@minecraft/server-ui",
+     "version": "2.0.0"
+    }
+   ],
+   "capabilities": null,
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-01-AbsolutRealism-Tectonic-RP-v1_3_117.mcpack",
+   "build": "rp01-117",
+   "uuid": "ba3c58e5-5c64-4ebd-84c4-eb55dfd1f9eb",
+   "version": [
+    1,
+    3,
+    117
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "457cbc77-4a47-4f62-b4f8-bef79c2cb49e",
+     [
+      1,
+      3,
+      117
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-02-AbsolutRealism-Atmospheric-Effects-RP-v2_0_7.mcpack",
+   "build": "rp02-207",
+   "uuid": "41a528a6-4cbc-473b-960f-8bf7f88e30cd",
+   "version": [
+    2,
+    0,
+    7
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "cfa5cbfb-5127-4b8f-9888-6ab08518fa84",
+     [
+      2,
+      0,
+      7
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-03-AbsolutRealism-PBR-RP-v1_3_67.mcpack",
+   "build": "rp03-67",
+   "uuid": "8a1f4d92-7c63-4e28-9b5a-3d9c1f8e6b47",
+   "version": [
+    1,
+    3,
+    67
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "e7b2c5f1-9a34-4d68-b156-2e8f7a5c3d94",
+     [
+      1,
+      3,
+      67
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-04-AbsolutRealism-Basic-RP-v1_3_156.mcpack",
+   "build": "rp04-156",
+   "uuid": "80937d0f-9958-48cb-b567-72db6c82a0ab",
+   "version": [
+    1,
+    3,
+    156
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "42147e2d-42f7-42dc-8785-174352c1e339",
+     [
+      1,
+      3,
+      156
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-06-AbsolutRealism-Hostile-Mobs-RP-v1_4_29.mcpack",
+   "build": "rp06-1429",
+   "uuid": "4c85771b-19c3-4bec-bbce-12782ac863f6",
+   "version": [
+    1,
+    4,
+    29
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "68a67aad-8313-405b-b3ff-6ee1faa681ae",
+     [
+      1,
+      4,
+      29
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-07-AbsolutRealism-Neutral-Mobs-RP-v1_4_44.mcpack",
+   "build": "rp07-1444",
+   "uuid": "d9e18828-400a-4fd2-bb6f-406be4374146",
+   "version": [
+    1,
+    4,
+    44
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "7b84d406-df29-4250-867b-8e29da8cbca8",
+     [
+      1,
+      4,
+      44
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-08-AbsolutRealism-Items-RP-v1_4_13.mcpack",
+   "build": "rp08-1413",
+   "uuid": "c2eb0619-0c29-4a32-a9e0-bebeb53b1828",
+   "version": [
+    1,
+    4,
+    13
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "53a66e57-793c-4209-add0-3ed4c3441fb8",
+     [
+      1,
+      4,
+      13
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-11-AbsolutRealism-Ores-RP-v1_3_40.mcpack",
+   "build": "rp11-140",
+   "uuid": "ad6aba95-9923-442f-bab7-b399da179e09",
+   "version": [
+    1,
+    3,
+    40
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "a47d133d-2c51-41ef-ad49-869e4ee5304e",
+     [
+      1,
+      3,
+      40
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "PW-TestRunner-BP-v0_5_13.mcpack",
+   "build": "testrunner-0.5.13",
+   "uuid": "6b1f0c2e-9a47-4d3b-8e5c-2f7a9d1c4e60",
+   "version": [
+    0,
+    5,
+    13
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "script",
+     "d4e8a1f2-3c6b-4b9e-a7d5-8f1e2c3b4a90",
+     [
+      0,
+      5,
+      13
+     ],
+     "scripts/main.js"
+    ],
+    [
+     "data",
+     "9c2e7b41-5d3a-4f68-b1c9-2e8a4d7f6c13",
+     [
+      0,
+      5,
+      13
+     ],
+     null
+    ]
+   ],
+   "dependencies": [
+    {
+     "module_name": "@minecraft/server",
+     "version": "2.3.0"
+    },
+    {
+     "module_name": "@minecraft/server-ui",
+     "version": "2.0.0"
+    }
+   ],
+   "capabilities": null,
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-05-AbsolutRealism-Flora-RP-v1_3_58.mcpack",
+   "build": "rp05-58",
+   "uuid": "da8a6074-f089-482a-ab5b-99908d9f7ffe",
+   "version": [
+    1,
+    3,
+    58
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "e3897e62-8a8b-4181-9aee-8fbcb52811af",
+     [
+      1,
+      3,
+      58
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "RP-10-AbsolutRealism-Terrain-RP-v1_3_51.mcpack",
+   "build": "rp10-151",
+   "uuid": "30a4848b-0d78-46ed-bf4e-dd8174b3136a",
+   "version": [
+    1,
+    3,
+    51
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "444838dd-b55a-4087-a655-b73fd55efaa2",
+     [
+      1,
+      3,
+      51
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "BP-01-AbsolutRealism-Atmospheric-Effects-BP-v1_3_35.mcpack",
+   "build": "bp01-135",
+   "uuid": "2e7000fd-1751-455b-b061-54a79490d024",
+   "version": [
+    1,
+    3,
+    35
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "data",
+     "7c74e521-f2a1-4797-907a-73743489a3d0",
+     [
+      1,
+      3,
+      35
+     ],
+     null
+    ],
+    [
+     "script",
+     "8b9f3e21-c4a5-4d18-99c7-2f5b1a7e0d63",
+     [
+      1,
+      3,
+      35
+     ],
+     "scripts/main.js"
+    ]
+   ],
+   "dependencies": [
+    {
+     "module_name": "@minecraft/server",
+     "version": "2.3.0"
+    }
+   ],
+   "capabilities": null,
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "BP-03-Abs0lutRealism-Identification-Diagnostics-BP-v1_3_34.mcpack",
+   "build": "bp03-134",
+   "uuid": "8f3e4d2a-5b7c-49e1-b3d8-6f9a2c5e1d70",
+   "version": [
+    1,
+    3,
+    34
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "script",
+     "c2a5e9f7-3d6b-4c82-94a1-7b8e3d5f1c60",
+     [
+      1,
+      3,
+      34
+     ],
+     "scripts/main.js"
+    ]
+   ],
+   "dependencies": [
+    {
+     "module_name": "@minecraft/server",
+     "version": "2.0.0"
+    }
+   ],
+   "capabilities": null,
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "PW-Civitas-Markers-BP-v0_2_1.mcpack",
+   "build": "markers-0.2.1/BP",
+   "uuid": "449eed83-82d4-4d1b-a7a5-b8c006151bd5",
+   "version": [
+    0,
+    2,
+    1
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    80
+   ],
+   "modules": [
+    [
+     "data",
+     "a06a1606-acb7-4917-8485-8bca5c6f93b1",
+     [
+      0,
+      2,
+      1
+     ],
+     null
+    ],
+    [
+     "script",
+     "33229c10-a37e-405e-ae23-93677688c8d1",
+     [
+      0,
+      2,
+      1
+     ],
+     "scripts/main.js"
+    ]
+   ],
+   "dependencies": [
+    {
+     "module_name": "@minecraft/server",
+     "version": "2.0.0"
+    }
+   ],
+   "capabilities": null,
+   "scope": null,
+   "issues": []
+  },
+  {
+   "archive": "PW-Civitas-Markers-RP-v0_2_2.mcpack",
+   "build": "markers-0.2.2-rp/RP",
+   "uuid": "c54e1326-08e6-45b1-9e42-0cd5e514196b",
+   "version": [
+    0,
+    2,
+    2
+   ],
+   "name_version_match": true,
+   "min_engine": [
+    1,
+    21,
+    120
+   ],
+   "modules": [
+    [
+     "resources",
+     "985ac2d3-dbc2-4e90-a977-0a57ef11530e",
+     [
+      0,
+      2,
+      2
+     ],
+     null
+    ]
+   ],
+   "dependencies": [],
+   "capabilities": [
+    "pbr"
+   ],
+   "scope": null,
+   "issues": []
+  }
+ ],
+ "duplicate_uuids": {},
+ "verify_pack_versions_rc": 1,
+ "verify_pack_versions_out": "FAIL BP-02-AbsolutRealism-Tectonic-BP-v1_3_206.mcpack\n     - PW-DEPENDENCIES.md stamp v1.3.186 != 1.3.206\nFAIL RP-01-AbsolutRealism-Tectonic-RP-v1_3_117.mcpack\n     - header.description leads with v1.3.116, header.version is 1.3.117\nOK   RP-02-AbsolutRealism-Atmospheric-Effects-RP-v2_0_7.mcpack\nOK   RP-03-AbsolutRealism-PBR-RP-v1_3_67.mcpack\nFAIL RP-04-AbsolutRealism-Basic-RP-v1_3_156.mcpack\n     - PW-DEPENDENCIES.md stamp v1.3.139 != 1.3.156\nFAIL RP-06-AbsolutRealism-Hostile-Mobs-RP-v1_4_29.mcpack\n     - header.description leads with v1.4.28, header.version is 1.4.29\n     - PW-DEPENDENCIES.md stamp v1.4.6 != 1.4.29\nOK   RP-07-AbsolutRealism-Neutral-Mobs-RP-v1_4_44.mcpack\nFAIL RP-08-AbsolutRealism-Items-RP-v1_4_13.mcpack\n     - PW-DEPENDENCIES.md stamp v1.4.6 != 1.4.13\nOK   RP-11-AbsolutRealism-Ores-RP-v1_3_40.mcpack\nOK   PW-TestRunner-BP-v0_5_13.mcpack\nOK   RP-05-AbsolutRealism-Flora-RP-v1_3_58.mcpack\nFAIL RP-10-AbsolutRealism-Terrain-RP-v1_3_51.mcpack\n     - PW-DEPENDENCIES.md stamp v1.3.35 != 1.3.51\nOK   BP-01-AbsolutRealism-Atmospheric-Effects-BP-v1_3_35.mcpack\nOK   BP-03-Abs0lutRealism-Identification-Diagnostics-BP-v1_3_34.mcpack\nOK   PW-Civitas-Markers-BP-v0_2_1.mcpack\nFAIL PW-Civitas-Markers-RP-v0_2_2.mcpack\n     - PW-DEPENDENCIES.md stamp v0.2.1 != 0.2.2\n"
+}

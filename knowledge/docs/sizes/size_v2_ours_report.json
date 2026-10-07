@@ -1,0 +1,375 @@
+{
+ "stripmine": [
+  {
+   "id": "sf_nba:anglerfish",
+   "file": "anglerfish.behavior.json",
+   "factor": 0.8728,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:ant",
+   "file": "ant.behavior.json",
+   "factor": 0.4629,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:bass",
+   "file": "bass.behavior.json",
+   "factor": 0.9432,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:beetle",
+   "file": "beetle.behavior.json",
+   "factor": 0.4624,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:bluejay",
+   "file": "bluejay.behavior.json",
+   "factor": 0.5371,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:budgie",
+   "file": "budgie.behavior.json",
+   "factor": 0.5221,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:butterfly",
+   "file": "butterfly.behavior.json",
+   "factor": 0.4848,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:canary",
+   "file": "canary.behavior.json",
+   "factor": 0.5001,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:cardinal",
+   "file": "cardinal.behavior.json",
+   "factor": 0.5369,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:caterpillar",
+   "file": "caterpillar.behavior.json",
+   "factor": 0.4618,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:cavefish",
+   "file": "cavefish.behavior.json",
+   "factor": 0.4861,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:crab",
+   "file": "crab.behavior.json",
+   "factor": 0.5579,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:crow",
+   "file": "crow.behavior.json",
+   "factor": 0.7863,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:desert_scorpion",
+   "file": "desert_scorpion.behavior.json",
+   "factor": 0.5051,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:dragonfly",
+   "file": "dragonfly.behavior.json",
+   "factor": 0.4954,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:finch",
+   "file": "finch.behavior.json",
+   "factor": 0.5045,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:firefly",
+   "file": "firefly.behavior.json",
+   "factor": 0.4432,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:flying_fish",
+   "file": "flying_fish.behavior.json",
+   "factor": 0.5624,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:giant_isopod",
+   "file": "giant_isopod.behavior.json",
+   "factor": 0.713,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:hamster",
+   "file": "hamster.behavior.json",
+   "factor": 0.4616,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:hedgehog",
+   "file": "hedgehog.behavior.json",
+   "factor": 0.5834,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:jungle_scorpion",
+   "file": "jungle_scorpion.behavior.json",
+   "factor": 0.5286,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:kiwi",
+   "file": "kiwi.behavior.json",
+   "factor": 0.8112,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:lizard",
+   "file": "lizard.behavior.json",
+   "factor": 0.5617,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:mole",
+   "file": "mole.behavior.json",
+   "factor": 0.5594,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:piranha",
+   "file": "piranha.behavior.json",
+   "factor": 0.7275,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:platypus",
+   "file": "platypus.behavior.json",
+   "factor": 0.8567,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:rat",
+   "file": "rat.behavior.json",
+   "factor": 0.7417,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:robin",
+   "file": "robin.behavior.json",
+   "factor": 0.5045,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:slug",
+   "file": "slug.behavior.json",
+   "factor": 0.5046,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:small_jellyfish",
+   "file": "small_jellyfish.behavior.json",
+   "factor": 0.4668,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:snail",
+   "file": "snail.behavior.json",
+   "factor": 0.4217,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:sparrow",
+   "file": "sparrow.behavior.json",
+   "factor": 0.5089,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:squirrel",
+   "file": "squirrel.behavior.json",
+   "factor": 0.7856,
+   "scales": 2,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:starfish",
+   "file": "starfish.behavior.json",
+   "factor": 0.5468,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:termite",
+   "file": "termite.behavior.json",
+   "factor": 0.4744,
+   "scales": 1,
+   "inserted": false
+  },
+  {
+   "id": "sf_nba:tree_frog",
+   "file": "tree_frog.behavior.json",
+   "factor": 0.4684,
+   "scales": 1,
+   "inserted": false
+  }
+ ],
+ "bp02": [
+  {
+   "id": "minecraft:armadillo",
+   "file": "armadillo.json",
+   "how": "BP-02 copy",
+   "factor": 0.7124,
+   "scales": 2,
+   "inserted": false,
+   "target_blocks": [
+    0.422
+   ]
+  },
+  {
+   "id": "minecraft:axolotl",
+   "file": "axolotl.json",
+   "how": "Mojang 1.26.50 copy",
+   "factor": 0.5402,
+   "scales": 1,
+   "inserted": true,
+   "target_blocks": [
+    0.29
+   ]
+  },
+  {
+   "id": "minecraft:bat",
+   "file": "bat.json",
+   "how": "BP-02 copy",
+   "factor": 0.7369,
+   "scales": 1,
+   "inserted": false,
+   "target_blocks": [
+    0.309
+   ]
+  },
+  {
+   "id": "minecraft:bee",
+   "file": "bee.json",
+   "how": "Mojang 1.26.50 copy",
+   "factor": 0.4466,
+   "scales": 1,
+   "inserted": true,
+   "target_blocks": [
+    0.117
+   ]
+  },
+  {
+   "id": "minecraft:chicken",
+   "file": "chicken.json",
+   "how": "Mojang 1.26.50 copy",
+   "factor": 0.787,
+   "scales": 1,
+   "inserted": true,
+   "target_blocks": [
+    0.475
+   ]
+  },
+  {
+   "id": "minecraft:frog",
+   "file": "frog.json",
+   "how": "Mojang 1.26.50 copy",
+   "factor": 0.4853,
+   "scales": 0,
+   "inserted": true,
+   "target_blocks": [
+    0.219
+   ]
+  },
+  {
+   "id": "minecraft:pufferfish",
+   "file": "pufferfish.json",
+   "how": "Mojang 1.26.50 copy",
+   "factor": 0.6587,
+   "scales": 1,
+   "inserted": false,
+   "target_blocks": [
+    0.369
+   ]
+  },
+  {
+   "id": "minecraft:rabbit",
+   "file": "rabbit.json",
+   "how": "Mojang 1.26.50 copy",
+   "factor": 1.1875,
+   "scales": 2,
+   "inserted": true,
+   "target_blocks": [
+    0.422
+   ]
+  },
+  {
+   "id": "minecraft:tadpole",
+   "file": "tadpole.json",
+   "how": "Mojang 1.26.50 copy",
+   "factor": 0.457,
+   "scales": 0,
+   "inserted": true,
+   "target_blocks": [
+    0.174
+   ]
+  },
+  {
+   "id": "minecraft:tropicalfish",
+   "file": "tropicalfish.json",
+   "how": "BP-02 copy",
+   "factor": 0.5093,
+   "scales": 1,
+   "inserted": false,
+   "target_blocks": [
+    0.251
+   ]
+  }
+ ]
+}

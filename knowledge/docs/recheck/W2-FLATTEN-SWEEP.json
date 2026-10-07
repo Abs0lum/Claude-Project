@@ -1,0 +1,1059 @@
+{
+ "registry": {
+  "block": 1477,
+  "item": 1623,
+  "entity": 129,
+  "effect": 38,
+  "enchantment": 42,
+  "dimension": 3
+ },
+ "counts": {
+  "dimension": 12,
+  "block": 2615,
+  "item": 255,
+  "nonregistry-shape": 3249,
+  "entity": 947
+ },
+ "residue": {
+  "minecraft:acacia_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:26",
+    "acacia: { feature: \"minecraft:acacia_tree_feature\", leaves: [\"pw:acacia_leaves\", \"minecraft:acacia_leaves\"], band: 4 },"
+   ]
+  ],
+  "minecraft:ageable_grow_up": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_rig.js:182",
+    "for (const evt of [\"minecraft:ageable_grow_up\", \"minecraft:as_adult\"]) {"
+   ]
+  ],
+  "minecraft:as_adult": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_rig.js:182",
+    "for (const evt of [\"minecraft:ageable_grow_up\", \"minecraft:as_adult\"]) {"
+   ]
+  ],
+  "minecraft:azalea_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:31",
+    "azalea: { feature: \"minecraft:azalea_tree_feature\", leaves: [\"minecraft:azalea_leaves\"], band: 3,"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p16.js:103",
+    "{ feature: \"minecraft:oak_tree_feature\", ground: \"grass_block\", dx: -9 }, { feature: \"minecraft:azalea_tree_feature\", ground: \"grass_block\", dx: 9 },"
+   ]
+  ],
+  "minecraft:badlands": [
+   [
+    "_build/bp01-135/scripts/main.js:109",
+    "\"minecraft:badlands\": {"
+   ]
+  ],
+  "minecraft:bamboo_jungle": [
+   [
+    "_build/bp01-135/scripts/main.js:96",
+    "\"minecraft:bamboo_jungle\": {"
+   ]
+  ],
+  "minecraft:bamboo_jungle_hills": [
+   [
+    "_build/bp01-135/scripts/main.js:377",
+    "\"minecraft:bamboo_jungle_hills\": {"
+   ]
+  ],
+  "minecraft:basalt_deltas": [
+   [
+    "_build/bp01-135/scripts/main.js:525",
+    "\"minecraft:basalt_deltas\": {"
+   ]
+  ],
+  "minecraft:beach": [
+   [
+    "_build/bp01-135/scripts/main.js:197",
+    "\"minecraft:beach\": {"
+   ]
+  ],
+  "minecraft:become_angry": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p5.js:64",
+    "{ mob: \"minecraft:enderman\", label: \"enderman (angry)\", roof: true, height: 4, event: \"minecraft:become_angry\" },"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p6.js:44",
+    "{ mob: \"minecraft:enderman\", label: \"enderman (angry)\", roof: true, height: 4, event: \"minecraft:become_angry\" },"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p7.js:31",
+    "{ mob: \"minecraft:enderman\", label: \"enderman (angry)\", roof: true, height: 4, event: \"minecraft:become_angry\" },"
+   ]
+  ],
+  "minecraft:become_brown": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p4.js:103",
+    "{ mob: \"minecraft:mooshroom\", label: \"red + brown mooshroom\", half: 4, halfz: 2, row: [{ mob: \"minecraft:mooshroom\", dx: 3, label: \"brown mooshroom\", event: \"minecraft:be"
+   ]
+  ],
+  "minecraft:behavior.follow_owner": [
+   [
+    "_build/bp02-212/scripts/entity/WhistleMessages.js:122",
+    "entity.getComponent(\"minecraft:behavior.follow_owner\") !== undefined;"
+   ],
+   [
+    "_build/bp02-212/scripts/item/Whistle.js:49",
+    "entity.getComponent(\"minecraft:behavior.follow_owner\") !== undefined;"
+   ]
+  ],
+  "minecraft:behavior.random_stroll": [
+   [
+    "_build/bp02-212/scripts/item/Whistle.js:52",
+    "entity.getComponent(\"minecraft:behavior.random_stroll\") !== undefined;"
+   ]
+  ],
+  "minecraft:birch_forest": [
+   [
+    "_build/bp01-135/scripts/main.js:59",
+    "\"minecraft:birch_forest\": {"
+   ]
+  ],
+  "minecraft:birch_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:23",
+    "birch: { feature: \"minecraft:birch_tree_feature\", leaves: [\"pw:birch_leaves\", \"minecraft:birch_leaves\"], band: 3 },"
+   ]
+  ],
+  "minecraft:chain": [
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:34",
+    "\"minecraft:chain\","
+   ]
+  ],
+  "minecraft:cherry_grove": [
+   [
+    "_build/bp01-135/scripts/main.js:253",
+    "\"minecraft:cherry_grove\": {"
+   ]
+  ],
+  "minecraft:cherry_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:29",
+    "cherry: { feature: \"minecraft:cherry_tree_feature\", leaves: [\"pw:cherry_leaves\", \"minecraft:cherry_leaves\"], band: 3 },"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p16.js:104",
+    "{ feature: \"minecraft:cherry_tree_feature\", ground: \"grass_block\", dx: 27 }, { feature: \"pw:spruce_old_tree_feature\", ground: \"dirt\", dx: 45 }] } }] },"
+   ]
+  ],
+  "minecraft:climate_variant": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p4.js:32",
+    "{ mob: \"minecraft:chicken\", label: \"chicken (temperate) + warm + cold\", props: { \"minecraft:climate_variant\": \"temperate\" },"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p5.js:33",
+    "{ mob: \"minecraft:chicken\", label: \"chicken (temperate) + warm + cold\", props: { \"minecraft:climate_variant\": \"temperate\" },"
+   ]
+  ],
+  "minecraft:cold_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:223",
+    "\"minecraft:cold_ocean\": {"
+   ]
+  ],
+  "minecraft:cold_taiga": [
+   [
+    "_build/bp01-135/scripts/main.js:455",
+    "\"minecraft:cold_taiga\": {"
+   ]
+  ],
+  "minecraft:collision_box": [
+   [
+    "_build/bp02-212/scripts/entity/Elephant.js:337",
+    "const mobCollision = mob.getComponent(\"minecraft:collision_box\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/Elephant.js:338",
+    "const babyCollision = entity.getComponent(\"minecraft:collision_box\");"
+   ]
+  ],
+  "minecraft:coral_block": [
+   [
+    "_build/bp02-212/scripts/item/CompostablesPlusItems.js:124",
+    "{ \"item\": \"minecraft:coral_block\", \"chance\": 85 },"
+   ]
+  ],
+  "minecraft:coral_decorations": [
+   [
+    "_build/bp02-212/scripts/@minecraft/ReplaceableBlocks.js:7",
+    "\"minecraft:coral_decorations\","
+   ]
+  ],
+  "minecraft:coral_fan": [
+   [
+    "_build/bp02-212/scripts/item/CompostablesPlusItems.js:116",
+    "{ \"item\": \"minecraft:coral_fan\", \"chance\": 65 },"
+   ],
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:39",
+    "\"minecraft:coral_fan\","
+   ]
+  ],
+  "minecraft:coral_fan_dead": [
+   [
+    "_build/bp02-212/scripts/item/CompostablesPlusItems.js:117",
+    "{ \"item\": \"minecraft:coral_fan_dead\", \"chance\": 65 },"
+   ],
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:38",
+    "\"minecraft:coral_fan_dead\","
+   ]
+  ],
+  "minecraft:crimson_forest": [
+   [
+    "_build/bp01-135/scripts/main.js:530",
+    "\"minecraft:crimson_forest\": {"
+   ]
+  ],
+  "minecraft:crop_growth_emitter": [
+   [
+    "_build/bp02-212/scripts/item/CompostablesPlus.js:101",
+    "dimension.spawnParticle(\"minecraft:crop_growth_emitter\", composterCenter);"
+   ],
+   [
+    "_build/bp02-212/scripts/pw_ground.js:207",
+    "try { dim.spawnParticle(\"minecraft:crop_growth_emitter\", { x: x + 0.5, y: y + 1.1, z: z + 0.5 }); } catch {}"
+   ]
+  ],
+  "minecraft:dark_forest": [
+   [
+    "_build/bp01-135/scripts/main.js:73",
+    "\"minecraft:dark_forest\": {"
+   ]
+  ],
+  "minecraft:dark_oak_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:27",
+    "dark_oak: { feature: \"minecraft:dark_oak_tree_feature\", leaves: [\"pw:dark_oak_leaves\", \"minecraft:dark_oak_leaves\"], band: 3 },"
+   ]
+  ],
+  "minecraft:dead_bush": [
+   [
+    "_build/bp02-212/scripts/main.js:4516",
+    "\"minecraft:dead_bush\",\"minecraft:sweet_berry_bush\",\"minecraft:pitcher_plant\",\"minecraft:closed_eyeblossom\","
+   ],
+   [
+    "_build/bp02-212/scripts/pw_ground.js:44",
+    "\"minecraft:wildflowers\",\"minecraft:bush\",\"minecraft:firefly_bush\",\"minecraft:dead_bush\","
+   ]
+  ],
+  "minecraft:deep_cold_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:490",
+    "\"minecraft:deep_cold_ocean\": {"
+   ]
+  ],
+  "minecraft:deep_dark": [
+   [
+    "_build/bp01-135/scripts/main.js:513",
+    "\"minecraft:deep_dark\": {"
+   ]
+  ],
+  "minecraft:deep_frozen_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:495",
+    "\"minecraft:deep_frozen_ocean\": {"
+   ]
+  ],
+  "minecraft:deep_lukewarm_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:485",
+    "\"minecraft:deep_lukewarm_ocean\": {"
+   ]
+  ],
+  "minecraft:deep_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:475",
+    "\"minecraft:deep_ocean\": {"
+   ]
+  ],
+  "minecraft:deep_warm_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:480",
+    "\"minecraft:deep_warm_ocean\": {"
+   ]
+  ],
+  "minecraft:desert": [
+   [
+    "_build/bp01-135/scripts/main.js:103",
+    "\"minecraft:desert\": {"
+   ]
+  ],
+  "minecraft:desert_hills": [
+   [
+    "_build/bp01-135/scripts/main.js:410",
+    "\"minecraft:desert_hills\": {"
+   ]
+  ],
+  "minecraft:desert_lakes": [
+   [
+    "_build/bp01-135/scripts/main.js:415",
+    "\"minecraft:desert_lakes\": {"
+   ]
+  ],
+  "minecraft:dirt_path": [
+   [
+    "_build/bp02-212/scripts/main.js:4484",
+    "\"minecraft:dirt_path\":\"pw:slab_path\", \"minecraft:mud\":\"pw:slab_mud\","
+   ],
+   [
+    "_build/bp02-212/scripts/pw_fell_rules.js:20",
+    "\"minecraft:grass_path\", \"minecraft:dirt_path\", \"minecraft:pale_moss_block\", \"minecraft:crimson_nylium\","
+   ]
+  ],
+  "minecraft:double_plant": [
+   [
+    "_build/bp02-212/scripts/entity/BabyBehaviors.js:11",
+    "\"minecraft:double_plant\","
+   ],
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:54",
+    "// 'minecraft:double_plant',"
+   ]
+  ],
+  "minecraft:dripstone_caves": [
+   [
+    "_build/bp01-135/scripts/main.js:508",
+    "\"minecraft:dripstone_caves\": {"
+   ]
+  ],
+  "minecraft:end_barrens": [
+   [
+    "_build/bp01-135/scripts/main.js:276",
+    "\"minecraft:end_barrens\": {"
+   ]
+  ],
+  "minecraft:end_highlands": [
+   [
+    "_build/bp01-135/scripts/main.js:266",
+    "\"minecraft:end_highlands\": {"
+   ]
+  ],
+  "minecraft:end_midlands": [
+   [
+    "_build/bp01-135/scripts/main.js:271",
+    "\"minecraft:end_midlands\": {"
+   ]
+  ],
+  "minecraft:eroded_badlands": [
+   [
+    "_build/bp01-135/scripts/main.js:384",
+    "\"minecraft:eroded_badlands\": {"
+   ]
+  ],
+  "minecraft:extreme_hills": [
+   [
+    "_build/bp01-135/scripts/main.js:463",
+    "\"minecraft:extreme_hills\": {"
+   ]
+  ],
+  "minecraft:extreme_hills_with_trees": [
+   [
+    "_build/bp01-135/scripts/main.js:468",
+    "\"minecraft:extreme_hills_with_trees\": {"
+   ]
+  ],
+  "minecraft:flower_forest": [
+   [
+    "_build/bp01-135/scripts/main.js:66",
+    "\"minecraft:flower_forest\": {"
+   ]
+  ],
+  "minecraft:flowering_azalea_leaves": [
+   [
+    "_build/bp02-212/scripts/main.js:224",
+    "\"minecraft:flowering_azalea_leaves\","
+   ],
+   [
+    "_build/bp02-212/scripts/main.js:428",
+    "if (id === \"minecraft:flowering_azalea_leaves\") return true;"
+   ]
+  ],
+  "minecraft:forest": [
+   [
+    "_build/bp01-135/scripts/main.js:51",
+    "\"minecraft:forest\": {"
+   ]
+  ],
+  "minecraft:frozen_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:228",
+    "\"minecraft:frozen_ocean\": {"
+   ]
+  ],
+  "minecraft:frozen_peaks": [
+   [
+    "_build/bp01-135/scripts/main.js:164",
+    "\"minecraft:frozen_peaks\": {"
+   ]
+  ],
+  "minecraft:frozen_river": [
+   [
+    "_build/bp01-135/scripts/main.js:354",
+    "\"minecraft:frozen_river\": {"
+   ]
+  ],
+  "minecraft:giant": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p20.js:6518",
+    "\"mob\": \"minecraft:giant\","
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p21.js:36959",
+    "\"mob\": \"minecraft:giant\","
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p21.js:36967",
+    "\"mob\": \"minecraft:giant\","
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p21.js:36974",
+    "\"mob\": \"minecraft:giant\","
+   ]
+  ],
+  "minecraft:gold_axe": [
+   [
+    "_build/bp02-212/scripts/item/NotSearchableByRaccoon.js:18",
+    "\"minecraft:gold_axe\","
+   ]
+  ],
+  "minecraft:gold_hoe": [
+   [
+    "_build/bp02-212/scripts/item/NotSearchableByRaccoon.js:30",
+    "\"minecraft:gold_hoe\","
+   ]
+  ],
+  "minecraft:gold_pickaxe": [
+   [
+    "_build/bp02-212/scripts/item/NotSearchableByRaccoon.js:12",
+    "\"minecraft:gold_pickaxe\","
+   ]
+  ],
+  "minecraft:gold_shovel": [
+   [
+    "_build/bp02-212/scripts/item/NotSearchableByRaccoon.js:24",
+    "\"minecraft:gold_shovel\","
+   ]
+  ],
+  "minecraft:gold_sword": [
+   [
+    "_build/bp02-212/scripts/item/NotSearchableByRaccoon.js:6",
+    "\"minecraft:gold_sword\","
+   ]
+  ],
+  "minecraft:grass": [
+   [
+    "_build/bp02-212/scripts/main.js:5073",
+    "const PW_GROW_GROUND = new Set([\"minecraft:grass_block\",\"minecraft:grass\",\"minecraft:dirt\",\"minecraft:coarse_dirt\",\"minecraft:podzol\",\"minecraft:mycelium\",\"minecraft:moss"
+   ],
+   [
+    "_build/bp02-212/scripts/pw_fell_rules.js:16",
+    "const GROUND = new Set([\"minecraft:grass_block\", \"minecraft:grass\", \"minecraft:dirt\", \"minecraft:coarse_dirt\","
+   ]
+  ],
+  "minecraft:grove": [
+   [
+    "_build/bp01-135/scripts/main.js:184",
+    "\"minecraft:grove\": {"
+   ]
+  ],
+  "minecraft:hatch_cold": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p4.js:33",
+    "row: [{ mob: \"minecraft:chicken\", dx: -2, label: \"warm chicken\", event: \"minecraft:hatch_warm\" }, { mob: \"minecraft:chicken\", dx: 2, label: \"cold chicken\", event: \"minecr"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p5.js:34",
+    "row: [{ mob: \"minecraft:chicken\", dx: -2, label: \"warm chicken\", event: \"minecraft:hatch_warm\" }, { mob: \"minecraft:chicken\", dx: 2, label: \"cold chicken\", event: \"minecr"
+   ]
+  ],
+  "minecraft:hatch_warm": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p4.js:33",
+    "row: [{ mob: \"minecraft:chicken\", dx: -2, label: \"warm chicken\", event: \"minecraft:hatch_warm\" }, { mob: \"minecraft:chicken\", dx: 2, label: \"cold chicken\", event: \"minecr"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p5.js:34",
+    "row: [{ mob: \"minecraft:chicken\", dx: -2, label: \"warm chicken\", event: \"minecraft:hatch_warm\" }, { mob: \"minecraft:chicken\", dx: 2, label: \"cold chicken\", event: \"minecr"
+   ]
+  ],
+  "minecraft:hell": [
+   [
+    "_build/bp01-135/scripts/main.js:545",
+    "\"minecraft:hell\": {"
+   ]
+  ],
+  "minecraft:ice_plains": [
+   [
+    "_build/bp01-135/scripts/main.js:422",
+    "\"minecraft:ice_plains\": {"
+   ]
+  ],
+  "minecraft:ice_plains_spikes": [
+   [
+    "_build/bp01-135/scripts/main.js:427",
+    "\"minecraft:ice_plains_spikes\": {"
+   ]
+  ],
+  "minecraft:illusioner": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p20.js:6534",
+    "\"mob\": \"minecraft:illusioner\","
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p21.js:37151",
+    "\"mob\": \"minecraft:illusioner\","
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p21.js:37159",
+    "\"mob\": \"minecraft:illusioner\","
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p21.js:37166",
+    "\"mob\": \"minecraft:illusioner\","
+   ]
+  ],
+  "minecraft:iron_hanging_sign": [
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:69",
+    "\"minecraft:iron_hanging_sign\","
+   ]
+  ],
+  "minecraft:is_saddled": [
+   [
+    "_build/bp02-212/scripts/entity/Elephant.js:426",
+    "const isSaddled = entity.hasComponent?.(\"minecraft:is_saddled\") ?? false;"
+   ],
+   [
+    "_build/bp02-212/scripts/item/Knapsack.js:176",
+    "const isSaddled = entity.hasComponent?.(\"minecraft:is_saddled\") ?? false;"
+   ]
+  ],
+  "minecraft:is_tamed": [
+   [
+    "_build/bp02-212/scripts/entity/AbstractCapturableEntity.js:67",
+    "const isTamedComponent = entity.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/AbstractCapturableEntity.js:136",
+    "const isTamedComponent = e.target.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/AbstractCapturableEntity.js:686",
+    "const isTamedComponent = entity?.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/AbstractCapturableEntity.js:909",
+    "const isTamedComponent = entity.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/Otter.js:63",
+    "if (entity.getComponent(\"minecraft:is_tamed\")) return;"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/TameableFix.js:5",
+    "const tamedComponent = entity.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/TameableFix.js:29",
+    "const tamedComponent = entity.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/WhistleMessages.js:155",
+    "const isTamedComponent = entity.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/bp02-212/scripts/item/Knapsack.js:144",
+    ": (entity.hasComponent?.(\"minecraft:is_tamed\") ?? false);"
+   ],
+   [
+    "_build/bp02-212/scripts/item/Knapsack.js:272",
+    "const isTamedEntity = entity.hasComponent?.(\"minecraft:is_tamed\") ?? false;"
+   ],
+   [
+    "_build/bp02-212/scripts/item/Whistle.js:47",
+    "entity.getComponent(\"minecraft:is_tamed\") != null;"
+   ],
+   [
+    "_build/bp02-212/scripts/item/Whistle.js:84",
+    "const isTamedComponent = entity.getComponent(\"minecraft:is_tamed\");"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner.js:293",
+    "const tame = e.getComponent(\"minecraft:is_tamed\"); if (tame) { kept++; continue; }"
+   ]
+  ],
+  "minecraft:item": [
+   [
+    "_build/bp02-212/scripts/block/Chrysalis.js:200",
+    "if (e.entity.typeId !== \"minecraft:item\") return;"
+   ],
+   [
+    "_build/bp02-212/scripts/compatability.js:26",
+    "if (entity.typeId !== \"minecraft:item\") return;"
+   ],
+   [
+    "_build/bp02-212/scripts/item/CompostablesPlus.js:140",
+    "if (entity?.typeId !== \"minecraft:item\") return;"
+   ],
+   [
+    "_build/bp02-212/scripts/main.js:1213",
+    "const mobs = dim.getEntities({ excludeTypes: [\"minecraft:player\", \"ft:falling_tree\", \"minecraft:item\", \"minecraft:xp_orb\"] });"
+   ]
+  ],
+  "minecraft:jagged_peaks": [
+   [
+    "_build/bp01-135/scripts/main.js:169",
+    "\"minecraft:jagged_peaks\": {"
+   ]
+  ],
+  "minecraft:jungle": [
+   [
+    "_build/bp01-135/scripts/main.js:88",
+    "\"minecraft:jungle\": {"
+   ]
+  ],
+  "minecraft:jungle_edge": [
+   [
+    "_build/bp01-135/scripts/main.js:367",
+    "\"minecraft:jungle_edge\": {"
+   ]
+  ],
+  "minecraft:jungle_hills": [
+   [
+    "_build/bp01-135/scripts/main.js:372",
+    "\"minecraft:jungle_hills\": {"
+   ]
+  ],
+  "minecraft:jungle_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:25",
+    "jungle: { feature: \"minecraft:jungle_tree_feature\", leaves: [\"pw:jungle_leaves\", \"minecraft:jungle_leaves\"], band: 4 },"
+   ]
+  ],
+  "minecraft:leaves": [
+   [
+    "_build/bp02-212/scripts/entity/Sloth.js:66",
+    "(block1.permutation.matches(\"minecraft:leaves\") ||"
+   ]
+  ],
+  "minecraft:leaves2": [
+   [
+    "_build/bp02-212/scripts/entity/Sloth.js:67",
+    "block1.permutation.matches(\"minecraft:leaves2\")) &&"
+   ]
+  ],
+  "minecraft:light_block": [
+   [
+    "_build/bp02-212/scripts/main.js:4412",
+    "if (b && b.typeId === \"minecraft:light_block\") b.setType(\"minecraft:air\");"
+   ],
+   [
+    "_build/bp02-212/scripts/main.js:4445",
+    "target.setPermutation(BlockPermutation.resolve(\"minecraft:light_block\", { block_light_level: 14 }));"
+   ],
+   [
+    "_build/bp02-212/scripts/pw_mob_light.js:26",
+    "return BlockPermutation.resolve(\"minecraft:light_block\", { block_light_level: level });"
+   ],
+   [
+    "_build/bp02-212/scripts/pw_mob_light.js:34",
+    "if (b.typeId !== \"minecraft:light_block\") return true;   // a player replaced it: nothing to undo"
+   ]
+  ],
+  "minecraft:lily_pad": [
+   [
+    "_build/bp02-212/scripts/main.js:4519",
+    "\"minecraft:seagrass\",\"minecraft:kelp\",\"minecraft:lily_pad\",\"minecraft:sugar_cane\",\"minecraft:brown_mushroom\","
+   ]
+  ],
+  "minecraft:lukewarm_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:218",
+    "\"minecraft:lukewarm_ocean\": {"
+   ]
+  ],
+  "minecraft:lush_caves": [
+   [
+    "_build/bp01-135/scripts/main.js:503",
+    "\"minecraft:lush_caves\": {"
+   ]
+  ],
+  "minecraft:mangrove_swamp": [
+   [
+    "_build/bp01-135/scripts/main.js:129",
+    "\"minecraft:mangrove_swamp\": {"
+   ],
+   [
+    "_build/bp02-212/scripts/main.js:4232",
+    "const FIREFLY_AMBIENT_BIOMES = [\"minecraft:swamp\", \"minecraft:swampland\", \"minecraft:mangrove_swamp\"];"
+   ]
+  ],
+  "minecraft:mangrove_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:28",
+    "mangrove: { feature: \"minecraft:mangrove_tree_feature\", leaves: [\"pw:mangrove_leaves\", \"minecraft:mangrove_leaves\"], band: 3 },"
+   ]
+  ],
+  "minecraft:meadow": [
+   [
+    "_build/bp01-135/scripts/main.js:189",
+    "\"minecraft:meadow\": {"
+   ]
+  ],
+  "minecraft:mega_taiga": [
+   [
+    "_build/bp01-135/scripts/main.js:445",
+    "\"minecraft:mega_taiga\": {"
+   ]
+  ],
+  "minecraft:mega_taiga_hills": [
+   [
+    "_build/bp01-135/scripts/main.js:450",
+    "\"minecraft:mega_taiga_hills\": {"
+   ]
+  ],
+  "minecraft:mushroom_fields": [
+   [
+    "_build/bp01-135/scripts/main.js:233",
+    "\"minecraft:mushroom_fields\": {"
+   ]
+  ],
+  "minecraft:nether_wastes": [
+   [
+    "_build/bp01-135/scripts/main.js:540",
+    "\"minecraft:nether_wastes\": {"
+   ]
+  ],
+  "minecraft:oak_standing_sign": [
+   [
+    "_build/bp02-212/scripts/pw_civ_clock.js:1649",
+    "if (blk.typeId !== \"minecraft:standing_sign\" && blk.typeId !== \"minecraft:oak_standing_sign\") {"
+   ],
+   [
+    "_build/bp02-212/scripts/pw_civ_clock.js:1650",
+    "try { blk.setType(\"minecraft:standing_sign\"); } catch { blk.setType(\"minecraft:oak_standing_sign\"); }"
+   ]
+  ],
+  "minecraft:oak_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:21",
+    "oak: { feature: \"minecraft:oak_tree_feature\", leaves: [\"pw:oak_leaves\", \"pw:oak_leaves_a\", \"pw:oak_leaves_b\", \"pw:oak_leaves_c\", \"pw:oak_leaves_d\","
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p16.js:103",
+    "{ feature: \"minecraft:oak_tree_feature\", ground: \"grass_block\", dx: -9 }, { feature: \"minecraft:azalea_tree_feature\", ground: \"grass_block\", dx: 9 },"
+   ]
+  ],
+  "minecraft:ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:208",
+    "\"minecraft:ocean\": {"
+   ]
+  ],
+  "minecraft:old_growth_pine_taiga": [
+   [
+    "_build/bp01-135/scripts/main.js:142",
+    "\"minecraft:old_growth_pine_taiga\": {"
+   ]
+  ],
+  "minecraft:old_growth_spruce_taiga": [
+   [
+    "_build/bp01-135/scripts/main.js:147",
+    "\"minecraft:old_growth_spruce_taiga\": {"
+   ]
+  ],
+  "minecraft:pale_garden": [
+   [
+    "_build/bp01-135/scripts/main.js:80",
+    "\"minecraft:pale_garden\": {"
+   ]
+  ],
+  "minecraft:pale_oak_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:30",
+    "pale_oak: { feature: \"minecraft:pale_oak_tree_feature\", leaves: [\"pw:pale_oak_leaves\", \"minecraft:pale_oak_leaves\"], band: 3 },"
+   ]
+  ],
+  "minecraft:pink_petal": [
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:88",
+    "\"minecraft:pink_petal\","
+   ]
+  ],
+  "minecraft:plains": [
+   [
+    "_build/bp01-135/scripts/main.js:240",
+    "\"minecraft:plains\": {"
+   ]
+  ],
+  "minecraft:record_player": [
+   [
+    "_build/bp02-212/scripts/entity/Crab.js:240",
+    "const record = block.getComponent(\"minecraft:record_player\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/Crab.js:302",
+    "const record = block.getComponent('minecraft:record_player');"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/Elephant.js:178",
+    "const record = block.getComponent(\"minecraft:record_player\");"
+   ],
+   [
+    "_build/bp02-212/scripts/entity/Kakapo.js:67",
+    "const record = block.getComponent(\"minecraft:record_player\");"
+   ],
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_rig.js:322",
+    "const rp = b.getComponent(\"minecraft:record_player\");"
+   ]
+  ],
+  "minecraft:red_flower": [
+   [
+    "_build/bp02-212/scripts/entity/BabyBehaviors.js:10",
+    "\"minecraft:red_flower\","
+   ],
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:94",
+    "// 'minecraft:red_flower',"
+   ]
+  ],
+  "minecraft:river": [
+   [
+    "_build/bp01-135/scripts/main.js:347",
+    "\"minecraft:river\": {"
+   ]
+  ],
+  "minecraft:rooted_dirt": [
+   [
+    "_build/bp02-212/scripts/main.js:5073",
+    "const PW_GROW_GROUND = new Set([\"minecraft:grass_block\",\"minecraft:grass\",\"minecraft:dirt\",\"minecraft:coarse_dirt\",\"minecraft:podzol\",\"minecraft:mycelium\",\"minecraft:moss"
+   ],
+   [
+    "_build/bp02-212/scripts/pw_fell_rules.js:17",
+    "\"minecraft:podzol\", \"minecraft:mycelium\", \"minecraft:moss_block\", \"minecraft:mud\", \"minecraft:rooted_dirt\","
+   ],
+   [
+    "_build/bp02-212/scripts/pw_ground.js:36",
+    "const DIRT_LIKE = new Set([\"minecraft:dirt\", \"minecraft:coarse_dirt\", \"minecraft:rooted_dirt\"]);"
+   ]
+  ],
+  "minecraft:sapling": [
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:97",
+    "// 'minecraft:sapling',"
+   ]
+  ],
+  "minecraft:savanna": [
+   [
+    "_build/bp01-135/scripts/main.js:115",
+    "\"minecraft:savanna\": {"
+   ]
+  ],
+  "minecraft:savanna_plateau": [
+   [
+    "_build/bp01-135/scripts/main.js:398",
+    "\"minecraft:savanna_plateau\": {"
+   ]
+  ],
+  "minecraft:scute": [
+   [
+    "_build/bp02-212/scripts/item/CompostablesPlusItems.js:10",
+    "{ \"item\": \"minecraft:scute\", \"chance\": 10 },"
+   ]
+  ],
+  "minecraft:sign": [
+   [
+    "_build/bp02-212/scripts/pw_civ_clock.js:1653",
+    "const sign = blk.getComponent(\"minecraft:sign\");"
+   ]
+  ],
+  "minecraft:skull": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p20.js:7239",
+    "\"mob\": \"minecraft:skull\","
+   ]
+  ],
+  "minecraft:small_end_islands": [
+   [
+    "_build/bp01-135/scripts/main.js:281",
+    "\"minecraft:small_end_islands\": {"
+   ]
+  ],
+  "minecraft:snowy_beach": [
+   [
+    "_build/bp01-135/scripts/main.js:437",
+    "\"minecraft:snowy_beach\": {"
+   ]
+  ],
+  "minecraft:snowy_plains": [
+   [
+    "_build/bp01-135/scripts/main.js:432",
+    "\"minecraft:snowy_plains\": {"
+   ]
+  ],
+  "minecraft:snowy_slopes": [
+   [
+    "_build/bp01-135/scripts/main.js:179",
+    "\"minecraft:snowy_slopes\": {"
+   ]
+  ],
+  "minecraft:snowy_taiga": [
+   [
+    "_build/bp01-135/scripts/main.js:152",
+    "\"minecraft:snowy_taiga\": {"
+   ]
+  ],
+  "minecraft:soulsand_valley": [
+   [
+    "_build/bp01-135/scripts/main.js:520",
+    "\"minecraft:soulsand_valley\": {"
+   ]
+  ],
+  "minecraft:sparse_jungle": [
+   [
+    "_build/bp01-135/scripts/main.js:361",
+    "\"minecraft:sparse_jungle\": {"
+   ]
+  ],
+  "minecraft:spawn_adult": [
+   [
+    "_build/bp02-212/scripts/item/EntityPlacerItems.js:84",
+    "\"sf_nba:adult_bee\": \"minecraft:spawn_adult\","
+   ]
+  ],
+  "minecraft:spruce_tree_feature": [
+   [
+    "_build/testrunner-0.5.19/scripts/pw_testrunner_p15.js:24",
+    "spruce: { feature: \"minecraft:spruce_tree_feature\", leaves: [\"pw:spruce_leaves\", \"minecraft:spruce_leaves\"], band: 0 },"
+   ]
+  ],
+  "minecraft:stained_hardened_clay": [
+   [
+    "_build/bp02-212/scripts/main.js:4479",
+    "\"minecraft:hardened_clay\":\"pw:slab_terracotta\", \"minecraft:stained_hardened_clay\":\"pw:slab_terracotta\","
+   ]
+  ],
+  "minecraft:stony_peaks": [
+   [
+    "_build/bp01-135/scripts/main.js:174",
+    "\"minecraft:stony_peaks\": {"
+   ]
+  ],
+  "minecraft:stony_shore": [
+   [
+    "_build/bp01-135/scripts/main.js:203",
+    "\"minecraft:stony_shore\": {"
+   ]
+  ],
+  "minecraft:sunflower_plains": [
+   [
+    "_build/bp01-135/scripts/main.js:247",
+    "\"minecraft:sunflower_plains\": {"
+   ]
+  ],
+  "minecraft:swamp": [
+   [
+    "_build/bp01-135/scripts/main.js:122",
+    "\"minecraft:swamp\": {"
+   ],
+   [
+    "_build/bp02-212/scripts/main.js:4232",
+    "const FIREFLY_AMBIENT_BIOMES = [\"minecraft:swamp\", \"minecraft:swampland\", \"minecraft:mangrove_swamp\"];"
+   ]
+  ],
+  "minecraft:swampland": [
+   [
+    "_build/bp02-212/scripts/main.js:4232",
+    "const FIREFLY_AMBIENT_BIOMES = [\"minecraft:swamp\", \"minecraft:swampland\", \"minecraft:mangrove_swamp\"];"
+   ]
+  ],
+  "minecraft:taiga": [
+   [
+    "_build/bp01-135/scripts/main.js:137",
+    "\"minecraft:taiga\": {"
+   ]
+  ],
+  "minecraft:tallgrass": [
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:107",
+    "// 'minecraft:tallgrass',"
+   ],
+   [
+    "_build/bp02-212/scripts/main.js:4511",
+    "\"minecraft:short_grass\",\"minecraft:tallgrass\",\"minecraft:tall_grass\",\"minecraft:fern\",\"minecraft:large_fern\","
+   ],
+   [
+    "_build/bp02-212/scripts/pw_ground.js:39",
+    "\"minecraft:air\",\"minecraft:short_grass\",\"minecraft:tallgrass\",\"minecraft:tall_grass\",\"minecraft:fern\","
+   ]
+  ],
+  "minecraft:vines": [
+   [
+    "_build/bp02-212/scripts/@minecraft/ReplaceableBlocks.js:9",
+    "\"minecraft:vines\","
+   ]
+  ],
+  "minecraft:warm_ocean": [
+   [
+    "_build/bp01-135/scripts/main.js:213",
+    "\"minecraft:warm_ocean\": {"
+   ]
+  ],
+  "minecraft:warped_forest": [
+   [
+    "_build/bp01-135/scripts/main.js:535",
+    "\"minecraft:warped_forest\": {"
+   ]
+  ],
+  "minecraft:water_evaporation_bucket_emitter": [
+   [
+    "_build/bp02-212/scripts/entity/AbstractBucketableEntity.js:332",
+    "\"minecraft:water_evaporation_bucket_emitter\","
+   ]
+  ],
+  "minecraft:waxed_": [
+   [
+    "_build/bp02-212/scripts/item/Fat.js:24",
+    "const waxedId = block.typeId.replace(\"minecraft:\", \"minecraft:waxed_\");"
+   ]
+  ],
+  "minecraft:windswept_hills": [
+   [
+    "_build/bp01-135/scripts/main.js:159",
+    "\"minecraft:windswept_hills\": {"
+   ]
+  ],
+  "minecraft:windswept_savanna": [
+   [
+    "_build/bp01-135/scripts/main.js:403",
+    "\"minecraft:windswept_savanna\": {"
+   ]
+  ],
+  "minecraft:wooded_badlands": [
+   [
+    "_build/bp01-135/scripts/main.js:390",
+    "\"minecraft:wooded_badlands\": {"
+   ]
+  ],
+  "minecraft:yellow_flower": [
+   [
+    "_build/bp02-212/scripts/entity/BabyBehaviors.js:9",
+    "\"minecraft:yellow_flower\","
+   ],
+   [
+    "_build/bp02-212/scripts/item/MinecraftBlockItemTypes.js:125",
+    "// 'minecraft:yellow_flower',"
+   ]
+  ]
+ }
+}

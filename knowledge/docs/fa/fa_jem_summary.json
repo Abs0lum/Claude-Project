@@ -1,0 +1,970 @@
+{
+ "parrot": {
+  "parts": [
+   "head",
+   "body",
+   "left_wing",
+   "right_wing",
+   "left_leg",
+   "right_leg",
+   "tail"
+  ],
+  "anim_lines": 102,
+  "anim_targets": [
+   "beak",
+   "body",
+   "feathers",
+   "head2",
+   "left_foot",
+   "left_foot2",
+   "left_leg",
+   "left_leg2",
+   "left_wing2",
+   "left_wing_fly",
+   "left_wing_fly2",
+   "left_wing_fly_rot"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "bat": {
+  "parts": [
+   "head",
+   "body",
+   "left_wing",
+   "outer_left_wing",
+   "right_wing",
+   "outer_right_wing"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "allay": {
+  "parts": [
+   "head",
+   "body",
+   "right_arm",
+   "left_arm",
+   "left_wing",
+   "right_wing"
+  ],
+  "anim_lines": 52,
+  "anim_targets": [
+   "body",
+   "body2",
+   "head2",
+   "left_arm",
+   "left_wing2",
+   "left_wing4",
+   "render",
+   "right_arm",
+   "right_wing2",
+   "right_wing4",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": false
+ },
+ "vex": {
+  "parts": [
+   "head",
+   "body",
+   "right_arm",
+   "left_arm",
+   "left_wing",
+   "right_wing"
+  ],
+  "anim_lines": 51,
+  "anim_targets": [
+   "body",
+   "body2",
+   "head2",
+   "left_arm",
+   "left_wing2",
+   "left_wing4",
+   "right_arm",
+   "right_wing2",
+   "right_wing4",
+   "var",
+   "varb"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "phantom": {
+  "parts": [
+   "head",
+   "body",
+   "right_wing",
+   "left_wing",
+   "tail",
+   "tail2",
+   "left_wing_tip",
+   "right_wing_tip"
+  ],
+  "anim_lines": 44,
+  "anim_targets": [
+   "body2",
+   "head2",
+   "left_wing2",
+   "left_wing_tip2",
+   "right_wing2",
+   "right_wing_tip2",
+   "tail3",
+   "tail4",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "ghast": {
+  "parts": [
+   "root",
+   "tentacle1",
+   "body",
+   "tentacle2",
+   "tentacle3",
+   "tentacle4",
+   "tentacle5",
+   "tentacle6",
+   "tentacle7",
+   "tentacle8",
+   "tentacle9"
+  ],
+  "anim_lines": 77,
+  "anim_targets": [
+   "body",
+   "bone",
+   "bone2",
+   "bone5",
+   "bone6",
+   "root",
+   "tentacle_lb",
+   "tentacle_lf",
+   "tentacle_lm",
+   "tentacle_mb",
+   "tentacle_rb",
+   "tentacle_rf"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "happy_ghast": {
+  "parts": [
+   "root",
+   "tentacle1",
+   "body",
+   "tentacle2",
+   "tentacle3",
+   "tentacle4",
+   "tentacle5",
+   "tentacle6",
+   "tentacle7",
+   "tentacle8",
+   "tentacle9"
+  ],
+  "anim_lines": 86,
+  "anim_targets": [
+   "body",
+   "bone",
+   "bone2",
+   "bone5",
+   "bone6",
+   "root",
+   "tentacle0",
+   "tentacle_lb",
+   "tentacle_lf",
+   "tentacle_lm",
+   "tentacle_mb",
+   "tentacle_rb"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "happy_ghast_harness": {
+  "parts": [
+   "root",
+   "goggles",
+   "body"
+  ],
+  "anim_lines": 40,
+  "anim_targets": [
+   "harness",
+   "root",
+   "var",
+   "varb"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "happy_ghast_ropes": {
+  "parts": [
+   "root",
+   "tentacle1",
+   "body",
+   "tentacle2",
+   "tentacle3",
+   "tentacle4",
+   "tentacle5",
+   "tentacle6",
+   "tentacle7",
+   "tentacle8",
+   "tentacle9"
+  ],
+  "anim_lines": 43,
+  "anim_targets": [
+   "body",
+   "root",
+   "var",
+   "varb"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "blaze": {
+  "parts": [
+   "head",
+   "stick1",
+   "stick2",
+   "stick3",
+   "stick4",
+   "stick5",
+   "stick6",
+   "stick7",
+   "stick8",
+   "stick9",
+   "stick10",
+   "stick11",
+   "stick12"
+  ],
+  "anim_lines": 63,
+  "anim_targets": [
+   "body",
+   "head2",
+   "layer1",
+   "layer2",
+   "layer3",
+   "rod1",
+   "rod10",
+   "rod11",
+   "rod12",
+   "rod2",
+   "rod3",
+   "rod4"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "breeze": {
+  "parts": [
+   "head",
+   "rods",
+   "body"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "breeze_wind": {
+  "parts": [
+   "wind_top",
+   "wind_middle",
+   "wind_bottom"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   128,
+   128
+  ],
+  "same_as_local_old": true
+ },
+ "wither": {
+  "parts": [
+   "body1",
+   "body2",
+   "body3",
+   "head1",
+   "head2",
+   "head3"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "squid": {
+  "parts": [
+   "body",
+   "tentacle1",
+   "tentacle2",
+   "tentacle3",
+   "tentacle4",
+   "tentacle5",
+   "tentacle6",
+   "tentacle7",
+   "tentacle8"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   64,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "glow_squid": {
+  "parts": [
+   "body",
+   "tentacle1",
+   "tentacle2",
+   "tentacle3",
+   "tentacle4",
+   "tentacle5",
+   "tentacle6",
+   "tentacle7",
+   "tentacle8"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   64,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "cod": {
+  "parts": [
+   "head",
+   "body",
+   "nose",
+   "fin_left",
+   "fin_right",
+   "fin_back",
+   "tail"
+  ],
+  "anim_lines": 31,
+  "anim_targets": [
+   "body",
+   "body2",
+   "body3",
+   "fin_back2",
+   "head2",
+   "left_fin",
+   "left_fin_b",
+   "right_fin",
+   "right_fin_b",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "salmon": {
+  "parts": [
+   "head",
+   "body_front",
+   "body_back",
+   "fin_left",
+   "fin_right",
+   "fin_back_1",
+   "fin_back_2",
+   "tail"
+  ],
+  "anim_lines": 36,
+  "anim_targets": [
+   "body2",
+   "body3",
+   "body_front",
+   "fin_top",
+   "head2",
+   "left_fin",
+   "left_fin_b",
+   "right_fin",
+   "right_fin_b",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "puffer_fish_small": {
+  "parts": [
+   "tail",
+   "body",
+   "fin_right",
+   "fin_left",
+   "eye_right",
+   "eye_left"
+  ],
+  "anim_lines": 28,
+  "anim_targets": [
+   "body",
+   "body2",
+   "left_fin",
+   "right_fin",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "puffer_fish_medium": {
+  "parts": [
+   "fin_right",
+   "body",
+   "fin_left",
+   "spikes_front_top",
+   "spikes_back_top",
+   "spikes_front_right",
+   "spikes_back_right",
+   "spikes_front_left",
+   "spikes_back_left",
+   "spikes_front_bottom",
+   "spikes_back_bottom"
+  ],
+  "anim_lines": 37,
+  "anim_targets": [
+   "body",
+   "body2",
+   "left_fin",
+   "right_fin",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "puffer_fish_big": {
+  "parts": [
+   "fin_right",
+   "body",
+   "fin_left",
+   "spikes_front_top",
+   "spikes_middle_top",
+   "spikes_back_top",
+   "spikes_front_left",
+   "spikes_front_right",
+   "spikes_front_bottom",
+   "spikes_middle_bottom",
+   "spikes_back_bottom",
+   "spikes_back_left",
+   "spikes_back_right"
+  ],
+  "anim_lines": 37,
+  "anim_targets": [
+   "body",
+   "body2",
+   "left_fin",
+   "right_fin",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "tropical_fish_a": {
+  "parts": [
+   "tail",
+   "body",
+   "fin_top",
+   "fin_left",
+   "fin_right"
+  ],
+  "anim_lines": 36,
+  "anim_targets": [
+   "body",
+   "body2",
+   "fin_bottom",
+   "fin_top2",
+   "left_bottom_fin",
+   "left_fin",
+   "right_bottom_fin",
+   "right_fin",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "tropical_fish_b": {
+  "parts": [
+   "tail",
+   "body",
+   "fin_top",
+   "fin_bottom",
+   "fin_left",
+   "fin_right"
+  ],
+  "anim_lines": 36,
+  "anim_targets": [
+   "body",
+   "body2",
+   "fin_bottom2",
+   "fin_top2",
+   "left_bottom_fin",
+   "left_fin",
+   "right_bottom_fin",
+   "right_fin",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "tropical_fish_pattern_a": {
+  "parts": [
+   "tail",
+   "body",
+   "fin_top",
+   "fin_left",
+   "fin_right"
+  ],
+  "anim_lines": 36,
+  "anim_targets": [
+   "body",
+   "body2",
+   "fin_bottom",
+   "fin_top2",
+   "left_bottom_fin",
+   "left_fin",
+   "right_bottom_fin",
+   "right_fin",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "tropical_fish_pattern_b": {
+  "parts": [
+   "tail",
+   "body",
+   "fin_top",
+   "fin_bottom",
+   "fin_left",
+   "fin_right"
+  ],
+  "anim_lines": 36,
+  "anim_targets": [
+   "body",
+   "body2",
+   "fin_bottom2",
+   "fin_top2",
+   "left_bottom_fin",
+   "left_fin",
+   "right_bottom_fin",
+   "right_fin",
+   "tail2",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   32,
+   32
+  ],
+  "same_as_local_old": true
+ },
+ "turtle": {
+  "parts": [
+   "head",
+   "body",
+   "body2",
+   "leg1",
+   "leg2",
+   "leg3",
+   "leg4"
+  ],
+  "anim_lines": 76,
+  "anim_targets": [
+   "body",
+   "body_rotation",
+   "fins",
+   "head2",
+   "left_back_fin",
+   "left_front_fin",
+   "right_back_fin",
+   "right_front_fin",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   128,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "axolotl": {
+  "parts": [
+   "head",
+   "body",
+   "top_gills",
+   "left_gills",
+   "right_gills",
+   "leg4",
+   "leg2",
+   "leg3",
+   "leg1",
+   "tail"
+  ],
+  "anim_lines": 102,
+  "anim_targets": [
+   "back_fin",
+   "back_left_leg",
+   "back_right_leg",
+   "body",
+   "body2",
+   "front_left_leg",
+   "front_right_leg",
+   "head2",
+   "left_fern",
+   "left_fern2",
+   "leg5",
+   "leg6"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": false
+ },
+ "frog": {
+  "parts": [
+   "head",
+   "body",
+   "eyes",
+   "tongue",
+   "croaking_body",
+   "left_arm",
+   "right_arm",
+   "left_leg",
+   "right_leg"
+  ],
+  "anim_lines": 105,
+  "anim_targets": [
+   "body",
+   "body2",
+   "croak",
+   "head2",
+   "left_arm",
+   "left_arm2",
+   "left_eye",
+   "left_foot",
+   "left_hand",
+   "left_leg",
+   "left_leg2",
+   "right_arm"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "tadpole": {
+  "parts": [
+   "tail",
+   "body"
+  ],
+  "anim_lines": 28,
+  "anim_targets": [
+   "body",
+   "body2",
+   "tail2",
+   "tail3",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   16,
+   16
+  ],
+  "same_as_local_old": true
+ },
+ "guardian": {
+  "parts": [
+   "body",
+   "eye",
+   "tail1",
+   "tail2",
+   "tail3",
+   "spine1",
+   "spine2",
+   "spine3",
+   "spine4",
+   "spine5",
+   "spine6",
+   "spine7",
+   "spine8",
+   "spine9",
+   "spine10",
+   "spine11",
+   "spine12"
+  ],
+  "anim_lines": 16,
+  "anim_targets": [
+   "spine10_rotation",
+   "spine11_rotation",
+   "spine12_rotation",
+   "spine1_rotation",
+   "spine2_rotation",
+   "spine3_rotation",
+   "spine4_rotation",
+   "spine5_rotation",
+   "spine6_rotation",
+   "spine7_rotation",
+   "spine8_rotation",
+   "spine9_rotation"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "elder_guardian": {
+  "parts": [
+   "body",
+   "eye",
+   "tail1",
+   "tail2",
+   "tail3",
+   "spine1",
+   "spine2",
+   "spine3",
+   "spine4",
+   "spine5",
+   "spine6",
+   "spine7",
+   "spine8",
+   "spine9",
+   "spine10",
+   "spine11",
+   "spine12"
+  ],
+  "anim_lines": 16,
+  "anim_targets": [
+   "spine10_rotation",
+   "spine11_rotation",
+   "spine12_rotation",
+   "spine1_rotation",
+   "spine2_rotation",
+   "spine3_rotation",
+   "spine4_rotation",
+   "spine5_rotation",
+   "spine6_rotation",
+   "spine7_rotation",
+   "spine8_rotation",
+   "spine9_rotation"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": true
+ },
+ "dolphin": {
+  "parts": [
+   "head",
+   "body",
+   "tail",
+   "right_fin",
+   "left_fin",
+   "back_fin",
+   "tail_fin"
+  ],
+  "anim_lines": 35,
+  "anim_targets": [
+   "body2",
+   "head2",
+   "left_fin2",
+   "right_fin2",
+   "tail2",
+   "tail3",
+   "tail_fin2",
+   "top_fin",
+   "var"
+  ],
+  "texture": null,
+  "textureSize": [
+   64,
+   64
+  ],
+  "same_as_local_old": false
+ },
+ "nautilus": {
+  "parts": [
+   "shell",
+   "body",
+   "upper_mouth",
+   "inner_mouth",
+   "lower_mouth"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   128,
+   128
+  ],
+  "same_as_local_old": false
+ },
+ "nautilus_armor": {
+  "parts": [
+   "shell",
+   "body",
+   "upper_mouth",
+   "inner_mouth",
+   "lower_mouth"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   128,
+   128
+  ],
+  "same_as_local_old": false
+ },
+ "nautilus_saddle": {
+  "parts": [
+   "shell",
+   "body",
+   "upper_mouth",
+   "inner_mouth",
+   "lower_mouth"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   128,
+   128
+  ],
+  "same_as_local_old": false
+ },
+ "zombie_nautilus": {
+  "parts": [
+   "shell",
+   "body",
+   "upper_mouth",
+   "inner_mouth",
+   "lower_mouth"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   128,
+   128
+  ],
+  "same_as_local_old": false
+ },
+ "zombie_nautilus_coral": {
+  "parts": [
+   "shell",
+   "body",
+   "upper_mouth",
+   "inner_mouth",
+   "lower_mouth"
+  ],
+  "anim_lines": 0,
+  "anim_targets": [],
+  "texture": null,
+  "textureSize": [
+   128,
+   128
+  ],
+  "same_as_local_old": false
+ }
+}

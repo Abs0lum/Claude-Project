@@ -1,0 +1,358 @@
+# BLOCK TEXTURE CENSUS — 1383 vanilla-registered blocks (effective blocks.json) · {'ALL-OURS': 993, 'MIXED': 98, 'ALL-VANILLA': 292}
+
+Priority (top wins — ASSUMPTION: STACK-LIST top line = top of the in-game list): RP-11-v1_3_35.mcpack, PW-StripMine-RP-v3_0_1.mcpack, PW-LeafProbe-RP-v0_3_1.mcpack, RP-02-v2_0_1.mcpack, RP-06-v1_4_6.mcpack, RP-08-v1_4_6.mcpack, RP-01-v1_3_102.mcpack, RP-05-v1_3_46.mcpack, RP-10-v1_3_39.mcpack, RP-03-v1_3_56.mcpack, RP-07-v1_4_9.mcpack, RP-04 (build rp04-132), PW-Civitas-Markers-RP-v0_1_7.mcpack, VANILLA
+
+## MIXED blocks (some faces/variations ours, some vanilla) — the furnace class
+- **acacia_door** — vanilla: textures/blocks/door_iron_lower, textures/blocks/door_iron_upper · ours: textures/blocks/door_acacia_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_acacia_upper (RP-04 (build rp04-132)), textures/blocks/door_birch_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_birch_upper (RP-04 (build rp04-132)), textures/blocks/door_dark_oak_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_dark_oak_upper (RP-04 (build rp04-132)), textures/blocks/door_jungle_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_jungle_upper (RP-04 (build rp04-132)), textures/blocks/door_spruce_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_spruce_upper (RP-04 (build rp04-132)), textures/blocks/door_wood_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_wood_upper (RP-04 (build rp04-132))
+- **azalea** — vanilla: textures/blocks/potted_azalea_bush_plant, textures/blocks/potted_azalea_bush_side, textures/blocks/potted_azalea_bush_top · ours: textures/blocks/azalea_plant (RP-05-v1_3_46.mcpack), textures/blocks/azalea_side (RP-05-v1_3_46.mcpack), textures/blocks/azalea_top (RP-05-v1_3_46.mcpack)
+- **bamboo** — vanilla: textures/blocks/bamboo_singleleaf, textures/blocks/bamboo_small_leaf, textures/blocks/bamboo_stem · ours: textures/blocks/bamboo_leaf (RP-01-v1_3_102.mcpack), textures/blocks/bamboo_sapling (RP-01-v1_3_102.mcpack)
+- **beehive** — vanilla: textures/blocks/beehive_top · ours: textures/blocks/beehive_front (RP-03-v1_3_56.mcpack), textures/blocks/beehive_front_honey (RP-03-v1_3_56.mcpack), textures/blocks/beehive_side (RP-03-v1_3_56.mcpack)
+- **bell** — vanilla: textures/blocks/bell_bottom, textures/blocks/bell_side, textures/blocks/bell_top · ours: textures/blocks/dark_oak_planks_v0 (RP-03-v1_3_56.mcpack), textures/blocks/dark_oak_planks_v1 (RP-03-v1_3_56.mcpack), textures/blocks/dark_oak_planks_v2 (RP-03-v1_3_56.mcpack), textures/blocks/dark_oak_planks_v3 (RP-03-v1_3_56.mcpack), textures/blocks/stone (RP-03-v1_3_56.mcpack)
+- **big_dripleaf** — vanilla: textures/blocks/big_dripleaf_side1, textures/blocks/big_dripleaf_side2 · ours: textures/blocks/big_dripleaf_stem (RP-05-v1_3_46.mcpack), textures/blocks/big_dripleaf_top (RP-01-v1_3_102.mcpack)
+- **birch_door** — vanilla: textures/blocks/door_iron_lower, textures/blocks/door_iron_upper · ours: textures/blocks/door_acacia_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_acacia_upper (RP-04 (build rp04-132)), textures/blocks/door_birch_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_birch_upper (RP-04 (build rp04-132)), textures/blocks/door_dark_oak_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_dark_oak_upper (RP-04 (build rp04-132)), textures/blocks/door_jungle_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_jungle_upper (RP-04 (build rp04-132)), textures/blocks/door_spruce_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_spruce_upper (RP-04 (build rp04-132)), textures/blocks/door_wood_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_wood_upper (RP-04 (build rp04-132))
+- **blast_furnace** — vanilla: textures/blocks/blast_furnace_front_off · ours: textures/blocks/blast_furnace_side (RP-03-v1_3_56.mcpack), textures/blocks/blast_furnace_top (RP-03-v1_3_56.mcpack)
+- **brown_mushroom_block** — vanilla: textures/blocks/mushroom_block_skin_brown · ours: textures/blocks/mushroom_block_inside (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v0 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v1 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v10 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v11 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v12 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v13 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v14 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v2 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v3 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v4 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v5 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v6 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v7 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v8 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v9 (RP-01-v1_3_102.mcpack)
+- **bubble_column** — vanilla: textures/blocks/bubble_column_down_top_a, textures/blocks/bubble_column_down_top_b, textures/blocks/bubble_column_down_top_c, textures/blocks/bubble_column_down_top_d, textures/blocks/bubble_column_inner_a, textures/blocks/bubble_column_inner_b, textures/blocks/bubble_column_outer_a, textures/blocks/bubble_column_outer_b, textures/blocks/bubble_column_outer_c, textures/blocks/bubble_column_outer_d, textures/blocks/bubble_column_outer_e, textures/blocks/bubble_column_outer_f, textures/blocks/bubble_column_outer_g, textures/blocks/bubble_column_outer_h, textures/blocks/bubble_column_up_top_a, textures/blocks/bubble_column_up_top_b, textures/blocks/bubble_column_up_top_c, textures/blocks/bubble_column_up_top_d · ours: textures/blocks/pumpkin_side (RP-05-v1_3_46.mcpack)
+- **calibrated_sculk_sensor** — vanilla: textures/blocks/sculk_sensor_bottom · ours: textures/blocks/calibrated_sculk_sensor_input_side (RP-03-v1_3_56.mcpack), textures/blocks/calibrated_sculk_sensor_top (RP-03-v1_3_56.mcpack), textures/blocks/sculk_sensor_side (RP-03-v1_3_56.mcpack)
+- **carved_pumpkin** — vanilla: textures/blocks/pumpkin_face_on · ours: textures/blocks/pumpkin_face_off (RP-05-v1_3_46.mcpack), textures/blocks/pumpkin_side (RP-05-v1_3_46.mcpack), textures/blocks/pumpkin_top (RP-05-v1_3_46.mcpack)
+- **cauldron** — vanilla: textures/blocks/cauldron_water · ours: textures/blocks/cauldron_bottom (RP-03-v1_3_56.mcpack), textures/blocks/cauldron_inner (RP-03-v1_3_56.mcpack), textures/blocks/cauldron_side (RP-03-v1_3_56.mcpack), textures/blocks/cauldron_top (RP-03-v1_3_56.mcpack), textures/blocks/water_still_grey (RP-02-v2_0_1.mcpack)
+- **chiseled_red_sandstone** — vanilla: textures/blocks/red_sandstone_carved · ours: textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **composter** — vanilla: textures/blocks/compost, textures/blocks/compost_ready · ours: textures/blocks/composter_bottom (RP-03-v1_3_56.mcpack), textures/blocks/composter_side (RP-03-v1_3_56.mcpack), textures/blocks/composter_top (RP-03-v1_3_56.mcpack)
+- **coral** — vanilla: textures/blocks/coral_plant_blue, textures/blocks/coral_plant_blue_dead, textures/blocks/coral_plant_pink_dead, textures/blocks/coral_plant_purple, textures/blocks/coral_plant_purple_dead, textures/blocks/coral_plant_red, textures/blocks/coral_plant_red_dead, textures/blocks/coral_plant_yellow, textures/blocks/coral_plant_yellow_dead · ours: textures/blocks/coral_plant_pink (RP-05-v1_3_46.mcpack)
+- **coral_block** — vanilla: textures/blocks/coral_blue, textures/blocks/coral_blue_dead, textures/blocks/coral_pink_dead, textures/blocks/coral_purple, textures/blocks/coral_purple_dead, textures/blocks/coral_red, textures/blocks/coral_red_dead, textures/blocks/coral_yellow, textures/blocks/coral_yellow_dead · ours: textures/blocks/coral_pink (RP-05-v1_3_46.mcpack)
+- **coral_fan** — vanilla: textures/blocks/coral_fan_blue, textures/blocks/coral_fan_purple, textures/blocks/coral_fan_red, textures/blocks/coral_fan_yellow · ours: textures/blocks/coral_fan_pink (RP-05-v1_3_46.mcpack)
+- **coral_fan_hang** — vanilla: textures/blocks/coral_fan_blue, textures/blocks/coral_fan_blue_dead, textures/blocks/coral_fan_pink_dead · ours: textures/blocks/coral_fan_pink (RP-05-v1_3_46.mcpack)
+- **creaking_heart** — vanilla: textures/blocks/creaking_heart_side_dormant · ours: textures/blocks/creaking_heart_side_active (RP-04 (build rp04-132)), textures/blocks/creaking_heart_side_inactive (RP-04 (build rp04-132)), textures/blocks/creaking_heart_top (RP-03-v1_3_56.mcpack)
+- **crimson_roots** — vanilla: textures/blocks/crimson_roots_pot · ours: textures/blocks/crimson_roots (RP-05-v1_3_46.mcpack)
+- **cut_red_sandstone** — vanilla: textures/blocks/red_sandstone_smooth · ours: textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **cut_red_sandstone_double_slab** — vanilla: textures/blocks/red_sandstone_smooth · ours: textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **cut_red_sandstone_slab** — vanilla: textures/blocks/red_sandstone_smooth · ours: textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **cut_sandstone** — vanilla: textures/blocks/sandstone_smooth · ours: textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **cut_sandstone_double_slab** — vanilla: textures/blocks/sandstone_smooth · ours: textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **cut_sandstone_slab** — vanilla: textures/blocks/sandstone_smooth · ours: textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **dark_oak_door** — vanilla: textures/blocks/door_iron_lower, textures/blocks/door_iron_upper · ours: textures/blocks/door_acacia_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_acacia_upper (RP-04 (build rp04-132)), textures/blocks/door_birch_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_birch_upper (RP-04 (build rp04-132)), textures/blocks/door_dark_oak_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_dark_oak_upper (RP-04 (build rp04-132)), textures/blocks/door_jungle_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_jungle_upper (RP-04 (build rp04-132)), textures/blocks/door_spruce_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_spruce_upper (RP-04 (build rp04-132)), textures/blocks/door_wood_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_wood_upper (RP-04 (build rp04-132))
+- **dark_oak_leaves** — vanilla: textures/blocks/leaves_big_oak_opaque · ours: textures/blocks/leaves_big_oak (RP-05-v1_3_46.mcpack)
+- **dispenser** — vanilla: textures/blocks/dispenser_front_horizontal · ours: textures/blocks/dispenser_front_vertical (RP-03-v1_3_56.mcpack), textures/blocks/furnace_side (RP-03-v1_3_56.mcpack), textures/blocks/furnace_top (RP-03-v1_3_56.mcpack)
+- **double_stone_slab** — vanilla: textures/blocks/brick, textures/blocks/nether_brick, textures/blocks/sandstone_normal, textures/blocks/stone_slab_side, textures/blocks/stone_slab_top · ours: textures/blocks/cobblestone (RP-03-v1_3_56.mcpack), textures/blocks/planks_oak (RP-04 (build rp04-132)), textures/blocks/quartz_block_side (RP-03-v1_3_56.mcpack), textures/blocks/quartz_block_top (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/stonebrick (RP-04 (build rp04-132))
+- **double_stone_slab2** — vanilla: textures/blocks/prismarine_dark, textures/blocks/prismarine_rough, textures/blocks/red_nether_brick, textures/blocks/red_sandstone_normal · ours: textures/blocks/cobblestone_mossy (RP-04 (build rp04-132)), textures/blocks/prismarine_bricks (RP-03-v1_3_56.mcpack), textures/blocks/purpur_block (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **double_stone_slab3** — vanilla: textures/blocks/end_bricks, textures/blocks/stone_andesite, textures/blocks/stone_andesite_smooth, textures/blocks/stone_diorite_smooth, textures/blocks/stone_granite, textures/blocks/stone_granite_smooth · ours: textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/stone_diorite (RP-04 (build rp04-132))
+- **double_stone_slab4** — vanilla: textures/blocks/red_sandstone_smooth, textures/blocks/sandstone_smooth, textures/blocks/stonebrick_mossy · ours: textures/blocks/quartz_block_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/stone (RP-03-v1_3_56.mcpack)
+- **dried_kelp_block** — vanilla: textures/blocks/dried_kelp_side_a, textures/blocks/dried_kelp_side_b · ours: textures/blocks/dried_kelp_top (RP-03-v1_3_56.mcpack)
+- **dropper** — vanilla: textures/blocks/dropper_front_horizontal · ours: textures/blocks/dropper_front_vertical (RP-03-v1_3_56.mcpack), textures/blocks/furnace_side (RP-03-v1_3_56.mcpack), textures/blocks/furnace_top (RP-03-v1_3_56.mcpack)
+- **enchanting_table** — vanilla: textures/blocks/enchanting_table_bottom · ours: textures/blocks/enchanting_table_side (RP-03-v1_3_56.mcpack), textures/blocks/enchanting_table_top (RP-03-v1_3_56.mcpack)
+- **end_portal_frame** — vanilla: textures/blocks/endframe_side, textures/blocks/endframe_top · ours: textures/blocks/end_stone (RP-03-v1_3_56.mcpack)
+- **exposed_lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/exposed_lightning_rod (RP-03-v1_3_56.mcpack)
+- **fletching_table** — vanilla: textures/blocks/fletcher_table_side1, textures/blocks/fletcher_table_side2, textures/blocks/fletcher_table_top · ours: textures/blocks/birch_planks_v0 (RP-03-v1_3_56.mcpack), textures/blocks/birch_planks_v1 (RP-03-v1_3_56.mcpack), textures/blocks/birch_planks_v2 (RP-03-v1_3_56.mcpack), textures/blocks/birch_planks_v3 (RP-03-v1_3_56.mcpack)
+- **flowering_azalea** — vanilla: textures/blocks/potted_flowering_azalea_bush_plant, textures/blocks/potted_flowering_azalea_bush_side, textures/blocks/potted_flowering_azalea_bush_top · ours: textures/blocks/azalea_plant (RP-05-v1_3_46.mcpack), textures/blocks/flowering_azalea_side (RP-01-v1_3_102.mcpack), textures/blocks/flowering_azalea_top (RP-01-v1_3_102.mcpack)
+- **furnace** — vanilla: textures/blocks/furnace_front_off · ours: textures/blocks/furnace_side (RP-03-v1_3_56.mcpack), textures/blocks/furnace_top (RP-03-v1_3_56.mcpack)
+- **grindstone** — vanilla: textures/blocks/grindstone_pivot, textures/blocks/grindstone_round, textures/blocks/grindstone_side · ours: textures/blocks/log_big_oak (RP-04 (build rp04-132))
+- **iron_door** — vanilla: textures/blocks/door_iron_lower, textures/blocks/door_iron_upper · ours: textures/blocks/door_acacia_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_acacia_upper (RP-04 (build rp04-132)), textures/blocks/door_birch_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_birch_upper (RP-04 (build rp04-132)), textures/blocks/door_dark_oak_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_dark_oak_upper (RP-04 (build rp04-132)), textures/blocks/door_jungle_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_jungle_upper (RP-04 (build rp04-132)), textures/blocks/door_spruce_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_spruce_upper (RP-04 (build rp04-132)), textures/blocks/door_wood_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_wood_upper (RP-04 (build rp04-132))
+- **jigsaw** — vanilla: textures/blocks/jigsaw_back, textures/blocks/jigsaw_front · ours: textures/blocks/jigsaw_lock (RP-03-v1_3_56.mcpack), textures/blocks/jigsaw_side (RP-03-v1_3_56.mcpack)
+- **jungle_door** — vanilla: textures/blocks/door_iron_lower, textures/blocks/door_iron_upper · ours: textures/blocks/door_acacia_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_acacia_upper (RP-04 (build rp04-132)), textures/blocks/door_birch_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_birch_upper (RP-04 (build rp04-132)), textures/blocks/door_dark_oak_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_dark_oak_upper (RP-04 (build rp04-132)), textures/blocks/door_jungle_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_jungle_upper (RP-04 (build rp04-132)), textures/blocks/door_spruce_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_spruce_upper (RP-04 (build rp04-132)), textures/blocks/door_wood_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_wood_upper (RP-04 (build rp04-132))
+- **lava_cauldron** — vanilla: textures/blocks/cauldron_water · ours: textures/blocks/cauldron_bottom (RP-03-v1_3_56.mcpack), textures/blocks/cauldron_inner (RP-03-v1_3_56.mcpack), textures/blocks/cauldron_side (RP-03-v1_3_56.mcpack), textures/blocks/cauldron_top (RP-03-v1_3_56.mcpack), textures/blocks/lava_still (RP-03-v1_3_56.mcpack)
+- **lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/lightning_rod (RP-03-v1_3_56.mcpack)
+- **lit_pumpkin** — vanilla: textures/blocks/pumpkin_face_on · ours: textures/blocks/pumpkin_face_off (RP-05-v1_3_46.mcpack), textures/blocks/pumpkin_side (RP-05-v1_3_46.mcpack), textures/blocks/pumpkin_top (RP-05-v1_3_46.mcpack)
+- **monster_egg** — vanilla: textures/blocks/stonebrick_carved, textures/blocks/stonebrick_cracked, textures/blocks/stonebrick_mossy · ours: textures/blocks/cobblestone (RP-03-v1_3_56.mcpack), textures/blocks/stone (RP-03-v1_3_56.mcpack), textures/blocks/stonebrick (RP-04 (build rp04-132))
+- **observer** — vanilla: textures/blocks/observer_back_lit · ours: textures/blocks/observer_back (RP-03-v1_3_56.mcpack), textures/blocks/observer_front (RP-03-v1_3_56.mcpack), textures/blocks/observer_side (RP-03-v1_3_56.mcpack), textures/blocks/observer_top (RP-03-v1_3_56.mcpack)
+- **oxidized_lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/oxidized_lightning_rod (RP-03-v1_3_56.mcpack)
+- **pale_oak_log** — vanilla: textures/blocks/pale_oak_log_side · ours: textures/blocks/pale_oak_log_top_v0 (RP-03-v1_3_56.mcpack), textures/blocks/pale_oak_log_top_v1 (RP-03-v1_3_56.mcpack), textures/blocks/pale_oak_log_top_v2 (RP-03-v1_3_56.mcpack)
+- **pointed_dripstone** — vanilla: textures/blocks/pointed_dripstone_down_frustum, textures/blocks/pointed_dripstone_down_merge, textures/blocks/pointed_dripstone_down_middle, textures/blocks/pointed_dripstone_up_frustum, textures/blocks/pointed_dripstone_up_merge, textures/blocks/pointed_dripstone_up_middle · ours: textures/blocks/pointed_dripstone_down_base (RP-04 (build rp04-132)), textures/blocks/pointed_dripstone_down_tip (RP-04 (build rp04-132)), textures/blocks/pointed_dripstone_up_base (RP-04 (build rp04-132)), textures/blocks/pointed_dripstone_up_tip (RP-04 (build rp04-132))
+- **powered_comparator** — vanilla: textures/blocks/comparator_off, textures/blocks/stone_slab_top · ours: textures/blocks/comparator_on (RP-03-v1_3_56.mcpack)
+- **powered_repeater** — vanilla: textures/blocks/repeater_off, textures/blocks/stone_slab_top · ours: textures/blocks/repeater_on (RP-03-v1_3_56.mcpack)
+- **prismarine_stairs** — vanilla: textures/blocks/prismarine_dark, textures/blocks/prismarine_rough · ours: textures/blocks/prismarine_bricks (RP-03-v1_3_56.mcpack)
+- **pumpkin** — vanilla: textures/blocks/pumpkin_face_on · ours: textures/blocks/pumpkin_face_off (RP-05-v1_3_46.mcpack), textures/blocks/pumpkin_side (RP-05-v1_3_46.mcpack), textures/blocks/pumpkin_top (RP-05-v1_3_46.mcpack)
+- **red_mushroom_block** — vanilla: textures/blocks/mushroom_block_skin_red · ours: textures/blocks/mushroom_block_inside (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v0 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v1 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v10 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v11 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v12 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v13 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v14 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v2 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v3 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v4 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v5 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v6 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v7 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v8 (RP-01-v1_3_102.mcpack), textures/blocks/mushroom_stem_v9 (RP-01-v1_3_102.mcpack)
+- **red_sandstone** — vanilla: textures/blocks/red_sandstone_normal · ours: textures/blocks/red_sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **red_sandstone_double_slab** — vanilla: textures/blocks/red_sandstone_normal · ours: textures/blocks/red_sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **red_sandstone_slab** — vanilla: textures/blocks/red_sandstone_normal · ours: textures/blocks/red_sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **red_sandstone_stairs** — vanilla: textures/blocks/red_sandstone_carved, textures/blocks/red_sandstone_normal, textures/blocks/red_sandstone_smooth · ours: textures/blocks/red_sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack)
+- **respawn_anchor** — vanilla: textures/blocks/respawn_anchor_bottom · ours: textures/blocks/respawn_anchor_side0 (RP-03-v1_3_56.mcpack), textures/blocks/respawn_anchor_side1 (RP-03-v1_3_56.mcpack), textures/blocks/respawn_anchor_side2 (RP-03-v1_3_56.mcpack), textures/blocks/respawn_anchor_side3 (RP-03-v1_3_56.mcpack), textures/blocks/respawn_anchor_side4 (RP-03-v1_3_56.mcpack), textures/blocks/respawn_anchor_top (RP-03-v1_3_56.mcpack), textures/blocks/respawn_anchor_top_off (RP-03-v1_3_56.mcpack)
+- **sandstone** — vanilla: textures/blocks/sandstone_normal · ours: textures/blocks/sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **sandstone_double_slab** — vanilla: textures/blocks/sandstone_normal · ours: textures/blocks/sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **sandstone_slab** — vanilla: textures/blocks/sandstone_normal · ours: textures/blocks/sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **scaffolding** — vanilla: textures/blocks/scaffolding_bottom · ours: textures/blocks/scaffolding_side (RP-03-v1_3_56.mcpack), textures/blocks/scaffolding_top (RP-03-v1_3_56.mcpack)
+- **sculk_catalyst** — vanilla: textures/blocks/sculk_catalyst_bottom, textures/blocks/sculk_catalyst_side_bloom, textures/blocks/sculk_catalyst_top, textures/blocks/sculk_catalyst_top_bloom · ours: textures/blocks/sculk_catalyst_side (RP-03-v1_3_56.mcpack)
+- **sculk_sensor** — vanilla: textures/blocks/sculk_sensor_bottom · ours: textures/blocks/sculk_sensor_side (RP-03-v1_3_56.mcpack), textures/blocks/sculk_sensor_top (RP-03-v1_3_56.mcpack)
+- **sculk_shrieker** — vanilla: textures/blocks/sculk_shrieker_bottom · ours: textures/blocks/sculk_shrieker_side (RP-03-v1_3_56.mcpack), textures/blocks/sculk_shrieker_top (RP-03-v1_3_56.mcpack)
+- **smoker** — vanilla: textures/blocks/smoker_front_off · ours: textures/blocks/smoker_bottom (RP-03-v1_3_56.mcpack), textures/blocks/smoker_side (RP-03-v1_3_56.mcpack), textures/blocks/smoker_top (RP-03-v1_3_56.mcpack)
+- **spruce_door** — vanilla: textures/blocks/door_iron_lower, textures/blocks/door_iron_upper · ours: textures/blocks/door_acacia_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_acacia_upper (RP-04 (build rp04-132)), textures/blocks/door_birch_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_birch_upper (RP-04 (build rp04-132)), textures/blocks/door_dark_oak_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_dark_oak_upper (RP-04 (build rp04-132)), textures/blocks/door_jungle_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_jungle_upper (RP-04 (build rp04-132)), textures/blocks/door_spruce_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_spruce_upper (RP-04 (build rp04-132)), textures/blocks/door_wood_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_wood_upper (RP-04 (build rp04-132))
+- **stone_slab** — vanilla: textures/blocks/brick, textures/blocks/nether_brick, textures/blocks/sandstone_normal, textures/blocks/stone_slab_side, textures/blocks/stone_slab_top · ours: textures/blocks/cobblestone (RP-03-v1_3_56.mcpack), textures/blocks/planks_oak (RP-04 (build rp04-132)), textures/blocks/quartz_block_side (RP-03-v1_3_56.mcpack), textures/blocks/quartz_block_top (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/stonebrick (RP-04 (build rp04-132))
+- **stone_slab2** — vanilla: textures/blocks/prismarine_dark, textures/blocks/prismarine_rough, textures/blocks/red_nether_brick, textures/blocks/red_sandstone_normal · ours: textures/blocks/cobblestone_mossy (RP-04 (build rp04-132)), textures/blocks/prismarine_bricks (RP-03-v1_3_56.mcpack), textures/blocks/purpur_block (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack)
+- **stone_slab3** — vanilla: textures/blocks/end_bricks, textures/blocks/stone_andesite, textures/blocks/stone_andesite_smooth, textures/blocks/stone_diorite_smooth, textures/blocks/stone_granite, textures/blocks/stone_granite_smooth · ours: textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/stone_diorite (RP-04 (build rp04-132))
+- **stone_slab4** — vanilla: textures/blocks/red_sandstone_smooth, textures/blocks/sandstone_smooth, textures/blocks/stonebrick_mossy · ours: textures/blocks/quartz_block_bottom (RP-03-v1_3_56.mcpack), textures/blocks/red_sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/sandstone_top (RP-03-v1_3_56.mcpack), textures/blocks/stone (RP-03-v1_3_56.mcpack)
+- **stonecutter** — vanilla: textures/blocks/stonecutter_bottom, textures/blocks/stonecutter_other_side · ours: textures/blocks/stonecutter_side (RP-03-v1_3_56.mcpack), textures/blocks/stonecutter_top (RP-03-v1_3_56.mcpack)
+- **stripped_cherry_log** — vanilla: textures/blocks/stripped_cherry_log_side · ours: textures/blocks/stripped_cherry_log_top_v0 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_cherry_log_top_v1 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_cherry_log_top_v2 (RP-03-v1_3_56.mcpack)
+- **stripped_crimson_stem** — vanilla: textures/blocks/huge_fungus/stripped_crimson_stem_side · ours: textures/blocks/stripped_crimson_stem_top (RP-03-v1_3_56.mcpack), textures/blocks/stripped_crimson_stem_top_v1 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_crimson_stem_top_v2 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_crimson_stem_top_v3 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_crimson_stem_top_v4 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_crimson_stem_top_v5 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_crimson_stem_top_v6 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_crimson_stem_top_v7 (RP-03-v1_3_56.mcpack)
+- **stripped_mangrove_log** — vanilla: textures/blocks/stripped_mangrove_log_side · ours: textures/blocks/stripped_mangrove_log_top_v0 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_mangrove_log_top_v1 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_mangrove_log_top_v2 (RP-03-v1_3_56.mcpack)
+- **stripped_pale_oak_log** — vanilla: textures/blocks/stripped_pale_oak_log_side · ours: textures/blocks/stripped_pale_oak_log_top_v0 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_pale_oak_log_top_v1 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_pale_oak_log_top_v2 (RP-03-v1_3_56.mcpack)
+- **stripped_warped_stem** — vanilla: textures/blocks/huge_fungus/stripped_warped_stem_side · ours: textures/blocks/stripped_warped_stem_top (RP-03-v1_3_56.mcpack), textures/blocks/stripped_warped_stem_top_v1 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_warped_stem_top_v2 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_warped_stem_top_v3 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_warped_stem_top_v4 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_warped_stem_top_v5 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_warped_stem_top_v6 (RP-03-v1_3_56.mcpack), textures/blocks/stripped_warped_stem_top_v7 (RP-03-v1_3_56.mcpack)
+- **structure_block** — vanilla: textures/blocks/structure_block_export · ours: textures/blocks/structure_block (RP-03-v1_3_56.mcpack), textures/blocks/structure_block_corner (RP-03-v1_3_56.mcpack), textures/blocks/structure_block_data (RP-03-v1_3_56.mcpack), textures/blocks/structure_block_load (RP-03-v1_3_56.mcpack), textures/blocks/structure_block_save (RP-03-v1_3_56.mcpack)
+- **tripwire_hook** — vanilla: textures/blocks/trip_wire, textures/blocks/trip_wire_source · ours: textures/blocks/planks_oak (RP-04 (build rp04-132))
+- **turtle_egg** — vanilla: textures/blocks/turtle_egg_not_cracked · ours: textures/blocks/turtle_egg_slightly_cracked (RP-03-v1_3_56.mcpack), textures/blocks/turtle_egg_very_cracked (RP-03-v1_3_56.mcpack)
+- **twisting_vines** — vanilla: textures/blocks/twisting_vines_base · ours: textures/blocks/twisting_vines_bottom (RP-01-v1_3_102.mcpack)
+- **unpowered_comparator** — vanilla: textures/blocks/comparator_off, textures/blocks/stone_slab_top · ours: textures/blocks/comparator_on (RP-03-v1_3_56.mcpack)
+- **unpowered_repeater** — vanilla: textures/blocks/repeater_off, textures/blocks/stone_slab_top · ours: textures/blocks/repeater_on (RP-03-v1_3_56.mcpack)
+- **warped_roots** — vanilla: textures/blocks/warped_roots_pot · ours: textures/blocks/warped_roots (RP-05-v1_3_46.mcpack)
+- **warped_stem** — vanilla: textures/blocks/huge_fungus/warped_stem_side · ours: textures/blocks/warped_stem_top (RP-03-v1_3_56.mcpack), textures/blocks/warped_stem_top_v1 (RP-03-v1_3_56.mcpack), textures/blocks/warped_stem_top_v2 (RP-03-v1_3_56.mcpack), textures/blocks/warped_stem_top_v3 (RP-03-v1_3_56.mcpack), textures/blocks/warped_stem_top_v4 (RP-03-v1_3_56.mcpack), textures/blocks/warped_stem_top_v5 (RP-03-v1_3_56.mcpack), textures/blocks/warped_stem_top_v6 (RP-03-v1_3_56.mcpack), textures/blocks/warped_stem_top_v7 (RP-03-v1_3_56.mcpack)
+- **waxed_exposed_lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/exposed_lightning_rod (RP-03-v1_3_56.mcpack)
+- **waxed_lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/lightning_rod (RP-03-v1_3_56.mcpack)
+- **waxed_oxidized_lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/oxidized_lightning_rod (RP-03-v1_3_56.mcpack)
+- **waxed_weathered_lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/weathered_lightning_rod (RP-03-v1_3_56.mcpack)
+- **weathered_lightning_rod** — vanilla: textures/blocks/lightning_rod_powered · ours: textures/blocks/weathered_lightning_rod (RP-03-v1_3_56.mcpack)
+- **weeping_vines** — vanilla: textures/blocks/weeping_vines_base · ours: textures/blocks/weeping_vines_bottom (RP-01-v1_3_102.mcpack)
+- **wooden_door** — vanilla: textures/blocks/door_iron_lower, textures/blocks/door_iron_upper · ours: textures/blocks/door_acacia_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_acacia_upper (RP-04 (build rp04-132)), textures/blocks/door_birch_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_birch_upper (RP-04 (build rp04-132)), textures/blocks/door_dark_oak_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_dark_oak_upper (RP-04 (build rp04-132)), textures/blocks/door_jungle_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_jungle_upper (RP-04 (build rp04-132)), textures/blocks/door_spruce_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_spruce_upper (RP-04 (build rp04-132)), textures/blocks/door_wood_lower (RP-03-v1_3_56.mcpack), textures/blocks/door_wood_upper (RP-04 (build rp04-132))
+
+## BROKEN (a slot resolves to a key or file that exists nowhere)
+
+## ALL-VANILLA blocks (no HD texture at all)
+292: activator_rail, allow, andesite_wall, anvil, barrier, beetroot, black_shulker_box, black_stained_glass, black_stained_glass_pane, black_wool_double_slab, black_wool_slab, black_wool_stairs, blue_shulker_box, blue_stained_glass, blue_stained_glass_pane, blue_wool_double_slab, blue_wool_slab, blue_wool_stairs, border_block, brick_double_slab, brick_slab, brick_wall, brown_shulker_box, brown_stained_glass, brown_stained_glass_pane, brown_wool_double_slab, brown_wool_slab, brown_wool_stairs, camera, campfire, candle, carpet, chain, chain_command_block, chest, chipped_anvil, chiseled_cinnabar, chiseled_quartz_block, chiseled_sulfur, cinnabar, cinnabar_brick_double_slab, cinnabar_brick_slab, cinnabar_brick_stairs, cinnabar_brick_wall, cinnabar_bricks, cinnabar_double_slab, cinnabar_slab, cinnabar_stairs, cinnabar_wall, closed_eyeblossom, cocoa, command_block, concrete, concretePowder, conduit, copper_chain, copper_chest, coral_fan_dead, coral_fan_hang2, coral_fan_hang3, cracked_deepslate_bricks, cracked_deepslate_tiles, crimson_door, crimson_hanging_sign, crimson_hyphae, crimson_standing_sign, crimson_stem, crimson_trapdoor, crimson_wall_sign, cyan_shulker_box, cyan_stained_glass, cyan_stained_glass_pane, cyan_wool_double_slab, cyan_wool_slab, cyan_wool_stairs, damaged_anvil, dark_prismarine, dark_prismarine_double_slab, dark_prismarine_slab, dark_prismarine_stairs, decorated_pot, deny, deprecated_anvil, detector_rail, dried_ghast, end_gateway, end_portal, end_stone_brick_double_slab, end_stone_brick_slab, end_stone_brick_wall, ender_chest, exposed_copper_chain, exposed_copper_chest, frame, glowingobsidian, golden_dandelion, golden_rail, granite_wall, gray_shulker_box, gray_stained_glass, gray_stained_glass_pane, gray_wool_double_slab, gray_wool_slab, gray_wool_stairs, green_shulker_box, green_stained_glass, green_stained_glass_pane, green_wool_double_slab, green_wool_slab, green_wool_stairs, honey_block, honeycomb_block, infested_chiseled_stone_bricks, infested_cracked_stone_bricks, infested_mossy_stone_bricks, info_update, info_update2, light_blue_shulker_box, light_blue_stained_glass, light_blue_stained_glass_pane, light_blue_wool_double_slab, light_blue_wool_slab, light_blue_wool_stairs, light_gray_carpet, light_gray_shulker_box, light_gray_stained_glass, light_gray_stained_glass_pane, light_gray_wool, light_gray_wool_double_slab, light_gray_wool_slab, light_gray_wool_stairs, lime_shulker_box, lime_stained_glass, lime_stained_glass_pane, lime_wool_double_slab, lime_wool_slab, lime_wool_stairs, magenta_shulker_box, magenta_stained_glass, magenta_stained_glass_pane, magenta_wool_double_slab, magenta_wool_slab, magenta_wool_stairs, melon_stem, minecraft:silver_glazed_terracotta, mob_spawner, mossy_stone_brick_stairs, mossy_stone_brick_wall, movingBlock, nether_brick_wall, nether_wart, netherreactor, noteblock, orange_poplar_leaves, orange_shulker_box, orange_stained_glass, orange_stained_glass_pane, orange_wool_double_slab, orange_wool_slab, orange_wool_stairs, oxidized_copper_chain, oxidized_copper_chest, packed_ice, pale_oak_wood, pink_shulker_box, pink_stained_glass, pink_stained_glass_pane, pink_wool_double_slab, pink_wool_slab, pink_wool_stairs, polished_cinnabar, polished_cinnabar_double_slab, polished_cinnabar_slab, polished_cinnabar_stairs, polished_cinnabar_wall, polished_sulfur, polished_sulfur_double_slab, polished_sulfur_slab, polished_sulfur_stairs, polished_sulfur_wall, poplar_button, poplar_door, poplar_double_slab, poplar_fence, poplar_fence_gate, poplar_hanging_sign, poplar_log, poplar_planks, poplar_pressure_plate, poplar_sapling, poplar_shelf, poplar_slab, poplar_stairs, poplar_standing_sign, poplar_trapdoor, poplar_wall_sign, poplar_wood, potatoes, potent_sulfur, prismarine, prismarine_double_slab, prismarine_slab, prismarine_wall, pumpkin_stem, purple_shulker_box, purple_stained_glass, purple_stained_glass_pane, purple_wool_double_slab, purple_wool_slab, purple_wool_stairs, quartz_ore, quartz_pillar, rail, red_nether_brick_wall, red_poplar_leaves, red_sandstone_wall, red_shulker_box, red_stained_glass, red_stained_glass_pane, red_wool_double_slab, red_wool_slab, red_wool_stairs, redstone_lamp, redstone_wire, repeating_command_block, reserved6, resin_clump, sandstone_wall, sapling, shulker_box, silver_glazed_terracotta, slime, soul_campfire, stained_glass, stained_glass_pane, stained_hardened_clay, stonecutter_block, stripped_cherry_wood, stripped_crimson_hyphae, stripped_mangrove_wood, stripped_pale_oak_wood, stripped_poplar_log, stripped_poplar_wood, stripped_warped_hyphae, structure_void, sulfur, sulfur_brick_double_slab, sulfur_brick_slab, sulfur_brick_stairs, sulfur_brick_wall, sulfur_bricks, sulfur_double_slab, sulfur_slab, sulfur_spike, sulfur_stairs, sulfur_wall, torchflower_crop, trapped_chest, tripWire, undyed_shulker_box, warped_door, warped_hanging_sign, warped_hyphae, warped_standing_sign, warped_trapdoor, warped_wall_sign, waxed_copper_chain, waxed_copper_chest, waxed_exposed_copper_chain, waxed_exposed_copper_chest, waxed_oxidized_copper_chain, waxed_oxidized_copper_chest, waxed_weathered_copper_chain, waxed_weathered_copper_chest, weathered_copper_chain, weathered_copper_chest, web, wet_sponge, white_shulker_box, white_stained_glass, white_stained_glass_pane, white_wool_double_slab, white_wool_slab, white_wool_stairs, wool, yellow_poplar_leaves, yellow_shulker_box, yellow_stained_glass, yellow_stained_glass_pane, yellow_wool_double_slab, yellow_wool_slab, yellow_wool_stairs
+
+## Flipbooks (animated atlas tiles) — who defines the winning entry
+- blast_furnace_front_on: defined by RP-04 (build rp04-132) -> textures/blocks/blast_furnace_front_on [RP-03-v1_3_56.mcpack]
+- bubble_column_down_top: defined by VANILLA -> textures/blocks/bubble_column_down_top_d [VANILLA]
+- bubble_column_mid: defined by VANILLA -> textures/blocks/bubble_column_inner_b [VANILLA]
+- bubble_column_outer: defined by VANILLA -> textures/blocks/bubble_column_outer_h [VANILLA]
+- bubble_column_up_top: defined by VANILLA -> textures/blocks/bubble_column_up_top_d [VANILLA]
+- campfire_fire: defined by VANILLA -> textures/blocks/campfire [VANILLA]
+- campfire_log_lit: defined by VANILLA -> textures/blocks/campfire_log_lit [VANILLA]
+- cauldron_water: defined by VANILLA -> textures/blocks/cauldron_water [VANILLA]
+- command_block_back: defined by VANILLA -> textures/blocks/command_block_back [RP-03-v1_3_56.mcpack]
+- command_block_chain_back: defined by VANILLA -> textures/blocks/chain_command_block_back [RP-03-v1_3_56.mcpack]
+- command_block_chain_conditional_side: defined by VANILLA -> textures/blocks/chain_command_block_conditional [VANILLA]
+- command_block_chain_front: defined by VANILLA -> textures/blocks/chain_command_block_front [RP-03-v1_3_56.mcpack]
+- command_block_chain_side: defined by VANILLA -> textures/blocks/chain_command_block_side [RP-03-v1_3_56.mcpack]
+- command_block_conditional_side: defined by VANILLA -> textures/blocks/command_block_conditional [VANILLA]
+- command_block_front: defined by VANILLA -> textures/blocks/command_block_front [RP-03-v1_3_56.mcpack]
+- command_block_repeating_back: defined by VANILLA -> textures/blocks/repeating_command_block_back [RP-03-v1_3_56.mcpack]
+- command_block_repeating_conditional_side: defined by VANILLA -> textures/blocks/repeating_command_block_conditional [VANILLA]
+- command_block_repeating_front: defined by VANILLA -> textures/blocks/repeating_command_block_front [RP-03-v1_3_56.mcpack]
+- command_block_repeating_side: defined by VANILLA -> textures/blocks/repeating_command_block_side [RP-03-v1_3_56.mcpack]
+- command_block_side: defined by VANILLA -> textures/blocks/command_block_side [RP-03-v1_3_56.mcpack]
+- copper_lantern: defined by RP-04 (build rp04-132) -> textures/blocks/copper_lantern [RP-03-v1_3_56.mcpack]
+- copper_torch: defined by RP-10-v1_3_39.mcpack -> textures/blocks/copper_torch [RP-10-v1_3_39.mcpack]
+- crimson_log_side: defined by VANILLA -> textures/blocks/huge_fungus/crimson_log_side [VANILLA]
+- exposed_copper_lantern: defined by RP-04 (build rp04-132) -> textures/blocks/exposed_copper_lantern [RP-03-v1_3_56.mcpack]
+- fern: defined by RP-01-v1_3_102.mcpack -> textures/blocks/fern [RP-01-v1_3_102.mcpack]
+- fire_0: defined by RP-10-v1_3_39.mcpack -> textures/blocks/fire_0_d [RP-10-v1_3_39.mcpack]
+- fire_1: defined by RP-10-v1_3_39.mcpack -> textures/blocks/fire_1_d [RP-10-v1_3_39.mcpack]
+- firefly_bush: defined by VANILLA -> textures/blocks/firefly_bush_firefly [VANILLA]
+- firefly_bush_emissive: defined by RP-05-v1_3_46.mcpack -> textures/blocks/firefly_bush_emissive [RP-05-v1_3_46.mcpack]
+- flowing_lava: defined by VANILLA -> textures/blocks/lava_flow [RP-03-v1_3_56.mcpack]
+- flowing_water_grey: defined by VANILLA -> textures/blocks/water_flow_grey [RP-02-v2_0_1.mcpack]
+- furnace_front_on: defined by RP-04 (build rp04-132) -> textures/blocks/furnace_front_on [RP-03-v1_3_56.mcpack]
+- kelp: defined by RP-03-v1_3_56.mcpack -> textures/blocks/kelp [RP-05-v1_3_46.mcpack]
+- kelp_a: defined by RP-05-v1_3_46.mcpack -> textures/blocks/kelp_a [RP-05-v1_3_46.mcpack]
+- kelp_b: defined by RP-05-v1_3_46.mcpack -> textures/blocks/kelp_a [RP-05-v1_3_46.mcpack]
+- kelp_c: defined by RP-05-v1_3_46.mcpack -> textures/blocks/kelp_a [RP-05-v1_3_46.mcpack]
+- kelp_d: defined by RP-05-v1_3_46.mcpack -> textures/blocks/kelp_a [RP-05-v1_3_46.mcpack]
+- kelp_plant: defined by RP-03-v1_3_56.mcpack -> textures/blocks/kelp [RP-05-v1_3_46.mcpack]
+- kelp_top: defined by RP-05-v1_3_46.mcpack -> textures/blocks/kelp_top [RP-05-v1_3_46.mcpack]
+- kelp_top_bulb: defined by RP-05-v1_3_46.mcpack -> textures/blocks/kelp_top [RP-05-v1_3_46.mcpack]
+- lantern: defined by RP-04 (build rp04-132) -> textures/blocks/lantern [RP-03-v1_3_56.mcpack]
+- lava_flow: defined by RP-04 (build rp04-132) -> textures/blocks/lava_flow [RP-03-v1_3_56.mcpack]
+- lava_still: defined by RP-04 (build rp04-132) -> textures/blocks/lava_still [RP-03-v1_3_56.mcpack]
+- lava_still_v1: defined by RP-04 (build rp04-132) -> textures/blocks/lava_still_v1 [RP-03-v1_3_56.mcpack]
+- lava_still_v2: defined by RP-04 (build rp04-132) -> textures/blocks/lava_still_v2 [RP-03-v1_3_56.mcpack]
+- lava_still_v3: defined by RP-04 (build rp04-132) -> textures/blocks/lava_still_v3 [RP-03-v1_3_56.mcpack]
+- lava_still_v4: defined by RP-04 (build rp04-132) -> textures/blocks/lava_still_v4 [RP-03-v1_3_56.mcpack]
+- magma: defined by VANILLA -> textures/blocks/magma [RP-03-v1_3_56.mcpack]
+- nether_wart_stage_2: defined by RP-05-v1_3_46.mcpack -> textures/blocks/nether_wart_stage2 [RP-05-v1_3_46.mcpack]
+- oxidized_copper_lantern: defined by RP-04 (build rp04-132) -> textures/blocks/oxidized_copper_lantern [RP-03-v1_3_56.mcpack]
+- portal: defined by RP-04 (build rp04-132) -> textures/blocks/nether_portal [RP-04 (build rp04-132)]
+- prismarine: defined by VANILLA -> textures/blocks/prismarine_rough [VANILLA]
+- pw_acacia_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_acacia_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_acacia_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v1_n [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v2_n [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v3_n [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v4_n [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_birch_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_birch_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v1_mer [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v2_mer [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v3_mer [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_cherry_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_cherry_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v1_mer [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v1_n [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v2_mer [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v2_n [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v3_mer [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v3_n [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v4_n [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_dark_oak_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_dark_oak_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_hearth_flame: defined by RP-04 (build rp04-132) -> textures/blocks/pw_hearth_flame [RP-04 (build rp04-132)]
+- pw_hearth_flame_low: defined by RP-04 (build rp04-132) -> textures/blocks/pw_hearth_flame_low [RP-04 (build rp04-132)]
+- pw_jungle_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v1_mer [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v1_n [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v2_mer [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v2_n [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v3_mer [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v3_n [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v4_n [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_jungle_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_jungle_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v1_mer [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v2_mer [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v3_mer [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_mangrove_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_mangrove_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v1_n [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v2_n [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v3_n [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v4_n [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_oak_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_oak_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v1_n [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v2_n [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v3_n [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v4_n [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_pale_oak_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_pale_oak_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v0: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v0 [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v0_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v0_mer [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v0_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v0_n [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v1: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v1 [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v1_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v1_mer [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v1_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v1_n [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v2: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v2 [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v2_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v2_mer [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v2_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v2_n [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v3: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v3 [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v3_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v3_mer [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v3_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v3_n [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v4: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v4 [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v4_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v4_mer [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v4_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v4_n [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v5: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v5 [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v5_mer: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v5_mer [RP-01-v1_3_102.mcpack]
+- pw_spruce_leaves_v5_n: defined by RP-01-v1_3_102.mcpack -> textures/blocks/pw_spruce_leaves_v5_n [RP-01-v1_3_102.mcpack]
+- respawn_anchor_top: defined by RP-04 (build rp04-132) -> textures/blocks/respawn_anchor_top [RP-03-v1_3_56.mcpack]
+- sculk: defined by VANILLA -> textures/blocks/sculk [RP-03-v1_3_56.mcpack]
+- sculk_catalyst_side: defined by VANILLA -> textures/blocks/sculk_catalyst_side_bloom [VANILLA]
+- sculk_catalyst_top: defined by VANILLA -> textures/blocks/sculk_catalyst_top_bloom [VANILLA]
+- sculk_sensor_tendril_active: defined by RP-04 (build rp04-132) -> textures/blocks/sculk_sensor_tendril_active [RP-03-v1_3_56.mcpack]
+- sculk_sensor_tendril_inactive: defined by RP-04 (build rp04-132) -> textures/blocks/sculk_sensor_tendril_inactive [RP-03-v1_3_56.mcpack]
+- sculk_shrieker_can_summon_inner_top: defined by RP-04 (build rp04-132) -> textures/blocks/sculk_shrieker_can_summon_inner_top [RP-03-v1_3_56.mcpack]
+- sculk_shrieker_inner_top: defined by VANILLA -> textures/blocks/sculk_shrieker_can_summon_inner_top [RP-03-v1_3_56.mcpack]
+- sculk_vein: defined by VANILLA -> textures/blocks/sculk_vein [RP-03-v1_3_56.mcpack]
+- sea_lantern: defined by RP-04 (build rp04-132) -> textures/blocks/sea_lantern [RP-03-v1_3_56.mcpack]
+- seagrass: defined by RP-03-v1_3_56.mcpack -> textures/blocks/seagrass [RP-05-v1_3_46.mcpack]
+- seagrass_short: defined by RP-05-v1_3_46.mcpack -> textures/blocks/seagrass [RP-05-v1_3_46.mcpack]
+- seagrass_tall_bot_a: defined by RP-05-v1_3_46.mcpack -> textures/blocks/seagrass_doubletall_bottom_a [RP-05-v1_3_46.mcpack]
+- seagrass_tall_bot_b: defined by RP-05-v1_3_46.mcpack -> textures/blocks/seagrass_doubletall_bottom_a [RP-05-v1_3_46.mcpack]
+- seagrass_tall_top_a: defined by RP-05-v1_3_46.mcpack -> textures/blocks/seagrass_doubletall_top_a [RP-05-v1_3_46.mcpack]
+- seagrass_tall_top_b: defined by RP-05-v1_3_46.mcpack -> textures/blocks/seagrass_doubletall_top_a [RP-05-v1_3_46.mcpack]
+- short_dry_grass: defined by RP-01-v1_3_102.mcpack -> textures/blocks/short_dry_grass [RP-01-v1_3_102.mcpack]
+- short_grass: defined by RP-01-v1_3_102.mcpack -> textures/blocks/short_grass [RP-01-v1_3_102.mcpack]
+- smoker_front_on: defined by RP-04 (build rp04-132) -> textures/blocks/smoker_front_on [RP-03-v1_3_56.mcpack]
+- soul_campfire_fire: defined by VANILLA -> textures/blocks/soul_campfire [VANILLA]
+- soul_campfire_log_lit: defined by VANILLA -> textures/blocks/soul_campfire_log_lit [VANILLA]
+- soul_fire_0: defined by RP-10-v1_3_39.mcpack -> textures/blocks/soul_fire_0 [RP-10-v1_3_39.mcpack]
+- soul_fire_1: defined by RP-10-v1_3_39.mcpack -> textures/blocks/soul_fire_1 [RP-10-v1_3_39.mcpack]
+- soul_lantern: defined by RP-04 (build rp04-132) -> textures/blocks/soul_lantern [RP-03-v1_3_56.mcpack]
+- soul_torch: defined by RP-10-v1_3_39.mcpack -> textures/blocks/soul_torch [RP-10-v1_3_39.mcpack]
+- still_lava: defined by VANILLA -> textures/blocks/lava_still [RP-03-v1_3_56.mcpack]
+- still_water_grey: defined by VANILLA -> textures/blocks/water_still_grey [RP-02-v2_0_1.mcpack]
+- stonecutter2_saw: defined by VANILLA -> textures/blocks/stonecutter2_saw [VANILLA]
+- stonecutter_saw: defined by RP-04 (build rp04-132) -> textures/blocks/stonecutter_saw [RP-03-v1_3_56.mcpack]
+- tall_dry_grass: defined by RP-01-v1_3_102.mcpack -> textures/blocks/tall_dry_grass [RP-01-v1_3_102.mcpack]
+- tall_grass_bottom: defined by RP-01-v1_3_102.mcpack -> textures/blocks/tall_grass_bottom [RP-01-v1_3_102.mcpack]
+- tall_grass_top: defined by RP-01-v1_3_102.mcpack -> textures/blocks/tall_grass_top [RP-01-v1_3_102.mcpack]
+- tall_seagrass_bottom: defined by RP-03-v1_3_56.mcpack -> textures/blocks/tall_seagrass_bottom [RP-05-v1_3_46.mcpack]
+- tall_seagrass_top: defined by RP-03-v1_3_56.mcpack -> textures/blocks/tall_seagrass_top [RP-05-v1_3_46.mcpack]
+- tallgrass: defined by RP-01-v1_3_102.mcpack -> textures/blocks/tallgrass [RP-01-v1_3_102.mcpack]
+- torch_on: defined by RP-10-v1_3_39.mcpack -> textures/blocks/torch [RP-10-v1_3_39.mcpack]
+- warped_stem_side: defined by VANILLA -> textures/blocks/huge_fungus/warped_stem_side [VANILLA]
+- weathered_copper_lantern: defined by RP-04 (build rp04-132) -> textures/blocks/weathered_copper_lantern [RP-03-v1_3_56.mcpack]

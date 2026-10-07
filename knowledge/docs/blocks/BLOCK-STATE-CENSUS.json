@@ -1,0 +1,9392 @@
+[
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:acacia_leaves",
+  "file": "blocks/acacia_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:azalea_leaves",
+  "file": "blocks/azalea_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_leaves",
+  "file": "blocks/birch_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_mature",
+  "file": "blocks/birch_mature.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_old",
+  "file": "blocks/birch_old.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_young",
+  "file": "blocks/birch_young.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:black_terracotta_tiles",
+  "file": "blocks/black_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:blue_terracotta_tiles",
+  "file": "blocks/blue_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:brown_terracotta_tiles",
+  "file": "blocks/brown_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:builders_table",
+  "file": "blocks/builders_table.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:cherry_leaves",
+  "file": "blocks/cherry_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:compass_ref",
+  "file": "blocks/compass_ref.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:crown_ring_oak",
+  "file": "blocks/crown_ring_oak.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:ring_form",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 5
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:crown_ring_spruce",
+  "file": "blocks/crown_ring_spruce.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:ring_form",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 5
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:crown_ring_stone",
+  "file": "blocks/crown_ring_stone.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:ring_form",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 5
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:cyan_terracotta_tiles",
+  "file": "blocks/cyan_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:dark_oak_elder",
+  "file": "blocks/dark_oak_elder.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:dark_oak_leaves",
+  "file": "blocks/dark_oak_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:disc_1",
+  "file": "blocks/disc_1.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:disc_2",
+  "file": "blocks/disc_2.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:fcube_boxuv",
+  "file": "blocks/fcube_boxuv.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:fcube_perface",
+  "file": "blocks/fcube_perface.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flowering_azalea_leaves",
+  "file": "blocks/flowering_azalea_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:gray_terracotta_tiles",
+  "file": "blocks/gray_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:green_terracotta_tiles",
+  "file": "blocks/green_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:held_light",
+  "file": "blocks/held_light.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_elder",
+  "file": "blocks/jungle_elder.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_leaves",
+  "file": "blocks/jungle_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_mature",
+  "file": "blocks/jungle_mature.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_old",
+  "file": "blocks/jungle_old.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_young",
+  "file": "blocks/jungle_young.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:light_blue_terracotta_tiles",
+  "file": "blocks/light_blue_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:light_gray_terracotta_tiles",
+  "file": "blocks/light_gray_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:lime_terracotta_tiles",
+  "file": "blocks/lime_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:magenta_terracotta_tiles",
+  "file": "blocks/magenta_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:mangrove_leaves",
+  "file": "blocks/mangrove_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_elder",
+  "file": "blocks/oak_elder.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_leaves",
+  "file": "blocks/oak_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_mature",
+  "file": "blocks/oak_mature.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_old",
+  "file": "blocks/oak_old.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_young",
+  "file": "blocks/oak_young.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:orange_terracotta_tiles",
+  "file": "blocks/orange_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:pale_oak_elder",
+  "file": "blocks/pale_oak_elder.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:pale_oak_leaves",
+  "file": "blocks/pale_oak_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:pink_terracotta_tiles",
+  "file": "blocks/pink_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:purple_terracotta_tiles",
+  "file": "blocks/purple_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:angled_wall",
+  "file": "blocks/pw_angled_wall.json",
+  "perms": 52,
+  "states": [
+   [
+    "pw:material",
+    13
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 17
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:crimson_nylium",
+  "file": "blocks/pw_crimson_nylium.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 16
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_acacia_planks",
+  "file": "blocks/pw_flue_acacia_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_andesite",
+  "file": "blocks/pw_flue_andesite.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_bamboo_planks",
+  "file": "blocks/pw_flue_bamboo_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_birch_planks",
+  "file": "blocks/pw_flue_birch_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_blackstone",
+  "file": "blocks/pw_flue_blackstone.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_brick",
+  "file": "blocks/pw_flue_brick.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_calcite",
+  "file": "blocks/pw_flue_calcite.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_cherry_planks",
+  "file": "blocks/pw_flue_cherry_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_chiseled_stone_bricks",
+  "file": "blocks/pw_flue_chiseled_stone_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_clay",
+  "file": "blocks/pw_flue_clay.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_coarse_dirt",
+  "file": "blocks/pw_flue_coarse_dirt.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_cobbled_deepslate",
+  "file": "blocks/pw_flue_cobbled_deepslate.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_cobblestone",
+  "file": "blocks/pw_flue_cobblestone.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_copper_block",
+  "file": "blocks/pw_flue_copper_block.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_cracked_stone_bricks",
+  "file": "blocks/pw_flue_cracked_stone_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_dark_oak_planks",
+  "file": "blocks/pw_flue_dark_oak_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_deepslate",
+  "file": "blocks/pw_flue_deepslate.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_deepslate_bricks",
+  "file": "blocks/pw_flue_deepslate_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_deepslate_tiles",
+  "file": "blocks/pw_flue_deepslate_tiles.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_diorite",
+  "file": "blocks/pw_flue_diorite.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_dirt",
+  "file": "blocks/pw_flue_dirt.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_dripstone_block",
+  "file": "blocks/pw_flue_dripstone_block.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_end_bricks",
+  "file": "blocks/pw_flue_end_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_granite",
+  "file": "blocks/pw_flue_granite.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_hardened_clay",
+  "file": "blocks/pw_flue_hardened_clay.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_jungle_planks",
+  "file": "blocks/pw_flue_jungle_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_mangrove_planks",
+  "file": "blocks/pw_flue_mangrove_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_mossy_stone_bricks",
+  "file": "blocks/pw_flue_mossy_stone_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_mud",
+  "file": "blocks/pw_flue_mud.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_mud_bricks",
+  "file": "blocks/pw_flue_mud_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_nether_brick",
+  "file": "blocks/pw_flue_nether_brick.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_oak_planks",
+  "file": "blocks/pw_flue_oak_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_packed_mud",
+  "file": "blocks/pw_flue_packed_mud.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_pale_oak_planks",
+  "file": "blocks/pw_flue_pale_oak_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_polished_andesite",
+  "file": "blocks/pw_flue_polished_andesite.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_polished_blackstone",
+  "file": "blocks/pw_flue_polished_blackstone.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_polished_blackstone_bricks",
+  "file": "blocks/pw_flue_polished_blackstone_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_polished_deepslate",
+  "file": "blocks/pw_flue_polished_deepslate.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_polished_diorite",
+  "file": "blocks/pw_flue_polished_diorite.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_polished_granite",
+  "file": "blocks/pw_flue_polished_granite.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_polished_tuff",
+  "file": "blocks/pw_flue_polished_tuff.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_purpur_block",
+  "file": "blocks/pw_flue_purpur_block.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_quartz_block",
+  "file": "blocks/pw_flue_quartz_block.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_red_sandstone",
+  "file": "blocks/pw_flue_red_sandstone.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_sandstone",
+  "file": "blocks/pw_flue_sandstone.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_smooth_stone",
+  "file": "blocks/pw_flue_smooth_stone.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_spruce_planks",
+  "file": "blocks/pw_flue_spruce_planks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_stone",
+  "file": "blocks/pw_flue_stone.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_stone_bricks",
+  "file": "blocks/pw_flue_stone_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_tuff",
+  "file": "blocks/pw_flue_tuff.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_tuff_bricks",
+  "file": "blocks/pw_flue_tuff_bricks.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_white_concrete",
+  "file": "blocks/pw_flue_white_concrete.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:flue_white_terracotta",
+  "file": "blocks/pw_flue_white_terracotta.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:cap",
+    2
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_barrel_seat_dark_oak",
+  "file": "blocks/pw_furn_barrel_seat_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_barrel_seat_oak",
+  "file": "blocks/pw_furn_barrel_seat_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_barrel_seat_spruce",
+  "file": "blocks/pw_furn_barrel_seat_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_bench_dark_oak",
+  "file": "blocks/pw_furn_bench_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_bench_oak",
+  "file": "blocks/pw_furn_bench_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_bench_spruce",
+  "file": "blocks/pw_furn_bench_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_chair_dark_oak",
+  "file": "blocks/pw_furn_chair_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_chair_oak",
+  "file": "blocks/pw_furn_chair_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_chair_spruce",
+  "file": "blocks/pw_furn_chair_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_coat_pegs_dark_oak",
+  "file": "blocks/pw_furn_coat_pegs_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_coat_pegs_oak",
+  "file": "blocks/pw_furn_coat_pegs_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_coat_pegs_spruce",
+  "file": "blocks/pw_furn_coat_pegs_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_cupboard_dark_oak",
+  "file": "blocks/pw_furn_cupboard_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_cupboard_oak",
+  "file": "blocks/pw_furn_cupboard_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_cupboard_spruce",
+  "file": "blocks/pw_furn_cupboard_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_dresser_dark_oak",
+  "file": "blocks/pw_furn_dresser_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_dresser_oak",
+  "file": "blocks/pw_furn_dresser_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_dresser_spruce",
+  "file": "blocks/pw_furn_dresser_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_mantel_dark_oak",
+  "file": "blocks/pw_furn_mantel_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_mantel_oak",
+  "file": "blocks/pw_furn_mantel_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_mantel_spruce",
+  "file": "blocks/pw_furn_mantel_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_shelf_dark_oak",
+  "file": "blocks/pw_furn_shelf_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_shelf_oak",
+  "file": "blocks/pw_furn_shelf_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_shelf_spruce",
+  "file": "blocks/pw_furn_shelf_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_stool_dark_oak",
+  "file": "blocks/pw_furn_stool_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_stool_oak",
+  "file": "blocks/pw_furn_stool_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_stool_spruce",
+  "file": "blocks/pw_furn_stool_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_table_dark_oak",
+  "file": "blocks/pw_furn_table_dark_oak.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:n",
+    2
+   ],
+   [
+    "pw:e",
+    2
+   ],
+   [
+    "pw:s",
+    2
+   ],
+   [
+    "pw:w",
+    2
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 15
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_table_oak",
+  "file": "blocks/pw_furn_table_oak.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:n",
+    2
+   ],
+   [
+    "pw:e",
+    2
+   ],
+   [
+    "pw:s",
+    2
+   ],
+   [
+    "pw:w",
+    2
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 15
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_table_spruce",
+  "file": "blocks/pw_furn_table_spruce.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:n",
+    2
+   ],
+   [
+    "pw:e",
+    2
+   ],
+   [
+    "pw:s",
+    2
+   ],
+   [
+    "pw:w",
+    2
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 15
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_trestle_dark_oak",
+  "file": "blocks/pw_furn_trestle_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_trestle_oak",
+  "file": "blocks/pw_furn_trestle_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_trestle_spruce",
+  "file": "blocks/pw_furn_trestle_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_wall_shelf_dark_oak",
+  "file": "blocks/pw_furn_wall_shelf_dark_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_wall_shelf_oak",
+  "file": "blocks/pw_furn_wall_shelf_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:furn_wall_shelf_spruce",
+  "file": "blocks/pw_furn_wall_shelf_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "furniture",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:grass_block",
+  "file": "blocks/pw_grass_block.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ]
+  ],
+  "family": "plants",
+  "permutation_rules": 16
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_acacia_planks",
+  "file": "blocks/pw_hearth_acacia_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_andesite",
+  "file": "blocks/pw_hearth_andesite.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_bamboo_planks",
+  "file": "blocks/pw_hearth_bamboo_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_birch_planks",
+  "file": "blocks/pw_hearth_birch_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_blackstone",
+  "file": "blocks/pw_hearth_blackstone.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_brick",
+  "file": "blocks/pw_hearth_brick.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_calcite",
+  "file": "blocks/pw_hearth_calcite.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_cherry_planks",
+  "file": "blocks/pw_hearth_cherry_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_chiseled_stone_bricks",
+  "file": "blocks/pw_hearth_chiseled_stone_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_clay",
+  "file": "blocks/pw_hearth_clay.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_coarse_dirt",
+  "file": "blocks/pw_hearth_coarse_dirt.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_cobbled_deepslate",
+  "file": "blocks/pw_hearth_cobbled_deepslate.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_cobblestone",
+  "file": "blocks/pw_hearth_cobblestone.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_copper_block",
+  "file": "blocks/pw_hearth_copper_block.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_cracked_stone_bricks",
+  "file": "blocks/pw_hearth_cracked_stone_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_dark_oak_planks",
+  "file": "blocks/pw_hearth_dark_oak_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_deepslate",
+  "file": "blocks/pw_hearth_deepslate.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_deepslate_bricks",
+  "file": "blocks/pw_hearth_deepslate_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_deepslate_tiles",
+  "file": "blocks/pw_hearth_deepslate_tiles.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_diorite",
+  "file": "blocks/pw_hearth_diorite.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_dirt",
+  "file": "blocks/pw_hearth_dirt.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_dripstone_block",
+  "file": "blocks/pw_hearth_dripstone_block.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_end_bricks",
+  "file": "blocks/pw_hearth_end_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_granite",
+  "file": "blocks/pw_hearth_granite.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_hardened_clay",
+  "file": "blocks/pw_hearth_hardened_clay.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_jungle_planks",
+  "file": "blocks/pw_hearth_jungle_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_mangrove_planks",
+  "file": "blocks/pw_hearth_mangrove_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_mossy_stone_bricks",
+  "file": "blocks/pw_hearth_mossy_stone_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_mud",
+  "file": "blocks/pw_hearth_mud.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_mud_bricks",
+  "file": "blocks/pw_hearth_mud_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_nether_brick",
+  "file": "blocks/pw_hearth_nether_brick.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_oak_planks",
+  "file": "blocks/pw_hearth_oak_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_packed_mud",
+  "file": "blocks/pw_hearth_packed_mud.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_pale_oak_planks",
+  "file": "blocks/pw_hearth_pale_oak_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_polished_andesite",
+  "file": "blocks/pw_hearth_polished_andesite.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_polished_blackstone",
+  "file": "blocks/pw_hearth_polished_blackstone.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_polished_blackstone_bricks",
+  "file": "blocks/pw_hearth_polished_blackstone_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_polished_deepslate",
+  "file": "blocks/pw_hearth_polished_deepslate.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_polished_diorite",
+  "file": "blocks/pw_hearth_polished_diorite.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_polished_granite",
+  "file": "blocks/pw_hearth_polished_granite.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_polished_tuff",
+  "file": "blocks/pw_hearth_polished_tuff.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_purpur_block",
+  "file": "blocks/pw_hearth_purpur_block.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_quartz_block",
+  "file": "blocks/pw_hearth_quartz_block.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_red_sandstone",
+  "file": "blocks/pw_hearth_red_sandstone.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_sandstone",
+  "file": "blocks/pw_hearth_sandstone.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_smooth_stone",
+  "file": "blocks/pw_hearth_smooth_stone.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_spruce_planks",
+  "file": "blocks/pw_hearth_spruce_planks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_stone",
+  "file": "blocks/pw_hearth_stone.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_stone_bricks",
+  "file": "blocks/pw_hearth_stone_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_tuff",
+  "file": "blocks/pw_hearth_tuff.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_tuff_bricks",
+  "file": "blocks/pw_hearth_tuff_bricks.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_white_concrete",
+  "file": "blocks/pw_hearth_white_concrete.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:hearth_white_terracotta",
+  "file": "blocks/pw_hearth_white_terracotta.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:phase",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:mycelium",
+  "file": "blocks/pw_mycelium.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 16
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:acacia_planks_grid",
+  "file": "blocks/pw_planks_grid_acacia.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_planks_grid",
+  "file": "blocks/pw_planks_grid_birch.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:cherry_planks_grid",
+  "file": "blocks/pw_planks_grid_cherry.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:crimson_planks_grid",
+  "file": "blocks/pw_planks_grid_crimson.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:dark_oak_planks_grid",
+  "file": "blocks/pw_planks_grid_dark_oak.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_planks_grid",
+  "file": "blocks/pw_planks_grid_jungle.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:mangrove_planks_grid",
+  "file": "blocks/pw_planks_grid_mangrove.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_planks_grid",
+  "file": "blocks/pw_planks_grid_oak.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:pale_oak_planks_grid",
+  "file": "blocks/pw_planks_grid_pale_oak.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_planks_grid",
+  "file": "blocks/pw_planks_grid_spruce.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:warped_planks_grid",
+  "file": "blocks/pw_planks_grid_warped.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:gx",
+    4
+   ],
+   [
+    "pw:gy",
+    4
+   ],
+   [
+    "pw:gz",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:podzol",
+  "file": "blocks/pw_podzol.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 16
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:rafter45_oak",
+  "file": "blocks/pw_rafter45_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:rafter45_spruce",
+  "file": "blocks/pw_rafter45_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_cobble_2_hi",
+  "file": "blocks/pw_ramp_cobble_2_hi.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_cobble_2_lo",
+  "file": "blocks/pw_ramp_cobble_2_lo.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_cobble_4_q1",
+  "file": "blocks/pw_ramp_cobble_4_q1.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_cobble_4_q2",
+  "file": "blocks/pw_ramp_cobble_4_q2.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_cobble_4_q3",
+  "file": "blocks/pw_ramp_cobble_4_q3.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_cobble_4_q4",
+  "file": "blocks/pw_ramp_cobble_4_q4.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_smooth_stone_2_hi",
+  "file": "blocks/pw_ramp_smooth_stone_2_hi.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_smooth_stone_2_lo",
+  "file": "blocks/pw_ramp_smooth_stone_2_lo.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_smooth_stone_4_q1",
+  "file": "blocks/pw_ramp_smooth_stone_4_q1.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_smooth_stone_4_q2",
+  "file": "blocks/pw_ramp_smooth_stone_4_q2.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_smooth_stone_4_q3",
+  "file": "blocks/pw_ramp_smooth_stone_4_q3.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_smooth_stone_4_q4",
+  "file": "blocks/pw_ramp_smooth_stone_4_q4.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_stonebrick_2_hi",
+  "file": "blocks/pw_ramp_stonebrick_2_hi.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_stonebrick_2_lo",
+  "file": "blocks/pw_ramp_stonebrick_2_lo.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_stonebrick_4_q1",
+  "file": "blocks/pw_ramp_stonebrick_4_q1.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_stonebrick_4_q2",
+  "file": "blocks/pw_ramp_stonebrick_4_q2.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_stonebrick_4_q3",
+  "file": "blocks/pw_ramp_stonebrick_4_q3.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:ramp_stonebrick_4_q4",
+  "file": "blocks/pw_ramp_stonebrick_4_q4.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:var",
+    8
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "ground / stone",
+  "permutation_rules": 160
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_acacia_stairs",
+  "file": "blocks/pw_seated_acacia_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_allium",
+  "file": "blocks/pw_seated_allium.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_andesite_stairs",
+  "file": "blocks/pw_seated_andesite_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_azure_bluet",
+  "file": "blocks/pw_seated_azure_bluet.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_bamboo_mosaic_stairs",
+  "file": "blocks/pw_seated_bamboo_mosaic_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_bamboo_stairs",
+  "file": "blocks/pw_seated_bamboo_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_birch_stairs",
+  "file": "blocks/pw_seated_birch_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_blackstone_stairs",
+  "file": "blocks/pw_seated_blackstone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_blue_orchid",
+  "file": "blocks/pw_seated_blue_orchid.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_brick_stairs",
+  "file": "blocks/pw_seated_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_cherry_stairs",
+  "file": "blocks/pw_seated_cherry_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_cinnabar_brick_stairs",
+  "file": "blocks/pw_seated_cinnabar_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_cinnabar_stairs",
+  "file": "blocks/pw_seated_cinnabar_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_cobbled_deepslate_stairs",
+  "file": "blocks/pw_seated_cobbled_deepslate_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_cornflower",
+  "file": "blocks/pw_seated_cornflower.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_crimson_stairs",
+  "file": "blocks/pw_seated_crimson_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_cut_copper_stairs",
+  "file": "blocks/pw_seated_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_dandelion",
+  "file": "blocks/pw_seated_dandelion.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_dark_oak_stairs",
+  "file": "blocks/pw_seated_dark_oak_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_dark_prismarine_stairs",
+  "file": "blocks/pw_seated_dark_prismarine_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_deadbush",
+  "file": "blocks/pw_seated_deadbush.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_deepslate_brick_stairs",
+  "file": "blocks/pw_seated_deepslate_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_deepslate_tile_stairs",
+  "file": "blocks/pw_seated_deepslate_tile_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_diorite_stairs",
+  "file": "blocks/pw_seated_diorite_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_double_large_fern",
+  "file": "blocks/pw_seated_double_large_fern.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_double_lilac",
+  "file": "blocks/pw_seated_double_lilac.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_double_peony",
+  "file": "blocks/pw_seated_double_peony.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_double_rose_bush",
+  "file": "blocks/pw_seated_double_rose_bush.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_double_sunflower",
+  "file": "blocks/pw_seated_double_sunflower.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_double_tall_grass",
+  "file": "blocks/pw_seated_double_tall_grass.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_end_brick_stairs",
+  "file": "blocks/pw_seated_end_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_exposed_cut_copper_stairs",
+  "file": "blocks/pw_seated_exposed_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_fern",
+  "file": "blocks/pw_seated_fern.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_granite_stairs",
+  "file": "blocks/pw_seated_granite_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_jungle_stairs",
+  "file": "blocks/pw_seated_jungle_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_lily_of_the_valley",
+  "file": "blocks/pw_seated_lily_of_the_valley.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_mangrove_stairs",
+  "file": "blocks/pw_seated_mangrove_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_mossy_cobblestone_stairs",
+  "file": "blocks/pw_seated_mossy_cobblestone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_mossy_stone_brick_stairs",
+  "file": "blocks/pw_seated_mossy_stone_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_mud_brick_stairs",
+  "file": "blocks/pw_seated_mud_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_nether_brick_stairs",
+  "file": "blocks/pw_seated_nether_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_normal_stone_stairs",
+  "file": "blocks/pw_seated_normal_stone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_oak_stairs",
+  "file": "blocks/pw_seated_oak_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_orange_tulip",
+  "file": "blocks/pw_seated_orange_tulip.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_oxeye_daisy",
+  "file": "blocks/pw_seated_oxeye_daisy.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_oxidized_cut_copper_stairs",
+  "file": "blocks/pw_seated_oxidized_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_pale_oak_stairs",
+  "file": "blocks/pw_seated_pale_oak_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_pink_tulip",
+  "file": "blocks/pw_seated_pink_tulip.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_andesite_stairs",
+  "file": "blocks/pw_seated_polished_andesite_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_blackstone_brick_stairs",
+  "file": "blocks/pw_seated_polished_blackstone_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_blackstone_stairs",
+  "file": "blocks/pw_seated_polished_blackstone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_cinnabar_stairs",
+  "file": "blocks/pw_seated_polished_cinnabar_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_deepslate_stairs",
+  "file": "blocks/pw_seated_polished_deepslate_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_diorite_stairs",
+  "file": "blocks/pw_seated_polished_diorite_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_granite_stairs",
+  "file": "blocks/pw_seated_polished_granite_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_sulfur_stairs",
+  "file": "blocks/pw_seated_polished_sulfur_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_polished_tuff_stairs",
+  "file": "blocks/pw_seated_polished_tuff_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_poppy",
+  "file": "blocks/pw_seated_poppy.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_prismarine_bricks_stairs",
+  "file": "blocks/pw_seated_prismarine_bricks_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_prismarine_stairs",
+  "file": "blocks/pw_seated_prismarine_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_purpur_stairs",
+  "file": "blocks/pw_seated_purpur_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_quartz_stairs",
+  "file": "blocks/pw_seated_quartz_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_red_nether_brick_stairs",
+  "file": "blocks/pw_seated_red_nether_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_red_sandstone_stairs",
+  "file": "blocks/pw_seated_red_sandstone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_red_tulip",
+  "file": "blocks/pw_seated_red_tulip.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_resin_brick_stairs",
+  "file": "blocks/pw_seated_resin_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_sandstone_stairs",
+  "file": "blocks/pw_seated_sandstone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_short_grass",
+  "file": "blocks/pw_seated_short_grass.json",
+  "perms": 1,
+  "states": [],
+  "family": "plants",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_smooth_quartz_stairs",
+  "file": "blocks/pw_seated_smooth_quartz_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_smooth_red_sandstone_stairs",
+  "file": "blocks/pw_seated_smooth_red_sandstone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_smooth_sandstone_stairs",
+  "file": "blocks/pw_seated_smooth_sandstone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_snow",
+  "file": "blocks/pw_seated_snow.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:layers",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_spruce_stairs",
+  "file": "blocks/pw_seated_spruce_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_stone_brick_stairs",
+  "file": "blocks/pw_seated_stone_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_stone_stairs",
+  "file": "blocks/pw_seated_stone_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_sulfur_brick_stairs",
+  "file": "blocks/pw_seated_sulfur_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_sulfur_stairs",
+  "file": "blocks/pw_seated_sulfur_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_tuff_brick_stairs",
+  "file": "blocks/pw_seated_tuff_brick_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_tuff_stairs",
+  "file": "blocks/pw_seated_tuff_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_warped_stairs",
+  "file": "blocks/pw_seated_warped_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_waxed_cut_copper_stairs",
+  "file": "blocks/pw_seated_waxed_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_waxed_exposed_cut_copper_stairs",
+  "file": "blocks/pw_seated_waxed_exposed_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_waxed_oxidized_cut_copper_stairs",
+  "file": "blocks/pw_seated_waxed_oxidized_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_waxed_weathered_cut_copper_stairs",
+  "file": "blocks/pw_seated_waxed_weathered_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_weathered_cut_copper_stairs",
+  "file": "blocks/pw_seated_weathered_cut_copper_stairs.json",
+  "perms": 20,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 20
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:seated_white_tulip",
+  "file": "blocks/pw_seated_white_tulip.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_andesite",
+  "file": "blocks/pw_slab_andesite.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_calcite",
+  "file": "blocks/pw_slab_calcite.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_clay",
+  "file": "blocks/pw_slab_clay.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_coarse_dirt",
+  "file": "blocks/pw_slab_coarse_dirt.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_deepslate",
+  "file": "blocks/pw_slab_deepslate.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_diorite",
+  "file": "blocks/pw_slab_diorite.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_dirt",
+  "file": "blocks/pw_slab_dirt.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_granite",
+  "file": "blocks/pw_slab_granite.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_grass",
+  "file": "blocks/pw_slab_grass.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_gravel",
+  "file": "blocks/pw_slab_gravel.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_moss",
+  "file": "blocks/pw_slab_moss.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_mud",
+  "file": "blocks/pw_slab_mud.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_mycelium",
+  "file": "blocks/pw_slab_mycelium.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_packed_ice",
+  "file": "blocks/pw_slab_packed_ice.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_path",
+  "file": "blocks/pw_slab_path.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_podzol",
+  "file": "blocks/pw_slab_podzol.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_red_sand",
+  "file": "blocks/pw_slab_red_sand.json",
+  "perms": 320,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:gvarx",
+    2
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 125
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_red_sandstone",
+  "file": "blocks/pw_slab_red_sandstone.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_sand",
+  "file": "blocks/pw_slab_sand.json",
+  "perms": 320,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:gvarx",
+    2
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 125
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_sandstone",
+  "file": "blocks/pw_slab_sandstone.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_snow",
+  "file": "blocks/pw_slab_snow.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_stone",
+  "file": "blocks/pw_slab_stone.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta",
+  "file": "blocks/pw_slab_terracotta.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_black",
+  "file": "blocks/pw_slab_terracotta_black.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_blue",
+  "file": "blocks/pw_slab_terracotta_blue.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_brown",
+  "file": "blocks/pw_slab_terracotta_brown.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_cyan",
+  "file": "blocks/pw_slab_terracotta_cyan.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_gray",
+  "file": "blocks/pw_slab_terracotta_gray.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_green",
+  "file": "blocks/pw_slab_terracotta_green.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_light_blue",
+  "file": "blocks/pw_slab_terracotta_light_blue.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_light_gray",
+  "file": "blocks/pw_slab_terracotta_light_gray.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_lime",
+  "file": "blocks/pw_slab_terracotta_lime.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_magenta",
+  "file": "blocks/pw_slab_terracotta_magenta.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_orange",
+  "file": "blocks/pw_slab_terracotta_orange.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_pink",
+  "file": "blocks/pw_slab_terracotta_pink.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_purple",
+  "file": "blocks/pw_slab_terracotta_purple.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_red",
+  "file": "blocks/pw_slab_terracotta_red.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_white",
+  "file": "blocks/pw_slab_terracotta_white.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_terracotta_yellow",
+  "file": "blocks/pw_slab_terracotta_yellow.json",
+  "perms": 80,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:slab_tuff",
+  "file": "blocks/pw_slab_tuff.json",
+  "perms": 160,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 85
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:snowcap_slab",
+  "file": "blocks/pw_snowcap_slab.json",
+  "perms": 4,
+  "states": [
+   [
+    "pw:level",
+    4
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:snowcap_stairs",
+  "file": "blocks/pw_snowcap_stairs.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:facing",
+    4
+   ],
+   [
+    "pw:level",
+    4
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 16
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:vine",
+  "file": "blocks/pw_vine.json",
+  "perms": 384,
+  "states": [
+   [
+    "pw:bits",
+    16
+   ],
+   [
+    "pw:v",
+    12
+   ],
+   [
+    "pw:r",
+    2
+   ]
+  ],
+  "family": "plants",
+  "permutation_rules": 40
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_acacia_planks",
+  "file": "blocks/pw_wall_acacia_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_andesite",
+  "file": "blocks/pw_wall_andesite.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_bamboo_planks",
+  "file": "blocks/pw_wall_bamboo_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_birch_planks",
+  "file": "blocks/pw_wall_birch_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_blackstone",
+  "file": "blocks/pw_wall_blackstone.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_brick",
+  "file": "blocks/pw_wall_brick.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_calcite",
+  "file": "blocks/pw_wall_calcite.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_cherry_planks",
+  "file": "blocks/pw_wall_cherry_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_chiseled_stone_bricks",
+  "file": "blocks/pw_wall_chiseled_stone_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_clay",
+  "file": "blocks/pw_wall_clay.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_coarse_dirt",
+  "file": "blocks/pw_wall_coarse_dirt.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_cobbled_deepslate",
+  "file": "blocks/pw_wall_cobbled_deepslate.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_cobblestone",
+  "file": "blocks/pw_wall_cobblestone.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_copper_block",
+  "file": "blocks/pw_wall_copper_block.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_cracked_stone_bricks",
+  "file": "blocks/pw_wall_cracked_stone_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_dark_oak_planks",
+  "file": "blocks/pw_wall_dark_oak_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_deepslate",
+  "file": "blocks/pw_wall_deepslate.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_deepslate_bricks",
+  "file": "blocks/pw_wall_deepslate_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_deepslate_tiles",
+  "file": "blocks/pw_wall_deepslate_tiles.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_diorite",
+  "file": "blocks/pw_wall_diorite.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_dirt",
+  "file": "blocks/pw_wall_dirt.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_dripstone_block",
+  "file": "blocks/pw_wall_dripstone_block.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_end_bricks",
+  "file": "blocks/pw_wall_end_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_granite",
+  "file": "blocks/pw_wall_granite.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_hardened_clay",
+  "file": "blocks/pw_wall_hardened_clay.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_jungle_planks",
+  "file": "blocks/pw_wall_jungle_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_mangrove_planks",
+  "file": "blocks/pw_wall_mangrove_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_mossy_stone_bricks",
+  "file": "blocks/pw_wall_mossy_stone_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_mud",
+  "file": "blocks/pw_wall_mud.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_mud_bricks",
+  "file": "blocks/pw_wall_mud_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_nether_brick",
+  "file": "blocks/pw_wall_nether_brick.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_oak_planks",
+  "file": "blocks/pw_wall_oak_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_packed_mud",
+  "file": "blocks/pw_wall_packed_mud.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_pale_oak_planks",
+  "file": "blocks/pw_wall_pale_oak_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_polished_andesite",
+  "file": "blocks/pw_wall_polished_andesite.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_polished_blackstone",
+  "file": "blocks/pw_wall_polished_blackstone.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_polished_blackstone_bricks",
+  "file": "blocks/pw_wall_polished_blackstone_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_polished_deepslate",
+  "file": "blocks/pw_wall_polished_deepslate.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_polished_diorite",
+  "file": "blocks/pw_wall_polished_diorite.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_polished_granite",
+  "file": "blocks/pw_wall_polished_granite.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_polished_tuff",
+  "file": "blocks/pw_wall_polished_tuff.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_purpur_block",
+  "file": "blocks/pw_wall_purpur_block.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_quartz_block",
+  "file": "blocks/pw_wall_quartz_block.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_red_sandstone",
+  "file": "blocks/pw_wall_red_sandstone.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_sandstone",
+  "file": "blocks/pw_wall_sandstone.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_smooth_stone",
+  "file": "blocks/pw_wall_smooth_stone.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_spruce_planks",
+  "file": "blocks/pw_wall_spruce_planks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_stone",
+  "file": "blocks/pw_wall_stone.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_stone_bricks",
+  "file": "blocks/pw_wall_stone_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_tuff",
+  "file": "blocks/pw_wall_tuff.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_tuff_bricks",
+  "file": "blocks/pw_wall_tuff_bricks.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_white_concrete",
+  "file": "blocks/pw_wall_white_concrete.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_white_terracotta",
+  "file": "blocks/pw_wall_white_terracotta.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:inner",
+    16
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 64
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:warped_nylium",
+  "file": "blocks/pw_warped_nylium.json",
+  "perms": 16,
+  "states": [
+   [
+    "pw:gvar",
+    16
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 16
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:red_terracotta_tiles",
+  "file": "blocks/red_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof45_oak",
+  "file": "blocks/roof45_oak.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof45_ridge_oak",
+  "file": "blocks/roof45_ridge_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof45_ridge_spruce",
+  "file": "blocks/roof45_ridge_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof45_ridge_thatch",
+  "file": "blocks/roof45_ridge_thatch.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof45_spruce",
+  "file": "blocks/roof45_spruce.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof45_thatch",
+  "file": "blocks/roof45_thatch.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof63_lower_oak",
+  "file": "blocks/roof63_lower_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof63_lower_spruce",
+  "file": "blocks/roof63_lower_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof63_upper_oak",
+  "file": "blocks/roof63_upper_oak.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof63_upper_spruce",
+  "file": "blocks/roof63_upper_spruce.json",
+  "perms": 4,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_gusset_lower_oak",
+  "file": "blocks/roof_gusset_lower_oak.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_gusset_lower_spruce",
+  "file": "blocks/roof_gusset_lower_spruce.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_gusset_upper_oak",
+  "file": "blocks/roof_gusset_upper_oak.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_gusset_upper_spruce",
+  "file": "blocks/roof_gusset_upper_spruce.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_hip_oak",
+  "file": "blocks/roof_hip_oak.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_hip_spruce",
+  "file": "blocks/roof_hip_spruce.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_pyramidion_oak",
+  "file": "blocks/roof_pyramidion_oak.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_pyramidion_spruce",
+  "file": "blocks/roof_pyramidion_spruce.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_ridge_end_oak",
+  "file": "blocks/roof_ridge_end_oak.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:roof_ridge_end_spruce",
+  "file": "blocks/roof_ridge_end_spruce.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:room_wall",
+  "file": "blocks/room_wall.json",
+  "perms": 52,
+  "states": [
+   [
+    "pw:material",
+    13
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 17
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:room_wall_corner",
+  "file": "blocks/room_wall_corner.json",
+  "perms": 52,
+  "states": [
+   [
+    "pw:material",
+    13
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 17
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_mature_root",
+  "file": "blocks/roots/birch_mature_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_old_root",
+  "file": "blocks/roots/birch_old_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_young_root",
+  "file": "blocks/roots/birch_young_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:dark_oak_elder_root",
+  "file": "blocks/roots/dark_oak_elder_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_elder_root",
+  "file": "blocks/roots/jungle_elder_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_mature_root",
+  "file": "blocks/roots/jungle_mature_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_old_root",
+  "file": "blocks/roots/jungle_old_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_young_root",
+  "file": "blocks/roots/jungle_young_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_elder_root",
+  "file": "blocks/roots/oak_elder_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_mature_root",
+  "file": "blocks/roots/oak_mature_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_old_root",
+  "file": "blocks/roots/oak_old_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_young_root",
+  "file": "blocks/roots/oak_young_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:pale_oak_elder_root",
+  "file": "blocks/roots/pale_oak_elder_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_elder_root",
+  "file": "blocks/roots/spruce_elder_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_mature_root",
+  "file": "blocks/roots/spruce_mature_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_old_root",
+  "file": "blocks/roots/spruce_old_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_young_root",
+  "file": "blocks/roots/spruce_young_root.json",
+  "perms": 128,
+  "states": [
+   [
+    "pw:tpl",
+    16
+   ],
+   [
+    "pw:tpl_hi",
+    2
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:rotation_probe",
+  "file": "blocks/rotation_probe.json",
+  "perms": 32,
+  "states": [
+   [
+    "pw:probe_mode",
+    8
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 32
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:alligator_egg_block",
+  "file": "blocks/sf_nba/alligator_egg.block.json",
+  "perms": 9,
+  "states": [
+   [
+    "sf_nba:growth_stage",
+    3
+   ],
+   [
+    "sf_nba:durability",
+    3
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 3
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:ant_hill",
+  "file": "blocks/sf_nba/ant_hill.block.json",
+  "perms": 16,
+  "states": [
+   [
+    "sf_nba:has_queen",
+    2
+   ],
+   [
+    "sf_nba:workers",
+    4
+   ],
+   [
+    "sf_nba:source",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:ant_hill_base",
+  "file": "blocks/sf_nba/ant_hill_base.block.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:blue_starfish.block",
+  "file": "blocks/sf_nba/blue_starfish.block.json",
+  "perms": 36,
+  "states": [
+   [
+    "minecraft:block_face",
+    6
+   ],
+   [
+    "minecraft:facing_direction",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 6
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:bluejay_egg_block",
+  "file": "blocks/sf_nba/bluejay_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:canary_egg_block",
+  "file": "blocks/sf_nba/canary_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:cardinal_egg_block",
+  "file": "blocks/sf_nba/cardinal_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:cave_snake_egg_block",
+  "file": "blocks/sf_nba/cave_snake_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:chrysalis_block",
+  "file": "blocks/sf_nba/chrysalis.block.json",
+  "perms": 18,
+  "states": [
+   [
+    "sf_nba:growth_stage",
+    3
+   ],
+   [
+    "minecraft:block_face",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 6
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:chrysalis_stage0",
+  "file": "blocks/sf_nba/chrysalis_stage0.block.json",
+  "perms": 6,
+  "states": [
+   [
+    "minecraft:block_face",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:chrysalis_stage1",
+  "file": "blocks/sf_nba/chrysalis_stage1.block.json",
+  "perms": 6,
+  "states": [
+   [
+    "minecraft:block_face",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:chrysalis_stage2",
+  "file": "blocks/sf_nba/chrysalis_stage2.block.json",
+  "perms": 6,
+  "states": [
+   [
+    "minecraft:block_face",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 4
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:coral_snake_egg_block",
+  "file": "blocks/sf_nba/coral_snake_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:crow_egg_block",
+  "file": "blocks/sf_nba/crow_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:cut_shellstone",
+  "file": "blocks/sf_nba/cut_shellstone.block.json",
+  "perms": 1,
+  "states": [],
+  "family": "ground / stone",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:emperor_penguin_egg_block",
+  "file": "blocks/sf_nba/emperor_penguin_egg.block.json",
+  "perms": 9,
+  "states": [
+   [
+    "sf_nba:growth_stage",
+    3
+   ],
+   [
+    "sf_nba:durability",
+    3
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 3
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:orange_starfish.block",
+  "file": "blocks/sf_nba/orange_starfish.block.json",
+  "perms": 36,
+  "states": [
+   [
+    "minecraft:block_face",
+    6
+   ],
+   [
+    "minecraft:facing_direction",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 6
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:ostrich_egg_block",
+  "file": "blocks/sf_nba/ostrich_egg.block.json",
+  "perms": 9,
+  "states": [
+   [
+    "sf_nba:growth_stage",
+    3
+   ],
+   [
+    "sf_nba:durability",
+    3
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 3
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:purple_starfish.block",
+  "file": "blocks/sf_nba/purple_starfish.block.json",
+  "perms": 36,
+  "states": [
+   [
+    "minecraft:block_face",
+    6
+   ],
+   [
+    "minecraft:facing_direction",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 6
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:rattlesnake_egg_block",
+  "file": "blocks/sf_nba/rattlesnake_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:raven_egg_block",
+  "file": "blocks/sf_nba/raven_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:red_starfish.block",
+  "file": "blocks/sf_nba/red_starfish.block.json",
+  "perms": 36,
+  "states": [
+   [
+    "minecraft:block_face",
+    6
+   ],
+   [
+    "minecraft:facing_direction",
+    6
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 6
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:robin_egg_block",
+  "file": "blocks/sf_nba/robin_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:shellstone",
+  "file": "blocks/sf_nba/shellstone.block.json",
+  "perms": 1,
+  "states": [],
+  "family": "ground / stone",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:shellstone_bricks",
+  "file": "blocks/sf_nba/shellstone_bricks.block.json",
+  "perms": 1,
+  "states": [],
+  "family": "ground / stone",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:smooth_shellstone",
+  "file": "blocks/sf_nba/smooth_shellstone.block.json",
+  "perms": 1,
+  "states": [],
+  "family": "ground / stone",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:snail_egg_block",
+  "file": "blocks/sf_nba/snail_egg.block.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:snake_egg_block",
+  "file": "blocks/sf_nba/snake_egg.block.json",
+  "perms": 2,
+  "states": [
+   [
+    "sf_nba:durability",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "sf_nba:tortoise_egg_block",
+  "file": "blocks/sf_nba/tortoise_egg.block.json",
+  "perms": 9,
+  "states": [
+   [
+    "sf_nba:growth_stage",
+    3
+   ],
+   [
+    "sf_nba:durability",
+    3
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 3
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_elder",
+  "file": "blocks/spruce_elder.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_leaves",
+  "file": "blocks/spruce_leaves.json",
+  "perms": 1176,
+  "states": [
+   [
+    "pw:variant",
+    7
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:section",
+    3
+   ],
+   [
+    "pw:exposure",
+    2
+   ],
+   [
+    "pw:section_rolled",
+    2
+   ],
+   [
+    "pw:off",
+    7
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 49
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_mature",
+  "file": "blocks/spruce_mature.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_old",
+  "file": "blocks/spruce_old.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_young",
+  "file": "blocks/spruce_young.json",
+  "perms": 70,
+  "states": [
+   [
+    "pw:variant",
+    5
+   ],
+   [
+    "pw:rseed",
+    2
+   ],
+   [
+    "pw:top_variant",
+    7
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 35
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_mature_stump",
+  "file": "blocks/stumps/birch_mature_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_old_stump",
+  "file": "blocks/stumps/birch_old_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:birch_young_stump",
+  "file": "blocks/stumps/birch_young_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:dark_oak_elder_stump",
+  "file": "blocks/stumps/dark_oak_elder_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_elder_stump",
+  "file": "blocks/stumps/jungle_elder_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_mature_stump",
+  "file": "blocks/stumps/jungle_mature_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_old_stump",
+  "file": "blocks/stumps/jungle_old_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:jungle_young_stump",
+  "file": "blocks/stumps/jungle_young_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_elder_stump",
+  "file": "blocks/stumps/oak_elder_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_mature_stump",
+  "file": "blocks/stumps/oak_mature_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_old_stump",
+  "file": "blocks/stumps/oak_old_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:oak_young_stump",
+  "file": "blocks/stumps/oak_young_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:pale_oak_elder_stump",
+  "file": "blocks/stumps/pale_oak_elder_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_elder_stump",
+  "file": "blocks/stumps/spruce_elder_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_mature_stump",
+  "file": "blocks/stumps/spruce_mature_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_old_stump",
+  "file": "blocks/stumps/spruce_old_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:spruce_young_stump",
+  "file": "blocks/stumps/spruce_young_stump.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s0",
+  "file": "blocks/sweep_s0.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s1",
+  "file": "blocks/sweep_s1.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s2",
+  "file": "blocks/sweep_s2.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s3",
+  "file": "blocks/sweep_s3.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s4",
+  "file": "blocks/sweep_s4.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s5",
+  "file": "blocks/sweep_s5.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s6",
+  "file": "blocks/sweep_s6.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:sweep_s7",
+  "file": "blocks/sweep_s7.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:terracotta_tiles",
+  "file": "blocks/terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:uv_probe_cube",
+  "file": "blocks/uv_probe_cube.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:uv_probe_roof45_ridge",
+  "file": "blocks/uv_probe_roof45_ridge.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:uv_probe_roof45_straight",
+  "file": "blocks/uv_probe_roof45_straight.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:uv_probe_roof63_lower",
+  "file": "blocks/uv_probe_roof63_lower.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:uv_probe_roof63_upper",
+  "file": "blocks/uv_probe_roof63_upper.json",
+  "perms": 8,
+  "states": [
+   [
+    "minecraft:cardinal_direction",
+    4
+   ],
+   [
+    "minecraft:vertical_half",
+    2
+   ]
+  ],
+  "family": "roof pieces",
+  "permutation_rules": 8
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:wall_prism",
+  "file": "blocks/wall_prism.json",
+  "perms": 52,
+  "states": [
+   [
+    "pw:material",
+    13
+   ],
+   [
+    "minecraft:cardinal_direction",
+    4
+   ]
+  ],
+  "family": "walls",
+  "permutation_rules": 17
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:white_terracotta_tiles",
+  "file": "blocks/white_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "BP-02 1.3.206",
+  "id": "pw:yellow_terracotta_tiles",
+  "file": "blocks/yellow_terracotta_tiles.json",
+  "perms": 1,
+  "states": [],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:datum",
+  "file": "blocks/pw_datum.json",
+  "perms": 1,
+  "states": [],
+  "family": "CIVITAS markers",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:frame_cornerpost",
+  "file": "blocks/pw_frame_cornerpost.json",
+  "perms": 320,
+  "states": [
+   [
+    "pw:n",
+    2
+   ],
+   [
+    "pw:e",
+    2
+   ],
+   [
+    "pw:s",
+    2
+   ],
+   [
+    "pw:w",
+    2
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "pw:top",
+    2
+   ],
+   [
+    "pw:ground",
+    2
+   ]
+  ],
+  "family": "CIVITAS frame",
+  "permutation_rules": 320
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:frame_post",
+  "file": "blocks/pw_frame_post.json",
+  "perms": 320,
+  "states": [
+   [
+    "pw:n",
+    2
+   ],
+   [
+    "pw:e",
+    2
+   ],
+   [
+    "pw:s",
+    2
+   ],
+   [
+    "pw:w",
+    2
+   ],
+   [
+    "pw:snow",
+    5
+   ],
+   [
+    "pw:top",
+    2
+   ],
+   [
+    "pw:ground",
+    2
+   ]
+  ],
+  "family": "CIVITAS frame",
+  "permutation_rules": 320
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:manhole_cover",
+  "file": "blocks/pw_manhole_cover.json",
+  "perms": 36,
+  "states": [
+   [
+    "pw:skin",
+    6
+   ],
+   [
+    "pw:phase",
+    6
+   ]
+  ],
+  "family": "CIVITAS markers",
+  "permutation_rules": 36
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:port_passage",
+  "file": "blocks/pw_port_passage.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "CIVITAS markers",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:port_sewer",
+  "file": "blocks/pw_port_sewer.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "CIVITAS markers",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:port_stair",
+  "file": "blocks/pw_port_stair.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "slabs / stairs",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:port_well",
+  "file": "blocks/pw_port_well.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "CIVITAS markers",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_anvil",
+  "file": "blocks/pw_station_anvil.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_bed",
+  "file": "blocks/pw_station_bed.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_bench",
+  "file": "blocks/pw_station_bench.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_counter",
+  "file": "blocks/pw_station_counter.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_desk",
+  "file": "blocks/pw_station_desk.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_door",
+  "file": "blocks/pw_station_door.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "doors / windows / glass",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_field",
+  "file": "blocks/pw_station_field.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_hearth",
+  "file": "blocks/pw_station_hearth.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "homestead",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_oven",
+  "file": "blocks/pw_station_oven.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_pen",
+  "file": "blocks/pw_station_pen.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_post",
+  "file": "blocks/pw_station_post.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_prep",
+  "file": "blocks/pw_station_prep.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_rack",
+  "file": "blocks/pw_station_rack.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_seat",
+  "file": "blocks/pw_station_seat.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_stall",
+  "file": "blocks/pw_station_stall.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_store",
+  "file": "blocks/pw_station_store.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_table",
+  "file": "blocks/pw_station_table.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:station_yard",
+  "file": "blocks/pw_station_yard.json",
+  "perms": 8,
+  "states": [
+   [
+    "pw:index",
+    8
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_cellar",
+  "file": "blocks/pw_zone_cellar.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_chamber",
+  "file": "blocks/pw_zone_chamber.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_commons",
+  "file": "blocks/pw_zone_commons.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_garden",
+  "file": "blocks/pw_zone_garden.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_kitchen",
+  "file": "blocks/pw_zone_kitchen.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_quarters",
+  "file": "blocks/pw_zone_quarters.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_shopfloor",
+  "file": "blocks/pw_zone_shopfloor.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_stable",
+  "file": "blocks/pw_zone_stable.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_storeroom",
+  "file": "blocks/pw_zone_storeroom.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_threshold",
+  "file": "blocks/pw_zone_threshold.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_workfloor",
+  "file": "blocks/pw_zone_workfloor.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "floors / planks",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "CIVITAS Markers 0.2.1",
+  "id": "pw:zone_yard",
+  "file": "blocks/pw_zone_yard.json",
+  "perms": 64,
+  "states": [
+   [
+    "pw:idx",
+    16
+   ],
+   [
+    "pw:ring",
+    4
+   ]
+  ],
+  "family": "other",
+  "permutation_rules": 63
+ },
+ {
+  "pack": "PW-LeafProbe-BP-v0_4_1",
+  "id": "pw:leafprobe_dark",
+  "file": "blocks/leafprobe_dark.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:d",
+    2
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 0
+ },
+ {
+  "pack": "PW-LeafProbe-BP-v0_4_1",
+  "id": "pw:leafprobe_permclear",
+  "file": "blocks/leafprobe_permclear.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:d",
+    2
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 1
+ },
+ {
+  "pack": "PW-LeafProbe-BP-v0_4_1",
+  "id": "pw:leafprobe_rootclear",
+  "file": "blocks/leafprobe_rootclear.json",
+  "perms": 2,
+  "states": [
+   [
+    "pw:d",
+    2
+   ]
+  ],
+  "family": "leaves",
+  "permutation_rules": 0
+ }
+]

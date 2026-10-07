@@ -1,0 +1,38 @@
+{
+ "RP-05 files": 68,
+ "RP-05 flipbook entries removed": [
+  "seagrass_short",
+  "seagrass_tall_bot_a",
+  "seagrass_tall_bot_b",
+  "seagrass_tall_top_a",
+  "seagrass_tall_top_b",
+  "kelp_a",
+  "kelp_b",
+  "kelp_c",
+  "kelp_d",
+  "kelp_top",
+  "kelp_top_bulb"
+ ],
+ "RP-10 terrain keys removed": [
+  "seagrass_tall_bot_a",
+  "seagrass_tall_top_a",
+  "seagrass_tall_bot_b",
+  "seagrass_tall_top_b"
+ ],
+ "RP-10 flipbook entries removed": [],
+ "RP-01 terrain keys removed": [
+  "short_dry_grass"
+ ],
+ "RP-01 flipbook entries removed": [
+  "short_grass",
+  "tall_grass_top",
+  "tall_grass_bottom",
+  "tallgrass",
+  "short_dry_grass",
+  "tall_dry_grass"
+ ],
+ "RP-03 terrain keys removed": [],
+ "RP-03 flipbook entries removed": [
+  "kelp_top"
+ ]
+}

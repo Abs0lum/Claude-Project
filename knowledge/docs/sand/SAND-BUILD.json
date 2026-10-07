@@ -1,0 +1,18 @@
+{
+ "yellow": {
+  "variants": 64,
+  "rough_mean": 0.814,
+  "glossy_share(<0.35)": 0.0203,
+  "metal_share": 0.0,
+  "emissive_max": 0,
+  "preview": "/home/claude/_docs/sand/SAND-PREVIEW-yellow.png"
+ },
+ "red": {
+  "variants": 64,
+  "rough_mean": 0.855,
+  "glossy_share(<0.35)": 0.0101,
+  "metal_share": 0.0,
+  "emissive_max": 0,
+  "preview": "/home/claude/_docs/sand/SAND-PREVIEW-red.png"
+ }
+}

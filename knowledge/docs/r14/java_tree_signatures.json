@@ -1,0 +1,84 @@
+{
+ "allay": {
+  "right_arm": [
+   "+body.tx*testing",
+   "+body.ty*testing",
+   "-body.rx",
+   "-body.ry",
+   "-body.rz"
+  ],
+  "left_arm": [
+   "+body.tx*testing",
+   "+body.ty*testing",
+   "-body.rx",
+   "-body.ry",
+   "-body.rz"
+  ]
+ },
+ "cod": {
+  "body": [
+   "-tail.ry"
+  ]
+ },
+ "salmon": {
+  "body_front": [
+   "-body_back.ry"
+  ]
+ },
+ "tropical_fish_a": {
+  "body": [
+   "-tail.ry"
+  ]
+ },
+ "tropical_fish_b": {
+  "body": [
+   "-tail.ry"
+  ]
+ },
+ "tropical_fish_pattern_a": {
+  "body": [
+   "-tail.ry"
+  ]
+ },
+ "tropical_fish_pattern_b": {
+  "body": [
+   "-tail.ry"
+  ]
+ },
+ "vex": {
+  "right_arm": [
+   "+body.tx*testing",
+   "+body.ty*testing",
+   "-body.rx",
+   "-body.ry",
+   "-body.rz"
+  ],
+  "left_arm": [
+   "+body.tx*testing",
+   "+body.ty*testing",
+   "-body.rx",
+   "-body.ry",
+   "-body.rz"
+  ]
+ },
+ "vindicator": {
+  "nose": [
+   "+head.ty*testing"
+  ]
+ },
+ "wandering_trader": {
+  "arms": [
+   "-body.rx"
+  ]
+ },
+ "witch": {
+  "arms": [
+   "-body.rx",
+   "-body.rz"
+  ],
+  "nose": [
+   "-head.ry",
+   "-head.rz"
+  ]
+ }
+}

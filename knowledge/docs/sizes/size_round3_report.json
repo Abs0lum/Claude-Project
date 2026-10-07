@@ -1,0 +1,157 @@
+{
+ "rows": [
+  {
+   "id": "minecraft:dolphin",
+   "real_m_old": 3.81,
+   "real_m": 3.12,
+   "mode": "max",
+   "why": "typical adult male (ADW adult males 2.44-3.81 m, midpoint) - his f15 ruling",
+   "from_blocks": 4.018,
+   "to_blocks": 3.29,
+   "factor": 0.8189
+  },
+  {
+   "id": "sf_nba:grizzly_bear",
+   "real_m_old": 2.4,
+   "real_m": 2.8,
+   "mode": "max",
+   "why": "big coastal brown-bear male - his re-ruling (grizzly reads bigger than the lion)",
+   "from_blocks": 2.531,
+   "to_blocks": 2.953,
+   "factor": 1.1666
+  },
+  {
+   "id": "sf_nba:alligator",
+   "real_m_old": 4.8,
+   "real_m": 5.5,
+   "mode": "max",
+   "why": "4.8 m top of range + 15 % - his 'imposing reptiles' ruling",
+   "from_blocks": 5.062,
+   "to_blocks": 5.8,
+   "factor": 1.1458
+  },
+  {
+   "id": "sf_nba:komodo_dragon",
+   "real_m_old": 3.0,
+   "real_m": 3.45,
+   "mode": "max",
+   "why": "3.0 m top of range + 15 % - his 'imposing reptiles' ruling",
+   "from_blocks": 3.164,
+   "to_blocks": 3.638,
+   "factor": 1.1499
+  },
+  {
+   "id": "sf_nba:snake",
+   "real_m_old": 2.07,
+   "real_m": 1.43,
+   "mode": "max",
+   "why": "average adult male (SVL mean 1.182 m + 17.5 % tail, Virginia Herpetological Society) - his ruling",
+   "from_blocks": 2.183,
+   "to_blocks": 1.508,
+   "factor": 0.6908
+  },
+  {
+   "id": "minecraft:polar_bear",
+   "real_m_old": 2.5,
+   "real_m": 2.5,
+   "mode": "hb",
+   "model_l_old": 2.525,
+   "model_l_new": 2.675,
+   "model_h_old": 1.725,
+   "model_h_new": 1.425,
+   "why": "2.5 m head-body kept; the model changed (April -> Patrix, RP-07 1.4.27)",
+   "from_blocks": 2.636,
+   "to_blocks": 2.636,
+   "factor": 0.9439
+  }
+ ],
+ "bp02": [
+  {
+   "id": "minecraft:dolphin",
+   "real_m_old": 3.81,
+   "real_m": 3.12,
+   "mode": "max",
+   "why": "typical adult male (ADW adult males 2.44-3.81 m, midpoint) - his f15 ruling",
+   "from_blocks": 4.018,
+   "to_blocks": 3.29,
+   "factor": 0.8189,
+   "file": "entities/dolphin.json",
+   "scales_changed": 2
+  },
+  {
+   "id": "minecraft:polar_bear",
+   "real_m_old": 2.5,
+   "real_m": 2.5,
+   "mode": "hb",
+   "model_l_old": 2.525,
+   "model_l_new": 2.675,
+   "model_h_old": 1.725,
+   "model_h_new": 1.425,
+   "why": "2.5 m head-body kept; the model changed (April -> Patrix, RP-07 1.4.27)",
+   "from_blocks": 2.636,
+   "to_blocks": 2.636,
+   "factor": 0.9439,
+   "file": "entities/polar_bear.json",
+   "scales_changed": 2
+  },
+  {
+   "id": "minecraft:endermite",
+   "file": "entities/endermite.json",
+   "new_file": true,
+   "factor": 0.75,
+   "scales_changed": 0,
+   "base_inserted": true,
+   "why": "his f12: 20-30 % smaller, 'I defer' -> 25 %"
+  }
+ ],
+ "stripmine": [
+  {
+   "id": "sf_nba:alligator",
+   "real_m_old": 4.8,
+   "real_m": 5.5,
+   "mode": "max",
+   "why": "4.8 m top of range + 15 % - his 'imposing reptiles' ruling",
+   "from_blocks": 5.062,
+   "to_blocks": 5.8,
+   "factor": 1.1458,
+   "file": "entities/alligator.behavior.json",
+   "scales_changed": 1
+  },
+  {
+   "id": "sf_nba:grizzly_bear",
+   "real_m_old": 2.4,
+   "real_m": 2.8,
+   "mode": "max",
+   "why": "big coastal brown-bear male - his re-ruling (grizzly reads bigger than the lion)",
+   "from_blocks": 2.531,
+   "to_blocks": 2.953,
+   "factor": 1.1666,
+   "file": "entities/grizzly_bear.behavior.json",
+   "scales_changed": 1
+  },
+  {
+   "id": "sf_nba:komodo_dragon",
+   "real_m_old": 3.0,
+   "real_m": 3.45,
+   "mode": "max",
+   "why": "3.0 m top of range + 15 % - his 'imposing reptiles' ruling",
+   "from_blocks": 3.164,
+   "to_blocks": 3.638,
+   "factor": 1.1499,
+   "file": "entities/komodo_dragon.behavior.json",
+   "scales_changed": 2
+  },
+  {
+   "id": "sf_nba:snake",
+   "real_m_old": 2.07,
+   "real_m": 1.43,
+   "mode": "max",
+   "why": "average adult male (SVL mean 1.182 m + 17.5 % tail, Virginia Herpetological Society) - his ruling",
+   "from_blocks": 2.183,
+   "to_blocks": 1.508,
+   "factor": 0.6908,
+   "file": "entities/snake.behavior.json",
+   "scales_changed": 1
+  }
+ ]
+}

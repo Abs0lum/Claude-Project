@@ -1,0 +1,3216 @@
+{
+ "format_version": "1.21.80",
+ "minecraft:block": {
+  "description": {
+   "identifier": "pw:ramp_deepslate_tile_8_e7",
+   "menu_category": {
+    "category": "construction"
+   },
+   "traits": {
+    "minecraft:placement_direction": {
+     "enabled_states": [
+      "minecraft:cardinal_direction"
+     ],
+     "y_rotation_offset": 0
+    }
+   },
+   "states": {
+    "pw:var": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "pw:snow": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  "components": {
+   "minecraft:geometry": {
+    "identifier": "geometry.pw_ramp_8_e7"
+   },
+   "minecraft:material_instances": {
+    "*": {
+     "texture": "pw_rampv4_deepslate_tile_0",
+     "render_method": "alpha_test"
+    },
+    "snow": {
+     "texture": "pw_snowcap",
+     "render_method": "alpha_test",
+     "face_dimming": true,
+     "ambient_occlusion": true
+    },
+    "deck": {
+     "texture": "pw_deck7_deepslate_tile_0",
+     "render_method": "alpha_test"
+    },
+    "fill": {
+     "texture": "pw_fill7e7_deepslate_tile",
+     "render_method": "alpha_test"
+    },
+    "cut": {
+     "texture": "pw_rampcut8_deepslate_tile",
+     "render_method": "alpha_test"
+    }
+   },
+   "minecraft:collision_box": {
+    "origin": [
+     -8,
+     0,
+     -8
+    ],
+    "size": [
+     16,
+     14,
+     16
+    ]
+   },
+   "minecraft:selection_box": {
+    "origin": [
+     -8,
+     0,
+     -8
+    ],
+    "size": [
+     16,
+     14,
+     16
+    ]
+   },
+   "minecraft:destructible_by_mining": {
+    "seconds_to_destroy": 1.5
+   },
+   "minecraft:destructible_by_explosion": {
+    "explosion_resistance": 6
+   },
+   "minecraft:light_dampening": 15
+  },
+  "permutations": [
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       180,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       90,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 0 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_0",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 1 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_1",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 2 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_2",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 0",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 1",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow1"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 2",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow2"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 3",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow3"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   },
+   {
+    "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('pw:var') == 3 && q.block_state('pw:snow') == 4",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [
+       0,
+       270,
+       0
+      ]
+     },
+     "minecraft:geometry": {
+      "identifier": "geometry.pw_ramp_8_e7_snow4"
+     },
+     "minecraft:material_instances": {
+      "*": {
+       "texture": "pw_rampv4_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "snow": {
+       "texture": "pw_snowcap",
+       "render_method": "alpha_test",
+       "face_dimming": true,
+       "ambient_occlusion": true
+      },
+      "deck": {
+       "texture": "pw_deck7_deepslate_tile_3",
+       "render_method": "alpha_test"
+      },
+      "fill": {
+       "texture": "pw_fill7e7_deepslate_tile",
+       "render_method": "alpha_test"
+      },
+      "cut": {
+       "texture": "pw_rampcut8_deepslate_tile",
+       "render_method": "alpha_test"
+      }
+     }
+    }
+   }
+  ]
+ }
+}

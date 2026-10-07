@@ -1,0 +1,418 @@
+================================================================
+ABSOLUTREALISM TREE STRUCTURE BUILDING GUIDE
+From: Understanding Structure Blocks through Upload Workflow
+================================================================
+
+
+SECTION 4: UNDERSTANDING STRUCTURE BLOCKS
+=========================================
+
+A structure block is a special block (not in the creative
+inventory by default - you have to summon it with a command)
+that lets you select a rectangular volume, name it, and save
+the entire contents to a file inside the world. Later, you
+(or worldgen, or anyone with the file) can load that saved
+volume back into any world.
+
+Key concepts:
+
+BOUNDING BOX
+  The cuboid region the structure block "captures." You set it
+  as XYZ offsets from the structure block plus XYZ size
+  dimensions. The block itself is NOT included in the saved
+  structure by default.
+
+SAVE MODE (Disk vs Memory)
+  Memory saves are lost when the world closes. ALWAYS USE DISK.
+  This is the #1 thing people forget.
+
+STRUCTURE NAME
+  Should be namespaced. Use a consistent prefix like "ar:"
+  (for AbsolutRealism) so all your trees end up in the same
+  folder. Example: ar:oak_elder_giant_01
+
+SIZE LIMIT
+  A single structure block in Bedrock can capture up to
+  64x384x64 blocks. Almost any tree fits in 32x64x32, so
+  you're fine with one structure block per tree. For truly
+  massive ones, you tile multiple structures.
+
+AIR HANDLING
+  The "Include entities" and "Remove blocks" toggles affect
+  whether air blocks and entities are saved. For trees, you
+  want BLOCKS ONLY, NO ENTITIES, INCLUDE AIR so the structure
+  properly represents the canopy shape.
+
+
+SECTION 5: GETTING A STRUCTURE BLOCK
+=====================================
+
+You can't craft them. Run this command:
+
+  /give @s structure_block
+
+A structure block icon appears in your hotbar. Place it like
+any block.
+
+
+SECTION 6: BUILDING YOUR FIRST TREE - RECOMMENDED WORKFLOW
+===========================================================
+
+Pick a spot in the flat world. I'd suggest building each tree
+in its own 100-block-spaced area so you can save them one at
+a time without interference. Recommend you set up "build pads"
+along a coordinate line:
+
+  - Tree 1 at (0, 4, 0)
+  - Tree 2 at (100, 4, 0)
+  - Tree 3 at (200, 4, 0)
+  - etc.
+
+This way you can fly between them easily and the structure
+block bounding boxes never overlap.
+
+
+BLOCK PALETTE TO USE
+--------------------
+
+For trees that integrate properly with AbsolutRealism's
+scanner and falling-tree mechanic, prefer these blocks:
+
+TRUNKS (logs):
+
+  Young trees:
+    pw:oak_young, pw:spruce_young, pw:birch_young,
+    pw:jungle_young
+
+  Mature trees:
+    pw:oak_mature, pw:spruce_mature, pw:birch_mature,
+    pw:jungle_mature
+
+  Old trees:
+    pw:oak_old, pw:spruce_old, pw:birch_old, pw:jungle_old
+
+  Elder/ancient trees:
+    pw:oak_elder, pw:spruce_elder, pw:jungle_elder,
+    pw:dark_oak_elder, pw:pale_oak_elder
+
+  Vanilla logs also work:
+    minecraft:oak_log, minecraft:spruce_log, etc.
+
+CANOPIES (leaves):
+
+  pw:oak_leaves, pw:spruce_leaves, pw:birch_leaves,
+  pw:jungle_leaves, pw:dark_oak_leaves, pw:pale_oak_leaves,
+  pw:acacia_leaves, pw:mangrove_leaves, pw:cherry_leaves
+
+To place a custom block by ID:
+
+  /setblock ~ ~ ~ pw:oak_elder
+
+(places pw:oak_elder at your current position).
+
+To select a block to your hotbar via pick-block:
+  - PC: aim at the block and middle-click
+  - Console: L1/LB-style pick-block button
+  - Touchscreen: tap-and-hold on the block
+
+
+TREE SHAPE PRINCIPLES FOR AR COMPATIBILITY
+-------------------------------------------
+
+The BIGCANOPY scanner identifies trees by walking up log
+columns and flood-filling the connected canopy. For best
+results:
+
+1. THE TRUNK MUST BE A CONTINUOUS VERTICAL COLUMN OF LOGS.
+   No gaps. Branches off the main trunk are fine, but each
+   branch should be connected by logs back to the main trunk.
+
+2. LEAVES MUST BE ADJACENT TO LOGS (6-face).
+   Process A finds an adjacent leaf to the topmost log of
+   the trunk and walks outward through the connected canopy.
+   A floating leaf cluster with no log connection won't get
+   classified.
+
+3. TRUNK WIDTH:
+   1x1 is standard. 2x2 is also recognized by the falling-
+   tree mechanic for giant trees. Beyond 2x2 won't be
+   detected as a tree by the falling-tree system.
+
+4. CANOPY SIZE:
+   Process A walks up to 600 leaves per tree. If your canopy
+   has more than that, the further leaves won't be classified
+   on the first pass (Process B will catch them eventually).
+   For very large trees, that's fine - just expect a brief
+   delay before the outer leaves flip variants.
+
+
+BUILDING TIPS
+-------------
+
+  - Use /fill for the trunk if it's straight:
+      /fill ~ ~ ~ ~ ~30 ~ pw:oak_elder
+    makes a 30-block-tall log column from your feet up.
+
+  - Use /clone to copy and mirror parts of trees you've
+    already built.
+
+  - For organic canopies, place leaves manually rather than
+    /fill - the irregular shape looks better.
+
+  - Test your tree by stepping back and looking at it from
+    multiple angles before saving.
+
+
+SECTION 7: SAVING THE STRUCTURE TO FILE
+========================================
+
+Once your tree is built and you're happy with it:
+
+STEP 1: Place a structure block near the tree.
+  Best practice: put it at the lowest-X, lowest-Y, lowest-Z
+  corner of the tree (the "southwest-bottom corner" facing
+  east-up-north). This makes the offset math easy.
+
+STEP 2: Right-click the structure block (PC) or tap it
+  (mobile/console) to open its UI.
+
+STEP 3: Switch the mode to "Save" using the top button.
+
+STEP 4: Fill in the fields:
+
+  Structure Name:
+    ar:oak_elder_giant_01
+    (or whatever scheme you choose - keep ar: prefix
+    consistent)
+
+  Relative position (Offset X/Y/Z):
+    Usually 0 1 0 - meaning start the bounding box at the
+    same X and Z as the structure block, one block up. If
+    the structure block is at corner-of-tree level, an offset
+    of 0 1 0 puts the bounding box starting from the trunk
+    base.
+
+  Structure size (X/Y/Z):
+    The dimensions of the box, e.g., 30 50 30 for a tree
+    that's 30 wide, 50 tall, 30 deep. Make this slightly
+    larger than the tree itself to capture all leaves.
+
+  Include Entities: OFF
+  Include Blocks: ON
+  Remove blocks: OFF (only matters in Load mode)
+
+STEP 5: Toggle "Show Bounding Box" to ON. A glowing
+  rectangle appears showing exactly what will be captured.
+  Adjust offset/size until the box surrounds your entire
+  tree with no clipping.
+
+STEP 6: CRITICAL - Set Save Mode to "Disk" (NOT Memory).
+  There's a button on the right side of the structure block
+  UI that toggles between Memory and Disk. If it says
+  "Memory" your save is lost when you log out. ALWAYS
+  CONFIRM THIS SAYS "DISK" BEFORE CLICKING SAVE.
+
+STEP 7: Click "Save" at the bottom right. You should see a
+  confirmation in chat:
+    Structure saved as "ar:oak_elder_giant_01"
+  If you see an error like "exceeded bounds" or "structure
+  too large," reduce the size and retry.
+
+The structure is now saved to the Realm's world data.
+
+
+REPEATING FOR MORE TREES
+------------------------
+
+For each additional tree:
+
+  - Build it 100 blocks away from the others
+  - Place a new structure block at its corner
+  - Open the structure block UI
+  - Set a unique name (ar:oak_elder_giant_02, etc.)
+  - Save to Disk
+
+You can also reuse one structure block - just move it for
+each tree and update the name and offsets before saving.
+
+
+SECTION 8: EXTRACTING THE .MCSTRUCTURE FILES FROM THE REALM
+============================================================
+
+This is the part that's specific to Realms. The files exist
+inside the Realm's world data, which you have to download as
+a backup.
+
+STEP 1: In-game, open the pause menu, tap Settings (or open
+  Realm config from the main menu Realms tab).
+
+STEP 2: Go to Game > World Backups (the exact menu path
+  varies by Bedrock version - look for "Backups" or "World
+  Backup").
+
+STEP 3: You'll see a list of backups (automatic ones + manual
+  ones). Realms makes hourly autobackups.
+
+STEP 4: Tap the most recent backup. You should see options
+  including Download World.
+
+STEP 5: Tap Download World. This saves a .mcworld file to
+  your device.
+
+The location of the downloaded file depends on your device:
+
+  Windows:
+    C:\Users\<you>\AppData\Local\Packages\
+    Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\
+    com.mojang\minecraftWorlds\
+    (but for Realm downloads it usually goes to your
+    Downloads folder)
+
+  Android:
+    Saved into Minecraft's storage. Often
+    /storage/emulated/0/Download/ or in Minecraft's own
+    folder. You know better than I do where your Android
+    puts downloads - your previous v1.2.36 recovery saga
+    gave you a lot of context here.
+
+  iOS:
+    Saved into the Files app's Minecraft folder.
+
+STEP 6: A .mcworld file is actually a renamed .zip file.
+  Rename .mcworld -> .zip (or just open it with a zip tool -
+  7-Zip on Windows, Files app on Android, Archives on iOS).
+
+STEP 7: Inside the zip, navigate to: structures/ar/
+
+STEP 8: You'll see one file per tree you saved, named after
+  the structure name. E.g.:
+    oak_elder_giant_01.mcstructure
+    oak_elder_giant_02.mcstructure
+    etc.
+
+STEP 9: Extract the entire structures/ar/ folder to somewhere
+  convenient (Desktop, Downloads, a folder called "AR Tree
+  Files").
+
+These extracted files are what you upload to me.
+
+
+SECTION 9: UPLOADING THE FILES TO ME
+=====================================
+
+You have two options:
+
+OPTION 1: DIRECT ATTACH (recommended for small batches)
+
+  In this Claude chat, attach the .mcstructure files directly
+  using the attachment button. You can attach multiple at
+  once. Each file is binary but I can read and parse them.
+  Best for up to ~10 trees at a time.
+
+OPTION 2: ZIP THE FOLDER (recommended for large batches)
+
+  Zip up the structures/ar/ folder into a single archive and
+  upload that. I can unpack the zip and process every tree
+  at once. Better for batches of 20+.
+
+When you upload, also tell me in chat:
+
+  - What species/tier each tree is (oak elder, spruce
+    mature, etc.) so I can categorize them properly
+
+  - Any special notes (e.g., "the oak_03 has a hollow trunk
+    by design", "spruce_02 is meant to be the typical mid-
+    game spruce")
+
+  - Whether each tree is intended for worldgen integration,
+    decoration only, or as a reference design
+
+
+SECTION 10: ITERATION WORKFLOW
+===============================
+
+After I receive your trees and we discuss them, you'll likely
+want to iterate - tweak a branch, add more leaves, etc. The
+workflow is:
+
+  1. Re-enter the Realm building world
+  2. Find the tree
+  3. Modify it
+  4. Re-save with the SAME structure name (this overwrites)
+  5. Re-download Realm backup
+  6. Re-extract the .mcstructure file
+  7. Re-upload to me
+
+For minor tweaks, this is overhead-heavy. For convenience,
+PLAN TO DO BATCHES - finish 5-10 trees, save them all,
+download the backup once, send me everything at once.
+
+
+SECTION 11: THINGS THAT WILL TRIP YOU UP
+=========================================
+
+A small list of known gotchas:
+
+> FORGETTING TO SET SAVE MODE TO DISK.
+  I cannot overstate how common this is. Always check it
+  before clicking Save.
+
+> STRUCTURE BLOCK BOUNDING BOX ACCIDENTALLY CLIPPING A TREE.
+  Always toggle "Show Bounding Box" before saving and walk
+  around the tree visually checking that no leaf is cut off.
+
+> BUILDING IN SURVIVAL ACCIDENTALLY.
+  If a friend's gamemode resets, they might break a block
+  by mistake. Use /gamemode creative @a periodically as a
+  refresh, or set everyone as ops with creative permission.
+
+> SAVING WITH A NON-NAMESPACED NAME.
+  If you name a structure oak_giant_01 without the ar:
+  prefix, it goes into a different folder and gets harder
+  to find. Stick to ar:name.
+
+> REALM AUTOBACKUP TAKING TIME.
+  After saving structures, wait 5+ minutes before
+  downloading a backup so the latest data is captured. Or
+  trigger a manual backup from Realm settings.
+
+> LOST TRACK OF WHICH IS THE LATEST BACKUP.
+  Realm backups are timestamped - pick the one with the
+  most recent time.
+
+> .MCSTRUCTURE FILES DON'T OPEN IN ANY STANDARD IMAGE VIEWER
+  OR TEXT EDITOR.
+  They're a custom binary format (NBT-based). Don't try to
+  open them - just upload them to me as-is.
+
+
+WHAT TO SEND ME WHEN YOU'RE READY
+==================================
+
+When you've built and saved your first batch of trees, drop
+a message with:
+
+  1. The .mcstructure files (attached or zipped)
+
+  2. A short list of what each file is intended to be
+     (species, size category, any notes)
+
+  3. Where you want to take them next - worldgen
+     integration, just review for shape, etc.
+
+I'll unpack them, analyze the block palettes used, count
+log/leaf composition, identify any structural issues
+(disconnected canopies, mixed-species inconsistencies, etc.),
+and report back what I see. If we move toward worldgen
+integration after that, the next step would be wiring them
+into AbsolutRealism's structure_template_feature worldgen
+rules so they spawn naturally in appropriate biomes.
+
+Take your time on the builds. Trees are a long-game asset -
+better to ship five great ones than twenty rushed ones. Let
+me know when you have files to share.
+
+
+================================================================
+END OF GUIDE
+================================================================

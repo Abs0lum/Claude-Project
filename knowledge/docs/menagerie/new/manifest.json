@@ -1,0 +1,1454 @@
+{
+ "tiles": [
+  {
+   "id": "pw:african_wild_dog",
+   "name": "african wild dog",
+   "src": "YSav",
+   "group": "african_wild_dog",
+   "img": "new/african_wild_dog.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:alpaca",
+   "name": "alpaca",
+   "src": "YTri",
+   "group": "alpaca",
+   "img": "new/alpaca.jpg",
+   "wilds": false,
+   "dead": 2
+  },
+  {
+   "id": "pw:anaconda",
+   "name": "anaconda",
+   "src": "WS",
+   "group": "anaconda",
+   "img": "new/anaconda.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:archelon",
+   "name": "archelon",
+   "src": "JP",
+   "group": "archelon",
+   "img": "new/archelon.jpg",
+   "wilds": true,
+   "dead": 3
+  },
+  {
+   "id": "pw:baby_african_eagle",
+   "name": "baby african eagle",
+   "src": "YSav",
+   "group": "baby_african_eagle",
+   "img": "new/baby_african_eagle.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:baby_fisher_eagle",
+   "name": "baby fisher eagle",
+   "src": "YSav",
+   "group": "baby_fisher_eagle",
+   "img": "new/baby_fisher_eagle.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:beluga",
+   "name": "beluga",
+   "src": "YTri",
+   "group": "beluga",
+   "img": "new/beluga.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:bird_of_paradise",
+   "name": "bird of paradise",
+   "src": "WWA",
+   "group": "bird_of_paradise",
+   "img": "new/bird_of_paradise.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:bison",
+   "name": "bison",
+   "src": "YTri",
+   "group": "bison",
+   "img": "new/bison.jpg",
+   "wilds": false,
+   "dead": 2
+  },
+  {
+   "id": "pw:bongo",
+   "name": "bongo",
+   "src": "YTri",
+   "group": "bongo",
+   "img": "new/bongo.jpg",
+   "wilds": false,
+   "dead": 2
+  },
+  {
+   "id": "pw:caiman",
+   "name": "caiman",
+   "src": "YTri",
+   "group": "caiman",
+   "img": "new/caiman.jpg",
+   "wilds": false,
+   "dead": 2
+  },
+  {
+   "id": "pw:caracal",
+   "name": "caracal",
+   "src": "WA",
+   "group": "caracal",
+   "img": "new/caracal.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:centipede",
+   "name": "centipede",
+   "src": "AnF",
+   "group": "centipede",
+   "img": "new/centipede.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:centipede_common",
+   "name": "centipede common",
+   "src": "AnF",
+   "group": "centipede",
+   "img": "new/centipede_common.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:centipede_desert",
+   "name": "centipede desert",
+   "src": "AnF",
+   "group": "centipede",
+   "img": "new/centipede_desert.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:centipede_pacificgiant",
+   "name": "centipede pacificgiant",
+   "src": "AnF",
+   "group": "centipede",
+   "img": "new/centipede_pacificgiant.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:chameleon",
+   "name": "chameleon",
+   "src": "AnF",
+   "group": "chameleon",
+   "img": "new/chameleon.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:cheetah",
+   "name": "cheetah",
+   "src": "YSav",
+   "group": "cheetah",
+   "img": "new/cheetah.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:clam",
+   "name": "clam",
+   "src": "AnF",
+   "group": "clam",
+   "img": "new/clam.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:cobra",
+   "name": "cobra",
+   "src": "YSav",
+   "group": "cobra",
+   "img": "new/cobra.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:cougar",
+   "name": "cougar",
+   "src": "WA",
+   "group": "cougar",
+   "img": "new/cougar.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:crane_common",
+   "name": "crane common",
+   "src": "AnF",
+   "group": "crane",
+   "img": "new/crane_common.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:crane_hooden",
+   "name": "crane hooden",
+   "src": "AnF",
+   "group": "crane",
+   "img": "new/crane_hooden.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:crane_siberian",
+   "name": "crane siberian",
+   "src": "AnF",
+   "group": "crane",
+   "img": "new/crane_siberian.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:crane_whopping",
+   "name": "crane whopping",
+   "src": "AnF",
+   "group": "crane",
+   "img": "new/crane_whopping.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:dik_dik",
+   "name": "dik dik",
+   "src": "YTri",
+   "group": "dik_dik",
+   "img": "new/dik_dik.jpg",
+   "wilds": false,
+   "dead": 3
+  },
+  {
+   "id": "pw:dog_alsatian",
+   "name": "dog alsatian",
+   "src": "AnF",
+   "group": "dog",
+   "img": "new/dog_alsatian.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:dog_lab",
+   "name": "dog lab",
+   "src": "AnF",
+   "group": "dog",
+   "img": "new/dog_lab.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:dog_lab_chocolate",
+   "name": "dog lab chocolate",
+   "src": "AnF",
+   "group": "dog",
+   "img": "new/dog_lab_chocolate.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:dog_lab_golden",
+   "name": "dog lab golden",
+   "src": "AnF",
+   "group": "dog",
+   "img": "new/dog_lab_golden.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:dog_retriever_golden",
+   "name": "dog retriever golden",
+   "src": "AnF",
+   "group": "dog",
+   "img": "new/dog_retriever_golden.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:dog_retriever",
+   "name": "dog retriever",
+   "src": "AnF",
+   "group": "dog",
+   "img": "new/dog_retriever.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:earthworm_common",
+   "name": "earthworm common",
+   "src": "AnF",
+   "group": "earthworm",
+   "img": "new/earthworm_common.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:earthworm_gippsland",
+   "name": "earthworm gippsland",
+   "src": "AnF",
+   "group": "earthworm",
+   "img": "new/earthworm_gippsland.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:earthworm_nightcrawler",
+   "name": "earthworm nightcrawler",
+   "src": "AnF",
+   "group": "earthworm",
+   "img": "new/earthworm_nightcrawler.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:egret_great",
+   "name": "egret great",
+   "src": "AnF",
+   "group": "egret",
+   "img": "new/egret_great.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:egret_little",
+   "name": "egret little",
+   "src": "AnF",
+   "group": "egret",
+   "img": "new/egret_little.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:egret_reddish",
+   "name": "egret reddish",
+   "src": "AnF",
+   "group": "egret",
+   "img": "new/egret_reddish.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:fly_bluebottle",
+   "name": "fly bluebottle",
+   "src": "AnF",
+   "group": "fly",
+   "img": "new/fly_bluebottle.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:fly_dung",
+   "name": "fly dung",
+   "src": "AnF",
+   "group": "fly",
+   "img": "new/fly_dung.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:fly_fruit",
+   "name": "fly fruit",
+   "src": "AnF",
+   "group": "fly",
+   "img": "new/fly_fruit.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:fly_horse",
+   "name": "fly horse",
+   "src": "AnF",
+   "group": "fly",
+   "img": "new/fly_horse.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:fly_hover",
+   "name": "fly hover",
+   "src": "AnF",
+   "group": "fly",
+   "img": "new/fly_hover.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:gavial",
+   "name": "gavial",
+   "src": "YTri",
+   "group": "gavial",
+   "img": "new/gavial.jpg",
+   "wilds": false,
+   "dead": 2
+  },
+  {
+   "id": "pw:gecko",
+   "name": "gecko",
+   "src": "AnF",
+   "group": "gecko",
+   "img": "new/gecko.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:gecko_blue",
+   "name": "gecko blue",
+   "src": "AnF",
+   "group": "gecko",
+   "img": "new/gecko_blue.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:gecko_leopard",
+   "name": "gecko leopard",
+   "src": "AnF",
+   "group": "gecko",
+   "img": "new/gecko_leopard.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:gecko_yellow",
+   "name": "gecko yellow",
+   "src": "AnF",
+   "group": "gecko",
+   "img": "new/gecko_yellow.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:gerbil",
+   "name": "gerbil",
+   "src": "AnF",
+   "group": "gerbil",
+   "img": "new/gerbil.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:giant_squid",
+   "name": "giant squid",
+   "src": "WWA",
+   "group": "giant_squid",
+   "img": "new/giant_squid.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:grasshopper",
+   "name": "grasshopper",
+   "src": "AnF",
+   "group": "grasshopper",
+   "img": "new/grasshopper.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hare_arctic",
+   "name": "hare arctic",
+   "src": "AnF",
+   "group": "hare",
+   "img": "new/hare_arctic.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hare_blacktailed",
+   "name": "hare blacktailed",
+   "src": "AnF",
+   "group": "hare",
+   "img": "new/hare_blacktailed.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hare_european",
+   "name": "hare european",
+   "src": "AnF",
+   "group": "hare",
+   "img": "new/hare_european.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hare_mountain",
+   "name": "hare mountain",
+   "src": "AnF",
+   "group": "hare",
+   "img": "new/hare_mountain.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hawk",
+   "name": "hawk",
+   "src": "AnF",
+   "group": "hawk",
+   "img": "new/hawk.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hawk_harrier",
+   "name": "hawk harrier",
+   "src": "AnF",
+   "group": "hawk",
+   "img": "new/hawk_harrier.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hawk_harris",
+   "name": "hawk harris",
+   "src": "AnF",
+   "group": "hawk",
+   "img": "new/hawk_harris.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hawk_sparrow",
+   "name": "hawk sparrow",
+   "src": "AnF",
+   "group": "hawk",
+   "img": "new/hawk_sparrow.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:heron_agami",
+   "name": "heron agami",
+   "src": "AnF",
+   "group": "heron",
+   "img": "new/heron_agami.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:heron",
+   "name": "heron",
+   "src": "AnF",
+   "group": "heron",
+   "img": "new/heron.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:heron_blackcrowned",
+   "name": "heron blackcrowned",
+   "src": "AnF",
+   "group": "heron",
+   "img": "new/heron_blackcrowned.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:heron_greatblue",
+   "name": "heron greatblue",
+   "src": "AnF",
+   "group": "heron",
+   "img": "new/heron_greatblue.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:heron_green",
+   "name": "heron green",
+   "src": "AnF",
+   "group": "heron",
+   "img": "new/heron_green.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:heron_2",
+   "name": "heron 2",
+   "src": "AnF",
+   "group": "heron",
+   "img": "new/heron_2.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:honey_badger",
+   "name": "honey badger",
+   "src": "YSav",
+   "group": "honey_badger",
+   "img": "new/honey_badger.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hornet_asian",
+   "name": "hornet asian",
+   "src": "AnF",
+   "group": "hornet",
+   "img": "new/hornet_asian.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:hornet_european",
+   "name": "hornet european",
+   "src": "AnF",
+   "group": "hornet",
+   "img": "new/hornet_european.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:impala",
+   "name": "impala",
+   "src": "YSav",
+   "group": "impala",
+   "img": "new/impala.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:impalaf",
+   "name": "impalaf",
+   "src": "YSav",
+   "group": "impala",
+   "img": "new/impalaf.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:jay",
+   "name": "jay",
+   "src": "AnF",
+   "group": "jay",
+   "img": "new/jay.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:jellyfish_jp",
+   "name": "jellyfish jp",
+   "src": "JP",
+   "group": "jellyfish_jp",
+   "img": "new/jellyfish_jp.jpg",
+   "wilds": true,
+   "dead": 1
+  },
+  {
+   "id": "pw:jerboa",
+   "name": "jerboa",
+   "src": "WWA",
+   "group": "jerboa",
+   "img": "new/jerboa.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:koala",
+   "name": "koala",
+   "src": "YTri",
+   "group": "koala",
+   "img": "new/koala.jpg",
+   "wilds": false,
+   "dead": 2
+  },
+  {
+   "id": "pw:kobo",
+   "name": "kobo",
+   "src": "YSav",
+   "group": "kob",
+   "img": "new/kobo.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:kobof",
+   "name": "kobof",
+   "src": "YSav",
+   "group": "kob",
+   "img": "new/kobof.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:lantern_fish",
+   "name": "lantern fish",
+   "src": "WA",
+   "group": "lantern_fish",
+   "img": "new/lantern_fish.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:leedsichthys",
+   "name": "leedsichthys",
+   "src": "JP",
+   "group": "leedsichthys",
+   "img": "new/leedsichthys.jpg",
+   "wilds": true,
+   "dead": 4
+  },
+  {
+   "id": "pw:lemming_arctic",
+   "name": "lemming arctic",
+   "src": "AnF",
+   "group": "lemming",
+   "img": "new/lemming_arctic.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:lemming_bog",
+   "name": "lemming bog",
+   "src": "AnF",
+   "group": "lemming",
+   "img": "new/lemming_bog.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:lemming_norway",
+   "name": "lemming norway",
+   "src": "AnF",
+   "group": "lemming",
+   "img": "new/lemming_norway.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:lemming_yellowsteppe",
+   "name": "lemming yellowsteppe",
+   "src": "AnF",
+   "group": "lemming",
+   "img": "new/lemming_yellowsteppe.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:lobster",
+   "name": "lobster",
+   "src": "AnF",
+   "group": "lobster",
+   "img": "new/lobster.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:magpie",
+   "name": "magpie",
+   "src": "AnF",
+   "group": "magpie",
+   "img": "new/magpie.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:manatee",
+   "name": "manatee",
+   "src": "YTri",
+   "group": "manatee",
+   "img": "new/manatee.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:mandrill",
+   "name": "mandrill",
+   "src": "AnF",
+   "group": "mandrill",
+   "img": "new/mandrill.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:megalodon",
+   "name": "megalodon",
+   "src": "JP",
+   "group": "megalodon",
+   "img": "new/megalodon.jpg",
+   "wilds": true,
+   "dead": 4
+  },
+  {
+   "id": "pw:monitor_lizard",
+   "name": "monitor lizard",
+   "src": "YSav",
+   "group": "monitor_lizard",
+   "img": "new/monitor_lizard.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:mosasaurus_mosa",
+   "name": "mosasaurus mosa",
+   "src": "JP",
+   "group": "mosasaurus",
+   "img": "new/mosasaurus_mosa.jpg",
+   "wilds": true,
+   "dead": 4
+  },
+  {
+   "id": "pw:mosasaurus_r_mosa",
+   "name": "mosasaurus r mosa",
+   "src": "JP",
+   "group": "mosasaurus",
+   "img": "new/mosasaurus_r_mosa.jpg",
+   "wilds": true,
+   "dead": 7
+  },
+  {
+   "id": "pw:moth_atlas",
+   "name": "moth atlas",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_atlas.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:moth_comet",
+   "name": "moth comet",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_comet.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:moth_emperor",
+   "name": "moth emperor",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_emperor.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:moth_gardentiger",
+   "name": "moth gardentiger",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_gardentiger.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:moth_giantleopard",
+   "name": "moth giantleopard",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_giantleopard.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:moth_gypsy",
+   "name": "moth gypsy",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_gypsy.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:moth_luna",
+   "name": "moth luna",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_luna.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:moth_rosymaple",
+   "name": "moth rosymaple",
+   "src": "AnF",
+   "group": "moth",
+   "img": "new/moth_rosymaple.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:mouse_harvest",
+   "name": "mouse harvest",
+   "src": "AnF",
+   "group": "mouse",
+   "img": "new/mouse_harvest.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:mouse_house",
+   "name": "mouse house",
+   "src": "AnF",
+   "group": "mouse",
+   "img": "new/mouse_house.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:mouse_jumping",
+   "name": "mouse jumping",
+   "src": "AnF",
+   "group": "mouse",
+   "img": "new/mouse_jumping.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:mouse_wood",
+   "name": "mouse wood",
+   "src": "AnF",
+   "group": "mouse",
+   "img": "new/mouse_wood.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:newt_crested",
+   "name": "newt crested",
+   "src": "AnF",
+   "group": "newt",
+   "img": "new/newt_crested.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:newt_eastern",
+   "name": "newt eastern",
+   "src": "AnF",
+   "group": "newt",
+   "img": "new/newt_eastern.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:newt_emperor",
+   "name": "newt emperor",
+   "src": "AnF",
+   "group": "newt",
+   "img": "new/newt_emperor.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:newt_firebelly",
+   "name": "newt firebelly",
+   "src": "AnF",
+   "group": "newt",
+   "img": "new/newt_firebelly.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:nyala_inhala",
+   "name": "nyala inhala",
+   "src": "YSav",
+   "group": "nyala",
+   "img": "new/nyala_inhala.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:nyala_inhalaf",
+   "name": "nyala inhalaf",
+   "src": "YSav",
+   "group": "nyala",
+   "img": "new/nyala_inhalaf.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:opossum",
+   "name": "opossum",
+   "src": "YTri",
+   "group": "opossum",
+   "img": "new/opossum.jpg",
+   "wilds": false,
+   "dead": 3
+  },
+  {
+   "id": "pw:oryx",
+   "name": "oryx",
+   "src": "YSav",
+   "group": "oryx",
+   "img": "new/oryx.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:pangolin",
+   "name": "pangolin",
+   "src": "YSav",
+   "group": "pangolin",
+   "img": "new/pangolin.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:pigeon_africanolive",
+   "name": "pigeon africanolive",
+   "src": "AnF",
+   "group": "pigeon",
+   "img": "new/pigeon_africanolive.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:pigeon_passenger",
+   "name": "pigeon passenger",
+   "src": "AnF",
+   "group": "pigeon",
+   "img": "new/pigeon_passenger.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:pigeon_rock",
+   "name": "pigeon rock",
+   "src": "AnF",
+   "group": "pigeon",
+   "img": "new/pigeon_rock.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:pigeon_wood",
+   "name": "pigeon wood",
+   "src": "AnF",
+   "group": "pigeon",
+   "img": "new/pigeon_wood.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:prairie_dog",
+   "name": "prairie dog",
+   "src": "WWA",
+   "group": "prairie_dog",
+   "img": "new/prairie_dog.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:puffin",
+   "name": "puffin",
+   "src": "AnF",
+   "group": "puffin",
+   "img": "new/puffin.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:quetzalcoatlus_fb_quetz",
+   "name": "quetzalcoatlus fb quetz",
+   "src": "JP",
+   "group": "quetzalcoatlus",
+   "img": "new/quetzalcoatlus_fb_quetz.jpg",
+   "wilds": true,
+   "dead": 1
+  },
+  {
+   "id": "pw:quetzalcoatlus_b_quetz",
+   "name": "quetzalcoatlus b quetz",
+   "src": "JP",
+   "group": "quetzalcoatlus",
+   "img": "new/quetzalcoatlus_b_quetz.jpg",
+   "wilds": true,
+   "dead": 1
+  },
+  {
+   "id": "pw:roadrunner",
+   "name": "roadrunner",
+   "src": "WWA",
+   "group": "roadrunner",
+   "img": "new/roadrunner.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:sable_antelope",
+   "name": "sable antelope",
+   "src": "YSav",
+   "group": "sable_antelope",
+   "img": "new/sable_antelope.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:saiga",
+   "name": "saiga",
+   "src": "WWA",
+   "group": "saiga",
+   "img": "new/saiga.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:scallop",
+   "name": "scallop",
+   "src": "AnF",
+   "group": "scallop",
+   "img": "new/scallop.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:sea_urchin",
+   "name": "sea urchin",
+   "src": "AnF",
+   "group": "sea_urchin",
+   "img": "new/sea_urchin.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:sealion",
+   "name": "sealion",
+   "src": "AnF",
+   "group": "sealion",
+   "img": "new/sealion.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:serval",
+   "name": "serval",
+   "src": "YSav",
+   "group": "serval",
+   "img": "new/serval.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:shoebill",
+   "name": "shoebill",
+   "src": "WWA",
+   "group": "shoebill",
+   "img": "new/shoebill.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:snow_leopard",
+   "name": "snow leopard",
+   "src": "WA",
+   "group": "snow_leopard",
+   "img": "new/snow_leopard.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:spinosaurus",
+   "name": "spinosaurus",
+   "src": "JP",
+   "group": "spinosaurus",
+   "img": "new/spinosaurus.jpg",
+   "wilds": true,
+   "dead": 3
+  },
+  {
+   "id": "pw:stick_insect",
+   "name": "stick insect",
+   "src": "AnF",
+   "group": "stick_insect",
+   "img": "new/stick_insect.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:stoat_british",
+   "name": "stoat british",
+   "src": "AnF",
+   "group": "stoat",
+   "img": "new/stoat_british.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:stoat_irish",
+   "name": "stoat irish",
+   "src": "AnF",
+   "group": "stoat",
+   "img": "new/stoat_irish.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:stoat_japanese",
+   "name": "stoat japanese",
+   "src": "AnF",
+   "group": "stoat",
+   "img": "new/stoat_japanese.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:stoat_russian",
+   "name": "stoat russian",
+   "src": "AnF",
+   "group": "stoat",
+   "img": "new/stoat_russian.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:swordfish",
+   "name": "swordfish",
+   "src": "WA",
+   "group": "swordfish",
+   "img": "new/swordfish.jpg",
+   "wilds": false,
+   "dead": 1
+  },
+  {
+   "id": "pw:t_rex",
+   "name": "t rex",
+   "src": "JP",
+   "group": "t_rex",
+   "img": "new/t_rex.jpg",
+   "wilds": true,
+   "dead": 2
+  },
+  {
+   "id": "pw:tern",
+   "name": "tern",
+   "src": "AnF",
+   "group": "tern",
+   "img": "new/tern.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tern_caspian",
+   "name": "tern caspian",
+   "src": "AnF",
+   "group": "tern",
+   "img": "new/tern_caspian.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tern_common",
+   "name": "tern common",
+   "src": "AnF",
+   "group": "tern",
+   "img": "new/tern_common.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tern_crested",
+   "name": "tern crested",
+   "src": "AnF",
+   "group": "tern",
+   "img": "new/tern_crested.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tern_fairy",
+   "name": "tern fairy",
+   "src": "AnF",
+   "group": "tern",
+   "img": "new/tern_fairy.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tern_largebilled",
+   "name": "tern largebilled",
+   "src": "AnF",
+   "group": "tern",
+   "img": "new/tern_largebilled.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tern_sooty",
+   "name": "tern sooty",
+   "src": "AnF",
+   "group": "tern",
+   "img": "new/tern_sooty.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_bearded",
+   "name": "tit bearded",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_bearded.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_blue",
+   "name": "tit blue",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_blue.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_coal",
+   "name": "tit coal",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_coal.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_crested",
+   "name": "tit crested",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_crested.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_great",
+   "name": "tit great",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_great.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_longtailed",
+   "name": "tit longtailed",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_longtailed.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_marsh",
+   "name": "tit marsh",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_marsh.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:tit_willow",
+   "name": "tit willow",
+   "src": "AnF",
+   "group": "tit",
+   "img": "new/tit_willow.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:titanosaurus",
+   "name": "titanosaurus",
+   "src": "JP",
+   "group": "titanosaurus",
+   "img": "new/titanosaurus.jpg",
+   "wilds": true,
+   "dead": 2
+  },
+  {
+   "id": "pw:toad_africangiant",
+   "name": "toad africangiant",
+   "src": "AnF",
+   "group": "toad",
+   "img": "new/toad_africangiant.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:toad_canadian",
+   "name": "toad canadian",
+   "src": "AnF",
+   "group": "toad",
+   "img": "new/toad_canadian.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:toad_european",
+   "name": "toad european",
+   "src": "AnF",
+   "group": "toad",
+   "img": "new/toad_european.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:toad_indian",
+   "name": "toad indian",
+   "src": "AnF",
+   "group": "toad",
+   "img": "new/toad_indian.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:toad_yosemite",
+   "name": "toad yosemite",
+   "src": "AnF",
+   "group": "toad",
+   "img": "new/toad_yosemite.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:toadfish",
+   "name": "toadfish",
+   "src": "WWA",
+   "group": "toadfish",
+   "img": "new/toadfish.jpg",
+   "wilds": false,
+   "dead": 3
+  },
+  {
+   "id": "pw:viper",
+   "name": "viper",
+   "src": "YSav",
+   "group": "viper",
+   "img": "new/viper.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:wasp_paper",
+   "name": "wasp paper",
+   "src": "AnF",
+   "group": "wasp",
+   "img": "new/wasp_paper.jpg",
+   "wilds": false,
+   "dead": 0
+  },
+  {
+   "id": "pw:wasp_yellowjacket",
+   "name": "wasp yellowjacket",
+   "src": "AnF",
+   "group": "wasp",
+   "img": "new/wasp_yellowjacket.jpg",
+   "wilds": false,
+   "dead": 0
+  }
+ ],
+ "fails": []
+}

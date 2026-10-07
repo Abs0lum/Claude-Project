@@ -1,0 +1,7109 @@
+{
+ "format_version": "1.21.0",
+ "minecraft:geometry": [
+  {
+   "description": {
+    "identifier": "geometry.pw_spiral_B_tower_c00",
+    "texture_width": 16,
+    "texture_height": 16,
+    "visible_bounds_width": 3,
+    "visible_bounds_height": 3,
+    "visible_bounds_offset": [
+     0,
+     0.75,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "e0_tread",
+     "pivot": [
+      -1.8701,
+      1.5,
+      -6.7807
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4.6201,
+        -1.0,
+        -8.6709
+       ],
+       "size": [
+        5.5,
+        5.0,
+        3.7804
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          11.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          11.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          12.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          12.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e1_tread",
+     "pivot": [
+      3.5242,
+      1.5,
+      -5.7077
+     ],
+     "cubes": [
+      {
+       "origin": [
+        0.7742,
+        -1.0,
+        -8.692
+       ],
+       "size": [
+        5.5,
+        5.0,
+        5.9685
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.0,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.0,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          9.0,
+          11.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          9.0,
+          11.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.0,
+          10.032
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.0,
+          10.032
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e5_soffit",
+     "pivot": [
+      -2.6407,
+      -4.0,
+      -6.934
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4.615,
+        -5.0,
+        -10.1848
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.5015
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -2.6407,
+        -4.0,
+        -6.934
+       ],
+       "rotation": [
+        61.788,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e6_soffit",
+     "pivot": [
+      1.2124,
+      -4.0,
+      -6.1675
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -0.7619,
+        -5.0,
+        -9.6249
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.9148
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        1.2124,
+        -4.0,
+        -6.1675
+       ],
+       "rotation": [
+        47.32,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e7_soffit",
+     "pivot": [
+      5.0655,
+      -4.0,
+      -5.4011
+     ],
+     "cubes": [
+      {
+       "origin": [
+        3.0912,
+        -5.0,
+        -9.3536
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        7.905
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        5.0655,
+        -4.0,
+        -5.4011
+       ],
+       "rotation": [
+        37.402,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e17_tread",
+     "pivot": [
+      -2.8033,
+      5.5,
+      -4.5277
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.5533,
+        3.0,
+        -6.4179
+       ],
+       "size": [
+        5.5,
+        5.0,
+        3.7804
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          8.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          8.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e18_tread",
+     "pivot": [
+      1.7698,
+      5.5,
+      -1.472
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -0.9802,
+        3.0,
+        -4.4562
+       ],
+       "size": [
+        5.5,
+        5.0,
+        5.9685
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.0,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.0,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          9.0,
+          8.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          9.0,
+          8.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.0,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.0,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e19_tread",
+     "pivot": [
+      6.3429,
+      5.5,
+      1.5836
+     ],
+     "cubes": [
+      {
+       "origin": [
+        3.5929,
+        3.0,
+        -2.4947
+       ],
+       "size": [
+        5.5,
+        5.0,
+        8.1565
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          10.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          10.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          7.844,
+          8.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          7.844,
+          8.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          10.5,
+          7.844
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          10.5,
+          7.844
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e22_soffit",
+     "pivot": [
+      -3.4566,
+      0.0,
+      -4.9642
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.4309,
+        -1.0,
+        -8.2149
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.5015
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -3.4566,
+        0.0,
+        -4.9642
+       ],
+       "rotation": [
+        61.788,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e23_soffit",
+     "pivot": [
+      -0.1901,
+      0.0,
+      -2.7816
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -2.1644,
+        -1.0,
+        -6.239
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.9148
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -0.1901,
+        0.0,
+        -2.7816
+       ],
+       "rotation": [
+        47.32,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e24_soffit",
+     "pivot": [
+      3.0764,
+      0.0,
+      -0.599
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1.1021,
+        -1.0,
+        -4.5515
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        7.905
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        3.0764,
+        0.0,
+        -0.599
+       ],
+       "rotation": [
+        37.402,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e25_soffit",
+     "pivot": [
+      6.3429,
+      0.0,
+      1.5836
+     ],
+     "cubes": [
+      {
+       "origin": [
+        4.3686,
+        -1.0,
+        -2.98
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        9.1271
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        6.3429,
+        0.0,
+        1.5836
+       ],
+       "rotation": [
+        30.561,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e34_tread",
+     "pivot": [
+      -4.5277,
+      9.5,
+      -2.8033
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -7.2777,
+        7.0,
+        -4.6935
+       ],
+       "size": [
+        5.5,
+        5.0,
+        3.7804
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          4.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          4.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e35_tread",
+     "pivot": [
+      -1.472,
+      9.5,
+      1.7698
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4.222,
+        7.0,
+        -1.2144
+       ],
+       "size": [
+        5.5,
+        5.0,
+        5.9685
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          9.0,
+          4.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          9.0,
+          4.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e36_tread",
+     "pivot": [
+      1.5836,
+      9.5,
+      6.3429
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.1664,
+        7.0,
+        2.2647
+       ],
+       "size": [
+        5.5,
+        5.0,
+        8.1565
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          10.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          10.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          7.844,
+          4.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          7.844,
+          4.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          10.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          10.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e39_soffit",
+     "pivot": [
+      -4.9642,
+      4.0,
+      -3.4566
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -6.9385,
+        3.0,
+        -6.7073
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.5015
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -4.9642,
+        4.0,
+        -3.4566
+       ],
+       "rotation": [
+        61.788,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e40_soffit",
+     "pivot": [
+      -2.7816,
+      4.0,
+      -0.1901
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4.7559,
+        3.0,
+        -3.6475
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.9148
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -2.7816,
+        4.0,
+        -0.1901
+       ],
+       "rotation": [
+        47.32,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e41_soffit",
+     "pivot": [
+      -0.599,
+      4.0,
+      3.0764
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -2.5733,
+        3.0,
+        -0.8761
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        7.905
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -0.599,
+        4.0,
+        3.0764
+       ],
+       "rotation": [
+        37.402,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e42_soffit",
+     "pivot": [
+      1.5836,
+      4.0,
+      6.3429
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -0.3907,
+        3.0,
+        1.7793
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        9.1271
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        1.5836,
+        4.0,
+        6.3429
+       ],
+       "rotation": [
+        30.561,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e51_tread",
+     "pivot": [
+      -6.7807,
+      13.5,
+      -1.8701
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -9.5307,
+        11.0,
+        -3.7603
+       ],
+       "size": [
+        5.5,
+        5.0,
+        3.7804
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.78,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          3.78
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e52_tread",
+     "pivot": [
+      -5.7077,
+      13.5,
+      3.5242
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8.4577,
+        11.0,
+        0.54
+       ],
+       "size": [
+        5.5,
+        5.0,
+        5.9685
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          9.0,
+          0.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          9.0,
+          0.0
+         ],
+         "uv_size": [
+          5.968,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.968
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e56_soffit",
+     "pivot": [
+      -6.934,
+      8.0,
+      -2.6407
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8.9083,
+        7.0,
+        -5.8914
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.5015
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          6.502,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.5,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.502
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -6.934,
+        8.0,
+        -2.6407
+       ],
+       "rotation": [
+        61.788,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e57_soffit",
+     "pivot": [
+      -6.1675,
+      8.0,
+      1.2124
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8.1418,
+        7.0,
+        -2.245
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        6.9148
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          6.915,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.429,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          6.915
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -6.1675,
+        8.0,
+        1.2124
+       ],
+       "rotation": [
+        47.32,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e58_soffit",
+     "pivot": [
+      -5.4011,
+      8.0,
+      5.0655
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -7.3754,
+        7.0,
+        1.113
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        7.905
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          8.095,
+          0.0
+         ],
+         "uv_size": [
+          7.905,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.357,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          7.905
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -5.4011,
+        8.0,
+        5.0655
+       ],
+       "rotation": [
+        37.402,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e68_post",
+     "pivot": [
+      -6.25,
+      8.0,
+      -6.915
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8.0,
+        0.0,
+        -8.0
+       ],
+       "size": [
+        3.5,
+        16.0,
+        2.17
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          3.5,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "south": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          3.5,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "east": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          2.17,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "west": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          2.17,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "up": {
+         "uv": [
+          2.835,
+          8.0
+         ],
+         "uv_size": [
+          3.5,
+          2.17
+         ],
+         "material_instance": "post"
+        },
+        "down": {
+         "uv": [
+          2.835,
+          8.0
+         ],
+         "uv_size": [
+          3.5,
+          2.17
+         ],
+         "material_instance": "post"
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "e69_post",
+     "pivot": [
+      -6.915,
+      8.0,
+      -6.25
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8.0,
+        0.0,
+        -8.0
+       ],
+       "size": [
+        2.17,
+        16.0,
+        3.5
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          2.17,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "south": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          2.17,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "east": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          3.5,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "west": {
+         "uv": [
+          2.835,
+          0.0
+         ],
+         "uv_size": [
+          3.5,
+          16.0
+         ],
+         "material_instance": "post"
+        },
+        "up": {
+         "uv": [
+          2.835,
+          8.0
+         ],
+         "uv_size": [
+          2.17,
+          3.5
+         ],
+         "material_instance": "post"
+        },
+        "down": {
+         "uv": [
+          2.835,
+          8.0
+         ],
+         "uv_size": [
+          2.17,
+          3.5
+         ],
+         "material_instance": "post"
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "description": {
+    "identifier": "geometry.pw_spiral_B_tower_c01",
+    "texture_width": 16,
+    "texture_height": 16,
+    "visible_bounds_width": 3,
+    "visible_bounds_height": 3,
+    "visible_bounds_offset": [
+     0,
+     0.75,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "e37_tread",
+     "pivot": [
+      4.6392,
+      9.5,
+      -5.0841
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1.8892,
+        7.0,
+        -10.2564
+       ],
+       "size": [
+        5.5,
+        5.0,
+        10.3445
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          4.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          4.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          4.0,
+          4.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          4.0,
+          4.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          4.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          4.0,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e38_tread",
+     "pivot": [
+      7.6949,
+      9.5,
+      -0.511
+     ],
+     "cubes": [
+      {
+       "origin": [
+        4.9449,
+        7.0,
+        -6.7773
+       ],
+       "size": [
+        5.5,
+        5.0,
+        12.5326
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.5,
+          4.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.467,
+          4.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.467,
+          4.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.5,
+          3.467
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.5,
+          3.467
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e43_soffit",
+     "pivot": [
+      3.7662,
+      4.0,
+      -6.3907
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1.7919,
+        3.0,
+        -11.6239
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        10.4663
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        3.7662,
+        4.0,
+        -6.3907
+       ],
+       "rotation": [
+        25.685,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e44_soffit",
+     "pivot": [
+      5.9488,
+      4.0,
+      -3.1242
+     ],
+     "cubes": [
+      {
+       "origin": [
+        3.9745,
+        3.0,
+        -9.0603
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        11.8722
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        5.9488,
+        4.0,
+        -3.1242
+       ],
+       "rotation": [
+        22.082,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e48_rail",
+     "pivot": [
+      6.4954,
+      25.5,
+      3.1191
+     ],
+     "cubes": [
+      {
+       "origin": [
+        5.2454,
+        24.5,
+        -0.3611
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.615,
+          6.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          9.615,
+          6.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          9.04,
+          6.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          9.04,
+          6.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          9.615,
+          6.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          9.615,
+          6.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        6.4954,
+        25.5,
+        3.1191
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -61.875,
+      0
+     ]
+    },
+    {
+     "name": "e50_baluster",
+     "pivot": [
+      6.4954,
+      18.25,
+      3.1191
+     ],
+     "cubes": [
+      {
+       "origin": [
+        5.9954,
+        12.0,
+        2.6191
+       ],
+       "size": [
+        1.0,
+        12.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.615,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          9.615,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          9.615,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          9.615,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          9.615,
+          13.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          9.615,
+          13.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -61.875,
+      0
+     ]
+    },
+    {
+     "name": "e53_tread",
+     "pivot": [
+      -4.6347,
+      13.5,
+      -7.0815
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -7.3847,
+        11.0,
+        -11.1597
+       ],
+       "size": [
+        5.5,
+        5.0,
+        8.1565
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          10.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          10.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          7.844,
+          0.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          7.844,
+          0.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          10.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          10.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e54_tread",
+     "pivot": [
+      -3.5617,
+      13.5,
+      -1.6871
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -6.3117,
+        11.0,
+        -6.8594
+       ],
+       "size": [
+        5.5,
+        5.0,
+        10.3445
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          4.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          4.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          4.0,
+          0.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          4.0,
+          0.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          4.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          4.0,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e55_tread",
+     "pivot": [
+      -2.4887,
+      13.5,
+      3.7072
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.2387,
+        11.0,
+        -2.5591
+       ],
+       "size": [
+        5.5,
+        5.0,
+        12.5326
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.467,
+          0.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.467,
+          0.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.5,
+          0.0
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e59_soffit",
+     "pivot": [
+      -4.6347,
+      8.0,
+      -7.0815
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -6.609,
+        7.0,
+        -11.6451
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        9.1271
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -4.6347,
+        8.0,
+        -7.0815
+       ],
+       "rotation": [
+        30.561,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e60_soffit",
+     "pivot": [
+      -3.8683,
+      8.0,
+      -3.2284
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.8426,
+        7.0,
+        -8.4616
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        10.4663
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -3.8683,
+        8.0,
+        -3.2284
+       ],
+       "rotation": [
+        25.685,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e61_soffit",
+     "pivot": [
+      -3.1018,
+      8.0,
+      0.6247
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.0761,
+        7.0,
+        -5.3114
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        11.8722
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -3.1018,
+        8.0,
+        0.6247
+       ],
+       "rotation": [
+        22.082,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e62_soffit",
+     "pivot": [
+      -2.3354,
+      8.0,
+      4.4778
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4.3097,
+        7.0,
+        -2.1819
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        13.3194
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -2.3354,
+        8.0,
+        4.4778
+       ],
+       "rotation": [
+        19.331,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e63_string",
+     "pivot": [
+      -1.8059,
+      11.5,
+      7.1399
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -2.5559,
+        8.0,
+        0.4679
+       ],
+       "size": [
+        1.5,
+        7.0,
+        13.3441
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          5.334,
+          4.5
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "south": {
+         "uv": [
+          5.334,
+          4.5
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "east": {
+         "uv": [
+          2.656,
+          4.5
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "west": {
+         "uv": [
+          2.656,
+          4.5
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "up": {
+         "uv": [
+          5.334,
+          2.656
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        },
+        "down": {
+         "uv": [
+          5.334,
+          2.656
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        }
+       },
+       "pivot": [
+        -1.8059,
+        11.5,
+        7.1399
+       ],
+       "rotation": [
+        17.787,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -78.75,
+      0
+     ]
+    },
+    {
+     "name": "e64_rail",
+     "pivot": [
+      0.9263,
+      27.5,
+      5.4259
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -0.3237,
+        26.5,
+        1.9457
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          6.352,
+          4.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          6.352,
+          4.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          6.352,
+          4.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          6.352,
+          4.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          6.352,
+          4.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          6.352,
+          4.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        0.9263,
+        27.5,
+        5.4259
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -73.125,
+      0
+     ]
+    },
+    {
+     "name": "e66_baluster",
+     "pivot": [
+      0.9263,
+      21.25,
+      5.4259
+     ],
+     "cubes": [
+      {
+       "origin": [
+        0.4263,
+        16.0,
+        4.9259
+       ],
+       "size": [
+        1.0,
+        10.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          6.352,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          6.352,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          6.352,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          6.352,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          6.352,
+          10.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          6.352,
+          10.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -73.125,
+      0
+     ]
+    },
+    {
+     "name": "e67_baluster",
+     "pivot": [
+      -4.986,
+      22.25,
+      6.6019
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.486,
+        16.0,
+        6.1019
+       ],
+       "size": [
+        1.0,
+        12.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          1.616,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          1.616,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          1.616,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          1.616,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          1.616,
+          9.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          1.616,
+          9.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -84.375,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "description": {
+    "identifier": "geometry.pw_spiral_B_tower_c10",
+    "texture_width": 16,
+    "texture_height": 16,
+    "visible_bounds_width": 3,
+    "visible_bounds_height": 3,
+    "visible_bounds_offset": [
+     0,
+     0.75,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "e2_tread",
+     "pivot": [
+      -7.0815,
+      1.5,
+      -4.6347
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -9.8315,
+        -1.0,
+        -8.7129
+       ],
+       "size": [
+        5.5,
+        5.0,
+        8.1565
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          10.5,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          10.5,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          7.844,
+          11.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          7.844,
+          11.0
+         ],
+         "uv_size": [
+          8.156,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          10.5,
+          7.844
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          10.5,
+          7.844
+         ],
+         "uv_size": [
+          5.5,
+          8.156
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e3_tread",
+     "pivot": [
+      -1.6871,
+      1.5,
+      -3.5617
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4.4371,
+        -1.0,
+        -8.734
+       ],
+       "size": [
+        5.5,
+        5.0,
+        10.3445
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          4.0,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          4.0,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          4.0,
+          11.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          4.0,
+          11.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          4.0,
+          5.655
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          4.0,
+          5.655
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e4_tread",
+     "pivot": [
+      3.7072,
+      1.5,
+      -2.4887
+     ],
+     "cubes": [
+      {
+       "origin": [
+        0.9572,
+        -1.0,
+        -8.755
+       ],
+       "size": [
+        5.5,
+        5.0,
+        12.5326
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.5,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.5,
+          11.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.467,
+          11.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.467,
+          11.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.5,
+          3.467
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.5,
+          3.467
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e8_soffit",
+     "pivot": [
+      -7.0815,
+      -4.0,
+      -4.6347
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -9.0558,
+        -5.0,
+        -9.1982
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        9.1271
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          6.873,
+          0.0
+         ],
+         "uv_size": [
+          9.127,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          12.051,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          9.127
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -7.0815,
+        -4.0,
+        -4.6347
+       ],
+       "rotation": [
+        30.561,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e9_soffit",
+     "pivot": [
+      -3.2284,
+      -4.0,
+      -3.8683
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.2027,
+        -5.0,
+        -9.1014
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        10.4663
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -3.2284,
+        -4.0,
+        -3.8683
+       ],
+       "rotation": [
+        25.685,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e10_soffit",
+     "pivot": [
+      0.6247,
+      -4.0,
+      -3.1018
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.3496,
+        -5.0,
+        -9.0379
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        11.8722
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        0.6247,
+        -4.0,
+        -3.1018
+       ],
+       "rotation": [
+        22.082,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e11_soffit",
+     "pivot": [
+      4.4778,
+      -4.0,
+      -2.3354
+     ],
+     "cubes": [
+      {
+       "origin": [
+        2.5035,
+        -5.0,
+        -8.9951
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        13.3194
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        4.4778,
+        -4.0,
+        -2.3354
+       ],
+       "rotation": [
+        19.331,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e12_string",
+     "pivot": [
+      7.1399,
+      -0.5,
+      -1.8059
+     ],
+     "cubes": [
+      {
+       "origin": [
+        6.3899,
+        -4.0,
+        -8.4779
+       ],
+       "size": [
+        1.5,
+        7.0,
+        13.3441
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          5.334,
+          0.5
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "south": {
+         "uv": [
+          5.334,
+          0.5
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "east": {
+         "uv": [
+          2.656,
+          0.5
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "west": {
+         "uv": [
+          2.656,
+          0.5
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "up": {
+         "uv": [
+          5.334,
+          0.5
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        },
+        "down": {
+         "uv": [
+          5.334,
+          0.5
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        }
+       },
+       "pivot": [
+        7.1399,
+        -0.5,
+        -1.8059
+       ],
+       "rotation": [
+        17.787,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -11.25,
+      0
+     ]
+    },
+    {
+     "name": "e13_rail",
+     "pivot": [
+      6.6019,
+      15.5,
+      -4.986
+     ],
+     "cubes": [
+      {
+       "origin": [
+        5.3519,
+        14.5,
+        -8.4662
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          1.616,
+          0.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          1.616,
+          0.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          1.616,
+          0.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          1.616,
+          0.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          1.616,
+          0.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          1.616,
+          0.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        6.6019,
+        15.5,
+        -4.986
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -5.625,
+      0
+     ]
+    },
+    {
+     "name": "e14_rail",
+     "pivot": [
+      5.4259,
+      17.5,
+      0.9263
+     ],
+     "cubes": [
+      {
+       "origin": [
+        4.1759,
+        16.5,
+        -2.5539
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          6.352,
+          14.0
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          6.352,
+          14.0
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          6.352,
+          14.0
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          6.352,
+          14.0
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          6.352,
+          9.04
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          6.352,
+          9.04
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        5.4259,
+        17.5,
+        0.9263
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -16.875,
+      0
+     ]
+    },
+    {
+     "name": "e15_baluster",
+     "pivot": [
+      6.6019,
+      9.25,
+      -4.986
+     ],
+     "cubes": [
+      {
+       "origin": [
+        6.1019,
+        4.0,
+        -5.486
+       ],
+       "size": [
+        1.0,
+        10.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          1.616,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          1.616,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          1.616,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          1.616,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          1.616,
+          6.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          1.616,
+          6.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -5.625,
+      0
+     ]
+    },
+    {
+     "name": "e16_baluster",
+     "pivot": [
+      5.4259,
+      10.25,
+      0.9263
+     ],
+     "cubes": [
+      {
+       "origin": [
+        4.9259,
+        4.0,
+        0.4263
+       ],
+       "size": [
+        1.0,
+        12.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          6.352,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          6.352,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          6.352,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          6.352,
+          3.5
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          6.352,
+          5.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          6.352,
+          5.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -16.875,
+      0
+     ]
+    },
+    {
+     "name": "e20_tread",
+     "pivot": [
+      -5.0841,
+      5.5,
+      4.6392
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -7.8341,
+        3.0,
+        -0.5331
+       ],
+       "size": [
+        5.5,
+        5.0,
+        10.3445
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          4.0,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          4.0,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          4.0,
+          8.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          4.0,
+          8.0
+         ],
+         "uv_size": [
+          10.345,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          4.0,
+          5.655
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          4.0,
+          5.655
+         ],
+         "uv_size": [
+          5.5,
+          10.345
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e21_tread",
+     "pivot": [
+      -0.511,
+      5.5,
+      7.6949
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -3.261,
+        3.0,
+        1.4286
+       ],
+       "size": [
+        5.5,
+        5.0,
+        12.5326
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "south": {
+         "uv": [
+          9.5,
+          8.0
+         ],
+         "uv_size": [
+          5.5,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "east": {
+         "uv": [
+          3.467,
+          8.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "west": {
+         "uv": [
+          3.467,
+          8.0
+         ],
+         "uv_size": [
+          12.533,
+          5.0
+         ],
+         "material_instance": "tread"
+        },
+        "up": {
+         "uv": [
+          9.5,
+          3.467
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        },
+        "down": {
+         "uv": [
+          9.5,
+          3.467
+         ],
+         "uv_size": [
+          5.5,
+          12.533
+         ],
+         "material_instance": "tread"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e26_soffit",
+     "pivot": [
+      -6.3907,
+      0.0,
+      3.7662
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8.365,
+        -1.0,
+        -1.467
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        10.4663
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          10.466,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          3.214,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          10.466
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -6.3907,
+        0.0,
+        3.7662
+       ],
+       "rotation": [
+        25.685,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e27_soffit",
+     "pivot": [
+      -3.1242,
+      0.0,
+      5.9488
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.0985,
+        -1.0,
+        0.0127
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        11.8722
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          4.128,
+          0.0
+         ],
+         "uv_size": [
+          11.872,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          7.143,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          11.872
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -3.1242,
+        0.0,
+        5.9488
+       ],
+       "rotation": [
+        22.082,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e30_rail",
+     "pivot": [
+      3.1191,
+      19.5,
+      6.4954
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1.8691,
+        18.5,
+        3.0152
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.615,
+          12.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          9.615,
+          12.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          9.04,
+          12.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          9.04,
+          12.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          9.615,
+          9.04
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          9.615,
+          9.04
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        3.1191,
+        19.5,
+        6.4954
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -28.125,
+      0
+     ]
+    },
+    {
+     "name": "e32_baluster",
+     "pivot": [
+      3.1191,
+      13.25,
+      6.4954
+     ],
+     "cubes": [
+      {
+       "origin": [
+        2.6191,
+        8.0,
+        5.9954
+       ],
+       "size": [
+        1.0,
+        10.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          9.615,
+          2.75
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          9.615,
+          2.75
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          9.615,
+          2.75
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          9.615,
+          2.75
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          9.615,
+          2.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          9.615,
+          2.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -28.125,
+      0
+     ]
+    },
+    {
+     "name": "e65_rail",
+     "pivot": [
+      6.6019,
+      13.5,
+      -11.014
+     ],
+     "cubes": [
+      {
+       "origin": [
+        5.3519,
+        12.5,
+        -14.4942
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.588,
+          2.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          11.588,
+          2.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          9.04,
+          2.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          9.04,
+          2.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          11.588,
+          2.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          11.588,
+          2.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        6.6019,
+        13.5,
+        -11.014
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      5.625,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "description": {
+    "identifier": "geometry.pw_spiral_B_tower_c11",
+    "texture_width": 16,
+    "texture_height": 16,
+    "visible_bounds_width": 3,
+    "visible_bounds_height": 3,
+    "visible_bounds_offset": [
+     0,
+     0.75,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "e28_soffit",
+     "pivot": [
+      0.1423,
+      0.0,
+      -7.8686
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.832,
+        -1.0,
+        -14.5283
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        13.3194
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        0.1423,
+        0.0,
+        -7.8686
+       ],
+       "rotation": [
+        19.331,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e29_string",
+     "pivot": [
+      2.3992,
+      3.5,
+      -6.3606
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1.6492,
+        0.0,
+        -13.0327
+       ],
+       "size": [
+        1.5,
+        7.0,
+        13.3441
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          12.039,
+          9.0
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "south": {
+         "uv": [
+          12.039,
+          9.0
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "east": {
+         "uv": [
+          2.656,
+          9.0
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "west": {
+         "uv": [
+          2.656,
+          9.0
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "up": {
+         "uv": [
+          12.039,
+          2.656
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        },
+        "down": {
+         "uv": [
+          12.039,
+          2.656
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        }
+       },
+       "pivot": [
+        2.3992,
+        3.5,
+        -6.3606
+       ],
+       "rotation": [
+        17.787,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -33.75,
+      0
+     ]
+    },
+    {
+     "name": "e31_rail",
+     "pivot": [
+      -0.2299,
+      21.5,
+      -4.4924
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.4799,
+        20.5,
+        -7.9726
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.278,
+          10.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          11.278,
+          10.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          9.04,
+          10.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          9.04,
+          10.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          11.278,
+          9.04
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          11.278,
+          9.04
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        -0.2299,
+        21.5,
+        -4.4924
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -39.375,
+      0
+     ]
+    },
+    {
+     "name": "e33_baluster",
+     "pivot": [
+      -0.2299,
+      14.25,
+      -4.4924
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -0.7299,
+        8.0,
+        -4.9924
+       ],
+       "size": [
+        1.0,
+        12.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.278,
+          1.75
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          11.278,
+          1.75
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          11.278,
+          1.75
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          11.278,
+          1.75
+         ],
+         "uv_size": [
+          1.0,
+          12.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          11.278,
+          1.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          11.278,
+          1.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -39.375,
+      0
+     ]
+    },
+    {
+     "name": "e45_soffit",
+     "pivot": [
+      -7.8686,
+      4.0,
+      0.1423
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -9.8429,
+        3.0,
+        -6.5174
+       ],
+       "size": [
+        3.9486,
+        2.0,
+        13.3194
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "south": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "east": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "west": {
+         "uv": [
+          2.681,
+          0.0
+         ],
+         "uv_size": [
+          13.319,
+          2.0
+         ],
+         "material_instance": "soffit"
+        },
+        "up": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        },
+        "down": {
+         "uv": [
+          11.071,
+          0.0
+         ],
+         "uv_size": [
+          3.949,
+          13.319
+         ],
+         "material_instance": "soffit"
+        }
+       },
+       "pivot": [
+        -7.8686,
+        4.0,
+        0.1423
+       ],
+       "rotation": [
+        19.331,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e46_string",
+     "pivot": [
+      -6.3606,
+      7.5,
+      2.3992
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -7.1106,
+        4.0,
+        -4.2729
+       ],
+       "size": [
+        1.5,
+        7.0,
+        13.3441
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          12.039,
+          8.5
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "south": {
+         "uv": [
+          12.039,
+          8.5
+         ],
+         "uv_size": [
+          1.5,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "east": {
+         "uv": [
+          2.656,
+          8.5
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "west": {
+         "uv": [
+          2.656,
+          8.5
+         ],
+         "uv_size": [
+          13.344,
+          7.0
+         ],
+         "material_instance": "string"
+        },
+        "up": {
+         "uv": [
+          12.039,
+          2.656
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        },
+        "down": {
+         "uv": [
+          12.039,
+          2.656
+         ],
+         "uv_size": [
+          1.5,
+          13.344
+         ],
+         "material_instance": "string"
+        }
+       },
+       "pivot": [
+        -6.3606,
+        7.5,
+        2.3992
+       ],
+       "rotation": [
+        17.787,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -56.25,
+      0
+     ]
+    },
+    {
+     "name": "e47_rail",
+     "pivot": [
+      -4.4924,
+      23.5,
+      -0.2299
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5.7424,
+        22.5,
+        -3.7101
+       ],
+       "size": [
+        2.5,
+        2.0,
+        6.9604
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.278,
+          8.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "south": {
+         "uv": [
+          11.278,
+          8.5
+         ],
+         "uv_size": [
+          2.5,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "east": {
+         "uv": [
+          9.04,
+          8.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "west": {
+         "uv": [
+          9.04,
+          8.5
+         ],
+         "uv_size": [
+          6.96,
+          2.0
+         ],
+         "material_instance": "rail"
+        },
+        "up": {
+         "uv": [
+          11.278,
+          8.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        },
+        "down": {
+         "uv": [
+          11.278,
+          8.5
+         ],
+         "uv_size": [
+          2.5,
+          6.96
+         ],
+         "material_instance": "rail"
+        }
+       },
+       "pivot": [
+        -4.4924,
+        23.5,
+        -0.2299
+       ],
+       "rotation": [
+        18.327,
+        0,
+        0
+       ]
+      }
+     ],
+     "rotation": [
+      0,
+      -50.625,
+      0
+     ]
+    },
+    {
+     "name": "e49_baluster",
+     "pivot": [
+      -4.4924,
+      17.25,
+      -0.2299
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4.9924,
+        12.0,
+        -0.7299
+       ],
+       "size": [
+        1.0,
+        10.5,
+        1.0
+       ],
+       "uv": {
+        "north": {
+         "uv": [
+          11.278,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "south": {
+         "uv": [
+          11.278,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "east": {
+         "uv": [
+          11.278,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "west": {
+         "uv": [
+          11.278,
+          5.5
+         ],
+         "uv_size": [
+          1.0,
+          10.5
+         ],
+         "material_instance": "baluster"
+        },
+        "up": {
+         "uv": [
+          11.278,
+          14.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        },
+        "down": {
+         "uv": [
+          11.278,
+          14.75
+         ],
+         "uv_size": [
+          1.0,
+          1.0
+         ],
+         "material_instance": "baluster"
+        }
+       }
+      }
+     ],
+     "rotation": [
+      0,
+      -50.625,
+      0
+     ]
+    }
+   ]
+  }
+ ]
+}

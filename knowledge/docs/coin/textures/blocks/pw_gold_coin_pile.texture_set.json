@@ -1,0 +1,7 @@
+{
+ "format_version": "1.21.30",
+ "minecraft:texture_set": {
+  "color": "pw_gold_coin_pile",
+  "metalness_emissive_roughness": "pw_gold_coin_pile_mer"
+ }
+}

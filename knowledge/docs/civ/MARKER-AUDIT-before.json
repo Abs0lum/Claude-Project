@@ -1,0 +1,172 @@
+{
+ "mvv_bakery_a_r1": {
+  "issues": [
+   "zone workfloor#0: Z1 corner 7,0,7 has no floor under it (minecraft:ladder)",
+   "zone workfloor#0: Z4 2 wall/solid cells inside the ring at feet 0, e.g. [(7, 3), (7, 5)] = ['minecraft:bricks', 'minecraft:bricks']",
+   "feet 0: Z5 6 walkable room cells in no zone, e.g. [(3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7)]",
+   "station oven#0 @6,0,2: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'minecraft:furnace'}",
+   "station oven#1 @6,0,6: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'minecraft:furnace'}",
+   "station hearth#0 @7,0,4: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'pw:hearth_brick'}",
+   "station prep#0 @5,0,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'pw:furn_trestle_oak'}",
+   "station counter#0 @2,0,4: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'pw:furn_shelf_oak'}",
+   "station store#0 @1,0,6: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:barrel'}",
+   "station store#1 @2,-5,6: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:chest'}",
+   "S2 pw:furn_stool_oak at 1,0,2 has no seat station in its cell",
+   "S2 pw:hearth_brick at 8,0,4 has no hearth station in its cell",
+   "S2 minecraft:furnace at 7,0,2 has no oven station in its cell",
+   "S2 minecraft:furnace at 7,0,6 has no oven station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_butcher_a_r1": {
+  "issues": [
+   "zone shopfloor#0: Z3 consecutive corners not axis-aligned / zero-length edge",
+   "zone shopfloor#0: Z1 corner 1,0,6 has no floor under it (minecraft:ladder)",
+   "zone shopfloor#0: Z1 corner 1,0,6 has no floor under it (minecraft:ladder)",
+   "zone threshold#0: Z3 consecutive corners not axis-aligned / zero-length edge",
+   "feet 0: Z5 5 walkable room cells in no zone, e.g. [(2, 2), (2, 3), (2, 4), (2, 5), (2, 6)]",
+   "station oven#0 @5,0,2: S1 not in its fixture's cell (cell holds pw:furn_trestle_spruce); the fixture is beside it at {'1,0': 'minecraft:smoker'}",
+   "station prep#0 @4,0,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'pw:furn_trestle_spruce'}",
+   "station counter#0 @1,0,4: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'pw:furn_shelf_spruce'}",
+   "station store#0 @5,0,6: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'minecraft:barrel'}",
+   "station store#1 @2,-5,5: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:chest'}",
+   "S2 minecraft:smoker at 6,0,2 has no oven station in its cell",
+   "S2 minecraft:smoker at 6,0,3 has no oven station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_cottage_l_a_r1": {
+  "issues": [
+   "zone kitchen#0: Z1 corner 1,0,6 has no floor under it (minecraft:ladder)",
+   "zone quarters#0: Z1 corner 8,4,2 has no floor under it (minecraft:ladder)",
+   "zone stable#0: Z1 corner 1,0,8 sits inside minecraft:dirt",
+   "zone stable#0: Z1 corner 1,0,10 sits inside minecraft:dirt",
+   "zone stable#0: Z1 corner 8,0,8 sits inside minecraft:dirt",
+   "zone stable#0: Z4 22 wall/solid cells inside the ring at feet 0, e.g. [(4, 9), (3, 10), (5, 10), (8, 9)] = ['minecraft:dirt', 'minecraft:dirt', 'minecraft:dirt', 'minecraft:dirt']",
+   "feet -5: Z5 32 walkable room cells in no zone, e.g. [(1, 7), (1, 8), (1, 9), (1, 10), (2, 7), (2, 8)]",
+   "feet 0: Z5 1 walkable room cells in no zone, e.g. [(5, 4)]",
+   "station hearth#0 @3,0,2: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'pw:hearth_stone_bricks'}",
+   "S2 pw:furn_chair_spruce at 7,0,6 has no seat station in its cell",
+   "S2 pw:hearth_stone_bricks at 3,0,1 has no hearth station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_cottage_m_a_r1": {
+  "issues": [
+   "zone storeroom#0: Z1 corner 6,4,7 has no floor under it (minecraft:ladder)",
+   "station hearth#0 @6,0,5: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'pw:hearth_oak_planks'}",
+   "S2 pw:furn_stool_oak at 5,0,6 has no seat station in its cell",
+   "S2 pw:hearth_oak_planks at 7,0,5 has no hearth station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_cottage_s_a_r1": {
+  "issues": [
+   "station hearth#0 @5,0,2: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'pw:hearth_oak_planks'}",
+   "station store#0 @5,0,5: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'pw:furn_cupboard_oak'}",
+   "station store#1 @2,-5,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'minecraft:barrel'}",
+   "S2 pw:furn_stool_oak at 4,0,2 has no seat station in its cell",
+   "S2 pw:hearth_oak_planks at 5,0,1 has no hearth station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_farm_cattle_a_r1": {
+  "issues": [
+   "zone storeroom#0: Z1 corner 5,4,2 has no floor under it (minecraft:ladder)",
+   "zone threshold#0: Z3 consecutive corners not axis-aligned / zero-length edge",
+   "feet 0: Z5 6 walkable room cells in no zone, e.g. [(7, 2), (7, 3), (7, 4), (7, 5), (7, 6), (7, 7)]",
+   "station store#0 @1,0,6: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:barrel'}"
+  ],
+  "notes": []
+ },
+ "mvv_farm_wheat_a_r1": {
+  "issues": [
+   "zone threshold#0: Z3 consecutive corners not axis-aligned / zero-length edge",
+   "feet 0: Z5 28 walkable room cells in no zone, e.g. [(0, 1), (0, 2), (0, 8), (0, 9), (1, 1), (1, 2)]",
+   "station store#0 @1,0,5: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:barrel'}",
+   "station prep#0 @1,0,3: S1 not in its fixture's cell (cell holds minecraft:spruce_planks); the fixture is beside it at {'0,1': 'minecraft:composter'}",
+   "S2 pw:furn_stool_spruce at 2,0,6 has no seat station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_inn_a_r1": {
+  "issues": [
+   "zone quarters#0: Z1 corner 9,4,2 has no floor under it (minecraft:ladder)",
+   "zone threshold#0: Z1 corner 1,0,5 has no floor under it (minecraft:ladder)",
+   "station hearth#0 @9,0,7: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'1,0': 'pw:hearth_stone_bricks'}",
+   "station counter#0 @4,0,6: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'pw:furn_shelf_oak'}",
+   "station store#0 @1,0,7: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:barrel'}",
+   "station store#1 @3,-5,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'minecraft:barrel'}",
+   "S2 pw:furn_bench_oak at 9,0,6 has no seat station in its cell",
+   "S2 pw:hearth_stone_bricks at 10,0,7 has no hearth station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_lumberyard_a_r1": {
+  "issues": [
+   "zone workfloor#0: Z1 corner 1,0,2 sits inside minecraft:oak_log",
+   "zone workfloor#0: Z1 corner 6,0,8 sits inside minecraft:oak_planks",
+   "zone workfloor#0: Z4 8 wall/solid cells inside the ring at feet 0, e.g. [(5, 7), (2, 2), (1, 3), (6, 8)] = ['minecraft:oak_planks', 'minecraft:oak_log', 'minecraft:oak_log', 'minecraft:oak_planks']",
+   "feet 0: Z5 22 walkable room cells in no zone, e.g. [(0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7)]",
+   "station bench#0 @3,0,4: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:stonecutter_block'}",
+   "station rack#0 @1,0,4: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'minecraft:oak_log'}",
+   "station store#0 @5,0,6: S1 not in its fixture's cell (cell holds minecraft:air)",
+   "station prep#0 @6,0,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'pw:furn_trestle_oak'}"
+  ],
+  "notes": []
+ },
+ "mvv_quarry_a_r1": {
+  "issues": [
+   "zone yard#0: Z1 corner 5,-6,2 sits inside minecraft:stone",
+   "zone yard#0: Z1 corner 5,-6,10 sits inside minecraft:stone",
+   "zone yard#0: Z1 corner 12,-6,10 sits inside minecraft:stone",
+   "zone yard#0: Z1 corner 12,-6,2 sits inside minecraft:stone",
+   "feet 0: Z5 64 walkable room cells in no zone, e.g. [(0, 1), (0, 2), (0, 3), (0, 9), (0, 10), (0, 11)]",
+   "station store#0 @1,0,6: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:barrel', '0,-1': 'minecraft:chest'}",
+   "station yard#0 @8,-6,6: S1 area station inside minecraft:stone",
+   "S2 pw:furn_stool_oak at 2,0,7 has no seat station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_smithy_a_r1": {
+  "issues": [
+   "zone threshold#0: Z3 consecutive corners not axis-aligned / zero-length edge",
+   "zone yard#0: Z1 corner 8,0,2 sits inside minecraft:spruce_log",
+   "feet 0: Z5 4 walkable room cells in no zone, e.g. [(0, 3), (0, 4), (0, 5), (6, 4)]",
+   "station hearth#0 @5,0,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'pw:hearth_stone_bricks'}",
+   "station anvil#0 @3,0,5: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'minecraft:anvil'}",
+   "station bench#0 @5,0,5: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'minecraft:grindstone'}",
+   "station counter#0 @2,0,2: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'-1,0': 'pw:furn_shelf_oak'}",
+   "station store#0 @2,0,7: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'-1,0': 'minecraft:barrel'}",
+   "S2 pw:hearth_stone_bricks at 5,0,2 has no hearth station in its cell",
+   "S2 minecraft:blast_furnace at 4,0,2 has no oven station in its cell",
+   "S2 minecraft:anvil at 3,0,4 has no anvil station in its cell"
+  ],
+  "notes": []
+ },
+ "mvv_town_hall_a_r1": {
+  "issues": [
+   "zone chamber#0: Z1 corner 9,0,3 sits inside minecraft:spruce_planks",
+   "zone chamber#0: Z1 corner 9,0,7 sits inside minecraft:spruce_planks",
+   "zone chamber#0: Z1 corner 10,0,7 sits inside minecraft:spruce_planks",
+   "zone chamber#0: Z1 corner 10,0,3 sits inside minecraft:spruce_planks",
+   "zone chamber#0: Z4 10 wall/solid cells inside the ring at feet 0, e.g. [(10, 5), (9, 3), (10, 4), (9, 6)] = ['minecraft:spruce_planks', 'minecraft:spruce_planks', 'minecraft:spruce_planks', 'minecraft:spruce_planks']",
+   "zone threshold#0: Z1 corner 1,0,4 has no floor under it (minecraft:ladder)",
+   "feet 0: Z5 4 walkable room cells in no zone, e.g. [(9, 2), (9, 8), (10, 2), (10, 8)]",
+   "station desk#0 @8,0,5: S1 not in its fixture's cell (cell holds minecraft:air)",
+   "station post#0 @1,0,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'pw:furn_shelf_spruce'}",
+   "station hearth#0 @6,0,8: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,1': 'pw:hearth_stone_bricks'}",
+   "station store#0 @9,0,3: S1 not in its fixture's cell (cell holds minecraft:spruce_planks)",
+   "station store#1 @4,-5,3: S1 not in its fixture's cell (cell holds minecraft:air); the fixture is beside it at {'0,-1': 'minecraft:chest'}",
+   "S2 pw:hearth_stone_bricks at 6,0,9 has no hearth station in its cell",
+   "S2 minecraft:lectern at 9,1,5 has no desk station in its cell"
+  ],
+  "notes": [
+   "zone chamber#0: Z6 no bed inside (fine for a household living room; check)"
+  ]
+ },
+ "mvv_well_a_r1": {
+  "issues": [],
+  "notes": []
+ }
+}

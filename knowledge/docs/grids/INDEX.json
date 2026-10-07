@@ -1,0 +1,232 @@
+[
+ {
+  "file": "oak_planks__OURS-RP04-1.3.147.png",
+  "block": "oak_planks",
+  "source": "OURS-RP04-1.3.147",
+  "rule": "random of 4 variants (seed 11), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "oak_planks__Patrix-256.png",
+  "block": "oak_planks",
+  "source": "Patrix-256",
+  "rule": "repeat 4x4 (16 tiles), 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "oak_planks__Stratum-256.png",
+  "block": "oak_planks",
+  "source": "Stratum-256",
+  "rule": "one texture, 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "oak_planks__GameplayFriendly-128.png",
+  "block": "oak_planks",
+  "source": "GameplayFriendly-128",
+  "rule": "repeat 3x2 (6 tiles), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "oak_planks__RenderingStuff-512.png",
+  "block": "oak_planks",
+  "source": "RenderingStuff-512",
+  "rule": "one texture, 512px",
+  "px": [
+   3072,
+   3100
+  ]
+ },
+ {
+  "file": "spruce_planks__OURS-RP04-1.3.147.png",
+  "block": "spruce_planks",
+  "source": "OURS-RP04-1.3.147",
+  "rule": "random of 4 variants (seed 11), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "spruce_planks__Patrix-256.png",
+  "block": "spruce_planks",
+  "source": "Patrix-256",
+  "rule": "repeat 4x4 (16 tiles), 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "spruce_planks__Stratum-256.png",
+  "block": "spruce_planks",
+  "source": "Stratum-256",
+  "rule": "one texture, 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "spruce_planks__GameplayFriendly-128.png",
+  "block": "spruce_planks",
+  "source": "GameplayFriendly-128",
+  "rule": "repeat 3x2 (6 tiles), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "birch_planks__OURS-RP04-1.3.147.png",
+  "block": "birch_planks",
+  "source": "OURS-RP04-1.3.147",
+  "rule": "random of 4 variants (seed 11), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "birch_planks__Patrix-256.png",
+  "block": "birch_planks",
+  "source": "Patrix-256",
+  "rule": "repeat 4x4 (16 tiles), 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "birch_planks__Stratum-256.png",
+  "block": "birch_planks",
+  "source": "Stratum-256",
+  "rule": "one texture, 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "birch_planks__GameplayFriendly-128.png",
+  "block": "birch_planks",
+  "source": "GameplayFriendly-128",
+  "rule": "repeat 3x2 (6 tiles), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "dark_oak_planks__OURS-RP04-1.3.147.png",
+  "block": "dark_oak_planks",
+  "source": "OURS-RP04-1.3.147",
+  "rule": "random of 4 variants (seed 11), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "dark_oak_planks__Patrix-256.png",
+  "block": "dark_oak_planks",
+  "source": "Patrix-256",
+  "rule": "repeat 4x4 (16 tiles), 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "dark_oak_planks__Stratum-256.png",
+  "block": "dark_oak_planks",
+  "source": "Stratum-256",
+  "rule": "one texture, 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "dark_oak_planks__GameplayFriendly-128.png",
+  "block": "dark_oak_planks",
+  "source": "GameplayFriendly-128",
+  "rule": "repeat 3x2 (6 tiles), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "dark_oak_planks__RenderingStuff-512.png",
+  "block": "dark_oak_planks",
+  "source": "RenderingStuff-512",
+  "rule": "one texture, 512px",
+  "px": [
+   3072,
+   3100
+  ]
+ },
+ {
+  "file": "sand__OURS-RP04-1.3.147.png",
+  "block": "sand",
+  "source": "OURS-RP04-1.3.147",
+  "rule": "random of 24 variants (seed 11), 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "sand__Patrix-256.png",
+  "block": "sand",
+  "source": "Patrix-256",
+  "rule": "repeat 6x6 (36 tiles), 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "sand__Stratum-256.png",
+  "block": "sand",
+  "source": "Stratum-256",
+  "rule": "one texture, 256px",
+  "px": [
+   1536,
+   1564
+  ]
+ },
+ {
+  "file": "sand__GameplayFriendly-128.png",
+  "block": "sand",
+  "source": "GameplayFriendly-128",
+  "rule": "repeat 2x2 (4 tiles), 128px",
+  "px": [
+   768,
+   796
+  ]
+ },
+ {
+  "file": "sand__RenderingStuff-512.png",
+  "block": "sand",
+  "source": "RenderingStuff-512",
+  "rule": "repeat 2x2 (4 tiles), 512px",
+  "px": [
+   3072,
+   3100
+  ]
+ }
+]
