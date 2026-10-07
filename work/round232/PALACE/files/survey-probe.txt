@@ -1,0 +1,9 @@
+new n4 slots 2: ACCEPTED day 5 (relief 0); max areas 2; max reads/day 416; total reads 1044
+new n4 slots 3: ACCEPTED day 5 (relief 0); max areas 3; max reads/day 418; total reads 1669
+new n4 slots 4: ACCEPTED day 5 (relief 0); max areas 4; max reads/day 418; total reads 1669
+new n2 slots 2: ACCEPTED day 2 (relief 0); max areas 2; max reads/day 228; total reads 228
+prop n4 slots 2: NOT accepted in 60 days; max areas 2; max reads/day 1086; total reads 39208
+prop n4 slots 3: NOT accepted in 60 days; max areas 3; max reads/day 1760; total reads 87134
+prop n4 slots 4: ACCEPTED day 5 (relief 0); max areas 4; max reads/day 3639; total reads 8773
+base 231 (2 x 2): ACCEPTED day 2 at 52 -58; max reads/day 481
+1.3.232 (2 x 2 fallback): ACCEPTED day 2 at 52 -58 — same site: true
