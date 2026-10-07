@@ -1,0 +1,116 @@
+{
+ "hoglin": {
+  "identifier": "geometry.hoglin.patrix",
+  "file": "hoglin.geo.json",
+  "stem": "hoglin",
+  "bones": 18,
+  "cubes": 15,
+  "mapping": {},
+  "unbound": [],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {
+   "body": [
+    -0.065,
+    -0.062,
+    -4.5
+   ],
+   "front_left_leg": [
+    0.0,
+    -0.0,
+    -4.0
+   ],
+   "front_right_leg": [
+    0.0,
+    -0.0,
+    -4.0
+   ],
+   "back_left_leg": [
+    0.0,
+    0.0,
+    -9.182
+   ],
+   "back_right_leg": [
+    0.0,
+    0.0,
+    -1.818
+   ]
+  },
+  "texture": [
+   128,
+   64
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 4.7,
+   "visible_bounds_height": 3.58,
+   "visible_bounds_offset": [
+    0.0,
+    1.22,
+    0.0
+   ],
+   "mojang_box": [
+    0.0,
+    3.0,
+    4.0
+   ]
+  }
+ },
+ "zoglin": {
+  "identifier": "geometry.zoglin.patrix",
+  "file": "zoglin.geo.json",
+  "stem": "zoglin",
+  "bones": 18,
+  "cubes": 15,
+  "mapping": {},
+  "unbound": [],
+  "frames": {},
+  "frame_err": 0.0,
+  "reparent_err": 0.0,
+  "pivot_shift": {
+   "body": [
+    -0.065,
+    -0.062,
+    -4.5
+   ],
+   "front_left_leg": [
+    0.0,
+    -0.0,
+    -4.0
+   ],
+   "front_right_leg": [
+    0.0,
+    -0.0,
+    -4.0
+   ],
+   "back_left_leg": [
+    0.0,
+    0.0,
+    -9.182
+   ],
+   "back_right_leg": [
+    0.0,
+    0.0,
+    -1.818
+   ]
+  },
+  "texture": [
+   128,
+   64
+  ],
+  "visible_bounds": {
+   "visible_bounds_width": 4.7,
+   "visible_bounds_height": 3.58,
+   "visible_bounds_offset": [
+    0.0,
+    1.22,
+    0.0
+   ],
+   "mojang_box": [
+    0.0,
+    3.0,
+    4.0
+   ]
+  }
+ }
+}

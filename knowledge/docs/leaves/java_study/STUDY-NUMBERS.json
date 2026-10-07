@@ -1,0 +1,77 @@
+{
+ "java_full_bounds_px": {
+  "min": [
+   -14.0,
+   -4.0,
+   -13.19
+  ],
+  "max": [
+   14.0,
+   22.0,
+   10.61
+  ],
+  "size": [
+   28.0,
+   26.0,
+   23.8
+  ]
+ },
+ "java_cards_bounds_px": {
+  "min": [
+   -13.0,
+   -4.0,
+   -10.19
+  ],
+  "max": [
+   13.0,
+   21.0,
+   10.19
+  ],
+  "size": [
+   26.0,
+   25.0,
+   20.38
+  ]
+ },
+ "bedrock_limit": "whole model <= 30x30x30 px, every point within +-30 of the bottom-centre origin, >= 1 px inside the base block per axis (Microsoft Learn, custom block oversized geometry, 2025-06-10)",
+ "fits_30": true,
+ "quads": {
+  "java cube+cards": 8,
+  "java cards only": 4,
+  "ours v1": 84,
+  "ours v2": 84,
+  "ours v3": 48,
+  "ours v4": 96,
+  "ours v5": 96,
+  "ours v6": 72
+ },
+ "drawn_pixels_pct": {
+  "patrix oak face tiles (128px)": [
+   25.3,
+   24.9,
+   25.1,
+   24.8,
+   31.5,
+   31.1
+  ],
+  "patrix oak card tiles (128px)": [
+   12.3,
+   10.9,
+   13.1,
+   11.0
+  ],
+  "ours v1..v5 (32px frame 0)": [
+   32.8,
+   32.1,
+   39.2,
+   39.8,
+   31.1
+  ]
+ },
+ "tree": {
+  "logs": 11,
+  "leaves": 59,
+  "cards_only": 35,
+  "cube_cards": 24
+ }
+}

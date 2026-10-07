@@ -1,0 +1,47 @@
+{
+ "resource_pack_name": "naturalist",
+ "texture_name": "atlas.terrain",
+ "padding": 8,
+ "num_mip_levels": 4,
+ "texture_data": {
+  "sf_nba.shellstone": {
+   "textures": "textures/blocks/sf_nba/shellstone"
+  },
+  "sf_nba.shellstone_bricks": {
+   "textures": "textures/blocks/sf_nba/shellstone_bricks"
+  },
+  "sf_nba.cut_shellstone": {
+   "textures": "textures/blocks/sf_nba/cut_shellstone"
+  },
+  "sf_nba.smooth_shellstone": {
+   "textures": "textures/blocks/sf_nba/smooth_shellstone"
+  },
+  "sf_nba.chrysalis_stage0": {
+   "textures": "textures/blocks/sf_nba/chrysalis_stage0"
+  },
+  "sf_nba.chrysalis_stage1": {
+   "textures": "textures/blocks/sf_nba/chrysalis_stage1"
+  },
+  "sf_nba.chrysalis_stage2": {
+   "textures": "textures/blocks/sf_nba/chrysalis_stage2"
+  },
+  "sf_nba.starfish_placeable_0": {
+   "textures": "textures/items/sf_nba/starfish_orange"
+  },
+  "sf_nba.starfish_placeable_1": {
+   "textures": "textures/items/sf_nba/starfish_purple"
+  },
+  "sf_nba.starfish_placeable_2": {
+   "textures": "textures/items/sf_nba/starfish_blue"
+  },
+  "sf_nba.starfish_placeable_3": {
+   "textures": "textures/items/sf_nba/starfish_red"
+  },
+  "sf_nba.ant_hill_base": {
+   "textures": "textures/blocks/sf_nba/ant_hill_base"
+  },
+  "sf_nba.ant_hill": {
+   "textures": "textures/blocks/sf_nba/ant_hill"
+  }
+ }
+}

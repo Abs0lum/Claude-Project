@@ -1,0 +1,2696 @@
+[
+ {
+  "id": "minecraft:cave_spider",
+  "rp": "resource_pack",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_cave_spider.spider.walk",
+    "parade": "animation.std.minecraft_cave_spider.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:spider",
+  "rp": "rp06-1425",
+  "parade": [
+   {
+    "short": "walking",
+    "from": "animation.std.minecraft_spider.pw_spider.walking",
+    "parade": "animation.std.minecraft_spider.parade_walking",
+    "pace": 1.5
+   },
+   {
+    "short": "walking_legs",
+    "from": "animation.std.minecraft_spider.pw_spider.walk",
+    "parade": "animation.std.minecraft_spider.parade_walking_legs",
+    "pace": 1.5
+   },
+   {
+    "short": "walking_legs2",
+    "from": "animation.std.minecraft_spider.pw_spider.walk",
+    "parade": "animation.std.minecraft_spider.parade_walking_legs2",
+    "pace": 1.5
+   },
+   {
+    "short": "attack_walk",
+    "from": "animation.std.minecraft_spider.pw_spider.walk",
+    "parade": "animation.std.minecraft_spider.parade_attack_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:cave_snake",
+  "rp": "rp06-1425",
+  "parade": [
+   {
+    "short": "fam_swim",
+    "from": "animation.std.sf_nba_cave_snake.fam_swim",
+    "parade": "animation.std.sf_nba_cave_snake.parade_fam_swim",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:coral_snake",
+  "rp": "rp06-1425",
+  "parade": [
+   {
+    "short": "fam_swim",
+    "from": "animation.std.sf_nba_coral_snake.fam_swim",
+    "parade": "animation.std.sf_nba_coral_snake.parade_fam_swim",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:desert_scorpion",
+  "rp": "rp06-1425",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_desert_scorpion.sf_nba.desert_scorpion.walk",
+    "parade": "animation.std.sf_nba_desert_scorpion.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_desert_scorpion.sf_nba.desert_scorpion.run",
+    "parade": "animation.std.sf_nba_desert_scorpion.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:jungle_scorpion",
+  "rp": "rp06-1425",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_jungle_scorpion.sf_nba.jungle_scorpion.walk",
+    "parade": "animation.std.sf_nba_jungle_scorpion.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_jungle_scorpion.sf_nba.jungle_scorpion.run",
+    "parade": "animation.std.sf_nba_jungle_scorpion.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:rattlesnake",
+  "rp": "rp06-1425",
+  "parade": [
+   {
+    "short": "fam_swim",
+    "from": "animation.std.sf_nba_rattlesnake.fam_swim",
+    "parade": "animation.std.sf_nba_rattlesnake.parade_fam_swim",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:axolotl",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_axolotl.ar_axolotl.walk",
+    "parade": "animation.std.minecraft_axolotl.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_axolotl.axolotl.pw.ambient",
+    "parade": "animation.std.minecraft_axolotl.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:camel",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_camel.ar_camel.walk",
+    "parade": "animation.std.minecraft_camel.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_camel.pw_camel.ambient",
+    "parade": "animation.std.minecraft_camel.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:chicken",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_chicken.ar_chicken.walk",
+    "parade": "animation.std.minecraft_chicken.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_chicken.pw_chicken.ambient",
+    "parade": "animation.std.minecraft_chicken.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:cow",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_cow.cow.walk",
+    "parade": "animation.std.minecraft_cow.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_cow.ar_cow.walk",
+    "parade": "animation.std.minecraft_cow.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_cow.pw_cow.ambient",
+    "parade": "animation.std.minecraft_cow.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:dolphin",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_swim_fast",
+    "from": "animation.std.minecraft_dolphin.ar_dolphin.swim_fast",
+    "parade": "animation.std.minecraft_dolphin.parade_ar_swim_fast",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_dolphin.dolphin.pw.ambient",
+    "parade": "animation.std.minecraft_dolphin.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:donkey",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_donkey.quadruped.walk",
+    "parade": "animation.std.minecraft_donkey.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_donkey.ar_donkey.walk",
+    "parade": "animation.std.minecraft_donkey.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_trot",
+    "from": "animation.std.minecraft_donkey.ar_donkey.trot",
+    "parade": "animation.std.minecraft_donkey.parade_ar_trot",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_donkey.donkey.pw.ambient",
+    "parade": "animation.std.minecraft_donkey.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:frog",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_frog.ar_frog.walk",
+    "parade": "animation.std.minecraft_frog.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_jump",
+    "from": "animation.std.minecraft_frog.ar_frog.jump",
+    "parade": "animation.std.minecraft_frog.parade_ar_jump",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_frog.frog.pw.ambient",
+    "parade": "animation.std.minecraft_frog.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:glow_squid",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_glow_squid.glow_squid.pw.ambient",
+    "parade": "animation.std.minecraft_glow_squid.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:horse",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_horse.quadruped.walk",
+    "parade": "animation.std.minecraft_horse.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_horse.ar_horse.walk",
+    "parade": "animation.std.minecraft_horse.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_trot",
+    "from": "animation.std.minecraft_horse.ar_horse.trot",
+    "parade": "animation.std.minecraft_horse.parade_ar_trot",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_horse.horse.pw.ambient",
+    "parade": "animation.std.minecraft_horse.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:llama",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_llama.quadruped.walk",
+    "parade": "animation.std.minecraft_llama.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_llama.ar_llama.walk",
+    "parade": "animation.std.minecraft_llama.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_llama.llama.pw.ambient",
+    "parade": "animation.std.minecraft_llama.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:mooshroom",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_mooshroom.mooshroom.walk",
+    "parade": "animation.std.minecraft_mooshroom.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_mooshroom.ar_mooshroom.walk",
+    "parade": "animation.std.minecraft_mooshroom.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_mooshroom.pw_mooshroom.ambient",
+    "parade": "animation.std.minecraft_mooshroom.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:mule",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_mule.quadruped.walk",
+    "parade": "animation.std.minecraft_mule.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_mule.ar_mule.walk",
+    "parade": "animation.std.minecraft_mule.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_trot",
+    "from": "animation.std.minecraft_mule.ar_mule.trot",
+    "parade": "animation.std.minecraft_mule.parade_ar_trot",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_mule.mule.pw.ambient",
+    "parade": "animation.std.minecraft_mule.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:panda",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_panda.ar_panda.walk",
+    "parade": "animation.std.minecraft_panda.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_panda.pw_panda.ambient",
+    "parade": "animation.std.minecraft_panda.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:pig",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_pig.pig.walk",
+    "parade": "animation.std.minecraft_pig.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_pig.ar_pig.walk",
+    "parade": "animation.std.minecraft_pig.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_sway",
+    "from": "animation.std.minecraft_pig.pig.pw.sway",
+    "parade": "animation.std.minecraft_pig.parade_pw_sway",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:polar_bear",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_polar_bear.ar_polar_bear.walk",
+    "parade": "animation.std.minecraft_polar_bear.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_polar_bear.pw_polar_bear.ambient",
+    "parade": "animation.std.minecraft_polar_bear.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:pufferfish",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_pufferfish.pufferfish.pw.ambient",
+    "parade": "animation.std.minecraft_pufferfish.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:rabbit",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_hop",
+    "from": "animation.std.minecraft_rabbit.ar_rabbit.hop",
+    "parade": "animation.std.minecraft_rabbit.parade_ar_hop",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_rabbit.rabbit.pw.ambient",
+    "parade": "animation.std.minecraft_rabbit.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:salmon",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_salmon.salmon.pw.ambient",
+    "parade": "animation.std.minecraft_salmon.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:sheep",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_sheep.sheep.walk",
+    "parade": "animation.std.minecraft_sheep.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_sheep.ar_sheep.walk",
+    "parade": "animation.std.minecraft_sheep.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_sheep.sheep.pw.ambient",
+    "parade": "animation.std.minecraft_sheep.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:squid",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_squid.squid.pw.ambient",
+    "parade": "animation.std.minecraft_squid.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:tadpole",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_tadpole.tadpole.pw.ambient",
+    "parade": "animation.std.minecraft_tadpole.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:trader_llama",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.minecraft_trader_llama.quadruped.walk",
+    "parade": "animation.std.minecraft_trader_llama.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_trader_llama.ar_trader_llama.walk",
+    "parade": "animation.std.minecraft_trader_llama.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_trader_llama.trader_llama.pw.ambient",
+    "parade": "animation.std.minecraft_trader_llama.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:tropicalfish",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_tropicalfish.tropical_fish.pw.ambient",
+    "parade": "animation.std.minecraft_tropicalfish.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:turtle",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_turtle.ar_turtle.walk",
+    "parade": "animation.std.minecraft_turtle.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_turtle.turtle.pw.ambient",
+    "parade": "animation.std.minecraft_turtle.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "minecraft:wolf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "ar_walk",
+    "from": "animation.std.minecraft_wolf.ar_wolf.walk",
+    "parade": "animation.std.minecraft_wolf.parade_ar_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "tail",
+    "from": "animation.std.minecraft_wolf.pw_wolf.tail_default",
+    "parade": "animation.std.minecraft_wolf.parade_tail",
+    "pace": 1.5
+   },
+   {
+    "short": "pw_ambient",
+    "from": "animation.std.minecraft_wolf.pw_wolf.ambient",
+    "parade": "animation.std.minecraft_wolf.parade_pw_ambient",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:african_elephant_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_african_elephant_wa.shared_run",
+    "parade": "animation.std.pw_african_elephant_wa.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_african_elephant_wa.shared_walk",
+    "parade": "animation.std.pw_african_elephant_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:african_wild_dog_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_african_wild_dog_ysav.pwm.ysav.mabeco.walk2",
+    "parade": "animation.std.pw_african_wild_dog_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:anaconda_ws",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_anaconda_ws.pwm.ws.anaconda.walk",
+    "parade": "animation.std.pw_anaconda_ws.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "swim",
+    "from": "animation.std.pw_anaconda_ws.pwm.ws.anaconda.swim",
+    "parade": "animation.std.pw_anaconda_ws.parade_swim",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:baby_lion_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_baby_lion_ysav.pwm.ysav.baby_lion.walk",
+    "parade": "animation.std.pw_baby_lion_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:beaver_anf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_beaver_anf.shared_run",
+    "parade": "animation.std.pw_beaver_anf.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_beaver_anf.shared_walk",
+    "parade": "animation.std.pw_beaver_anf.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:blue_jay_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_blue_jay_wa.shared_walk",
+    "parade": "animation.std.pw_blue_jay_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:boar_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_boar_ysav.pwm.ysav.javali.walk",
+    "parade": "animation.std.pw_boar_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:buffalo_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_buffalo_ysav.pwm.ysav.bufalo.walk",
+    "parade": "animation.std.pw_buffalo_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:cheetah_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_cheetah_ysav.pwm.ysav.guepardo.walk",
+    "parade": "animation.std.pw_cheetah_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:duck_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_duck_wa.shared_run",
+    "parade": "animation.std.pw_duck_wa.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_swim",
+    "from": "animation.std.pw_duck_wa.shared_swim",
+    "parade": "animation.std.pw_duck_wa.parade_shared_swim",
+    "pace": 1.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_duck_wa.shared_walk",
+    "parade": "animation.std.pw_duck_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:eagle_bald_anf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_eagle_bald_anf.shared_walk",
+    "parade": "animation.std.pw_eagle_bald_anf.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:eagle_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_eagle_wa.shared_walk",
+    "parade": "animation.std.pw_eagle_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:elephant_african_anf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_elephant_african_anf.shared_run",
+    "parade": "animation.std.pw_elephant_african_anf.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_elephant_african_anf.shared_walk",
+    "parade": "animation.std.pw_elephant_african_anf.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:elephant_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_elephant_ysav.pwm.ysav.elefante.walk",
+    "parade": "animation.std.pw_elephant_ysav.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_elephant_ysav.shared_run",
+    "parade": "animation.std.pw_elephant_ysav.parade_shared_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "pw:honey_badger_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_honey_badger_ysav.pwm.ysav.ratel.walk2",
+    "parade": "animation.std.pw_honey_badger_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:hyena_anf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_hyena_anf.shared_walk",
+    "parade": "animation.std.pw_hyena_anf.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:hyena_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_hyena_ysav.pwm.ysav.hiena.walk2",
+    "parade": "animation.std.pw_hyena_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:hyenas_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_hyenas_wa.quadruped.walk",
+    "parade": "animation.std.pw_hyenas_wa.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_hyenas_wa.shared_walk",
+    "parade": "animation.std.pw_hyenas_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:kakapo_wwa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_kakapo_wwa.shared_walk",
+    "parade": "animation.std.pw_kakapo_wwa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:kob_female_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_kob_female_ysav.pwm.ysav.kobo.walk2",
+    "parade": "animation.std.pw_kob_female_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:kob_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_kob_ysav.pwm.ysav.kobo.walk2",
+    "parade": "animation.std.pw_kob_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:kudu_female_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_kudu_female_ysav.pwm.ysav.inhala.walk2",
+    "parade": "animation.std.pw_kudu_female_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:kudu_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_kudu_ysav.pwm.ysav.inhala.walk2",
+    "parade": "animation.std.pw_kudu_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:leopard_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "sneaky",
+    "from": "animation.std.pw_leopard_ysav.pwm.ysav.leopardo_africano.sneaky",
+    "parade": "animation.std.pw_leopard_ysav.parade_sneaky",
+    "pace": 1.5
+   },
+   {
+    "short": "sniff_while_climb",
+    "from": "animation.std.pw_leopard_ysav.pwm.ysav.leopardo_africano.climb",
+    "parade": "animation.std.pw_leopard_ysav.parade_sniff_while_climb",
+    "pace": 1.5
+   },
+   {
+    "short": "climb",
+    "from": "animation.std.pw_leopard_ysav.pwm.ysav.leopardo_africano.climb",
+    "parade": "animation.std.pw_leopard_ysav.parade_climb",
+    "pace": 1.5
+   },
+   {
+    "short": "wiggle",
+    "from": "animation.std.pw_leopard_ysav.pwm.ysav.leopardo_africano.sneaky",
+    "parade": "animation.std.pw_leopard_ysav.parade_wiggle",
+    "pace": 1.5
+   },
+   {
+    "short": "crouch",
+    "from": "animation.std.pw_leopard_ysav.pwm.ysav.leopardo_africano.sneaky",
+    "parade": "animation.std.pw_leopard_ysav.parade_crouch",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:lion_african_anf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_lion_african_anf.shared_run",
+    "parade": "animation.std.pw_lion_african_anf.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_lion_african_anf.shared_walk",
+    "parade": "animation.std.pw_lion_african_anf.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:lion_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_lion_ysav.pwm.ysav.leao.walk2",
+    "parade": "animation.std.pw_lion_ysav.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_lion_ysav.shared_run",
+    "parade": "animation.std.pw_lion_ysav.parade_shared_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "pw:lioness_african_anf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_lioness_african_anf.shared_run",
+    "parade": "animation.std.pw_lioness_african_anf.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_lioness_african_anf.shared_walk",
+    "parade": "animation.std.pw_lioness_african_anf.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:lioness_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_lioness_ysav.pwm.ysav.leao.walk2",
+    "parade": "animation.std.pw_lioness_ysav.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_lioness_ysav.shared_run",
+    "parade": "animation.std.pw_lioness_ysav.parade_shared_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "pw:ostrich_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_ostrich_wa.shared_run",
+    "parade": "animation.std.pw_ostrich_wa.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_ostrich_wa.shared_walk",
+    "parade": "animation.std.pw_ostrich_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:ostrich_ws",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_ostrich_ws.shared_run",
+    "parade": "animation.std.pw_ostrich_ws.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_ostrich_ws.shared_walk",
+    "parade": "animation.std.pw_ostrich_ws.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:ostrich_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_ostrich_ysav.shared_run",
+    "parade": "animation.std.pw_ostrich_ysav.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_ostrich_ysav.shared_walk",
+    "parade": "animation.std.pw_ostrich_ysav.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:pangolin_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_pangolin_ysav.pwm.ysav.pangolin.walk",
+    "parade": "animation.std.pw_pangolin_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:platypus_ytri",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_platypus_ytri.quadruped.walk",
+    "parade": "animation.std.pw_platypus_ytri.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "orn_move",
+    "from": "animation.std.pw_platypus_ytri.pwm.ytri.orn.move",
+    "parade": "animation.std.pw_platypus_ytri.parade_orn_move",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:raccoon_wwa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_raccoon_wwa.shared_run",
+    "parade": "animation.std.pw_raccoon_wwa.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_raccoon_wwa.shared_walk",
+    "parade": "animation.std.pw_raccoon_wwa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:rat_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_rat_wa.quadruped.walk",
+    "parade": "animation.std.pw_rat_wa.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:red_panda_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_red_panda_wa.shared_run",
+    "parade": "animation.std.pw_red_panda_wa.parade_shared_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "pw:red_panda_wwa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_red_panda_wwa.shared_run",
+    "parade": "animation.std.pw_red_panda_wwa.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_red_panda_wwa.shared_walk",
+    "parade": "animation.std.pw_red_panda_wwa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:rhino_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_rhino_ysav.pwm.ysav.rinoceronte.walk",
+    "parade": "animation.std.pw_rhino_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:sable_antelope_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_sable_antelope_ysav.pwm.ysav.palanca.walk2",
+    "parade": "animation.std.pw_sable_antelope_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:serval_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_serval_ysav.pwm.ysav.serval.walk",
+    "parade": "animation.std.pw_serval_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:tiger_bengal_anf",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_tiger_bengal_anf.shared_run",
+    "parade": "animation.std.pw_tiger_bengal_anf.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_tiger_bengal_anf.shared_walk",
+    "parade": "animation.std.pw_tiger_bengal_anf.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:tiger_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_tiger_wa.shared_run",
+    "parade": "animation.std.pw_tiger_wa.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_tiger_wa.shared_walk",
+    "parade": "animation.std.pw_tiger_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:tiger_ws",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_tiger_ws.shared_run",
+    "parade": "animation.std.pw_tiger_ws.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_tiger_ws.shared_walk",
+    "parade": "animation.std.pw_tiger_ws.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:tsessebe_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_tsessebe_ysav.pwm.ysav.cacu.walk",
+    "parade": "animation.std.pw_tsessebe_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:turkey_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_turkey_wa.shared_walk",
+    "parade": "animation.std.pw_turkey_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:white_lion_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_white_lion_ysav.pwm.ysav.leao.walk2",
+    "parade": "animation.std.pw_white_lion_ysav.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_white_lion_ysav.shared_run",
+    "parade": "animation.std.pw_white_lion_ysav.parade_shared_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "pw:white_lioness_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_white_lioness_ysav.pwm.ysav.leao.walk2",
+    "parade": "animation.std.pw_white_lioness_ysav.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_white_lioness_ysav.shared_run",
+    "parade": "animation.std.pw_white_lioness_ysav.parade_shared_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "pw:white_tiger_wa",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_run",
+    "from": "animation.std.pw_white_tiger_wa.shared_run",
+    "parade": "animation.std.pw_white_tiger_wa.parade_shared_run",
+    "pace": 3.5
+   },
+   {
+    "short": "shared_walk",
+    "from": "animation.std.pw_white_tiger_wa.shared_walk",
+    "parade": "animation.std.pw_white_tiger_wa.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "pw:zebra_ysav",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.pw_zebra_ysav.pwm.ysav.zebra.walk2",
+    "parade": "animation.std.pw_zebra_ysav.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:alligator",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_alligator.sf_nba.alligator.walk",
+    "parade": "animation.std.sf_nba_alligator.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_alligator.sf_nba.alligator_baby.walk",
+    "parade": "animation.std.sf_nba_alligator.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_alligator.sf_nba.alligator_baby.run",
+    "parade": "animation.std.sf_nba_alligator.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:badger",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_badger.sf_nba.badger.walk",
+    "parade": "animation.std.sf_nba_badger.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_badger.sf_nba.badger.run",
+    "parade": "animation.std.sf_nba_badger.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:beaver",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_beaver.sf_nba.beaver.walk",
+    "parade": "animation.std.sf_nba_beaver.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_beaver.sf_nba.beaver.run",
+    "parade": "animation.std.sf_nba_beaver.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_beaver.sf_nba.beaver_baby.walk",
+    "parade": "animation.std.sf_nba_beaver.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_beaver.sf_nba.beaver_baby.run",
+    "parade": "animation.std.sf_nba_beaver.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:black_bear",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_black_bear.sf_nba.black_bear.run",
+    "parade": "animation.std.sf_nba_black_bear.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_black_bear.sf_nba.black_bear_baby.walk",
+    "parade": "animation.std.sf_nba_black_bear.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_black_bear.sf_nba.black_bear_baby.run",
+    "parade": "animation.std.sf_nba_black_bear.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:bluejay",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_bluejay.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_bluejay.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_bluejay.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_bluejay.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:boar",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_boar.sf_nba.boar.walk",
+    "parade": "animation.std.sf_nba_boar.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_boar.sf_nba.boar.run",
+    "parade": "animation.std.sf_nba_boar.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_boar.sf_nba.boar_baby.walk",
+    "parade": "animation.std.sf_nba_boar.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_boar.sf_nba.boar_baby.run",
+    "parade": "animation.std.sf_nba_boar.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:budgie",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_budgie.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_budgie.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:canary",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_canary.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_canary.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_canary.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_canary.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:capybara",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_capybara.sf_nba.capybara.walk",
+    "parade": "animation.std.sf_nba_capybara.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_capybara.sf_nba.capybara_baby.walk",
+    "parade": "animation.std.sf_nba_capybara.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_capybara.sf_nba.capybara_baby.run",
+    "parade": "animation.std.sf_nba_capybara.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:cardinal",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_cardinal.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_cardinal.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_cardinal.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_cardinal.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:crab",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_crab.sf_nba.crab.walk",
+    "parade": "animation.std.sf_nba_crab.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_crab.sf_nba.crab_baby.walk",
+    "parade": "animation.std.sf_nba_crab.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:crow",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_crow.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_crow.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_crow.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_crow.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:deer",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_deer.sf_nba.deer.walk",
+    "parade": "animation.std.sf_nba_deer.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_deer.sf_nba.deer.run",
+    "parade": "animation.std.sf_nba_deer.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_deer.sf_nba.deer_baby.walk",
+    "parade": "animation.std.sf_nba_deer.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_deer.sf_nba.deer_baby.run",
+    "parade": "animation.std.sf_nba_deer.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:duck",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_duck.sf_nba.duck.walk",
+    "parade": "animation.std.sf_nba_duck.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_duck.sf_nba.duck_baby.walk",
+    "parade": "animation.std.sf_nba_duck.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_swim",
+    "from": "animation.std.sf_nba_duck.sf_nba.duck_baby.swim",
+    "parade": "animation.std.sf_nba_duck.parade_baby_swim",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_duck.sf_nba.duck_baby.run",
+    "parade": "animation.std.sf_nba_duck.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:eagle",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_eagle.sf_nba.eagle.walk",
+    "parade": "animation.std.sf_nba_eagle.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_eagle.sf_nba.eagle_baby.walk",
+    "parade": "animation.std.sf_nba_eagle.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:elephant",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_elephant.sf_nba.elephant.walk2",
+    "parade": "animation.std.sf_nba_elephant.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_elephant.sf_nba.elephant_baby.walk",
+    "parade": "animation.std.sf_nba_elephant.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_elephant.sf_nba.elephant_baby.run",
+    "parade": "animation.std.sf_nba_elephant.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:emperor_penguin",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_emperor_penguin.sf_nba.emperor_penguin.walk",
+    "parade": "animation.std.sf_nba_emperor_penguin.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_emperor_penguin.sf_nba.emperor_penguin.run",
+    "parade": "animation.std.sf_nba_emperor_penguin.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_emperor_penguin.sf_nba.penguin_baby.walk",
+    "parade": "animation.std.sf_nba_emperor_penguin.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_emperor_penguin.sf_nba.penguin_baby.run",
+    "parade": "animation.std.sf_nba_emperor_penguin.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:female_lion",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_female_lion.sf_nba.lion_baby.walk",
+    "parade": "animation.std.sf_nba_female_lion.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_female_lion.sf_nba.lion_baby.run",
+    "parade": "animation.std.sf_nba_female_lion.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:fennec_fox",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_fennec_fox.sf_nba.fennec_fox.walk",
+    "parade": "animation.std.sf_nba_fennec_fox.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_fennec_fox.sf_nba.fennec_fox.run",
+    "parade": "animation.std.sf_nba_fennec_fox.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:finch",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_finch.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_finch.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_finch.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_finch.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:flamingo",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "swim",
+    "from": "animation.std.sf_nba_flamingo.sf_nba.flamingo.swim",
+    "parade": "animation.std.sf_nba_flamingo.parade_swim",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_flamingo.sf_nba.flamingo.run_B",
+    "parade": "animation.std.sf_nba_flamingo.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_flamingo.sf_nba.flamingo.walk",
+    "parade": "animation.std.sf_nba_flamingo.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:giant_salamander",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_giant_salamander.sf_nba.giant_salamander.walk",
+    "parade": "animation.std.sf_nba_giant_salamander.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_giant_salamander.sf_nba.giant_salamander.run",
+    "parade": "animation.std.sf_nba_giant_salamander.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:giraffe",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_giraffe.sf_nba.giraffe.walk",
+    "parade": "animation.std.sf_nba_giraffe.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_giraffe.sf_nba.giraffe.run",
+    "parade": "animation.std.sf_nba_giraffe.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_giraffe.sf_nba.giraffe_baby.walk",
+    "parade": "animation.std.sf_nba_giraffe.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_giraffe.sf_nba.giraffe_baby.run",
+    "parade": "animation.std.sf_nba_giraffe.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:goose",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_goose.sf_nba.goose.walk",
+    "parade": "animation.std.sf_nba_goose.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_goose.sf_nba.goose.run",
+    "parade": "animation.std.sf_nba_goose.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_goose.sf_nba.duck_baby.walk",
+    "parade": "animation.std.sf_nba_goose.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_swim",
+    "from": "animation.std.sf_nba_goose.sf_nba.duck_baby.swim",
+    "parade": "animation.std.sf_nba_goose.parade_baby_swim",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_goose.sf_nba.duck_baby.run",
+    "parade": "animation.std.sf_nba_goose.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:grizzly_bear",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_grizzly_bear.sf_nba.bear.walk",
+    "parade": "animation.std.sf_nba_grizzly_bear.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_grizzly_bear.sf_nba.bear.run",
+    "parade": "animation.std.sf_nba_grizzly_bear.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_grizzly_bear.sf_nba.bear_baby.walk",
+    "parade": "animation.std.sf_nba_grizzly_bear.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_grizzly_bear.sf_nba.bear_baby.run",
+    "parade": "animation.std.sf_nba_grizzly_bear.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:hamster",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_hamster.sf_nba.hamster.walk",
+    "parade": "animation.std.sf_nba_hamster.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_hamster.sf_nba.hamster.run",
+    "parade": "animation.std.sf_nba_hamster.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:hedgehog",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_hedgehog.sf_nba.hedgehog.walk",
+    "parade": "animation.std.sf_nba_hedgehog.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:hippo",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_hippo.sf_nba.hippo_baby.walk",
+    "parade": "animation.std.sf_nba_hippo.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_hippo.sf_nba.hippo_baby.run",
+    "parade": "animation.std.sf_nba_hippo.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:hyena",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "shared_walk",
+    "from": "animation.std.sf_nba_hyena.shared_walk",
+    "parade": "animation.std.sf_nba_hyena.parade_shared_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:kakapo",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_kakapo.sf_nba.kakapo.walk",
+    "parade": "animation.std.sf_nba_kakapo.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:kangaroo",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_kangaroo.sf_nba.kangaroo.walk",
+    "parade": "animation.std.sf_nba_kangaroo.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_kangaroo.sf_nba.kangaroo.run",
+    "parade": "animation.std.sf_nba_kangaroo.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_kangaroo.sf_nba.kangaroo_baby.walk",
+    "parade": "animation.std.sf_nba_kangaroo.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_kangaroo.sf_nba.kangaroo_baby.run",
+    "parade": "animation.std.sf_nba_kangaroo.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:kiwi",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_kiwi.sf_nba.kiwi.walk",
+    "parade": "animation.std.sf_nba_kiwi.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_kiwi.sf_nba.kiwi_baby.walk",
+    "parade": "animation.std.sf_nba_kiwi.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_kiwi.sf_nba.kiwi_baby.run",
+    "parade": "animation.std.sf_nba_kiwi.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:lion",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_lion.sf_nba.lion_baby.walk",
+    "parade": "animation.std.sf_nba_lion.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_lion.sf_nba.lion_baby.run",
+    "parade": "animation.std.sf_nba_lion.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:lizard",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_lizard.sf_nba.lizard.walk",
+    "parade": "animation.std.sf_nba_lizard.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:male_lion",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_male_lion.sf_nba.lion_baby.walk",
+    "parade": "animation.std.sf_nba_male_lion.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_male_lion.sf_nba.lion_baby.run",
+    "parade": "animation.std.sf_nba_male_lion.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:mammoth",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_mammoth.sf_nba.elephant.walk2",
+    "parade": "animation.std.sf_nba_mammoth.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_mammoth.sf_nba.elephant_baby.walk",
+    "parade": "animation.std.sf_nba_mammoth.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_mammoth.sf_nba.elephant_baby.run",
+    "parade": "animation.std.sf_nba_mammoth.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:monkey",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_monkey.sf_nba.monkey.run",
+    "parade": "animation.std.sf_nba_monkey.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:moose",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_moose.sf_nba.moose.walk",
+    "parade": "animation.std.sf_nba_moose.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_moose.sf_nba.moose.run",
+    "parade": "animation.std.sf_nba_moose.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_moose.sf_nba.moose_baby.walk",
+    "parade": "animation.std.sf_nba_moose.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_moose.sf_nba.moose_baby.run",
+    "parade": "animation.std.sf_nba_moose.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:ostrich",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_ostrich.sf_nba.ostrich.walk_B",
+    "parade": "animation.std.sf_nba_ostrich.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_ostrich.sf_nba.ostrich_baby.walk",
+    "parade": "animation.std.sf_nba_ostrich.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_ostrich.sf_nba.ostrich_baby.run",
+    "parade": "animation.std.sf_nba_ostrich.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:otter",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_otter.sf_nba.otter_baby.walk",
+    "parade": "animation.std.sf_nba_otter.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_otter.sf_nba.otter_baby.run",
+    "parade": "animation.std.sf_nba_otter.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:owl",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "fly",
+    "from": "animation.std.sf_nba_owl.sf_nba.owl.fly",
+    "parade": "animation.std.sf_nba_owl.parade_fly",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_owl.sf_nba.owl_baby.walk",
+    "parade": "animation.std.sf_nba_owl.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:peafowl",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_peafowl.sf_nba.peafowl.walk",
+    "parade": "animation.std.sf_nba_peafowl.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_peafowl.sf_nba.peafowl.run",
+    "parade": "animation.std.sf_nba_peafowl.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:raccoon",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_raccoon.sf_nba.raccoon.walk",
+    "parade": "animation.std.sf_nba_raccoon.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_raccoon.sf_nba.raccoon.run",
+    "parade": "animation.std.sf_nba_raccoon.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:rat",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_rat.sf_nba.rat.walk",
+    "parade": "animation.std.sf_nba_rat.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_rat.sf_nba.rat.run",
+    "parade": "animation.std.sf_nba_rat.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:raven",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_raven.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_raven.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_raven.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_raven.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:red_panda",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_red_panda.sf_nba.red_panda.walk",
+    "parade": "animation.std.sf_nba_red_panda.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_red_panda.sf_nba.red_panda.run",
+    "parade": "animation.std.sf_nba_red_panda.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:rhino",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_rhino.sf_nba.rhino.walk",
+    "parade": "animation.std.sf_nba_rhino.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_rhino.sf_nba.rhino.run",
+    "parade": "animation.std.sf_nba_rhino.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:robin",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_robin.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_robin.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_robin.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_robin.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:seal",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_seal.sf_nba.seal_baby.walk",
+    "parade": "animation.std.sf_nba_seal.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_swim",
+    "from": "animation.std.sf_nba_seal.sf_nba.seal_baby.swim",
+    "parade": "animation.std.sf_nba_seal.parade_baby_swim",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:secretary_bird",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_secretary_bird.sf_nba.secretary_bird.walk",
+    "parade": "animation.std.sf_nba_secretary_bird.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_secretary_bird.sf_nba.secretary_bird.run",
+    "parade": "animation.std.sf_nba_secretary_bird.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:skunk",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_skunk.sf_nba.skunk.run",
+    "parade": "animation.std.sf_nba_skunk.parade_run",
+    "pace": 3.5
+   },
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_skunk.sf_nba.skunk.walk",
+    "parade": "animation.std.sf_nba_skunk.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_skunk.sf_nba.skunk_baby.walk",
+    "parade": "animation.std.sf_nba_skunk.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_skunk.sf_nba.skunk_baby.run",
+    "parade": "animation.std.sf_nba_skunk.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:sloth",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_sloth.sf_nba.sloth.walk",
+    "parade": "animation.std.sf_nba_sloth.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:snake",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "fam_swim",
+    "from": "animation.std.sf_nba_snake.fam_swim",
+    "parade": "animation.std.sf_nba_snake.parade_fam_swim",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:sparrow",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_sparrow.sf_nba.corvid.walk",
+    "parade": "animation.std.sf_nba_sparrow.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_sparrow.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_sparrow.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:squirrel",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_squirrel.sf_nba.squirrel.run",
+    "parade": "animation.std.sf_nba_squirrel.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:starfish",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_starfish.sf_nba.starfish.walk",
+    "parade": "animation.std.sf_nba_starfish.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:termite",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_termite.sf_nba.termite.walk",
+    "parade": "animation.std.sf_nba_termite.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_termite.sf_nba.termite.run",
+    "parade": "animation.std.sf_nba_termite.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:tiger",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_tiger.sf_nba.tiger.walk",
+    "parade": "animation.std.sf_nba_tiger.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_tiger.sf_nba.tiger_baby.walk",
+    "parade": "animation.std.sf_nba_tiger.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_tiger.sf_nba.tiger_baby.run",
+    "parade": "animation.std.sf_nba_tiger.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:tortoise",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_tortoise.sf_nba.tortoise.walk",
+    "parade": "animation.std.sf_nba_tortoise.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_tortoise.sf_nba.tortoise_baby.walk",
+    "parade": "animation.std.sf_nba_tortoise.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_tortoise.sf_nba.tortoise_baby.run",
+    "parade": "animation.std.sf_nba_tortoise.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:toucan",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "fly",
+    "from": "animation.std.sf_nba_toucan.sf_nba.toucan.fly",
+    "parade": "animation.std.sf_nba_toucan.parade_fly",
+    "pace": 1.5
+   },
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_toucan.sf_nba.toucan.walk",
+    "parade": "animation.std.sf_nba_toucan.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_toucan.sf_nba.bird_baby.walk",
+    "parade": "animation.std.sf_nba_toucan.parade_baby_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:tree_frog",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_tree_frog.sf_nba.tree_frog.walk",
+    "parade": "animation.std.sf_nba_tree_frog.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:turkey",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_turkey.sf_nba.turkey.walk",
+    "parade": "animation.std.sf_nba_turkey.parade_walk",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:vulture",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "glide",
+    "from": "animation.std.sf_nba_vulture.sf_nba.vulture.glide",
+    "parade": "animation.std.sf_nba_vulture.parade_glide",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_walk",
+    "from": "animation.std.sf_nba_vulture.sf_nba.vulture_baby.walk",
+    "parade": "animation.std.sf_nba_vulture.parade_baby_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "baby_run",
+    "from": "animation.std.sf_nba_vulture.sf_nba.vulture_baby.run",
+    "parade": "animation.std.sf_nba_vulture.parade_baby_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:walrus",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_walrus.sf_nba.walrus.walk",
+    "parade": "animation.std.sf_nba_walrus.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_walrus.sf_nba.walrus.run",
+    "parade": "animation.std.sf_nba_walrus.parade_run",
+    "pace": 3.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:whale",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "baby_swim",
+    "from": "animation.std.sf_nba_whale.sf_nba.whale_baby.swim",
+    "parade": "animation.std.sf_nba_whale.parade_baby_swim",
+    "pace": 1.5
+   }
+  ]
+ },
+ {
+  "id": "sf_nba:zebra",
+  "rp": "rp07-1439",
+  "parade": [
+   {
+    "short": "idle",
+    "from": "animation.std.sf_nba_zebra.sf_nba.zebra.idle",
+    "parade": "animation.std.sf_nba_zebra.parade_idle",
+    "pace": 1.5
+   },
+   {
+    "short": "walk",
+    "from": "animation.std.sf_nba_zebra.sf_nba.zebra.walk",
+    "parade": "animation.std.sf_nba_zebra.parade_walk",
+    "pace": 1.5
+   },
+   {
+    "short": "run",
+    "from": "animation.std.sf_nba_zebra.sf_nba.zebra.run",
+    "parade": "animation.std.sf_nba_zebra.parade_run",
+    "pace": 3.5
+   }
+  ]
+ }
+]

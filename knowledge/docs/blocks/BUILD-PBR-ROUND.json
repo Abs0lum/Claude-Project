@@ -1,0 +1,51 @@
+{
+ "rp04": {
+  "dir": "rp04-145",
+  "new": 2104,
+  "replaced": 44,
+  "dropped": 16,
+  "bytes": 215090530
+ },
+ "rp05": {
+  "dir": "rp05-52",
+  "new": 963,
+  "replaced": 1,
+  "dropped": 0,
+  "bytes": 26394059
+ },
+ "rp10": {
+  "dir": "rp10-144",
+  "new": 171,
+  "replaced": 0,
+  "dropped": 0,
+  "bytes": 26688734
+ },
+ "rp11": {
+  "dir": "rp11-136",
+  "new": 13,
+  "replaced": 2,
+  "dropped": 0,
+  "bytes": 5280204
+ },
+ "rp01": {
+  "dir": "rp01-108",
+  "new": 380,
+  "replaced": 100,
+  "dropped": 0,
+  "bytes": 86145641
+ },
+ "rp03": {
+  "dir": "rp03-61",
+  "new": 142,
+  "replaced": 98,
+  "dropped": 0,
+  "bytes": 111778686
+ },
+ "rp08": {
+  "dir": "rp08-1410",
+  "new": 66,
+  "replaced": 0,
+  "dropped": 0,
+  "bytes": 86276519
+ }
+}

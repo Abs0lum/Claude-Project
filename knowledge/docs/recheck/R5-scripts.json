@@ -1,0 +1,74 @@
+[
+ {
+  "suite": "node --check (every shipped script + bp02-207)",
+  "rc": 0,
+  "seconds": 8.0,
+  "tail": "283 scripts checked, 0 syntax errors\n"
+ },
+ {
+  "suite": "fell rules mock on bp02-206",
+  "rc": 1,
+  "seconds": 0.0,
+  "tail": "\nSTDERR: file:///tmp/fell_d_8zfn42/pw_fell_rules.js:14\nimport { world, BlockPermutation, BlockVolume, BlockTypes } from \"@minecraft/server\";\n                ^^^^^^^^^^^^^^^^\nSyntaxError: The requested module '@minecraft/server' does not provide an export named 'BlockPermutation'\n    at ModuleJob._instantiate (node:internal/modules/esm/module_job:226:21)\n    at async ModuleJob.run (node:internal/modules/esm/module_job:335:5)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.22.2\n"
+ },
+ {
+  "suite": "fell rules mock on bp02-207",
+  "rc": 1,
+  "seconds": 0.0,
+  "tail": "\nSTDERR: file:///tmp/fell_s2h67q3j/pw_fell_rules.js:14\nimport { world, BlockPermutation, BlockVolume, BlockTypes } from \"@minecraft/server\";\n                ^^^^^^^^^^^^^^^^\nSyntaxError: The requested module '@minecraft/server' does not provide an export named 'BlockPermutation'\n    at ModuleJob._instantiate (node:internal/modules/esm/module_job:226:21)\n    at async ModuleJob.run (node:internal/modules/esm/module_job:335:5)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.22.2\n"
+ },
+ {
+  "suite": "TestRunner mock on testrunner-0.5.13",
+  "rc": 1,
+  "seconds": 1.3,
+  "tail": "e bt via api logs 7 = 52 full + 21 cards @29,70,8\nPASS 25w a tree touching its box rim is flagged EDGE, and the warning comes before the numbers \u2014 [PW-TEST] STEP #03 l02 OAK MATURE: TODAY vs PILOT vs PILOT BIOME COLOUR \u00b7 02:59:37 \u00b7 forest | [PW-TEST] LEAFTREE oak mature TODAY EDGE(1 on the r8 rim) via api logs 7 leaves 74 height 9 @-9,70,8\nPASS 25i azalea: plain leaves -> pilot azalea, flowered -> pilot flowering azalea (one tree)\nPASS 25x l22 (phase order guard): the iso copies are taken BEFORE the source is swapped, so both iso trees carry pilot iso leaves \u2014 oak iso 73 spruce iso 73\nPASS 25j l24 far rows: a ticking area first; 2 trees grown (oak + spruce MATURE), 23 copies \u2014 pw:oak_mature_tree_feature pw:spruce_mature_tree_feature clones 23\nPASS 25k l24: painted far-swap oaks stand in 5 rows \u2014 0 -1 -2 -3 -4\nPASS 25y l24 (phase order guard): spruce far-swap PAINTED trees (copies of the spruce that is itself swapped) carry their leaves \u2014 spruce farp 370\nPASS 25t no fill / clone the planner sent went over the 32,768-block cap \u2014 max fill 27144\nPASS 25l q9 clears EVERY planted box even after the witness walked away, THEN removes both ticking areas \u2014 [PW-TEST] LEAFRESET 39/39 tree boxes cleared\nPASS 25m every p15 chat body line <= 190 characters; every body names PASS\nPASS 25u no p15 tree log line was cut at 120 characters (warnings come first in each line)\nPASS 25n BP-02 trunks count as logs: pw:oak_young / pw:spruce_elder (tag:log only) and vanilla logs; leaves never\nPASS 25o two steps started back to back run one after the other: the 2nd step's clear waits for the 1st step's last tree \u2014 [PW-TEST] LEAFSETUP queued: the previous step's trees are still growing - this step starts when they finish | [PW-TEST] LEAFTREE oak young pilot via copy logs 5 = 47 full + 25 cards @10,70,8 | [PW-TEST] LEAFTREE oak young bt via copy logs 5 = 44 full + 28 cards @29,70,8 | [PW-TEST] LEAFCLEAR 3 slices x -28..28 z -21..-2 above y 70 | [PW-TEST] LEAFTREE oak mature TODAY via api logs 7 leaves 73 height 9 @-9,70,8 | [PW-TEST] LEAFTREE oak mature pilot via copy logs 7 = 39 full + 34 cards @10,70,8 | [PW-TEST] LEAFTREE oak mature bt via copy logs 7 = 54 full + 19 cards @29,70,8\nPASS 26 p16 = q0 n01..n12 m01..m10 n13 q9 (25 steps, unique) \u2014 q0 n01 n02 n03 n04 n05 n06 n07 n08 n09 n10 n11 n12 m01 m02 m03 m04 m05 m06 m07 m08 m09 m10 n13 q9\nPASS 26a every p16 step: tree boxes <= 32,768, inside the step's clear box and ticking area, never overlapping (grove excepted); areas <= 100 chunks\nPASS 26b p16 n-steps only grow OUR trees as they are (every tree 'keep': no pilot / test blocks are placed)\nPASS 26c n01: six of our trees grow 30+ blocks north (outside the 25-block scanner), each logged TODAY; no leaf within 25 blocks \u2014 6 trees; 0 near leaves\nPASS 26d n06: the azalea + flowering azalea cubes are filled around oak logs beside the witness\nPASS 26e n07: SURVIVAL + an iron axe for the felling\nPASS 26f n08: back to CREATIVE; the oak grows, then its wood is removed (LEAFCHOP) and its leaves are left to decay \u2014 [PW-TEST] LEAFCLEAR 3 slices x -12..12 z -24..-2 above y 70 | [PW-TEST] LEAFTREE oak mature TODAY via api logs 7 leaves 73 height 9 @10,70,6 | [PW-TEST] LEAFCHOP oak mature: 7 logs removed, 73 leaves left to decay @10,70,6\nPASS 26g n12 probe: 6 cases x 2 ways logged (API row + command row), all OK on the mock \u2014 [PW-TEST] STEP #13 n12 THE /PLACE PROBE (WHY p15 USED STAND-INS) \u00b7 02:59:37 \u00b7 forest | [PW-TEST] PROBE api pw:oak_mature_tree_feature on grass_block: OK | [PW-TEST] PROBE cmd pw:oak_mature_tree_feature on grass_block: OK\nPASS 26h n12 probe: an API refusal is logged with its reason, the command row still reports its own result \u2014 [PW-TEST] STEP #13 n12 THE /PLACE PROBE (WHY p15 USED STAND-INS) \u00b7 02:59:38 \u00b7 forest | [PW-TEST] PROBE api pw:oak_mature_tree_feature on grass_block: REFUSED | [PW-TEST] PROBE REASON api: PlaceFeatureError: could not place pw:oak_mature_tree_feature | [PW-TEST] PROBE cmd pw:oak_mature_tree_feature on grass_block: OK\nPASS 26j v0.5.1: the planted tree boxes are kept in a world dynamic property (a relog does not lose them) \u2014 26 boxes stored\nPASS 26i q9: every planted box cleared (probe trees included), all 3 ticking areas removed, creative restored \u2014 tickingarea remove pw_pilot_far | tickingarea remove pw_pilot_near | tickingarea remove pw_probe_area\nPASS 27 ten m-steps, each = one grown tree (128, our pw:<sp>_leaves) + two clones (pw:t256_ / pw:t256m_), every tree 'look', none 'keep'\nPASS 27a all 11 leaf species covered (azalea's tree carries flowering azalea too)\n\nSTDERR: node:fs:440\n    return binding.readFileUtf8(path, stringToFlags(options.flag));\n                   ^\n\nError: ENOENT: no such file or directory, open '/home/claude/_build/bp02-197/scripts/main.js'\n    at Object.readFileSync (node:fs:440:20)\n    at file:///home/claude/tools/testrunner_src/test_testrunner.mjs:831:18 {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/home/claude/_build/bp02-197/scripts/main.js'\n}\n\nNode.js v22.22.2\n"
+ },
+ {
+  "suite": "homestead fog mock on bp02-206",
+  "rc": 1,
+  "seconds": 0.1,
+  "tail": "PASS 1 module loads in early execution (subscribes + schedules only)\nPASS 2 boot sweep removes pw_hearth_smoke for every online player \u2014 [\"fog @s remove pw_hearth_smoke\"]\nFAIL 2b boot log says sweep + room fog OFF \u2014 [pw_homestead] stuck-fog sweep (since v1.3.187) at boot: 1 player(s); room fog push OFF\nPASS 2c HOMESTEAD runtime up line unchanged\nPASS 3 join sweep 20 ticks after an initial spawn\nPASS 3b a respawn (not initial) does not sweep\nPASS 4 fogPush is a no-op while ROOM_FOG is off (no push command, nothing remembered)\nPASS 5 fogPop uses remove and forgets\nPASS 6 a failing remove (nothing on the stack) is swallowed\nPASS 7 the cycles run with an empty ledger without throwing\nPASS 8 every log line carries the [pw_homestead] tag\n\n10 passed, 1 failed\n"
+ },
+ {
+  "suite": "mob light mock on bp02-206",
+  "rc": 0,
+  "seconds": 0.1,
+  "tail": "mob light mock: 14/14 checks pass\n"
+ },
+ {
+  "suite": "planks + vine mocks on bp02-206",
+  "rc": 1,
+  "seconds": 0.2,
+  "tail": "--- test.mjs rc=1\n\nSTDERR: file:///tmp/plk_m_uokpp_/test.mjs:18\nintervals[0]();\n            ^\n\nTypeError: intervals[0] is not a function\n    at file:///tmp/plk_m_uokpp_/test.mjs:18:13\n\nNode.js v22.22.2\n\n--- test2.mjs rc=0\npw_planks tests: 8/8 PASS\n\n--- testvine.mjs rc=0\npw_vine tests: 4/4 PASS\n\n--- testvine2.mjs rc=0\npw_vine tests: 7/7 PASS\n"
+ },
+ {
+  "suite": "stack API tests mode=bp01 (bp01-135 / bp02-206 / bp03-134)",
+  "rc": 0,
+  "seconds": 0.1,
+  "tail": "  ok   BP-01 loads while scripts load (no world call at the top level \u2014 2.x early execution)\n  ok   subscribes weatherChange once (pw_weather.js) + playerLeave once\n  ok   two intervals: fog 40 t, ambient 200 t\n  ok   clear noon: 'fog @s remove ar_sky' then 'fog @s push \"pw:ar_sky_day\" ar_sky' via runCommand\n  ok   rain is saved in the world dynamic property\n  ok   rain -> sky fog pw:ar_sky_rain (first time this state can engage)\n  ok   rain -> ambient beat plays a RAIN-pool sound (getBiome works on 2.3.0; weather read works)\n  ok   sound options unchanged (volume 0.6, pitch 0.95-1.05)\n  ok   thunder (event dimension without 'minecraft:') -> pw:ar_sky_thunder\n  ok   thunder -> ambient plays a STORM-pool sound\n  ok   clear again -> day fog + a FOREST day-pool sound (the biome pool itself)\n  ok   midnight clear -> pw:ar_sky_night\n  ok   nether player -> pw:ar_sky_nether even while the overworld storms\n  ok   a failing fog push (fog id not defined by any pack) is logged ONCE to the content log\n  ok   ...and never becomes a retry storm: <= 3 push attempts in 600 ticks (same cadence as 1.3.34: change + 15 s re-assert)\n  ok   above the build limit (getBiome throws) the beat just skips \u2014 no error escapes\n  ok   version flag says v1.3.35\nbp01: 17 passed, 0 failed\n"
+ },
+ {
+  "suite": "stack API tests mode=bp01-reload (bp01-135 / bp02-206 / bp03-134)",
+  "rc": 0,
+  "seconds": 0.0,
+  "tail": "  ok   world reload while it storms: the saved weather is read lazily -> pw:ar_sky_thunder with no new event\nbp01-reload: 1 passed, 0 failed\n"
+ },
+ {
+  "suite": "stack API tests mode=weather (bp01-135 / bp02-206 / bp03-134)",
+  "rc": 0,
+  "seconds": 0.0,
+  "tail": "  ok   a read while scripts load does not throw and says Clear\n  ok   ...and the saved value is still loaded afterwards (the early failure did not mark it loaded)\n  ok   normWeather: Rain/Thunder kept, anything else -> Clear\n  ok   dimKey strips minecraft:\n  ok   event -> weatherIn(Dimension object) and weatherIn(id) agree\n  ok   other dimensions stay Clear\n  ok   save is JSON of every known dimension\nweather: 7 passed, 0 failed\n"
+ },
+ {
+  "suite": "stack API tests mode=bp02 (bp01-135 / bp02-206 / bp03-134)",
+  "rc": 0,
+  "seconds": 0.0,
+  "tail": "  ok   slices found in the shipped main.js (_leafWind, firefly block)\n  ok   leaf wind calm in clear weather (0.15)\n  ok   leaf wind 0.8 in RAIN\n  ok   leaf wind 1.6 in THUNDER\n  ok   nether leaves stay calm while the overworld storms\n  ok   night, swamp -> 2 fireflies\n  ok   night, mangrove_swamp -> 2 fireflies\n  ok   night, forest -> NONE (biome gate works on 2.3.0)\n  ok   above the build limit (getBiome throws) -> no fireflies, no error\n  ok   ...and afterwards the gate still holds: forest -> NONE, swamp -> 2 (it used to switch itself off)\n  ok   daytime swamp -> none (night only)\nbp02: 11 passed, 0 failed\n"
+ },
+ {
+  "suite": "stack API tests mode=bp03 (bp01-135 / bp02-206 / bp03-134)",
+  "rc": 0,
+  "seconds": 0.0,
+  "tail": "  ok   BP-03 loads while scripts load\n  ok   subscribes playerBreakBlock, playerSpawn, scriptEventReceive once each\n  ok   default mode (brief): break -> '[BLOCK] stone @ 1, 2, 3'\n  ok   /scriptevent pw:diag off -> mode off + confirmation\n  ok   mode off: breaking announces nothing\n  ok   shortcut /scriptevent diag:verbose -> mode verbose\n  ok   verbose break: id, coords, dim, states, texture hint\n  ok   status (any case) -> 'Current mode: verbose'\n  ok   no verb -> help listing the /scriptevent forms\n  ok   unknown verb -> hint\n  ok   other packs' ids (BP-02 pw:diag_status, markers civ:*) are ignored\n  ok   from a command block (no player source) -> applies to the first player\n  ok   join greeting names /scriptevent pw:diag help\n  ok   version flag says v1.3.34\nbp03: 14 passed, 0 failed\n"
+ }
+]

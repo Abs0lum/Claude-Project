@@ -1,0 +1,308 @@
+[
+ {
+  "key": "short_grass",
+  "source": "grass/plant/short/1",
+  "model": "grass",
+  "amp_px": 9,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 218.8,
+  "colour_mean": [
+   85.7,
+   115.1,
+   74.5
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/short_grass"
+ },
+ {
+  "key": "tallgrass",
+  "source": "grass/plant/short/2",
+  "model": "grass",
+  "amp_px": 9,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 220.0,
+  "colour_mean": [
+   84.0,
+   117.5,
+   73.2
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/tallgrass"
+ },
+ {
+  "key": "tall_grass_bottom",
+  "source": "grass/plant/tall/2",
+  "model": "tall",
+  "amp_px": 16,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 222.0,
+  "colour_mean": [
+   97.2,
+   124.8,
+   82.0
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/tall_grass_bottom"
+ },
+ {
+  "key": "tall_grass_top",
+  "source": "grass/plant/tall/1",
+  "model": "tall",
+  "amp_px": 16,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 208.7,
+  "colour_mean": [
+   92.9,
+   123.9,
+   85.2
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/tall_grass_top"
+ },
+ {
+  "key": "short_dry_grass",
+  "source": "grass/dry/1",
+  "model": "grass",
+  "amp_px": 5,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 237.8,
+  "colour_mean": [
+   131.5,
+   105.8,
+   37.7
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/short_dry_grass"
+ },
+ {
+  "key": "tall_dry_grass",
+  "source": "grass/dry/9",
+  "model": "grass",
+  "amp_px": 6,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 246.0,
+  "colour_mean": [
+   97.5,
+   77.2,
+   27.6
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/tall_dry_grass"
+ },
+ {
+  "key": "seagrass_short",
+  "source": "seagrass/short/1",
+  "model": "sea",
+  "amp_px": 16,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   96.2,
+   138.1,
+   44.1
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/seagrass_v0"
+ },
+ {
+  "key": "seagrass_tall_bot_a",
+  "source": "seagrass/tall/6",
+  "model": "seatall",
+  "amp_px": 28,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   78.9,
+   98.1,
+   26.8
+  ],
+  "today": "RP-10 1.3.46 textures/blocks/seagrass_doubletall_bottom_a"
+ },
+ {
+  "key": "seagrass_tall_top_a",
+  "source": "seagrass/tall/2",
+  "model": "seatall",
+  "amp_px": 28,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   92.6,
+   138.0,
+   49.5
+  ],
+  "today": "RP-10 1.3.46 textures/blocks/seagrass_doubletall_top_a"
+ },
+ {
+  "key": "seagrass_tall_bot_b",
+  "source": "seagrass/tall/13",
+  "model": "seatall",
+  "amp_px": 28,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   84.1,
+   112.4,
+   28.7
+  ],
+  "today": "RP-10 1.3.46 textures/blocks/seagrass_doubletall_bottom_a"
+ },
+ {
+  "key": "seagrass_tall_top_b",
+  "source": "seagrass/tall/9",
+  "model": "seatall",
+  "amp_px": 28,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   100.6,
+   161.7,
+   56.7
+  ],
+  "today": "RP-10 1.3.46 textures/blocks/seagrass_doubletall_top_a"
+ },
+ {
+  "key": "kelp_a",
+  "source": "kelp/plant/5",
+  "model": "kelp",
+  "amp_px": 12,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   148.0,
+   105.2,
+   10.1
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/kelp_a"
+ },
+ {
+  "key": "kelp_b",
+  "source": "kelp/plant/5",
+  "model": "kelp",
+  "amp_px": 12,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   148.0,
+   105.2,
+   10.1
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/kelp_a"
+ },
+ {
+  "key": "kelp_c",
+  "source": "kelp/plant/5",
+  "model": "kelp",
+  "amp_px": 12,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   148.0,
+   105.2,
+   10.1
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/kelp_a"
+ },
+ {
+  "key": "kelp_d",
+  "source": "kelp/plant/5",
+  "model": "kelp",
+  "amp_px": 12,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   148.0,
+   105.2,
+   10.1
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/kelp_a"
+ },
+ {
+  "key": "kelp_top",
+  "source": "kelp/top/2",
+  "model": "kelp",
+  "amp_px": 12,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   131.7,
+   121.7,
+   21.6
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/kelp_top"
+ },
+ {
+  "key": "kelp_top_bulb",
+  "source": "kelp/top/3",
+  "model": "kelp",
+  "amp_px": 12,
+  "strip": [
+   256,
+   4096
+  ],
+  "metal_max": 0,
+  "rough_mean": 191.0,
+  "colour_mean": [
+   133.1,
+   122.2,
+   23.7
+  ],
+  "today": "RP-05 1.3.54 textures/blocks/kelp_top"
+ }
+]

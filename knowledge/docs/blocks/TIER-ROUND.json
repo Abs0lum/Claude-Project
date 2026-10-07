@@ -1,0 +1,3626 @@
+[
+ {
+  "path": "textures/blocks/planks_oak",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.94,
+  "source": "optifine/ctm/patrix/planks/oak/2",
+  "d": 3.06,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/birch_planks_v0",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.169,
+  "source": "optifine/ctm/patrix/planks/birch/14",
+  "d": 8.48,
+  "orientation": {
+   "rot90": 3,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'birch_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/birch_planks_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.36,
+  "source": "optifine/ctm/patrix/planks/birch/4",
+  "d": 9.8,
+  "orientation": {
+   "rot90": 1,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'birch_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/birch_planks_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.36,
+  "source": "optifine/ctm/patrix/planks/birch/13",
+  "d": 9.23,
+  "orientation": {
+   "rot90": 2,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'birch_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/birch_planks_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.315,
+  "source": "optifine/ctm/patrix/planks/birch/5",
+  "d": 9.27,
+  "orientation": {
+   "rot90": 2,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'birch_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/planks_birch",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.936,
+  "source": "optifine/ctm/patrix/planks/birch/2",
+  "d": 3.14,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'birch_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/planks_big_oak",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.936,
+  "source": "optifine/ctm/patrix/planks/dark_oak/2",
+  "d": 2.62,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/chorus_flower",
+  "pack": "RP-03 1.3.61",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/chorus_flower.png",
+   "textures/blocks/chorus_flower_n_64.png",
+   "textures/blocks/chorus_flower_mer_64.png",
+   "textures/blocks/chorus_flower.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/chorus_flower_dead",
+  "pack": "RP-03 1.3.61",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/chorus_flower_dead.png",
+   "textures/blocks/chorus_flower_dead_n_64.png",
+   "textures/blocks/chorus_flower_dead_mer_64.png",
+   "textures/blocks/chorus_flower_dead.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/chorus_plant",
+  "pack": "RP-03 1.3.61",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/chorus_plant.png",
+   "textures/blocks/chorus_plant_n_64.png",
+   "textures/blocks/chorus_plant_mer_64.png",
+   "textures/blocks/chorus_plant.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v7",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/8",
+  "d": 2.04,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v7.png",
+   "textures/blocks/coarse_dirt_v7_n256.png",
+   "textures/blocks/coarse_dirt_v7_mer256.png",
+   "textures/blocks/coarse_dirt_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v8",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/9",
+  "d": 2.24,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v8.png",
+   "textures/blocks/coarse_dirt_v8_n256.png",
+   "textures/blocks/coarse_dirt_v8_mer256.png",
+   "textures/blocks/coarse_dirt_v8.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v11",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/12",
+  "d": 2.48,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v11.png",
+   "textures/blocks/coarse_dirt_v11_n256.png",
+   "textures/blocks/coarse_dirt_v11_mer256.png",
+   "textures/blocks/coarse_dirt_v11.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v5",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/6",
+  "d": 2.56,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v5.png",
+   "textures/blocks/coarse_dirt_v5_n256.png",
+   "textures/blocks/coarse_dirt_v5_mer256.png",
+   "textures/blocks/coarse_dirt_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v6",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/7",
+  "d": 2.39,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v6.png",
+   "textures/blocks/coarse_dirt_v6_n256.png",
+   "textures/blocks/coarse_dirt_v6_mer256.png",
+   "textures/blocks/coarse_dirt_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v14",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/15",
+  "d": 1.98,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v14.png",
+   "textures/blocks/coarse_dirt_v14_n256.png",
+   "textures/blocks/coarse_dirt_v14_mer256.png",
+   "textures/blocks/coarse_dirt_v14.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v9",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/10",
+  "d": 2.11,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v9.png",
+   "textures/blocks/coarse_dirt_v9_n256.png",
+   "textures/blocks/coarse_dirt_v9_mer256.png",
+   "textures/blocks/coarse_dirt_v9.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v12",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/13",
+  "d": 2.33,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v12.png",
+   "textures/blocks/coarse_dirt_v12_n256.png",
+   "textures/blocks/coarse_dirt_v12_mer256.png",
+   "textures/blocks/coarse_dirt_v12.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v4",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/5",
+  "d": 2.3,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v4.png",
+   "textures/blocks/coarse_dirt_v4_n256.png",
+   "textures/blocks/coarse_dirt_v4_mer256.png",
+   "textures/blocks/coarse_dirt_v4.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v10",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/11",
+  "d": 2.08,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v10.png",
+   "textures/blocks/coarse_dirt_v10_n256.png",
+   "textures/blocks/coarse_dirt_v10_mer256.png",
+   "textures/blocks/coarse_dirt_v10.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v2",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/3",
+  "d": 2.34,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v2.png",
+   "textures/blocks/coarse_dirt_v2_n256.png",
+   "textures/blocks/coarse_dirt_v2_mer256.png",
+   "textures/blocks/coarse_dirt_v2.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v15",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/16",
+  "d": 2.29,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v15.png",
+   "textures/blocks/coarse_dirt_v15_n256.png",
+   "textures/blocks/coarse_dirt_v15_mer256.png",
+   "textures/blocks/coarse_dirt_v15.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v13",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/14",
+  "d": 2.18,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v13.png",
+   "textures/blocks/coarse_dirt_v13_n256.png",
+   "textures/blocks/coarse_dirt_v13_mer256.png",
+   "textures/blocks/coarse_dirt_v13.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.996,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/1",
+  "d": 3.2,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt.png",
+   "textures/blocks/coarse_dirt_n256.png",
+   "textures/blocks/coarse_dirt_mer256.png",
+   "textures/blocks/coarse_dirt.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v1",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/2",
+  "d": 2.5,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v1.png",
+   "textures/blocks/coarse_dirt_v1_n256.png",
+   "textures/blocks/coarse_dirt_v1_mer256.png",
+   "textures/blocks/coarse_dirt_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/coarse_dirt_v3",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/coarse/4",
+  "d": 2.35,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/coarse_dirt_v3.png",
+   "textures/blocks/coarse_dirt_v3_n256.png",
+   "textures/blocks/coarse_dirt_v3_mer256.png",
+   "textures/blocks/coarse_dirt_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/log_big_oak",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.94,
+  "source": "textures/block/dark_oak_log",
+  "d": 2.47,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_log_top_v0",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.996,
+  "source": "optifine/ctm/patrix/log/dark_oak/top/5",
+  "d": 0.99,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_log_top_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.996,
+  "source": "optifine/ctm/patrix/log/dark_oak/top/5",
+  "d": 4.02,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_log_top_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.991,
+  "source": "optifine/ctm/patrix/log/dark_oak/top/2",
+  "d": 1.17,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_planks_v0",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.247,
+  "source": "optifine/ctm/patrix/planks/dark_oak/14",
+  "d": 7.04,
+  "orientation": {
+   "rot90": 1,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_planks_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.212,
+  "source": "optifine/ctm/patrix/planks/dark_oak/16",
+  "d": 7.5,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_planks_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.213,
+  "source": "optifine/ctm/patrix/table/cartography/side3/4",
+  "d": 6.92,
+  "orientation": {
+   "rot90": 1,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_planks_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.321,
+  "source": "optifine/ctm/patrix/planks/dark_oak/14",
+  "d": 6.35,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dirt_v2",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/3",
+  "d": 1.95,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v2.png",
+   "textures/blocks/dirt_v2_n256.png",
+   "textures/blocks/dirt_v2_mer256.png",
+   "textures/blocks/dirt_v2.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v7",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/8",
+  "d": 1.58,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v7.png",
+   "textures/blocks/dirt_v7_n256.png",
+   "textures/blocks/dirt_v7_mer256.png",
+   "textures/blocks/dirt_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v5",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/6",
+  "d": 2.17,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v5.png",
+   "textures/blocks/dirt_v5_n256.png",
+   "textures/blocks/dirt_v5_mer256.png",
+   "textures/blocks/dirt_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v4",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/5",
+  "d": 2.05,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v4.png",
+   "textures/blocks/dirt_v4_n256.png",
+   "textures/blocks/dirt_v4_mer256.png",
+   "textures/blocks/dirt_v4.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v3",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/4",
+  "d": 1.95,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v3.png",
+   "textures/blocks/dirt_v3_n256.png",
+   "textures/blocks/dirt_v3_mer256.png",
+   "textures/blocks/dirt_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v9",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/10",
+  "d": 1.8,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v9.png",
+   "textures/blocks/dirt_v9_n256.png",
+   "textures/blocks/dirt_v9_mer256.png",
+   "textures/blocks/dirt_v9.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.995,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/1",
+  "d": 2.68,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt.png",
+   "textures/blocks/dirt_n256.png",
+   "textures/blocks/dirt_mer256.png",
+   "textures/blocks/dirt.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v8",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/9",
+  "d": 1.88,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v8.png",
+   "textures/blocks/dirt_v8_n256.png",
+   "textures/blocks/dirt_v8_mer256.png",
+   "textures/blocks/dirt_v8.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v11",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/12",
+  "d": 1.87,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v11.png",
+   "textures/blocks/dirt_v11_n256.png",
+   "textures/blocks/dirt_v11_mer256.png",
+   "textures/blocks/dirt_v11.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v14",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/15",
+  "d": 1.66,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v14.png",
+   "textures/blocks/dirt_v14_n256.png",
+   "textures/blocks/dirt_v14_mer256.png",
+   "textures/blocks/dirt_v14.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v6",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/7",
+  "d": 1.69,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v6.png",
+   "textures/blocks/dirt_v6_n256.png",
+   "textures/blocks/dirt_v6_mer256.png",
+   "textures/blocks/dirt_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v12",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/13",
+  "d": 1.71,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v12.png",
+   "textures/blocks/dirt_v12_n256.png",
+   "textures/blocks/dirt_v12_mer256.png",
+   "textures/blocks/dirt_v12.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v1",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/2",
+  "d": 2.13,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v1.png",
+   "textures/blocks/dirt_v1_n256.png",
+   "textures/blocks/dirt_v1_mer256.png",
+   "textures/blocks/dirt_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v13",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/14",
+  "d": 1.71,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v13.png",
+   "textures/blocks/dirt_v13_n256.png",
+   "textures/blocks/dirt_v13_mer256.png",
+   "textures/blocks/dirt_v13.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v10",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/11",
+  "d": 1.8,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v10.png",
+   "textures/blocks/dirt_v10_n256.png",
+   "textures/blocks/dirt_v10_mer256.png",
+   "textures/blocks/dirt_v10.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_v15",
+  "pack": "RP-10 1.3.44",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/default/16",
+  "d": 2.01,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_v15.png",
+   "textures/blocks/dirt_v15_n256.png",
+   "textures/blocks/dirt_v15_mer256.png",
+   "textures/blocks/dirt_v15.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v7",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/8",
+  "d": 1.61,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v7.png",
+   "textures/blocks/dirt_podzol_side_v7_n256.png",
+   "textures/blocks/dirt_podzol_side_v7_mer256.png",
+   "textures/blocks/dirt_podzol_side_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v10",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/11",
+  "d": 1.73,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v10.png",
+   "textures/blocks/dirt_podzol_side_v10_n256.png",
+   "textures/blocks/dirt_podzol_side_v10_mer256.png",
+   "textures/blocks/dirt_podzol_side_v10.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v6",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/7",
+  "d": 1.55,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v6.png",
+   "textures/blocks/dirt_podzol_side_v6_n256.png",
+   "textures/blocks/dirt_podzol_side_v6_mer256.png",
+   "textures/blocks/dirt_podzol_side_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v9",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/10",
+  "d": 1.58,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v9.png",
+   "textures/blocks/dirt_podzol_side_v9_n256.png",
+   "textures/blocks/dirt_podzol_side_v9_mer256.png",
+   "textures/blocks/dirt_podzol_side_v9.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v13",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/14",
+  "d": 1.66,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v13.png",
+   "textures/blocks/dirt_podzol_side_v13_n256.png",
+   "textures/blocks/dirt_podzol_side_v13_mer256.png",
+   "textures/blocks/dirt_podzol_side_v13.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v14",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/15",
+  "d": 1.63,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v14.png",
+   "textures/blocks/dirt_podzol_side_v14_n256.png",
+   "textures/blocks/dirt_podzol_side_v14_mer256.png",
+   "textures/blocks/dirt_podzol_side_v14.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v4",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/5",
+  "d": 1.84,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v4.png",
+   "textures/blocks/dirt_podzol_side_v4_n256.png",
+   "textures/blocks/dirt_podzol_side_v4_mer256.png",
+   "textures/blocks/dirt_podzol_side_v4.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/3",
+  "d": 1.75,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v2.png",
+   "textures/blocks/dirt_podzol_side_v2_n256.png",
+   "textures/blocks/dirt_podzol_side_v2_mer256.png",
+   "textures/blocks/dirt_podzol_side_v2.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v12",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/13",
+  "d": 1.64,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v12.png",
+   "textures/blocks/dirt_podzol_side_v12_n256.png",
+   "textures/blocks/dirt_podzol_side_v12_mer256.png",
+   "textures/blocks/dirt_podzol_side_v12.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v11",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/12",
+  "d": 1.85,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v11.png",
+   "textures/blocks/dirt_podzol_side_v11_n256.png",
+   "textures/blocks/dirt_podzol_side_v11_mer256.png",
+   "textures/blocks/dirt_podzol_side_v11.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/2",
+  "d": 1.86,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v1.png",
+   "textures/blocks/dirt_podzol_side_v1_n256.png",
+   "textures/blocks/dirt_podzol_side_v1_mer256.png",
+   "textures/blocks/dirt_podzol_side_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v5",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/6",
+  "d": 1.88,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v5.png",
+   "textures/blocks/dirt_podzol_side_v5_n256.png",
+   "textures/blocks/dirt_podzol_side_v5_mer256.png",
+   "textures/blocks/dirt_podzol_side_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/1",
+  "d": 1.97,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side.png",
+   "textures/blocks/dirt_podzol_side_n256.png",
+   "textures/blocks/dirt_podzol_side_mer256.png",
+   "textures/blocks/dirt_podzol_side.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v8",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/9",
+  "d": 1.7,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v8.png",
+   "textures/blocks/dirt_podzol_side_v8_n256.png",
+   "textures/blocks/dirt_podzol_side_v8_mer256.png",
+   "textures/blocks/dirt_podzol_side_v8.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/4",
+  "d": 1.92,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v3.png",
+   "textures/blocks/dirt_podzol_side_v3_n256.png",
+   "textures/blocks/dirt_podzol_side_v3_mer256.png",
+   "textures/blocks/dirt_podzol_side_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dirt_podzol_side_v15",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/podzol/side/16",
+  "d": 2.0,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/dirt_podzol_side_v15.png",
+   "textures/blocks/dirt_podzol_side_v15_n256.png",
+   "textures/blocks/dirt_podzol_side_v15_mer256.png",
+   "textures/blocks/dirt_podzol_side_v15.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/rooted_dirt",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.996,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/rooted/1",
+  "d": 2.89,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/rooted_dirt.png",
+   "textures/blocks/rooted_dirt_n256.png",
+   "textures/blocks/rooted_dirt_mer256.png",
+   "textures/blocks/rooted_dirt.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks_v2.png",
+   "textures/blocks/end_bricks_v2_n_64.png",
+   "textures/blocks/end_bricks_v2_mer_64.png",
+   "textures/blocks/end_bricks_v2.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks_v6",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks_v6.png",
+   "textures/blocks/end_bricks_v6_n_64.png",
+   "textures/blocks/end_bricks_v6_mer_64.png",
+   "textures/blocks/end_bricks_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks_v3.png",
+   "textures/blocks/end_bricks_v3_n_64.png",
+   "textures/blocks/end_bricks_v3_mer_64.png",
+   "textures/blocks/end_bricks_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_stone_bricks",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_stone_bricks.png",
+   "textures/blocks/end_stone_bricks_n_64.png",
+   "textures/blocks/end_stone_bricks_mer_64.png",
+   "textures/blocks/end_stone_bricks.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks_v1.png",
+   "textures/blocks/end_bricks_v1_n_64.png",
+   "textures/blocks/end_bricks_v1_mer_64.png",
+   "textures/blocks/end_bricks_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks_v4",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks_v4.png",
+   "textures/blocks/end_bricks_v4_n_64.png",
+   "textures/blocks/end_bricks_v4_mer_64.png",
+   "textures/blocks/end_bricks_v4.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks_v7",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks_v7.png",
+   "textures/blocks/end_bricks_v7_n_64.png",
+   "textures/blocks/end_bricks_v7_mer_64.png",
+   "textures/blocks/end_bricks_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks_v5",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks_v5.png",
+   "textures/blocks/end_bricks_v5_n_64.png",
+   "textures/blocks/end_bricks_v5_mer_64.png",
+   "textures/blocks/end_bricks_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/end_bricks",
+  "pack": "RP-03 1.3.61",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/end_bricks.png",
+   "textures/blocks/end_bricks_n_64.png",
+   "textures/blocks/end_bricks_mer_64.png",
+   "textures/blocks/end_bricks.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/farmland_wet",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/farmland/farmland_wet/2",
+  "d": 0.83,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/farmland_wet.png",
+   "textures/blocks/farmland_wet_n256.png",
+   "textures/blocks/farmland_wet_mer256.png",
+   "textures/blocks/farmland_wet.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/farmland_dry",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 1.0,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/dirt/farmland/farmland_dry/2",
+  "d": 1.24,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/farmland_dry.png",
+   "textures/blocks/farmland_dry_n256.png",
+   "textures/blocks/farmland_dry_mer256.png",
+   "textures/blocks/farmland_dry.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/purpur_block",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/purpur_block.png",
+   "textures/blocks/purpur_block_n_64.png",
+   "textures/blocks/purpur_block_mer_64.png",
+   "textures/blocks/purpur_block.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/log_oak",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.947,
+  "to": [
+   256,
+   256
+  ],
+  "source": "textures/block/oak_log",
+  "d": 4.73,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/log_oak.png",
+   "textures/blocks/log_oak_n256.png",
+   "textures/blocks/log_oak_mer256.png",
+   "textures/blocks/log_oak.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/log_spruce",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.924,
+  "source": "textures/block/spruce_log",
+  "d": 2.87,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/log_big_oak_top",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.963,
+  "source": "textures/block/dark_oak_log_top",
+  "d": 1.98,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/mud",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.99,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/1",
+  "d": 0.86,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud.png",
+   "textures/blocks/mud_n256.png",
+   "textures/blocks/mud_mer256.png",
+   "textures/blocks/mud.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.993,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/2",
+  "d": 0.88,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v1.png",
+   "textures/blocks/mud_v1_n256.png",
+   "textures/blocks/mud_v1_mer256.png",
+   "textures/blocks/mud_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.988,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/3",
+  "d": 0.86,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v2.png",
+   "textures/blocks/mud_v2_n256.png",
+   "textures/blocks/mud_v2_mer256.png",
+   "textures/blocks/mud_v2.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.99,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/4",
+  "d": 0.89,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v3.png",
+   "textures/blocks/mud_v3_n256.png",
+   "textures/blocks/mud_v3_mer256.png",
+   "textures/blocks/mud_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v4",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.99,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/5",
+  "d": 0.92,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v4.png",
+   "textures/blocks/mud_v4_n256.png",
+   "textures/blocks/mud_v4_mer256.png",
+   "textures/blocks/mud_v4.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v5",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.988,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/6",
+  "d": 0.88,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v5.png",
+   "textures/blocks/mud_v5_n256.png",
+   "textures/blocks/mud_v5_mer256.png",
+   "textures/blocks/mud_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v6",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.994,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/7",
+  "d": 0.85,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v6.png",
+   "textures/blocks/mud_v6_n256.png",
+   "textures/blocks/mud_v6_mer256.png",
+   "textures/blocks/mud_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v7",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.992,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/8",
+  "d": 0.91,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v7.png",
+   "textures/blocks/mud_v7_n256.png",
+   "textures/blocks/mud_v7_mer256.png",
+   "textures/blocks/mud_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v8",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.99,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/9",
+  "d": 0.85,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v8.png",
+   "textures/blocks/mud_v8_n256.png",
+   "textures/blocks/mud_v8_mer256.png",
+   "textures/blocks/mud_v8.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v9",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.989,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/10",
+  "d": 0.92,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v9.png",
+   "textures/blocks/mud_v9_n256.png",
+   "textures/blocks/mud_v9_mer256.png",
+   "textures/blocks/mud_v9.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v10",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.99,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/11",
+  "d": 0.9,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v10.png",
+   "textures/blocks/mud_v10_n256.png",
+   "textures/blocks/mud_v10_mer256.png",
+   "textures/blocks/mud_v10.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v11",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.989,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/12",
+  "d": 0.8,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v11.png",
+   "textures/blocks/mud_v11_n256.png",
+   "textures/blocks/mud_v11_mer256.png",
+   "textures/blocks/mud_v11.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v12",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.988,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/13",
+  "d": 0.84,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v12.png",
+   "textures/blocks/mud_v12_n256.png",
+   "textures/blocks/mud_v12_mer256.png",
+   "textures/blocks/mud_v12.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v13",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.989,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/14",
+  "d": 0.87,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v13.png",
+   "textures/blocks/mud_v13_n256.png",
+   "textures/blocks/mud_v13_mer256.png",
+   "textures/blocks/mud_v13.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v14",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.995,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/15",
+  "d": 0.88,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v14.png",
+   "textures/blocks/mud_v14_n256.png",
+   "textures/blocks/mud_v14_mer256.png",
+   "textures/blocks/mud_v14.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/mud_v15",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.995,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/wet/16",
+  "d": 0.9,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/mud_v15.png",
+   "textures/blocks/mud_v15_n256.png",
+   "textures/blocks/mud_v15_mer256.png",
+   "textures/blocks/mud_v15.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v1",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.966,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/24",
+  "d": 4.48,
+  "orientation": {
+   "rot90": 1,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v1.png",
+   "textures/blocks/muddy_mangrove_roots_side_v1_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v1_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v2",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.954,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/3",
+  "d": 4.79,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v2.png",
+   "textures/blocks/muddy_mangrove_roots_side_v2_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v2_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v2.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v3",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.962,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/32",
+  "d": 4.34,
+  "orientation": {
+   "rot90": 1,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v3.png",
+   "textures/blocks/muddy_mangrove_roots_side_v3_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v3_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v4",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.955,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/5",
+  "d": 4.83,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v4.png",
+   "textures/blocks/muddy_mangrove_roots_side_v4_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v4_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v4.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v5",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.96,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/6",
+  "d": 3.81,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v5.png",
+   "textures/blocks/muddy_mangrove_roots_side_v5_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v5_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v6",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.936,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/7",
+  "d": 4.35,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v6.png",
+   "textures/blocks/muddy_mangrove_roots_side_v6_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v6_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v7",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.945,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/8",
+  "d": 4.87,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v7.png",
+   "textures/blocks/muddy_mangrove_roots_side_v7_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v7_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v8",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.975,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/9",
+  "d": 3.25,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v8.png",
+   "textures/blocks/muddy_mangrove_roots_side_v8_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v8_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v8.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v9",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.967,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/10",
+  "d": 4.22,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v9.png",
+   "textures/blocks/muddy_mangrove_roots_side_v9_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v9_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v9.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v10",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.958,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/11",
+  "d": 4.9,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v10.png",
+   "textures/blocks/muddy_mangrove_roots_side_v10_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v10_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v10.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v11",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.964,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/12",
+  "d": 3.37,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v11.png",
+   "textures/blocks/muddy_mangrove_roots_side_v11_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v11_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v11.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v12",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.951,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/13",
+  "d": 4.01,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v12.png",
+   "textures/blocks/muddy_mangrove_roots_side_v12_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v12_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v12.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v13",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.95,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/14",
+  "d": 3.73,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v13.png",
+   "textures/blocks/muddy_mangrove_roots_side_v13_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v13_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v13.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v14",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.962,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/15",
+  "d": 3.38,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v14.png",
+   "textures/blocks/muddy_mangrove_roots_side_v14_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v14_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v14.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/muddy_mangrove_roots_side_v15",
+  "pack": "RP-05 1.3.52",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.953,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mangrove/roots/side/muddy/29",
+  "d": 4.65,
+  "orientation": {
+   "rot90": 1,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/muddy_mangrove_roots_side_v15.png",
+   "textures/blocks/muddy_mangrove_roots_side_v15_n256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v15_mer256.png",
+   "textures/blocks/muddy_mangrove_roots_side_v15.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_planks_v0",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.183,
+  "source": "optifine/ctm/patrix/mushroom/brown/block/13",
+  "d": 8.97,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/oak_planks_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.304,
+  "source": "optifine/ctm/patrix/bookshelf/chiseled/side/7",
+  "d": 9.83,
+  "orientation": {
+   "rot90": 2,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/oak_planks_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.121,
+  "source": "optifine/ctm/patrix/mushroom/brown/block/13",
+  "d": 9.47,
+  "orientation": {
+   "rot90": 2,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/oak_planks_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.166,
+  "source": "optifine/ctm/patrix/mushroom/brown/block/5",
+  "d": 8.09,
+  "orientation": {
+   "rot90": 1,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'oak_planks' stays 128 (4 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/packed_mud",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.99,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/1",
+  "d": 1.18,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud.png",
+   "textures/blocks/packed_mud_n256.png",
+   "textures/blocks/packed_mud_mer256.png",
+   "textures/blocks/packed_mud.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.995,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/2",
+  "d": 1.25,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v1.png",
+   "textures/blocks/packed_mud_v1_n256.png",
+   "textures/blocks/packed_mud_v1_mer256.png",
+   "textures/blocks/packed_mud_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.994,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/3",
+  "d": 1.27,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v2.png",
+   "textures/blocks/packed_mud_v2_n256.png",
+   "textures/blocks/packed_mud_v2_mer256.png",
+   "textures/blocks/packed_mud_v2.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.991,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/4",
+  "d": 1.14,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v3.png",
+   "textures/blocks/packed_mud_v3_n256.png",
+   "textures/blocks/packed_mud_v3_mer256.png",
+   "textures/blocks/packed_mud_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v4",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.992,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/5",
+  "d": 1.2,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v4.png",
+   "textures/blocks/packed_mud_v4_n256.png",
+   "textures/blocks/packed_mud_v4_mer256.png",
+   "textures/blocks/packed_mud_v4.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v5",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.992,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/6",
+  "d": 1.16,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v5.png",
+   "textures/blocks/packed_mud_v5_n256.png",
+   "textures/blocks/packed_mud_v5_mer256.png",
+   "textures/blocks/packed_mud_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v6",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.991,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/7",
+  "d": 1.12,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v6.png",
+   "textures/blocks/packed_mud_v6_n256.png",
+   "textures/blocks/packed_mud_v6_mer256.png",
+   "textures/blocks/packed_mud_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v7",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.988,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/8",
+  "d": 1.14,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v7.png",
+   "textures/blocks/packed_mud_v7_n256.png",
+   "textures/blocks/packed_mud_v7_mer256.png",
+   "textures/blocks/packed_mud_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v8",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.992,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/9",
+  "d": 1.13,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v8.png",
+   "textures/blocks/packed_mud_v8_n256.png",
+   "textures/blocks/packed_mud_v8_mer256.png",
+   "textures/blocks/packed_mud_v8.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v9",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.989,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/10",
+  "d": 1.06,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v9.png",
+   "textures/blocks/packed_mud_v9_n256.png",
+   "textures/blocks/packed_mud_v9_mer256.png",
+   "textures/blocks/packed_mud_v9.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v10",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.993,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/11",
+  "d": 1.1,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v10.png",
+   "textures/blocks/packed_mud_v10_n256.png",
+   "textures/blocks/packed_mud_v10_mer256.png",
+   "textures/blocks/packed_mud_v10.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v11",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.993,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/12",
+  "d": 1.2,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v11.png",
+   "textures/blocks/packed_mud_v11_n256.png",
+   "textures/blocks/packed_mud_v11_mer256.png",
+   "textures/blocks/packed_mud_v11.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v12",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.991,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/13",
+  "d": 1.18,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v12.png",
+   "textures/blocks/packed_mud_v12_n256.png",
+   "textures/blocks/packed_mud_v12_mer256.png",
+   "textures/blocks/packed_mud_v12.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v13",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.991,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/14",
+  "d": 1.13,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v13.png",
+   "textures/blocks/packed_mud_v13_n256.png",
+   "textures/blocks/packed_mud_v13_mer256.png",
+   "textures/blocks/packed_mud_v13.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v14",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.992,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/15",
+  "d": 1.26,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v14.png",
+   "textures/blocks/packed_mud_v14_n256.png",
+   "textures/blocks/packed_mud_v14_mer256.png",
+   "textures/blocks/packed_mud_v14.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/packed_mud_v15",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.994,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/mud/packed/16",
+  "d": 1.21,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/packed_mud_v15.png",
+   "textures/blocks/packed_mud_v15_n256.png",
+   "textures/blocks/packed_mud_v15_mer256.png",
+   "textures/blocks/packed_mud_v15.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/purpur_pillar",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/purpur_pillar.png",
+   "textures/blocks/purpur_pillar_n_64.png",
+   "textures/blocks/purpur_pillar_mer_64.png",
+   "textures/blocks/purpur_pillar.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/purpur_pillar_top",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "to": [
+   64,
+   64
+  ],
+  "files": [
+   "textures/blocks/purpur_pillar_top.png",
+   "textures/blocks/purpur_pillar_top_n_64.png",
+   "textures/blocks/purpur_pillar_top_mer_64.png",
+   "textures/blocks/purpur_pillar_top.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/dark_oak_log",
+  "pack": "RP-01 1.3.108",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.977,
+  "source": "textures/block/dark_oak_log",
+  "d": 1.71,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_log_v0",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.119,
+  "source": "textures/block/gray_terracotta",
+  "d": 7.18,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_log_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.03,
+  "source": "optifine/ctm/patrix/terracotta/stained/black/13",
+  "d": 9.1,
+  "orientation": {
+   "rot90": 2,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_log_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.616,
+  "source": "textures/block/dark_oak_log",
+  "d": 5.57,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/dark_oak_log_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.095,
+  "source": "optifine/ctm/patrix/terracotta/stained/gray/7",
+  "d": 7.12,
+  "orientation": {
+   "rot90": 1,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'dark_oak_log' stays 128 (3 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/oak_log_v10",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.965,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/log/oak/16",
+  "d": 3.88,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v10.png",
+   "textures/blocks/oak_log_v10_n256.png",
+   "textures/blocks/oak_log_v10_mer256.png",
+   "textures/blocks/oak_log_v10.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v0",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.955,
+  "to": [
+   256,
+   256
+  ],
+  "source": "textures/block/oak_log",
+  "d": 7.45,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v0.png",
+   "textures/blocks/oak_log_v0_n256.png",
+   "textures/blocks/oak_log_v0_mer256.png",
+   "textures/blocks/oak_log_v0.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v5",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.871,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/log/oak/1",
+  "d": 5.45,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v5.png",
+   "textures/blocks/oak_log_v5_n256.png",
+   "textures/blocks/oak_log_v5_mer256.png",
+   "textures/blocks/oak_log_v5.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v6",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.82,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/log/oak/4",
+  "d": 6.35,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v6.png",
+   "textures/blocks/oak_log_v6_n256.png",
+   "textures/blocks/oak_log_v6_mer256.png",
+   "textures/blocks/oak_log_v6.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v7",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.943,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/log/oak/7",
+  "d": 4.23,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v7.png",
+   "textures/blocks/oak_log_v7_n256.png",
+   "textures/blocks/oak_log_v7_mer256.png",
+   "textures/blocks/oak_log_v7.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v8",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.958,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/log/oak/10",
+  "d": 4.12,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v8.png",
+   "textures/blocks/oak_log_v8_n256.png",
+   "textures/blocks/oak_log_v8_mer256.png",
+   "textures/blocks/oak_log_v8.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.841,
+  "to": [
+   256,
+   256
+  ],
+  "source": "textures/block/oak_log",
+  "d": 13.14,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v1.png",
+   "textures/blocks/oak_log_v1_n256.png",
+   "textures/blocks/oak_log_v1_mer256.png",
+   "textures/blocks/oak_log_v1.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v9",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.913,
+  "to": [
+   256,
+   256
+  ],
+  "source": "optifine/ctm/patrix/log/oak/13",
+  "d": 4.89,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v9.png",
+   "textures/blocks/oak_log_v9_n256.png",
+   "textures/blocks/oak_log_v9_mer256.png",
+   "textures/blocks/oak_log_v9.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.706,
+  "to": [
+   256,
+   256
+  ],
+  "source": "textures/block/oak_log",
+  "d": 9.64,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log_v3.png",
+   "textures/blocks/oak_log_v3_n256.png",
+   "textures/blocks/oak_log_v3_mer256.png",
+   "textures/blocks/oak_log_v3.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/oak_log",
+  "pack": "RP-01 1.3.108",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.98,
+  "to": [
+   256,
+   256
+  ],
+  "source": "textures/block/oak_log",
+  "d": 3.29,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [
+   "textures/blocks/oak_log.png",
+   "textures/blocks/oak_log_n256.png",
+   "textures/blocks/oak_log_mer256.png",
+   "textures/blocks/oak_log.texture_set.json"
+  ]
+ },
+ {
+  "path": "textures/blocks/spruce_log_v2",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.231,
+  "source": "optifine/ctm/patrix/terracotta/stained/black/13",
+  "d": 6.77,
+  "orientation": {
+   "rot90": 3,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v9",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.163,
+  "source": "optifine/ctm/patrix/terracotta/stained/gray/13",
+  "d": 7.38,
+  "orientation": {
+   "rot90": 3,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v10",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.091,
+  "source": "textures/block/gray_terracotta",
+  "d": 7.14,
+  "orientation": {
+   "rot90": 2,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v8",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.215,
+  "source": "optifine/ctm/patrix/terracotta/stained/gray/13",
+  "d": 6.86,
+  "orientation": {
+   "rot90": 3,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v7",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.178,
+  "source": "textures/block/gray_terracotta",
+  "d": 6.24,
+  "orientation": {
+   "rot90": 3,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v0",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.568,
+  "source": "textures/block/spruce_log",
+  "d": 6.88,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v5",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.22,
+  "source": "optifine/ctm/patrix/terracotta/stained/gray/13",
+  "d": 6.54,
+  "orientation": {
+   "rot90": 3,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v6",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.139,
+  "source": "textures/block/gray_terracotta",
+  "d": 7.33,
+  "orientation": {
+   "rot90": 3,
+   "mirror": true
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v1",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.119,
+  "source": "optifine/ctm/patrix/terracotta/stained/gray/7",
+  "d": 6.62,
+  "orientation": {
+   "rot90": 3,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log_v3",
+  "pack": "RP-04 1.3.146",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.172,
+  "source": "textures/block/daylight_detector_side",
+  "d": 8.27,
+  "orientation": {
+   "rot90": 3,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ },
+ {
+  "path": "textures/blocks/spruce_log",
+  "pack": "RP-01 1.3.108",
+  "from": [
+   128,
+   128
+  ],
+  "corr": 0.975,
+  "source": "textures/block/spruce_log",
+  "d": 1.96,
+  "orientation": {
+   "rot90": 0,
+   "mirror": false
+  },
+  "files": [],
+  "skipped": "family 'spruce_log' stays 128 (10 member(s) have no same-layout Patrix 256)"
+ }
+]

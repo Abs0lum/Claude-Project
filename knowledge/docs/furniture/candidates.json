@@ -1,0 +1,3604 @@
+{
+ "00-owned": [
+  {
+   "num": "O1",
+   "pack": "own",
+   "id": "pw_furn_chair",
+   "cubes": 11,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    10.0,
+    22.0,
+    10.0
+   ],
+   "note": "pw:furn_chair_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 18,
+    "post": 36,
+    "end": 12
+   }
+  },
+  {
+   "num": "O2",
+   "pack": "own",
+   "id": "pw_furn_bench",
+   "cubes": 4,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    8.0,
+    6.0
+   ],
+   "note": "pw:furn_bench_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 20,
+    "end": 4
+   }
+  },
+  {
+   "num": "O3",
+   "pack": "own",
+   "id": "pw_furn_stool",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "note": "pw:furn_stool_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 6,
+    "post": 28,
+    "end": 8
+   }
+  },
+  {
+   "num": "O4",
+   "pack": "own",
+   "id": "pw_furn_barrel_seat",
+   "cubes": 12,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.7,
+    10.0,
+    10.7
+   ],
+   "note": "pw:furn_barrel_seat_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 16,
+    "end": 24,
+    "iron": 32
+   }
+  },
+  {
+   "num": "O5",
+   "pack": "own",
+   "id": "pw_furn_table_0000",
+   "cubes": 9,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    14.0,
+    16.0
+   ],
+   "note": "pw:furn_table_0000_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 30,
+    "post": 16,
+    "end": 8
+   }
+  },
+  {
+   "num": "O6",
+   "pack": "own",
+   "id": "pw_furn_trestle",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    13.4,
+    11.6
+   ],
+   "note": "pw:furn_trestle_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 8,
+    "end": 4,
+    "post": 24
+   }
+  },
+  {
+   "num": "O7",
+   "pack": "own",
+   "id": "pw_furn_shelf",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    12.0
+   ],
+   "note": "pw:furn_shelf_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 40,
+    "end": 2
+   }
+  },
+  {
+   "num": "O8",
+   "pack": "own",
+   "id": "pw_furn_wall_shelf",
+   "cubes": 3,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    5.0,
+    6.0
+   ],
+   "note": "pw:furn_wall_shelf_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 6,
+    "post": 10,
+    "end": 2
+   }
+  },
+  {
+   "num": "O9",
+   "pack": "own",
+   "id": "pw_furn_cupboard",
+   "cubes": 9,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    15.0
+   ],
+   "note": "pw:furn_cupboard_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 40,
+    "end": 2,
+    "iron": 12
+   }
+  },
+  {
+   "num": "O10",
+   "pack": "own",
+   "id": "pw_furn_dresser",
+   "cubes": 23,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    16.0,
+    24.0,
+    14.0
+   ],
+   "note": "pw:furn_dresser_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 114,
+    "iron": 24
+   }
+  },
+  {
+   "num": "O11",
+   "pack": "own",
+   "id": "pw_furn_mantel",
+   "cubes": 4,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    5.0,
+    6.0
+   ],
+   "note": "pw:furn_mantel_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 12,
+    "post": 10,
+    "end": 2
+   }
+  },
+  {
+   "num": "O12",
+   "pack": "own",
+   "id": "pw_furn_coat_pegs",
+   "cubes": 4,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    3.0,
+    4.0
+   ],
+   "note": "pw:furn_coat_pegs_<wood>",
+   "mode": "furn",
+   "source_file": "/home/claude/_build/rp04-159/models/blocks/pw_furniture.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 6,
+    "end": 3,
+    "post": 15
+   }
+  }
+ ],
+ "01-bedchamber": [
+  {
+   "num": "1",
+   "pack": "rustic",
+   "id": "classic_nightstand",
+   "cubes": 19,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "bedside cabinet, 2 drawers",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/nightstand/classic_nightstand.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "post": 64,
+    "end": 32,
+    "board": 18
+   }
+  },
+  {
+   "num": "2",
+   "pack": "rustic",
+   "id": "classic_nightstand_open",
+   "cubes": 26,
+   "blocks_wdh": "1x2x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    23.0
+   ],
+   "note": "same, drawer open state",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/nightstand/classic_nightstand_open.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "post": 72,
+    "end": 36,
+    "board": 48
+   }
+  },
+  {
+   "num": "3",
+   "pack": "rustic",
+   "id": "classic_nightstand_left",
+   "cubes": 14,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "joinable chest-of-drawers end (L/M/R set)",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/nightstand/classic_nightstand_left.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "end": 22,
+    "post": 44,
+    "board": 18
+   }
+  },
+  {
+   "num": "4",
+   "pack": "rustic",
+   "id": "classic_nightstand_middle",
+   "cubes": 9,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    15.0,
+    16.0
+   ],
+   "note": "joinable chest-of-drawers middle",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/nightstand/classic_nightstand_middle.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "end": 12,
+    "post": 24,
+    "board": 18
+   }
+  },
+  {
+   "num": "5",
+   "pack": "rustic",
+   "id": "foot_stool",
+   "cubes": 14,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    8.0,
+    16.0
+   ],
+   "note": "bed-foot bench / ottoman",
+   "mode": "furn+wood",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/couch/foot_stool.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/furniture/chairs/smallchairbeige.png",
+   "materials": {
+    "board": 26,
+    "post": 4
+   }
+  },
+  {
+   "num": "6",
+   "pack": "craftopia",
+   "id": "cofremini",
+   "cubes": 2,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.7,
+    7.0,
+    7.9
+   ],
+   "note": "small coffer (closed)",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/cofremini.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 12
+   }
+  },
+  {
+   "num": "7",
+   "pack": "craftopia",
+   "id": "cofremini_open",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.8,
+    9.8,
+    8.9
+   ],
+   "note": "small coffer (lid open)",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/cofremini_open.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 22,
+    "post": 2
+   }
+  },
+  {
+   "num": "8",
+   "pack": "craftopia",
+   "id": "perchero3",
+   "cubes": 22,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    12.9,
+    29.1,
+    12.9
+   ],
+   "note": "standing coat / cloak tree",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/perchero3.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 54,
+    "post": 28,
+    "end": 2
+   }
+  },
+  {
+   "num": "9",
+   "pack": "craftopia",
+   "id": "espejo2",
+   "cubes": 4,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    15.0,
+    25.8,
+    9.1
+   ],
+   "note": "cheval (standing) mirror",
+   "mode": "keep",
+   "source_file": "craftopia/models/entity/Modern/espejo2.geo.json",
+   "source_texture": "craftopia/textures/blocks/espejo2.png",
+   "materials": {
+    "keep": 14,
+    "post": 2
+   }
+  },
+  {
+   "num": "10",
+   "pack": "craftopia",
+   "id": "toalla",
+   "cubes": 8,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    13.0,
+    7.5,
+    2.3
+   ],
+   "note": "towel rail (wash-stand companion)",
+   "mode": "furn+thin_iron",
+   "source_file": "craftopia/models/entity/Modern/toalla_sillablanca.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 16,
+    "iron": 8
+   }
+  },
+  {
+   "num": "11",
+   "pack": "craftopia",
+   "id": "lampara",
+   "cubes": 8,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    7.0,
+    27.0,
+    7.0
+   ],
+   "note": "floor lamp -> candle stand shape",
+   "mode": "furn+thin_iron",
+   "source_file": "craftopia/models/entity/Modern/lampara.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 30,
+    "iron": 10
+   }
+  },
+  {
+   "num": "12",
+   "pack": "feudal",
+   "id": "alfombra_enrollada1",
+   "cubes": 6,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    22.2,
+    12.6,
+    27.0
+   ],
+   "note": "rolled rug (storage prop)",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/alfombra_enrollada1.geo.json",
+   "source_texture": "feudal/textures/blocks/alfombra_enrollada1.png",
+   "materials": {
+    "cloth:yellow": 12,
+    "board": 24
+   }
+  }
+ ],
+ "02-nursery": [
+  {
+   "num": "13",
+   "pack": "rustic",
+   "id": "small_chair",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    13.0,
+    11.8,
+    13.0
+   ],
+   "note": "child's chair (12 px seat height)",
+   "mode": "furn+wood",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/chairs/small_chair.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/furniture/chairs/smallchairbeige.png",
+   "materials": {
+    "post": 24,
+    "end": 8,
+    "board": 12
+   }
+  },
+  {
+   "num": "14",
+   "pack": "rustic",
+   "id": "simple_stool",
+   "cubes": 5,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    9.0,
+    12.0,
+    9.0
+   ],
+   "note": "low stool (12 px)",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/chairs/simple_stool.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "post": 16,
+    "end": 8,
+    "board": 6
+   }
+  },
+  {
+   "num": "15",
+   "pack": "craftopia",
+   "id": "taburete",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    6.4,
+    10.8,
+    6.4
+   ],
+   "note": "splay-leg stool (child height)",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/taburete.geo.json",
+   "source_texture": "craftopia/textures/blocks/taburete.png",
+   "materials": {
+    "post": 16,
+    "end": 8,
+    "board": 6,
+    "iron": 6
+   }
+  },
+  {
+   "num": "16",
+   "pack": "feudal",
+   "id": "sit_tronco2",
+   "cubes": 2,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.0,
+    7.0,
+    10.0
+   ],
+   "note": "log seat (7 px)",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/sit_tronco2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 12
+   }
+  },
+  {
+   "num": "17",
+   "pack": "craftopia",
+   "id": "ajedrez",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    14.0,
+    1.7,
+    14.0
+   ],
+   "note": "board game (chess) on table",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/ajedrez.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 60
+   }
+  },
+  {
+   "num": "18",
+   "pack": "craftopia",
+   "id": "casapajaro2",
+   "cubes": 22,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.0,
+    14.1,
+    9.7
+   ],
+   "note": "birdhouse (window / garden toy)",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Pet/casapajaro2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 84,
+    "post": 32,
+    "end": 16
+   }
+  }
+ ],
+ "03-hall": [
+  {
+   "num": "19",
+   "pack": "rustic",
+   "id": "dinner_table",
+   "cubes": 5,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "long table, single (L/M/R auto-join set)",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/tables/dinner_table.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 6,
+    "post": 16,
+    "end": 8
+   }
+  },
+  {
+   "num": "20",
+   "pack": "rustic",
+   "id": "dinner_table_left",
+   "cubes": 3,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "long table end piece",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/tables/dinner_table_left.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 6,
+    "post": 8,
+    "end": 4
+   }
+  },
+  {
+   "num": "21",
+   "pack": "rustic",
+   "id": "dinner_table_middle",
+   "cubes": 1,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    2.0,
+    16.0
+   ],
+   "note": "long table middle piece (top only)",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/tables/dinner_table_middle.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 6
+   }
+  },
+  {
+   "num": "22",
+   "pack": "feudal",
+   "id": "mesa",
+   "cubes": 11,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    26.0,
+    16.0,
+    16.0
+   ],
+   "note": "trestle table with stretcher, 2 wide",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/mesa.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 36,
+    "end": 18,
+    "board": 12
+   }
+  },
+  {
+   "num": "23",
+   "pack": "feudal",
+   "id": "mesa1",
+   "cubes": 23,
+   "blocks_wdh": "2x2x2",
+   "flags": [
+    "dips below y0"
+   ],
+   "span_px": [
+    30.0,
+    19.5,
+    18.8
+   ],
+   "note": "heavy trestle with clutter, 2 wide",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/mesa1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 48,
+    "end": 18,
+    "board": 52
+   }
+  },
+  {
+   "num": "24",
+   "pack": "feudal",
+   "id": "mesa4",
+   "cubes": 19,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    16.0,
+    18.0
+   ],
+   "note": "refectory table, carved legs",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/mesa4.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 66,
+    "end": 16,
+    "post": 32
+   }
+  },
+  {
+   "num": "25",
+   "pack": "feudal",
+   "id": "mesa2",
+   "cubes": 11,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    28.0,
+    16.4,
+    16.3
+   ],
+   "note": "X-leg trestle table",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/mesa2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 36,
+    "post": 20,
+    "end": 10
+   }
+  },
+  {
+   "num": "26",
+   "pack": "feudal",
+   "id": "banco",
+   "cubes": 8,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    28.0,
+    10.0,
+    8.0
+   ],
+   "note": "long bench, 2 wide",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/banco.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 42,
+    "end": 2,
+    "post": 4
+   }
+  },
+  {
+   "num": "27",
+   "pack": "feudal",
+   "id": "banco2",
+   "cubes": 8,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    26.0,
+    11.2,
+    14.6
+   ],
+   "note": "splayed-leg bench, 2 wide",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/banco2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 24,
+    "end": 12,
+    "board": 12
+   }
+  },
+  {
+   "num": "28",
+   "pack": "rustic",
+   "id": "chair_dinner",
+   "cubes": 10,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    13.0,
+    22.0,
+    13.1
+   ],
+   "note": "ladder-back dining chair",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/chairs/chair_dinner.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 18,
+    "post": 28,
+    "end": 14
+   }
+  },
+  {
+   "num": "29",
+   "pack": "rustic",
+   "id": "chair_classic",
+   "cubes": 13,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    12.0,
+    24.0,
+    13.0
+   ],
+   "note": "spindle-back chair",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/chairs/chair_classic.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 6,
+    "post": 48,
+    "end": 8
+   }
+  },
+  {
+   "num": "30",
+   "pack": "feudal",
+   "id": "silla2",
+   "cubes": 9,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    11.1,
+    21.1,
+    12.4
+   ],
+   "note": "rustic slat-back chair",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/silla2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 6,
+    "post": 32,
+    "end": 16
+   }
+  },
+  {
+   "num": "31",
+   "pack": "craftopia",
+   "id": "sillarus",
+   "cubes": 9,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    12.0,
+    20.8,
+    12.5
+   ],
+   "note": "X-frame folding chair (faldstool)",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/sillarus.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 26,
+    "end": 12,
+    "board": 12
+   }
+  },
+  {
+   "num": "32",
+   "pack": "feudal",
+   "id": "fireplace1-1",
+   "cubes": 15,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    16.0,
+    19.0
+   ],
+   "note": "hearth / fireplace, 2 wide",
+   "mode": "furn+stone",
+   "source_file": "feudal/models/entity/miscelaneo/fireplace1-1.geo.json",
+   "source_texture": "feudal/textures/blocks/fireplace.png",
+   "materials": {
+    "stone": 68,
+    "keep": 6
+   }
+  },
+  {
+   "num": "33",
+   "pack": "feudal",
+   "id": "fireplace-top1-1",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.0,
+    13.0,
+    12.0
+   ],
+   "note": "chimney breast above hearth",
+   "mode": "furn+stone",
+   "source_file": "feudal/models/entity/miscelaneo/fireplace-top1-1.geo.json",
+   "source_texture": "feudal/textures/blocks/fireplace.png",
+   "materials": {
+    "stone": 32
+   }
+  },
+  {
+   "num": "34",
+   "pack": "craftopia",
+   "id": "chim1",
+   "cubes": 9,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    16.0,
+    17.0
+   ],
+   "note": "small fireplace",
+   "mode": "furn+stone",
+   "source_file": "craftopia/models/entity/Modern/chim1.geo.json",
+   "source_texture": "craftopia/textures/blocks/chim1.png",
+   "materials": {
+    "stone": 44,
+    "keep": 6
+   }
+  },
+  {
+   "num": "35",
+   "pack": "feudal",
+   "id": "herramienta_fuego",
+   "cubes": 19,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    15.5,
+    2.0
+   ],
+   "note": "fire irons rack",
+   "mode": "furn+thin_iron",
+   "source_file": "feudal/models/entity/miscelaneo/herramienta_fuego.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 4,
+    "iron": 48,
+    "post": 4,
+    "end": 2
+   }
+  },
+  {
+   "num": "36",
+   "pack": "feudal",
+   "id": "paloantorcha-pro",
+   "cubes": 17,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    4.0,
+    26.0,
+    4.0
+   ],
+   "note": "torch / candle post",
+   "mode": "furn+thin_iron",
+   "source_file": "feudal/models/entity/paloantorcha-pro.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 4,
+    "end": 2,
+    "iron": 32
+   }
+  }
+ ],
+ "04-kitchen": [
+  {
+   "num": "37",
+   "pack": "feudal",
+   "id": "barril",
+   "cubes": 7,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    16.0,
+    22.0,
+    16.0
+   ],
+   "note": "upright cask",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/miscelaneo/barril.geo.json",
+   "source_texture": "feudal/textures/blocks/barril.png",
+   "materials": {
+    "board": 39,
+    "keep": 2,
+    "cloth:silver": 1
+   }
+  },
+  {
+   "num": "38",
+   "pack": "feudal",
+   "id": "barril2",
+   "cubes": 11,
+   "blocks_wdh": "2x2x2",
+   "flags": [],
+   "span_px": [
+    22.0,
+    21.3,
+    17.3
+   ],
+   "note": "cask on cradle",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/miscelaneo/barril2.geo.json",
+   "source_texture": "feudal/textures/blocks/barril.png",
+   "materials": {
+    "board": 39,
+    "keep": 2,
+    "cloth:silver": 1,
+    "post": 16,
+    "end": 8
+   }
+  },
+  {
+   "num": "39",
+   "pack": "feudal",
+   "id": "cubo",
+   "cubes": 14,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    11.1,
+    9.0,
+    11.1
+   ],
+   "note": "wooden bucket",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/cubo.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 30,
+    "end": 18,
+    "post": 36
+   }
+  },
+  {
+   "num": "40",
+   "pack": "feudal",
+   "id": "caja1",
+   "cubes": 17,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.0,
+    12.0,
+    12.0
+   ],
+   "note": "crate, small",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/caja1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 64,
+    "end": 32,
+    "board": 6
+   }
+  },
+  {
+   "num": "41",
+   "pack": "feudal",
+   "id": "cesta_patatas",
+   "cubes": 20,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "basket of potatoes",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/cesta_patatas.geo.json",
+   "source_texture": "feudal/textures/blocks/cesta_patatas.png",
+   "materials": {
+    "board": 96,
+    "keep": 24
+   }
+  },
+  {
+   "num": "42",
+   "pack": "feudal",
+   "id": "cesta_manzana",
+   "cubes": 37,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    12.1,
+    16.0
+   ],
+   "note": "basket of apples",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/cesta_manzana.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 120,
+    "post": 36,
+    "end": 18
+   }
+  },
+  {
+   "num": "43",
+   "pack": "feudal",
+   "id": "cesta_zanahoria",
+   "cubes": 38,
+   "blocks_wdh": "1x2x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    13.7,
+    16.8
+   ],
+   "note": "basket of carrots",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/cesta_zanahoria.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 108,
+    "post": 48,
+    "end": 24
+   }
+  },
+  {
+   "num": "44",
+   "pack": "feudal",
+   "id": "tocon2",
+   "cubes": 11,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    25.0,
+    16.0,
+    25.0
+   ],
+   "note": "chopping block (stump)",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/tocon2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 66
+   }
+  },
+  {
+   "num": "45",
+   "pack": "rustic",
+   "id": "pan",
+   "cubes": 7,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    18.9,
+    2.0,
+    17.2
+   ],
+   "note": "frying pan",
+   "mode": "prop",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/others/pan.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/furniture/others/pan.png",
+   "materials": {
+    "keep": 34,
+    "end": 2,
+    "post": 4
+   }
+  },
+  {
+   "num": "46",
+   "pack": "rustic",
+   "id": "teapot",
+   "cubes": 8,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    11.0,
+    8.0,
+    6.5
+   ],
+   "note": "kettle / pot",
+   "mode": "prop",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/others/teapot.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/furniture/others/teapot.png",
+   "materials": {
+    "keep": 47,
+    "iron": 1
+   }
+  },
+  {
+   "num": "47",
+   "pack": "craftopia",
+   "id": "olla1",
+   "cubes": 3,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.8,
+    7.0,
+    9.3
+   ],
+   "note": "cooking pot",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/olla1.geo.json",
+   "source_texture": "craftopia/textures/blocks/olla1.png",
+   "materials": {
+    "keep": 11,
+    "board": 1,
+    "end": 2,
+    "post": 4
+   }
+  },
+  {
+   "num": "48",
+   "pack": "craftopia",
+   "id": "platos",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.8,
+    1.0,
+    10.8
+   ],
+   "note": "stack of plates",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/platos.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 16,
+    "end": 8,
+    "board": 4
+   }
+  },
+  {
+   "num": "49",
+   "pack": "rustic",
+   "id": "basic_plate",
+   "cubes": 1,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.0,
+    1.0,
+    10.0
+   ],
+   "note": "plate",
+   "mode": "prop",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/kitchen/basic_plate.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/quartz_block_side.png",
+   "materials": {
+    "keep": 6
+   }
+  },
+  {
+   "num": "50",
+   "pack": "rustic",
+   "id": "cutlery",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    15.5,
+    0.5,
+    8.0
+   ],
+   "note": "knife and fork",
+   "mode": "prop",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/kitchen/cutlery.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/quartz_block_side.png",
+   "materials": {
+    "keep": 42
+   }
+  },
+  {
+   "num": "51",
+   "pack": "rustic",
+   "id": "cup_stg_0",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    5.5,
+    5.0,
+    4.9
+   ],
+   "note": "cup / tankard",
+   "mode": "prop",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/others/cup_stg_0.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/furniture/others/cup.png",
+   "materials": {
+    "keep": 36
+   }
+  },
+  {
+   "num": "52",
+   "pack": "craftopia",
+   "id": "decoracioncocina1",
+   "cubes": 15,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    11.0,
+    2.0
+   ],
+   "note": "hanging utensil rack",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/decoracioncocina1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 12,
+    "post": 30,
+    "end": 8
+   }
+  },
+  {
+   "num": "53",
+   "pack": "craftopia",
+   "id": "estant1",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    8.0,
+    8.0
+   ],
+   "note": "bracketed wall shelf",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/emodela.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 6,
+    "post": 16,
+    "end": 6
+   }
+  },
+  {
+   "num": "54",
+   "pack": "craftopia",
+   "id": "estant5",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    14.4,
+    8.0
+   ],
+   "note": "wall shelf with crocks",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/fmodel.geo - copia (4).json",
+   "source_texture": null,
+   "materials": {
+    "board": 30,
+    "post": 16,
+    "end": 6
+   }
+  },
+  {
+   "num": "55",
+   "pack": "rustic",
+   "id": "kitchen_drawer",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "drawer cupboard (counter)",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/kitchen/kitchen_drawer.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 26,
+    "end": 4,
+    "post": 6
+   }
+  },
+  {
+   "num": "56",
+   "pack": "rustic",
+   "id": "kitchen_cabinet",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    10.0
+   ],
+   "note": "wall cupboard, 2 doors",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/kitchen/kitchen_cabinet.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 20,
+    "post": 6,
+    "end": 4
+   }
+  }
+ ],
+ "05-study-library": [
+  {
+   "num": "57",
+   "pack": "feudal",
+   "id": "estante4",
+   "cubes": 24,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    30.0,
+    30.0,
+    14.0
+   ],
+   "note": "library bookcase, 30x30 px face (overhangs)",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/estante4.geo.json",
+   "source_texture": null,
+   "materials": {
+    "end": 2,
+    "post": 4,
+    "board": 114
+   }
+  },
+  {
+   "num": "58",
+   "pack": "feudal",
+   "id": "estante5",
+   "cubes": 13,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    16.0,
+    12.0
+   ],
+   "note": "low bookcase, 30 px wide",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/estante5.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 72,
+    "end": 2,
+    "post": 4
+   }
+  },
+  {
+   "num": "59",
+   "pack": "feudal",
+   "id": "estante3",
+   "cubes": 15,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    28.0,
+    22.0,
+    11.0
+   ],
+   "note": "low shelf with jars",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/estante3.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 66,
+    "post": 16,
+    "end": 8
+   }
+  },
+  {
+   "num": "60",
+   "pack": "feudal",
+   "id": "estante6",
+   "cubes": 9,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    24.0,
+    11.0,
+    9.0
+   ],
+   "note": "low open shelf",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/estante6.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 54
+   }
+  },
+  {
+   "num": "61",
+   "pack": "craftopia",
+   "id": "libreriarust1",
+   "cubes": 15,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    9.0
+   ],
+   "note": "bookcase, 1 block, 2 bays",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/model.geo_13.json",
+   "source_texture": null,
+   "materials": {
+    "board": 90
+   }
+  },
+  {
+   "num": "62",
+   "pack": "craftopia",
+   "id": "libreriarust3",
+   "cubes": 15,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "bookcase, 1 block, cube",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/model.geo_11.json",
+   "source_texture": null,
+   "materials": {
+    "board": 90
+   }
+  },
+  {
+   "num": "63",
+   "pack": "craftopia",
+   "id": "libreriarust5",
+   "cubes": 14,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "bookcase, 1 block, 4 bays",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/model.geo_9.json",
+   "source_texture": null,
+   "materials": {
+    "board": 84
+   }
+  },
+  {
+   "num": "64",
+   "pack": "craftopia",
+   "id": "libreriarust6",
+   "cubes": 11,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "bookcase, 1 block, mixed",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/model.geo_10.json",
+   "source_texture": null,
+   "materials": {
+    "board": 66
+   }
+  },
+  {
+   "num": "65",
+   "pack": "craftopia",
+   "id": "libre1r",
+   "cubes": 11,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    16.0,
+    25.0,
+    8.0
+   ],
+   "note": "tall narrow bookcase",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/mueble rustico.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 66
+   }
+  },
+  {
+   "num": "66",
+   "pack": "craftopia",
+   "id": "estant3",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    14.0,
+    8.0
+   ],
+   "note": "wall shelf with books",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/model.geo - copia (2).json",
+   "source_texture": null,
+   "materials": {
+    "post": 16,
+    "end": 6,
+    "board": 30
+   }
+  },
+  {
+   "num": "67",
+   "pack": "feudal",
+   "id": "libros1",
+   "cubes": 4,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    15.7,
+    8.0,
+    16.0
+   ],
+   "note": "pile of books",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/libros1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 20
+   }
+  },
+  {
+   "num": "68",
+   "pack": "feudal",
+   "id": "libros2",
+   "cubes": 3,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    15.5,
+    6.0,
+    12.6
+   ],
+   "note": "books, stacked",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/libros2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 18
+   }
+  },
+  {
+   "num": "69",
+   "pack": "feudal",
+   "id": "libro_abierto",
+   "cubes": 8,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.1,
+    2.6,
+    8.0
+   ],
+   "note": "open book",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/libro_abierto.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 24
+   }
+  },
+  {
+   "num": "70",
+   "pack": "feudal",
+   "id": "pergamino1",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    13.3,
+    2.0,
+    14.6
+   ],
+   "note": "scroll",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/pergamino1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 8,
+    "end": 4,
+    "board": 10
+   }
+  },
+  {
+   "num": "71",
+   "pack": "craftopia",
+   "id": "libro_cocina1",
+   "cubes": 16,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    11.7,
+    9.6,
+    10.0
+   ],
+   "note": "open book on stand (lectern top)",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/libro_cocina1.geo.json",
+   "source_texture": "craftopia/textures/blocks/libro_cocina1.png",
+   "materials": {
+    "keep": 24,
+    "post": 10,
+    "end": 2,
+    "board": 8
+   }
+  },
+  {
+   "num": "72",
+   "pack": "craftopia",
+   "id": "escritorio1",
+   "cubes": 20,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    26.0,
+    22.3,
+    16.0
+   ],
+   "note": "writing desk with books",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/escritorio.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 48,
+    "post": 44,
+    "end": 20
+   }
+  },
+  {
+   "num": "73",
+   "pack": "rustic",
+   "id": "template_shelf_table",
+   "cubes": 11,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "writing table with under-shelf",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/tables/template_shelf_table.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 13,
+    "post": 20,
+    "end": 8
+   }
+  },
+  {
+   "num": "74",
+   "pack": "rustic",
+   "id": "shelf_table_left",
+   "cubes": 9,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "joinable writing table end",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/tables/template_shelf_table_left.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "board": 13,
+    "post": 12,
+    "end": 4
+   }
+  },
+  {
+   "num": "75",
+   "pack": "craftopia",
+   "id": "organizadordehojas",
+   "cubes": 35,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.8,
+    9.2,
+    14.4
+   ],
+   "note": "letter / paper rack",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/organizadordehojas.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 42,
+    "post": 36
+   }
+  }
+ ],
+ "06-classroom-lab": [
+  {
+   "num": "76",
+   "pack": "rustic",
+   "id": "globe",
+   "cubes": 8,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    8.0,
+    14.0,
+    12.5
+   ],
+   "note": "terrestrial globe on stand",
+   "mode": "prop",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/others/globe.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/furniture/others/globe.png",
+   "materials": {
+    "keep": 48
+   }
+  },
+  {
+   "num": "77",
+   "pack": "craftopia",
+   "id": "mundo",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    9.6,
+    13.5,
+    11.7
+   ],
+   "note": "globe, desk size",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/mundo.geo.json",
+   "source_texture": "craftopia/textures/blocks/mundo.png",
+   "materials": {
+    "iron": 36,
+    "keep": 6
+   }
+  },
+  {
+   "num": "78",
+   "pack": "craftopia",
+   "id": "telescopio",
+   "cubes": 8,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    14.1,
+    23.2,
+    15.5
+   ],
+   "note": "telescope on tripod",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/telescopio.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 26,
+    "end": 10
+   }
+  },
+  {
+   "num": "79",
+   "pack": "craftopia",
+   "id": "pizarra",
+   "cubes": 8,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    30.0,
+    24.0,
+    3.5
+   ],
+   "note": "wall blackboard, 2 wide",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/pizarra.geo.json",
+   "source_texture": "craftopia/textures/blocks/pizarra1.png",
+   "materials": {
+    "keep": 41,
+    "board": 2
+   }
+  },
+  {
+   "num": "80",
+   "pack": "craftopia",
+   "id": "pizarra_bar1",
+   "cubes": 24,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    14.0,
+    20.0,
+    1.0
+   ],
+   "note": "framed board",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/pizarra_bar1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 36,
+    "end": 8,
+    "board": 20
+   }
+  },
+  {
+   "num": "81",
+   "pack": "craftopia",
+   "id": "tablon_corcho1",
+   "cubes": 5,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    30.0,
+    30.0,
+    2.0
+   ],
+   "note": "notice board",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/tablon_corcho1.geo.json",
+   "source_texture": "craftopia/textures/blocks/tablon_corcho1.png",
+   "materials": {
+    "board": 6,
+    "post": 16,
+    "end": 8
+   }
+  },
+  {
+   "num": "82",
+   "pack": "craftopia",
+   "id": "lienzo1",
+   "cubes": 7,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    15.7,
+    26.7,
+    7.6
+   ],
+   "note": "easel",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/Soporte de lienzo.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 26,
+    "end": 12
+   }
+  },
+  {
+   "num": "83",
+   "pack": "craftopia",
+   "id": "lienzo2",
+   "cubes": 12,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    15.7,
+    26.7,
+    7.6
+   ],
+   "note": "easel with canvas",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/Soporte de lienzo2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 42,
+    "end": 20,
+    "board": 6
+   }
+  },
+  {
+   "num": "84",
+   "pack": "craftopia",
+   "id": "geoda",
+   "cubes": 34,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    15.1,
+    11.0,
+    10.5
+   ],
+   "note": "specimen display (geode)",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/geoda.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 134,
+    "end": 2,
+    "post": 4
+   }
+  },
+  {
+   "num": "85",
+   "pack": "craftopia",
+   "id": "capsula_amatista",
+   "cubes": 5,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.0,
+    16.0,
+    10.0
+   ],
+   "note": "specimen pedestal",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/capsula_amatista.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 22
+   }
+  },
+  {
+   "num": "86",
+   "pack": "craftopia",
+   "id": "botes2",
+   "cubes": 22,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    7.6,
+    8.3,
+    7.6
+   ],
+   "note": "apothecary jar",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/botes2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 40,
+    "board": 12
+   }
+  },
+  {
+   "num": "87",
+   "pack": "craftopia",
+   "id": "botes1",
+   "cubes": 44,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.1,
+    8.3,
+    15.1
+   ],
+   "note": "jars on stand (alchemy shelf)",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/botes1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 80,
+    "board": 24
+   }
+  },
+  {
+   "num": "88",
+   "pack": "craftopia",
+   "id": "estatua",
+   "cubes": 7,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    9.0,
+    16.8,
+    9.0
+   ],
+   "note": "anatomical figure / statue",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/estatua.geo.json",
+   "source_texture": "craftopia/textures/blocks/estatua.png",
+   "materials": {
+    "keep": 40,
+    "iron": 2
+   }
+  },
+  {
+   "num": "89",
+   "pack": "craftopia",
+   "id": "mesasalonr1",
+   "cubes": 9,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    16.0,
+    16.0
+   ],
+   "note": "pupil bench-desk",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/mesarus1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "end": 16,
+    "post": 32,
+    "board": 6
+   }
+  },
+  {
+   "num": "90",
+   "pack": "craftopia",
+   "id": "damas1",
+   "cubes": 55,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    20.0,
+    2.0,
+    20.0
+   ],
+   "note": "draughts board",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/damas1.geo.json",
+   "source_texture": "craftopia/textures/blocks/damas.png",
+   "materials": {
+    "board": 282,
+    "post": 32,
+    "end": 16
+   }
+  }
+ ],
+ "07-chapel": [
+  {
+   "num": "91",
+   "pack": "craftopia",
+   "id": "estatua2",
+   "cubes": 11,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    11.0,
+    9.2,
+    12.9
+   ],
+   "note": "statue on plinth",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/estatua2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 30,
+    "post": 24,
+    "end": 12
+   }
+  },
+  {
+   "num": "92",
+   "pack": "feudal",
+   "id": "paloantorcha",
+   "cubes": 1,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    2.0,
+    16.0,
+    2.0
+   ],
+   "note": "plain pricket post (candle)",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/paloantorcha.geo.json",
+   "source_texture": "feudal/textures/blocks/paloantorcha.png",
+   "materials": {
+    "post": 4,
+    "end": 2
+   }
+  },
+  {
+   "num": "93",
+   "pack": "feudal",
+   "id": "lampara-piedra",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    8.0,
+    16.0,
+    16.0
+   ],
+   "note": "stone lamp bracket",
+   "mode": "furn+stone",
+   "source_file": "feudal/models/entity/miscelaneo/lampara-piedra.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 32,
+    "post": 4
+   }
+  },
+  {
+   "num": "94",
+   "pack": "craftopia",
+   "id": "trofeo",
+   "cubes": 19,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    13.0,
+    10.0,
+    7.0
+   ],
+   "note": "chalice / urn shape",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/trofeo.geo.json",
+   "source_texture": "craftopia/textures/blocks/trofeo.png",
+   "materials": {
+    "keep": 61,
+    "board": 9
+   }
+  },
+  {
+   "num": "95",
+   "pack": "feudal",
+   "id": "cavern_cup",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    9.8,
+    8.0,
+    7.5
+   ],
+   "note": "cup / font shape",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/cavern_cup.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 40,
+    "post": 6,
+    "end": 2
+   }
+  }
+ ],
+ "08-shop-market": [
+  {
+   "num": "96",
+   "pack": "feudal",
+   "id": "carpa1",
+   "cubes": 6,
+   "blocks_wdh": "1x2x2",
+   "flags": [
+    "dips below y0"
+   ],
+   "span_px": [
+    16.0,
+    20.1,
+    29.5
+   ],
+   "note": "market awning",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/carpa1.json",
+   "source_texture": "feudal/textures/blocks/carpa1.png",
+   "materials": {
+    "cloth:yellow": 4,
+    "end": 2,
+    "post": 4,
+    "cloth:white": 6
+   }
+  },
+  {
+   "num": "97",
+   "pack": "feudal",
+   "id": "tent2",
+   "cubes": 5,
+   "blocks_wdh": "2x2x2",
+   "flags": [],
+   "span_px": [
+    29.0,
+    25.0,
+    28.6
+   ],
+   "note": "tall tent / stall canopy",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/tent2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 14,
+    "end": 6,
+    "board": 2
+   }
+  },
+  {
+   "num": "98",
+   "pack": "feudal",
+   "id": "caja",
+   "cubes": 18,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "crate, large",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/caja.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 68,
+    "end": 34,
+    "board": 6
+   }
+  },
+  {
+   "num": "99",
+   "pack": "feudal",
+   "id": "cesta_cana",
+   "cubes": 49,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    15.3,
+    12.0
+   ],
+   "note": "crate of cane / produce",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/cesta_cana.geo.json",
+   "source_texture": "feudal/textures/blocks/cesta_cana/caja_cana1.png",
+   "materials": {
+    "keep": 120,
+    "end": 24,
+    "post": 48,
+    "board": 6
+   }
+  },
+  {
+   "num": "100",
+   "pack": "feudal",
+   "id": "cesta_pescado",
+   "cubes": 75,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    16.0,
+    17.5,
+    16.0
+   ],
+   "note": "fish crate",
+   "mode": "prop",
+   "source_file": "feudal/models/entity/cesta_pescado.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 354,
+    "post": 18
+   }
+  },
+  {
+   "num": "101",
+   "pack": "craftopia",
+   "id": "mesaplegable",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    15.9,
+    16.0
+   ],
+   "note": "X-trestle stall table",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/mesaplegable.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 30,
+    "end": 11,
+    "board": 6
+   }
+  },
+  {
+   "num": "102",
+   "pack": "feudal",
+   "id": "mesa5",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    15.0,
+    16.0,
+    15.0
+   ],
+   "note": "pedestal display table",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/mesa5.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 12,
+    "post": 16,
+    "end": 8
+   }
+  },
+  {
+   "num": "103",
+   "pack": "feudal",
+   "id": "soporte2",
+   "cubes": 18,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "heavy stall counter",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/soporte2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "end": 36,
+    "post": 72
+   }
+  },
+  {
+   "num": "104",
+   "pack": "feudal",
+   "id": "soporte",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    16.0
+   ],
+   "note": "bracket shelf",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/soporte.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 28,
+    "end": 14
+   }
+  },
+  {
+   "num": "105",
+   "pack": "feudal",
+   "id": "senal",
+   "cubes": 21,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    20.5,
+    16.0,
+    8.4
+   ],
+   "note": "directional signpost",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/senal.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 122
+   }
+  },
+  {
+   "num": "106",
+   "pack": "feudal",
+   "id": "senal2",
+   "cubes": 11,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.9,
+    16.0,
+    9.4
+   ],
+   "note": "signpost, single arm",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/senal2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 66
+   }
+  },
+  {
+   "num": "107",
+   "pack": "feudal",
+   "id": "cartel_2",
+   "cubes": 21,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.1,
+    9.0
+   ],
+   "note": "hanging shop sign on post",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/cartel_2.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 32,
+    "end": 16,
+    "board": 58
+   }
+  },
+  {
+   "num": "108",
+   "pack": "feudal",
+   "id": "cartel_1",
+   "cubes": 32,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    18.0,
+    16.1,
+    11.0
+   ],
+   "note": "hanging shop sign, emblem",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/cartel_1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 72,
+    "end": 36,
+    "board": 70
+   }
+  },
+  {
+   "num": "109",
+   "pack": "feudal",
+   "id": "dinero1",
+   "cubes": 8,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    9.9,
+    3.0,
+    8.9
+   ],
+   "note": "coin piles",
+   "mode": "keep",
+   "source_file": "feudal/models/entity/miscelaneo/dinero1.geo.json",
+   "source_texture": "feudal/textures/blocks/dinero1.png",
+   "materials": {
+    "keep": 48
+   }
+  },
+  {
+   "num": "110",
+   "pack": "craftopia",
+   "id": "escoba1",
+   "cubes": 3,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    9.2,
+    28.6,
+    6.4
+   ],
+   "note": "broom",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/escoba1.geo.json",
+   "source_texture": "craftopia/textures/blocks/escoba1.png",
+   "materials": {
+    "board": 6,
+    "post": 8,
+    "end": 4
+   }
+  },
+  {
+   "num": "111",
+   "pack": "craftopia",
+   "id": "papelera_madera",
+   "cubes": 5,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.0,
+    16.0,
+    12.0
+   ],
+   "note": "wooden bin / tub",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/papelera_madera.geo.json",
+   "source_texture": "craftopia/textures/blocks/papelera_madera.png",
+   "materials": {
+    "board": 30
+   }
+  },
+  {
+   "num": "112",
+   "pack": "craftopia",
+   "id": "pumpkin_stack",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.7,
+    4.1,
+    13.7
+   ],
+   "note": "stacked pumpkins",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/pumpkin_stack.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 42
+   }
+  }
+ ],
+ "09-tavern": [
+  {
+   "num": "113",
+   "pack": "feudal",
+   "id": "mesarustica1",
+   "cubes": 7,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    26.0,
+    11.0,
+    16.0
+   ],
+   "note": "rustic plank table, 2 wide",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/mesarustica1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 18,
+    "post": 16,
+    "end": 8
+   }
+  },
+  {
+   "num": "114",
+   "pack": "feudal",
+   "id": "taburete1",
+   "cubes": 13,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    7.0,
+    9.5,
+    7.0
+   ],
+   "note": "turned stool",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/taburete.geo.json",
+   "source_texture": "craftopia/textures/blocks/taburete.png",
+   "materials": {
+    "board": 6,
+    "post": 8,
+    "iron": 48
+   }
+  },
+  {
+   "num": "115",
+   "pack": "rustic",
+   "id": "classic_stool",
+   "cubes": 10,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    9.0,
+    20.0,
+    9.0
+   ],
+   "note": "tall bar stool",
+   "mode": "furn",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/furniture/bathroom/classic_stool.geo.json",
+   "source_texture": "/home/claude/_build/rp04-159/textures/blocks/stripped_oak_log.png",
+   "materials": {
+    "post": 27,
+    "end": 6,
+    "board": 12
+   }
+  },
+  {
+   "num": "116",
+   "pack": "rustic",
+   "id": "beer",
+   "cubes": 8,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    6.2,
+    7.6,
+    4.5
+   ],
+   "note": "beer tankards",
+   "mode": "keep",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/food/beer.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/food/beer.png",
+   "materials": {
+    "keep": 48
+   }
+  },
+  {
+   "num": "117",
+   "pack": "rustic",
+   "id": "wine",
+   "cubes": 4,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    4.0,
+    6.9,
+    4.0
+   ],
+   "note": "wine bottle",
+   "mode": "keep",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/food/wine.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/food/wine.png",
+   "materials": {
+    "keep": 23,
+    "end": 1
+   }
+  },
+  {
+   "num": "118",
+   "pack": "craftopia",
+   "id": "taza",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    8.7,
+    5.0,
+    8.7
+   ],
+   "note": "mug",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/taza.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 42,
+    "post": 8,
+    "end": 4
+   }
+  },
+  {
+   "num": "119",
+   "pack": "rustic",
+   "id": "roast",
+   "cubes": 8,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    14.0,
+    3.2,
+    9.0
+   ],
+   "note": "roast on board",
+   "mode": "keep",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/food/roast.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/food/roast.png",
+   "materials": {
+    "keep": 48
+   }
+  },
+  {
+   "num": "120",
+   "pack": "rustic",
+   "id": "roasted_turkey",
+   "cubes": 7,
+   "blocks_wdh": "1x1x1",
+   "flags": [
+    "dips below y0"
+   ],
+   "span_px": [
+    13.9,
+    6.8,
+    14.2
+   ],
+   "note": "roast fowl",
+   "mode": "keep",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/food/roasted_turkey.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/food/turkey.png",
+   "materials": {
+    "keep": 42
+   }
+  },
+  {
+   "num": "121",
+   "pack": "rustic",
+   "id": "glazed_ham",
+   "cubes": 4,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    14.0,
+    8.0,
+    9.0
+   ],
+   "note": "ham",
+   "mode": "keep",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/food/glazed_ham.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/food/glazed_ham.png",
+   "materials": {
+    "keep": 24
+   }
+  },
+  {
+   "num": "122",
+   "pack": "rustic",
+   "id": "baguette",
+   "cubes": 1,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    4.0,
+    2.0,
+    16.0
+   ],
+   "note": "loaf",
+   "mode": "keep",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/food/baguette.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/food/baguette.png",
+   "materials": {
+    "keep": 6
+   }
+  },
+  {
+   "num": "123",
+   "pack": "rustic",
+   "id": "egg_basket",
+   "cubes": 2,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    10.0,
+    3.0,
+    10.0
+   ],
+   "note": "egg basket",
+   "mode": "prop",
+   "source_file": "rustic/RP Rustic Furnture/models/blocks/food/egg_basket.geo.json",
+   "source_texture": "rustic/RP Rustic Furnture/textures/blocks/food/egg_basket.png",
+   "materials": {
+    "board": 6,
+    "keep": 6
+   }
+  },
+  {
+   "num": "124",
+   "pack": "craftopia",
+   "id": "plato-manzanas",
+   "cubes": 10,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    14.1,
+    6.0,
+    14.1
+   ],
+   "note": "fruit platter",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Modern/plato-manzanas.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 34
+   }
+  },
+  {
+   "num": "125",
+   "pack": "craftopia",
+   "id": "pizarra_bar3",
+   "cubes": 23,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    14.0,
+    11.0,
+    1.0
+   ],
+   "note": "tavern slate on wall",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/pizarra_bar3.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 26,
+    "post": 28,
+    "end": 8
+   }
+  },
+  {
+   "num": "126",
+   "pack": "feudal",
+   "id": "mesapicknic",
+   "cubes": 29,
+   "blocks_wdh": "2x2x1",
+   "flags": [
+    "dips below y0"
+   ],
+   "span_px": [
+    28.0,
+    16.7,
+    30.0
+   ],
+   "note": "table with fixed benches, ~2x2",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/nesapicknik.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 162,
+    "post": 8,
+    "end": 4
+   }
+  }
+ ],
+ "10-palace": [
+  {
+   "num": "127",
+   "pack": "feudal",
+   "id": "trono1",
+   "cubes": 10,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    19.0,
+    28.0,
+    16.0
+   ],
+   "note": "throne",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/trono1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 8,
+    "end": 4,
+    "board": 48
+   }
+  },
+  {
+   "num": "128",
+   "pack": "craftopia",
+   "id": "sillonm",
+   "cubes": 9,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    18.0,
+    19.5,
+    14.5
+   ],
+   "note": "upholstered armchair",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/asillon.geo.json",
+   "source_texture": null,
+   "materials": {
+    "end": 4,
+    "post": 8,
+    "board": 42
+   }
+  },
+  {
+   "num": "129",
+   "pack": "craftopia",
+   "id": "sillon",
+   "cubes": 11,
+   "blocks_wdh": "2x2x2",
+   "flags": [],
+   "span_px": [
+    18.0,
+    18.5,
+    17.4
+   ],
+   "note": "armchair, low",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Modern/sillon.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 24,
+    "end": 12,
+    "board": 30
+   }
+  },
+  {
+   "num": "130",
+   "pack": "feudal",
+   "id": "silla3",
+   "cubes": 52,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    13.0,
+    11.1
+   ],
+   "note": "hanging swing seat on chains",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/silla3.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 76,
+    "post": 36
+   }
+  },
+  {
+   "num": "131",
+   "pack": "craftopia",
+   "id": "cortina_cerrada",
+   "cubes": 22,
+   "blocks_wdh": "2x1x2",
+   "flags": [
+    "dips below y0"
+   ],
+   "span_px": [
+    30.0,
+    19.0,
+    2.0
+   ],
+   "note": "curtains, closed (tapestry / bed hangings)",
+   "mode": "furn+allcloth=red",
+   "source_file": "craftopia/models/entity/Modern/Cortina_cerrada.geo.json",
+   "source_texture": null,
+   "materials": {
+    "cloth:red": 52
+   }
+  },
+  {
+   "num": "132",
+   "pack": "craftopia",
+   "id": "cortina_abierta",
+   "cubes": 20,
+   "blocks_wdh": "2x1x2",
+   "flags": [
+    "dips below y0"
+   ],
+   "span_px": [
+    30.0,
+    19.0,
+    2.4
+   ],
+   "note": "curtains, tied open",
+   "mode": "furn+allcloth=red",
+   "source_file": "craftopia/models/entity/Modern/Cortina_abierta.geo.json",
+   "source_texture": null,
+   "materials": {
+    "cloth:red": 46
+   }
+  },
+  {
+   "num": "133",
+   "pack": "craftopia",
+   "id": "luz3",
+   "cubes": 8,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    14.0,
+    30.0
+   ],
+   "note": "hanging ring frame -> chandelier",
+   "mode": "iron",
+   "source_file": "craftopia/models/entity/Modern/luz3.geo.json",
+   "source_texture": "craftopia/textures/blocks/luz3.png",
+   "materials": {
+    "iron": 32
+   }
+  },
+  {
+   "num": "134",
+   "pack": "craftopia",
+   "id": "cuadro1",
+   "cubes": 5,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    16.0,
+    30.0,
+    1.1
+   ],
+   "note": "tall painting / panel",
+   "mode": "keep",
+   "source_file": "craftopia/models/entity/Modern/acuadro1.geo.json",
+   "source_texture": "craftopia/textures/blocks/cuadro1.png",
+   "materials": {
+    "keep": 30
+   }
+  },
+  {
+   "num": "135",
+   "pack": "craftopia",
+   "id": "cuadro3",
+   "cubes": 3,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    30.0,
+    20.0,
+    1.0
+   ],
+   "note": "triptych of panels",
+   "mode": "keep",
+   "source_file": "craftopia/textures/blocks/cuadro3.geo.json",
+   "source_texture": "craftopia/textures/blocks/cuadro3.png",
+   "materials": {
+    "keep": 18
+   }
+  },
+  {
+   "num": "136",
+   "pack": "craftopia",
+   "id": "espejo",
+   "cubes": 1,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    15.0,
+    24.0,
+    1.1
+   ],
+   "note": "wall mirror",
+   "mode": "keep",
+   "source_file": "craftopia/models/entity/Modern/espejo.geo.json",
+   "source_texture": "craftopia/textures/blocks/espejo1.png",
+   "materials": {
+    "keep": 6
+   }
+  },
+  {
+   "num": "137",
+   "pack": "craftopia",
+   "id": "alfombra",
+   "cubes": 1,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    30.0,
+    1.0,
+    30.0
+   ],
+   "note": "flat rug (1 cube)",
+   "mode": "furn+allcloth=red",
+   "source_file": "craftopia/models/entity/Modern/alfombra.geo.json",
+   "source_texture": "craftopia/textures/blocks/alfombra.png",
+   "materials": {
+    "cloth:red": 6
+   }
+  },
+  {
+   "num": "138",
+   "pack": "craftopia",
+   "id": "piano2",
+   "cubes": 18,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    23.0,
+    16.2,
+    10.0
+   ],
+   "note": "keyboard on X-stand (virginal)",
+   "mode": "furn+thin_iron",
+   "source_file": "craftopia/models/entity/Home/piano2.geo.json",
+   "source_texture": "craftopia/textures/blocks/piano1.png",
+   "materials": {
+    "iron": 62,
+    "keep": 2
+   }
+  }
+ ],
+ "11-workshop-yard": [
+  {
+   "num": "139",
+   "pack": "feudal",
+   "id": "yunque",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    8.5,
+    7.0,
+    12.6
+   ],
+   "note": "anvil",
+   "mode": "iron",
+   "source_file": "feudal/models/entity/yunque.geo.json",
+   "source_texture": null,
+   "materials": {
+    "iron": 36
+   }
+  },
+  {
+   "num": "140",
+   "pack": "feudal",
+   "id": "almadena",
+   "cubes": 4,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    7.0,
+    21.8,
+    5.9
+   ],
+   "note": "sledgehammer",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/almadena.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 18,
+    "post": 4,
+    "end": 2
+   }
+  },
+  {
+   "num": "141",
+   "pack": "feudal",
+   "id": "martillo",
+   "cubes": 6,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    14.6,
+    4.0,
+    9.5
+   ],
+   "note": "hammer and blocks",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/miscelaneo/martillo.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 6,
+    "post": 20,
+    "end": 10
+   }
+  },
+  {
+   "num": "142",
+   "pack": "feudal",
+   "id": "tool1",
+   "cubes": 5,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    7.0,
+    28.2,
+    4.4
+   ],
+   "note": "pitchfork",
+   "mode": "furn+thin_iron",
+   "source_file": "feudal/models/entity/tool1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "iron": 14
+   }
+  },
+  {
+   "num": "143",
+   "pack": "feudal",
+   "id": "tocon-sierra",
+   "cubes": 4,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    26.1,
+    19.6,
+    10.0
+   ],
+   "note": "saw in stump",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/tocon-sierra.geo.json",
+   "source_texture": "feudal/textures/blocks/tocon-sierra.png",
+   "materials": {
+    "board": 6,
+    "post": 8,
+    "end": 4,
+    "keep": 2
+   }
+  },
+  {
+   "num": "144",
+   "pack": "feudal",
+   "id": "troncos",
+   "cubes": 5,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    12.9,
+    6.0,
+    14.7
+   ],
+   "note": "log pile",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/troncos.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 20,
+    "end": 10
+   }
+  },
+  {
+   "num": "145",
+   "pack": "feudal",
+   "id": "tablas",
+   "cubes": 3,
+   "blocks_wdh": "2x2x1",
+   "flags": [],
+   "span_px": [
+    27.4,
+    2.0,
+    23.3
+   ],
+   "note": "plank offcuts",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/tablas.geo.json",
+   "source_texture": null,
+   "materials": {
+    "end": 6,
+    "post": 12
+   }
+  },
+  {
+   "num": "146",
+   "pack": "feudal",
+   "id": "escalera6",
+   "cubes": 14,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    11.2,
+    14.9,
+    13.6
+   ],
+   "note": "step ladder",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/escalera6.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 24,
+    "end": 14,
+    "post": 34
+   }
+  },
+  {
+   "num": "147",
+   "pack": "feudal",
+   "id": "tendedero",
+   "cubes": 5,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    28.0,
+    28.8,
+    15.5
+   ],
+   "note": "drying / clothes frame",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/tendedero.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 20,
+    "end": 10
+   }
+  },
+  {
+   "num": "148",
+   "pack": "feudal",
+   "id": "diana1",
+   "cubes": 6,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    23.3,
+    23.1,
+    12.5
+   ],
+   "note": "archery target",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/diana1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 6,
+    "post": 20,
+    "end": 10
+   }
+  },
+  {
+   "num": "149",
+   "pack": "feudal",
+   "id": "arrow_stand1",
+   "cubes": 21,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    13.0,
+    22.9,
+    14.0
+   ],
+   "note": "arrow barrel",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/arrow_stand1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 54
+   }
+  },
+  {
+   "num": "150",
+   "pack": "feudal",
+   "id": "ff_weapon_stand",
+   "cubes": 24,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    29.0,
+    13.8,
+    7.0
+   ],
+   "note": "weapon rack",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/ff_axe_stand.json",
+   "source_texture": null,
+   "materials": {
+    "post": 16,
+    "end": 8,
+    "board": 112
+   }
+  },
+  {
+   "num": "151",
+   "pack": "craftopia",
+   "id": "heno1",
+   "cubes": 9,
+   "blocks_wdh": "2x1x1",
+   "flags": [],
+   "span_px": [
+    24.0,
+    9.0,
+    12.0
+   ],
+   "note": "hay trough",
+   "mode": "prop",
+   "source_file": "craftopia/models/entity/Pet/heno1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 16,
+    "end": 8,
+    "board": 30
+   }
+  },
+  {
+   "num": "152",
+   "pack": "craftopia",
+   "id": "jaula_chicken",
+   "cubes": 23,
+   "blocks_wdh": "2x1x2",
+   "flags": [],
+   "span_px": [
+    25.0,
+    17.0,
+    16.0
+   ],
+   "note": "poultry cage",
+   "mode": "furn+thin_iron",
+   "source_file": "craftopia/models/entity/Pet/jaula_chicken.geo.json",
+   "source_texture": null,
+   "materials": {
+    "iron": 36,
+    "board": 30
+   }
+  },
+  {
+   "num": "153",
+   "pack": "craftopia",
+   "id": "valla_ganado1",
+   "cubes": 5,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    3.0
+   ],
+   "note": "hitching post",
+   "mode": "furn",
+   "source_file": "craftopia/models/entity/Pet/valla_ganado1.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 24,
+    "post": 4,
+    "end": 2
+   }
+  },
+  {
+   "num": "154",
+   "pack": "feudal",
+   "id": "puertavalla",
+   "cubes": 16,
+   "blocks_wdh": "1x1x2",
+   "flags": [],
+   "span_px": [
+    16.0,
+    19.0,
+    5.0
+   ],
+   "note": "field gate, 2 wide",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/Puertavalla.geo.json",
+   "source_texture": null,
+   "materials": {
+    "board": 28,
+    "post": 36,
+    "end": 16
+   }
+  },
+  {
+   "num": "155",
+   "pack": "feudal",
+   "id": "ventana_cerrada",
+   "cubes": 17,
+   "blocks_wdh": "1x1x1",
+   "flags": [],
+   "span_px": [
+    16.0,
+    16.0,
+    2.0
+   ],
+   "note": "window with shutters",
+   "mode": "furn",
+   "source_file": "feudal/models/entity/ventana_cerrada.geo.json",
+   "source_texture": null,
+   "materials": {
+    "post": 34,
+    "end": 8,
+    "board": 8
+   }
+  }
+ ]
+}

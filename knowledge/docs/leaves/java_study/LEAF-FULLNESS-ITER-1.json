@@ -1,0 +1,210 @@
+{
+ "A": {
+  "title": "PATRIX AS-IS: bottomless cube + 3 cards (reach 2.6-6 px past the faces)",
+  "scale": {},
+  "full_bounds": [
+   [
+    -14.0,
+    -4.0,
+    -13.19
+   ],
+   [
+    14.0,
+    22.0,
+    10.61
+   ]
+  ],
+  "cards_bounds": [
+   [
+    -13.0,
+    -4.0,
+    -10.19
+   ],
+   [
+    13.0,
+    21.0,
+    10.19
+   ]
+  ],
+  "quads": {
+   "full": 8,
+   "cards": 4
+  }
+ },
+ "B": {
+  "title": "MAX REACH: the 3 cards grown to the 30-px engine limit (7 px past every face)",
+  "scale": {
+   "full": [
+    1.077,
+    1.077,
+    1.077
+   ],
+   "cards": [
+    1.154,
+    1.25,
+    1.167,
+    1.167
+   ]
+  },
+  "full_bounds": [
+   [
+    -15.0,
+    -5.0,
+    -13.9
+   ],
+   [
+    15.0,
+    23.0,
+    11.42
+   ]
+  ],
+  "cards_bounds": [
+   [
+    -15.0,
+    -7.0,
+    -11.72
+   ],
+   [
+    15.0,
+    23.0,
+    11.72
+   ]
+  ],
+  "quads": {
+   "full": 8,
+   "cards": 4
+  }
+ },
+ "C": {
+  "title": "MAX REACH + a 2nd card set turned 90 deg = 6 cards",
+  "scale": {
+   "full": [
+    1.077,
+    1.077,
+    1.077
+   ],
+   "cards": [
+    1.154,
+    1.25,
+    1.167,
+    1.167
+   ]
+  },
+  "full_bounds": [
+   [
+    -15.0,
+    -5.0,
+    -13.9
+   ],
+   [
+    15.0,
+    23.0,
+    11.42
+   ]
+  ],
+  "cards_bounds": [
+   [
+    -15.0,
+    -7.0,
+    -11.72
+   ],
+   [
+    15.0,
+    23.0,
+    11.72
+   ]
+  ],
+  "quads": {
+   "full": 16,
+   "cards": 8
+  }
+ },
+ "D": {
+  "title": "as C + the cube's bottom face back on",
+  "scale": {
+   "full": [
+    1.077,
+    1.077,
+    1.077
+   ],
+   "cards": [
+    1.154,
+    1.25,
+    1.167,
+    1.167
+   ]
+  },
+  "full_bounds": [
+   [
+    -15.0,
+    -5.0,
+    -13.9
+   ],
+   [
+    15.0,
+    23.0,
+    11.42
+   ]
+  ],
+  "cards_bounds": [
+   [
+    -15.0,
+    -7.0,
+    -11.72
+   ],
+   [
+    15.0,
+    23.0,
+    11.72
+   ]
+  ],
+  "quads": {
+   "full": 18,
+   "cards": 8
+  }
+ },
+ "E": {
+  "title": "BARELY PAST: card tips end 0.1 px past the faces (his wording, literal)",
+  "scale": {
+   "full": [
+    0.764,
+    0.446,
+    0.546
+   ],
+   "cards": [
+    0.955,
+    0.974,
+    0.592,
+    0.592
+   ]
+  },
+  "full_bounds": [
+   [
+    -8.1,
+    -0.93,
+    -8.1
+   ],
+   [
+    8.1,
+    18.93,
+    8.1
+   ]
+  ],
+  "cards_bounds": [
+   [
+    -8.1,
+    -3.69,
+    -8.1
+   ],
+   [
+    8.1,
+    20.41,
+    8.1
+   ]
+  ],
+  "quads": {
+   "full": 8,
+   "cards": 4
+  }
+ }
+}

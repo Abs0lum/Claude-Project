@@ -1,0 +1,9024 @@
+{
+ "changed": [
+  "jungle_young_00",
+  "jungle_young_01",
+  "jungle_young_02",
+  "jungle_young_03",
+  "jungle_young_04",
+  "jungle_young_05",
+  "jungle_young_06",
+  "jungle_young_07",
+  "jungle_young_08",
+  "jungle_young_09",
+  "jungle_young_10",
+  "jungle_young_11",
+  "jungle_young_12",
+  "jungle_young_13",
+  "jungle_young_14",
+  "jungle_young_15",
+  "jungle_young_16",
+  "jungle_young_17",
+  "jungle_young_18",
+  "jungle_young_19",
+  "jungle_young_20",
+  "jungle_young_21",
+  "jungle_young_22",
+  "jungle_young_23",
+  "mangrove_00",
+  "mangrove_02",
+  "mangrove_05",
+  "mangrove_06",
+  "mangrove_08",
+  "mangrove_11",
+  "mangrove_12",
+  "mangrove_14",
+  "mangrove_15",
+  "mangrove_17",
+  "mangrove_18",
+  "mangrove_20",
+  "mangrove_23",
+  "mangrove_24",
+  "mangrove_25",
+  "mangrove_26",
+  "mangrove_29",
+  "mangrove_30",
+  "oak_elder_00",
+  "oak_elder_01",
+  "oak_elder_02",
+  "oak_elder_03",
+  "oak_elder_04",
+  "oak_elder_05",
+  "oak_elder_06",
+  "oak_elder_07",
+  "oak_elder_08",
+  "oak_elder_09",
+  "oak_elder_10",
+  "oak_elder_11",
+  "oak_elder_12",
+  "oak_elder_13",
+  "oak_elder_14",
+  "oak_elder_15",
+  "oak_elder_16",
+  "oak_elder_17",
+  "oak_elder_18",
+  "oak_elder_19",
+  "oak_elder_20",
+  "oak_elder_21",
+  "oak_elder_22",
+  "oak_elder_23",
+  "oak_elder_24",
+  "oak_elder_25",
+  "oak_elder_26",
+  "oak_elder_27",
+  "oak_elder_28",
+  "oak_elder_29",
+  "oak_elder_30",
+  "oak_elder_31",
+  "oak_mature_00",
+  "oak_mature_01",
+  "oak_mature_02",
+  "oak_mature_03",
+  "oak_mature_04",
+  "oak_mature_05",
+  "oak_mature_06",
+  "oak_mature_07",
+  "oak_mature_08",
+  "oak_mature_09",
+  "oak_mature_10",
+  "oak_mature_11",
+  "oak_mature_12",
+  "oak_mature_13",
+  "oak_mature_14",
+  "oak_mature_15",
+  "oak_mature_16",
+  "oak_mature_17",
+  "oak_mature_18",
+  "oak_mature_19",
+  "oak_mature_20",
+  "oak_mature_21",
+  "oak_mature_22",
+  "oak_mature_23",
+  "oak_old_00",
+  "oak_old_01",
+  "oak_old_02",
+  "oak_old_03",
+  "oak_old_04",
+  "oak_old_05",
+  "oak_old_06",
+  "oak_old_07",
+  "oak_old_08",
+  "oak_old_09",
+  "oak_old_10",
+  "oak_old_11",
+  "oak_old_12",
+  "oak_old_13",
+  "oak_old_14",
+  "oak_old_15",
+  "oak_old_16",
+  "oak_old_17",
+  "oak_old_18",
+  "oak_old_19",
+  "oak_old_20",
+  "oak_old_21",
+  "oak_old_22",
+  "oak_old_23",
+  "oak_young_00",
+  "oak_young_01",
+  "oak_young_02",
+  "oak_young_03",
+  "oak_young_04",
+  "oak_young_05",
+  "oak_young_06",
+  "oak_young_07",
+  "oak_young_08",
+  "oak_young_09",
+  "oak_young_10",
+  "oak_young_11",
+  "oak_young_13",
+  "oak_young_14",
+  "oak_young_15",
+  "oak_young_16",
+  "oak_young_17",
+  "oak_young_18",
+  "oak_young_19",
+  "oak_young_20",
+  "oak_young_21",
+  "oak_young_22",
+  "oak_young_23",
+  "pale_oak_elder_00",
+  "pale_oak_elder_01",
+  "pale_oak_elder_02",
+  "pale_oak_elder_03",
+  "pale_oak_elder_04",
+  "pale_oak_elder_05",
+  "pale_oak_elder_06",
+  "pale_oak_elder_07",
+  "pale_oak_elder_08",
+  "pale_oak_elder_09",
+  "pale_oak_elder_10",
+  "pale_oak_elder_11",
+  "pale_oak_elder_12",
+  "pale_oak_elder_13",
+  "pale_oak_elder_14",
+  "pale_oak_elder_15",
+  "pale_oak_elder_16",
+  "pale_oak_elder_17",
+  "pale_oak_elder_18",
+  "pale_oak_elder_19",
+  "pale_oak_elder_20",
+  "pale_oak_elder_21",
+  "pale_oak_elder_22",
+  "pale_oak_elder_23",
+  "pale_oak_elder_24",
+  "pale_oak_elder_25",
+  "pale_oak_elder_26",
+  "pale_oak_elder_27",
+  "pale_oak_elder_28",
+  "pale_oak_elder_29",
+  "pale_oak_elder_30",
+  "pale_oak_elder_31",
+  "spruce_elder_00",
+  "spruce_elder_01",
+  "spruce_elder_02",
+  "spruce_elder_03",
+  "spruce_elder_04",
+  "spruce_elder_05",
+  "spruce_elder_06",
+  "spruce_elder_07",
+  "spruce_elder_08",
+  "spruce_elder_09",
+  "spruce_elder_10",
+  "spruce_elder_11",
+  "spruce_elder_12",
+  "spruce_elder_13",
+  "spruce_elder_14",
+  "spruce_elder_15",
+  "spruce_elder_16",
+  "spruce_elder_17",
+  "spruce_elder_18",
+  "spruce_elder_19",
+  "spruce_elder_20",
+  "spruce_elder_21",
+  "spruce_elder_22",
+  "spruce_elder_23",
+  "spruce_elder_24",
+  "spruce_elder_25",
+  "spruce_elder_26",
+  "spruce_elder_27",
+  "spruce_elder_28",
+  "spruce_elder_29",
+  "spruce_elder_30",
+  "spruce_elder_31",
+  "spruce_mature_00",
+  "spruce_mature_01",
+  "spruce_mature_02",
+  "spruce_mature_03",
+  "spruce_mature_04",
+  "spruce_mature_05",
+  "spruce_mature_06",
+  "spruce_mature_07",
+  "spruce_mature_08",
+  "spruce_mature_09",
+  "spruce_mature_10",
+  "spruce_mature_11",
+  "spruce_mature_12",
+  "spruce_mature_13",
+  "spruce_mature_14",
+  "spruce_mature_15",
+  "spruce_mature_16",
+  "spruce_mature_17",
+  "spruce_mature_18",
+  "spruce_mature_19",
+  "spruce_mature_20",
+  "spruce_mature_21",
+  "spruce_mature_22",
+  "spruce_mature_23",
+  "spruce_old_00",
+  "spruce_old_01",
+  "spruce_old_02",
+  "spruce_old_03",
+  "spruce_old_04",
+  "spruce_old_05",
+  "spruce_old_06",
+  "spruce_old_07",
+  "spruce_old_08",
+  "spruce_old_09",
+  "spruce_old_10",
+  "spruce_old_11",
+  "spruce_old_12",
+  "spruce_old_13",
+  "spruce_old_14",
+  "spruce_old_15",
+  "spruce_old_16",
+  "spruce_old_17",
+  "spruce_old_18",
+  "spruce_old_19",
+  "spruce_old_20",
+  "spruce_old_21",
+  "spruce_old_22",
+  "spruce_old_23",
+  "spruce_young_00",
+  "spruce_young_01",
+  "spruce_young_02",
+  "spruce_young_03",
+  "spruce_young_04",
+  "spruce_young_05",
+  "spruce_young_06",
+  "spruce_young_07",
+  "spruce_young_08",
+  "spruce_young_09",
+  "spruce_young_10",
+  "spruce_young_11",
+  "spruce_young_12",
+  "spruce_young_13",
+  "spruce_young_14",
+  "spruce_young_15",
+  "spruce_young_16",
+  "spruce_young_17",
+  "spruce_young_18",
+  "spruce_young_19",
+  "spruce_young_20",
+  "spruce_young_21",
+  "spruce_young_22",
+  "spruce_young_23"
+ ],
+ "n_changed": 281,
+ "n_identical": 263,
+ "groups": {
+  "jungle_young": 24,
+  "mangrove": 18,
+  "oak_elder": 32,
+  "oak_mature": 24,
+  "oak_old": 24,
+  "oak_young": 23,
+  "pale_oak_elder": 32,
+  "spruce_elder": 32,
+  "spruce_mature": 24,
+  "spruce_old": 24,
+  "spruce_young": 24
+ },
+ "root_fix": [
+  "jungle_young_00",
+  "jungle_young_02",
+  "jungle_young_04",
+  "jungle_young_06",
+  "jungle_young_08",
+  "jungle_young_10",
+  "jungle_young_12",
+  "jungle_young_14",
+  "jungle_young_16",
+  "jungle_young_18",
+  "jungle_young_20",
+  "jungle_young_22"
+ ],
+ "trunk_tip_changed": [
+  "jungle_young_01",
+  "jungle_young_03",
+  "jungle_young_05",
+  "jungle_young_07",
+  "jungle_young_09",
+  "jungle_young_11",
+  "jungle_young_13",
+  "jungle_young_15",
+  "jungle_young_17",
+  "jungle_young_19",
+  "jungle_young_21",
+  "jungle_young_23",
+  "mangrove_00",
+  "mangrove_02",
+  "mangrove_05",
+  "mangrove_06",
+  "mangrove_08",
+  "mangrove_11",
+  "mangrove_12",
+  "mangrove_14",
+  "mangrove_15",
+  "mangrove_17",
+  "mangrove_18",
+  "mangrove_20",
+  "mangrove_23",
+  "mangrove_24",
+  "mangrove_25",
+  "mangrove_26",
+  "mangrove_29",
+  "mangrove_30",
+  "oak_elder_00",
+  "oak_elder_01",
+  "oak_elder_02",
+  "oak_elder_03",
+  "oak_elder_04",
+  "oak_elder_05",
+  "oak_elder_06",
+  "oak_elder_07",
+  "oak_elder_08",
+  "oak_elder_09",
+  "oak_elder_10",
+  "oak_elder_11",
+  "oak_elder_12",
+  "oak_elder_13",
+  "oak_elder_14",
+  "oak_elder_15",
+  "oak_elder_16",
+  "oak_elder_17",
+  "oak_elder_18",
+  "oak_elder_19",
+  "oak_elder_20",
+  "oak_elder_21",
+  "oak_elder_22",
+  "oak_elder_23",
+  "oak_elder_24",
+  "oak_elder_25",
+  "oak_elder_26",
+  "oak_elder_27",
+  "oak_elder_28",
+  "oak_elder_29",
+  "oak_elder_30",
+  "oak_elder_31",
+  "oak_mature_00",
+  "oak_mature_01",
+  "oak_mature_02",
+  "oak_mature_03",
+  "oak_mature_04",
+  "oak_mature_05",
+  "oak_mature_06",
+  "oak_mature_07",
+  "oak_mature_08",
+  "oak_mature_09",
+  "oak_mature_10",
+  "oak_mature_11",
+  "oak_mature_12",
+  "oak_mature_13",
+  "oak_mature_14",
+  "oak_mature_15",
+  "oak_mature_16",
+  "oak_mature_17",
+  "oak_mature_18",
+  "oak_mature_19",
+  "oak_mature_20",
+  "oak_mature_21",
+  "oak_mature_22",
+  "oak_mature_23",
+  "oak_old_00",
+  "oak_old_01",
+  "oak_old_02",
+  "oak_old_03",
+  "oak_old_04",
+  "oak_old_05",
+  "oak_old_06",
+  "oak_old_07",
+  "oak_old_08",
+  "oak_old_09",
+  "oak_old_10",
+  "oak_old_11",
+  "oak_old_12",
+  "oak_old_13",
+  "oak_old_14",
+  "oak_old_15",
+  "oak_old_16",
+  "oak_old_17",
+  "oak_old_18",
+  "oak_old_19",
+  "oak_old_20",
+  "oak_old_21",
+  "oak_old_22",
+  "oak_old_23",
+  "oak_young_00",
+  "oak_young_01",
+  "oak_young_02",
+  "oak_young_03",
+  "oak_young_04",
+  "oak_young_05",
+  "oak_young_06",
+  "oak_young_07",
+  "oak_young_08",
+  "oak_young_09",
+  "oak_young_10",
+  "oak_young_11",
+  "oak_young_13",
+  "oak_young_14",
+  "oak_young_15",
+  "oak_young_16",
+  "oak_young_17",
+  "oak_young_18",
+  "oak_young_19",
+  "oak_young_20",
+  "oak_young_21",
+  "oak_young_22",
+  "oak_young_23",
+  "pale_oak_elder_00",
+  "pale_oak_elder_01",
+  "pale_oak_elder_02",
+  "pale_oak_elder_03",
+  "pale_oak_elder_04",
+  "pale_oak_elder_05",
+  "pale_oak_elder_06",
+  "pale_oak_elder_07",
+  "pale_oak_elder_08",
+  "pale_oak_elder_09",
+  "pale_oak_elder_10",
+  "pale_oak_elder_11",
+  "pale_oak_elder_12",
+  "pale_oak_elder_13",
+  "pale_oak_elder_14",
+  "pale_oak_elder_15",
+  "pale_oak_elder_16",
+  "pale_oak_elder_17",
+  "pale_oak_elder_18",
+  "pale_oak_elder_19",
+  "pale_oak_elder_20",
+  "pale_oak_elder_21",
+  "pale_oak_elder_22",
+  "pale_oak_elder_23",
+  "pale_oak_elder_24",
+  "pale_oak_elder_25",
+  "pale_oak_elder_26",
+  "pale_oak_elder_27",
+  "pale_oak_elder_28",
+  "pale_oak_elder_29",
+  "pale_oak_elder_30",
+  "pale_oak_elder_31",
+  "spruce_elder_00",
+  "spruce_elder_01",
+  "spruce_elder_02",
+  "spruce_elder_03",
+  "spruce_elder_04",
+  "spruce_elder_05",
+  "spruce_elder_06",
+  "spruce_elder_07",
+  "spruce_elder_08",
+  "spruce_elder_09",
+  "spruce_elder_10",
+  "spruce_elder_11",
+  "spruce_elder_12",
+  "spruce_elder_13",
+  "spruce_elder_14",
+  "spruce_elder_15",
+  "spruce_elder_16",
+  "spruce_elder_17",
+  "spruce_elder_18",
+  "spruce_elder_19",
+  "spruce_elder_20",
+  "spruce_elder_21",
+  "spruce_elder_22",
+  "spruce_elder_23",
+  "spruce_elder_24",
+  "spruce_elder_25",
+  "spruce_elder_26",
+  "spruce_elder_27",
+  "spruce_elder_28",
+  "spruce_elder_29",
+  "spruce_elder_30",
+  "spruce_elder_31",
+  "spruce_mature_00",
+  "spruce_mature_01",
+  "spruce_mature_02",
+  "spruce_mature_03",
+  "spruce_mature_04",
+  "spruce_mature_05",
+  "spruce_mature_06",
+  "spruce_mature_07",
+  "spruce_mature_08",
+  "spruce_mature_09",
+  "spruce_mature_10",
+  "spruce_mature_11",
+  "spruce_mature_12",
+  "spruce_mature_13",
+  "spruce_mature_14",
+  "spruce_mature_15",
+  "spruce_mature_16",
+  "spruce_mature_17",
+  "spruce_mature_18",
+  "spruce_mature_19",
+  "spruce_mature_20",
+  "spruce_mature_21",
+  "spruce_mature_22",
+  "spruce_mature_23",
+  "spruce_old_00",
+  "spruce_old_01",
+  "spruce_old_02",
+  "spruce_old_03",
+  "spruce_old_04",
+  "spruce_old_05",
+  "spruce_old_06",
+  "spruce_old_07",
+  "spruce_old_08",
+  "spruce_old_09",
+  "spruce_old_10",
+  "spruce_old_11",
+  "spruce_old_12",
+  "spruce_old_13",
+  "spruce_old_14",
+  "spruce_old_15",
+  "spruce_old_16",
+  "spruce_old_17",
+  "spruce_old_18",
+  "spruce_old_19",
+  "spruce_old_20",
+  "spruce_old_21",
+  "spruce_old_22",
+  "spruce_old_23",
+  "spruce_young_00",
+  "spruce_young_01",
+  "spruce_young_02",
+  "spruce_young_03",
+  "spruce_young_04",
+  "spruce_young_05",
+  "spruce_young_06",
+  "spruce_young_07",
+  "spruce_young_08",
+  "spruce_young_09",
+  "spruce_young_10",
+  "spruce_young_11",
+  "spruce_young_12",
+  "spruce_young_13",
+  "spruce_young_14",
+  "spruce_young_15",
+  "spruce_young_16",
+  "spruce_young_17",
+  "spruce_young_18",
+  "spruce_young_19",
+  "spruce_young_20",
+  "spruce_young_21",
+  "spruce_young_22",
+  "spruce_young_23"
+ ],
+ "variant_change_distance": {
+  "1": 1834,
+  "2": 1184,
+  "3": 1788,
+  "4": 30
+ },
+ "fails": [],
+ "per_template": {
+  "jungle_young_00": {
+   "size": [
+    [
+     6,
+     9,
+     7
+    ],
+    [
+     6,
+     9,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    44,
+    44
+   ],
+   "wood": [
+    7,
+    7
+   ],
+   "root_fix": true
+  },
+  "jungle_young_01": {
+   "size": [
+    [
+     7,
+     16,
+     6
+    ],
+    [
+     7,
+     16,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    13,
+    11
+   ],
+   "crown_top": 15,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    84,
+    86
+   ],
+   "wood": [
+    14,
+    12
+   ],
+   "root_fix": false
+  },
+  "jungle_young_02": {
+   "size": [
+    [
+     8,
+     9,
+     6
+    ],
+    [
+     8,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    52,
+    52
+   ],
+   "wood": [
+    7,
+    7
+   ],
+   "root_fix": true
+  },
+  "jungle_young_03": {
+   "size": [
+    [
+     5,
+     13,
+     6
+    ],
+    [
+     5,
+     13,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 12,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    48,
+    50
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "jungle_young_04": {
+   "size": [
+    [
+     8,
+     9,
+     5
+    ],
+    [
+     8,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    51,
+    51
+   ],
+   "wood": [
+    7,
+    7
+   ],
+   "root_fix": true
+  },
+  "jungle_young_05": {
+   "size": [
+    [
+     6,
+     12,
+     7
+    ],
+    [
+     6,
+     12,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    7
+   ],
+   "crown_top": 11,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    51,
+    53
+   ],
+   "wood": [
+    10,
+    8
+   ],
+   "root_fix": false
+  },
+  "jungle_young_06": {
+   "size": [
+    [
+     6,
+     9,
+     5
+    ],
+    [
+     6,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    43,
+    43
+   ],
+   "wood": [
+    7,
+    7
+   ],
+   "root_fix": true
+  },
+  "jungle_young_07": {
+   "size": [
+    [
+     5,
+     15,
+     5
+    ],
+    [
+     5,
+     15,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    12,
+    10
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    42,
+    44
+   ],
+   "wood": [
+    13,
+    11
+   ],
+   "root_fix": false
+  },
+  "jungle_young_08": {
+   "size": [
+    [
+     4,
+     9,
+     9
+    ],
+    [
+     4,
+     9,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    47,
+    47
+   ],
+   "wood": [
+    7,
+    7
+   ],
+   "root_fix": true
+  },
+  "jungle_young_09": {
+   "size": [
+    [
+     5,
+     16,
+     6
+    ],
+    [
+     5,
+     16,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    13,
+    11
+   ],
+   "crown_top": 15,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    51,
+    53
+   ],
+   "wood": [
+    14,
+    12
+   ],
+   "root_fix": false
+  },
+  "jungle_young_10": {
+   "size": [
+    [
+     5,
+     9,
+     7
+    ],
+    [
+     5,
+     9,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    51,
+    51
+   ],
+   "wood": [
+    7,
+    7
+   ],
+   "root_fix": true
+  },
+  "jungle_young_11": {
+   "size": [
+    [
+     6,
+     15,
+     7
+    ],
+    [
+     6,
+     15,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    12,
+    10
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    66,
+    68
+   ],
+   "wood": [
+    13,
+    11
+   ],
+   "root_fix": false
+  },
+  "jungle_young_12": {
+   "size": [
+    [
+     6,
+     9,
+     7
+    ],
+    [
+     6,
+     9,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    52,
+    52
+   ],
+   "wood": [
+    7,
+    7
+   ],
+   "root_fix": true
+  },
+  "jungle_young_13": {
+   "size": [
+    [
+     6,
+     14,
+     5
+    ],
+    [
+     6,
+     14,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 13,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    62,
+    64
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "jungle_young_14": {
+   "size": [
+    [
+     6,
+     7,
+     7
+    ],
+    [
+     6,
+     7,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    4,
+    4
+   ],
+   "crown_top": 6,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    33,
+    33
+   ],
+   "wood": [
+    5,
+    5
+   ],
+   "root_fix": true
+  },
+  "jungle_young_15": {
+   "size": [
+    [
+     6,
+     14,
+     5
+    ],
+    [
+     6,
+     14,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 13,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    60,
+    62
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "jungle_young_16": {
+   "size": [
+    [
+     7,
+     8,
+     5
+    ],
+    [
+     7,
+     8,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    4,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    25,
+    25
+   ],
+   "wood": [
+    5,
+    5
+   ],
+   "root_fix": true
+  },
+  "jungle_young_17": {
+   "size": [
+    [
+     6,
+     16,
+     6
+    ],
+    [
+     6,
+     16,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    13,
+    11
+   ],
+   "crown_top": 15,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    53,
+    55
+   ],
+   "wood": [
+    14,
+    12
+   ],
+   "root_fix": false
+  },
+  "jungle_young_18": {
+   "size": [
+    [
+     5,
+     7,
+     4
+    ],
+    [
+     5,
+     7,
+     4
+    ]
+   ],
+   "trunk_tip": [
+    4,
+    4
+   ],
+   "crown_top": 6,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    28,
+    28
+   ],
+   "wood": [
+    5,
+    5
+   ],
+   "root_fix": true
+  },
+  "jungle_young_19": {
+   "size": [
+    [
+     6,
+     14,
+     5
+    ],
+    [
+     6,
+     14,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 13,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    63,
+    65
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "jungle_young_20": {
+   "size": [
+    [
+     8,
+     8,
+     7
+    ],
+    [
+     8,
+     8,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    4,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    28,
+    28
+   ],
+   "wood": [
+    5,
+    5
+   ],
+   "root_fix": true
+  },
+  "jungle_young_21": {
+   "size": [
+    [
+     7,
+     13,
+     7
+    ],
+    [
+     7,
+     13,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 12,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    76,
+    78
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "jungle_young_22": {
+   "size": [
+    [
+     6,
+     7,
+     8
+    ],
+    [
+     6,
+     7,
+     8
+    ]
+   ],
+   "trunk_tip": [
+    4,
+    4
+   ],
+   "crown_top": 6,
+   "logs_removed": 0,
+   "logs_to_leaves": 0,
+   "leaves": [
+    37,
+    37
+   ],
+   "wood": [
+    5,
+    5
+   ],
+   "root_fix": true
+  },
+  "jungle_young_23": {
+   "size": [
+    [
+     7,
+     13,
+     7
+    ],
+    [
+     7,
+     13,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 12,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    78,
+    80
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "mangrove_00": {
+   "size": [
+    [
+     12,
+     12,
+     12
+    ],
+    [
+     12,
+     12,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    245,
+    247
+   ],
+   "wood": [
+    106,
+    104
+   ],
+   "root_fix": false
+  },
+  "mangrove_02": {
+   "size": [
+    [
+     13,
+     12,
+     14
+    ],
+    [
+     13,
+     9,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 5,
+   "logs_to_leaves": 2,
+   "leaves": [
+    312,
+    314
+   ],
+   "wood": [
+    91,
+    86
+   ],
+   "root_fix": false
+  },
+  "mangrove_05": {
+   "size": [
+    [
+     14,
+     12,
+     14
+    ],
+    [
+     14,
+     10,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 9,
+   "logs_removed": 4,
+   "logs_to_leaves": 2,
+   "leaves": [
+    513,
+    515
+   ],
+   "wood": [
+    92,
+    88
+   ],
+   "root_fix": false
+  },
+  "mangrove_06": {
+   "size": [
+    [
+     11,
+     12,
+     11
+    ],
+    [
+     11,
+     12,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    241,
+    242
+   ],
+   "wood": [
+    80,
+    79
+   ],
+   "root_fix": false
+  },
+  "mangrove_08": {
+   "size": [
+    [
+     13,
+     12,
+     12
+    ],
+    [
+     13,
+     11,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    8
+   ],
+   "crown_top": 10,
+   "logs_removed": 3,
+   "logs_to_leaves": 2,
+   "leaves": [
+    308,
+    310
+   ],
+   "wood": [
+    100,
+    97
+   ],
+   "root_fix": false
+  },
+  "mangrove_11": {
+   "size": [
+    [
+     15,
+     12,
+     15
+    ],
+    [
+     15,
+     12,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    453,
+    456
+   ],
+   "wood": [
+    102,
+    99
+   ],
+   "root_fix": false
+  },
+  "mangrove_12": {
+   "size": [
+    [
+     8,
+     12,
+     9
+    ],
+    [
+     8,
+     11,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    8
+   ],
+   "crown_top": 10,
+   "logs_removed": 4,
+   "logs_to_leaves": 3,
+   "leaves": [
+    157,
+    160
+   ],
+   "wood": [
+    67,
+    63
+   ],
+   "root_fix": false
+  },
+  "mangrove_14": {
+   "size": [
+    [
+     11,
+     12,
+     12
+    ],
+    [
+     11,
+     12,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    296,
+    298
+   ],
+   "wood": [
+    104,
+    102
+   ],
+   "root_fix": false
+  },
+  "mangrove_15": {
+   "size": [
+    [
+     10,
+     12,
+     9
+    ],
+    [
+     10,
+     12,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    246,
+    248
+   ],
+   "wood": [
+    78,
+    76
+   ],
+   "root_fix": false
+  },
+  "mangrove_17": {
+   "size": [
+    [
+     13,
+     12,
+     14
+    ],
+    [
+     13,
+     12,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    402,
+    404
+   ],
+   "wood": [
+    89,
+    87
+   ],
+   "root_fix": false
+  },
+  "mangrove_18": {
+   "size": [
+    [
+     9,
+     12,
+     8
+    ],
+    [
+     9,
+     12,
+     8
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    167,
+    170
+   ],
+   "wood": [
+    92,
+    89
+   ],
+   "root_fix": false
+  },
+  "mangrove_20": {
+   "size": [
+    [
+     14,
+     12,
+     13
+    ],
+    [
+     14,
+     11,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 4,
+   "logs_to_leaves": 3,
+   "leaves": [
+    354,
+    357
+   ],
+   "wood": [
+    129,
+    125
+   ],
+   "root_fix": false
+  },
+  "mangrove_23": {
+   "size": [
+    [
+     14,
+     12,
+     16
+    ],
+    [
+     14,
+     11,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    8
+   ],
+   "crown_top": 10,
+   "logs_removed": 3,
+   "logs_to_leaves": 2,
+   "leaves": [
+    556,
+    558
+   ],
+   "wood": [
+    115,
+    112
+   ],
+   "root_fix": false
+  },
+  "mangrove_24": {
+   "size": [
+    [
+     10,
+     12,
+     10
+    ],
+    [
+     10,
+     12,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    191,
+    192
+   ],
+   "wood": [
+    69,
+    68
+   ],
+   "root_fix": false
+  },
+  "mangrove_25": {
+   "size": [
+    [
+     12,
+     12,
+     11
+    ],
+    [
+     12,
+     12,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    256,
+    257
+   ],
+   "wood": [
+    82,
+    81
+   ],
+   "root_fix": false
+  },
+  "mangrove_26": {
+   "size": [
+    [
+     12,
+     12,
+     12
+    ],
+    [
+     12,
+     11,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 4,
+   "logs_to_leaves": 3,
+   "leaves": [
+    288,
+    291
+   ],
+   "wood": [
+    97,
+    93
+   ],
+   "root_fix": false
+  },
+  "mangrove_29": {
+   "size": [
+    [
+     15,
+     12,
+     15
+    ],
+    [
+     15,
+     10,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 9,
+   "logs_removed": 4,
+   "logs_to_leaves": 2,
+   "leaves": [
+    400,
+    402
+   ],
+   "wood": [
+    100,
+    96
+   ],
+   "root_fix": false
+  },
+  "mangrove_30": {
+   "size": [
+    [
+     11,
+     12,
+     10
+    ],
+    [
+     11,
+     12,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    8
+   ],
+   "crown_top": 11,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    288,
+    289
+   ],
+   "wood": [
+    98,
+    97
+   ],
+   "root_fix": false
+  },
+  "oak_elder_00": {
+   "size": [
+    [
+     21,
+     22,
+     20
+    ],
+    [
+     21,
+     21,
+     20
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 20,
+   "logs_removed": 9,
+   "logs_to_leaves": 5,
+   "leaves": [
+    750,
+    755
+   ],
+   "wood": [
+    68,
+    59
+   ],
+   "root_fix": false
+  },
+  "oak_elder_01": {
+   "size": [
+    [
+     20,
+     22,
+     21
+    ],
+    [
+     20,
+     19,
+     21
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 9,
+   "logs_to_leaves": 5,
+   "leaves": [
+    556,
+    561
+   ],
+   "wood": [
+    72,
+    63
+   ],
+   "root_fix": false
+  },
+  "oak_elder_02": {
+   "size": [
+    [
+     20,
+     22,
+     23
+    ],
+    [
+     20,
+     20,
+     23
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 19,
+   "logs_removed": 11,
+   "logs_to_leaves": 8,
+   "leaves": [
+    892,
+    900
+   ],
+   "wood": [
+    83,
+    72
+   ],
+   "root_fix": false
+  },
+  "oak_elder_03": {
+   "size": [
+    [
+     21,
+     22,
+     18
+    ],
+    [
+     21,
+     18,
+     18
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    12
+   ],
+   "crown_top": 17,
+   "logs_removed": 10,
+   "logs_to_leaves": 6,
+   "leaves": [
+    597,
+    603
+   ],
+   "wood": [
+    66,
+    56
+   ],
+   "root_fix": false
+  },
+  "oak_elder_04": {
+   "size": [
+    [
+     19,
+     22,
+     24
+    ],
+    [
+     19,
+     21,
+     24
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    15
+   ],
+   "crown_top": 20,
+   "logs_removed": 14,
+   "logs_to_leaves": 6,
+   "leaves": [
+    749,
+    755
+   ],
+   "wood": [
+    80,
+    66
+   ],
+   "root_fix": false
+  },
+  "oak_elder_05": {
+   "size": [
+    [
+     21,
+     22,
+     19
+    ],
+    [
+     21,
+     20,
+     19
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 19,
+   "logs_removed": 10,
+   "logs_to_leaves": 7,
+   "leaves": [
+    531,
+    538
+   ],
+   "wood": [
+    73,
+    63
+   ],
+   "root_fix": false
+  },
+  "oak_elder_06": {
+   "size": [
+    [
+     19,
+     22,
+     19
+    ],
+    [
+     19,
+     20,
+     19
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 19,
+   "logs_removed": 10,
+   "logs_to_leaves": 6,
+   "leaves": [
+    608,
+    614
+   ],
+   "wood": [
+    63,
+    53
+   ],
+   "root_fix": false
+  },
+  "oak_elder_07": {
+   "size": [
+    [
+     21,
+     22,
+     22
+    ],
+    [
+     21,
+     20,
+     22
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    15
+   ],
+   "crown_top": 19,
+   "logs_removed": 13,
+   "logs_to_leaves": 5,
+   "leaves": [
+    606,
+    611
+   ],
+   "wood": [
+    88,
+    75
+   ],
+   "root_fix": false
+  },
+  "oak_elder_08": {
+   "size": [
+    [
+     21,
+     22,
+     21
+    ],
+    [
+     21,
+     19,
+     21
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 17,
+   "logs_to_leaves": 8,
+   "leaves": [
+    844,
+    852
+   ],
+   "wood": [
+    86,
+    69
+   ],
+   "root_fix": false
+  },
+  "oak_elder_09": {
+   "size": [
+    [
+     20,
+     22,
+     20
+    ],
+    [
+     20,
+     19,
+     20
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 14,
+   "logs_to_leaves": 5,
+   "leaves": [
+    633,
+    638
+   ],
+   "wood": [
+    80,
+    66
+   ],
+   "root_fix": false
+  },
+  "oak_elder_10": {
+   "size": [
+    [
+     21,
+     22,
+     21
+    ],
+    [
+     21,
+     21,
+     21
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 20,
+   "logs_removed": 9,
+   "logs_to_leaves": 6,
+   "leaves": [
+    1119,
+    1125
+   ],
+   "wood": [
+    89,
+    80
+   ],
+   "root_fix": false
+  },
+  "oak_elder_11": {
+   "size": [
+    [
+     20,
+     22,
+     23
+    ],
+    [
+     20,
+     20,
+     23
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 19,
+   "logs_removed": 10,
+   "logs_to_leaves": 5,
+   "leaves": [
+    466,
+    471
+   ],
+   "wood": [
+    72,
+    62
+   ],
+   "root_fix": false
+  },
+  "oak_elder_12": {
+   "size": [
+    [
+     18,
+     22,
+     23
+    ],
+    [
+     18,
+     19,
+     23
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 10,
+   "logs_to_leaves": 4,
+   "leaves": [
+    604,
+    608
+   ],
+   "wood": [
+    69,
+    59
+   ],
+   "root_fix": false
+  },
+  "oak_elder_13": {
+   "size": [
+    [
+     22,
+     22,
+     17
+    ],
+    [
+     22,
+     20,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 19,
+   "logs_removed": 10,
+   "logs_to_leaves": 7,
+   "leaves": [
+    541,
+    548
+   ],
+   "wood": [
+    65,
+    55
+   ],
+   "root_fix": false
+  },
+  "oak_elder_14": {
+   "size": [
+    [
+     20,
+     22,
+     16
+    ],
+    [
+     20,
+     19,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 17,
+   "logs_to_leaves": 8,
+   "leaves": [
+    418,
+    426
+   ],
+   "wood": [
+    69,
+    52
+   ],
+   "root_fix": false
+  },
+  "oak_elder_15": {
+   "size": [
+    [
+     22,
+     22,
+     22
+    ],
+    [
+     22,
+     18,
+     22
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 17,
+   "logs_removed": 14,
+   "logs_to_leaves": 6,
+   "leaves": [
+    704,
+    710
+   ],
+   "wood": [
+    88,
+    74
+   ],
+   "root_fix": false
+  },
+  "oak_elder_16": {
+   "size": [
+    [
+     19,
+     22,
+     20
+    ],
+    [
+     19,
+     19,
+     20
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 13,
+   "logs_to_leaves": 3,
+   "leaves": [
+    583,
+    586
+   ],
+   "wood": [
+    79,
+    66
+   ],
+   "root_fix": false
+  },
+  "oak_elder_17": {
+   "size": [
+    [
+     23,
+     22,
+     20
+    ],
+    [
+     23,
+     18,
+     20
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 17,
+   "logs_removed": 11,
+   "logs_to_leaves": 6,
+   "leaves": [
+    794,
+    800
+   ],
+   "wood": [
+    84,
+    73
+   ],
+   "root_fix": false
+  },
+  "oak_elder_18": {
+   "size": [
+    [
+     19,
+     22,
+     22
+    ],
+    [
+     19,
+     18,
+     22
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    12
+   ],
+   "crown_top": 17,
+   "logs_removed": 18,
+   "logs_to_leaves": 9,
+   "leaves": [
+    754,
+    763
+   ],
+   "wood": [
+    77,
+    59
+   ],
+   "root_fix": false
+  },
+  "oak_elder_19": {
+   "size": [
+    [
+     21,
+     22,
+     17
+    ],
+    [
+     21,
+     20,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    15
+   ],
+   "crown_top": 19,
+   "logs_removed": 8,
+   "logs_to_leaves": 4,
+   "leaves": [
+    417,
+    421
+   ],
+   "wood": [
+    69,
+    61
+   ],
+   "root_fix": false
+  },
+  "oak_elder_20": {
+   "size": [
+    [
+     20,
+     22,
+     23
+    ],
+    [
+     20,
+     19,
+     23
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 8,
+   "logs_to_leaves": 4,
+   "leaves": [
+    553,
+    557
+   ],
+   "wood": [
+    64,
+    56
+   ],
+   "root_fix": false
+  },
+  "oak_elder_21": {
+   "size": [
+    [
+     20,
+     22,
+     20
+    ],
+    [
+     20,
+     18,
+     20
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 17,
+   "logs_removed": 12,
+   "logs_to_leaves": 6,
+   "leaves": [
+    717,
+    723
+   ],
+   "wood": [
+    88,
+    76
+   ],
+   "root_fix": false
+  },
+  "oak_elder_22": {
+   "size": [
+    [
+     21,
+     22,
+     22
+    ],
+    [
+     21,
+     19,
+     22
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 9,
+   "logs_to_leaves": 4,
+   "leaves": [
+    1050,
+    1054
+   ],
+   "wood": [
+    93,
+    84
+   ],
+   "root_fix": false
+  },
+  "oak_elder_23": {
+   "size": [
+    [
+     18,
+     22,
+     24
+    ],
+    [
+     18,
+     19,
+     24
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 18,
+   "logs_removed": 14,
+   "logs_to_leaves": 6,
+   "leaves": [
+    569,
+    575
+   ],
+   "wood": [
+    76,
+    62
+   ],
+   "root_fix": false
+  },
+  "oak_elder_24": {
+   "size": [
+    [
+     21,
+     22,
+     22
+    ],
+    [
+     21,
+     20,
+     22
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 19,
+   "logs_removed": 10,
+   "logs_to_leaves": 8,
+   "leaves": [
+    967,
+    975
+   ],
+   "wood": [
+    94,
+    84
+   ],
+   "root_fix": false
+  },
+  "oak_elder_25": {
+   "size": [
+    [
+     24,
+     22,
+     24
+    ],
+    [
+     24,
+     19,
+     24
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 13,
+   "logs_to_leaves": 7,
+   "leaves": [
+    675,
+    682
+   ],
+   "wood": [
+    83,
+    70
+   ],
+   "root_fix": false
+  },
+  "oak_elder_26": {
+   "size": [
+    [
+     20,
+     22,
+     24
+    ],
+    [
+     20,
+     19,
+     24
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    12
+   ],
+   "crown_top": 18,
+   "logs_removed": 18,
+   "logs_to_leaves": 12,
+   "leaves": [
+    1064,
+    1076
+   ],
+   "wood": [
+    98,
+    80
+   ],
+   "root_fix": false
+  },
+  "oak_elder_27": {
+   "size": [
+    [
+     19,
+     22,
+     23
+    ],
+    [
+     19,
+     19,
+     23
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 18,
+   "logs_removed": 14,
+   "logs_to_leaves": 8,
+   "leaves": [
+    649,
+    657
+   ],
+   "wood": [
+    82,
+    68
+   ],
+   "root_fix": false
+  },
+  "oak_elder_28": {
+   "size": [
+    [
+     18,
+     22,
+     20
+    ],
+    [
+     18,
+     20,
+     20
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    15
+   ],
+   "crown_top": 19,
+   "logs_removed": 8,
+   "logs_to_leaves": 6,
+   "leaves": [
+    620,
+    626
+   ],
+   "wood": [
+    73,
+    65
+   ],
+   "root_fix": false
+  },
+  "oak_elder_29": {
+   "size": [
+    [
+     19,
+     22,
+     18
+    ],
+    [
+     19,
+     19,
+     18
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 12,
+   "logs_to_leaves": 7,
+   "leaves": [
+    527,
+    534
+   ],
+   "wood": [
+    73,
+    61
+   ],
+   "root_fix": false
+  },
+  "oak_elder_30": {
+   "size": [
+    [
+     18,
+     22,
+     19
+    ],
+    [
+     18,
+     19,
+     19
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 14,
+   "logs_to_leaves": 6,
+   "leaves": [
+    517,
+    523
+   ],
+   "wood": [
+    70,
+    56
+   ],
+   "root_fix": false
+  },
+  "oak_elder_31": {
+   "size": [
+    [
+     25,
+     22,
+     23
+    ],
+    [
+     25,
+     20,
+     23
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    13
+   ],
+   "crown_top": 19,
+   "logs_removed": 16,
+   "logs_to_leaves": 7,
+   "leaves": [
+    1049,
+    1056
+   ],
+   "wood": [
+    95,
+    79
+   ],
+   "root_fix": false
+  },
+  "oak_mature_00": {
+   "size": [
+    [
+     13,
+     15,
+     12
+    ],
+    [
+     13,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    450,
+    452
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_mature_01": {
+   "size": [
+    [
+     14,
+     15,
+     12
+    ],
+    [
+     14,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    7
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    702,
+    704
+   ],
+   "wood": [
+    10,
+    8
+   ],
+   "root_fix": false
+  },
+  "oak_mature_02": {
+   "size": [
+    [
+     15,
+     15,
+     15
+    ],
+    [
+     15,
+     15,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    6
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    490,
+    492
+   ],
+   "wood": [
+    9,
+    7
+   ],
+   "root_fix": false
+  },
+  "oak_mature_03": {
+   "size": [
+    [
+     12,
+     15,
+     12
+    ],
+    [
+     12,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    375,
+    376
+   ],
+   "wood": [
+    11,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_04": {
+   "size": [
+    [
+     14,
+     15,
+     14
+    ],
+    [
+     14,
+     15,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    542,
+    544
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_05": {
+   "size": [
+    [
+     14,
+     15,
+     15
+    ],
+    [
+     14,
+     15,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 1,
+   "leaves": [
+    549,
+    550
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_mature_06": {
+   "size": [
+    [
+     15,
+     15,
+     16
+    ],
+    [
+     15,
+     15,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    10
+   ],
+   "crown_top": 14,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    602,
+    603
+   ],
+   "wood": [
+    12,
+    11
+   ],
+   "root_fix": false
+  },
+  "oak_mature_07": {
+   "size": [
+    [
+     12,
+     15,
+     14
+    ],
+    [
+     12,
+     15,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    631,
+    633
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_08": {
+   "size": [
+    [
+     14,
+     15,
+     15
+    ],
+    [
+     14,
+     15,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    740,
+    742
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_09": {
+   "size": [
+    [
+     13,
+     15,
+     15
+    ],
+    [
+     13,
+     15,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    533,
+    535
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_10": {
+   "size": [
+    [
+     14,
+     15,
+     16
+    ],
+    [
+     14,
+     15,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    6
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    915,
+    917
+   ],
+   "wood": [
+    9,
+    7
+   ],
+   "root_fix": false
+  },
+  "oak_mature_11": {
+   "size": [
+    [
+     12,
+     15,
+     12
+    ],
+    [
+     12,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    516,
+    518
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_mature_12": {
+   "size": [
+    [
+     12,
+     15,
+     10
+    ],
+    [
+     12,
+     15,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    558,
+    560
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_mature_13": {
+   "size": [
+    [
+     13,
+     15,
+     12
+    ],
+    [
+     13,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    12,
+    8
+   ],
+   "crown_top": 14,
+   "logs_removed": 4,
+   "logs_to_leaves": 4,
+   "leaves": [
+    683,
+    687
+   ],
+   "wood": [
+    13,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_mature_14": {
+   "size": [
+    [
+     14,
+     15,
+     16
+    ],
+    [
+     14,
+     15,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    10
+   ],
+   "crown_top": 14,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    560,
+    561
+   ],
+   "wood": [
+    12,
+    11
+   ],
+   "root_fix": false
+  },
+  "oak_mature_15": {
+   "size": [
+    [
+     14,
+     15,
+     16
+    ],
+    [
+     14,
+     15,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 1,
+   "leaves": [
+    520,
+    521
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_16": {
+   "size": [
+    [
+     14,
+     15,
+     12
+    ],
+    [
+     14,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    7
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    437,
+    439
+   ],
+   "wood": [
+    10,
+    8
+   ],
+   "root_fix": false
+  },
+  "oak_mature_17": {
+   "size": [
+    [
+     12,
+     15,
+     14
+    ],
+    [
+     12,
+     15,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    443,
+    445
+   ],
+   "wood": [
+    12,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_18": {
+   "size": [
+    [
+     13,
+     15,
+     12
+    ],
+    [
+     13,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    7
+   ],
+   "crown_top": 14,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    666,
+    669
+   ],
+   "wood": [
+    11,
+    8
+   ],
+   "root_fix": false
+  },
+  "oak_mature_19": {
+   "size": [
+    [
+     12,
+     15,
+     15
+    ],
+    [
+     12,
+     15,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    12,
+    10
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 1,
+   "leaves": [
+    407,
+    408
+   ],
+   "wood": [
+    13,
+    11
+   ],
+   "root_fix": false
+  },
+  "oak_mature_20": {
+   "size": [
+    [
+     12,
+     15,
+     14
+    ],
+    [
+     12,
+     15,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    390,
+    391
+   ],
+   "wood": [
+    11,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_21": {
+   "size": [
+    [
+     14,
+     15,
+     13
+    ],
+    [
+     14,
+     15,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    518,
+    519
+   ],
+   "wood": [
+    11,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_mature_22": {
+   "size": [
+    [
+     14,
+     15,
+     12
+    ],
+    [
+     14,
+     15,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    5
+   ],
+   "crown_top": 14,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    663,
+    666
+   ],
+   "wood": [
+    9,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_mature_23": {
+   "size": [
+    [
+     15,
+     15,
+     13
+    ],
+    [
+     15,
+     15,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    8
+   ],
+   "crown_top": 14,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    727,
+    729
+   ],
+   "wood": [
+    11,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_00": {
+   "size": [
+    [
+     17,
+     16,
+     16
+    ],
+    [
+     17,
+     15,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    5
+   ],
+   "crown_top": 14,
+   "logs_removed": 10,
+   "logs_to_leaves": 6,
+   "leaves": [
+    937,
+    943
+   ],
+   "wood": [
+    16,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_old_01": {
+   "size": [
+    [
+     17,
+     16,
+     17
+    ],
+    [
+     17,
+     13,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 12,
+   "logs_removed": 7,
+   "logs_to_leaves": 4,
+   "leaves": [
+    723,
+    727
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_02": {
+   "size": [
+    [
+     14,
+     16,
+     15
+    ],
+    [
+     14,
+     13,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    6
+   ],
+   "crown_top": 12,
+   "logs_removed": 9,
+   "logs_to_leaves": 6,
+   "leaves": [
+    643,
+    649
+   ],
+   "wood": [
+    16,
+    7
+   ],
+   "root_fix": false
+  },
+  "oak_old_03": {
+   "size": [
+    [
+     19,
+     16,
+     18
+    ],
+    [
+     19,
+     15,
+     18
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 6,
+   "logs_to_leaves": 5,
+   "leaves": [
+    807,
+    812
+   ],
+   "wood": [
+    16,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_old_04": {
+   "size": [
+    [
+     17,
+     16,
+     16
+    ],
+    [
+     17,
+     15,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    10
+   ],
+   "crown_top": 14,
+   "logs_removed": 5,
+   "logs_to_leaves": 4,
+   "leaves": [
+    539,
+    543
+   ],
+   "wood": [
+    16,
+    11
+   ],
+   "root_fix": false
+  },
+  "oak_old_05": {
+   "size": [
+    [
+     15,
+     16,
+     15
+    ],
+    [
+     15,
+     14,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    5
+   ],
+   "crown_top": 13,
+   "logs_removed": 10,
+   "logs_to_leaves": 6,
+   "leaves": [
+    1000,
+    1006
+   ],
+   "wood": [
+    16,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_old_06": {
+   "size": [
+    [
+     19,
+     16,
+     16
+    ],
+    [
+     19,
+     14,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    9
+   ],
+   "crown_top": 13,
+   "logs_removed": 6,
+   "logs_to_leaves": 4,
+   "leaves": [
+    675,
+    679
+   ],
+   "wood": [
+    16,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_old_07": {
+   "size": [
+    [
+     14,
+     16,
+     15
+    ],
+    [
+     14,
+     13,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    7
+   ],
+   "crown_top": 12,
+   "logs_removed": 8,
+   "logs_to_leaves": 5,
+   "leaves": [
+    716,
+    721
+   ],
+   "wood": [
+    16,
+    8
+   ],
+   "root_fix": false
+  },
+  "oak_old_08": {
+   "size": [
+    [
+     18,
+     16,
+     17
+    ],
+    [
+     18,
+     14,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 13,
+   "logs_removed": 7,
+   "logs_to_leaves": 5,
+   "leaves": [
+    668,
+    673
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_09": {
+   "size": [
+    [
+     17,
+     16,
+     18
+    ],
+    [
+     17,
+     15,
+     18
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    9
+   ],
+   "crown_top": 14,
+   "logs_removed": 6,
+   "logs_to_leaves": 4,
+   "leaves": [
+    791,
+    795
+   ],
+   "wood": [
+    16,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_old_10": {
+   "size": [
+    [
+     14,
+     16,
+     14
+    ],
+    [
+     14,
+     16,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 15,
+   "logs_removed": 7,
+   "logs_to_leaves": 6,
+   "leaves": [
+    701,
+    707
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_11": {
+   "size": [
+    [
+     18,
+     16,
+     16
+    ],
+    [
+     18,
+     14,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    6
+   ],
+   "crown_top": 13,
+   "logs_removed": 9,
+   "logs_to_leaves": 6,
+   "leaves": [
+    787,
+    793
+   ],
+   "wood": [
+    16,
+    7
+   ],
+   "root_fix": false
+  },
+  "oak_old_12": {
+   "size": [
+    [
+     18,
+     16,
+     16
+    ],
+    [
+     18,
+     14,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 13,
+   "logs_removed": 7,
+   "logs_to_leaves": 4,
+   "leaves": [
+    602,
+    606
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_13": {
+   "size": [
+    [
+     14,
+     16,
+     16
+    ],
+    [
+     14,
+     14,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 13,
+   "logs_removed": 7,
+   "logs_to_leaves": 4,
+   "leaves": [
+    644,
+    648
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_14": {
+   "size": [
+    [
+     17,
+     16,
+     17
+    ],
+    [
+     17,
+     14,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 13,
+   "logs_removed": 7,
+   "logs_to_leaves": 5,
+   "leaves": [
+    618,
+    623
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_15": {
+   "size": [
+    [
+     15,
+     16,
+     14
+    ],
+    [
+     15,
+     14,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 13,
+   "logs_removed": 7,
+   "logs_to_leaves": 4,
+   "leaves": [
+    514,
+    518
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_16": {
+   "size": [
+    [
+     17,
+     16,
+     16
+    ],
+    [
+     17,
+     15,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 14,
+   "logs_removed": 7,
+   "logs_to_leaves": 5,
+   "leaves": [
+    734,
+    739
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_17": {
+   "size": [
+    [
+     14,
+     16,
+     14
+    ],
+    [
+     14,
+     13,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    5
+   ],
+   "crown_top": 12,
+   "logs_removed": 10,
+   "logs_to_leaves": 6,
+   "leaves": [
+    774,
+    780
+   ],
+   "wood": [
+    16,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_old_18": {
+   "size": [
+    [
+     17,
+     16,
+     17
+    ],
+    [
+     17,
+     14,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    9
+   ],
+   "crown_top": 13,
+   "logs_removed": 6,
+   "logs_to_leaves": 4,
+   "leaves": [
+    576,
+    580
+   ],
+   "wood": [
+    16,
+    10
+   ],
+   "root_fix": false
+  },
+  "oak_old_19": {
+   "size": [
+    [
+     20,
+     16,
+     18
+    ],
+    [
+     20,
+     16,
+     18
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    10
+   ],
+   "crown_top": 15,
+   "logs_removed": 5,
+   "logs_to_leaves": 4,
+   "leaves": [
+    752,
+    756
+   ],
+   "wood": [
+    16,
+    11
+   ],
+   "root_fix": false
+  },
+  "oak_old_20": {
+   "size": [
+    [
+     17,
+     16,
+     17
+    ],
+    [
+     17,
+     13,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    8
+   ],
+   "crown_top": 12,
+   "logs_removed": 7,
+   "logs_to_leaves": 4,
+   "leaves": [
+    712,
+    716
+   ],
+   "wood": [
+    16,
+    9
+   ],
+   "root_fix": false
+  },
+  "oak_old_21": {
+   "size": [
+    [
+     16,
+     16,
+     17
+    ],
+    [
+     16,
+     16,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    10
+   ],
+   "crown_top": 15,
+   "logs_removed": 5,
+   "logs_to_leaves": 4,
+   "leaves": [
+    661,
+    665
+   ],
+   "wood": [
+    16,
+    11
+   ],
+   "root_fix": false
+  },
+  "oak_old_22": {
+   "size": [
+    [
+     15,
+     16,
+     15
+    ],
+    [
+     15,
+     16,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    7
+   ],
+   "crown_top": 15,
+   "logs_removed": 8,
+   "logs_to_leaves": 5,
+   "leaves": [
+    887,
+    892
+   ],
+   "wood": [
+    16,
+    8
+   ],
+   "root_fix": false
+  },
+  "oak_old_23": {
+   "size": [
+    [
+     16,
+     16,
+     15
+    ],
+    [
+     16,
+     16,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    15,
+    7
+   ],
+   "crown_top": 15,
+   "logs_removed": 8,
+   "logs_to_leaves": 6,
+   "leaves": [
+    979,
+    985
+   ],
+   "wood": [
+    16,
+    8
+   ],
+   "root_fix": false
+  },
+  "oak_young_00": {
+   "size": [
+    [
+     5,
+     9,
+     6
+    ],
+    [
+     5,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    67,
+    69
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_01": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    53,
+    55
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_02": {
+   "size": [
+    [
+     5,
+     9,
+     6
+    ],
+    [
+     5,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    106,
+    108
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_03": {
+   "size": [
+    [
+     6,
+     9,
+     5
+    ],
+    [
+     6,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    60,
+    61
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_04": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    61,
+    62
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_05": {
+   "size": [
+    [
+     5,
+     9,
+     7
+    ],
+    [
+     5,
+     9,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    133,
+    135
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_06": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    5,
+    4
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    77,
+    78
+   ],
+   "wood": [
+    6,
+    5
+   ],
+   "root_fix": false
+  },
+  "oak_young_07": {
+   "size": [
+    [
+     5,
+     9,
+     6
+    ],
+    [
+     5,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    57,
+    58
+   ],
+   "wood": [
+    8,
+    7
+   ],
+   "root_fix": false
+  },
+  "oak_young_08": {
+   "size": [
+    [
+     6,
+     9,
+     6
+    ],
+    [
+     6,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    74,
+    75
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_09": {
+   "size": [
+    [
+     5,
+     9,
+     6
+    ],
+    [
+     5,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    64,
+    65
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_10": {
+   "size": [
+    [
+     7,
+     9,
+     6
+    ],
+    [
+     7,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    4
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    114,
+    116
+   ],
+   "wood": [
+    7,
+    5
+   ],
+   "root_fix": false
+  },
+  "oak_young_11": {
+   "size": [
+    [
+     6,
+     9,
+     5
+    ],
+    [
+     6,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    94,
+    95
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_13": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    62,
+    63
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_14": {
+   "size": [
+    [
+     6,
+     9,
+     6
+    ],
+    [
+     6,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    60,
+    61
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_15": {
+   "size": [
+    [
+     6,
+     9,
+     6
+    ],
+    [
+     6,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    5,
+    4
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    100,
+    101
+   ],
+   "wood": [
+    6,
+    5
+   ],
+   "root_fix": false
+  },
+  "oak_young_16": {
+   "size": [
+    [
+     6,
+     9,
+     6
+    ],
+    [
+     6,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    74,
+    75
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_17": {
+   "size": [
+    [
+     5,
+     9,
+     6
+    ],
+    [
+     5,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    73,
+    74
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_18": {
+   "size": [
+    [
+     7,
+     9,
+     6
+    ],
+    [
+     7,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    4
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    102,
+    104
+   ],
+   "wood": [
+    7,
+    5
+   ],
+   "root_fix": false
+  },
+  "oak_young_19": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    52,
+    53
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_20": {
+   "size": [
+    [
+     5,
+     9,
+     6
+    ],
+    [
+     5,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    95,
+    96
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "oak_young_21": {
+   "size": [
+    [
+     6,
+     9,
+     6
+    ],
+    [
+     6,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    5,
+    4
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    92,
+    93
+   ],
+   "wood": [
+    6,
+    5
+   ],
+   "root_fix": false
+  },
+  "oak_young_22": {
+   "size": [
+    [
+     6,
+     9,
+     6
+    ],
+    [
+     6,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    91,
+    92
+   ],
+   "wood": [
+    8,
+    7
+   ],
+   "root_fix": false
+  },
+  "oak_young_23": {
+   "size": [
+    [
+     6,
+     9,
+     5
+    ],
+    [
+     6,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    113,
+    115
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_00": {
+   "size": [
+    [
+     16,
+     12,
+     15
+    ],
+    [
+     16,
+     6,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    4
+   ],
+   "crown_top": 5,
+   "logs_removed": 25,
+   "logs_to_leaves": 3,
+   "leaves": [
+    182,
+    185
+   ],
+   "wood": [
+    62,
+    37
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_01": {
+   "size": [
+    [
+     16,
+     12,
+     16
+    ],
+    [
+     16,
+     9,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 20,
+   "logs_to_leaves": 8,
+   "leaves": [
+    239,
+    247
+   ],
+   "wood": [
+    69,
+    49
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_02": {
+   "size": [
+    [
+     16,
+     12,
+     17
+    ],
+    [
+     16,
+     6,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    3
+   ],
+   "crown_top": 5,
+   "logs_removed": 29,
+   "logs_to_leaves": 8,
+   "leaves": [
+    136,
+    144
+   ],
+   "wood": [
+    68,
+    39
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_03": {
+   "size": [
+    [
+     11,
+     12,
+     13
+    ],
+    [
+     11,
+     8,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    5
+   ],
+   "crown_top": 7,
+   "logs_removed": 25,
+   "logs_to_leaves": 4,
+   "leaves": [
+    139,
+    143
+   ],
+   "wood": [
+    53,
+    28
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_04": {
+   "size": [
+    [
+     14,
+     12,
+     16
+    ],
+    [
+     14,
+     8,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    5
+   ],
+   "crown_top": 7,
+   "logs_removed": 28,
+   "logs_to_leaves": 8,
+   "leaves": [
+    128,
+    136
+   ],
+   "wood": [
+    65,
+    37
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_05": {
+   "size": [
+    [
+     16,
+     12,
+     16
+    ],
+    [
+     16,
+     8,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 32,
+   "logs_to_leaves": 12,
+   "leaves": [
+    263,
+    275
+   ],
+   "wood": [
+    71,
+    39
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_06": {
+   "size": [
+    [
+     14,
+     12,
+     14
+    ],
+    [
+     14,
+     5,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    3
+   ],
+   "crown_top": 4,
+   "logs_removed": 24,
+   "logs_to_leaves": 2,
+   "leaves": [
+    131,
+    133
+   ],
+   "wood": [
+    49,
+    25
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_07": {
+   "size": [
+    [
+     17,
+     12,
+     19
+    ],
+    [
+     17,
+     9,
+     19
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 21,
+   "logs_to_leaves": 12,
+   "leaves": [
+    308,
+    320
+   ],
+   "wood": [
+    75,
+    54
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_08": {
+   "size": [
+    [
+     15,
+     12,
+     15
+    ],
+    [
+     15,
+     6,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    3
+   ],
+   "crown_top": 5,
+   "logs_removed": 23,
+   "logs_to_leaves": 8,
+   "leaves": [
+    183,
+    191
+   ],
+   "wood": [
+    65,
+    42
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_09": {
+   "size": [
+    [
+     16,
+     12,
+     16
+    ],
+    [
+     16,
+     7,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    4
+   ],
+   "crown_top": 6,
+   "logs_removed": 22,
+   "logs_to_leaves": 4,
+   "leaves": [
+    199,
+    203
+   ],
+   "wood": [
+    62,
+    40
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_10": {
+   "size": [
+    [
+     13,
+     12,
+     14
+    ],
+    [
+     13,
+     9,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 20,
+   "logs_to_leaves": 4,
+   "leaves": [
+    125,
+    129
+   ],
+   "wood": [
+    61,
+    41
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_11": {
+   "size": [
+    [
+     17,
+     12,
+     18
+    ],
+    [
+     17,
+     11,
+     18
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 21,
+   "logs_to_leaves": 12,
+   "leaves": [
+    171,
+    183
+   ],
+   "wood": [
+    72,
+    51
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_12": {
+   "size": [
+    [
+     13,
+     12,
+     16
+    ],
+    [
+     13,
+     9,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 22,
+   "logs_to_leaves": 4,
+   "leaves": [
+    188,
+    192
+   ],
+   "wood": [
+    67,
+    45
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_13": {
+   "size": [
+    [
+     16,
+     12,
+     17
+    ],
+    [
+     16,
+     10,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 9,
+   "logs_removed": 17,
+   "logs_to_leaves": 8,
+   "leaves": [
+    243,
+    251
+   ],
+   "wood": [
+    74,
+    57
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_14": {
+   "size": [
+    [
+     14,
+     12,
+     16
+    ],
+    [
+     14,
+     11,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 10,
+   "logs_removed": 23,
+   "logs_to_leaves": 17,
+   "leaves": [
+    168,
+    185
+   ],
+   "wood": [
+    70,
+    47
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_15": {
+   "size": [
+    [
+     17,
+     12,
+     14
+    ],
+    [
+     17,
+     7,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    4
+   ],
+   "crown_top": 6,
+   "logs_removed": 19,
+   "logs_to_leaves": 4,
+   "leaves": [
+    129,
+    133
+   ],
+   "wood": [
+    50,
+    31
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_16": {
+   "size": [
+    [
+     15,
+     12,
+     14
+    ],
+    [
+     15,
+     7,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    4
+   ],
+   "crown_top": 6,
+   "logs_removed": 34,
+   "logs_to_leaves": 8,
+   "leaves": [
+    98,
+    106
+   ],
+   "wood": [
+    70,
+    36
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_17": {
+   "size": [
+    [
+     14,
+     12,
+     16
+    ],
+    [
+     14,
+     7,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    5
+   ],
+   "crown_top": 6,
+   "logs_removed": 16,
+   "logs_to_leaves": 4,
+   "leaves": [
+    112,
+    116
+   ],
+   "wood": [
+    58,
+    42
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_18": {
+   "size": [
+    [
+     15,
+     12,
+     16
+    ],
+    [
+     15,
+     9,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 22,
+   "logs_to_leaves": 6,
+   "leaves": [
+    257,
+    263
+   ],
+   "wood": [
+    62,
+    40
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_19": {
+   "size": [
+    [
+     12,
+     12,
+     12
+    ],
+    [
+     12,
+     8,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 7,
+   "logs_removed": 27,
+   "logs_to_leaves": 8,
+   "leaves": [
+    164,
+    172
+   ],
+   "wood": [
+    67,
+    40
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_20": {
+   "size": [
+    [
+     16,
+     12,
+     19
+    ],
+    [
+     16,
+     9,
+     19
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 22,
+   "logs_to_leaves": 8,
+   "leaves": [
+    153,
+    161
+   ],
+   "wood": [
+    71,
+    49
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_21": {
+   "size": [
+    [
+     14,
+     12,
+     15
+    ],
+    [
+     14,
+     8,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    5
+   ],
+   "crown_top": 7,
+   "logs_removed": 21,
+   "logs_to_leaves": 6,
+   "leaves": [
+    337,
+    343
+   ],
+   "wood": [
+    55,
+    34
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_22": {
+   "size": [
+    [
+     15,
+     12,
+     12
+    ],
+    [
+     15,
+     7,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    5
+   ],
+   "crown_top": 6,
+   "logs_removed": 26,
+   "logs_to_leaves": 8,
+   "leaves": [
+    151,
+    159
+   ],
+   "wood": [
+    59,
+    33
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_23": {
+   "size": [
+    [
+     18,
+     12,
+     20
+    ],
+    [
+     18,
+     10,
+     20
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 9,
+   "logs_removed": 23,
+   "logs_to_leaves": 8,
+   "leaves": [
+    141,
+    149
+   ],
+   "wood": [
+    83,
+    60
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_24": {
+   "size": [
+    [
+     13,
+     12,
+     12
+    ],
+    [
+     13,
+     5,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    2
+   ],
+   "crown_top": 4,
+   "logs_removed": 27,
+   "logs_to_leaves": 6,
+   "leaves": [
+    117,
+    123
+   ],
+   "wood": [
+    46,
+    19
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_25": {
+   "size": [
+    [
+     15,
+     12,
+     14
+    ],
+    [
+     15,
+     7,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    4
+   ],
+   "crown_top": 6,
+   "logs_removed": 24,
+   "logs_to_leaves": 8,
+   "leaves": [
+    211,
+    219
+   ],
+   "wood": [
+    62,
+    38
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_26": {
+   "size": [
+    [
+     18,
+     12,
+     16
+    ],
+    [
+     18,
+     10,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    7
+   ],
+   "crown_top": 9,
+   "logs_removed": 13,
+   "logs_to_leaves": 8,
+   "leaves": [
+    150,
+    158
+   ],
+   "wood": [
+    74,
+    61
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_27": {
+   "size": [
+    [
+     15,
+     12,
+     16
+    ],
+    [
+     15,
+     9,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 14,
+   "logs_to_leaves": 4,
+   "leaves": [
+    179,
+    183
+   ],
+   "wood": [
+    59,
+    45
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_28": {
+   "size": [
+    [
+     13,
+     12,
+     16
+    ],
+    [
+     13,
+     9,
+     16
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    6
+   ],
+   "crown_top": 8,
+   "logs_removed": 17,
+   "logs_to_leaves": 8,
+   "leaves": [
+    210,
+    218
+   ],
+   "wood": [
+    61,
+    44
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_29": {
+   "size": [
+    [
+     13,
+     12,
+     17
+    ],
+    [
+     13,
+     10,
+     17
+    ]
+   ],
+   "trunk_tip": [
+    10,
+    6
+   ],
+   "crown_top": 9,
+   "logs_removed": 31,
+   "logs_to_leaves": 12,
+   "leaves": [
+    96,
+    108
+   ],
+   "wood": [
+    77,
+    46
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_30": {
+   "size": [
+    [
+     18,
+     12,
+     18
+    ],
+    [
+     18,
+     8,
+     18
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    5
+   ],
+   "crown_top": 7,
+   "logs_removed": 21,
+   "logs_to_leaves": 4,
+   "leaves": [
+    125,
+    129
+   ],
+   "wood": [
+    61,
+    40
+   ],
+   "root_fix": false
+  },
+  "pale_oak_elder_31": {
+   "size": [
+    [
+     16,
+     12,
+     15
+    ],
+    [
+     16,
+     8,
+     15
+    ]
+   ],
+   "trunk_tip": [
+    11,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 31,
+   "logs_to_leaves": 12,
+   "leaves": [
+    197,
+    209
+   ],
+   "wood": [
+    72,
+    41
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_00": {
+   "size": [
+    [
+     10,
+     32,
+     10
+    ],
+    [
+     10,
+     32,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    29,
+    27
+   ],
+   "crown_top": 31,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    581,
+    583
+   ],
+   "wood": [
+    200,
+    198
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_01": {
+   "size": [
+    [
+     12,
+     29,
+     12
+    ],
+    [
+     12,
+     29,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    573,
+    575
+   ],
+   "wood": [
+    201,
+    199
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_02": {
+   "size": [
+    [
+     12,
+     30,
+     12
+    ],
+    [
+     12,
+     30,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    25
+   ],
+   "crown_top": 29,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    591,
+    593
+   ],
+   "wood": [
+    223,
+    221
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_03": {
+   "size": [
+    [
+     12,
+     29,
+     12
+    ],
+    [
+     12,
+     29,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    570,
+    572
+   ],
+   "wood": [
+    213,
+    211
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_04": {
+   "size": [
+    [
+     12,
+     32,
+     13
+    ],
+    [
+     12,
+     32,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    29,
+    27
+   ],
+   "crown_top": 31,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    709,
+    711
+   ],
+   "wood": [
+    232,
+    230
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_05": {
+   "size": [
+    [
+     13,
+     32,
+     12
+    ],
+    [
+     13,
+     32,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    29,
+    27
+   ],
+   "crown_top": 31,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    611,
+    613
+   ],
+   "wood": [
+    224,
+    222
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_06": {
+   "size": [
+    [
+     12,
+     35,
+     12
+    ],
+    [
+     12,
+     35,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    32,
+    30
+   ],
+   "crown_top": 34,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    693,
+    695
+   ],
+   "wood": [
+    247,
+    245
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_07": {
+   "size": [
+    [
+     13,
+     29,
+     13
+    ],
+    [
+     13,
+     29,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    603,
+    605
+   ],
+   "wood": [
+    216,
+    214
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_08": {
+   "size": [
+    [
+     13,
+     30,
+     13
+    ],
+    [
+     13,
+     30,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    25
+   ],
+   "crown_top": 29,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    620,
+    622
+   ],
+   "wood": [
+    232,
+    230
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_09": {
+   "size": [
+    [
+     10,
+     32,
+     10
+    ],
+    [
+     10,
+     32,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    29,
+    27
+   ],
+   "crown_top": 31,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    553,
+    555
+   ],
+   "wood": [
+    190,
+    188
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_10": {
+   "size": [
+    [
+     13,
+     31,
+     13
+    ],
+    [
+     13,
+     31,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    28,
+    26
+   ],
+   "crown_top": 30,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    685,
+    687
+   ],
+   "wood": [
+    241,
+    239
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_11": {
+   "size": [
+    [
+     12,
+     33,
+     12
+    ],
+    [
+     12,
+     33,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    30,
+    28
+   ],
+   "crown_top": 32,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    614,
+    616
+   ],
+   "wood": [
+    221,
+    219
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_12": {
+   "size": [
+    [
+     14,
+     30,
+     13
+    ],
+    [
+     14,
+     30,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    25
+   ],
+   "crown_top": 29,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    670,
+    672
+   ],
+   "wood": [
+    247,
+    245
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_13": {
+   "size": [
+    [
+     12,
+     35,
+     12
+    ],
+    [
+     12,
+     35,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    32,
+    30
+   ],
+   "crown_top": 34,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    683,
+    685
+   ],
+   "wood": [
+    245,
+    243
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_14": {
+   "size": [
+    [
+     10,
+     34,
+     10
+    ],
+    [
+     10,
+     34,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    31,
+    29
+   ],
+   "crown_top": 33,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    579,
+    581
+   ],
+   "wood": [
+    224,
+    222
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_15": {
+   "size": [
+    [
+     12,
+     33,
+     11
+    ],
+    [
+     12,
+     33,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    30,
+    28
+   ],
+   "crown_top": 32,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    602,
+    604
+   ],
+   "wood": [
+    218,
+    216
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_16": {
+   "size": [
+    [
+     12,
+     33,
+     12
+    ],
+    [
+     12,
+     33,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    30,
+    28
+   ],
+   "crown_top": 32,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    646,
+    648
+   ],
+   "wood": [
+    244,
+    242
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_17": {
+   "size": [
+    [
+     13,
+     33,
+     14
+    ],
+    [
+     13,
+     33,
+     14
+    ]
+   ],
+   "trunk_tip": [
+    30,
+    28
+   ],
+   "crown_top": 32,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    696,
+    698
+   ],
+   "wood": [
+    258,
+    256
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_18": {
+   "size": [
+    [
+     10,
+     30,
+     11
+    ],
+    [
+     10,
+     30,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    25
+   ],
+   "crown_top": 29,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    548,
+    550
+   ],
+   "wood": [
+    213,
+    211
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_19": {
+   "size": [
+    [
+     12,
+     34,
+     13
+    ],
+    [
+     12,
+     34,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    31,
+    29
+   ],
+   "crown_top": 33,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    682,
+    684
+   ],
+   "wood": [
+    261,
+    259
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_20": {
+   "size": [
+    [
+     13,
+     33,
+     13
+    ],
+    [
+     13,
+     33,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    30,
+    28
+   ],
+   "crown_top": 32,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    649,
+    651
+   ],
+   "wood": [
+    220,
+    218
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_21": {
+   "size": [
+    [
+     10,
+     29,
+     11
+    ],
+    [
+     10,
+     29,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    521,
+    523
+   ],
+   "wood": [
+    188,
+    186
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_22": {
+   "size": [
+    [
+     11,
+     30,
+     11
+    ],
+    [
+     11,
+     30,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    25
+   ],
+   "crown_top": 29,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    571,
+    573
+   ],
+   "wood": [
+    207,
+    205
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_23": {
+   "size": [
+    [
+     12,
+     31,
+     11
+    ],
+    [
+     12,
+     31,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    28,
+    26
+   ],
+   "crown_top": 30,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    554,
+    556
+   ],
+   "wood": [
+    208,
+    206
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_24": {
+   "size": [
+    [
+     11,
+     35,
+     11
+    ],
+    [
+     11,
+     35,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    32,
+    30
+   ],
+   "crown_top": 34,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    642,
+    644
+   ],
+   "wood": [
+    204,
+    202
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_25": {
+   "size": [
+    [
+     10,
+     34,
+     10
+    ],
+    [
+     10,
+     34,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    31,
+    29
+   ],
+   "crown_top": 33,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    602,
+    604
+   ],
+   "wood": [
+    228,
+    226
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_26": {
+   "size": [
+    [
+     14,
+     29,
+     13
+    ],
+    [
+     14,
+     29,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    569,
+    571
+   ],
+   "wood": [
+    205,
+    203
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_27": {
+   "size": [
+    [
+     13,
+     33,
+     11
+    ],
+    [
+     13,
+     33,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    30,
+    28
+   ],
+   "crown_top": 32,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    623,
+    625
+   ],
+   "wood": [
+    244,
+    242
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_28": {
+   "size": [
+    [
+     10,
+     31,
+     10
+    ],
+    [
+     10,
+     31,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    28,
+    26
+   ],
+   "crown_top": 30,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    532,
+    534
+   ],
+   "wood": [
+    188,
+    186
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_29": {
+   "size": [
+    [
+     14,
+     29,
+     13
+    ],
+    [
+     14,
+     29,
+     13
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    643,
+    645
+   ],
+   "wood": [
+    244,
+    242
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_30": {
+   "size": [
+    [
+     11,
+     34,
+     11
+    ],
+    [
+     11,
+     34,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    31,
+    29
+   ],
+   "crown_top": 33,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    605,
+    607
+   ],
+   "wood": [
+    213,
+    211
+   ],
+   "root_fix": false
+  },
+  "spruce_elder_31": {
+   "size": [
+    [
+     12,
+     32,
+     12
+    ],
+    [
+     12,
+     32,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    29,
+    27
+   ],
+   "crown_top": 31,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    633,
+    635
+   ],
+   "wood": [
+    221,
+    219
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_00": {
+   "size": [
+    [
+     10,
+     22,
+     11
+    ],
+    [
+     10,
+     22,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    20,
+    17
+   ],
+   "crown_top": 21,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    395,
+    398
+   ],
+   "wood": [
+    21,
+    18
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_01": {
+   "size": [
+    [
+     9,
+     23,
+     9
+    ],
+    [
+     9,
+     23,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    18
+   ],
+   "crown_top": 22,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    342,
+    345
+   ],
+   "wood": [
+    22,
+    19
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_02": {
+   "size": [
+    [
+     9,
+     20,
+     9
+    ],
+    [
+     9,
+     20,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    17,
+    15
+   ],
+   "crown_top": 19,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    271,
+    273
+   ],
+   "wood": [
+    18,
+    16
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_03": {
+   "size": [
+    [
+     9,
+     24,
+     8
+    ],
+    [
+     9,
+     24,
+     8
+    ]
+   ],
+   "trunk_tip": [
+    22,
+    19
+   ],
+   "crown_top": 23,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    200,
+    203
+   ],
+   "wood": [
+    23,
+    20
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_04": {
+   "size": [
+    [
+     9,
+     24,
+     9
+    ],
+    [
+     9,
+     24,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    22,
+    19
+   ],
+   "crown_top": 23,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    371,
+    374
+   ],
+   "wood": [
+    23,
+    20
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_05": {
+   "size": [
+    [
+     11,
+     25,
+     11
+    ],
+    [
+     11,
+     25,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    22,
+    20
+   ],
+   "crown_top": 24,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    465,
+    467
+   ],
+   "wood": [
+    23,
+    21
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_06": {
+   "size": [
+    [
+     10,
+     25,
+     10
+    ],
+    [
+     10,
+     25,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    22,
+    20
+   ],
+   "crown_top": 24,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    426,
+    428
+   ],
+   "wood": [
+    23,
+    21
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_07": {
+   "size": [
+    [
+     7,
+     23,
+     7
+    ],
+    [
+     7,
+     23,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    18
+   ],
+   "crown_top": 22,
+   "logs_removed": 5,
+   "logs_to_leaves": 5,
+   "leaves": [
+    176,
+    181
+   ],
+   "wood": [
+    24,
+    19
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_08": {
+   "size": [
+    [
+     9,
+     21,
+     9
+    ],
+    [
+     9,
+     21,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    19,
+    16
+   ],
+   "crown_top": 20,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    293,
+    296
+   ],
+   "wood": [
+    20,
+    17
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_09": {
+   "size": [
+    [
+     9,
+     22,
+     9
+    ],
+    [
+     9,
+     22,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    19,
+    17
+   ],
+   "crown_top": 21,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    325,
+    327
+   ],
+   "wood": [
+    20,
+    18
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_10": {
+   "size": [
+    [
+     9,
+     23,
+     9
+    ],
+    [
+     9,
+     23,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    20,
+    18
+   ],
+   "crown_top": 22,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    382,
+    384
+   ],
+   "wood": [
+    21,
+    19
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_11": {
+   "size": [
+    [
+     7,
+     26,
+     7
+    ],
+    [
+     7,
+     26,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    23,
+    21
+   ],
+   "crown_top": 25,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    153,
+    155
+   ],
+   "wood": [
+    24,
+    22
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_12": {
+   "size": [
+    [
+     9,
+     23,
+     9
+    ],
+    [
+     9,
+     23,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    20,
+    18
+   ],
+   "crown_top": 22,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    357,
+    359
+   ],
+   "wood": [
+    21,
+    19
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_13": {
+   "size": [
+    [
+     9,
+     19,
+     9
+    ],
+    [
+     9,
+     19,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    16,
+    14
+   ],
+   "crown_top": 18,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    265,
+    267
+   ],
+   "wood": [
+    17,
+    15
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_14": {
+   "size": [
+    [
+     9,
+     25,
+     9
+    ],
+    [
+     9,
+     25,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    23,
+    20
+   ],
+   "crown_top": 24,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    385,
+    388
+   ],
+   "wood": [
+    24,
+    21
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_15": {
+   "size": [
+    [
+     9,
+     26,
+     9
+    ],
+    [
+     9,
+     26,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    24,
+    21
+   ],
+   "crown_top": 25,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    196,
+    199
+   ],
+   "wood": [
+    25,
+    22
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_16": {
+   "size": [
+    [
+     9,
+     21,
+     9
+    ],
+    [
+     9,
+     21,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    19,
+    16
+   ],
+   "crown_top": 20,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    340,
+    343
+   ],
+   "wood": [
+    20,
+    17
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_17": {
+   "size": [
+    [
+     9,
+     23,
+     9
+    ],
+    [
+     9,
+     23,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    20,
+    18
+   ],
+   "crown_top": 22,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    324,
+    326
+   ],
+   "wood": [
+    21,
+    19
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_18": {
+   "size": [
+    [
+     9,
+     24,
+     9
+    ],
+    [
+     9,
+     24,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    19
+   ],
+   "crown_top": 23,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    353,
+    355
+   ],
+   "wood": [
+    22,
+    20
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_19": {
+   "size": [
+    [
+     7,
+     24,
+     7
+    ],
+    [
+     7,
+     24,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    19
+   ],
+   "crown_top": 23,
+   "logs_removed": 4,
+   "logs_to_leaves": 4,
+   "leaves": [
+    157,
+    161
+   ],
+   "wood": [
+    24,
+    20
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_20": {
+   "size": [
+    [
+     9,
+     23,
+     9
+    ],
+    [
+     9,
+     23,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    20,
+    18
+   ],
+   "crown_top": 22,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    351,
+    353
+   ],
+   "wood": [
+    21,
+    19
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_21": {
+   "size": [
+    [
+     9,
+     22,
+     9
+    ],
+    [
+     9,
+     22,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    19,
+    17
+   ],
+   "crown_top": 21,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    355,
+    357
+   ],
+   "wood": [
+    20,
+    18
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_22": {
+   "size": [
+    [
+     10,
+     27,
+     10
+    ],
+    [
+     10,
+     27,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    25,
+    22
+   ],
+   "crown_top": 26,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    479,
+    482
+   ],
+   "wood": [
+    26,
+    23
+   ],
+   "root_fix": false
+  },
+  "spruce_mature_23": {
+   "size": [
+    [
+     9,
+     20,
+     9
+    ],
+    [
+     9,
+     20,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    17,
+    15
+   ],
+   "crown_top": 19,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    166,
+    168
+   ],
+   "wood": [
+    18,
+    16
+   ],
+   "root_fix": false
+  },
+  "spruce_old_00": {
+   "size": [
+    [
+     9,
+     28,
+     9
+    ],
+    [
+     9,
+     28,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    25,
+    23
+   ],
+   "crown_top": 27,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    481,
+    483
+   ],
+   "wood": [
+    26,
+    24
+   ],
+   "root_fix": false
+  },
+  "spruce_old_01": {
+   "size": [
+    [
+     12,
+     31,
+     11
+    ],
+    [
+     12,
+     31,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    29,
+    26
+   ],
+   "crown_top": 30,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    689,
+    692
+   ],
+   "wood": [
+    30,
+    27
+   ],
+   "root_fix": false
+  },
+  "spruce_old_02": {
+   "size": [
+    [
+     12,
+     31,
+     12
+    ],
+    [
+     12,
+     31,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    28,
+    26
+   ],
+   "crown_top": 30,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    637,
+    639
+   ],
+   "wood": [
+    29,
+    27
+   ],
+   "root_fix": false
+  },
+  "spruce_old_03": {
+   "size": [
+    [
+     12,
+     30,
+     11
+    ],
+    [
+     12,
+     30,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    28,
+    25
+   ],
+   "crown_top": 29,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    595,
+    598
+   ],
+   "wood": [
+    29,
+    26
+   ],
+   "root_fix": false
+  },
+  "spruce_old_04": {
+   "size": [
+    [
+     11,
+     31,
+     10
+    ],
+    [
+     11,
+     31,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    29,
+    26
+   ],
+   "crown_top": 30,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    601,
+    604
+   ],
+   "wood": [
+    30,
+    27
+   ],
+   "root_fix": false
+  },
+  "spruce_old_05": {
+   "size": [
+    [
+     11,
+     24,
+     10
+    ],
+    [
+     11,
+     24,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    22,
+    19
+   ],
+   "crown_top": 23,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    433,
+    436
+   ],
+   "wood": [
+    23,
+    20
+   ],
+   "root_fix": false
+  },
+  "spruce_old_06": {
+   "size": [
+    [
+     11,
+     28,
+     12
+    ],
+    [
+     11,
+     28,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    25,
+    23
+   ],
+   "crown_top": 27,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    516,
+    518
+   ],
+   "wood": [
+    26,
+    24
+   ],
+   "root_fix": false
+  },
+  "spruce_old_07": {
+   "size": [
+    [
+     11,
+     27,
+     11
+    ],
+    [
+     11,
+     27,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    25,
+    22
+   ],
+   "crown_top": 26,
+   "logs_removed": 5,
+   "logs_to_leaves": 5,
+   "leaves": [
+    566,
+    571
+   ],
+   "wood": [
+    28,
+    23
+   ],
+   "root_fix": false
+  },
+  "spruce_old_08": {
+   "size": [
+    [
+     9,
+     28,
+     10
+    ],
+    [
+     9,
+     28,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    23
+   ],
+   "crown_top": 27,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    520,
+    523
+   ],
+   "wood": [
+    27,
+    24
+   ],
+   "root_fix": false
+  },
+  "spruce_old_09": {
+   "size": [
+    [
+     11,
+     26,
+     11
+    ],
+    [
+     11,
+     26,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    23,
+    21
+   ],
+   "crown_top": 25,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    485,
+    487
+   ],
+   "wood": [
+    24,
+    22
+   ],
+   "root_fix": false
+  },
+  "spruce_old_10": {
+   "size": [
+    [
+     10,
+     25,
+     11
+    ],
+    [
+     10,
+     25,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    22,
+    20
+   ],
+   "crown_top": 24,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    471,
+    473
+   ],
+   "wood": [
+    23,
+    21
+   ],
+   "root_fix": false
+  },
+  "spruce_old_11": {
+   "size": [
+    [
+     11,
+     25,
+     12
+    ],
+    [
+     11,
+     25,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    23,
+    20
+   ],
+   "crown_top": 24,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    483,
+    486
+   ],
+   "wood": [
+    24,
+    21
+   ],
+   "root_fix": false
+  },
+  "spruce_old_12": {
+   "size": [
+    [
+     10,
+     29,
+     9
+    ],
+    [
+     10,
+     29,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    516,
+    519
+   ],
+   "wood": [
+    28,
+    25
+   ],
+   "root_fix": false
+  },
+  "spruce_old_13": {
+   "size": [
+    [
+     10,
+     28,
+     12
+    ],
+    [
+     10,
+     28,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    23
+   ],
+   "crown_top": 27,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    580,
+    583
+   ],
+   "wood": [
+    27,
+    24
+   ],
+   "root_fix": false
+  },
+  "spruce_old_14": {
+   "size": [
+    [
+     12,
+     29,
+     11
+    ],
+    [
+     12,
+     29,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    582,
+    585
+   ],
+   "wood": [
+    28,
+    25
+   ],
+   "root_fix": false
+  },
+  "spruce_old_15": {
+   "size": [
+    [
+     11,
+     26,
+     11
+    ],
+    [
+     11,
+     26,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    24,
+    21
+   ],
+   "crown_top": 25,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    494,
+    497
+   ],
+   "wood": [
+    25,
+    22
+   ],
+   "root_fix": false
+  },
+  "spruce_old_16": {
+   "size": [
+    [
+     11,
+     28,
+     12
+    ],
+    [
+     11,
+     28,
+     12
+    ]
+   ],
+   "trunk_tip": [
+    26,
+    23
+   ],
+   "crown_top": 27,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    549,
+    552
+   ],
+   "wood": [
+    27,
+    24
+   ],
+   "root_fix": false
+  },
+  "spruce_old_17": {
+   "size": [
+    [
+     10,
+     26,
+     11
+    ],
+    [
+     10,
+     26,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    24,
+    21
+   ],
+   "crown_top": 25,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    454,
+    457
+   ],
+   "wood": [
+    25,
+    22
+   ],
+   "root_fix": false
+  },
+  "spruce_old_18": {
+   "size": [
+    [
+     11,
+     31,
+     11
+    ],
+    [
+     11,
+     31,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    28,
+    26
+   ],
+   "crown_top": 30,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    598,
+    600
+   ],
+   "wood": [
+    29,
+    27
+   ],
+   "root_fix": false
+  },
+  "spruce_old_19": {
+   "size": [
+    [
+     9,
+     28,
+     9
+    ],
+    [
+     9,
+     28,
+     9
+    ]
+   ],
+   "trunk_tip": [
+    25,
+    23
+   ],
+   "crown_top": 27,
+   "logs_removed": 4,
+   "logs_to_leaves": 4,
+   "leaves": [
+    490,
+    494
+   ],
+   "wood": [
+    28,
+    24
+   ],
+   "root_fix": false
+  },
+  "spruce_old_20": {
+   "size": [
+    [
+     9,
+     26,
+     10
+    ],
+    [
+     9,
+     26,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    24,
+    21
+   ],
+   "crown_top": 25,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    472,
+    475
+   ],
+   "wood": [
+    25,
+    22
+   ],
+   "root_fix": false
+  },
+  "spruce_old_21": {
+   "size": [
+    [
+     9,
+     29,
+     10
+    ],
+    [
+     9,
+     29,
+     10
+    ]
+   ],
+   "trunk_tip": [
+    27,
+    24
+   ],
+   "crown_top": 28,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    538,
+    541
+   ],
+   "wood": [
+    28,
+    25
+   ],
+   "root_fix": false
+  },
+  "spruce_old_22": {
+   "size": [
+    [
+     11,
+     23,
+     11
+    ],
+    [
+     11,
+     23,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    21,
+    18
+   ],
+   "crown_top": 22,
+   "logs_removed": 3,
+   "logs_to_leaves": 3,
+   "leaves": [
+    462,
+    465
+   ],
+   "wood": [
+    22,
+    19
+   ],
+   "root_fix": false
+  },
+  "spruce_old_23": {
+   "size": [
+    [
+     11,
+     27,
+     11
+    ],
+    [
+     11,
+     27,
+     11
+    ]
+   ],
+   "trunk_tip": [
+    24,
+    22
+   ],
+   "crown_top": 26,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    548,
+    550
+   ],
+   "wood": [
+    25,
+    23
+   ],
+   "root_fix": false
+  },
+  "spruce_young_00": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    88,
+    89
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "spruce_young_01": {
+   "size": [
+    [
+     5,
+     10,
+     5
+    ],
+    [
+     5,
+     10,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    6
+   ],
+   "crown_top": 9,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    123,
+    125
+   ],
+   "wood": [
+    9,
+    7
+   ],
+   "root_fix": false
+  },
+  "spruce_young_02": {
+   "size": [
+    [
+     5,
+     8,
+     5
+    ],
+    [
+     5,
+     8,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    55,
+    57
+   ],
+   "wood": [
+    7,
+    5
+   ],
+   "root_fix": false
+  },
+  "spruce_young_03": {
+   "size": [
+    [
+     5,
+     10,
+     5
+    ],
+    [
+     5,
+     10,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    6
+   ],
+   "crown_top": 9,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    114,
+    115
+   ],
+   "wood": [
+    8,
+    7
+   ],
+   "root_fix": false
+  },
+  "spruce_young_04": {
+   "size": [
+    [
+     5,
+     9,
+     6
+    ],
+    [
+     5,
+     9,
+     6
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    116,
+    118
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "spruce_young_05": {
+   "size": [
+    [
+     5,
+     10,
+     5
+    ],
+    [
+     5,
+     10,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    6
+   ],
+   "crown_top": 9,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    134,
+    136
+   ],
+   "wood": [
+    9,
+    7
+   ],
+   "root_fix": false
+  },
+  "spruce_young_06": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    98,
+    100
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "spruce_young_07": {
+   "size": [
+    [
+     7,
+     11,
+     7
+    ],
+    [
+     7,
+     11,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 4,
+   "logs_to_leaves": 4,
+   "leaves": [
+    163,
+    167
+   ],
+   "wood": [
+    12,
+    8
+   ],
+   "root_fix": false
+  },
+  "spruce_young_08": {
+   "size": [
+    [
+     5,
+     7,
+     5
+    ],
+    [
+     5,
+     7,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    4,
+    3
+   ],
+   "crown_top": 6,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    38,
+    39
+   ],
+   "wood": [
+    5,
+    4
+   ],
+   "root_fix": false
+  },
+  "spruce_young_09": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    83,
+    84
+   ],
+   "wood": [
+    7,
+    6
+   ],
+   "root_fix": false
+  },
+  "spruce_young_10": {
+   "size": [
+    [
+     5,
+     8,
+     5
+    ],
+    [
+     5,
+     8,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    5,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    69,
+    70
+   ],
+   "wood": [
+    6,
+    5
+   ],
+   "root_fix": false
+  },
+  "spruce_young_11": {
+   "size": [
+    [
+     5,
+     9,
+     5
+    ],
+    [
+     5,
+     9,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    5
+   ],
+   "crown_top": 8,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    106,
+    108
+   ],
+   "wood": [
+    8,
+    6
+   ],
+   "root_fix": false
+  },
+  "spruce_young_12": {
+   "size": [
+    [
+     5,
+     8,
+     5
+    ],
+    [
+     5,
+     8,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    5,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    71,
+    72
+   ],
+   "wood": [
+    6,
+    5
+   ],
+   "root_fix": false
+  },
+  "spruce_young_13": {
+   "size": [
+    [
+     7,
+     10,
+     7
+    ],
+    [
+     7,
+     10,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    7,
+    6
+   ],
+   "crown_top": 9,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    138,
+    139
+   ],
+   "wood": [
+    8,
+    7
+   ],
+   "root_fix": false
+  },
+  "spruce_young_14": {
+   "size": [
+    [
+     5,
+     11,
+     5
+    ],
+    [
+     5,
+     11,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    97,
+    98
+   ],
+   "wood": [
+    9,
+    8
+   ],
+   "root_fix": false
+  },
+  "spruce_young_15": {
+   "size": [
+    [
+     5,
+     8,
+     5
+    ],
+    [
+     5,
+     8,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    77,
+    79
+   ],
+   "wood": [
+    7,
+    5
+   ],
+   "root_fix": false
+  },
+  "spruce_young_16": {
+   "size": [
+    [
+     7,
+     11,
+     7
+    ],
+    [
+     7,
+     11,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    9,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    158,
+    160
+   ],
+   "wood": [
+    10,
+    8
+   ],
+   "root_fix": false
+  },
+  "spruce_young_17": {
+   "size": [
+    [
+     7,
+     11,
+     7
+    ],
+    [
+     7,
+     11,
+     7
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    148,
+    149
+   ],
+   "wood": [
+    9,
+    8
+   ],
+   "root_fix": false
+  },
+  "spruce_young_18": {
+   "size": [
+    [
+     5,
+     7,
+     5
+    ],
+    [
+     5,
+     7,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    4,
+    3
+   ],
+   "crown_top": 6,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    51,
+    52
+   ],
+   "wood": [
+    5,
+    4
+   ],
+   "root_fix": false
+  },
+  "spruce_young_19": {
+   "size": [
+    [
+     5,
+     10,
+     5
+    ],
+    [
+     5,
+     10,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    6
+   ],
+   "crown_top": 9,
+   "logs_removed": 4,
+   "logs_to_leaves": 4,
+   "leaves": [
+    111,
+    115
+   ],
+   "wood": [
+    11,
+    7
+   ],
+   "root_fix": false
+  },
+  "spruce_young_20": {
+   "size": [
+    [
+     5,
+     8,
+     5
+    ],
+    [
+     5,
+     8,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    6,
+    4
+   ],
+   "crown_top": 7,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    56,
+    58
+   ],
+   "wood": [
+    7,
+    5
+   ],
+   "root_fix": false
+  },
+  "spruce_young_21": {
+   "size": [
+    [
+     5,
+     11,
+     5
+    ],
+    [
+     5,
+     11,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    7
+   ],
+   "crown_top": 10,
+   "logs_removed": 1,
+   "logs_to_leaves": 1,
+   "leaves": [
+    130,
+    131
+   ],
+   "wood": [
+    9,
+    8
+   ],
+   "root_fix": false
+  },
+  "spruce_young_22": {
+   "size": [
+    [
+     5,
+     7,
+     5
+    ],
+    [
+     5,
+     7,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    5,
+    3
+   ],
+   "crown_top": 6,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    47,
+    49
+   ],
+   "wood": [
+    6,
+    4
+   ],
+   "root_fix": false
+  },
+  "spruce_young_23": {
+   "size": [
+    [
+     5,
+     10,
+     5
+    ],
+    [
+     5,
+     10,
+     5
+    ]
+   ],
+   "trunk_tip": [
+    8,
+    6
+   ],
+   "crown_top": 9,
+   "logs_removed": 2,
+   "logs_to_leaves": 2,
+   "leaves": [
+    112,
+    114
+   ],
+   "wood": [
+    9,
+    7
+   ],
+   "root_fix": false
+  }
+ }
+}

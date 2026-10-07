@@ -1,0 +1,101 @@
+{
+ "oak": {
+  "logs": 10,
+  "leaves": 76,
+  "cards_only": 40,
+  "full": 36,
+  "second_set": 59,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "birch": {
+  "logs": 8,
+  "leaves": 40,
+  "cards_only": 23,
+  "full": 17,
+  "second_set": 31,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "spruce": {
+  "logs": 11,
+  "leaves": 81,
+  "cards_only": 0,
+  "full": 81,
+  "second_set": 60,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "jungle": {
+  "logs": 15,
+  "leaves": 113,
+  "cards_only": 60,
+  "full": 53,
+  "second_set": 101,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "acacia": {
+  "logs": 9,
+  "leaves": 54,
+  "cards_only": 30,
+  "full": 24,
+  "second_set": 51,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "dark_oak": {
+  "logs": 32,
+  "leaves": 129,
+  "cards_only": 58,
+  "full": 71,
+  "second_set": 105,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "mangrove": {
+  "logs": 12,
+  "leaves": 93,
+  "cards_only": 37,
+  "full": 56,
+  "second_set": 82,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "cherry": {
+  "logs": 9,
+  "leaves": 97,
+  "cards_only": 37,
+  "full": 60,
+  "second_set": 87,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "pale_oak": {
+  "logs": 32,
+  "leaves": 129,
+  "cards_only": 63,
+  "full": 66,
+  "second_set": 103,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "azalea": {
+  "logs": 3,
+  "leaves": 45,
+  "cards_only": 16,
+  "full": 29,
+  "second_set": 40,
+  "face_tiles": 6,
+  "card_tiles": 4
+ },
+ "flowering_azalea": {
+  "logs": 3,
+  "leaves": 45,
+  "cards_only": 16,
+  "full": 29,
+  "second_set": 41,
+  "face_tiles": 6,
+  "card_tiles": 4
+ }
+}

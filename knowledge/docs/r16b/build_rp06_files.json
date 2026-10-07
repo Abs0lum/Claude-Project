@@ -1,0 +1,17 @@
+{
+ "changed": [
+  "entity/hoglin.entity.json",
+  "entity/zoglin.entity.json",
+  "models/entity/hoglin.geo.json",
+  "models/entity/zoglin.geo.json"
+ ],
+ "added": [
+  "animations/pw_hoglin_jem.animation.json",
+  "animations/pw_zoglin_jem.animation.json"
+ ],
+ "removed": [],
+ "ports": {
+  "hoglin": [],
+  "zoglin": []
+ }
+}

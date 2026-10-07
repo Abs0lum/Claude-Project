@@ -1,0 +1,122 @@
+NO LOG FILE! - Failed to up file descriptor limit Operation not permitted
+NO LOG FILE! - setting up server logging...
+[2026-10-02 22:33:10:634 INFO] Starting Server
+[2026-10-02 22:33:10:634 INFO] Version: 1.26.52.3
+[2026-10-02 22:33:10:635 INFO] Session ID: c070ea21-9a5b-44af-b957-f9687aa8cffc
+[2026-10-02 22:33:10:635 INFO] Build ID: 51798919
+[2026-10-02 22:33:10:635 INFO] Branch: r/26_u5
+[2026-10-02 22:33:10:635 INFO] Commit ID: 54116bb5ee0b7aee0b5591efbcc8bc3cf64f168a
+[2026-10-02 22:33:10:635 INFO] Configuration: Publish
+[2026-10-02 22:33:10:635 INFO] Contents of server.properties: {}
+[2026-10-02 22:33:10:635 INFO] Level Name: artest
+[2026-10-02 22:33:10:636 INFO] Profiler config ('bootstrap.json') load result: success=1, errorMessage=(null)
+[2026-10-02 22:33:10:637 INFO] No CDN config file found at: cdn_config.json for dedicated server
+[2026-10-02 22:33:10:637 INFO] Game mode: 0 Survival
+[2026-10-02 22:33:10:637 INFO] Difficulty: 1 EASY
+[2026-10-02 22:33:10:641 INFO] Content logging to console is enabled.
+[2026-10-02 22:33:10:643 INFO] 
+
+#####################################################
+#                                                   #
+#               LOADING VANILLA WORLD               #
+#                                                   #
+#####################################################
+[2026-10-02 22:33:12:082 INFO] Content logging to disk is enabled. Writing log to: ContentLog2026-10-02_22-33-12
+[2026-10-02 22:33:12:084 INFO] Opening level 'worlds/artest/db'
+[2026-10-02 22:33:12:139 INFO] Accepting clients on 0.0.0.0:19132
+[2026-10-02 22:33:12:884 INFO] Pack Stack - [00] AbsolutRealism Tectonic BP v1.3.205 (id: c3e09ed5-d121-40d1-9ea8-65b4701dbc67, version: 1.3.205) @ behavior_packs/pw_bp02-205
+[2026-10-02 22:33:12:884 INFO] Pack Stack - [01] PW StripMine BP v1.3.13 (id: 0caba18b-cb39-4c06-9057-d6587197d0ed, version: 1.3.13) @ behavior_packs/pw_stripmine-bp-1313
+[2026-10-02 22:33:12:884 INFO] Pack Stack - [02] AbsolutRealism Atmospheric Effects BP v1.3.35 (id: 2e7000fd-1751-455b-b061-54a79490d024, version: 1.3.35) @ behavior_packs/pw_bp01-135
+[2026-10-02 22:33:12:884 INFO] Pack Stack - [03] AbsolutRealism Identification Diagnostics BP v1.3.34 (id: 8f3e4d2a-5b7c-49e1-b3d8-6f9a2c5e1d70, version: 1.3.34) @ behavior_packs/pw_bp03-134
+[2026-10-02 22:33:12:884 INFO] Pack Stack - [04] PW Civitas Markers BP v0.2.1 (id: 449eed83-82d4-4d1b-a7a5-b8c006151bd5, version: 0.2.1) @ behavior_packs/pw_BP
+[2026-10-02 22:33:12:884 INFO] Pack Stack - [05] PW Test Runner BP v0.5.12 (id: 6b1f0c2e-9a47-4d3b-8e5c-2f7a9d1c4e60, version: 0.5.12) @ behavior_packs/pw_testrunner-0.5.12
+[2026-10-02 22:33:13:775 WARN] [Scripting] [PW-GROUND] module loaded — family of 5; riser conversion is OFF
+
+[2026-10-02 22:33:13:776 WARN] [Scripting] [PW-C2] companion v6 LOADED (pack v1.3.174 · expects RP-04 v1.3.115 · RP-08 v1.4.6 · RP-01 v1.3.100) — SEMANTICS v3 (maps re-derived) — Rules A-H armed, witness round pending
+
+[2026-10-02 22:33:13:776 WARN] [Scripting] [pw_furniture] ready — 12 pieces x 3 woods, seats 12, tables auto-join
+
+[2026-10-02 22:33:13:776 WARN] [Scripting] [BIGCANOPY-DIAG] MARKER-A v1.3.205 ghg6okz module entered — imports OK
+
+[2026-10-02 22:33:13:776 WARN] [Scripting] [PW-PERF] v1.3.205 ghg6okz throttle ACTIVE: TA_YIELD=400 P1_YIELD=400 BFS_BUDGET=300 BFS_MAX=1500 torch=20t
+
+[2026-10-02 22:33:13:776 INFO] [Scripting] [BIGCANOPY] v0.15.18 loaded — Fixes: yellow sand redesigned (continuous undulating beach dunes via Perlin height-field + directional Lambertian shading; HHH/KKK curve mix with mixed sigma 22-48; tier-based drama: small-σ tiles 78% calm + large-σ tiles 108% chaos; shadows confined to interior with sigma-tier inset 55-80px; peaks level out to neutral on all 4 edges with 18px fade; subtle sun-aligned streaks for natural blending); sand glimmer (1.2% emissive sparkles in MER G channel + low roughness for sun shimmer); sheep body south face uv_rotation:180 (sheep + sheep_wool); diamond/iron/gold/chainmail/netherite/leather/copper/turtle_scute armor copied to NEW Bedrock 1.21.70+ humanoid path
+
+[2026-10-02 22:33:13:776 INFO] [Scripting] [BIGCANOPY] dynamic held-torch lighting active
+
+[2026-10-02 22:33:13:777 WARN] [Scripting] [BIGCANOPY-DIAG] MARKER-B v1.3.205 ghg6okz scanner module loaded — 6 LAYERS y+0..y+42, tree-BFS, verify script, periodic stats (v0 vanilla-cube + scanner 22t/39t coprime)
+
+[2026-10-02 22:33:13:777 INFO] [Scripting] [BIGCANOPY] [pw_scanner] v1.2.52 layered+BFS scanner active — 40t base, 6 layers y+0..y+42, tree-BFS completion (800 cap), randomizer every cycle +5t, heartbeat 600t, verify 200t
+
+[2026-10-02 22:33:13:777 INFO] [Scripting] [BIGCANOPY] [pw_verify] v1.3.205 verification script active — 200t (10s) cadence, ±30 radius, all 6 layers
+
+[2026-10-02 22:33:13:777 INFO] [Scripting] [BIGCANOPY] [pw_stats] v1.3.205 periodic stats logger active — 1200t (60s) cadence while active, 5 min idle heartbeat; /scriptevent pw:stats off|on|now
+
+[2026-10-02 22:33:13:777 INFO] [Scripting] [BIGCANOPY] [pw_variants] scriptevent pw:variant_dump registered
+
+[2026-10-02 22:33:13:777 INFO] [Scripting] [BIGCANOPY] [firefly_ambient] active — pw:firefly_ambient spawns at night in swamp/mangrove biomes
+
+[2026-10-02 22:33:13:777 WARN] [Scripting] [BIGCANOPY-DIAG] MARKER-Z v1.3.205 ghg6okz reached end of main.js — all init complete (renamed from MARKER-F to end the F collision)
+
+[2026-10-02 22:33:13:777 WARN] [Scripting] [PW-VERSION] BP-02 v1.3.205 (iter 2026-08-21s) ghg6okz — crown aura: Resistance IV + flame + torch-grade dynamic light (toggles), protection 100
+
+[2026-10-02 22:33:13:777 WARN] [Scripting] [SLABSMOOTH] BOOT v1.3.174 (dormant until PW-SlabForge heartbeats) module loaded — interval=20t radius=20 band=±3
+
+[2026-10-02 22:33:13:783 WARN] [Scripting] [TREEGROW] BOOT v1.3.205 — interval=40t delay=2400t cap=6/chunk
+
+[2026-10-02 22:33:13:798 WARN] [Scripting] [PW Atmospheric] Tier 4 ambient sound system loaded — weather + cave + 80 biomes covered.
+
+[2026-10-02 22:33:13:798 WARN] [Scripting] [AbsolutRealism Sky] fog-stack scheduler loaded (v1.3.9) — idempotent 15s re-assert ACTIVE (stuck-fog self-heal + darkness discriminator).
+
+[2026-10-02 22:33:13:798 WARN] [Scripting] [PW-VERSION] BP-01 Atmospheric Effects v1.3.35 — version-flag law
+
+[2026-10-02 22:33:13:811 WARN] [Scripting] [PW-VERSION] BP-03 Identification Diagnostics v1.3.34 — version-flag law
+
+[2026-10-02 22:33:13:828 WARN] [Scripting] [CIVITAS-MARKERS] v0.2.1 markers are entities — 35 kinds (12 zones, 18 stations, 4 ports, datum); hatch lid probe; visible=true
+
+[2026-10-02 22:33:14:223 WARN] [Scripting] [PW-VERSION] PW Test Runner BP v0.5.11 · 26 lineups · main 48 p18 34 p19 98 p20 311 p21 1344 bump 3
+
+[2026-10-02 22:33:14:226 WARN] [Scripting] [CODEX] module loaded (v3, API-guarded)
+
+[2026-10-02 22:33:14:226 WARN] [Scripting] [PW-GROUND] custom component pw:ground_behaviour registered (onRandomTick + onPlayerInteract)
+
+[2026-10-02 22:33:14:226 WARN] [Scripting] [pw_homestead] custom components registered: pw:hearth, pw:flue, pw:wall_dual
+
+[2026-10-02 22:33:14:226 WARN] [Scripting] [pw_furniture] custom component pw:seat registered; tables: pw:furn_table_oak,pw:furn_table_spruce,pw:furn_table_dark_oak
+
+[2026-10-02 22:33:14:226 INFO] [Scripting] [BIGCANOPY] [pw_variants] custom component pw:randomize_variant registered (onPlace only)
+
+[2026-10-02 22:33:19:612 WARN] [Recipes] recipes/pw_wall_oak_planks.json | pw:wall_oak_planks | Recipe "pw:wall_oak_planks" has the same ingredients as pw:room_wall's recipe but outputs pw:wall_oak_planks instead. Adding duplicate crafting_table recipe.
+
+[2026-10-02 22:33:19:612 WARN] [Recipes] recipes/pw_wall_oak_planks.json | pw:wall_oak_planks | Recipe "pw:wall_oak_planks" has the same ingredients as pw:room_wall's recipe but outputs pw:wall_oak_planks instead. Adding duplicate pw:builders_table recipe.
+
+[2026-10-02 22:33:19:981 INFO] Signed in to signaling service successfully
+[2026-10-02 22:33:19:982 INFO] Server started.
+[2026-10-02 22:33:19:982 INFO] ================ TELEMETRY MESSAGE ===================
+[2026-10-02 22:33:19:982 INFO] Server Telemetry is currently not enabled. 
+[2026-10-02 22:33:19:982 INFO] Enabling this telemetry helps us improve the game.
+[2026-10-02 22:33:19:982 INFO] 
+[2026-10-02 22:33:19:982 INFO] To enable this feature, add the line 'emit-server-telemetry=true'
+[2026-10-02 22:33:19:982 INFO] to the server.properties file in the handheld/src-server directory
+[2026-10-02 22:33:19:982 INFO] ======================================================
+[2026-10-02 22:33:20:227 WARN] [Scripting] [pw_homestead] ledger loaded: 0 hearth(s)
+
+[2026-10-02 22:33:20:227 WARN] [Scripting] [pw_homestead] stuck-fog sweep (since v1.3.187) at boot: 0 player(s); room fog push OFF
+
+[2026-10-02 22:33:20:227 WARN] [Scripting] [pw_homestead] HOMESTEAD runtime up (cycle 40t, puff 4t, chute 1t, rafters 10t)
+
+[2026-10-02 22:33:20:228 WARN] [Scripting] [PW-MOBLIGHT] boot: 0 leftover light(s) cleared, 0 waiting for their chunk
+
+[2026-10-02 22:33:20:228 WARN] [Scripting] [PW-MOBLIGHT] active — blaze 13, magma_cube 10, glow_squid 6; 4t, range 48
+
+[2026-10-02 22:33:20:228 WARN] [Scripting] [SLABSMOOTH] ledgers loaded: deny=0 done_chunks=0 open_chunks=0
+
+[2026-10-02 22:33:20:228 WARN] [Scripting] [CIV] structure tests loaded — 1 building(s)
+
+[2026-10-02 22:33:21:326 WARN] [Scripting] [BIGCANOPY-DIAG] MARKER-C v1.3.205 ghg6okz phase-1 classify+toggle started
+
+[2026-10-02 22:33:21:726 WARN] [Scripting] [BIGCANOPY-DIAG] MARKER-F v1.3.205 ghg6okz Process A trunk-association started
+
+[2026-10-02 22:33:24:116 INFO] Server stop requested.
+[2026-10-02 22:33:24:145 INFO] Stopping server...
+Quit correctly

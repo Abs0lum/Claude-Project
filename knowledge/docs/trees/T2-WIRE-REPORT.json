@@ -1,0 +1,27 @@
+{
+ "templates": 544,
+ "features": 544,
+ "pools": {
+  "pw:oak_young_tree_feature": 24,
+  "pw:oak_mature_tree_feature": 24,
+  "pw:oak_old_tree_feature": 24,
+  "pw:birch_young_tree_feature": 24,
+  "pw:birch_mature_tree_feature": 24,
+  "pw:birch_old_tree_feature": 24,
+  "pw:spruce_young_tree_feature": 24,
+  "pw:spruce_mature_tree_feature": 24,
+  "pw:spruce_old_tree_feature": 24,
+  "pw:jungle_young_tree_feature": 24,
+  "pw:jungle_mature_tree_feature": 24,
+  "pw:jungle_old_tree_feature": 24,
+  "pw:oak_elder_tree_feature_v2": 32,
+  "pw:spruce_elder_tree_feature_v2": 32,
+  "pw:jungle_elder_tree_feature_v2": 32,
+  "pw:dark_oak_elder_tree_feature_v2": 32,
+  "pw:pale_oak_elder_tree_feature_v2": 32,
+  "minecraft:acacia_tree_feature": 32,
+  "minecraft:cherry_tree_feature": 32,
+  "minecraft:mangrove_tree_feature": 32
+ },
+ "scanner": "off"
+}

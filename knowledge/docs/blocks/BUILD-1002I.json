@@ -1,0 +1,54 @@
+{
+ "images_128": 409,
+ "per_row": {
+  "1": 176,
+  "2": 62,
+  "3": 62,
+  "4": 59,
+  "7": 26,
+  "9": 16,
+  "10": 8
+ },
+ "sand_grain_px": 23183,
+ "rewritten": {
+  "RP-01": {
+   "color": 232,
+   "normal": 220,
+   "mers": 232
+  },
+  "RP-03": {
+   "color": 13,
+   "normal": 13,
+   "mers": 13
+  },
+  "RP-04": {
+   "color": 110,
+   "normal": 110,
+   "mers": 110,
+   "sand MERS grains -> non-metal": 24
+  },
+  "RP-05": {
+   "color": 30,
+   "normal": 30,
+   "mers": 30
+  },
+  "RP-08": {
+   "color": 8,
+   "normal": 8,
+   "mers": 8
+  },
+  "RP-10": {
+   "color": 16,
+   "normal": 1,
+   "mers": 1
+  }
+ },
+ "dirs": {
+  "RP-01": "rp01-116",
+  "RP-03": "rp03-66",
+  "RP-04": "rp04-154",
+  "RP-05": "rp05-58",
+  "RP-08": "rp08-1412",
+  "RP-10": "rp10-151"
+ }
+}

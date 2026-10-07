@@ -1,0 +1,22 @@
+{
+ "C-W": {
+  "title": "his pick: no 2nd card set beside the wood",
+  "leaves_with_2nd_set": 23,
+  "of": 59
+ },
+ "C-H": {
+  "title": "his pick: 2nd card set at 60 % size",
+  "leaves_with_2nd_set": 59,
+  "of": 59
+ },
+ "C-WH60": {
+  "title": "COMBINED: none beside the wood + 2nd set at 60 %",
+  "leaves_with_2nd_set": 23,
+  "of": 59
+ },
+ "C-WH80": {
+  "title": "COMBINED: none beside the wood + 2nd set at 80 %",
+  "leaves_with_2nd_set": 23,
+  "of": 59
+ }
+}

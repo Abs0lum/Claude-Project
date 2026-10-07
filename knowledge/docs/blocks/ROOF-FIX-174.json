@@ -1,0 +1,15 @@
+{
+ "time": "19:28:57",
+ "changes": [
+  "G1 roof_hip: 7 Z-boards rz +45 -> -45; model mirrored in x (rotation 0 = NW corner); 12 hair faces v -> 15.9",
+  "G2 roof_pyramidion: 2 Z-boards sign flipped (now rise toward the apex like the X-boards)",
+  "G3 gussets: 2 flipped side-triangle uvs 64 -> 16 (texture is 16 wide); alpha hardened: ['pw_fill_tri_m_oak.png 1272->0', 'pw_fill_tri_m_oak_n_fix.png 0->0', 'pw_fill_tri_m_spruce.png 1272->0', 'pw_fill_tri_m_spruce_n_fix.png 0->0', 'pw_fill_tri_oak.png 1272->0', 'pw_fill_tri_oak_n_fix.png 0->0', 'pw_fill_tri_spruce.png 1272->0', 'pw_fill_tri_spruce_n_fix.png 0->0']",
+  "G4 crown_ring: straight lip -> outer (north) edge; corner -> north + west legs meeting flush at NW (no notch)",
+  "B1 roof63_upper (oak, spruce): 8 permutation rotations set equal to roof63_lower's map",
+  "S1 companion: 9 patches (Rule A outer corners + map, Rule B hipped end both orders, Rule C level, Rule G corners + closure, Rule E own map)",
+  "T1 structures: s1 -> gusset fold (gusset pair + its 4 edge neighbours), s2 -> hipped roof 7x5 (8 hips, 2 ridge ends, ridge), s4 -> plain gable run (3 ridges + gable planks); s3 pyramid + s6 ring states already match the law",
+  "G3 note: the glob also re-saved the 4 pw_fill_tri*_n_fix.png normal maps (pixel-identical); originals restored byte-exact from the backup",
+  "G2b roof_pyramidion rebuilt as four half-scale NW hips (mirrored to NE/SW/SE) + the apex cap: 129 cubes; a pointed 45-degree cap that continues the ring's planes (was a flat-topped frustum with short boards)"
+ ],
+ "backup": "/home/claude/_docs/blocks/before_roof_fix_174"
+}

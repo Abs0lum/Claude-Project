@@ -1,0 +1,538 @@
+{
+ "bat": {
+  "flying": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.02,
+    "at_t": 1.4,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.02,
+    "at_t": 0.2,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.011,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.011,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  },
+  "resting": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.02,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.02,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.75,
+    "edge_median": 0.75,
+    "face_max": 0.75,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.75,
+    "edge_median": 0.75,
+    "face_max": 0.75,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  }
+ },
+ "parrot": {
+  "fly slow": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 2.719,
+    "edge_median": 1.526,
+    "face_max": 2.719,
+    "at_t": 3.7,
+    "rest_gap": 0.8811622381821221
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 2.719,
+    "edge_median": 1.526,
+    "face_max": 2.719,
+    "at_t": 3.7,
+    "rest_gap": 0.8811622381821222
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.572,
+    "edge_median": 0.189,
+    "face_max": 0.75,
+    "at_t": 3.65,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.572,
+    "edge_median": 0.189,
+    "face_max": 0.75,
+    "at_t": 3.65,
+    "rest_gap": null
+   }
+  },
+  "fly": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 2.741,
+    "edge_median": 1.382,
+    "face_max": 2.741,
+    "at_t": 3.85,
+    "rest_gap": 0.8811622381821221
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 2.741,
+    "edge_median": 1.382,
+    "face_max": 2.741,
+    "at_t": 3.85,
+    "rest_gap": 0.8811622381821222
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.838,
+    "edge_median": 0.244,
+    "face_max": 0.838,
+    "at_t": 0.3,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.838,
+    "edge_median": 0.244,
+    "face_max": 0.838,
+    "at_t": 0.3,
+    "rest_gap": null
+   }
+  },
+  "fly fast": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 2.785,
+    "edge_median": 1.293,
+    "face_max": 2.785,
+    "at_t": 0.15,
+    "rest_gap": 0.8811622381821221
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 2.785,
+    "edge_median": 1.293,
+    "face_max": 2.785,
+    "at_t": 0.15,
+    "rest_gap": 0.8811622381821222
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.872,
+    "edge_median": 0.329,
+    "face_max": 0.872,
+    "at_t": 3.65,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.872,
+    "edge_median": 0.329,
+    "face_max": 0.872,
+    "at_t": 3.65,
+    "rest_gap": null
+   }
+  }
+ },
+ "phantom": {
+  "glide": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 2.653,
+    "edge_median": 0.068,
+    "face_max": 2.674,
+    "at_t": 1.45,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 2.653,
+    "edge_median": 0.068,
+    "face_max": 2.674,
+    "at_t": 1.45,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.1,
+    "edge_median": 0.049,
+    "face_max": 0.1,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.1,
+    "edge_median": 0.049,
+    "face_max": 0.1,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  },
+  "swoop": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 2.685,
+    "edge_median": 0.1,
+    "face_max": 2.716,
+    "at_t": 1.7,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 2.685,
+    "edge_median": 0.1,
+    "face_max": 2.716,
+    "at_t": 1.7,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.099,
+    "edge_median": 0.044,
+    "face_max": 0.099,
+    "at_t": 0.95,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.099,
+    "edge_median": 0.044,
+    "face_max": 0.099,
+    "at_t": 0.95,
+    "rest_gap": null
+   }
+  },
+  "hover": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 1.115,
+    "edge_median": 0.235,
+    "face_max": 1.139,
+    "at_t": 0.1,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 1.115,
+    "edge_median": 0.235,
+    "face_max": 1.139,
+    "at_t": 0.1,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.1,
+    "edge_median": 0.061,
+    "face_max": 0.1,
+    "at_t": 1.2,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.1,
+    "edge_median": 0.061,
+    "face_max": 0.1,
+    "at_t": 1.2,
+    "rest_gap": null
+   }
+  }
+ },
+ "vex": {
+  "hover": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.15,
+    "rest_gap": null
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 1.3,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.046,
+    "edge_median": 0.015,
+    "face_max": 0.046,
+    "at_t": 3.65,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.046,
+    "edge_median": 0.015,
+    "face_max": 0.046,
+    "at_t": 3.65,
+    "rest_gap": null
+   }
+  },
+  "fly": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 1.9,
+    "rest_gap": null
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.1,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.03,
+    "edge_median": 0.01,
+    "face_max": 0.03,
+    "at_t": 2.15,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.03,
+    "edge_median": 0.01,
+    "face_max": 0.03,
+    "at_t": 2.15,
+    "rest_gap": null
+   }
+  },
+  "charge": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.75,
+    "rest_gap": null
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 3.25,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  }
+ },
+ "allay": {
+  "hover": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 3.6,
+    "rest_gap": null
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.35,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.014,
+    "edge_median": 0.0,
+    "face_max": 0.014,
+    "at_t": 0.3,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.014,
+    "edge_median": 0.0,
+    "face_max": 0.014,
+    "at_t": 0.3,
+    "rest_gap": null
+   }
+  },
+  "fly": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 3.7,
+    "rest_gap": null
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.85,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.045,
+    "edge_median": 0.005,
+    "face_max": 0.045,
+    "at_t": 3.55,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.045,
+    "edge_median": 0.005,
+    "face_max": 0.045,
+    "at_t": 3.55,
+    "rest_gap": null
+   }
+  },
+  "dance": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 1.75,
+    "rest_gap": null
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.75,
+    "rest_gap": null
+   },
+   "L body|wing": {
+    "shown": true,
+    "edge_max": 0.055,
+    "edge_median": 0.017,
+    "face_max": 0.055,
+    "at_t": 1.8,
+    "rest_gap": null
+   },
+   "R body|wing": {
+    "shown": true,
+    "edge_max": 0.055,
+    "edge_median": 0.017,
+    "face_max": 0.055,
+    "at_t": 1.8,
+    "rest_gap": null
+   }
+  }
+ },
+ "eagle": {
+  "fly": {
+   "L inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   },
+   "R inner|outer": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.0,
+    "at_t": 0.0,
+    "rest_gap": null
+   }
+  }
+ },
+ "vulture": {
+  "fly": {
+   "L wing|tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.5,
+    "at_t": 0.85,
+    "rest_gap": null
+   },
+   "R wing|tip": {
+    "shown": true,
+    "edge_max": 0.0,
+    "edge_median": 0.0,
+    "face_max": 0.5,
+    "at_t": 0.75,
+    "rest_gap": null
+   }
+  }
+ },
+ "butterfly": {
+  "fly": {
+   "L top|bottom": {
+    "shown": false
+   },
+   "R top|bottom": {
+    "shown": false
+   }
+  }
+ }
+}

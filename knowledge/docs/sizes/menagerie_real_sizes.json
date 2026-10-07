@@ -1,0 +1,4232 @@
+[
+ {
+  "id": "pw:african_wild_dog_ysav",
+  "species": "african_wild_dog",
+  "H": 0.78,
+  "L": 1.3,
+  "WS": null,
+  "basis": "shoulder 0.6-0.75 m; head-body 0.76-1.1 + tail 0.3-0.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:alpaca_ytri",
+  "species": "alpaca",
+  "H": 1.45,
+  "L": 1.5,
+  "WS": null,
+  "basis": "withers 0.81-0.99 m, head top ~1.4-1.6 m; body 1.2-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:anaconda_ws",
+  "species": "green_anaconda",
+  "H": 0.22,
+  "L": 4.5,
+  "WS": null,
+  "basis": "typical adults 3-5.5 m total (females larger); girth ~0.2-0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beluga_ytri",
+  "species": "beluga",
+  "H": 0.9,
+  "L": 4.0,
+  "WS": null,
+  "basis": "males 3.5-5.5 m, females 3-4.1 m; body depth ~0.8-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:bird_of_paradise_wwa",
+  "species": "greater_bird_of_paradise",
+  "H": 0.22,
+  "L": 0.43,
+  "WS": 0.6,
+  "basis": "greater BoP ~0.43 m excl. flank plumes; wingspan ~0.55-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:bison_ytri",
+  "species": "american_bison",
+  "H": 1.8,
+  "L": 3.5,
+  "WS": null,
+  "basis": "bulls 1.7-1.9 m at hump; head-body 3.0-3.5 + tail 0.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:bongo_ytri",
+  "species": "bongo",
+  "H": 1.4,
+  "L": 2.6,
+  "WS": null,
+  "basis": "shoulder 1.1-1.3 m; head-body 1.7-2.5 + tail 0.45-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caracal_wa",
+  "species": "caracal",
+  "H": 0.5,
+  "L": 1.05,
+  "WS": null,
+  "basis": "shoulder 0.4-0.5 m; head-body 0.7-0.9 + tail 0.2-0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:centipede_brown_anf",
+  "species": "centipede_brown",
+  "H": 0.003,
+  "L": 0.025,
+  "WS": null,
+  "basis": "Lithobius forficatus, body 20-30 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:centipede_common_anf",
+  "species": "centipede_house",
+  "H": 0.008,
+  "L": 0.03,
+  "WS": null,
+  "basis": "assumed house centipede Scutigera, body 25-35 mm (legs much longer)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:centipede_desert_anf",
+  "species": "centipede_giant_desert",
+  "H": 0.01,
+  "L": 0.17,
+  "WS": null,
+  "basis": "Scolopendra heros, 0.15-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:centipede_pacificgiant_anf",
+  "species": "centipede_pacific_giant",
+  "H": 0.012,
+  "L": 0.2,
+  "WS": null,
+  "basis": "assumed giant Scolopendra (subspinipes-class), 0.15-0.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:chameleon_anf",
+  "species": "chameleon_veiled",
+  "H": 0.12,
+  "L": 0.45,
+  "WS": null,
+  "basis": "assumed veiled chameleon, males 0.43-0.61 m total incl. tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cheetah_ysav",
+  "species": "cheetah",
+  "H": 0.85,
+  "L": 1.9,
+  "WS": null,
+  "basis": "shoulder 0.7-0.9 m; head-body 1.1-1.5 + tail 0.6-0.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shellfish_clam_anf",
+  "species": "clam_quahog",
+  "H": 0.05,
+  "L": 0.09,
+  "WS": null,
+  "basis": "assumed hard clam/quahog, shell 0.07-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cobra_ysav",
+  "species": "cobra_egyptian",
+  "H": 0.07,
+  "L": 1.8,
+  "WS": null,
+  "basis": "assumed Egyptian/snouted cobra, 1.5-2.0 m total",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cougar_wa",
+  "species": "cougar",
+  "H": 0.72,
+  "L": 2.1,
+  "WS": null,
+  "basis": "shoulder 0.6-0.8 m; males 2.0-2.4 m incl. tail 0.65-0.85 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crane_common_anf",
+  "species": "crane_common",
+  "H": 1.15,
+  "L": 1.15,
+  "WS": 2.1,
+  "basis": "length 1.0-1.3 m, wingspan 1.8-2.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crane_hooden_anf",
+  "species": "crane_hooded",
+  "H": 0.95,
+  "L": 0.97,
+  "WS": 1.7,
+  "basis": "length ~0.91-1.0 m, wingspan 1.6-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crane_siberian_anf",
+  "species": "crane_siberian",
+  "H": 1.4,
+  "L": 1.35,
+  "WS": 2.2,
+  "basis": "height ~1.4 m, length 1.3-1.4 m, wingspan 2.1-2.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crane_whopping_anf",
+  "species": "crane_whooping",
+  "H": 1.5,
+  "L": 1.32,
+  "WS": 2.2,
+  "basis": "height ~1.5 m, length 1.3-1.6 m, wingspan 2.0-2.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dik_dik_ytri",
+  "species": "dik_dik",
+  "H": 0.42,
+  "L": 0.65,
+  "WS": null,
+  "basis": "Kirk's dik-dik shoulder 0.3-0.4 m; head-body 0.55-0.7 m, tail ~0.05 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dog_alsatian_anf",
+  "species": "dog_german_shepherd",
+  "H": 0.8,
+  "L": 1.45,
+  "WS": null,
+  "basis": "withers 0.55-0.65 m, ears-up head ~0.8 m; nose-tail ~1.3-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dog_lab_black_anf",
+  "species": "dog_labrador",
+  "H": 0.72,
+  "L": 1.35,
+  "WS": null,
+  "basis": "withers 0.55-0.62 m; nose-tail ~1.3-1.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dog_lab_chocolate_anf",
+  "species": "dog_labrador",
+  "H": 0.72,
+  "L": 1.35,
+  "WS": null,
+  "basis": "withers 0.55-0.62 m; nose-tail ~1.3-1.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dog_lab_golden_anf",
+  "species": "dog_labrador",
+  "H": 0.72,
+  "L": 1.35,
+  "WS": null,
+  "basis": "yellow Labrador; withers 0.55-0.62 m; nose-tail ~1.3-1.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dog_retriever_golden_anf",
+  "species": "dog_golden_retriever",
+  "H": 0.75,
+  "L": 1.4,
+  "WS": null,
+  "basis": "withers 0.51-0.61 m; nose-tail ~1.3-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dog_retriever_white_anf",
+  "species": "dog_golden_retriever",
+  "H": 0.75,
+  "L": 1.4,
+  "WS": null,
+  "basis": "cream golden retriever; withers 0.51-0.61 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:earthworm_common_anf",
+  "species": "earthworm_common",
+  "H": 0.005,
+  "L": 0.1,
+  "WS": null,
+  "basis": "garden earthworm (Lumbricus/Aporrectodea) 0.07-0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:earthworm_gippsland_anf",
+  "species": "earthworm_giant_gippsland",
+  "H": 0.02,
+  "L": 1.0,
+  "WS": null,
+  "basis": "Megascolides australis avg ~1 m (to 3 m), ~20 mm thick",
+  "fantasy": false
+ },
+ {
+  "id": "pw:earthworm_nightcrawler_anf",
+  "species": "earthworm_nightcrawler",
+  "H": 0.008,
+  "L": 0.2,
+  "WS": null,
+  "basis": "Lumbricus terrestris 0.15-0.25 m extended",
+  "fantasy": false
+ },
+ {
+  "id": "pw:egret_great_anf",
+  "species": "egret_great",
+  "H": 0.9,
+  "L": 0.97,
+  "WS": 1.45,
+  "basis": "length 0.94-1.04 m, wingspan 1.31-1.70 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:egret_little_anf",
+  "species": "egret_little",
+  "H": 0.55,
+  "L": 0.6,
+  "WS": 0.95,
+  "basis": "length 0.55-0.65 m, wingspan 0.88-1.06 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:egret_reddish_anf",
+  "species": "egret_reddish",
+  "H": 0.7,
+  "L": 0.75,
+  "WS": 1.2,
+  "basis": "length 0.68-0.82 m, wingspan 1.16-1.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:fly_bluebottle_anf",
+  "species": "fly_bluebottle",
+  "H": 0.005,
+  "L": 0.012,
+  "WS": 0.022,
+  "basis": "Calliphora, body 10-14 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:fly_dung_anf",
+  "species": "fly_dung",
+  "H": 0.004,
+  "L": 0.009,
+  "WS": 0.018,
+  "basis": "yellow dung fly, body 8-11 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:fly_fruit_anf",
+  "species": "fly_fruit",
+  "H": 0.0012,
+  "L": 0.0025,
+  "WS": 0.005,
+  "basis": "Drosophila, body 2.5-3 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:fly_horse_anf",
+  "species": "fly_horse",
+  "H": 0.007,
+  "L": 0.02,
+  "WS": 0.04,
+  "basis": "Tabanus, body 15-25 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:fly_hover_anf",
+  "species": "fly_hover",
+  "H": 0.004,
+  "L": 0.011,
+  "WS": 0.02,
+  "basis": "common hoverflies 9-13 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gavial_ytri",
+  "species": "gharial",
+  "H": 0.35,
+  "L": 4.5,
+  "WS": null,
+  "basis": "males 3.5-6 m, females 2.6-4.5 m total",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gecko_black_anf",
+  "species": "gecko_black",
+  "H": 0.025,
+  "L": 0.14,
+  "WS": null,
+  "basis": "unidentified black gecko; typical medium gecko 0.10-0.18 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gecko_blue_anf",
+  "species": "gecko_electric_blue",
+  "H": 0.015,
+  "L": 0.08,
+  "WS": null,
+  "basis": "assumed Lygodactylus williamsi, 0.07-0.10 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gecko_leopard_anf",
+  "species": "gecko_leopard",
+  "H": 0.05,
+  "L": 0.21,
+  "WS": null,
+  "basis": "adults 0.18-0.25 m incl. tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gecko_yellow_anf",
+  "species": "gecko_yellow",
+  "H": 0.015,
+  "L": 0.09,
+  "WS": null,
+  "basis": "assumed yellow-headed dwarf/day gecko, 0.07-0.10 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gerbil_anf",
+  "species": "gerbil_mongolian",
+  "H": 0.06,
+  "L": 0.21,
+  "WS": null,
+  "basis": "body 0.10-0.12 + tail 0.09-0.10 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:giant_squid_wwa",
+  "species": "giant_squid",
+  "H": 0.45,
+  "L": 10.0,
+  "WS": null,
+  "basis": "total incl. tentacles: males ~10 m, females ~13 m; mantle ~2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:grasshopper_anf",
+  "species": "grasshopper",
+  "H": 0.009,
+  "L": 0.03,
+  "WS": 0.045,
+  "basis": "generic grasshopper, body 20-40 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hare_arctic_anf",
+  "species": "hare_arctic",
+  "H": 0.35,
+  "L": 0.62,
+  "WS": null,
+  "basis": "head-body 0.55-0.70 + tail 0.05 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hare_blacktailed_anf",
+  "species": "hare_blacktailed_jackrabbit",
+  "H": 0.4,
+  "L": 0.55,
+  "WS": null,
+  "basis": "total 0.47-0.63 m; ears 0.10-0.13 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hare_european_anf",
+  "species": "hare_european",
+  "H": 0.4,
+  "L": 0.65,
+  "WS": null,
+  "basis": "head-body 0.48-0.70 + tail 0.07-0.11 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hare_mountain_anf",
+  "species": "hare_mountain",
+  "H": 0.33,
+  "L": 0.55,
+  "WS": null,
+  "basis": "total 0.45-0.65 m incl. tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hawk_grey_anf",
+  "species": "hawk_grey",
+  "H": 0.32,
+  "L": 0.41,
+  "WS": 0.88,
+  "basis": "length 0.38-0.46 m, wingspan 0.8-0.98 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hawk_harrier_anf",
+  "species": "hawk_african_harrier",
+  "H": 0.5,
+  "L": 0.63,
+  "WS": 1.55,
+  "basis": "African harrier-hawk length 0.60-0.68 m, wingspan 1.48-1.70 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hawk_harris_anf",
+  "species": "hawk_harris",
+  "H": 0.42,
+  "L": 0.53,
+  "WS": 1.1,
+  "basis": "length 0.46-0.59 m, wingspan 1.03-1.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hawk_sparrow_anf",
+  "species": "hawk_sparrowhawk",
+  "H": 0.26,
+  "L": 0.34,
+  "WS": 0.68,
+  "basis": "Eurasian sparrowhawk length 0.29-0.41 m, wingspan 0.58-0.80 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:heron_agami_anf",
+  "species": "heron_agami",
+  "H": 0.55,
+  "L": 0.7,
+  "WS": 1.0,
+  "basis": "length 0.60-0.76 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:heron_black_anf",
+  "species": "heron_black",
+  "H": 0.45,
+  "L": 0.5,
+  "WS": 0.93,
+  "basis": "length 0.42-0.66 m, wingspan ~0.93 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:heron_blackcrowned_anf",
+  "species": "heron_blackcrowned_night",
+  "H": 0.45,
+  "L": 0.62,
+  "WS": 1.15,
+  "basis": "length 0.58-0.66 m, wingspan 1.15-1.18 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:heron_greatblue_anf",
+  "species": "heron_great_blue",
+  "H": 1.1,
+  "L": 1.1,
+  "WS": 1.85,
+  "basis": "length 0.97-1.37 m, wingspan 1.67-2.01 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:heron_green_anf",
+  "species": "heron_green",
+  "H": 0.3,
+  "L": 0.44,
+  "WS": 0.66,
+  "basis": "length 0.41-0.46 m, wingspan 0.64-0.68 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:heron_grey_anf",
+  "species": "heron_grey",
+  "H": 0.95,
+  "L": 0.95,
+  "WS": 1.75,
+  "basis": "length 0.84-1.02 m, wingspan 1.55-1.95 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:honey_badger_ysav",
+  "species": "honey_badger",
+  "H": 0.28,
+  "L": 0.9,
+  "WS": null,
+  "basis": "shoulder 0.23-0.30 m; head-body 0.6-0.8 + tail 0.15-0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hornet_asian_anf",
+  "species": "hornet_asian",
+  "H": 0.007,
+  "L": 0.024,
+  "WS": 0.038,
+  "basis": "Vespa velutina workers 20-25 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hornet_european_anf",
+  "species": "hornet_european",
+  "H": 0.008,
+  "L": 0.025,
+  "WS": 0.045,
+  "basis": "Vespa crabro workers 18-25 mm, queens to 35 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:impala_ysav",
+  "species": "impala",
+  "H": 1.1,
+  "L": 1.6,
+  "WS": null,
+  "basis": "rams shoulder 0.75-0.92 m; head-body 1.2-1.6 + tail 0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:impala_female_ysav",
+  "species": "impala_female",
+  "H": 1.0,
+  "L": 1.5,
+  "WS": null,
+  "basis": "ewes shoulder 0.7-0.85 m; head-body 1.2-1.4 + tail 0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:jay_brown_anf",
+  "species": "jay_brown",
+  "H": 0.25,
+  "L": 0.4,
+  "WS": 0.55,
+  "basis": "Psilorhinus morio length 0.38-0.44 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:jerboa_wwa",
+  "species": "jerboa_lesser_egyptian",
+  "H": 0.08,
+  "L": 0.28,
+  "WS": null,
+  "basis": "body 0.10-0.12 + tail 0.16-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:koala_ytri",
+  "species": "koala",
+  "H": 0.45,
+  "L": 0.75,
+  "WS": null,
+  "basis": "head-body 0.6-0.85 m, no visible tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:kob_ysav",
+  "species": "kob",
+  "H": 1.2,
+  "L": 1.85,
+  "WS": null,
+  "basis": "males shoulder 0.9-1.0 m; head-body 1.6-1.8 + tail 0.1-0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:kob_female_ysav",
+  "species": "kob_female",
+  "H": 1.1,
+  "L": 1.65,
+  "WS": null,
+  "basis": "females shoulder 0.82-0.92 m; head-body 1.25-1.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lantern_fish_wa",
+  "species": "lanternfish",
+  "H": 0.015,
+  "L": 0.07,
+  "WS": null,
+  "basis": "most myctophids 0.02-0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemming_arctic_anf",
+  "species": "lemming_arctic",
+  "H": 0.05,
+  "L": 0.14,
+  "WS": null,
+  "basis": "collared lemming 0.11-0.16 m incl. tiny tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemming_bog_anf",
+  "species": "lemming_bog",
+  "H": 0.04,
+  "L": 0.12,
+  "WS": null,
+  "basis": "southern bog lemming 0.11-0.14 m incl. tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemming_norway_anf",
+  "species": "lemming_norway",
+  "H": 0.05,
+  "L": 0.15,
+  "WS": null,
+  "basis": "head-body 0.13-0.15 + tail ~0.015 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemming_yellowsteppe_anf",
+  "species": "lemming_yellow_steppe",
+  "H": 0.05,
+  "L": 0.14,
+  "WS": null,
+  "basis": "head-body 0.12-0.17 + tail ~0.015 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lobster_anf",
+  "species": "lobster",
+  "H": 0.1,
+  "L": 0.4,
+  "WS": null,
+  "basis": "American/European lobster 0.25-0.5 m incl. claws",
+  "fantasy": false
+ },
+ {
+  "id": "pw:magpie_anf",
+  "species": "magpie_eurasian",
+  "H": 0.25,
+  "L": 0.45,
+  "WS": 0.56,
+  "basis": "length 0.44-0.46 m (half is tail), wingspan 0.52-0.60 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:manatee_ytri",
+  "species": "manatee_west_indian",
+  "H": 0.75,
+  "L": 3.0,
+  "WS": null,
+  "basis": "adults 2.7-3.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:mandrill_anf",
+  "species": "mandrill",
+  "H": 0.65,
+  "L": 0.9,
+  "WS": null,
+  "basis": "males head-body 0.75-0.95 + tail ~0.07 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:monitor_lizard_ysav",
+  "species": "monitor_nile",
+  "H": 0.25,
+  "L": 1.6,
+  "WS": null,
+  "basis": "assumed Nile monitor, 1.2-2.0 m total",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_atlas_anf",
+  "species": "moth_atlas",
+  "H": 0.02,
+  "L": 0.05,
+  "WS": 0.25,
+  "basis": "wingspan 0.24-0.27 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_comet_anf",
+  "species": "moth_comet",
+  "H": 0.015,
+  "L": 0.04,
+  "WS": 0.2,
+  "basis": "wingspan ~0.20 m, tails to 0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_emperor_anf",
+  "species": "moth_emperor",
+  "H": 0.01,
+  "L": 0.03,
+  "WS": 0.07,
+  "basis": "Saturnia pavonia wingspan 55-85 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_gardentiger_anf",
+  "species": "moth_garden_tiger",
+  "H": 0.01,
+  "L": 0.028,
+  "WS": 0.06,
+  "basis": "wingspan 45-65 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_giantleopard_anf",
+  "species": "moth_giant_leopard",
+  "H": 0.01,
+  "L": 0.03,
+  "WS": 0.076,
+  "basis": "wingspan 70-90 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_gypsy_anf",
+  "species": "moth_gypsy",
+  "H": 0.008,
+  "L": 0.02,
+  "WS": 0.05,
+  "basis": "wingspan males ~40 mm, females ~60 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_luna_anf",
+  "species": "moth_luna",
+  "H": 0.012,
+  "L": 0.035,
+  "WS": 0.11,
+  "basis": "wingspan 80-115 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moth_rosymaple_anf",
+  "species": "moth_rosy_maple",
+  "H": 0.008,
+  "L": 0.02,
+  "WS": 0.045,
+  "basis": "wingspan 32-50 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:mouse_harvest_anf",
+  "species": "mouse_harvest",
+  "H": 0.025,
+  "L": 0.12,
+  "WS": null,
+  "basis": "head-body 0.05-0.07 + tail 0.05-0.075 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:mouse_house_anf",
+  "species": "mouse_house",
+  "H": 0.035,
+  "L": 0.17,
+  "WS": null,
+  "basis": "head-body 0.075-0.10 + tail 0.05-0.10 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:mouse_jumping_anf",
+  "species": "mouse_meadow_jumping",
+  "H": 0.04,
+  "L": 0.21,
+  "WS": null,
+  "basis": "head-body 0.075-0.10 + tail 0.11-0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:mouse_wood_anf",
+  "species": "mouse_wood",
+  "H": 0.035,
+  "L": 0.18,
+  "WS": null,
+  "basis": "head-body 0.08-0.11 + tail 0.07-0.11 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:newt_crested_anf",
+  "species": "newt_great_crested",
+  "H": 0.02,
+  "L": 0.14,
+  "WS": null,
+  "basis": "adults 0.10-0.17 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:newt_eastern_anf",
+  "species": "newt_eastern",
+  "H": 0.012,
+  "L": 0.09,
+  "WS": null,
+  "basis": "adults 0.07-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:newt_emperor_anf",
+  "species": "newt_emperor",
+  "H": 0.025,
+  "L": 0.16,
+  "WS": null,
+  "basis": "Tylototriton shanjing 0.14-0.17 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:newt_firebelly_anf",
+  "species": "newt_fire_bellied",
+  "H": 0.015,
+  "L": 0.1,
+  "WS": null,
+  "basis": "Cynops spp. 0.06-0.14 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:kudu_ysav",
+  "species": "nyala",
+  "H": 1.35,
+  "L": 2.2,
+  "WS": null,
+  "basis": "source 'inhala'=nyala: males shoulder 1.0-1.2 m; head-body 1.5-1.95 + tail 0.4-0.55 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:kudu_female_ysav",
+  "species": "nyala_female",
+  "H": 1.1,
+  "L": 1.8,
+  "WS": null,
+  "basis": "nyala females shoulder ~0.9 m; head-body 1.35-1.46 + tail ~0.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:oryx_ysav",
+  "species": "oryx_gemsbok",
+  "H": 1.45,
+  "L": 2.4,
+  "WS": null,
+  "basis": "assumed gemsbok: shoulder 1.15-1.25 m; head-body 1.9 + tail 0.45-0.9 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pangolin_ysav",
+  "species": "pangolin_ground",
+  "H": 0.25,
+  "L": 0.9,
+  "WS": null,
+  "basis": "Temminck's ground pangolin 0.7-1.0 m incl. tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pigeon_africanolive_anf",
+  "species": "pigeon_african_olive",
+  "H": 0.2,
+  "L": 0.38,
+  "WS": 0.65,
+  "basis": "length 0.37-0.42 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pigeon_passenger_anf",
+  "species": "pigeon_passenger",
+  "H": 0.2,
+  "L": 0.4,
+  "WS": 0.6,
+  "basis": "extinct; males 0.39-0.41 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pigeon_rock_anf",
+  "species": "pigeon_rock",
+  "H": 0.18,
+  "L": 0.32,
+  "WS": 0.67,
+  "basis": "length 0.29-0.37 m, wingspan 0.62-0.72 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pigeon_wood_anf",
+  "species": "pigeon_wood",
+  "H": 0.22,
+  "L": 0.41,
+  "WS": 0.75,
+  "basis": "length 0.38-0.44 m, wingspan 0.68-0.80 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:prairie_dog_wwa",
+  "species": "prairie_dog_blacktailed",
+  "H": 0.15,
+  "L": 0.38,
+  "WS": null,
+  "basis": "total 0.35-0.43 m; ~0.3 m when sitting upright",
+  "fantasy": false
+ },
+ {
+  "id": "pw:puffin_anf",
+  "species": "puffin_atlantic",
+  "H": 0.22,
+  "L": 0.3,
+  "WS": 0.53,
+  "basis": "length 0.28-0.34 m, wingspan 0.47-0.63 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:roadrunner_wwa",
+  "species": "roadrunner_greater",
+  "H": 0.3,
+  "L": 0.56,
+  "WS": 0.55,
+  "basis": "length 0.52-0.62 m, wingspan 0.43-0.61 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:sable_antelope_ysav",
+  "species": "sable_antelope",
+  "H": 1.55,
+  "L": 2.6,
+  "WS": null,
+  "basis": "bulls shoulder 1.17-1.43 m; head-body 1.9-2.5 + tail 0.4-0.75 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:saiga_wwa",
+  "species": "saiga",
+  "H": 0.8,
+  "L": 1.3,
+  "WS": null,
+  "basis": "shoulder 0.6-0.8 m; head-body 1.0-1.4 + tail 0.06-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shellfish_scallop_anf",
+  "species": "scallop",
+  "H": 0.03,
+  "L": 0.12,
+  "WS": null,
+  "basis": "great/sea scallop shell 0.10-0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shellfish_seaurchin_anf",
+  "species": "sea_urchin",
+  "H": 0.05,
+  "L": 0.08,
+  "WS": null,
+  "basis": "common urchins test 0.05-0.10 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:sealion_anf",
+  "species": "sea_lion_california",
+  "H": 0.9,
+  "L": 2.1,
+  "WS": null,
+  "basis": "males 2.0-2.4 m, females ~1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:serval_ysav",
+  "species": "serval",
+  "H": 0.65,
+  "L": 1.1,
+  "WS": null,
+  "basis": "shoulder 0.54-0.62 m; head-body 0.67-1.0 + tail 0.24-0.45 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shoebill_wwa",
+  "species": "shoebill",
+  "H": 1.2,
+  "L": 1.2,
+  "WS": 2.4,
+  "basis": "height 1.1-1.4 m, wingspan 2.3-2.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snow_leopard_wa",
+  "species": "snow_leopard",
+  "H": 0.65,
+  "L": 2.0,
+  "WS": null,
+  "basis": "shoulder ~0.6 m; head-body 1.0-1.3 + tail 0.8-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stickinsect_goliath_anf",
+  "species": "stick_insect_goliath",
+  "H": 0.02,
+  "L": 0.2,
+  "WS": 0.18,
+  "basis": "Eurycnema goliath females 0.2-0.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stoat_british_anf",
+  "species": "stoat",
+  "H": 0.08,
+  "L": 0.32,
+  "WS": null,
+  "basis": "head-body 0.17-0.32 + tail 0.07-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stoat_irish_anf",
+  "species": "stoat_irish",
+  "H": 0.07,
+  "L": 0.29,
+  "WS": null,
+  "basis": "Irish stoat (M. e. hibernica) HB 0.18-0.24 + tail 0.07-0.10 m; smaller than Eurasian",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stoat_japanese_anf",
+  "species": "stoat_japanese",
+  "H": 0.065,
+  "L": 0.26,
+  "WS": null,
+  "basis": "Japanese stoat (M. e. nippon) HB 0.16-0.21 + tail 0.05-0.08 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stoat_russian_anf",
+  "species": "stoat",
+  "H": 0.08,
+  "L": 0.32,
+  "WS": null,
+  "basis": "Eurasian stoat HB 0.17-0.32 + tail 0.07-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:swordfish_wa",
+  "species": "swordfish",
+  "H": 0.8,
+  "L": 3.0,
+  "WS": null,
+  "basis": "commonly 1.2-3 m incl bill; H = body depth ~0.5 m + dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tern_black_anf",
+  "species": "tern_black",
+  "H": 0.12,
+  "L": 0.25,
+  "WS": 0.6,
+  "basis": "L 0.22-0.28 m, WS 0.57-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tern_caspian_anf",
+  "species": "tern_caspian",
+  "H": 0.25,
+  "L": 0.53,
+  "WS": 1.35,
+  "basis": "L 0.48-0.60 m, WS 1.27-1.45 m; largest tern",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tern_common_anf",
+  "species": "tern_common",
+  "H": 0.15,
+  "L": 0.33,
+  "WS": 0.8,
+  "basis": "L 0.31-0.35 m incl streamers, WS 0.75-0.85 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tern_crested_anf",
+  "species": "tern_greater_crested",
+  "H": 0.22,
+  "L": 0.46,
+  "WS": 1.05,
+  "basis": "greater crested tern L 0.43-0.53 m, WS 1.0-1.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tern_fairy_anf",
+  "species": "tern_fairy",
+  "H": 0.11,
+  "L": 0.25,
+  "WS": 0.5,
+  "basis": "taken as Sternula nereis L 0.22-0.27 m, WS ~0.5 m (if white tern Gygis: L 0.30, WS 0.78)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tern_largebilled_anf",
+  "species": "tern_large_billed",
+  "H": 0.18,
+  "L": 0.4,
+  "WS": 0.95,
+  "basis": "Phaetusa simplex L 0.36-0.42 m, WS 0.92-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tern_sooty_anf",
+  "species": "tern_sooty",
+  "H": 0.18,
+  "L": 0.42,
+  "WS": 0.9,
+  "basis": "L 0.36-0.45 m, WS 0.82-0.94 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_bearded_anf",
+  "species": "tit_bearded",
+  "H": 0.07,
+  "L": 0.165,
+  "WS": 0.17,
+  "basis": "bearded reedling L 0.145-0.17 m (long tail), WS 0.16-0.18 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_blue_anf",
+  "species": "tit_blue",
+  "H": 0.06,
+  "L": 0.12,
+  "WS": 0.18,
+  "basis": "L 0.105-0.12 m, WS 0.17-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_coal_anf",
+  "species": "tit_coal",
+  "H": 0.055,
+  "L": 0.11,
+  "WS": 0.18,
+  "basis": "L 0.10-0.115 m, WS 0.17-0.21 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_crested_anf",
+  "species": "tit_crested",
+  "H": 0.06,
+  "L": 0.115,
+  "WS": 0.19,
+  "basis": "L 0.105-0.12 m, WS 0.17-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_great_anf",
+  "species": "tit_great",
+  "H": 0.07,
+  "L": 0.14,
+  "WS": 0.23,
+  "basis": "L 0.125-0.14 m, WS 0.22-0.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_longtailed_anf",
+  "species": "tit_long_tailed",
+  "H": 0.06,
+  "L": 0.14,
+  "WS": 0.17,
+  "basis": "L 0.13-0.15 m incl 0.07-0.09 m tail, WS 0.16-0.19 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_marsh_anf",
+  "species": "tit_marsh",
+  "H": 0.06,
+  "L": 0.12,
+  "WS": 0.19,
+  "basis": "L 0.115-0.13 m, WS 0.18-0.19 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tit_willow_anf",
+  "species": "tit_willow",
+  "H": 0.06,
+  "L": 0.12,
+  "WS": 0.19,
+  "basis": "L 0.115-0.13 m, WS 0.17-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toad_africangiant_anf",
+  "species": "toad_african_giant",
+  "H": 0.06,
+  "L": 0.14,
+  "WS": null,
+  "basis": "Sclerophrys superciliaris SVL 0.10-0.17 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toad_canadian_anf",
+  "species": "toad_canadian",
+  "H": 0.03,
+  "L": 0.065,
+  "WS": null,
+  "basis": "Anaxyrus hemiophrys SVL 0.05-0.08 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toad_european_anf",
+  "species": "toad_european",
+  "H": 0.04,
+  "L": 0.09,
+  "WS": null,
+  "basis": "common toad males SVL ~0.08-0.09 m, females to 0.13 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toad_indian_anf",
+  "species": "toad_asian_common",
+  "H": 0.04,
+  "L": 0.09,
+  "WS": null,
+  "basis": "Duttaphrynus melanostictus SVL 0.06-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toad_yosemite_anf",
+  "species": "toad_yosemite",
+  "H": 0.03,
+  "L": 0.07,
+  "WS": null,
+  "basis": "Anaxyrus canorus SVL 0.03-0.07 m (+ slightly larger females)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toadfish_wwa",
+  "species": "toadfish_oyster",
+  "H": 0.08,
+  "L": 0.3,
+  "WS": null,
+  "basis": "oyster toadfish 0.25-0.38 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:viper_ysav",
+  "species": "puff_adder",
+  "H": 0.08,
+  "L": 1.0,
+  "WS": null,
+  "basis": "savanna viper taken as puff adder, 0.8-1.2 m, stout body",
+  "fantasy": false
+ },
+ {
+  "id": "pw:wasp_paper_anf",
+  "species": "wasp_paper",
+  "H": 0.006,
+  "L": 0.02,
+  "WS": 0.035,
+  "basis": "Polistes body 0.015-0.025 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:wasp_yellowjacket_anf",
+  "species": "wasp_yellowjacket",
+  "H": 0.005,
+  "L": 0.013,
+  "WS": 0.025,
+  "basis": "Vespula workers 0.012-0.016 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tsessebe_ysav",
+  "species": "tsessebe",
+  "H": 1.6,
+  "L": 2.3,
+  "WS": null,
+  "basis": "source 'cacu'=tsessebe: shoulder 1.2-1.3 m, head ~1.6 m; HB 1.5-2.0 + tail 0.4-0.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:naja_spit_ysav",
+  "species": "cobra_spitting_mozambique",
+  "H": 0.06,
+  "L": 1.2,
+  "WS": null,
+  "basis": "spitting cobra taken as Mozambique spitter, 0.9-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:monitor_lay_egg_ysav",
+  "species": "monitor_egg_nile",
+  "H": 0.035,
+  "L": 0.055,
+  "WS": null,
+  "basis": "egg entity: Nile monitor egg ~5-6 x 3.5 cm (matches monitor_nile)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:seal_common_anf",
+  "species": "seal_harbor",
+  "H": 0.45,
+  "L": 1.6,
+  "WS": null,
+  "basis": "harbour seal males 1.6-1.9 m; H lying, head up",
+  "fantasy": false
+ },
+ {
+  "id": "pw:seal_grey_anf",
+  "species": "seal_grey",
+  "H": 0.6,
+  "L": 2.3,
+  "WS": null,
+  "basis": "grey seal bulls 2.0-2.5 m, cows ~1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:seal_harp_anf",
+  "species": "seal_harp",
+  "H": 0.45,
+  "L": 1.7,
+  "WS": null,
+  "basis": "adults 1.6-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:seal_wwa",
+  "species": "seal_harbor",
+  "H": 0.45,
+  "L": 1.6,
+  "WS": null,
+  "basis": "generic seal taken as harbour seal, 1.6-1.9 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:coyote_ytri",
+  "species": "coyote",
+  "H": 0.7,
+  "L": 1.2,
+  "WS": null,
+  "basis": "shoulder 0.58-0.66 m, head ~0.7 m; HB 0.75-1.0 + tail 0.3-0.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gull_blackheaded_anf",
+  "species": "gull_black_headed",
+  "H": 0.2,
+  "L": 0.38,
+  "WS": 1.0,
+  "basis": "L 0.35-0.39 m, WS 0.94-1.05 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gull_bonaparte_anf",
+  "species": "gull_bonapartes",
+  "H": 0.17,
+  "L": 0.33,
+  "WS": 0.82,
+  "basis": "L 0.28-0.38 m, WS 0.76-0.84 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gull_common_anf",
+  "species": "gull_common",
+  "H": 0.22,
+  "L": 0.43,
+  "WS": 1.15,
+  "basis": "common/mew gull L 0.40-0.46 m, WS 1.1-1.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gull_greatblackbacked_anf",
+  "species": "gull_great_black_backed",
+  "H": 0.35,
+  "L": 0.71,
+  "WS": 1.6,
+  "basis": "L 0.64-0.79 m, WS 1.5-1.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gull_herring_anf",
+  "species": "gull_herring",
+  "H": 0.3,
+  "L": 0.6,
+  "WS": 1.4,
+  "basis": "L 0.55-0.67 m, WS 1.25-1.55 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gull_kittiwake_anf",
+  "species": "kittiwake_black_legged",
+  "H": 0.19,
+  "L": 0.4,
+  "WS": 0.98,
+  "basis": "L 0.37-0.42 m, WS 0.93-1.05 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gull_lesserblackbacked_anf",
+  "species": "gull_lesser_black_backed",
+  "H": 0.27,
+  "L": 0.55,
+  "WS": 1.3,
+  "basis": "L 0.52-0.64 m, WS 1.24-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_atlas_anf",
+  "species": "beetle_atlas",
+  "H": 0.035,
+  "L": 0.08,
+  "WS": 0.14,
+  "basis": "Chalcosoma atlas males 0.06-0.13 m incl horns",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_coloradopotato_anf",
+  "species": "beetle_colorado_potato",
+  "H": 0.006,
+  "L": 0.01,
+  "WS": 0.02,
+  "basis": "body 0.009-0.011 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_desert_anf",
+  "species": "beetle_namib_desert",
+  "H": 0.01,
+  "L": 0.02,
+  "WS": null,
+  "basis": "Namib darkling beetle 0.015-0.025 m; flightless (fused elytra)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_elephant_anf",
+  "species": "beetle_elephant",
+  "H": 0.045,
+  "L": 0.1,
+  "WS": 0.16,
+  "basis": "Megasoma elephas males 0.07-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_hercules_anf",
+  "species": "beetle_hercules",
+  "H": 0.05,
+  "L": 0.12,
+  "WS": 0.18,
+  "basis": "Dynastes hercules males 0.05-0.17 m incl horn",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_mexicanbean_anf",
+  "species": "beetle_mexican_bean",
+  "H": 0.004,
+  "L": 0.007,
+  "WS": 0.014,
+  "basis": "body 0.006-0.008 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_mountainpine_anf",
+  "species": "beetle_mountain_pine",
+  "H": 0.002,
+  "L": 0.005,
+  "WS": 0.009,
+  "basis": "body 0.004-0.0075 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beetle_stag_anf",
+  "species": "beetle_stag",
+  "H": 0.025,
+  "L": 0.06,
+  "WS": 0.09,
+  "basis": "Lucanus cervus males 0.035-0.075 m incl mandibles",
+  "fantasy": false
+ },
+ {
+  "id": "pw:anteater_ytri",
+  "species": "tamandua_southern",
+  "H": 0.35,
+  "L": 1.1,
+  "WS": null,
+  "basis": "source 'tamandua': HB 0.53-0.88 + tail 0.40-0.67 m (giant anteater would be ~2.0 m, H 0.9)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:croc_african_anf",
+  "species": "crocodile_west_african",
+  "H": 0.4,
+  "L": 3.0,
+  "WS": null,
+  "basis": "taken as West African croc (C. suchus) 2.5-3.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:croc_nile_anf",
+  "species": "crocodile_nile",
+  "H": 0.5,
+  "L": 4.0,
+  "WS": null,
+  "basis": "males 3.5-5.0 m; H = back/head lying",
+  "fantasy": false
+ },
+ {
+  "id": "pw:croc_saltwater_anf",
+  "species": "crocodile_saltwater",
+  "H": 0.55,
+  "L": 4.5,
+  "WS": null,
+  "basis": "males 4-5.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crocodile_wa",
+  "species": "crocodile_nile",
+  "H": 0.5,
+  "L": 4.0,
+  "WS": null,
+  "basis": "generic croc taken as Nile, males 3.5-5.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crocodile_ysav",
+  "species": "crocodile_nile",
+  "H": 0.5,
+  "L": 4.0,
+  "WS": null,
+  "basis": "savanna croc taken as Nile, males 3.5-5.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:chimpanzee_wa",
+  "species": "chimpanzee",
+  "H": 0.9,
+  "L": 1.3,
+  "WS": null,
+  "basis": "male; H = knuckle-walking ~0.8-1.0 m; L = upright height 1.2-1.5 m (gorilla convention)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:squirrel_grey_anf",
+  "species": "squirrel_grey",
+  "H": 0.15,
+  "L": 0.47,
+  "WS": null,
+  "basis": "HB 0.23-0.30 + tail 0.19-0.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:squirrel_red_anf",
+  "species": "squirrel_red",
+  "H": 0.13,
+  "L": 0.38,
+  "WS": null,
+  "basis": "HB 0.19-0.23 + tail 0.15-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snapping_turtle_wwa",
+  "species": "snapping_turtle_common",
+  "H": 0.2,
+  "L": 0.65,
+  "WS": null,
+  "basis": "carapace 0.25-0.47 m; total incl head+tail ~0.6-0.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:river_dolphin_ytri",
+  "species": "river_dolphin_amazon",
+  "H": 0.5,
+  "L": 2.4,
+  "WS": null,
+  "basis": "source 'boto': males 2.2-2.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stingray_wa",
+  "species": "stingray_southern",
+  "H": 0.15,
+  "L": 1.3,
+  "WS": null,
+  "basis": "generic taken as southern stingray male; disc width ~0.67 m, total 1.2-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stingray_wwa",
+  "species": "manta_giant",
+  "H": 0.5,
+  "L": 2.5,
+  "WS": null,
+  "basis": "source id is manta_ray: giant manta disc WIDTH 4-5 m, length incl tail ~2.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stingray_ytri",
+  "species": "stingray_ocellate_river",
+  "H": 0.1,
+  "L": 0.75,
+  "WS": null,
+  "basis": "source 'arraia' taken as Potamotrygon motoro; disc 0.35-0.5 m, total 0.6-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:orca_wa",
+  "species": "orca",
+  "H": 3.0,
+  "L": 7.0,
+  "WS": null,
+  "basis": "males 6-8 m; H = body depth ~1.4 m + dorsal fin ~1.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:orca_wwa",
+  "species": "orca",
+  "H": 3.0,
+  "L": 7.0,
+  "WS": null,
+  "basis": "males 6-8 m; H = body depth ~1.4 m + dorsal fin ~1.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:orca_ytri",
+  "species": "orca",
+  "H": 3.0,
+  "L": 7.0,
+  "WS": null,
+  "basis": "males 6-8 m; H = body depth ~1.4 m + dorsal fin ~1.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_adonisblue_anf",
+  "species": "butterfly_adonis_blue",
+  "H": 0.004,
+  "L": 0.013,
+  "WS": 0.034,
+  "basis": "wingspan 0.03-0.04 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_bluemorpho_anf",
+  "species": "butterfly_blue_morpho",
+  "H": 0.01,
+  "L": 0.04,
+  "WS": 0.14,
+  "basis": "Morpho peleides wingspan 0.12-0.16 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_crimsonrose_anf",
+  "species": "butterfly_crimson_rose",
+  "H": 0.008,
+  "L": 0.03,
+  "WS": 0.1,
+  "basis": "Pachliopta hector wingspan 0.09-0.11 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_emeraldswallowtail_anf",
+  "species": "butterfly_emerald_swallowtail",
+  "H": 0.007,
+  "L": 0.028,
+  "WS": 0.09,
+  "basis": "Papilio palinurus wingspan 0.08-0.10 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_giantafrican_anf",
+  "species": "butterfly_giant_african_swallowtail",
+  "H": 0.012,
+  "L": 0.05,
+  "WS": 0.2,
+  "basis": "Papilio antimachus wingspan 0.18-0.23 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_goliathbirdwing_anf",
+  "species": "butterfly_goliath_birdwing",
+  "H": 0.014,
+  "L": 0.06,
+  "WS": 0.18,
+  "basis": "male wingspan 0.16-0.20 m (females to 0.28 m)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_monarch_anf",
+  "species": "butterfly_monarch",
+  "H": 0.008,
+  "L": 0.03,
+  "WS": 0.1,
+  "basis": "wingspan 0.089-0.102 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:butterfly_queenalexandra_anf",
+  "species": "butterfly_queen_alexandra_birdwing",
+  "H": 0.013,
+  "L": 0.055,
+  "WS": 0.17,
+  "basis": "male wingspan 0.16-0.19 m (females to 0.28 m)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:alligator_albino_anf",
+  "species": "alligator_american",
+  "H": 0.45,
+  "L": 3.7,
+  "WS": null,
+  "basis": "albino morph of American alligator; males 3.4-4.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:alligator_american_anf",
+  "species": "alligator_american",
+  "H": 0.45,
+  "L": 3.7,
+  "WS": null,
+  "basis": "males 3.4-4.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:alligator_chinese_anf",
+  "species": "alligator_chinese",
+  "H": 0.2,
+  "L": 1.5,
+  "WS": null,
+  "basis": "adults 1.5-2.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:alligator_ytri",
+  "species": "caiman_yacare",
+  "H": 0.3,
+  "L": 2.5,
+  "WS": null,
+  "basis": "source 'jacare' = Brazilian caiman; taken as yacare caiman males 2.0-3.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:dove_wa",
+  "species": "dove_eurasian_collared",
+  "H": 0.16,
+  "L": 0.32,
+  "WS": 0.5,
+  "basis": "generic dove taken as collared dove L 0.31-0.33 m, WS 0.47-0.55 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:raccoon_anf",
+  "species": "raccoon",
+  "H": 0.3,
+  "L": 0.8,
+  "WS": null,
+  "basis": "HB 0.4-0.7 + tail 0.2-0.4 m; shoulder 0.23-0.30 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:raccoon_wwa",
+  "species": "raccoon",
+  "H": 0.3,
+  "L": 0.8,
+  "WS": null,
+  "basis": "HB 0.4-0.7 + tail 0.2-0.4 m; shoulder 0.23-0.30 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tortoise_ysav",
+  "species": "tortoise_redfooted",
+  "H": 0.15,
+  "L": 0.38,
+  "WS": null,
+  "basis": "source 'jabuti' = red-footed tortoise (matches tortoise_egg_redfooted); carapace 0.30-0.35 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crow_carrion_anf",
+  "species": "crow_carrion",
+  "H": 0.22,
+  "L": 0.48,
+  "WS": 0.98,
+  "basis": "L 0.45-0.51 m, WS 0.93-1.04 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crow_collared_anf",
+  "species": "crow_collared",
+  "H": 0.24,
+  "L": 0.54,
+  "WS": 1.0,
+  "basis": "L 0.52-0.55 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crow_hooded_anf",
+  "species": "crow_hooded",
+  "H": 0.22,
+  "L": 0.48,
+  "WS": 0.98,
+  "basis": "L 0.44-0.51 m, WS 0.93-1.04 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crow_piping_anf",
+  "species": "crow_piping",
+  "H": 0.16,
+  "L": 0.35,
+  "WS": 0.65,
+  "basis": "Corvus typicus L ~0.35 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:bear_black_anf",
+  "species": "bear_american_black",
+  "H": 0.9,
+  "L": 1.6,
+  "WS": null,
+  "basis": "male HB 1.4-2.0 m; shoulder 0.7-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:bear_grizzly_anf",
+  "species": "bear_grizzly",
+  "H": 1.1,
+  "L": 2.1,
+  "WS": null,
+  "basis": "male HB 1.9-2.4 m; shoulder hump 1.0-1.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hedgehog_desert_anf",
+  "species": "hedgehog_desert",
+  "H": 0.09,
+  "L": 0.19,
+  "WS": null,
+  "basis": "Paraechinus aethiopicus HB 0.14-0.23 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hedgehog_euro_anf",
+  "species": "hedgehog_european",
+  "H": 0.12,
+  "L": 0.25,
+  "WS": null,
+  "basis": "HB 0.20-0.30 m + tail ~0.02 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hedgehog_longeared_anf",
+  "species": "hedgehog_long_eared",
+  "H": 0.09,
+  "L": 0.18,
+  "WS": null,
+  "basis": "Hemiechinus auritus HB 0.12-0.27 m; H incl ears",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hedgehog_madras_anf",
+  "species": "hedgehog_madras",
+  "H": 0.08,
+  "L": 0.17,
+  "WS": null,
+  "basis": "Paraechinus nudiventris HB 0.14-0.19 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hedgehog_southafrican_anf",
+  "species": "hedgehog_south_african",
+  "H": 0.09,
+  "L": 0.19,
+  "WS": null,
+  "basis": "Atelerix frontalis HB 0.15-0.21 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hedgehog_wa",
+  "species": "hedgehog_european",
+  "H": 0.12,
+  "L": 0.25,
+  "WS": null,
+  "basis": "source 'erizo' generic taken as European; HB 0.20-0.30 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crab_blue_anf",
+  "species": "crab_blue",
+  "H": 0.08,
+  "L": 0.09,
+  "WS": null,
+  "basis": "L = carapace length; carapace width 0.15-0.23 m, legspan ~0.35 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crab_emerald_anf",
+  "species": "crab_emerald",
+  "H": 0.02,
+  "L": 0.03,
+  "WS": null,
+  "basis": "Mithraculus sculptus carapace 0.025-0.05 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crab_king_anf",
+  "species": "crab_red_king",
+  "H": 0.25,
+  "L": 0.22,
+  "WS": null,
+  "basis": "L = carapace length; male carapace 0.2-0.28 m, legspan 1.5-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crab_spider_anf",
+  "species": "crab_japanese_spider",
+  "H": 0.45,
+  "L": 0.35,
+  "WS": null,
+  "basis": "taken as Japanese spider crab: carapace 0.3-0.4 m, legspan 2-3.5 m (if crab SPIDER Thomisidae: ~0.005-0.01 m)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crab_stone_anf",
+  "species": "crab_stone",
+  "H": 0.08,
+  "L": 0.09,
+  "WS": null,
+  "basis": "Florida stone crab carapace width 0.12-0.14 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crab_wa",
+  "species": "crab_green",
+  "H": 0.05,
+  "L": 0.06,
+  "WS": null,
+  "basis": "generic crab taken as European green crab; carapace width 0.06-0.09 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:vulture_king_anf",
+  "species": "vulture_king",
+  "H": 0.45,
+  "L": 0.75,
+  "WS": 1.8,
+  "basis": "L 0.67-0.81 m, WS 1.2-2.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:vulture_redheaded_anf",
+  "species": "vulture_red_headed",
+  "H": 0.55,
+  "L": 0.82,
+  "WS": 2.1,
+  "basis": "Sarcogyps calvus L 0.76-0.86 m, WS 1.99-2.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:komodo_dragon_wa",
+  "species": "komodo_dragon",
+  "H": 0.45,
+  "L": 2.6,
+  "WS": null,
+  "basis": "males 2.5-3.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:komodo_dragon_ytri",
+  "species": "komodo_dragon",
+  "H": 0.45,
+  "L": 2.6,
+  "WS": null,
+  "basis": "males 2.5-3.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:zebra_mountain_anf",
+  "species": "zebra_mountain",
+  "H": 1.6,
+  "L": 2.6,
+  "WS": null,
+  "basis": "shoulder 1.16-1.5 m, head ~1.6 m; HB 2.1-2.6 + tail 0.4-0.55 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:zebra_plains_anf",
+  "species": "zebra_plains",
+  "H": 1.7,
+  "L": 2.75,
+  "WS": null,
+  "basis": "shoulder 1.3-1.4 m, head ~1.7 m; HB 2.2-2.5 + tail 0.47-0.56 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:zebra_wa",
+  "species": "zebra_plains",
+  "H": 1.7,
+  "L": 2.75,
+  "WS": null,
+  "basis": "generic zebra taken as plains; shoulder 1.3-1.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:zebra_ysav",
+  "species": "zebra_plains",
+  "H": 1.7,
+  "L": 2.75,
+  "WS": null,
+  "basis": "savanna zebra taken as plains; shoulder 1.3-1.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:skunk_anf",
+  "species": "skunk_striped",
+  "H": 0.2,
+  "L": 0.65,
+  "WS": null,
+  "basis": "HB 0.33-0.46 + tail 0.18-0.30 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:skunk_ytri",
+  "species": "skunk_striped",
+  "H": 0.2,
+  "L": 0.65,
+  "WS": null,
+  "basis": "source 'gamba' (BR gamba is also opossum); taken as striped skunk",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hummingbird_ytri",
+  "species": "hummingbird",
+  "H": 0.05,
+  "L": 0.09,
+  "WS": 0.11,
+  "basis": "source 'beija-flor' generic; L 0.07-0.11 m, WS 0.08-0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:walrus_anf",
+  "species": "walrus",
+  "H": 1.1,
+  "L": 3.2,
+  "WS": null,
+  "basis": "males 2.7-3.6 m; H lying with head raised",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gila_monster_ws",
+  "species": "gila_monster",
+  "H": 0.08,
+  "L": 0.45,
+  "WS": null,
+  "basis": "total 0.35-0.56 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:deer_fallow_anf",
+  "species": "deer_fallow",
+  "H": 1.25,
+  "L": 1.7,
+  "WS": null,
+  "basis": "buck shoulder 0.85-0.95 m, head ~1.25 m (no antlers); HB 1.4-1.6 + tail 0.15-0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:deer_red_anf",
+  "species": "deer_red",
+  "H": 1.65,
+  "L": 2.2,
+  "WS": null,
+  "basis": "stag shoulder 1.15-1.3 m, head ~1.65 m (no antlers); HB 1.8-2.3 + tail 0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:deer_reindeer_anf",
+  "species": "reindeer",
+  "H": 1.4,
+  "L": 2.0,
+  "WS": null,
+  "basis": "bull shoulder 1.0-1.3 m, head ~1.4 m (no antlers); HB 1.6-2.1 + tail 0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:deer_roe_anf",
+  "species": "deer_roe",
+  "H": 1.0,
+  "L": 1.2,
+  "WS": null,
+  "basis": "shoulder 0.65-0.75 m, head ~1.0 m; total 1.0-1.35 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:deer_wa",
+  "species": "deer_whitetailed",
+  "H": 1.4,
+  "L": 1.9,
+  "WS": null,
+  "basis": "generic deer taken as white-tailed; shoulder 0.8-1.0 m, head ~1.4 m (no antlers); total 1.6-2.2 m incl tail",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hyena_anf",
+  "species": "hyena_spotted",
+  "H": 0.85,
+  "L": 1.6,
+  "WS": null,
+  "basis": "shoulder 0.7-0.9 m; body 1.0-1.6 m + tail 0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hyenas_wa",
+  "species": "hyena_spotted",
+  "H": 0.85,
+  "L": 1.6,
+  "WS": null,
+  "basis": "shoulder 0.7-0.9 m; body 1.0-1.6 m + tail 0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hyena_ysav",
+  "species": "hyena_spotted",
+  "H": 0.85,
+  "L": 1.6,
+  "WS": null,
+  "basis": "shoulder 0.7-0.9 m; body 1.0-1.6 m + tail 0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:slug_europeanred_anf",
+  "species": "slug_european_red",
+  "H": 0.025,
+  "L": 0.12,
+  "WS": null,
+  "basis": "Arion rufus extended length 0.10-0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:slug_leopard_anf",
+  "species": "slug_leopard",
+  "H": 0.02,
+  "L": 0.15,
+  "WS": null,
+  "basis": "Limax maximus extended length 0.10-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:slug_spanish_anf",
+  "species": "slug_spanish",
+  "H": 0.02,
+  "L": 0.1,
+  "WS": null,
+  "basis": "Arion vulgaris extended length 0.07-0.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:whale_wa",
+  "species": "whale_humpback",
+  "H": 2.8,
+  "L": 14.0,
+  "WS": null,
+  "basis": "adults 12-16 m; max body depth ~2.5-3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:whale_wwa",
+  "species": "whale_humpback",
+  "H": 2.8,
+  "L": 14.0,
+  "WS": null,
+  "basis": "adults 12-16 m; max body depth ~2.5-3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:aardvark_ysav",
+  "species": "aardvark",
+  "H": 0.65,
+  "L": 1.65,
+  "WS": null,
+  "basis": "shoulder ~0.6 m, arched back ~0.65 m; body 1.0-1.3 m + tail 0.45-0.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:robin_anf",
+  "species": "robin_european",
+  "H": 0.09,
+  "L": 0.135,
+  "WS": 0.21,
+  "basis": "taken as European robin; L 12.5-14 cm, WS 20-22 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:firefly_anf",
+  "species": "firefly",
+  "H": 0.004,
+  "L": 0.013,
+  "WS": 0.02,
+  "basis": "Photinus pyralis body 10-14 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemur_goldenbamboo_anf",
+  "species": "lemur_golden_bamboo",
+  "H": 0.18,
+  "L": 0.6,
+  "WS": null,
+  "basis": "head-body 0.27-0.29 m + tail 0.29-0.32 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemur_mouse_brown_anf",
+  "species": "lemur_mouse_brown",
+  "H": 0.06,
+  "L": 0.24,
+  "WS": null,
+  "basis": "Microcebus rufus head-body 0.11-0.13 m + tail ~0.12 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemur_mouse_grey_anf",
+  "species": "lemur_mouse_grey",
+  "H": 0.06,
+  "L": 0.26,
+  "WS": null,
+  "basis": "Microcebus murinus head-body 0.12-0.14 m + tail 0.13-0.14 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemur_redruffed_anf",
+  "species": "lemur_red_ruffed",
+  "H": 0.35,
+  "L": 1.13,
+  "WS": null,
+  "basis": "head-body 0.5-0.55 m + tail 0.6-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemur_ringtailed_anf",
+  "species": "lemur_ring_tailed",
+  "H": 0.3,
+  "L": 1.02,
+  "WS": null,
+  "basis": "head-body 0.39-0.46 m + tail 0.56-0.62 m; quadrupedal head ~0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemur_sportive_anf",
+  "species": "lemur_sportive",
+  "H": 0.22,
+  "L": 0.55,
+  "WS": null,
+  "basis": "Lepilemur head-body 0.25-0.3 m + tail 0.25-0.3 m; sits upright clinging",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lemur_ytri",
+  "species": "lemur_ring_tailed",
+  "H": 0.3,
+  "L": 1.02,
+  "WS": null,
+  "basis": "head-body 0.39-0.46 m + tail 0.56-0.62 m; quadrupedal head ~0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hornbill_ws",
+  "species": "hornbill_great",
+  "H": 0.5,
+  "L": 1.0,
+  "WS": 1.5,
+  "basis": "generic hornbill taken as great hornbill; L 0.95-1.3 m, WS ~1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:beaver_anf",
+  "species": "beaver",
+  "H": 0.3,
+  "L": 1.1,
+  "WS": null,
+  "basis": "N. American beaver head-body 0.74-0.9 m + tail 0.2-0.35 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rat_black_anf",
+  "species": "rat_black",
+  "H": 0.07,
+  "L": 0.39,
+  "WS": null,
+  "basis": "head-body 0.16-0.22 m + tail 0.19-0.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rat_brown_anf",
+  "species": "rat_brown",
+  "H": 0.08,
+  "L": 0.42,
+  "WS": null,
+  "basis": "head-body 0.2-0.27 m + tail 0.17-0.22 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rat_fancy_anf",
+  "species": "rat_brown",
+  "H": 0.08,
+  "L": 0.42,
+  "WS": null,
+  "basis": "head-body 0.2-0.27 m + tail 0.17-0.22 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rat_marsh_anf",
+  "species": "rat_marsh",
+  "H": 0.05,
+  "L": 0.25,
+  "WS": null,
+  "basis": "taken as marsh rice rat; head-body 0.11-0.13 m + tail 0.1-0.13 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rat_pack_anf",
+  "species": "woodrat",
+  "H": 0.08,
+  "L": 0.37,
+  "WS": null,
+  "basis": "pack rat (Neotoma) head-body 0.18-0.23 m + tail 0.14-0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rat_wa",
+  "species": "rat_brown",
+  "H": 0.08,
+  "L": 0.42,
+  "WS": null,
+  "basis": "head-body 0.2-0.27 m + tail 0.17-0.22 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:kakapo_wwa",
+  "species": "kakapo",
+  "H": 0.3,
+  "L": 0.6,
+  "WS": null,
+  "basis": "L 0.58-0.64 m; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:iguana_anf",
+  "species": "iguana_green",
+  "H": 0.2,
+  "L": 1.5,
+  "WS": null,
+  "basis": "total 1.2-1.7 m incl tail; head raised ~0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:capuchin_wa",
+  "species": "capuchin",
+  "H": 0.3,
+  "L": 0.85,
+  "WS": null,
+  "basis": "head-body 0.35-0.45 m + tail 0.35-0.5 m; sitting ~0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:leopard_clouded_anf",
+  "species": "leopard_clouded",
+  "H": 0.5,
+  "L": 1.65,
+  "WS": null,
+  "basis": "head-body 0.7-1.1 m + tail 0.6-0.9 m; shoulder ~0.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:leopard_jungle_anf",
+  "species": "leopard",
+  "H": 0.7,
+  "L": 2.1,
+  "WS": null,
+  "basis": "male total 1.9-2.4 m incl tail 0.7-0.9 m; shoulder 0.6-0.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:leopard_panther_anf",
+  "species": "leopard",
+  "H": 0.7,
+  "L": 2.1,
+  "WS": null,
+  "basis": "male total 1.9-2.4 m incl tail 0.7-0.9 m; shoulder 0.6-0.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:leopard_snow_anf",
+  "species": "leopard_snow",
+  "H": 0.6,
+  "L": 2.0,
+  "WS": null,
+  "basis": "head-body 1.0-1.3 m + tail 0.8-1.0 m; shoulder ~0.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:leopard_ysav",
+  "species": "leopard",
+  "H": 0.7,
+  "L": 2.1,
+  "WS": null,
+  "basis": "male total 1.9-2.4 m incl tail 0.7-0.9 m; shoulder 0.6-0.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pelican_americanwhite_anf",
+  "species": "pelican_american_white",
+  "H": 0.9,
+  "L": 1.6,
+  "WS": 2.7,
+  "basis": "L 1.3-1.8 m, WS 2.4-3.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pelican_australian_anf",
+  "species": "pelican_australian",
+  "H": 0.9,
+  "L": 1.7,
+  "WS": 2.5,
+  "basis": "L 1.6-1.9 m, WS 2.3-2.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pelican_brown_anf",
+  "species": "pelican_brown",
+  "H": 0.65,
+  "L": 1.2,
+  "WS": 2.1,
+  "basis": "L 1.0-1.4 m, WS 2.0-2.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:pelican_greatwhite_anf",
+  "species": "pelican_great_white",
+  "H": 0.95,
+  "L": 1.6,
+  "WS": 2.8,
+  "basis": "L 1.4-1.75 m, WS 2.45-3.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:mole_ytri",
+  "species": "mole_european",
+  "H": 0.05,
+  "L": 0.17,
+  "WS": null,
+  "basis": "head-body 0.12-0.16 m + tail 0.02-0.04 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moose_alaskan_anf",
+  "species": "moose_alaskan",
+  "H": 2.1,
+  "L": 3.0,
+  "WS": null,
+  "basis": "shoulder 1.8-2.1 m; total 2.7-3.2 m (antlers excluded)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:moose_canadian_anf",
+  "species": "moose_canadian",
+  "H": 1.9,
+  "L": 2.7,
+  "WS": null,
+  "basis": "shoulder 1.7-1.95 m; total 2.4-2.9 m (antlers excluded)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:scorpion_deathstalker_anf",
+  "species": "scorpion_deathstalker",
+  "H": 0.02,
+  "L": 0.07,
+  "WS": null,
+  "basis": "Leiurus total 0.03-0.08 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:scorpion_giantdesert_anf",
+  "species": "scorpion_giant_desert_hairy",
+  "H": 0.03,
+  "L": 0.13,
+  "WS": null,
+  "basis": "Hadrurus arizonensis 0.11-0.14 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:scorpion_giantforest_anf",
+  "species": "scorpion_giant_forest",
+  "H": 0.035,
+  "L": 0.17,
+  "WS": null,
+  "basis": "Heterometrus 0.15-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:scorpion_indianred_anf",
+  "species": "scorpion_indian_red",
+  "H": 0.018,
+  "L": 0.07,
+  "WS": null,
+  "basis": "Hottentotta tamulus 0.05-0.09 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_adonisblue_anf",
+  "species": "caterpillar_adonis_blue",
+  "H": 0.004,
+  "L": 0.016,
+  "WS": null,
+  "basis": "final-instar larva ~15-17 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_bluemorpho_anf",
+  "species": "caterpillar_blue_morpho",
+  "H": 0.008,
+  "L": 0.07,
+  "WS": null,
+  "basis": "final-instar larva ~6-8 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_crimsonrose_anf",
+  "species": "caterpillar_crimson_rose",
+  "H": 0.008,
+  "L": 0.045,
+  "WS": null,
+  "basis": "final-instar larva ~4-5 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_emeraldswallowtail_anf",
+  "species": "caterpillar_emerald_swallowtail",
+  "H": 0.008,
+  "L": 0.045,
+  "WS": null,
+  "basis": "final-instar larva ~4-5 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_giantafrican_anf",
+  "species": "caterpillar_giant_african_swallowtail",
+  "H": 0.012,
+  "L": 0.06,
+  "WS": null,
+  "basis": "Papilio antimachus larva, poorly documented ~5-7 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_goliathbirdwing_anf",
+  "species": "caterpillar_goliath_birdwing",
+  "H": 0.018,
+  "L": 0.09,
+  "WS": null,
+  "basis": "final-instar larva ~8-10 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_monarch_anf",
+  "species": "caterpillar_monarch",
+  "H": 0.006,
+  "L": 0.045,
+  "WS": null,
+  "basis": "final-instar larva 4-5 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:caterpillar_queenalexandra_anf",
+  "species": "caterpillar_queen_alexandra_birdwing",
+  "H": 0.02,
+  "L": 0.11,
+  "WS": null,
+  "basis": "final-instar larva ~10-12 cm, ~2-3 cm thick",
+  "fantasy": false
+ },
+ {
+  "id": "pw:orangutan_anf",
+  "species": "orangutan",
+  "H": 0.95,
+  "L": 1.37,
+  "WS": null,
+  "basis": "male Bornean; H = quadrupedal/sitting ~0.9-1.0 m; L = upright height 1.25-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shark_greatwhite_anf",
+  "species": "shark_great_white",
+  "H": 1.5,
+  "L": 4.5,
+  "WS": null,
+  "basis": "adults 4-5 m; H = body depth incl dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shark_hammerhead_anf",
+  "species": "shark_great_hammerhead",
+  "H": 1.2,
+  "L": 4.0,
+  "WS": null,
+  "basis": "taken as great hammerhead 3.5-4.5 m; H incl tall dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shark_lemon_anf",
+  "species": "shark_lemon",
+  "H": 0.8,
+  "L": 2.7,
+  "WS": null,
+  "basis": "adults 2.4-3.1 m; H incl dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shark_tiger_anf",
+  "species": "shark_tiger",
+  "H": 1.2,
+  "L": 3.8,
+  "WS": null,
+  "basis": "adults 3.25-4.25 m; H incl dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shark_wa",
+  "species": "shark_great_white",
+  "H": 1.5,
+  "L": 4.5,
+  "WS": null,
+  "basis": "adults 4-5 m; H = body depth incl dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tiger_shark_wa",
+  "species": "shark_tiger",
+  "H": 1.2,
+  "L": 3.8,
+  "WS": null,
+  "basis": "adults 3.25-4.25 m; H incl dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:white_shark_wa",
+  "species": "shark_great_white",
+  "H": 1.5,
+  "L": 4.5,
+  "WS": null,
+  "basis": "adults 4-5 m; H = body depth incl dorsal fin",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cricket_cave_anf",
+  "species": "cricket_cave",
+  "H": 0.015,
+  "L": 0.02,
+  "WS": null,
+  "basis": "body 1.3-3.8 cm, humped; wingless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cricket_greenbush_anf",
+  "species": "cricket_great_green_bush",
+  "H": 0.015,
+  "L": 0.04,
+  "WS": null,
+  "basis": "Tettigonia viridissima body 2.8-4.2 cm; wings folded at rest",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cricket_house_anf",
+  "species": "cricket_house",
+  "H": 0.006,
+  "L": 0.018,
+  "WS": null,
+  "basis": "Acheta domesticus body 16-21 mm; wings folded",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cricket_tobacco_anf",
+  "species": "cricket_tobacco",
+  "H": 0.015,
+  "L": 0.045,
+  "WS": null,
+  "basis": "Brachytrupes portentosus body 4-5 cm; wings folded",
+  "fantasy": false
+ },
+ {
+  "id": "pw:raven_common_anf",
+  "species": "raven_common",
+  "H": 0.28,
+  "L": 0.63,
+  "WS": 1.2,
+  "basis": "L 0.54-0.69 m, WS 1.0-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:raven_whitenecked_anf",
+  "species": "raven_white_necked",
+  "H": 0.25,
+  "L": 0.52,
+  "WS": 1.05,
+  "basis": "Corvus albicollis L 0.5-0.54 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:swan_black_anf",
+  "species": "swan_black",
+  "H": 0.85,
+  "L": 1.25,
+  "WS": 1.8,
+  "basis": "L 1.1-1.4 m, WS 1.6-2.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:swan_white_anf",
+  "species": "swan_mute",
+  "H": 1.0,
+  "L": 1.5,
+  "WS": 2.2,
+  "basis": "L 1.25-1.7 m, WS 2.0-2.4 m; neck-erect standing ~1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:swan_wwa",
+  "species": "swan_mute",
+  "H": 1.0,
+  "L": 1.5,
+  "WS": 2.2,
+  "basis": "L 1.25-1.7 m, WS 2.0-2.4 m; neck-erect standing ~1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tiger_bengal_anf",
+  "species": "tiger_bengal",
+  "H": 1.0,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.7-3.1 m incl tail; shoulder 0.9-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tiger_siberian_anf",
+  "species": "tiger_siberian",
+  "H": 1.05,
+  "L": 3.0,
+  "WS": null,
+  "basis": "male total 2.7-3.3 m incl tail; shoulder 1.0-1.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tiger_southchina_anf",
+  "species": "tiger_south_china",
+  "H": 0.9,
+  "L": 2.4,
+  "WS": null,
+  "basis": "male total 2.3-2.65 m incl tail; shoulder ~0.85-0.95 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tiger_wa",
+  "species": "tiger_bengal",
+  "H": 1.0,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.7-3.1 m incl tail; shoulder 0.9-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:white_tiger_wa",
+  "species": "tiger_bengal",
+  "H": 1.0,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.7-3.1 m incl tail; shoulder 0.9-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tiger_ws",
+  "species": "tiger_bengal",
+  "H": 1.0,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.7-3.1 m incl tail; shoulder 0.9-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toucan_aracari_anf",
+  "species": "toucan_aracari",
+  "H": 0.18,
+  "L": 0.41,
+  "WS": 0.4,
+  "basis": "collared aracari L 0.39-0.43 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toucan_channelbilled_anf",
+  "species": "toucan_channel_billed",
+  "H": 0.22,
+  "L": 0.48,
+  "WS": 0.55,
+  "basis": "L 0.46-0.52 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toucan_toco_anf",
+  "species": "toucan_toco",
+  "H": 0.28,
+  "L": 0.6,
+  "WS": 0.6,
+  "basis": "L 0.55-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toucan_wa",
+  "species": "toucan_toco",
+  "H": 0.28,
+  "L": 0.6,
+  "WS": 0.6,
+  "basis": "L 0.55-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:toucan_ytri",
+  "species": "toucan_toco",
+  "H": 0.28,
+  "L": 0.6,
+  "WS": 0.6,
+  "basis": "L 0.55-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:blue_jay_wa",
+  "species": "blue_jay",
+  "H": 0.13,
+  "L": 0.27,
+  "WS": 0.38,
+  "basis": "L 0.22-0.30 m, WS 0.34-0.43 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:tapir_ws",
+  "species": "tapir_lowland",
+  "H": 0.95,
+  "L": 2.0,
+  "WS": null,
+  "basis": "taken as lowland tapir; total 1.8-2.5 m, shoulder 0.8-1.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hamster_dwarf_anf",
+  "species": "hamster_dwarf",
+  "H": 0.04,
+  "L": 0.09,
+  "WS": null,
+  "basis": "Campbell's/winter-white 0.08-0.10 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hamster_syrian_anf",
+  "species": "hamster_syrian",
+  "H": 0.06,
+  "L": 0.15,
+  "WS": null,
+  "basis": "0.13-0.18 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:emu_ytri",
+  "species": "emu",
+  "H": 1.7,
+  "L": 1.6,
+  "WS": null,
+  "basis": "standing 1.5-1.9 m; bill-tail 1.5-1.9 m; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lioness_african_anf",
+  "species": "lion_female",
+  "H": 1.0,
+  "L": 2.5,
+  "WS": null,
+  "basis": "lioness total 2.4-2.7 m incl tail; shoulder 0.9-1.07 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lioness_asiatic_anf",
+  "species": "lion_asiatic_female",
+  "H": 0.9,
+  "L": 2.35,
+  "WS": null,
+  "basis": "Asiatic lioness total 2.2-2.5 m; shoulder ~0.8-0.95 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lioness_transvaal_anf",
+  "species": "lion_transvaal_female",
+  "H": 1.0,
+  "L": 2.6,
+  "WS": null,
+  "basis": "southern African lioness total 2.4-2.8 m; shoulder ~1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lion_african_anf",
+  "species": "lion",
+  "H": 1.2,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.6-3.3 m incl tail; shoulder 1.1-1.25 m, mane top ~1.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lion_asiatic_anf",
+  "species": "lion_asiatic",
+  "H": 1.1,
+  "L": 2.75,
+  "WS": null,
+  "basis": "Asiatic male total 2.6-2.9 m; shoulder ~1.05-1.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lion_transvaal_anf",
+  "species": "lion_transvaal",
+  "H": 1.2,
+  "L": 3.0,
+  "WS": null,
+  "basis": "southern African male total 2.8-3.3 m; shoulder ~1.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lion_wa",
+  "species": "lion",
+  "H": 1.2,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.6-3.3 m incl tail; shoulder 1.1-1.25 m, mane top ~1.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:baby_lion_ysav",
+  "species": "lion_cub",
+  "H": 0.35,
+  "L": 0.8,
+  "WS": null,
+  "basis": "cub ~2-4 months; shoulder ~0.3-0.35 m, total ~0.7-0.9 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lion_ysav",
+  "species": "lion",
+  "H": 1.2,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.6-3.3 m incl tail; shoulder 1.1-1.25 m, mane top ~1.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:white_lion_ysav",
+  "species": "lion",
+  "H": 1.2,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male total 2.6-3.3 m incl tail; shoulder 1.1-1.25 m, mane top ~1.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lioness_ysav",
+  "species": "lion_female",
+  "H": 1.0,
+  "L": 2.5,
+  "WS": null,
+  "basis": "lioness total 2.4-2.7 m incl tail; shoulder 0.9-1.07 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:white_lioness_ysav",
+  "species": "lion_female",
+  "H": 1.0,
+  "L": 2.5,
+  "WS": null,
+  "basis": "lioness total 2.4-2.7 m incl tail; shoulder 0.9-1.07 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:flamingo_american_anf",
+  "species": "flamingo_american",
+  "H": 1.3,
+  "L": 1.3,
+  "WS": 1.55,
+  "basis": "L 1.2-1.45 m, standing 1.2-1.45 m, WS 1.5-1.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:flamingo_andean_anf",
+  "species": "flamingo_andean",
+  "H": 1.05,
+  "L": 1.05,
+  "WS": 1.3,
+  "basis": "L/height 1.0-1.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:flamingo_greater_anf",
+  "species": "flamingo_greater",
+  "H": 1.3,
+  "L": 1.3,
+  "WS": 1.55,
+  "basis": "L/height 1.1-1.5 m, WS 1.4-1.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:flamingo_james_anf",
+  "species": "flamingo_james",
+  "H": 0.9,
+  "L": 0.9,
+  "WS": 1.1,
+  "basis": "L/height ~0.9 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gorilla_wa",
+  "species": "gorilla",
+  "H": 1.3,
+  "L": 1.7,
+  "WS": null,
+  "basis": "male silverback; H = knuckle-walking ~1.2-1.4 m; L = upright height 1.6-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gorilla_ytri",
+  "species": "gorilla",
+  "H": 1.3,
+  "L": 1.7,
+  "WS": null,
+  "basis": "male silverback; H = knuckle-walking ~1.2-1.4 m; L = upright height 1.6-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ostrich_anf",
+  "species": "ostrich",
+  "H": 2.3,
+  "L": 2.0,
+  "WS": null,
+  "basis": "standing 2.1-2.75 m (males), 1.7-2.0 m females; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ostrich_wa",
+  "species": "ostrich",
+  "H": 2.3,
+  "L": 2.0,
+  "WS": null,
+  "basis": "standing 2.1-2.75 m (males), 1.7-2.0 m females; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ostrich_ws",
+  "species": "ostrich",
+  "H": 2.3,
+  "L": 2.0,
+  "WS": null,
+  "basis": "standing 2.1-2.75 m (males), 1.7-2.0 m females; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ostrich_ysav",
+  "species": "ostrich",
+  "H": 2.3,
+  "L": 2.0,
+  "WS": null,
+  "basis": "standing 2.1-2.75 m (males), 1.7-2.0 m females; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:octopus_blueringed_anf",
+  "species": "octopus_blue_ringed",
+  "H": 0.04,
+  "L": 0.15,
+  "WS": null,
+  "basis": "total incl arms 0.12-0.20 m; mantle ~5 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:octopus_common_anf",
+  "species": "octopus_common",
+  "H": 0.15,
+  "L": 0.9,
+  "WS": null,
+  "basis": "total incl arms 0.6-1.0 m; mantle ~0.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:octopus_pacificgiant_anf",
+  "species": "octopus_giant_pacific",
+  "H": 0.4,
+  "L": 2.5,
+  "WS": null,
+  "basis": "total incl arms 2-3 m typical (arm span ~4 m)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_adjutant_anf",
+  "species": "stork_greater_adjutant",
+  "H": 1.45,
+  "L": 1.45,
+  "WS": 2.5,
+  "basis": "L 1.45-1.5 m, standing ~1.5 m, WS ~2.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_black_anf",
+  "species": "stork_black",
+  "H": 0.95,
+  "L": 1.0,
+  "WS": 1.9,
+  "basis": "L 0.95-1.0 m, WS 1.73-2.05 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_blacknecked_anf",
+  "species": "stork_black_necked",
+  "H": 1.35,
+  "L": 1.35,
+  "WS": 2.3,
+  "basis": "L 1.29-1.5 m, WS 2.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_oriental_anf",
+  "species": "stork_oriental",
+  "H": 1.15,
+  "L": 1.15,
+  "WS": 2.1,
+  "basis": "L 1.1-1.28 m, WS 1.95-2.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_painted_anf",
+  "species": "stork_painted",
+  "H": 0.95,
+  "L": 0.97,
+  "WS": 1.55,
+  "basis": "L 0.93-1.02 m, WS 1.5-1.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_saddlebilled_anf",
+  "species": "stork_saddlebilled",
+  "H": 1.5,
+  "L": 1.45,
+  "WS": 2.55,
+  "basis": "stands ~1.5 m; L 1.42-1.5 m; WS 2.4-2.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_white_anf",
+  "species": "stork_white",
+  "H": 1.1,
+  "L": 1.05,
+  "WS": 1.8,
+  "basis": "stands 1.0-1.25 m; L 1.0-1.15 m; WS 1.55-2.15 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:stork_wood_anf",
+  "species": "stork_wood",
+  "H": 0.95,
+  "L": 1.0,
+  "WS": 1.55,
+  "basis": "stands ~0.9-1.0 m; L 0.83-1.15 m; WS 1.4-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:monkey_ws",
+  "species": "howler_monkey",
+  "H": 0.45,
+  "L": 1.15,
+  "WS": null,
+  "basis": "mantled howler male HB 0.5-0.6 m + tail 0.55-0.65 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:turkey_wa",
+  "species": "wild_turkey",
+  "H": 1.0,
+  "L": 1.1,
+  "WS": 1.4,
+  "basis": "tom L 1.0-1.25 m; WS 1.25-1.44 m; stands ~1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:goose_barnacle_anf",
+  "species": "goose_barnacle",
+  "H": 0.5,
+  "L": 0.63,
+  "WS": 1.37,
+  "basis": "L 0.55-0.70 m; WS 1.30-1.45 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:goose_canada_anf",
+  "species": "goose_canada",
+  "H": 0.8,
+  "L": 0.95,
+  "WS": 1.6,
+  "basis": "L 0.75-1.10 m; WS 1.27-1.85 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:goose_egyptian_anf",
+  "species": "goose_egyptian",
+  "H": 0.6,
+  "L": 0.68,
+  "WS": 1.25,
+  "basis": "L 0.63-0.73 m; WS 1.10-1.50 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:goose_magellan_anf",
+  "species": "goose_upland",
+  "H": 0.6,
+  "L": 0.65,
+  "WS": 1.3,
+  "basis": "upland/Magellan goose L 0.60-0.72 m; WS ~1.2-1.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:goose_roman_anf",
+  "species": "goose_roman_domestic",
+  "H": 0.65,
+  "L": 0.8,
+  "WS": 1.5,
+  "basis": "domestic Roman (Tufted) goose 4.5-5.5 kg; L ~0.75-0.85 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:buffalo_ysav",
+  "species": "african_buffalo",
+  "H": 1.5,
+  "L": 3.6,
+  "WS": null,
+  "basis": "Cape buffalo male shoulder 1.4-1.7 m; HB 2.4-3.4 m + tail 0.7-1.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:jellyfish_ytri",
+  "species": "moon_jellyfish",
+  "H": 0.15,
+  "L": 0.3,
+  "WS": null,
+  "basis": "moon jelly bell 0.25-0.40 m diameter, short tentacles",
+  "fantasy": false
+ },
+ {
+  "id": "pw:lynx_ws",
+  "species": "eurasian_lynx",
+  "H": 0.65,
+  "L": 1.2,
+  "WS": null,
+  "basis": "shoulder 0.6-0.75 m; HB 0.8-1.3 m + tail 0.11-0.25 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:baboon_ysav",
+  "species": "olive_baboon",
+  "H": 0.65,
+  "L": 1.3,
+  "WS": null,
+  "basis": "male HB 0.7-0.85 m + tail 0.41-0.58 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:elephant_african_anf",
+  "species": "elephant_african_bush",
+  "H": 3.2,
+  "L": 7.0,
+  "WS": null,
+  "basis": "bull shoulder 3.0-3.4 m; HB incl trunk 6-7.5 m + tail 1-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:elephant_asian_anf",
+  "species": "elephant_asian",
+  "H": 2.75,
+  "L": 6.0,
+  "WS": null,
+  "basis": "bull shoulder 2.5-3.0 m; HB incl trunk 5.5-6.5 m + tail 1.2-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:african_elephant_wa",
+  "species": "elephant_african_bush",
+  "H": 3.2,
+  "L": 7.0,
+  "WS": null,
+  "basis": "bull shoulder 3.0-3.4 m; HB incl trunk 6-7.5 m + tail 1-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:asian_elephant_wa",
+  "species": "elephant_asian",
+  "H": 2.75,
+  "L": 6.0,
+  "WS": null,
+  "basis": "bull shoulder 2.5-3.0 m; HB incl trunk 5.5-6.5 m + tail 1.2-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:elephant_ysav",
+  "species": "elephant_african_bush",
+  "H": 3.2,
+  "L": 7.0,
+  "WS": null,
+  "basis": "bull shoulder 3.0-3.4 m; HB incl trunk 6-7.5 m + tail 1-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:red_panda_wa",
+  "species": "red_panda",
+  "H": 0.3,
+  "L": 0.97,
+  "WS": null,
+  "basis": "HB 0.50-0.64 m + tail 0.28-0.48 m; shoulder ~0.25-0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:red_panda_wwa",
+  "species": "red_panda",
+  "H": 0.3,
+  "L": 0.97,
+  "WS": null,
+  "basis": "HB 0.50-0.64 m + tail 0.28-0.48 m; shoulder ~0.25-0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ferret_common_anf",
+  "species": "ferret",
+  "H": 0.13,
+  "L": 0.5,
+  "WS": null,
+  "basis": "domestic ferret HB 0.35-0.45 m + tail 0.08-0.13 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:boar_ifs",
+  "species": "wild_boar",
+  "H": 0.85,
+  "L": 1.6,
+  "WS": null,
+  "basis": "shoulder 0.55-1.1 m (Europe ~0.85); HB 1.3-1.75 m + tail 0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:boar_wa",
+  "species": "wild_boar",
+  "H": 0.85,
+  "L": 1.6,
+  "WS": null,
+  "basis": "shoulder 0.55-1.1 m (Europe ~0.85); HB 1.3-1.75 m + tail 0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:boar_ysav",
+  "species": "wild_boar",
+  "H": 0.85,
+  "L": 1.6,
+  "WS": null,
+  "basis": "shoulder 0.55-1.1 m (Europe ~0.85); HB 1.3-1.75 m + tail 0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_anaconda_green_anf",
+  "species": "anaconda_green",
+  "H": 0.2,
+  "L": 4.5,
+  "WS": null,
+  "basis": "adults 3-6 m (females larger); body diam ~0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_anaconda_yellow_anf",
+  "species": "anaconda_yellow",
+  "H": 0.12,
+  "L": 3.0,
+  "WS": null,
+  "basis": "adults 2.5-4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_boa_kenyansand_anf",
+  "species": "kenyan_sand_boa",
+  "H": 0.04,
+  "L": 0.6,
+  "WS": null,
+  "basis": "females 0.6-0.9 m, males 0.4-0.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_cobra_indian_anf",
+  "species": "indian_cobra",
+  "H": 0.04,
+  "L": 1.4,
+  "WS": null,
+  "basis": "adults 1.0-1.5 m (body at rest; hood raised ~0.4 m)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_cobra_king_anf",
+  "species": "king_cobra",
+  "H": 0.07,
+  "L": 3.6,
+  "WS": null,
+  "basis": "adults 3-4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_corn_anf",
+  "species": "corn_snake",
+  "H": 0.03,
+  "L": 1.2,
+  "WS": null,
+  "basis": "adults 0.6-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_garter_butler_anf",
+  "species": "garter_butler",
+  "H": 0.015,
+  "L": 0.45,
+  "WS": null,
+  "basis": "Butler's garter 0.38-0.51 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_garter_california_anf",
+  "species": "garter_california_redsided",
+  "H": 0.02,
+  "L": 0.7,
+  "WS": null,
+  "basis": "California red-sided garter 0.5-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_mamba_black_anf",
+  "species": "black_mamba",
+  "H": 0.05,
+  "L": 2.5,
+  "WS": null,
+  "basis": "adults 2-3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_mamba_easterngreen_anf",
+  "species": "eastern_green_mamba",
+  "H": 0.035,
+  "L": 1.8,
+  "WS": null,
+  "basis": "adults 1.5-2.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_milk_anf",
+  "species": "milk_snake",
+  "H": 0.025,
+  "L": 0.9,
+  "WS": null,
+  "basis": "adults 0.6-1.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_python_greentree_anf",
+  "species": "green_tree_python",
+  "H": 0.05,
+  "L": 1.5,
+  "WS": null,
+  "basis": "adults 1.4-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_python_pastel_anf",
+  "species": "ball_python",
+  "H": 0.07,
+  "L": 1.2,
+  "WS": null,
+  "basis": "royal/ball python (pastel = morph) 1.0-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_python_royal_anf",
+  "species": "ball_python",
+  "H": 0.07,
+  "L": 1.2,
+  "WS": null,
+  "basis": "royal/ball python (pastel = morph) 1.0-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_rattle_diamondback_anf",
+  "species": "rattlesnake_eastern_diamondback",
+  "H": 0.07,
+  "L": 1.5,
+  "WS": null,
+  "basis": "adults 1.0-1.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_rattle_timber_anf",
+  "species": "rattlesnake_timber",
+  "H": 0.05,
+  "L": 1.1,
+  "WS": null,
+  "basis": "adults 0.9-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_viper_blue_anf",
+  "species": "viper_blue_insularis",
+  "H": 0.03,
+  "L": 0.7,
+  "WS": null,
+  "basis": "white-lipped island pit viper blue morph 0.6-0.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_viper_horned_anf",
+  "species": "viper_horned_desert",
+  "H": 0.035,
+  "L": 0.5,
+  "WS": null,
+  "basis": "Cerastes cerastes 0.3-0.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_water_brown_anf",
+  "species": "water_snake_brown",
+  "H": 0.04,
+  "L": 1.0,
+  "WS": null,
+  "basis": "Nerodia taxispilota 0.75-1.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_water_plainbellied_anf",
+  "species": "water_snake_plainbellied",
+  "H": 0.035,
+  "L": 0.9,
+  "WS": null,
+  "basis": "Nerodia erythrogaster 0.6-1.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_wa",
+  "species": "grass_snake",
+  "H": 0.03,
+  "L": 1.0,
+  "WS": null,
+  "basis": "generic snake taken as grass snake 0.9-1.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_coral_wa",
+  "species": "coral_snake_eastern",
+  "H": 0.02,
+  "L": 0.75,
+  "WS": null,
+  "basis": "Micrurus fulvius 0.5-0.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snake_scarlet_wa",
+  "species": "scarlet_snake",
+  "H": 0.015,
+  "L": 0.45,
+  "WS": null,
+  "basis": "Cemophora coccinea 0.35-0.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rhino_black_anf",
+  "species": "rhino_black",
+  "H": 1.55,
+  "L": 3.7,
+  "WS": null,
+  "basis": "shoulder 1.4-1.8 m; HB 3.0-3.75 m + tail ~0.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rhino_indian_anf",
+  "species": "rhino_indian",
+  "H": 1.8,
+  "L": 4.2,
+  "WS": null,
+  "basis": "male shoulder 1.7-2.0 m; HB 3.1-3.8 m + tail 0.7-0.8 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rhino_sumatran_anf",
+  "species": "rhino_sumatran",
+  "H": 1.3,
+  "L": 3.0,
+  "WS": null,
+  "basis": "shoulder 1.12-1.45 m; HB 2.4-3.2 m + tail ~0.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rhino_white_anf",
+  "species": "rhino_white",
+  "H": 1.75,
+  "L": 4.4,
+  "WS": null,
+  "basis": "male shoulder 1.7-1.85 m; HB 3.7-4.0 m + tail ~0.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rhino_wa",
+  "species": "rhino_white",
+  "H": 1.75,
+  "L": 4.4,
+  "WS": null,
+  "basis": "male shoulder 1.7-1.85 m; HB 3.7-4.0 m + tail ~0.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rhino_ysav",
+  "species": "rhino_white",
+  "H": 1.75,
+  "L": 4.4,
+  "WS": null,
+  "basis": "male shoulder 1.7-1.85 m; HB 3.7-4.0 m + tail ~0.7 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shrimp_wa",
+  "species": "whiteleg_shrimp",
+  "H": 0.025,
+  "L": 0.15,
+  "WS": null,
+  "basis": "generic shrimp as whiteleg shrimp adult 0.12-0.20 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ladybug_15spotted_anf",
+  "species": "ladybird_15spot",
+  "H": 0.004,
+  "L": 0.0085,
+  "WS": 0.018,
+  "basis": "Anatis labiculata 8-9 mm; WS approx",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ladybug_22spotted_anf",
+  "species": "ladybird_22spot",
+  "H": 0.0018,
+  "L": 0.0038,
+  "WS": 0.008,
+  "basis": "Psyllobora 22-punctata 3-4.5 mm; WS approx",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ladybug_7spotted_anf",
+  "species": "ladybird_7spot",
+  "H": 0.0033,
+  "L": 0.0065,
+  "WS": 0.014,
+  "basis": "Coccinella 7-punctata 5-8 mm; WS approx",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ladybug_9spotted_anf",
+  "species": "ladybird_9spot",
+  "H": 0.003,
+  "L": 0.006,
+  "WS": 0.013,
+  "basis": "Coccinella novemnotata 4.7-7 mm; WS approx",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ladybug_harlequin_anf",
+  "species": "ladybird_harlequin",
+  "H": 0.0035,
+  "L": 0.007,
+  "WS": 0.015,
+  "basis": "Harmonia axyridis 5.5-8.5 mm; WS approx",
+  "fantasy": false
+ },
+ {
+  "id": "pw:owl_barn_anf",
+  "species": "barn_owl",
+  "H": 0.33,
+  "L": 0.35,
+  "WS": 0.9,
+  "basis": "L 0.33-0.39 m; WS 0.80-0.95 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:owl_snowy_anf",
+  "species": "snowy_owl",
+  "H": 0.5,
+  "L": 0.6,
+  "WS": 1.4,
+  "basis": "L 0.52-0.71 m; WS 1.25-1.50 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:owl_tawny_anf",
+  "species": "tawny_owl",
+  "H": 0.36,
+  "L": 0.4,
+  "WS": 0.94,
+  "basis": "L 0.37-0.46 m; WS 0.81-1.05 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:owl_ytri",
+  "species": "burrowing_owl",
+  "H": 0.24,
+  "L": 0.23,
+  "WS": 0.55,
+  "basis": "coruja-buraqueira L 0.19-0.28 m; WS 0.50-0.61 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:barn_owl_ytri",
+  "species": "barn_owl",
+  "H": 0.33,
+  "L": 0.35,
+  "WS": 0.9,
+  "basis": "L 0.33-0.39 m; WS 0.80-0.95 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gazelle_ysav",
+  "species": "thomsons_gazelle",
+  "H": 0.8,
+  "L": 1.25,
+  "WS": null,
+  "basis": "male shoulder 0.55-0.65 m (head ~0.8); HB 0.9-1.1 m + tail 0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gazelle_female_ysav",
+  "species": "thomsons_gazelle_female",
+  "H": 0.72,
+  "L": 1.1,
+  "WS": null,
+  "basis": "female shoulder 0.5-0.6 m; HB 0.8-1.0 m + tail 0.2 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:platypus_ytri",
+  "species": "platypus",
+  "H": 0.1,
+  "L": 0.45,
+  "WS": null,
+  "basis": "total 0.39-0.6 m incl tail (males larger)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:giraffe_masai_anf",
+  "species": "giraffe_masai",
+  "H": 5.2,
+  "L": 4.7,
+  "WS": null,
+  "basis": "bull 4.8-5.7 m tall; HB 3.8-4.7 m + tail ~1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:giraffe_nubian_anf",
+  "species": "giraffe_northern_nubian",
+  "H": 5.0,
+  "L": 4.6,
+  "WS": null,
+  "basis": "bull 4.6-5.5 m tall",
+  "fantasy": false
+ },
+ {
+  "id": "pw:giraffe_reticulated_anf",
+  "species": "giraffe_reticulated",
+  "H": 5.0,
+  "L": 4.6,
+  "WS": null,
+  "basis": "bull 4.6-5.5 m tall",
+  "fantasy": false
+ },
+ {
+  "id": "pw:giraffe_southafrican_anf",
+  "species": "giraffe_southern",
+  "H": 5.0,
+  "L": 4.6,
+  "WS": null,
+  "basis": "bull 4.6-5.5 m tall",
+  "fantasy": false
+ },
+ {
+  "id": "pw:giraffe_wa",
+  "species": "giraffe_reticulated",
+  "H": 5.0,
+  "L": 4.6,
+  "WS": null,
+  "basis": "bull 4.6-5.5 m tall",
+  "fantasy": false
+ },
+ {
+  "id": "pw:giraffe_ysav",
+  "species": "giraffe_reticulated",
+  "H": 5.0,
+  "L": 4.6,
+  "WS": null,
+  "basis": "bull 4.6-5.5 m tall",
+  "fantasy": false
+ },
+ {
+  "id": "pw:termite_anf",
+  "species": "termite_worker",
+  "H": 0.002,
+  "L": 0.006,
+  "WS": null,
+  "basis": "workers ~4-7 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snail_candycane_anf",
+  "species": "snail_candycane",
+  "H": 0.03,
+  "L": 0.06,
+  "WS": null,
+  "basis": "Liguus virgineus shell ~25-45 mm; crawling L ~6 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snail_desert_anf",
+  "species": "snail_desert",
+  "H": 0.02,
+  "L": 0.035,
+  "WS": null,
+  "basis": "Eremina desertorum shell ~2-2.5 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snail_garden_anf",
+  "species": "snail_garden",
+  "H": 0.035,
+  "L": 0.06,
+  "WS": null,
+  "basis": "Cornu aspersum shell 25-40 mm; crawling ~6 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snail_giantafrican_anf",
+  "species": "snail_giant_african",
+  "H": 0.07,
+  "L": 0.15,
+  "WS": null,
+  "basis": "Lissachatina fulica shell 0.10-0.12 m (up to 0.2)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:snail_milk_anf",
+  "species": "snail_milk",
+  "H": 0.025,
+  "L": 0.055,
+  "WS": null,
+  "basis": "Otala lactea shell ~30 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:meerkat_anf",
+  "species": "meerkat",
+  "H": 0.15,
+  "L": 0.5,
+  "WS": null,
+  "basis": "HB 0.25-0.35 m + tail 0.17-0.25 m; upright sentinel ~0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:meerkat_ytri",
+  "species": "meerkat",
+  "H": 0.15,
+  "L": 0.5,
+  "WS": null,
+  "basis": "HB 0.25-0.35 m + tail 0.17-0.25 m; upright sentinel ~0.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gelada_ws",
+  "species": "gelada",
+  "H": 0.55,
+  "L": 1.15,
+  "WS": null,
+  "basis": "male HB 0.7-0.75 m + tail 0.4-0.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:otter_ytri",
+  "species": "neotropical_otter",
+  "H": 0.25,
+  "L": 1.1,
+  "WS": null,
+  "basis": "Lontra longicaudis HB 0.5-0.8 m + tail ~0.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ant_wa",
+  "species": "carpenter_ant",
+  "H": 0.004,
+  "L": 0.01,
+  "WS": null,
+  "basis": "generic ant as carpenter ant worker 6-13 mm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:eagle_bald_anf",
+  "species": "bald_eagle",
+  "H": 0.75,
+  "L": 0.85,
+  "WS": 2.0,
+  "basis": "L 0.70-1.02 m; WS 1.8-2.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:eagle_blackhawk_anf",
+  "species": "black_hawk_eagle",
+  "H": 0.55,
+  "L": 0.65,
+  "WS": 1.4,
+  "basis": "Spizaetus tyrannus L 0.58-0.71 m; WS 1.15-1.48 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:eagle_crowned_anf",
+  "species": "crowned_eagle",
+  "H": 0.75,
+  "L": 0.85,
+  "WS": 1.75,
+  "basis": "L 0.80-0.99 m; WS 1.5-2.1 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:eagle_golden_anf",
+  "species": "golden_eagle",
+  "H": 0.75,
+  "L": 0.85,
+  "WS": 2.05,
+  "basis": "L 0.66-1.02 m; WS 1.8-2.34 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:eagle_sea_anf",
+  "species": "stellers_sea_eagle",
+  "H": 0.85,
+  "L": 0.95,
+  "WS": 2.2,
+  "basis": "L 0.85-1.05 m; WS 1.95-2.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:eagle_whitetailed_anf",
+  "species": "white_tailed_eagle",
+  "H": 0.75,
+  "L": 0.85,
+  "WS": 2.2,
+  "basis": "L 0.66-0.94 m; WS 1.78-2.45 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:eagle_wa",
+  "species": "bald_eagle",
+  "H": 0.75,
+  "L": 0.85,
+  "WS": 2.0,
+  "basis": "L 0.70-1.02 m; WS 1.8-2.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:african_black_eagle_ysav",
+  "species": "verreauxs_eagle",
+  "H": 0.75,
+  "L": 0.85,
+  "WS": 2.1,
+  "basis": "African black eagle L 0.75-0.96 m; WS 1.8-2.3 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:fisher_eagle_ysav",
+  "species": "african_fish_eagle",
+  "H": 0.65,
+  "L": 0.7,
+  "WS": 2.0,
+  "basis": "L 0.63-0.75 m; WS 1.9-2.4 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:baby_african_black_eagle_ysav",
+  "species": "verreauxs_eagle_chick",
+  "H": 0.3,
+  "L": 0.35,
+  "WS": null,
+  "basis": "downy nestling ~3-5 weeks; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:baby_fisher_eagle_ysav",
+  "species": "african_fish_eagle_chick",
+  "H": 0.25,
+  "L": 0.3,
+  "WS": null,
+  "basis": "downy nestling ~3-5 weeks; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:yak_ws",
+  "species": "domestic_yak",
+  "H": 1.4,
+  "L": 2.9,
+  "WS": null,
+  "basis": "domestic bull shoulder 1.1-1.6 m; HB 2.0-2.5 m + tail ~0.6 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:rattlesnake_ws",
+  "species": "rattlesnake_tiger",
+  "H": 0.035,
+  "L": 0.6,
+  "WS": null,
+  "basis": "Crotalus tigris 0.45-0.9 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:shellfish_starfish_anf",
+  "species": "common_starfish",
+  "H": 0.03,
+  "L": 0.2,
+  "WS": null,
+  "basis": "Asterias rubens 0.10-0.30 m across",
+  "fantasy": false
+ },
+ {
+  "id": "pw:gnu_ysav",
+  "species": "blue_wildebeest",
+  "H": 1.45,
+  "L": 2.9,
+  "WS": null,
+  "basis": "male shoulder 1.3-1.5 m; HB 2.0-2.4 m + tail 0.6-1.0 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:hammerhead_shark_wa",
+  "species": "scalloped_hammerhead",
+  "H": 0.5,
+  "L": 3.0,
+  "WS": null,
+  "basis": "adults 2.5-3.5 m; body depth incl dorsal ~0.5 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:desert_owl_ws",
+  "species": "desert_tawny_owl",
+  "H": 0.3,
+  "L": 0.32,
+  "WS": 0.96,
+  "basis": "Hume's/desert tawny owl L 0.29-0.33 m; WS ~0.95 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:cassowary_ytri",
+  "species": "southern_cassowary",
+  "H": 1.6,
+  "L": 1.5,
+  "WS": null,
+  "basis": "stands 1.5-1.8 m; L 1.27-1.7 m; flightless",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_bali_anf",
+  "species": "duck_bali",
+  "H": 0.45,
+  "L": 0.6,
+  "WS": 0.85,
+  "basis": "domestic semi-upright crested breed ~2 kg",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_goldencascade_anf",
+  "species": "duck_golden_cascade",
+  "H": 0.4,
+  "L": 0.6,
+  "WS": 0.9,
+  "basis": "domestic breed ~3 kg",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_indianrunner_anf",
+  "species": "duck_indian_runner",
+  "H": 0.65,
+  "L": 0.65,
+  "WS": 0.8,
+  "basis": "upright domestic breed stands 0.5-0.76 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_kingeider_anf",
+  "species": "king_eider",
+  "H": 0.35,
+  "L": 0.57,
+  "WS": 0.94,
+  "basis": "L 0.50-0.63 m; WS 0.86-1.02 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_madagascar_anf",
+  "species": "mellers_duck",
+  "H": 0.38,
+  "L": 0.62,
+  "WS": 0.95,
+  "basis": "Madagascar mallard L 0.55-0.68 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_mallard_anf",
+  "species": "mallard",
+  "H": 0.33,
+  "L": 0.58,
+  "WS": 0.88,
+  "basis": "L 0.50-0.65 m; WS 0.81-0.98 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_mandarin_anf",
+  "species": "mandarin_duck",
+  "H": 0.28,
+  "L": 0.45,
+  "WS": 0.72,
+  "basis": "L 0.41-0.49 m; WS 0.65-0.75 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_pekin_anf",
+  "species": "duck_pekin",
+  "H": 0.5,
+  "L": 0.7,
+  "WS": 0.95,
+  "basis": "domestic heavy breed 3.6-4.5 kg",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_wa",
+  "species": "mallard",
+  "H": 0.33,
+  "L": 0.58,
+  "WS": 0.88,
+  "basis": "L 0.50-0.65 m; WS 0.81-0.98 m",
+  "fantasy": false
+ },
+ {
+  "id": "pw:crocodilo_lay_egg_ysav",
+  "species": "crocodile_egg_nile",
+  "H": 0.05,
+  "L": 0.08,
+  "WS": null,
+  "basis": "Nile crocodile egg ~8 x 5 cm (lying on side)",
+  "fantasy": false
+ },
+ {
+  "id": "pw:jabuti_lay_egg_ysav",
+  "species": "tortoise_egg_redfooted",
+  "H": 0.04,
+  "L": 0.05,
+  "WS": null,
+  "basis": "red-footed tortoise (jabuti) egg ~5 x 4 cm",
+  "fantasy": false
+ },
+ {
+  "id": "pw:ostrich_egg_wa",
+  "species": "ostrich_egg",
+  "H": 0.13,
+  "L": 0.15,
+  "WS": null,
+  "basis": "egg ~15 x 13 cm, 1.4 kg",
+  "fantasy": false
+ },
+ {
+  "id": "pw:duck_egg_wa",
+  "species": "duck_egg",
+  "H": 0.045,
+  "L": 0.065,
+  "WS": null,
+  "basis": "domestic/mallard duck egg ~6-7 x 4.5 cm",
+  "fantasy": false
+ }
+]

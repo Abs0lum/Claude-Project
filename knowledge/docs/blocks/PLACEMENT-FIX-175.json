@@ -1,0 +1,9 @@
+{
+ "changes": [
+  "F1 rafter45: beam rotation x -45 -> +45 (now low at the state side, like roof45)",
+  "F4 pw_snowcaps.geo.json: 72 uv windows shifted inside the texture",
+  "F4 pw_ramps.geo.json: 0 uv windows shifted inside the texture",
+  "F2/F3 companion: 3 patches (Rule D front neighbour, Rule E map + both orders)"
+ ],
+ "backup": "/home/claude/_docs/blocks/before_placement_fix_175"
+}

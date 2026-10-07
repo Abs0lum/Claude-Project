@@ -1,0 +1,56 @@
+{
+ "mvv_bakery_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_butcher_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_cottage_l_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_cottage_m_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_cottage_s_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_farm_cattle_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_farm_wheat_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_inn_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_lumberyard_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_quarry_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_smithy_a_r1": {
+  "issues": [],
+  "notes": []
+ },
+ "mvv_town_hall_a_r1": {
+  "issues": [],
+  "notes": [
+   "zone chamber#0: Z6 no bed inside (fine for a household living room; check)"
+  ]
+ },
+ "mvv_well_a_r1": {
+  "issues": [],
+  "notes": []
+ }
+}

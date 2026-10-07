@@ -1,0 +1,1286 @@
+[
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/amethyst_block",
+  "textures/blocks/amethyst_block_n.png",
+  1.14
+ ],
+ [
+  "RP-05 1.3.52",
+  "textures/blocks/azalea_plant",
+  "textures/blocks/azalea_plant_n.png",
+  1.09
+ ],
+ [
+  "RP-05 1.3.52",
+  "textures/blocks/azalea_side",
+  "textures/blocks/azalea_side_n.png",
+  1.1
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/barrel_side",
+  "textures/blocks/barrel_side_n.png",
+  1.12
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/barrel_top_open",
+  "textures/blocks/barrel_top_open_n.png",
+  1.1
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/brewing_stand",
+  "textures/blocks/brewing_stand_n.png",
+  1.24
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/brewing_stand_base",
+  "textures/blocks/brewing_stand_base_n.png",
+  1.22
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/cartography_table_side2",
+  "textures/blocks/cartography_table_side2_n.png",
+  1.09
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/cherry_log",
+  "textures/blocks/cherry_log_n.png",
+  1.14
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/coal_ore",
+  "textures/blocks/coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v7",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v8",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v11",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v5",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v6",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v14",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v9",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v12",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v4",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v10",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v2",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v15",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v13",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/coarse_dirt",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v1",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/coarse_dirt_v3",
+  "textures/blocks/coarse_dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/composter_bottom",
+  "textures/blocks/composter_bottom_n.png",
+  1.14
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/composter_side",
+  "textures/blocks/composter_side_n.png",
+  1.13
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/copper_ore",
+  "textures/blocks/coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_coal_ore",
+  "textures/blocks/deepslate_coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_copper_ore",
+  "textures/blocks/deepslate_coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_diamond_ore",
+  "textures/blocks/deepslate_diamond_ore_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_emerald_ore",
+  "textures/blocks/deepslate_diamond_ore_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_gold_ore",
+  "textures/blocks/deepslate_coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_iron_ore",
+  "textures/blocks/deepslate_coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_lapis_ore",
+  "textures/blocks/deepslate_coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/deepslate_redstone_ore",
+  "textures/blocks/deepslate_diamond_ore_n.png",
+  1.13
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/diamond_ore",
+  "textures/blocks/diamond_ore_n.png",
+  1.13
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v2",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v7",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v5",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v4",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v3",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v9",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/dirt",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v8",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v11",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v14",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v6",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v12",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v1",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v13",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v10",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/dirt_v15",
+  "textures/blocks/dirt_n.png",
+  0.83
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/dirt_podzol_top_v12",
+  "textures/blocks/dirt_podzol_top_v12_n.png",
+  0.92
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/dirt_podzol_top_v1",
+  "textures/blocks/dirt_podzol_top_v1_n.png",
+  0.91
+ ],
+ [
+  "RP-05 1.3.52",
+  "textures/blocks/rooted_dirt",
+  "textures/blocks/rooted_dirt_n.png",
+  0.85
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/furnace_side",
+  "textures/blocks/furnace_side_n.png",
+  1.11
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/furnace_top",
+  "textures/blocks/furnace_top_n.png",
+  1.1
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/emerald_ore",
+  "textures/blocks/diamond_ore_n.png",
+  1.13
+ ],
+ [
+  "RP-05 1.3.52",
+  "textures/blocks/firefly_bush",
+  "textures/blocks/firefly_bush_n.png",
+  1.16
+ ],
+ [
+  "RP-05 1.3.52",
+  "textures/blocks/firefly_bush_firefly",
+  "textures/blocks/firefly_bush_firefly_n_fix.png",
+  0.89
+ ],
+ [
+  "RP-08 1.4.10",
+  "textures/items/firefly_bush",
+  "textures/items/firefly_bush_n_pbr.png",
+  0.89
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/anvil_base",
+  "textures/blocks/anvil_base_n.png",
+  1.11
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/anvil_top_damaged_0",
+  "textures/blocks/anvil_top_damaged_0_n.png",
+  1.1
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/furnace_front_off",
+  "textures/blocks/furnace_front_off_n.png",
+  1.16
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/furnace_front_on",
+  "textures/blocks/furnace_front_on_n_256x1024.png",
+  1.15
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/gold_ore",
+  "textures/blocks/coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/grass_block_side_v0",
+  "textures/blocks/grass_block_side_v0_n_pbr.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/grass_side",
+  "textures/blocks/grass_side_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/grass_path_top",
+  "textures/blocks/grass_path_top_n.png",
+  0.91
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/iron_ore",
+  "textures/blocks/coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/lapis_ore",
+  "textures/blocks/coal_ore_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/lectern_front",
+  "textures/blocks/lectern_front_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/lectern_top",
+  "textures/blocks/lectern_top_n.png",
+  1.1
+ ],
+ [
+  "RP-05 1.3.52",
+  "textures/blocks/moss_block",
+  "textures/blocks/moss_block_n.png",
+  1.08
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v1",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v2",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v3",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v4",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v5",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v6",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v7",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v8",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v9",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v10",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v11",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v12",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v13",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v14",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_v15",
+  "textures/blocks/mud_n.png",
+  0.87
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v1",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v2",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v3",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v4",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v5",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v6",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v7",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v8",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v9",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v10",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v11",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v12",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v13",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v14",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/mud_bricks_v15",
+  "textures/blocks/mud_bricks_n.png",
+  0.88
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v6",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v3",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v1",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v5",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v7",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v9",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v4",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v13",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v12",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v14",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v11",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v10",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v8",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v15",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/mycelium_side_v2",
+  "textures/blocks/mycelium_side_n.png",
+  0.81
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/nether_gold_ore",
+  "textures/blocks/nether_gold_ore_n.png",
+  1.11
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v1",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v2",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v3",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v4",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v5",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v6",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v7",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v8",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v9",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v10",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v11",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v12",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v13",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v14",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/packed_mud_v15",
+  "textures/blocks/packed_mud_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/birch_log_v5",
+  "textures/blocks/birch_log_v5_n.png",
+  1.27
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/birch_log_v6",
+  "textures/blocks/birch_log_v6_n.png",
+  1.21
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/birch_log_v7",
+  "textures/blocks/birch_log_v7_n.png",
+  1.23
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/birch_log_v8",
+  "textures/blocks/birch_log_v8_n.png",
+  1.25
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/birch_log_v9",
+  "textures/blocks/birch_log_v9_n.png",
+  1.26
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/birch_log_v10",
+  "textures/blocks/birch_log_v10_n.png",
+  1.26
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/snow",
+  "textures/blocks/snow_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/jungle_log_v9",
+  "textures/blocks/jungle_log_v9_n.png",
+  1.26
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/jungle_log_v10",
+  "textures/blocks/jungle_log_v10_n.png",
+  1.29
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/jungle_log_v8",
+  "textures/blocks/jungle_log_v8_n.png",
+  1.24
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/jungle_log_v7",
+  "textures/blocks/jungle_log_v7_n.png",
+  1.25
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/jungle_log_v5",
+  "textures/blocks/jungle_log_v5_n.png",
+  1.23
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/jungle_log_v6",
+  "textures/blocks/jungle_log_v6_n.png",
+  1.23
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/oak_log_v10",
+  "textures/blocks/oak_log_v10_n.png",
+  1.2
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/oak_log_v5",
+  "textures/blocks/oak_log_v5_n.png",
+  1.22
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/oak_log_v6",
+  "textures/blocks/oak_log_v6_n.png",
+  1.22
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/oak_log_v7",
+  "textures/blocks/oak_log_v7_n.png",
+  1.22
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/oak_log_v8",
+  "textures/blocks/oak_log_v8_n.png",
+  1.22
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/oak_log_v9",
+  "textures/blocks/oak_log_v9_n.png",
+  1.19
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v1",
+  "textures/blocks/pw_sand_v1_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v2",
+  "textures/blocks/pw_sand_v2_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v3",
+  "textures/blocks/pw_sand_v3_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v4",
+  "textures/blocks/pw_sand_v4_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v5",
+  "textures/blocks/pw_sand_v5_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v6",
+  "textures/blocks/pw_sand_v6_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v7",
+  "textures/blocks/pw_sand_v7_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v8",
+  "textures/blocks/pw_sand_v8_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v9",
+  "textures/blocks/pw_sand_v9_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v10",
+  "textures/blocks/pw_sand_v10_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v11",
+  "textures/blocks/pw_sand_v11_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v12",
+  "textures/blocks/pw_sand_v12_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v17",
+  "textures/blocks/pw_sand_v1_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v18",
+  "textures/blocks/pw_sand_v2_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v19",
+  "textures/blocks/pw_sand_v3_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v20",
+  "textures/blocks/pw_sand_v4_n.png",
+  0.9
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v21",
+  "textures/blocks/pw_sand_v21_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v22",
+  "textures/blocks/pw_sand_v22_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v23",
+  "textures/blocks/pw_sand_v23_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/pw_sand_v24",
+  "textures/blocks/pw_sand_v24_n.png",
+  0.91
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/grass_path_side",
+  "textures/blocks/grass_path_side_n.png",
+  0.91
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/snow_v0",
+  "textures/blocks/snow_v0_n.png",
+  0.89
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/spruce_log_v9",
+  "textures/blocks/spruce_log_v9_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/spruce_log_v10",
+  "textures/blocks/spruce_log_v10_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/spruce_log_v8",
+  "textures/blocks/spruce_log_v8_n.png",
+  1.12
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/spruce_log_v7",
+  "textures/blocks/spruce_log_v7_n.png",
+  1.12
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/spruce_log_v5",
+  "textures/blocks/spruce_log_v5_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/spruce_log_v6",
+  "textures/blocks/spruce_log_v6_n.png",
+  1.13
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/quartz_ore",
+  "textures/blocks/quartz_ore_n.png",
+  1.21
+ ],
+ [
+  "RP-11 1.3.36",
+  "textures/blocks/redstone_ore",
+  "textures/blocks/diamond_ore_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/respawn_anchor_side0",
+  "textures/blocks/respawn_anchor_side0_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/respawn_anchor_side1",
+  "textures/blocks/respawn_anchor_side0_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/respawn_anchor_side2",
+  "textures/blocks/respawn_anchor_side0_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/respawn_anchor_side3",
+  "textures/blocks/respawn_anchor_side0_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/respawn_anchor_side4",
+  "textures/blocks/respawn_anchor_side0_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/respawn_anchor_top_off",
+  "textures/blocks/respawn_anchor_top_off_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/sea_lantern",
+  "textures/blocks/sea_lantern_n.png",
+  1.16
+ ],
+ [
+  "RP-05 1.3.52",
+  "textures/blocks/shroomlight",
+  "textures/blocks/shroomlight_n.png",
+  1.13
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/soul_sand",
+  "textures/blocks/soul_sand_n.png",
+  1.14
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/smoker_bottom",
+  "textures/blocks/smoker_bottom_n.png",
+  1.09
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/smoker_front_off",
+  "textures/blocks/smoker_front_off_n.png",
+  1.12
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/smoker_front_on",
+  "textures/blocks/smoker_front_on_n_256x1024.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/smoker_side",
+  "textures/blocks/smoker_side_n.png",
+  1.1
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/smoker_top",
+  "textures/blocks/smoker_top_n.png",
+  1.13
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/snow_v2",
+  "textures/blocks/snow_v2_n.png",
+  0.89
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/snow_v5",
+  "textures/blocks/snow_v5_n.png",
+  0.89
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/snow_v6",
+  "textures/blocks/snow_v6_n.png",
+  0.88
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/snow_v7",
+  "textures/blocks/snow_v7_n.png",
+  0.89
+ ],
+ [
+  "RP-10 1.3.44",
+  "textures/blocks/snow_v1",
+  "textures/blocks/snow_v1_n.png",
+  0.89
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/stonecutter2_saw",
+  "textures/blocks/stonecutter2_saw_n.png",
+  1.09
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/stonecutter2_side",
+  "textures/blocks/stonecutter2_side_n.png",
+  1.11
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/stonecutter_other_side",
+  "textures/blocks/stonecutter_other_side_n.png",
+  1.11
+ ],
+ [
+  "RP-03 1.3.61",
+  "textures/blocks/stonecutter_side",
+  "textures/blocks/stonecutter_side_n.png",
+  1.11
+ ],
+ [
+  "RP-04 1.3.145",
+  "textures/blocks/tuff",
+  "textures/blocks/tuff_n.png",
+  1.08
+ ]
+]

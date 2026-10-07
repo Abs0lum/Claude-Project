@@ -1,0 +1,32 @@
+{
+ "rp04": {
+  "dir": "rp04-147",
+  "new": 146,
+  "replaced": 146,
+  "bytes": 244221760
+ },
+ "rp10": {
+  "dir": "rp10-145",
+  "new": 60,
+  "replaced": 60,
+  "bytes": 39179117
+ },
+ "rp05": {
+  "dir": "rp05-53",
+  "new": 32,
+  "replaced": 32,
+  "bytes": 31159388
+ },
+ "rp01": {
+  "dir": "rp01-109",
+  "new": 2,
+  "replaced": 2,
+  "bytes": 86726561
+ },
+ "rp03": {
+  "dir": "rp03-62",
+  "new": 8,
+  "replaced": 8,
+  "bytes": 123225120
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "report": {
+  "rp07-1440": {
+   "entities_replaced": 590,
+   "entities_added": 3
+  },
+  "rp06-1426": {
+   "entities_replaced": 14,
+   "entities_added": 0
+  },
+  "bp02-200": "pw_flutter.js + import"
+ },
+ "gate_ok": true,
+ "checks": [
+  {
+   "pack": "rp06-1426",
+   "json_errors": [],
+   "n_json_errors": 0,
+   "comment_json_files": 1,
+   "duplicate_ids": [],
+   "unresolved_std_refs": [],
+   "n_unresolved": 0,
+   "entities": 44
+  },
+  {
+   "pack": "rp07-1440",
+   "json_errors": [],
+   "n_json_errors": 0,
+   "comment_json_files": 2,
+   "duplicate_ids": [],
+   "unresolved_std_refs": [],
+   "n_unresolved": 0,
+   "entities": 604
+  },
+  {
+   "pack": "rp08-149",
+   "json_errors": [],
+   "n_json_errors": 0,
+   "comment_json_files": 0,
+   "duplicate_ids": [],
+   "unresolved_std_refs": [],
+   "n_unresolved": 0,
+   "entities": 29
+  },
+  {
+   "staged_vs_built_mismatch": [],
+   "n": 0
+  }
+ ]
+}

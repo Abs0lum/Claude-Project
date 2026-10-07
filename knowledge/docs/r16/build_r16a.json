@@ -1,0 +1,82 @@
+{
+ "vex": {
+  "min_engine_version": [
+   "1.8.0",
+   "1.21.0"
+  ]
+ },
+ "phantom": {
+  "geometry_file": "models/entity/pw_phantom.geo.json",
+  "animation_file": "animations/pw_phantom.animation.json",
+  "hinges": [
+   {
+    "outer": "left_wing_tip2",
+    "axis": "z",
+    "pivot": [
+     8.5133,
+     6.40043,
+     -8.0
+    ],
+    "line_worst_px": 0.0
+   },
+   {
+    "outer": "right_wing_tip2",
+    "axis": "z",
+    "pivot": [
+     -8.4867,
+     6.40043,
+     -8.0
+    ],
+    "line_worst_px": 0.0
+   }
+  ]
+ },
+ "parrot": {
+  "geometry_file": "models/entity/pw_parrot.geo.json",
+  "animation_file": "animations/pw_parrot.animation.json",
+  "hinges": [
+   {
+    "outer": "left_wing_fly2",
+    "gap_px": 1.286,
+    "shift_world": [
+     -1.3347,
+     -0.0323,
+     -0.0441
+    ],
+    "shift_model": [
+     0.03422,
+     0.04261,
+     -1.33474
+    ],
+    "axis": "y",
+    "pivot": [
+     1.58421,
+     1.8664,
+     3.81786
+    ],
+    "line_worst_px": 0.543
+   },
+   {
+    "outer": "right_wing_fly2",
+    "gap_px": 1.286,
+    "shift_world": [
+     1.3347,
+     -0.0323,
+     -0.0441
+    ],
+    "shift_model": [
+     -0.03422,
+     0.04261,
+     -1.33474
+    ],
+    "axis": "y",
+    "pivot": [
+     -1.58421,
+     1.8664,
+     3.81786
+    ],
+    "line_worst_px": 0.543
+   }
+  ]
+ }
+}

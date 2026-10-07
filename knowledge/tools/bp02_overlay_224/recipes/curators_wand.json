@@ -1,0 +1,32 @@
+{
+ "format_version": "1.20.10",
+ "minecraft:recipe_shaped": {
+  "description": {
+   "identifier": "pw:curators_wand"
+  },
+  "tags": [
+   "crafting_table"
+  ],
+  "pattern": [
+   " G",
+   "S "
+  ],
+  "key": {
+   "G": {
+    "item": "minecraft:gold_ingot"
+   },
+   "S": {
+    "item": "minecraft:stick"
+   }
+  },
+  "unlock": [
+   {
+    "item": "minecraft:stick"
+   }
+  ],
+  "result": {
+   "item": "pw:curators_wand",
+   "count": 1
+  }
+ }
+}

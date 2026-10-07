@@ -1,0 +1,2647 @@
+{
+ "size_fix": [
+  {
+   "id": "pw:anteater_ytri",
+   "before": null,
+   "after": 0.325
+  },
+  {
+   "id": "pw:baby_african_black_eagle_ysav",
+   "before": null,
+   "after": 0.657
+  },
+  {
+   "id": "pw:baby_fisher_eagle_ysav",
+   "before": null,
+   "after": 0.563
+  },
+  {
+   "id": "pw:beluga_ytri",
+   "before": null,
+   "after": 0.923
+  },
+  {
+   "id": "pw:blue_jay_wa",
+   "before": null,
+   "after": 0.323
+  },
+  {
+   "id": "pw:boar_wa",
+   "before": null,
+   "after": 0.795
+  },
+  {
+   "id": "pw:crab_wa",
+   "before": null,
+   "after": 0.269
+  },
+  {
+   "id": "pw:dove_wa",
+   "before": null,
+   "after": 0.362
+  },
+  {
+   "id": "pw:duck_wa",
+   "before": null,
+   "after": 0.636
+  },
+  {
+   "id": "pw:eagle_wa",
+   "before": null,
+   "after": 0.601
+  },
+  {
+   "id": "pw:emu_ytri",
+   "before": null,
+   "after": 0.735
+  },
+  {
+   "id": "pw:hedgehog_wa",
+   "before": null,
+   "after": 0.619
+  },
+  {
+   "id": "pw:honey_badger_ysav",
+   "before": null,
+   "after": 0.54
+  },
+  {
+   "id": "pw:hyenas_wa",
+   "before": null,
+   "after": 0.834
+  },
+  {
+   "id": "pw:jerboa_wwa",
+   "before": null,
+   "after": 0.288
+  },
+  {
+   "id": "pw:kakapo_wwa",
+   "before": null,
+   "after": 0.6
+  },
+  {
+   "id": "pw:koala_ytri",
+   "before": null,
+   "after": 0.745
+  },
+  {
+   "id": "pw:komodo_dragon_wa",
+   "before": null,
+   "after": 0.913
+  },
+  {
+   "id": "pw:orca_ytri",
+   "before": null,
+   "after": 1.374
+  },
+  {
+   "id": "pw:pangolin_ysav",
+   "before": null,
+   "after": 0.446
+  },
+  {
+   "id": "pw:platypus_ytri",
+   "before": null,
+   "after": 0.452
+  },
+  {
+   "id": "pw:prairie_dog_wwa",
+   "before": null,
+   "after": 0.377
+  },
+  {
+   "id": "pw:rat_wa",
+   "before": null,
+   "after": 0.19
+  },
+  {
+   "id": "pw:red_panda_wa",
+   "before": null,
+   "after": 0.67
+  },
+  {
+   "id": "pw:serval_ysav",
+   "before": null,
+   "after": 0.892
+  },
+  {
+   "id": "pw:shoebill_wwa",
+   "before": null,
+   "after": 0.705
+  },
+  {
+   "id": "pw:snake_scarlet_wa",
+   "before": null,
+   "after": 0.158
+  },
+  {
+   "id": "pw:swan_wwa",
+   "before": null,
+   "after": 1.151
+  },
+  {
+   "id": "pw:toadfish_wwa",
+   "before": null,
+   "after": 0.267
+  },
+  {
+   "id": "pw:tortoise_ysav",
+   "before": null,
+   "after": 0.229
+  },
+  {
+   "id": "pw:toucan_wa",
+   "before": null,
+   "after": 0.487
+  },
+  {
+   "id": "pw:tsessebe_ysav",
+   "before": null,
+   "after": 1.125
+  },
+  {
+   "id": "pw:turkey_wa",
+   "before": null,
+   "after": 0.772
+  },
+  {
+   "id": "pw:centipede_desert_anf",
+   "before": {
+    "value": 0.75
+   },
+   "after": 0.1113
+  }
+ ],
+ "neutralized": [
+  {
+   "id": "pw:wasp_yellowjacket_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:wasp_paper_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:hornet_asian_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:hornet_european_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:scorpion_deathstalker_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:scorpion_indianred_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:lantern_fish_wa",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:nearest_attackable_target player removed (0 entries dropped)",
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:crab_emerald_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:scorpion_giantdesert_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:scorpion_giantforest_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "sf_nba:crab",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:nearest_attackable_target removed (player only)",
+    "base:hurt_by_target added (fights back)"
+   ]
+  },
+  {
+   "id": "pw:snake_viper_horned_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:rattlesnake_ws",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "minecraft:tiger_rattlesnake_adult:nearest_attackable_target player removed (0 entries dropped)",
+    "base:hurt_by_target added (fights back)"
+   ]
+  },
+  {
+   "id": "pw:snake_viper_blue_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "pw:snake_coral_wa",
+   "class_before": "HOSTILE",
+   "changes": [
+    "minecraft:spider_hostile:nearest_attackable_target player removed (0 entries dropped)",
+    "minecraft:spider_angry:nearest_attackable_target player removed (0 entries dropped)",
+    "minecraft:spider_poison_easy:attack -> 1, no venom",
+    "minecraft:spider_poison_normal:attack -> 1, no venom",
+    "minecraft:spider_poison_hard:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:cave_snake",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:nearest_attackable_target player removed (0 entries dropped)",
+    "base:attack -> 1, no venom",
+    "sf_nba:snake_tame:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_wa",
+   "class_before": "HOSTILE",
+   "changes": [
+    "minecraft:spider_hostile:nearest_attackable_target player removed (0 entries dropped)",
+    "minecraft:spider_angry:nearest_attackable_target player removed (0 entries dropped)",
+    "minecraft:spider_poison_easy:attack -> 1, no venom",
+    "minecraft:spider_poison_normal:attack -> 1, no venom",
+    "minecraft:spider_poison_hard:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:viper_ysav",
+   "class_before": "HOSTILE",
+   "changes": [
+    "minecraft:wild:nearest_attackable_target player removed (0 entries dropped)",
+    "minecraft:wild:attack -> 1, no venom",
+    "minecraft:tame:attack -> 1, no venom",
+    "base:hurt_by_target added (fights back)"
+   ]
+  },
+  {
+   "id": "pw:snake_cobra_indian_anf",
+   "class_before": "HOSTILE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target player removed (0 entries dropped)"
+   ]
+  },
+  {
+   "id": "sf_nba:desert_scorpion",
+   "class_before": "HOSTILE (in darkness)",
+   "changes": [
+    "base:nearest_attackable_target player removed (0 entries dropped)",
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:jungle_scorpion",
+   "class_before": "HOSTILE (in darkness)",
+   "changes": [
+    "base:nearest_attackable_target player removed (0 entries dropped)",
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:piranha",
+   "class_before": "HOSTILE (player in water)",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "sf_nba:is_in_water:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:fly_fruit_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:fly_dung_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:fly_bluebottle_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:termite_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:firefly_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_adonisblue_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:fly_horse_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:fly_hover_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_crimsonrose_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_emeraldswallowtail_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_monarch_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_giantafrican_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_bluemorpho_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:gecko_blue_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:shellfish_seaurchin_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_goliathbirdwing_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:hamster_dwarf_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:gecko_yellow_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:newt_eastern_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:shellfish_clam_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:earthworm_common_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:slug_spanish_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:newt_firebelly_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:caterpillar_queenalexandra_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:slug_europeanred_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lemming_bog_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:mouse_harvest_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:shellfish_scallop_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:toad_canadian_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lemming_arctic_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lemming_yellowsteppe_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:gecko_black_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:newt_crested_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:toad_yosemite_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:slug_leopard_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lemming_norway_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:newt_emperor_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:hedgehog_madras_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:mouse_house_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:mouse_wood_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:toad_european_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:toad_indian_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:hedgehog_southafrican_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:earthworm_nightcrawler_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:hamster_syrian_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:gerbil_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:mouse_jumping_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:gecko_leopard_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:hedgehog_desert_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:shellfish_starfish_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:hedgehog_euro_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:hedgehog_longeared_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lemur_mouse_brown_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:rat_marsh_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lemur_mouse_grey_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:stoat_japanese_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:stoat_irish_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:toad_africangiant_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:crab_blue_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:crab_stone_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:stoat_russian_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:stoat_british_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:rat_pack_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:squirrel_red_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:rat_black_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lobster_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:rat_brown_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:rat_fancy_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:chameleon_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:squirrel_grey_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:ferret_common_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:lemur_sportive_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:earthworm_gippsland_anf",
+   "class_before": "HOSTILE-AFTER-FLEE",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "cyd_ulta:alert_for_attack_targets:nearest_attackable_target removed (player only)"
+   ]
+  },
+  {
+   "id": "pw:ant_wa",
+   "class_before": "NEUTRAL-PROTECTIVE",
+   "changes": [
+    "minecraft:baby_wild:nearest_attackable_target removed (player only)",
+    "minecraft:adult_hostile:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:crab_wa",
+   "class_before": "NEUTRAL-PROTECTIVE",
+   "changes": [
+    "minecraft:baby_wild:nearest_attackable_target removed (player only)",
+    "minecraft:adult_hostile:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:ladybug_22spotted_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_mountainpine_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:ladybug_9spotted_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:ladybug_7spotted_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_mexicanbean_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:ladybug_harlequin_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:ladybug_15spotted_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:ant",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_coloradopotato_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:cricket_house_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:cricket_cave_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:centipede_brown_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:centipede_common_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snail_desert_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:cricket_greenbush_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:cricket_tobacco_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_rosymaple_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snail_milk_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_stag_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_gardentiger_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snail_candycane_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_adonisblue_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_desert_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snail_garden_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_atlas_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_elephant_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_coal_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_comet_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_crested_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_emeraldswallowtail_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_blue_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_marsh_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_willow_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:beetle_hercules_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:robin_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_great_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_longtailed_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_crimsonrose_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_luna_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snail_giantafrican_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:tit_bearded_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_monarch_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_gypsy_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:centipede_pacificgiant_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_goliathbirdwing_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_giantleopard_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:rat_wa",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "minecraft:rat_tame:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_bluemorpho_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_queenalexandra_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:puffin_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_atlas_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:pigeon_rock_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:moth_emperor_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:octopus_blueringed_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:crow_piping_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:pigeon_africanolive_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:jay_brown_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:pigeon_passenger_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:pigeon_wood_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:toucan_aracari_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:grasshopper_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:duck_mandarin_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:magpie_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_garter_butler_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:platypus",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "base:hurt_by_target added (fights back)"
+   ]
+  },
+  {
+   "id": "pw:crow_carrion_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:crow_hooded_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:toucan_channelbilled_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:owl_tawny_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:anglerfish",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": []
+  },
+  {
+   "id": "pw:tern_fairy_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:raven_whitenecked_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:butterfly_giantafrican_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:crow_collared_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:roadrunner_wwa",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_boa_kenyansand_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_garter_california_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:stickinsect_goliath_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:coral_snake",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "sf_nba:snake_tame:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_milk_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_water_plainbellied_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_water_brown_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_rattle_timber_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_corn_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_python_pastel_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_python_royal_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:snake",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "sf_nba:snake_tame:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:snake_rattle_diamondback_anf",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "sf_nba:rattlesnake",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "sf_nba:snake_tame:attack -> 1, no venom"
+   ]
+  },
+  {
+   "id": "pw:hedgehog_wa",
+   "class_before": "NEUTRAL-RETALIATES",
+   "changes": [
+    "base:attack -> 1, no venom",
+    "minecraft:erizo_tame:attack -> 1, no venom"
+   ]
+  }
+ ],
+ "twins": [
+  {
+   "id": "pw:giant_wasp_yellowjacket_anf",
+   "name": "Giant Wasp Yellowjacket",
+   "from": "pw:wasp_yellowjacket_anf",
+   "archetype": "pw:giant_hornet",
+   "scale": 1.2654,
+   "length_blocks": 1.2,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/wasp_yellowjacket.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_wasp_paper_anf",
+   "name": "Giant Wasp Paper",
+   "from": "pw:wasp_paper_anf",
+   "archetype": "pw:giant_hornet",
+   "scale": 1.2103,
+   "length_blocks": 1.2,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/wasp_paper.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_hornet_asian_anf",
+   "name": "Giant Hornet Asian",
+   "from": "pw:hornet_asian_anf",
+   "archetype": "pw:giant_hornet",
+   "scale": 0.9715,
+   "length_blocks": 1.2,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/hornet_asian.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_hornet_european_anf",
+   "name": "Giant Hornet European",
+   "from": "pw:hornet_european_anf",
+   "archetype": "pw:giant_hornet",
+   "scale": 0.9704,
+   "length_blocks": 1.2,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/hornet_european.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_deathstalker_anf",
+   "name": "Giant Scorpion Deathstalker",
+   "from": "pw:scorpion_deathstalker_anf",
+   "archetype": "pw:giant_scorpion",
+   "scale": 2.1833,
+   "length_blocks": 2.5,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/scorpion_deathstalker.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_indianred_anf",
+   "name": "Giant Scorpion Indianred",
+   "from": "pw:scorpion_indianred_anf",
+   "archetype": "pw:giant_scorpion",
+   "scale": 2.1833,
+   "length_blocks": 2.5,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/scorpion_indianred.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_crab_emerald_anf",
+   "name": "Giant Crab Emerald",
+   "from": "pw:crab_emerald_anf",
+   "archetype": "pw:giant_crab",
+   "scale": 1.6594,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/sealife/crab_emerald.json",
+   "sound": false,
+   "weights": [
+    3
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_giantdesert_anf",
+   "name": "Giant Scorpion Giantdesert",
+   "from": "pw:scorpion_giantdesert_anf",
+   "archetype": "pw:giant_scorpion",
+   "scale": 1.5105,
+   "length_blocks": 2.5,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/scorpion_giantdesert.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_scorpion_giantforest_anf",
+   "name": "Giant Scorpion Giantforest",
+   "from": "pw:scorpion_giantforest_anf",
+   "archetype": "pw:giant_scorpion",
+   "scale": 1.5067,
+   "length_blocks": 2.5,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/scorpion_giantforest.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_crab_nba",
+   "name": "Giant Crab",
+   "from": "sf_nba:crab",
+   "archetype": "pw:giant_crab",
+   "scale": 2.9025,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "sf_nba:baby",
+    "sf_nba:breeding_cooldown",
+    "sf_nba:can_breed",
+    "sf_nba:permanent_baby",
+    "sf_nba:tamed",
+    "sf_nba:untamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/crab.entity.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_snake_viper_horned_anf",
+   "name": "Giant Snake Viper Horned",
+   "from": "pw:snake_viper_horned_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.0968,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_viper_horned.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_rattlesnake_ws",
+   "name": "Giant Rattlesnake",
+   "from": "pw:rattlesnake_ws",
+   "archetype": "pw:giant_viper",
+   "scale": 1.8591,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "minecraft:tiger_rattlesnake_baby"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/ws/skinscraft_tiger_rattlesnake.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_viper_blue_anf",
+   "name": "Giant Snake Viper Blue",
+   "from": "pw:snake_viper_blue_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.0965,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_viper_blue.json",
+   "sound": true,
+   "weights": [
+    2
+   ]
+  },
+  {
+   "id": "pw:giant_snake_coral_wa",
+   "name": "Giant Snake Coral",
+   "from": "pw:snake_coral_wa",
+   "archetype": "pw:giant_viper",
+   "scale": 1.3305,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/wa/snake_coral.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_cave_snake_nba",
+   "name": "Giant Cave Snake",
+   "from": "sf_nba:cave_snake",
+   "archetype": "pw:giant_viper",
+   "scale": 2.6635,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "sf_nba:snake_tame"
+   ],
+   "client_from": "/home/claude/_build/rp06-1428/entity/cave_snake.entity.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_wa",
+   "name": "Giant Snake",
+   "from": "pw:snake_wa",
+   "archetype": "pw:giant_viper",
+   "scale": 2.6639,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/wa/snake.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_viper_ysav",
+   "name": "Giant Viper",
+   "from": "pw:viper_ysav",
+   "archetype": "pw:giant_viper",
+   "scale": 3.7915,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "minecraft:baby",
+    "minecraft:tame"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/ysav/savanna_vibora.entity.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_cobra_indian_anf",
+   "name": "Giant Snake Cobra Indian",
+   "from": "pw:snake_cobra_indian_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.1052,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_cobra_indian.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_desert_scorpion_nba",
+   "name": "Giant Desert Scorpion",
+   "from": "sf_nba:desert_scorpion",
+   "archetype": "pw:giant_scorpion",
+   "scale": 2.1037,
+   "length_blocks": 2.5,
+   "poison": true,
+   "groups_removed": [
+    "sf_nba:baby"
+   ],
+   "client_from": "/home/claude/_build/rp06-1428/entity/desert_scorpion.entity.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_jungle_scorpion_nba",
+   "name": "Giant Jungle Scorpion",
+   "from": "sf_nba:jungle_scorpion",
+   "archetype": "pw:giant_scorpion",
+   "scale": 1.0054,
+   "length_blocks": 2.5,
+   "poison": true,
+   "groups_removed": [
+    "sf_nba:baby"
+   ],
+   "client_from": "/home/claude/_build/rp06-1428/entity/jungle_scorpion.entity.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_piranha_nba",
+   "name": "Giant Piranha",
+   "from": "sf_nba:piranha",
+   "archetype": "pw:giant_piranha",
+   "scale": 1.6379,
+   "length_blocks": 1.2,
+   "poison": false,
+   "groups_removed": [],
+   "client_from": "/home/claude/_build/rp06-1428/entity/piranha.entity.json",
+   "sound": true,
+   "weights": [
+    6
+   ]
+  },
+  {
+   "id": "pw:giant_termite_anf",
+   "name": "Giant Termite",
+   "from": "pw:termite_anf",
+   "archetype": "pw:giant_ant",
+   "scale": 1.0949,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/termite.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_rat_marsh_anf",
+   "name": "Giant Rat Marsh",
+   "from": "pw:rat_marsh_anf",
+   "archetype": "pw:giant_rat",
+   "scale": 1.2418,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/mammals/rat_marsh.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_crab_blue_anf",
+   "name": "Giant Crab Blue",
+   "from": "pw:crab_blue_anf",
+   "archetype": "pw:giant_crab",
+   "scale": 1.6589,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/sealife/crab_blue.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_crab_stone_anf",
+   "name": "Giant Crab Stone",
+   "from": "pw:crab_stone_anf",
+   "archetype": "pw:giant_crab",
+   "scale": 1.6589,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/sealife/crab_stone.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_rat_pack_anf",
+   "name": "Giant Rat Pack",
+   "from": "pw:rat_pack_anf",
+   "archetype": "pw:giant_rat",
+   "scale": 1.2435,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/mammals/rat_pack.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_rat_black_anf",
+   "name": "Giant Rat Black",
+   "from": "pw:rat_black_anf",
+   "archetype": "pw:giant_rat",
+   "scale": 1.0182,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/mammals/rat_black.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_rat_brown_anf",
+   "name": "Giant Rat Brown",
+   "from": "pw:rat_brown_anf",
+   "archetype": "pw:giant_rat",
+   "scale": 1.0175,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/mammals/rat_brown.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_rat_fancy_anf",
+   "name": "Giant Rat Fancy",
+   "from": "pw:rat_fancy_anf",
+   "archetype": "pw:giant_rat",
+   "scale": 1.0175,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/mammals/rat_fancy.json",
+   "sound": true,
+   "weights": [
+    2
+   ]
+  },
+  {
+   "id": "pw:giant_ant_wa",
+   "name": "Giant Ant",
+   "from": "pw:ant_wa",
+   "archetype": "pw:giant_ant",
+   "scale": 1.6882,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "minecraft:baby",
+    "minecraft:baby_scared",
+    "minecraft:baby_wild"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/wa/ant.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_crab_wa",
+   "name": "Giant Crab",
+   "from": "pw:crab_wa",
+   "archetype": "pw:giant_crab",
+   "scale": 2.907,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "minecraft:baby",
+    "minecraft:baby_scared",
+    "minecraft:baby_wild"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/wa/crab.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_mountainpine_anf",
+   "name": "Giant Beetle Mountainpine",
+   "from": "pw:beetle_mountainpine_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 2.0395,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_mountainpine.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_mexicanbean_anf",
+   "name": "Giant Beetle Mexicanbean",
+   "from": "pw:beetle_mexicanbean_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 2.3111,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_mexicanbean.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_ant_nba",
+   "name": "Giant Ant",
+   "from": "sf_nba:ant",
+   "archetype": "pw:giant_ant",
+   "scale": 1.6912,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [],
+   "client_from": "/home/claude/_build/rp07-1444/entity/ant.entity.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_coloradopotato_anf",
+   "name": "Giant Beetle Coloradopotato",
+   "from": "pw:beetle_coloradopotato_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 2.0843,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_coloradopotato.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_brown_anf",
+   "name": "Giant Centipede Brown",
+   "from": "pw:centipede_brown_anf",
+   "archetype": "pw:giant_centipede",
+   "scale": 1.2109,
+   "length_blocks": 3.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/centipede_brown.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_desert_anf",
+   "name": "Giant Centipede Desert",
+   "from": "pw:centipede_desert_anf",
+   "archetype": "pw:giant_centipede",
+   "scale": 1.2082,
+   "length_blocks": 3.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/centipede_desert.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_common_anf",
+   "name": "Giant Centipede Common",
+   "from": "pw:centipede_common_anf",
+   "archetype": "pw:giant_centipede",
+   "scale": 1.2061,
+   "length_blocks": 3.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/centipede_common.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_stag_anf",
+   "name": "Giant Beetle Stag",
+   "from": "pw:beetle_stag_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 1.0703,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_stag.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_desert_anf",
+   "name": "Giant Beetle Desert",
+   "from": "pw:beetle_desert_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 1.2702,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_desert.json",
+   "sound": false,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_atlas_anf",
+   "name": "Giant Beetle Atlas",
+   "from": "pw:beetle_atlas_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 1.0588,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_atlas.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_elephant_anf",
+   "name": "Giant Beetle Elephant",
+   "from": "pw:beetle_elephant_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 1.0374,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_elephant.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_beetle_hercules_anf",
+   "name": "Giant Beetle Hercules",
+   "from": "pw:beetle_hercules_anf",
+   "archetype": "pw:giant_beetle",
+   "scale": 1.0043,
+   "length_blocks": 2.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/beetle_hercules.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_centipede_pacificgiant_anf",
+   "name": "Giant Centipede Pacificgiant",
+   "from": "pw:centipede_pacificgiant_anf",
+   "archetype": "pw:giant_centipede",
+   "scale": 1.2098,
+   "length_blocks": 3.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/insects/centipede_pacificgiant.json",
+   "sound": false,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_rat_wa",
+   "name": "Giant Rat",
+   "from": "pw:rat_wa",
+   "archetype": "pw:giant_rat",
+   "scale": 0.9231,
+   "length_blocks": 1.5,
+   "poison": false,
+   "groups_removed": [
+    "minecraft:rat_baby",
+    "minecraft:rat_tame"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/wa/rat.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_snake_garter_butler_anf",
+   "name": "Giant Snake Garter Butler",
+   "from": "pw:snake_garter_butler_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.4333,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_garter_butler.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_snake_boa_kenyansand_anf",
+   "name": "Giant Snake Boa Kenyansand",
+   "from": "pw:snake_boa_kenyansand_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 0.6209,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_boa_kenyansand.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_garter_california_anf",
+   "name": "Giant Snake Garter California",
+   "from": "pw:snake_garter_california_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.4347,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_garter_california.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_coral_snake_nba",
+   "name": "Giant Coral Snake",
+   "from": "sf_nba:coral_snake",
+   "archetype": "pw:giant_viper",
+   "scale": 2.2844,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "sf_nba:snake_tame"
+   ],
+   "client_from": "/home/claude/_build/rp06-1428/entity/coral_snake.entity.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_milk_anf",
+   "name": "Giant Snake Milk",
+   "from": "pw:snake_milk_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.4344,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_milk.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_water_plainbellied_anf",
+   "name": "Giant Snake Water Plainbellied",
+   "from": "pw:snake_water_plainbellied_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.4344,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_water_plainbellied.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_snake_water_brown_anf",
+   "name": "Giant Snake Water Brown",
+   "from": "pw:snake_water_brown_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.4336,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_water_brown.json",
+   "sound": true,
+   "weights": [
+    8
+   ]
+  },
+  {
+   "id": "pw:giant_snake_rattle_timber_anf",
+   "name": "Giant Snake Rattle Timber",
+   "from": "pw:snake_rattle_timber_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.0459,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_rattle_timber.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_corn_anf",
+   "name": "Giant Snake Corn",
+   "from": "pw:snake_corn_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.4346,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_corn.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_python_pastel_anf",
+   "name": "Giant Snake Python Pastel",
+   "from": "pw:snake_python_pastel_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 0.539,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_python_pastel.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_python_royal_anf",
+   "name": "Giant Snake Python Royal",
+   "from": "pw:snake_python_royal_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 0.539,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_python_royal.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_nba",
+   "name": "Giant Snake",
+   "from": "sf_nba:snake",
+   "archetype": "pw:giant_viper",
+   "scale": 2.6649,
+   "length_blocks": 4.0,
+   "poison": false,
+   "groups_removed": [
+    "sf_nba:snake_tame"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/snake.entity.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_snake_rattle_diamondback_anf",
+   "name": "Giant Snake Rattle Diamondback",
+   "from": "pw:snake_rattle_diamondback_anf",
+   "archetype": "pw:giant_viper",
+   "scale": 1.0459,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "cyd_ulta:baby",
+    "cyd_ulta:tamed"
+   ],
+   "client_from": "/home/claude/_build/rp07-1444/entity/pw_menagerie/anf/reptiles/snake_rattle_diamondback.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  },
+  {
+   "id": "pw:giant_rattlesnake_nba",
+   "name": "Giant Rattlesnake",
+   "from": "sf_nba:rattlesnake",
+   "archetype": "pw:giant_viper",
+   "scale": 2.2843,
+   "length_blocks": 4.0,
+   "poison": true,
+   "groups_removed": [
+    "sf_nba:snake_tame"
+   ],
+   "client_from": "/home/claude/_build/rp06-1428/entity/rattlesnake.entity.json",
+   "sound": true,
+   "weights": [
+    4
+   ]
+  }
+ ],
+ "problems": []
+}

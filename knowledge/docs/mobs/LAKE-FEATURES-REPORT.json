@@ -1,0 +1,148 @@
+[
+ {
+  "pond": "pond_temperate_a",
+  "size": [
+   11,
+   5,
+   9
+  ],
+  "water_cells": 47,
+  "max_depth": 2,
+  "biomes": [
+   "minecraft:birch_forest",
+   "minecraft:birch_forest_mutated",
+   "minecraft:dappled_forest",
+   "minecraft:flower_forest",
+   "minecraft:forest",
+   "minecraft:meadow",
+   "minecraft:plains",
+   "minecraft:roofed_forest",
+   "minecraft:sunflower_plains",
+   "minecraft:swampland",
+   "pw:alpine_meadow",
+   "pw:cherry_valley",
+   "pw:forest_sparse",
+   "pw:misty_dark_forest",
+   "pw:pale_hills",
+   "pw:swamp_lagoon"
+  ],
+  "lily": 0.08
+ },
+ {
+  "pond": "pond_temperate_b",
+  "size": [
+   15,
+   6,
+   12
+  ],
+  "water_cells": 104,
+  "max_depth": 3,
+  "biomes": [
+   "minecraft:birch_forest",
+   "minecraft:birch_forest_mutated",
+   "minecraft:dappled_forest",
+   "minecraft:flower_forest",
+   "minecraft:forest",
+   "minecraft:meadow",
+   "minecraft:plains",
+   "minecraft:roofed_forest",
+   "minecraft:sunflower_plains",
+   "minecraft:swampland",
+   "pw:alpine_meadow",
+   "pw:cherry_valley",
+   "pw:forest_sparse",
+   "pw:misty_dark_forest",
+   "pw:pale_hills",
+   "pw:swamp_lagoon"
+  ],
+  "lily": 0.08
+ },
+ {
+  "pond": "pond_boreal_a",
+  "size": [
+   11,
+   5,
+   9
+  ],
+  "water_cells": 47,
+  "max_depth": 2,
+  "biomes": [
+   "minecraft:cold_taiga",
+   "minecraft:extreme_hills_plus_trees",
+   "minecraft:mega_taiga",
+   "minecraft:redwood_taiga_mutated",
+   "minecraft:taiga",
+   "pw:boreal_forest",
+   "pw:old_growth_pines",
+   "pw:snowy_taiga_sparse",
+   "pw:taiga_sparse"
+  ],
+  "lily": 0.0
+ },
+ {
+  "pond": "pond_boreal_b",
+  "size": [
+   15,
+   6,
+   12
+  ],
+  "water_cells": 100,
+  "max_depth": 3,
+  "biomes": [
+   "minecraft:cold_taiga",
+   "minecraft:extreme_hills_plus_trees",
+   "minecraft:mega_taiga",
+   "minecraft:redwood_taiga_mutated",
+   "minecraft:taiga",
+   "pw:boreal_forest",
+   "pw:old_growth_pines",
+   "pw:snowy_taiga_sparse",
+   "pw:taiga_sparse"
+  ],
+  "lily": 0.0
+ },
+ {
+  "pond": "pond_warm_a",
+  "size": [
+   11,
+   5,
+   9
+  ],
+  "water_cells": 46,
+  "max_depth": 2,
+  "biomes": [
+   "minecraft:bamboo_jungle",
+   "minecraft:jungle",
+   "minecraft:jungle_edge",
+   "minecraft:mangrove_swamp",
+   "minecraft:savanna",
+   "minecraft:savanna_mutated",
+   "minecraft:savanna_plateau",
+   "pw:emerald_jungle",
+   "pw:river_canyon"
+  ],
+  "lily": 0.12
+ },
+ {
+  "pond": "pond_warm_b",
+  "size": [
+   15,
+   6,
+   12
+  ],
+  "water_cells": 98,
+  "max_depth": 3,
+  "biomes": [
+   "minecraft:bamboo_jungle",
+   "minecraft:jungle",
+   "minecraft:jungle_edge",
+   "minecraft:mangrove_swamp",
+   "minecraft:savanna",
+   "minecraft:savanna_mutated",
+   "minecraft:savanna_plateau",
+   "pw:emerald_jungle",
+   "pw:river_canyon"
+  ],
+  "lily": 0.12
+ }
+]

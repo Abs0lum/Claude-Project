@@ -1,0 +1,53 @@
+{
+ "kept_256": {
+  "leaf": 102,
+  "sand": 265
+ },
+ "rewritten": {
+  "RP-01": {
+   "color": 272,
+   "normal": 239,
+   "mers": 260
+  },
+  "RP-03": {
+   "color": 19,
+   "normal": 19,
+   "mers": 19
+  },
+  "RP-04": {
+   "color": 298,
+   "normal": 236,
+   "mers": 242
+  },
+  "RP-05": {
+   "color": 53,
+   "normal": 53,
+   "mers": 53
+  },
+  "RP-08": {
+   "color": 20,
+   "normal": 20,
+   "mers": 20
+  },
+  "RP-10": {
+   "color": 72,
+   "normal": 56,
+   "mers": 56
+  },
+  "RP-11": {
+   "color": 9,
+   "normal": 3,
+   "mers": 9
+  }
+ },
+ "build_dirs": {
+  "RP-01": "rp01-114",
+  "RP-03": "rp03-65",
+  "RP-04": "rp04-151",
+  "RP-05": "rp05-56",
+  "RP-08": "rp08-1411",
+  "RP-10": "rp10-149",
+  "RP-11": "rp11-138"
+ },
+ "note": "RP-10/RP-11 dirs renamed from rp10-49/rp11-38 (naming bug in the script)"
+}

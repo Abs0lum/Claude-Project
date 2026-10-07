@@ -1,0 +1,3266 @@
+[
+{
+"name": "acacia_00",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 28800
+},
+{
+"name": "acacia_01",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 24906
+},
+{
+"name": "acacia_02",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 20928
+},
+{
+"name": "acacia_03",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 21709
+},
+{
+"name": "acacia_04",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 37191
+},
+{
+"name": "acacia_05",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 20555
+},
+{
+"name": "acacia_06",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 38813
+},
+{
+"name": "acacia_07",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 42209
+},
+{
+"name": "acacia_08",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 20444
+},
+{
+"name": "acacia_09",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 28329
+},
+{
+"name": "acacia_10",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 29431
+},
+{
+"name": "acacia_11",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 24864
+},
+{
+"name": "acacia_12",
+"leaf": "acacia",
+"layers": 9,
+"bytes": 29571
+},
+{
+"name": "acacia_13",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 40631
+},
+{
+"name": "acacia_14",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 24565
+},
+{
+"name": "acacia_15",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 28928
+},
+{
+"name": "acacia_16",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 30448
+},
+{
+"name": "acacia_17",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 26001
+},
+{
+"name": "acacia_18",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 25741
+},
+{
+"name": "acacia_19",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 24572
+},
+{
+"name": "acacia_20",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 19211
+},
+{
+"name": "acacia_21",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 16311
+},
+{
+"name": "acacia_22",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 26814
+},
+{
+"name": "acacia_23",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 28555
+},
+{
+"name": "acacia_24",
+"leaf": "acacia",
+"layers": 9,
+"bytes": 21590
+},
+{
+"name": "acacia_25",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 20041
+},
+{
+"name": "acacia_26",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 21428
+},
+{
+"name": "acacia_27",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 19704
+},
+{
+"name": "acacia_28",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 22771
+},
+{
+"name": "acacia_29",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 22904
+},
+{
+"name": "acacia_30",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 30600
+},
+{
+"name": "acacia_31",
+"leaf": "acacia",
+"layers": 10,
+"bytes": 31507
+},
+{
+"name": "birch_mature_00",
+"leaf": "birch",
+"layers": 18,
+"bytes": 19255
+},
+{
+"name": "birch_mature_01",
+"leaf": "birch",
+"layers": 19,
+"bytes": 24007
+},
+{
+"name": "birch_mature_02",
+"leaf": "birch",
+"layers": 17,
+"bytes": 17881
+},
+{
+"name": "birch_mature_03",
+"leaf": "birch",
+"layers": 21,
+"bytes": 21337
+},
+{
+"name": "birch_mature_04",
+"leaf": "birch",
+"layers": 16,
+"bytes": 18115
+},
+{
+"name": "birch_mature_05",
+"leaf": "birch",
+"layers": 21,
+"bytes": 20234
+},
+{
+"name": "birch_mature_06",
+"leaf": "birch",
+"layers": 21,
+"bytes": 21683
+},
+{
+"name": "birch_mature_07",
+"leaf": "birch",
+"layers": 19,
+"bytes": 24809
+},
+{
+"name": "birch_mature_08",
+"leaf": "birch",
+"layers": 16,
+"bytes": 16330
+},
+{
+"name": "birch_mature_09",
+"leaf": "birch",
+"layers": 18,
+"bytes": 18967
+},
+{
+"name": "birch_mature_10",
+"leaf": "birch",
+"layers": 22,
+"bytes": 23882
+},
+{
+"name": "birch_mature_11",
+"leaf": "birch",
+"layers": 18,
+"bytes": 19241
+},
+{
+"name": "birch_mature_12",
+"leaf": "birch",
+"layers": 15,
+"bytes": 16864
+},
+{
+"name": "birch_mature_13",
+"leaf": "birch",
+"layers": 19,
+"bytes": 18742
+},
+{
+"name": "birch_mature_14",
+"leaf": "birch",
+"layers": 16,
+"bytes": 19092
+},
+{
+"name": "birch_mature_15",
+"leaf": "birch",
+"layers": 18,
+"bytes": 20790
+},
+{
+"name": "birch_mature_16",
+"leaf": "birch",
+"layers": 17,
+"bytes": 21379
+},
+{
+"name": "birch_mature_17",
+"leaf": "birch",
+"layers": 20,
+"bytes": 17653
+},
+{
+"name": "birch_mature_18",
+"leaf": "birch",
+"layers": 17,
+"bytes": 16687
+},
+{
+"name": "birch_mature_19",
+"leaf": "birch",
+"layers": 21,
+"bytes": 20470
+},
+{
+"name": "birch_mature_20",
+"leaf": "birch",
+"layers": 18,
+"bytes": 17285
+},
+{
+"name": "birch_mature_21",
+"leaf": "birch",
+"layers": 20,
+"bytes": 22128
+},
+{
+"name": "birch_mature_22",
+"leaf": "birch",
+"layers": 18,
+"bytes": 20281
+},
+{
+"name": "birch_mature_23",
+"leaf": "birch",
+"layers": 20,
+"bytes": 21574
+},
+{
+"name": "birch_old_00",
+"leaf": "birch",
+"layers": 21,
+"bytes": 22638
+},
+{
+"name": "birch_old_01",
+"leaf": "birch",
+"layers": 19,
+"bytes": 31847
+},
+{
+"name": "birch_old_02",
+"leaf": "birch",
+"layers": 20,
+"bytes": 21843
+},
+{
+"name": "birch_old_03",
+"leaf": "birch",
+"layers": 18,
+"bytes": 22560
+},
+{
+"name": "birch_old_04",
+"leaf": "birch",
+"layers": 20,
+"bytes": 24217
+},
+{
+"name": "birch_old_05",
+"leaf": "birch",
+"layers": 20,
+"bytes": 21040
+},
+{
+"name": "birch_old_06",
+"leaf": "birch",
+"layers": 18,
+"bytes": 22894
+},
+{
+"name": "birch_old_07",
+"leaf": "birch",
+"layers": 22,
+"bytes": 32971
+},
+{
+"name": "birch_old_08",
+"leaf": "birch",
+"layers": 22,
+"bytes": 26066
+},
+{
+"name": "birch_old_09",
+"leaf": "birch",
+"layers": 16,
+"bytes": 16846
+},
+{
+"name": "birch_old_10",
+"leaf": "birch",
+"layers": 18,
+"bytes": 22809
+},
+{
+"name": "birch_old_11",
+"leaf": "birch",
+"layers": 17,
+"bytes": 20373
+},
+{
+"name": "birch_old_12",
+"leaf": "birch",
+"layers": 22,
+"bytes": 26780
+},
+{
+"name": "birch_old_13",
+"leaf": "birch",
+"layers": 19,
+"bytes": 27007
+},
+{
+"name": "birch_old_14",
+"leaf": "birch",
+"layers": 16,
+"bytes": 18202
+},
+{
+"name": "birch_old_15",
+"leaf": "birch",
+"layers": 20,
+"bytes": 22950
+},
+{
+"name": "birch_old_16",
+"leaf": "birch",
+"layers": 22,
+"bytes": 28718
+},
+{
+"name": "birch_old_17",
+"leaf": "birch",
+"layers": 23,
+"bytes": 28289
+},
+{
+"name": "birch_old_18",
+"leaf": "birch",
+"layers": 20,
+"bytes": 22895
+},
+{
+"name": "birch_old_19",
+"leaf": "birch",
+"layers": 17,
+"bytes": 22234
+},
+{
+"name": "birch_old_20",
+"leaf": "birch",
+"layers": 18,
+"bytes": 20955
+},
+{
+"name": "birch_old_21",
+"leaf": "birch",
+"layers": 16,
+"bytes": 18354
+},
+{
+"name": "birch_old_22",
+"leaf": "birch",
+"layers": 21,
+"bytes": 20941
+},
+{
+"name": "birch_old_23",
+"leaf": "birch",
+"layers": 21,
+"bytes": 22114
+},
+{
+"name": "birch_young_00",
+"leaf": "birch",
+"layers": 9,
+"bytes": 8913
+},
+{
+"name": "birch_young_01",
+"leaf": "birch",
+"layers": 10,
+"bytes": 9044
+},
+{
+"name": "birch_young_02",
+"leaf": "birch",
+"layers": 8,
+"bytes": 9671
+},
+{
+"name": "birch_young_03",
+"leaf": "birch",
+"layers": 8,
+"bytes": 9199
+},
+{
+"name": "birch_young_04",
+"leaf": "birch",
+"layers": 7,
+"bytes": 9888
+},
+{
+"name": "birch_young_05",
+"leaf": "birch",
+"layers": 8,
+"bytes": 9394
+},
+{
+"name": "birch_young_06",
+"leaf": "birch",
+"layers": 9,
+"bytes": 10425
+},
+{
+"name": "birch_young_07",
+"leaf": "birch",
+"layers": 9,
+"bytes": 9693
+},
+{
+"name": "birch_young_08",
+"leaf": "birch",
+"layers": 9,
+"bytes": 11531
+},
+{
+"name": "birch_young_09",
+"leaf": "birch",
+"layers": 8,
+"bytes": 9122
+},
+{
+"name": "birch_young_10",
+"leaf": "birch",
+"layers": 8,
+"bytes": 8300
+},
+{
+"name": "birch_young_11",
+"leaf": "birch",
+"layers": 9,
+"bytes": 9461
+},
+{
+"name": "birch_young_12",
+"leaf": "birch",
+"layers": 9,
+"bytes": 11538
+},
+{
+"name": "birch_young_13",
+"leaf": "birch",
+"layers": 9,
+"bytes": 8628
+},
+{
+"name": "birch_young_14",
+"leaf": "birch",
+"layers": 7,
+"bytes": 10021
+},
+{
+"name": "birch_young_15",
+"leaf": "birch",
+"layers": 9,
+"bytes": 8904
+},
+{
+"name": "birch_young_16",
+"leaf": "birch",
+"layers": 8,
+"bytes": 10901
+},
+{
+"name": "birch_young_17",
+"leaf": "birch",
+"layers": 8,
+"bytes": 8016
+},
+{
+"name": "birch_young_18",
+"leaf": "birch",
+"layers": 8,
+"bytes": 10351
+},
+{
+"name": "birch_young_19",
+"leaf": "birch",
+"layers": 10,
+"bytes": 8503
+},
+{
+"name": "birch_young_20",
+"leaf": "birch",
+"layers": 11,
+"bytes": 10561
+},
+{
+"name": "birch_young_21",
+"leaf": "birch",
+"layers": 10,
+"bytes": 11806
+},
+{
+"name": "birch_young_22",
+"leaf": "birch",
+"layers": 10,
+"bytes": 9520
+},
+{
+"name": "birch_young_23",
+"leaf": "birch",
+"layers": 9,
+"bytes": 8899
+},
+{
+"name": "cherry_00",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 17562
+},
+{
+"name": "cherry_01",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 24931
+},
+{
+"name": "cherry_02",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 27211
+},
+{
+"name": "cherry_03",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 25140
+},
+{
+"name": "cherry_04",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 17966
+},
+{
+"name": "cherry_05",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 25532
+},
+{
+"name": "cherry_06",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 19217
+},
+{
+"name": "cherry_07",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 26333
+},
+{
+"name": "cherry_08",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 36674
+},
+{
+"name": "cherry_09",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 20540
+},
+{
+"name": "cherry_10",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 17857
+},
+{
+"name": "cherry_11",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 40011
+},
+{
+"name": "cherry_12",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 21504
+},
+{
+"name": "cherry_13",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 21233
+},
+{
+"name": "cherry_14",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 27596
+},
+{
+"name": "cherry_15",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 16545
+},
+{
+"name": "cherry_16",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 25427
+},
+{
+"name": "cherry_17",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 27478
+},
+{
+"name": "cherry_18",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 21723
+},
+{
+"name": "cherry_19",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 19602
+},
+{
+"name": "cherry_20",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 48411
+},
+{
+"name": "cherry_21",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 21864
+},
+{
+"name": "cherry_22",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 21711
+},
+{
+"name": "cherry_23",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 35866
+},
+{
+"name": "cherry_24",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 15835
+},
+{
+"name": "cherry_25",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 22083
+},
+{
+"name": "cherry_26",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 27251
+},
+{
+"name": "cherry_27",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 18210
+},
+{
+"name": "cherry_28",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 15928
+},
+{
+"name": "cherry_29",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 43985
+},
+{
+"name": "cherry_30",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 19780
+},
+{
+"name": "cherry_31",
+"leaf": "cherry",
+"layers": 10,
+"bytes": 29328
+},
+{
+"name": "dark_oak_elder_00",
+"leaf": "dark_oak",
+"layers": 14,
+"bytes": 56107
+},
+{
+"name": "dark_oak_elder_01",
+"leaf": "dark_oak",
+"layers": 15,
+"bytes": 72596
+},
+{
+"name": "dark_oak_elder_02",
+"leaf": "dark_oak",
+"layers": 13,
+"bytes": 47925
+},
+{
+"name": "dark_oak_elder_03",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 81856
+},
+{
+"name": "dark_oak_elder_04",
+"leaf": "dark_oak",
+"layers": 15,
+"bytes": 66103
+},
+{
+"name": "dark_oak_elder_05",
+"leaf": "dark_oak",
+"layers": 13,
+"bytes": 31455
+},
+{
+"name": "dark_oak_elder_06",
+"leaf": "dark_oak",
+"layers": 19,
+"bytes": 73253
+},
+{
+"name": "dark_oak_elder_07",
+"leaf": "dark_oak",
+"layers": 15,
+"bytes": 55176
+},
+{
+"name": "dark_oak_elder_08",
+"leaf": "dark_oak",
+"layers": 15,
+"bytes": 73282
+},
+{
+"name": "dark_oak_elder_09",
+"leaf": "dark_oak",
+"layers": 13,
+"bytes": 51518
+},
+{
+"name": "dark_oak_elder_10",
+"leaf": "dark_oak",
+"layers": 20,
+"bytes": 63328
+},
+{
+"name": "dark_oak_elder_11",
+"leaf": "dark_oak",
+"layers": 12,
+"bytes": 38681
+},
+{
+"name": "dark_oak_elder_12",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 76856
+},
+{
+"name": "dark_oak_elder_13",
+"leaf": "dark_oak",
+"layers": 14,
+"bytes": 48409
+},
+{
+"name": "dark_oak_elder_14",
+"leaf": "dark_oak",
+"layers": 16,
+"bytes": 53413
+},
+{
+"name": "dark_oak_elder_15",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 73954
+},
+{
+"name": "dark_oak_elder_16",
+"leaf": "dark_oak",
+"layers": 14,
+"bytes": 71080
+},
+{
+"name": "dark_oak_elder_17",
+"leaf": "dark_oak",
+"layers": 16,
+"bytes": 71918
+},
+{
+"name": "dark_oak_elder_18",
+"leaf": "dark_oak",
+"layers": 14,
+"bytes": 72832
+},
+{
+"name": "dark_oak_elder_19",
+"leaf": "dark_oak",
+"layers": 14,
+"bytes": 58350
+},
+{
+"name": "dark_oak_elder_20",
+"leaf": "dark_oak",
+"layers": 16,
+"bytes": 66318
+},
+{
+"name": "dark_oak_elder_21",
+"leaf": "dark_oak",
+"layers": 12,
+"bytes": 37493
+},
+{
+"name": "dark_oak_elder_22",
+"leaf": "dark_oak",
+"layers": 16,
+"bytes": 73544
+},
+{
+"name": "dark_oak_elder_23",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 63844
+},
+{
+"name": "dark_oak_elder_24",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 71870
+},
+{
+"name": "dark_oak_elder_25",
+"leaf": "dark_oak",
+"layers": 13,
+"bytes": 68961
+},
+{
+"name": "dark_oak_elder_26",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 72104
+},
+{
+"name": "dark_oak_elder_27",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 67241
+},
+{
+"name": "dark_oak_elder_28",
+"leaf": "dark_oak",
+"layers": 18,
+"bytes": 71940
+},
+{
+"name": "dark_oak_elder_29",
+"leaf": "dark_oak",
+"layers": 15,
+"bytes": 55074
+},
+{
+"name": "dark_oak_elder_30",
+"leaf": "dark_oak",
+"layers": 17,
+"bytes": 73589
+},
+{
+"name": "dark_oak_elder_31",
+"leaf": "dark_oak",
+"layers": 14,
+"bytes": 60860
+},
+{
+"name": "jungle_elder_00",
+"leaf": "jungle",
+"layers": 27,
+"bytes": 75587
+},
+{
+"name": "jungle_elder_01",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 66113
+},
+{
+"name": "jungle_elder_02",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 72838
+},
+{
+"name": "jungle_elder_03",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 80263
+},
+{
+"name": "jungle_elder_04",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 85287
+},
+{
+"name": "jungle_elder_05",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 78900
+},
+{
+"name": "jungle_elder_06",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 90490
+},
+{
+"name": "jungle_elder_07",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 83349
+},
+{
+"name": "jungle_elder_08",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 84853
+},
+{
+"name": "jungle_elder_09",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 92540
+},
+{
+"name": "jungle_elder_10",
+"leaf": "jungle",
+"layers": 27,
+"bytes": 62262
+},
+{
+"name": "jungle_elder_11",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 64787
+},
+{
+"name": "jungle_elder_12",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 84961
+},
+{
+"name": "jungle_elder_13",
+"leaf": "jungle",
+"layers": 27,
+"bytes": 61447
+},
+{
+"name": "jungle_elder_14",
+"leaf": "jungle",
+"layers": 27,
+"bytes": 66925
+},
+{
+"name": "jungle_elder_15",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 72820
+},
+{
+"name": "jungle_elder_16",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 65905
+},
+{
+"name": "jungle_elder_17",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 67389
+},
+{
+"name": "jungle_elder_18",
+"leaf": "jungle",
+"layers": 27,
+"bytes": 77969
+},
+{
+"name": "jungle_elder_19",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 74963
+},
+{
+"name": "jungle_elder_20",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 72068
+},
+{
+"name": "jungle_elder_21",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 72746
+},
+{
+"name": "jungle_elder_22",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 84760
+},
+{
+"name": "jungle_elder_23",
+"leaf": "jungle",
+"layers": 27,
+"bytes": 91885
+},
+{
+"name": "jungle_elder_24",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 86670
+},
+{
+"name": "jungle_elder_25",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 88659
+},
+{
+"name": "jungle_elder_26",
+"leaf": "jungle",
+"layers": 27,
+"bytes": 83551
+},
+{
+"name": "jungle_elder_27",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 76619
+},
+{
+"name": "jungle_elder_28",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 72460
+},
+{
+"name": "jungle_elder_29",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 88974
+},
+{
+"name": "jungle_elder_30",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 86536
+},
+{
+"name": "jungle_elder_31",
+"leaf": "jungle",
+"layers": 26,
+"bytes": 74444
+},
+{
+"name": "jungle_mature_00",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 26165
+},
+{
+"name": "jungle_mature_01",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 36228
+},
+{
+"name": "jungle_mature_02",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 29826
+},
+{
+"name": "jungle_mature_03",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 22901
+},
+{
+"name": "jungle_mature_04",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 36196
+},
+{
+"name": "jungle_mature_05",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 37926
+},
+{
+"name": "jungle_mature_06",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 23641
+},
+{
+"name": "jungle_mature_07",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 28712
+},
+{
+"name": "jungle_mature_08",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 34822
+},
+{
+"name": "jungle_mature_09",
+"leaf": "jungle",
+"layers": 21,
+"bytes": 21928
+},
+{
+"name": "jungle_mature_10",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 30922
+},
+{
+"name": "jungle_mature_11",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 35390
+},
+{
+"name": "jungle_mature_12",
+"leaf": "jungle",
+"layers": 21,
+"bytes": 27259
+},
+{
+"name": "jungle_mature_13",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 30657
+},
+{
+"name": "jungle_mature_14",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 27877
+},
+{
+"name": "jungle_mature_15",
+"leaf": "jungle",
+"layers": 21,
+"bytes": 26083
+},
+{
+"name": "jungle_mature_16",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 31219
+},
+{
+"name": "jungle_mature_17",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 37100
+},
+{
+"name": "jungle_mature_18",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 26994
+},
+{
+"name": "jungle_mature_19",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 33992
+},
+{
+"name": "jungle_mature_20",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 30720
+},
+{
+"name": "jungle_mature_21",
+"leaf": "jungle",
+"layers": 21,
+"bytes": 25878
+},
+{
+"name": "jungle_mature_22",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 33647
+},
+{
+"name": "jungle_mature_23",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 30930
+},
+{
+"name": "jungle_old_00",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 31244
+},
+{
+"name": "jungle_old_01",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 34263
+},
+{
+"name": "jungle_old_02",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 36175
+},
+{
+"name": "jungle_old_03",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 32534
+},
+{
+"name": "jungle_old_04",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 39597
+},
+{
+"name": "jungle_old_05",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 30086
+},
+{
+"name": "jungle_old_06",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 26695
+},
+{
+"name": "jungle_old_07",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 35336
+},
+{
+"name": "jungle_old_08",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 36752
+},
+{
+"name": "jungle_old_09",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 32002
+},
+{
+"name": "jungle_old_10",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 39012
+},
+{
+"name": "jungle_old_11",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 36801
+},
+{
+"name": "jungle_old_12",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 29204
+},
+{
+"name": "jungle_old_13",
+"leaf": "jungle",
+"layers": 22,
+"bytes": 33373
+},
+{
+"name": "jungle_old_14",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 38186
+},
+{
+"name": "jungle_old_15",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 26680
+},
+{
+"name": "jungle_old_16",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 30311
+},
+{
+"name": "jungle_old_17",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 33396
+},
+{
+"name": "jungle_old_18",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 28696
+},
+{
+"name": "jungle_old_19",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 35141
+},
+{
+"name": "jungle_old_20",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 33143
+},
+{
+"name": "jungle_old_21",
+"leaf": "jungle",
+"layers": 23,
+"bytes": 29753
+},
+{
+"name": "jungle_old_22",
+"leaf": "jungle",
+"layers": 24,
+"bytes": 31204
+},
+{
+"name": "jungle_old_23",
+"leaf": "jungle",
+"layers": 25,
+"bytes": 41237
+},
+{
+"name": "jungle_young_00",
+"leaf": "jungle",
+"layers": 8,
+"bytes": 10368
+},
+{
+"name": "jungle_young_01",
+"leaf": "jungle",
+"layers": 16,
+"bytes": 15262
+},
+{
+"name": "jungle_young_02",
+"leaf": "jungle",
+"layers": 8,
+"bytes": 10787
+},
+{
+"name": "jungle_young_03",
+"leaf": "jungle",
+"layers": 13,
+"bytes": 12027
+},
+{
+"name": "jungle_young_04",
+"leaf": "jungle",
+"layers": 8,
+"bytes": 10768
+},
+{
+"name": "jungle_young_05",
+"leaf": "jungle",
+"layers": 11,
+"bytes": 12398
+},
+{
+"name": "jungle_young_06",
+"leaf": "jungle",
+"layers": 8,
+"bytes": 8454
+},
+{
+"name": "jungle_young_07",
+"leaf": "jungle",
+"layers": 15,
+"bytes": 11895
+},
+{
+"name": "jungle_young_08",
+"leaf": "jungle",
+"layers": 8,
+"bytes": 10518
+},
+{
+"name": "jungle_young_09",
+"leaf": "jungle",
+"layers": 16,
+"bytes": 12633
+},
+{
+"name": "jungle_young_10",
+"leaf": "jungle",
+"layers": 8,
+"bytes": 9555
+},
+{
+"name": "jungle_young_11",
+"leaf": "jungle",
+"layers": 15,
+"bytes": 14921
+},
+{
+"name": "jungle_young_12",
+"leaf": "jungle",
+"layers": 8,
+"bytes": 10933
+},
+{
+"name": "jungle_young_13",
+"leaf": "jungle",
+"layers": 14,
+"bytes": 12863
+},
+{
+"name": "jungle_young_14",
+"leaf": "jungle",
+"layers": 6,
+"bytes": 9560
+},
+{
+"name": "jungle_young_15",
+"leaf": "jungle",
+"layers": 14,
+"bytes": 13402
+},
+{
+"name": "jungle_young_16",
+"leaf": "jungle",
+"layers": 7,
+"bytes": 8955
+},
+{
+"name": "jungle_young_17",
+"leaf": "jungle",
+"layers": 15,
+"bytes": 12360
+},
+{
+"name": "jungle_young_18",
+"leaf": "jungle",
+"layers": 6,
+"bytes": 7564
+},
+{
+"name": "jungle_young_19",
+"leaf": "jungle",
+"layers": 14,
+"bytes": 13624
+},
+{
+"name": "jungle_young_20",
+"leaf": "jungle",
+"layers": 7,
+"bytes": 9636
+},
+{
+"name": "jungle_young_21",
+"leaf": "jungle",
+"layers": 13,
+"bytes": 14726
+},
+{
+"name": "jungle_young_22",
+"leaf": "jungle",
+"layers": 6,
+"bytes": 10253
+},
+{
+"name": "jungle_young_23",
+"leaf": "jungle",
+"layers": 13,
+"bytes": 13061
+},
+{
+"name": "mangrove_00",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 49055
+},
+{
+"name": "mangrove_01",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 38525
+},
+{
+"name": "mangrove_02",
+"leaf": "mangrove",
+"layers": 9,
+"bytes": 49096
+},
+{
+"name": "mangrove_03",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 37818
+},
+{
+"name": "mangrove_04",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 48102
+},
+{
+"name": "mangrove_05",
+"leaf": "mangrove",
+"layers": 10,
+"bytes": 55731
+},
+{
+"name": "mangrove_06",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 41570
+},
+{
+"name": "mangrove_07",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 37726
+},
+{
+"name": "mangrove_08",
+"leaf": "mangrove",
+"layers": 11,
+"bytes": 48130
+},
+{
+"name": "mangrove_09",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 45486
+},
+{
+"name": "mangrove_10",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 43299
+},
+{
+"name": "mangrove_11",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 52947
+},
+{
+"name": "mangrove_12",
+"leaf": "mangrove",
+"layers": 11,
+"bytes": 34025
+},
+{
+"name": "mangrove_13",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 38926
+},
+{
+"name": "mangrove_14",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 48001
+},
+{
+"name": "mangrove_15",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 41991
+},
+{
+"name": "mangrove_16",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 41183
+},
+{
+"name": "mangrove_17",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 53336
+},
+{
+"name": "mangrove_18",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 39801
+},
+{
+"name": "mangrove_19",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 48414
+},
+{
+"name": "mangrove_20",
+"leaf": "mangrove",
+"layers": 11,
+"bytes": 60545
+},
+{
+"name": "mangrove_21",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 33196
+},
+{
+"name": "mangrove_22",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 37574
+},
+{
+"name": "mangrove_23",
+"leaf": "mangrove",
+"layers": 11,
+"bytes": 61826
+},
+{
+"name": "mangrove_24",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 35359
+},
+{
+"name": "mangrove_25",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 42240
+},
+{
+"name": "mangrove_26",
+"leaf": "mangrove",
+"layers": 11,
+"bytes": 49517
+},
+{
+"name": "mangrove_27",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 41242
+},
+{
+"name": "mangrove_28",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 33094
+},
+{
+"name": "mangrove_29",
+"leaf": "mangrove",
+"layers": 10,
+"bytes": 51705
+},
+{
+"name": "mangrove_30",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 45902
+},
+{
+"name": "mangrove_31",
+"leaf": "mangrove",
+"layers": 12,
+"bytes": 41413
+},
+{
+"name": "oak_elder_00",
+"leaf": "oak",
+"layers": 21,
+"bytes": 50957
+},
+{
+"name": "oak_elder_01",
+"leaf": "oak",
+"layers": 22,
+"bytes": 52965
+},
+{
+"name": "oak_elder_02",
+"leaf": "oak",
+"layers": 22,
+"bytes": 59657
+},
+{
+"name": "oak_elder_03",
+"leaf": "oak",
+"layers": 21,
+"bytes": 53077
+},
+{
+"name": "oak_elder_04",
+"leaf": "oak",
+"layers": 21,
+"bytes": 53973
+},
+{
+"name": "oak_elder_05",
+"leaf": "oak",
+"layers": 22,
+"bytes": 50693
+},
+{
+"name": "oak_elder_06",
+"leaf": "oak",
+"layers": 21,
+"bytes": 52303
+},
+{
+"name": "oak_elder_07",
+"leaf": "oak",
+"layers": 21,
+"bytes": 63802
+},
+{
+"name": "oak_elder_08",
+"leaf": "oak",
+"layers": 21,
+"bytes": 74117
+},
+{
+"name": "oak_elder_09",
+"leaf": "oak",
+"layers": 21,
+"bytes": 57156
+},
+{
+"name": "oak_elder_10",
+"leaf": "oak",
+"layers": 20,
+"bytes": 75188
+},
+{
+"name": "oak_elder_11",
+"leaf": "oak",
+"layers": 21,
+"bytes": 46369
+},
+{
+"name": "oak_elder_12",
+"leaf": "oak",
+"layers": 21,
+"bytes": 57731
+},
+{
+"name": "oak_elder_13",
+"leaf": "oak",
+"layers": 22,
+"bytes": 44525
+},
+{
+"name": "oak_elder_14",
+"leaf": "oak",
+"layers": 21,
+"bytes": 43871
+},
+{
+"name": "oak_elder_15",
+"leaf": "oak",
+"layers": 21,
+"bytes": 68183
+},
+{
+"name": "oak_elder_16",
+"leaf": "oak",
+"layers": 21,
+"bytes": 53505
+},
+{
+"name": "oak_elder_17",
+"leaf": "oak",
+"layers": 21,
+"bytes": 71113
+},
+{
+"name": "oak_elder_18",
+"leaf": "oak",
+"layers": 21,
+"bytes": 63040
+},
+{
+"name": "oak_elder_19",
+"leaf": "oak",
+"layers": 22,
+"bytes": 42275
+},
+{
+"name": "oak_elder_20",
+"leaf": "oak",
+"layers": 21,
+"bytes": 45115
+},
+{
+"name": "oak_elder_21",
+"leaf": "oak",
+"layers": 21,
+"bytes": 67281
+},
+{
+"name": "oak_elder_22",
+"leaf": "oak",
+"layers": 21,
+"bytes": 77424
+},
+{
+"name": "oak_elder_23",
+"leaf": "oak",
+"layers": 21,
+"bytes": 48940
+},
+{
+"name": "oak_elder_24",
+"leaf": "oak",
+"layers": 22,
+"bytes": 71502
+},
+{
+"name": "oak_elder_25",
+"leaf": "oak",
+"layers": 21,
+"bytes": 58957
+},
+{
+"name": "oak_elder_26",
+"leaf": "oak",
+"layers": 21,
+"bytes": 79209
+},
+{
+"name": "oak_elder_27",
+"leaf": "oak",
+"layers": 22,
+"bytes": 59549
+},
+{
+"name": "oak_elder_28",
+"leaf": "oak",
+"layers": 21,
+"bytes": 60628
+},
+{
+"name": "oak_elder_29",
+"leaf": "oak",
+"layers": 21,
+"bytes": 51221
+},
+{
+"name": "oak_elder_30",
+"leaf": "oak",
+"layers": 21,
+"bytes": 57076
+},
+{
+"name": "oak_elder_31",
+"leaf": "oak",
+"layers": 22,
+"bytes": 77927
+},
+{
+"name": "oak_mature_00",
+"leaf": "oak",
+"layers": 15,
+"bytes": 25816
+},
+{
+"name": "oak_mature_01",
+"leaf": "oak",
+"layers": 15,
+"bytes": 31941
+},
+{
+"name": "oak_mature_02",
+"leaf": "oak",
+"layers": 15,
+"bytes": 29650
+},
+{
+"name": "oak_mature_03",
+"leaf": "oak",
+"layers": 15,
+"bytes": 23859
+},
+{
+"name": "oak_mature_04",
+"leaf": "oak",
+"layers": 15,
+"bytes": 30544
+},
+{
+"name": "oak_mature_05",
+"leaf": "oak",
+"layers": 15,
+"bytes": 30804
+},
+{
+"name": "oak_mature_06",
+"leaf": "oak",
+"layers": 15,
+"bytes": 37143
+},
+{
+"name": "oak_mature_07",
+"leaf": "oak",
+"layers": 15,
+"bytes": 30826
+},
+{
+"name": "oak_mature_08",
+"leaf": "oak",
+"layers": 15,
+"bytes": 38906
+},
+{
+"name": "oak_mature_09",
+"leaf": "oak",
+"layers": 15,
+"bytes": 31620
+},
+{
+"name": "oak_mature_10",
+"leaf": "oak",
+"layers": 15,
+"bytes": 39716
+},
+{
+"name": "oak_mature_11",
+"leaf": "oak",
+"layers": 15,
+"bytes": 25811
+},
+{
+"name": "oak_mature_12",
+"leaf": "oak",
+"layers": 15,
+"bytes": 25855
+},
+{
+"name": "oak_mature_13",
+"leaf": "oak",
+"layers": 15,
+"bytes": 27255
+},
+{
+"name": "oak_mature_14",
+"leaf": "oak",
+"layers": 15,
+"bytes": 30998
+},
+{
+"name": "oak_mature_15",
+"leaf": "oak",
+"layers": 15,
+"bytes": 29388
+},
+{
+"name": "oak_mature_16",
+"leaf": "oak",
+"layers": 14,
+"bytes": 26824
+},
+{
+"name": "oak_mature_17",
+"leaf": "oak",
+"layers": 15,
+"bytes": 30220
+},
+{
+"name": "oak_mature_18",
+"leaf": "oak",
+"layers": 15,
+"bytes": 28765
+},
+{
+"name": "oak_mature_19",
+"leaf": "oak",
+"layers": 15,
+"bytes": 31590
+},
+{
+"name": "oak_mature_20",
+"leaf": "oak",
+"layers": 15,
+"bytes": 22764
+},
+{
+"name": "oak_mature_21",
+"leaf": "oak",
+"layers": 15,
+"bytes": 31606
+},
+{
+"name": "oak_mature_22",
+"leaf": "oak",
+"layers": 15,
+"bytes": 26085
+},
+{
+"name": "oak_mature_23",
+"leaf": "oak",
+"layers": 15,
+"bytes": 30568
+},
+{
+"name": "oak_old_00",
+"leaf": "oak",
+"layers": 14,
+"bytes": 34880
+},
+{
+"name": "oak_old_01",
+"leaf": "oak",
+"layers": 13,
+"bytes": 34879
+},
+{
+"name": "oak_old_02",
+"leaf": "oak",
+"layers": 13,
+"bytes": 29817
+},
+{
+"name": "oak_old_03",
+"leaf": "oak",
+"layers": 15,
+"bytes": 40268
+},
+{
+"name": "oak_old_04",
+"leaf": "oak",
+"layers": 15,
+"bytes": 33978
+},
+{
+"name": "oak_old_05",
+"leaf": "oak",
+"layers": 14,
+"bytes": 33010
+},
+{
+"name": "oak_old_06",
+"leaf": "oak",
+"layers": 14,
+"bytes": 33496
+},
+{
+"name": "oak_old_07",
+"leaf": "oak",
+"layers": 13,
+"bytes": 25958
+},
+{
+"name": "oak_old_08",
+"leaf": "oak",
+"layers": 14,
+"bytes": 33781
+},
+{
+"name": "oak_old_09",
+"leaf": "oak",
+"layers": 15,
+"bytes": 38566
+},
+{
+"name": "oak_old_10",
+"leaf": "oak",
+"layers": 16,
+"bytes": 29190
+},
+{
+"name": "oak_old_11",
+"leaf": "oak",
+"layers": 14,
+"bytes": 29548
+},
+{
+"name": "oak_old_12",
+"leaf": "oak",
+"layers": 14,
+"bytes": 42625
+},
+{
+"name": "oak_old_13",
+"leaf": "oak",
+"layers": 14,
+"bytes": 35332
+},
+{
+"name": "oak_old_14",
+"leaf": "oak",
+"layers": 14,
+"bytes": 30454
+},
+{
+"name": "oak_old_15",
+"leaf": "oak",
+"layers": 14,
+"bytes": 30047
+},
+{
+"name": "oak_old_16",
+"leaf": "oak",
+"layers": 15,
+"bytes": 30156
+},
+{
+"name": "oak_old_17",
+"leaf": "oak",
+"layers": 13,
+"bytes": 30093
+},
+{
+"name": "oak_old_18",
+"leaf": "oak",
+"layers": 14,
+"bytes": 38789
+},
+{
+"name": "oak_old_19",
+"leaf": "oak",
+"layers": 16,
+"bytes": 42097
+},
+{
+"name": "oak_old_20",
+"leaf": "oak",
+"layers": 13,
+"bytes": 43208
+},
+{
+"name": "oak_old_21",
+"leaf": "oak",
+"layers": 16,
+"bytes": 34974
+},
+{
+"name": "oak_old_22",
+"leaf": "oak",
+"layers": 16,
+"bytes": 30344
+},
+{
+"name": "oak_old_23",
+"leaf": "oak",
+"layers": 16,
+"bytes": 36397
+},
+{
+"name": "oak_young_00",
+"leaf": "oak",
+"layers": 9,
+"bytes": 10973
+},
+{
+"name": "oak_young_01",
+"leaf": "oak",
+"layers": 9,
+"bytes": 9604
+},
+{
+"name": "oak_young_02",
+"leaf": "oak",
+"layers": 9,
+"bytes": 10708
+},
+{
+"name": "oak_young_03",
+"leaf": "oak",
+"layers": 9,
+"bytes": 10446
+},
+{
+"name": "oak_young_04",
+"leaf": "oak",
+"layers": 9,
+"bytes": 11803
+},
+{
+"name": "oak_young_05",
+"leaf": "oak",
+"layers": 9,
+"bytes": 12236
+},
+{
+"name": "oak_young_06",
+"leaf": "oak",
+"layers": 9,
+"bytes": 11042
+},
+{
+"name": "oak_young_07",
+"leaf": "oak",
+"layers": 9,
+"bytes": 9943
+},
+{
+"name": "oak_young_08",
+"leaf": "oak",
+"layers": 9,
+"bytes": 12570
+},
+{
+"name": "oak_young_09",
+"leaf": "oak",
+"layers": 8,
+"bytes": 11741
+},
+{
+"name": "oak_young_10",
+"leaf": "oak",
+"layers": 9,
+"bytes": 12565
+},
+{
+"name": "oak_young_11",
+"leaf": "oak",
+"layers": 9,
+"bytes": 10902
+},
+{
+"name": "oak_young_12",
+"leaf": "oak",
+"layers": 9,
+"bytes": 11553
+},
+{
+"name": "oak_young_13",
+"leaf": "oak",
+"layers": 9,
+"bytes": 11537
+},
+{
+"name": "oak_young_14",
+"leaf": "oak",
+"layers": 9,
+"bytes": 12092
+},
+{
+"name": "oak_young_15",
+"leaf": "oak",
+"layers": 9,
+"bytes": 11867
+},
+{
+"name": "oak_young_16",
+"leaf": "oak",
+"layers": 9,
+"bytes": 11269
+},
+{
+"name": "oak_young_17",
+"leaf": "oak",
+"layers": 9,
+"bytes": 10301
+},
+{
+"name": "oak_young_18",
+"leaf": "oak",
+"layers": 9,
+"bytes": 12144
+},
+{
+"name": "oak_young_19",
+"leaf": "oak",
+"layers": 9,
+"bytes": 10359
+},
+{
+"name": "oak_young_20",
+"leaf": "oak",
+"layers": 9,
+"bytes": 10367
+},
+{
+"name": "oak_young_21",
+"leaf": "oak",
+"layers": 8,
+"bytes": 11535
+},
+{
+"name": "oak_young_22",
+"leaf": "oak",
+"layers": 9,
+"bytes": 12086
+},
+{
+"name": "oak_young_23",
+"leaf": "oak",
+"layers": 9,
+"bytes": 12487
+},
+{
+"name": "pale_oak_elder_00",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 36398
+},
+{
+"name": "pale_oak_elder_01",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 41325
+},
+{
+"name": "pale_oak_elder_02",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 31253
+},
+{
+"name": "pale_oak_elder_03",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 27749
+},
+{
+"name": "pale_oak_elder_04",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 28820
+},
+{
+"name": "pale_oak_elder_05",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 40531
+},
+{
+"name": "pale_oak_elder_06",
+"leaf": "pale_oak",
+"layers": 11,
+"bytes": 27531
+},
+{
+"name": "pale_oak_elder_07",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 45834
+},
+{
+"name": "pale_oak_elder_08",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 34427
+},
+{
+"name": "pale_oak_elder_09",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 39977
+},
+{
+"name": "pale_oak_elder_10",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 31474
+},
+{
+"name": "pale_oak_elder_11",
+"leaf": "pale_oak",
+"layers": 11,
+"bytes": 34161
+},
+{
+"name": "pale_oak_elder_12",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 37993
+},
+{
+"name": "pale_oak_elder_13",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 42944
+},
+{
+"name": "pale_oak_elder_14",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 30513
+},
+{
+"name": "pale_oak_elder_15",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 28950
+},
+{
+"name": "pale_oak_elder_16",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 29748
+},
+{
+"name": "pale_oak_elder_17",
+"leaf": "pale_oak",
+"layers": 11,
+"bytes": 27752
+},
+{
+"name": "pale_oak_elder_18",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 33390
+},
+{
+"name": "pale_oak_elder_19",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 33721
+},
+{
+"name": "pale_oak_elder_20",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 34433
+},
+{
+"name": "pale_oak_elder_21",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 41128
+},
+{
+"name": "pale_oak_elder_22",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 30720
+},
+{
+"name": "pale_oak_elder_23",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 35709
+},
+{
+"name": "pale_oak_elder_24",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 25022
+},
+{
+"name": "pale_oak_elder_25",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 36788
+},
+{
+"name": "pale_oak_elder_26",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 34729
+},
+{
+"name": "pale_oak_elder_27",
+"leaf": "pale_oak",
+"layers": 11,
+"bytes": 37427
+},
+{
+"name": "pale_oak_elder_28",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 31131
+},
+{
+"name": "pale_oak_elder_29",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 29564
+},
+{
+"name": "pale_oak_elder_30",
+"leaf": "pale_oak",
+"layers": 10,
+"bytes": 28238
+},
+{
+"name": "pale_oak_elder_31",
+"leaf": "pale_oak",
+"layers": 12,
+"bytes": 37580
+},
+{
+"name": "spruce_elder_00",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 104683
+},
+{
+"name": "spruce_elder_01",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 104879
+},
+{
+"name": "spruce_elder_02",
+"leaf": "spruce",
+"layers": 29,
+"bytes": 115658
+},
+{
+"name": "spruce_elder_03",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 111055
+},
+{
+"name": "spruce_elder_04",
+"leaf": "spruce",
+"layers": 32,
+"bytes": 124134
+},
+{
+"name": "spruce_elder_05",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 113648
+},
+{
+"name": "spruce_elder_06",
+"leaf": "spruce",
+"layers": 34,
+"bytes": 127188
+},
+{
+"name": "spruce_elder_07",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 113965
+},
+{
+"name": "spruce_elder_08",
+"leaf": "spruce",
+"layers": 30,
+"bytes": 122612
+},
+{
+"name": "spruce_elder_09",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 97312
+},
+{
+"name": "spruce_elder_10",
+"leaf": "spruce",
+"layers": 30,
+"bytes": 129116
+},
+{
+"name": "spruce_elder_11",
+"leaf": "spruce",
+"layers": 32,
+"bytes": 115192
+},
+{
+"name": "spruce_elder_12",
+"leaf": "spruce",
+"layers": 30,
+"bytes": 130106
+},
+{
+"name": "spruce_elder_13",
+"leaf": "spruce",
+"layers": 34,
+"bytes": 131274
+},
+{
+"name": "spruce_elder_14",
+"leaf": "spruce",
+"layers": 33,
+"bytes": 108308
+},
+{
+"name": "spruce_elder_15",
+"leaf": "spruce",
+"layers": 32,
+"bytes": 112138
+},
+{
+"name": "spruce_elder_16",
+"leaf": "spruce",
+"layers": 32,
+"bytes": 123438
+},
+{
+"name": "spruce_elder_17",
+"leaf": "spruce",
+"layers": 32,
+"bytes": 136311
+},
+{
+"name": "spruce_elder_18",
+"leaf": "spruce",
+"layers": 29,
+"bytes": 109366
+},
+{
+"name": "spruce_elder_19",
+"leaf": "spruce",
+"layers": 33,
+"bytes": 135079
+},
+{
+"name": "spruce_elder_20",
+"leaf": "spruce",
+"layers": 33,
+"bytes": 118125
+},
+{
+"name": "spruce_elder_21",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 96701
+},
+{
+"name": "spruce_elder_22",
+"leaf": "spruce",
+"layers": 29,
+"bytes": 103230
+},
+{
+"name": "spruce_elder_23",
+"leaf": "spruce",
+"layers": 30,
+"bytes": 105037
+},
+{
+"name": "spruce_elder_24",
+"leaf": "spruce",
+"layers": 35,
+"bytes": 103560
+},
+{
+"name": "spruce_elder_25",
+"leaf": "spruce",
+"layers": 34,
+"bytes": 114500
+},
+{
+"name": "spruce_elder_26",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 108347
+},
+{
+"name": "spruce_elder_27",
+"leaf": "spruce",
+"layers": 33,
+"bytes": 121030
+},
+{
+"name": "spruce_elder_28",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 95523
+},
+{
+"name": "spruce_elder_29",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 127997
+},
+{
+"name": "spruce_elder_30",
+"leaf": "spruce",
+"layers": 34,
+"bytes": 108915
+},
+{
+"name": "spruce_elder_31",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 117602
+},
+{
+"name": "spruce_mature_00",
+"leaf": "spruce",
+"layers": 22,
+"bytes": 35155
+},
+{
+"name": "spruce_mature_01",
+"leaf": "spruce",
+"layers": 23,
+"bytes": 30448
+},
+{
+"name": "spruce_mature_02",
+"leaf": "spruce",
+"layers": 19,
+"bytes": 26308
+},
+{
+"name": "spruce_mature_03",
+"leaf": "spruce",
+"layers": 24,
+"bytes": 21185
+},
+{
+"name": "spruce_mature_04",
+"leaf": "spruce",
+"layers": 24,
+"bytes": 38345
+},
+{
+"name": "spruce_mature_05",
+"leaf": "spruce",
+"layers": 24,
+"bytes": 41845
+},
+{
+"name": "spruce_mature_06",
+"leaf": "spruce",
+"layers": 24,
+"bytes": 36312
+},
+{
+"name": "spruce_mature_07",
+"leaf": "spruce",
+"layers": 23,
+"bytes": 19148
+},
+{
+"name": "spruce_mature_08",
+"leaf": "spruce",
+"layers": 21,
+"bytes": 32856
+},
+{
+"name": "spruce_mature_09",
+"leaf": "spruce",
+"layers": 21,
+"bytes": 30303
+},
+{
+"name": "spruce_mature_10",
+"leaf": "spruce",
+"layers": 22,
+"bytes": 32958
+},
+{
+"name": "spruce_mature_11",
+"leaf": "spruce",
+"layers": 25,
+"bytes": 18617
+},
+{
+"name": "spruce_mature_12",
+"leaf": "spruce",
+"layers": 22,
+"bytes": 37880
+},
+{
+"name": "spruce_mature_13",
+"leaf": "spruce",
+"layers": 18,
+"bytes": 22998
+},
+{
+"name": "spruce_mature_14",
+"leaf": "spruce",
+"layers": 25,
+"bytes": 41324
+},
+{
+"name": "spruce_mature_15",
+"leaf": "spruce",
+"layers": 26,
+"bytes": 21556
+},
+{
+"name": "spruce_mature_16",
+"leaf": "spruce",
+"layers": 21,
+"bytes": 36664
+},
+{
+"name": "spruce_mature_17",
+"leaf": "spruce",
+"layers": 22,
+"bytes": 27618
+},
+{
+"name": "spruce_mature_18",
+"leaf": "spruce",
+"layers": 23,
+"bytes": 34082
+},
+{
+"name": "spruce_mature_19",
+"leaf": "spruce",
+"layers": 24,
+"bytes": 19429
+},
+{
+"name": "spruce_mature_20",
+"leaf": "spruce",
+"layers": 22,
+"bytes": 33001
+},
+{
+"name": "spruce_mature_21",
+"leaf": "spruce",
+"layers": 21,
+"bytes": 38096
+},
+{
+"name": "spruce_mature_22",
+"leaf": "spruce",
+"layers": 27,
+"bytes": 44309
+},
+{
+"name": "spruce_mature_23",
+"leaf": "spruce",
+"layers": 19,
+"bytes": 19184
+},
+{
+"name": "spruce_old_00",
+"leaf": "spruce",
+"layers": 27,
+"bytes": 41656
+},
+{
+"name": "spruce_old_01",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 58140
+},
+{
+"name": "spruce_old_02",
+"leaf": "spruce",
+"layers": 30,
+"bytes": 56382
+},
+{
+"name": "spruce_old_03",
+"leaf": "spruce",
+"layers": 30,
+"bytes": 50189
+},
+{
+"name": "spruce_old_04",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 54130
+},
+{
+"name": "spruce_old_05",
+"leaf": "spruce",
+"layers": 24,
+"bytes": 41373
+},
+{
+"name": "spruce_old_06",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 45931
+},
+{
+"name": "spruce_old_07",
+"leaf": "spruce",
+"layers": 27,
+"bytes": 50778
+},
+{
+"name": "spruce_old_08",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 43074
+},
+{
+"name": "spruce_old_09",
+"leaf": "spruce",
+"layers": 25,
+"bytes": 43846
+},
+{
+"name": "spruce_old_10",
+"leaf": "spruce",
+"layers": 25,
+"bytes": 42349
+},
+{
+"name": "spruce_old_11",
+"leaf": "spruce",
+"layers": 25,
+"bytes": 44142
+},
+{
+"name": "spruce_old_12",
+"leaf": "spruce",
+"layers": 29,
+"bytes": 43150
+},
+{
+"name": "spruce_old_13",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 48301
+},
+{
+"name": "spruce_old_14",
+"leaf": "spruce",
+"layers": 29,
+"bytes": 50519
+},
+{
+"name": "spruce_old_15",
+"leaf": "spruce",
+"layers": 26,
+"bytes": 45989
+},
+{
+"name": "spruce_old_16",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 43294
+},
+{
+"name": "spruce_old_17",
+"leaf": "spruce",
+"layers": 26,
+"bytes": 40885
+},
+{
+"name": "spruce_old_18",
+"leaf": "spruce",
+"layers": 31,
+"bytes": 51061
+},
+{
+"name": "spruce_old_19",
+"leaf": "spruce",
+"layers": 28,
+"bytes": 42676
+},
+{
+"name": "spruce_old_20",
+"leaf": "spruce",
+"layers": 26,
+"bytes": 39153
+},
+{
+"name": "spruce_old_21",
+"leaf": "spruce",
+"layers": 29,
+"bytes": 43864
+},
+{
+"name": "spruce_old_22",
+"leaf": "spruce",
+"layers": 23,
+"bytes": 38805
+},
+{
+"name": "spruce_old_23",
+"leaf": "spruce",
+"layers": 27,
+"bytes": 47919
+},
+{
+"name": "spruce_young_00",
+"leaf": "spruce",
+"layers": 8,
+"bytes": 11454
+},
+{
+"name": "spruce_young_01",
+"leaf": "spruce",
+"layers": 10,
+"bytes": 11448
+},
+{
+"name": "spruce_young_02",
+"leaf": "spruce",
+"layers": 8,
+"bytes": 11649
+},
+{
+"name": "spruce_young_03",
+"leaf": "spruce",
+"layers": 10,
+"bytes": 12608
+},
+{
+"name": "spruce_young_04",
+"leaf": "spruce",
+"layers": 9,
+"bytes": 13093
+},
+{
+"name": "spruce_young_05",
+"leaf": "spruce",
+"layers": 10,
+"bytes": 10545
+},
+{
+"name": "spruce_young_06",
+"leaf": "spruce",
+"layers": 9,
+"bytes": 11797
+},
+{
+"name": "spruce_young_07",
+"leaf": "spruce",
+"layers": 11,
+"bytes": 14120
+},
+{
+"name": "spruce_young_08",
+"leaf": "spruce",
+"layers": 7,
+"bytes": 9805
+},
+{
+"name": "spruce_young_09",
+"leaf": "spruce",
+"layers": 9,
+"bytes": 11573
+},
+{
+"name": "spruce_young_10",
+"leaf": "spruce",
+"layers": 7,
+"bytes": 12151
+},
+{
+"name": "spruce_young_11",
+"leaf": "spruce",
+"layers": 9,
+"bytes": 11716
+},
+{
+"name": "spruce_young_12",
+"leaf": "spruce",
+"layers": 7,
+"bytes": 11188
+},
+{
+"name": "spruce_young_13",
+"leaf": "spruce",
+"layers": 10,
+"bytes": 14255
+},
+{
+"name": "spruce_young_14",
+"leaf": "spruce",
+"layers": 10,
+"bytes": 13016
+},
+{
+"name": "spruce_young_15",
+"leaf": "spruce",
+"layers": 8,
+"bytes": 11741
+},
+{
+"name": "spruce_young_16",
+"leaf": "spruce",
+"layers": 11,
+"bytes": 13212
+},
+{
+"name": "spruce_young_17",
+"leaf": "spruce",
+"layers": 11,
+"bytes": 12948
+},
+{
+"name": "spruce_young_18",
+"leaf": "spruce",
+"layers": 6,
+"bytes": 9888
+},
+{
+"name": "spruce_young_19",
+"leaf": "spruce",
+"layers": 10,
+"bytes": 12948
+},
+{
+"name": "spruce_young_20",
+"leaf": "spruce",
+"layers": 8,
+"bytes": 11101
+},
+{
+"name": "spruce_young_21",
+"leaf": "spruce",
+"layers": 11,
+"bytes": 12948
+},
+{
+"name": "spruce_young_22",
+"leaf": "spruce",
+"layers": 7,
+"bytes": 10624
+},
+{
+"name": "spruce_young_23",
+"leaf": "spruce",
+"layers": 10,
+"bytes": 11717
+}
+]

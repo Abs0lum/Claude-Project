@@ -1,0 +1,1300 @@
+[
+ {
+  "key": "coal_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/coal_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 9.8,
+  "lum_rock": 119.0,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "coal_ore_0",
+   "normal": "coal_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "coal_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/coal_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    248,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    60,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/coal_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    120,
+    119,
+    239,
+    255
+   ],
+   "mineral": [
+    133,
+    116,
+    238,
+    255
+   ],
+   "flat_pct": 0.2,
+   "xy_std": [
+    40.2,
+    55.8
+   ]
+  }
+ },
+ {
+  "key": "iron_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/iron_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 24.9,
+  "lum_rock": 120.0,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "iron_ore_0",
+   "normal": "iron_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "iron_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/iron_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "mineral": [
+    140,
+    8,
+    20,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/iron_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    120,
+    119,
+    240,
+    255
+   ],
+   "mineral": [
+    134,
+    132,
+    238,
+    255
+   ],
+   "flat_pct": 0.6,
+   "xy_std": [
+    40.7,
+    56.5
+   ]
+  }
+ },
+ {
+  "key": "copper_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/copper_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 15.2,
+  "lum_rock": 120.3,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "copper_ore_0",
+   "normal": "copper_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "copper_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/copper_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    246,
+    0
+   ],
+   "mineral": [
+    200,
+    8,
+    20,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/copper_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    120,
+    119,
+    240,
+    255
+   ],
+   "mineral": [
+    133,
+    132,
+    236,
+    255
+   ],
+   "flat_pct": 0.4,
+   "xy_std": [
+    40.4,
+    56.1
+   ]
+  }
+ },
+ {
+  "key": "gold_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/gold_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 30.8,
+  "lum_rock": 119.6,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "gold_ore_0",
+   "normal": "gold_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "gold_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/gold_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    244,
+    0
+   ],
+   "mineral": [
+    200,
+    8,
+    20,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/gold_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    120,
+    121,
+    241,
+    255
+   ],
+   "mineral": [
+    134,
+    132,
+    239,
+    255
+   ],
+   "flat_pct": 0.7,
+   "xy_std": [
+    40.7,
+    56.1
+   ]
+  }
+ },
+ {
+  "key": "redstone_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/redstone_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 31.1,
+  "lum_rock": 117.9,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "redstone_ore_0",
+   "normal": "redstone_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "redstone_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/redstone_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/redstone_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    120,
+    119,
+    239,
+    255
+   ],
+   "mineral": [
+    120,
+    131,
+    237,
+    255
+   ],
+   "flat_pct": 0.7,
+   "xy_std": [
+    43.6,
+    55.8
+   ]
+  }
+ },
+ {
+  "key": "lapis_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/lapis_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 21.5,
+  "lum_rock": 117.4,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "lapis_ore_0",
+   "normal": "lapis_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "lapis_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/lapis_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    244,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/lapis_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    120,
+    119,
+    240,
+    255
+   ],
+   "mineral": [
+    133,
+    132,
+    238,
+    255
+   ],
+   "flat_pct": 0.6,
+   "xy_std": [
+    40.5,
+    56.4
+   ]
+  }
+ },
+ {
+  "key": "emerald_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/emerald_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 28.0,
+  "lum_rock": 118.2,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "emerald_ore_0",
+   "normal": "emerald_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "emerald_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/emerald_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    244,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/emerald_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    119,
+    119,
+    239,
+    255
+   ],
+   "mineral": [
+    119,
+    130,
+    236,
+    255
+   ],
+   "flat_pct": 0.7,
+   "xy_std": [
+    43.3,
+    55.9
+   ]
+  }
+ },
+ {
+  "key": "diamond_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/diamond_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 16.9,
+  "lum_rock": 125.7,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "diamond_ore_0",
+   "normal": "diamond_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "diamond_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/diamond_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    244,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/diamond_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    119,
+    119,
+    239,
+    255
+   ],
+   "mineral": [
+    118,
+    131,
+    237,
+    255
+   ],
+   "flat_pct": 0.6,
+   "xy_std": [
+    41.9,
+    55.4
+   ]
+  }
+ },
+ {
+  "key": "deepslate_coal_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_coal_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 10.7,
+  "lum_rock": 80.9,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_coal_ore_0",
+   "normal": "deepslate_coal_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_coal_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_coal_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    246,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    60,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_coal_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    247,
+    255
+   ],
+   "mineral": [
+    128,
+    120,
+    239,
+    255
+   ],
+   "flat_pct": 2.5,
+   "xy_std": [
+    33.5,
+    44.9
+   ]
+  }
+ },
+ {
+  "key": "deepslate_iron_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_iron_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 36.9,
+  "lum_rock": 80.9,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_iron_ore_0",
+   "normal": "deepslate_iron_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_iron_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_iron_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "mineral": [
+    140,
+    8,
+    20,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_iron_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    248,
+    255
+   ],
+   "mineral": [
+    128,
+    119,
+    242,
+    255
+   ],
+   "flat_pct": 2.7,
+   "xy_std": [
+    31.4,
+    48.8
+   ]
+  }
+ },
+ {
+  "key": "deepslate_copper_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_copper_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 19.3,
+  "lum_rock": 82.2,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_copper_ore_0",
+   "normal": "deepslate_copper_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_copper_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_copper_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "mineral": [
+    200,
+    8,
+    20,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_copper_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    247,
+    255
+   ],
+   "mineral": [
+    120,
+    119,
+    241,
+    255
+   ],
+   "flat_pct": 2.5,
+   "xy_std": [
+    32.5,
+    47.1
+   ]
+  }
+ },
+ {
+  "key": "deepslate_gold_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_gold_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 38.0,
+  "lum_rock": 80.4,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_gold_ore_0",
+   "normal": "deepslate_gold_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_gold_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_gold_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "mineral": [
+    200,
+    8,
+    20,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_gold_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    248,
+    255
+   ],
+   "mineral": [
+    128,
+    119,
+    242,
+    255
+   ],
+   "flat_pct": 2.7,
+   "xy_std": [
+    31.4,
+    48.9
+   ]
+  }
+ },
+ {
+  "key": "deepslate_redstone_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_redstone_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 22.0,
+  "lum_rock": 79.5,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_redstone_ore_0",
+   "normal": "deepslate_redstone_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_redstone_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_redstone_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    246,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_redstone_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    247,
+    255
+   ],
+   "mineral": [
+    121,
+    128,
+    229,
+    255
+   ],
+   "flat_pct": 1.9,
+   "xy_std": [
+    40.3,
+    48.2
+   ]
+  }
+ },
+ {
+  "key": "deepslate_lapis_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_lapis_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 35.0,
+  "lum_rock": 79.8,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_lapis_ore_0",
+   "normal": "deepslate_lapis_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_lapis_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_lapis_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    245,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_lapis_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    248,
+    255
+   ],
+   "mineral": [
+    123,
+    119,
+    241,
+    255
+   ],
+   "flat_pct": 2.6,
+   "xy_std": [
+    31.6,
+    48.8
+   ]
+  }
+ },
+ {
+  "key": "deepslate_emerald_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_emerald_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 22.0,
+  "lum_rock": 79.6,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_emerald_ore_0",
+   "normal": "deepslate_emerald_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_emerald_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_emerald_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    246,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_emerald_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    247,
+    255
+   ],
+   "mineral": [
+    121,
+    128,
+    228,
+    255
+   ],
+   "flat_pct": 2.0,
+   "xy_std": [
+    40.3,
+    48.3
+   ]
+  }
+ },
+ {
+  "key": "deepslate_diamond_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/deepslate_diamond_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 21.9,
+  "lum_rock": 80.5,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "deepslate_diamond_ore_0",
+   "normal": "deepslate_diamond_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_diamond_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/deepslate_diamond_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    246,
+    0
+   ],
+   "mineral": [
+    0,
+    8,
+    8,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/deepslate_diamond_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    132,
+    140,
+    247,
+    255
+   ],
+   "mineral": [
+    121,
+    128,
+    229,
+    255
+   ],
+   "flat_pct": 2.0,
+   "xy_std": [
+    40.1,
+    48.0
+   ]
+  }
+ },
+ {
+  "key": "nether_gold_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/nether_gold_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 100.0,
+  "lum_rock": NaN,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "nether_gold_ore_0",
+   "normal": "nether_gold_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "nether_gold_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/nether_gold_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": null,
+   "mineral": [
+    0,
+    0,
+    77,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/nether_gold_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": null,
+   "mineral": [
+    136,
+    136,
+    221,
+    255
+   ],
+   "flat_pct": 0.1,
+   "xy_std": [
+    61.0,
+    61.4
+   ]
+  }
+ },
+ {
+  "key": "quartz_ore",
+  "terrain_pack": "RP-11 1.3.40",
+  "path": "textures/blocks/ores/quartz_ore_0",
+  "image_pack": "RP-11 1.3.40",
+  "size": [
+   256,
+   256
+  ],
+  "mineral_pct": 94.4,
+  "lum_rock": 213.3,
+  "set_pack": "RP-11 1.3.40",
+  "set": {
+   "color": "quartz_ore_0",
+   "normal": "quartz_ore_0_n",
+   "metalness_emissive_roughness_subsurface": "quartz_ore_0_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/ores/quartz_ore_0_mer.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    8,
+    10,
+    0
+   ],
+   "mineral": [
+    0,
+    0,
+    78,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/ores/quartz_ore_0_n.png",
+   "size": [
+    256,
+    256
+   ],
+   "mode": "RGBA",
+   "rock": [
+    128,
+    128,
+    222,
+    255
+   ],
+   "mineral": [
+    126,
+    136,
+    225,
+    255
+   ],
+   "flat_pct": 0.0,
+   "xy_std": [
+    59.9,
+    60.6
+   ]
+  }
+ },
+ {
+  "key": "deepslate",
+  "terrain_pack": "RP-04 1.3.156",
+  "path": "textures/blocks/deepslate_0",
+  "image_pack": "RP-04 1.3.156",
+  "size": [
+   128,
+   128
+  ],
+  "mineral_pct": 1.3,
+  "lum_rock": 81.9,
+  "set_pack": "RP-04 1.3.156",
+  "set": {
+   "color": "deepslate_0",
+   "normal": "deepslate_n",
+   "metalness_emissive_roughness_subsurface": "deepslate_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/deepslate_mer.png",
+   "size": [
+    128,
+    128
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    247,
+    0
+   ],
+   "mineral": [
+    0,
+    0,
+    249,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/deepslate_n.png",
+   "size": [
+    128,
+    128
+   ],
+   "mode": "RGB",
+   "rock": [
+    132,
+    140,
+    246
+   ],
+   "mineral": [
+    119,
+    121,
+    246
+   ],
+   "flat_pct": 2.6,
+   "xy_std": [
+    34.8,
+    41.5
+   ]
+  }
+ },
+ {
+  "key": "stone",
+  "terrain_pack": "RP-04 1.3.156",
+  "path": "textures/blocks/stone",
+  "image_pack": "RP-04 1.3.156",
+  "size": [
+   128,
+   128
+  ],
+  "mineral_pct": 0.6,
+  "lum_rock": 120.4,
+  "set_pack": "RP-04 1.3.156",
+  "set": {
+   "color": "stone",
+   "normal": "stone_n",
+   "metalness_emissive_roughness_subsurface": "stone_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/stone_mer.png",
+   "size": [
+    128,
+    128
+   ],
+   "mode": "RGBA",
+   "rock": [
+    0,
+    0,
+    249,
+    0
+   ],
+   "mineral": [
+    0,
+    0,
+    255,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/stone_n.png",
+   "size": [
+    128,
+    128
+   ],
+   "mode": "RGB",
+   "rock": [
+    119,
+    119,
+    239
+   ],
+   "mineral": [
+    136,
+    104,
+    232
+   ],
+   "flat_pct": 0.0,
+   "xy_std": [
+    40.0,
+    55.3
+   ]
+  }
+ },
+ {
+  "key": "netherrack",
+  "terrain_pack": "RP-04 1.3.156",
+  "path": "textures/blocks/netherrack_v0",
+  "image_pack": "RP-04 1.3.156",
+  "size": [
+   128,
+   128
+  ],
+  "mineral_pct": 100.0,
+  "lum_rock": NaN,
+  "set_pack": "RP-04 1.3.156",
+  "set": {
+   "color": "netherrack_v0",
+   "normal": "netherrack_n",
+   "metalness_emissive_roughness_subsurface": "netherrack_mer"
+  },
+  "metalness_emissive_roughness_subsurface": {
+   "file": "textures/blocks/netherrack_mer.png",
+   "size": [
+    128,
+    128
+   ],
+   "mode": "RGBA",
+   "rock": null,
+   "mineral": [
+    0,
+    0,
+    79,
+    0
+   ]
+  },
+  "normal": {
+   "file": "textures/blocks/netherrack_n.png",
+   "size": [
+    128,
+    128
+   ],
+   "mode": "RGB",
+   "rock": null,
+   "mineral": [
+    136,
+    136,
+    224
+   ],
+   "flat_pct": 0.0,
+   "xy_std": [
+    60.8,
+    61.2
+   ]
+  }
+ }
+]

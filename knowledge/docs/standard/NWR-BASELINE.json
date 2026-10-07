@@ -1,0 +1,9 @@
+[
+"minecraft:parched|is_holding_right",
+"minecraft:player|tp_melee_spear_base_arm_rotation_x",
+"minecraft:player|tp_melee_spear_use_arm_rotation_x",
+"minecraft:player|tp_melee_spear_use_arm_rotation_y",
+"minecraft:player|tp_melee_spear_use_arm_rotation_z",
+"minecraft:player|tp_melee_spear_use_item_rotation_x",
+"minecraft:zombie_villager|is_holding_right"
+]
