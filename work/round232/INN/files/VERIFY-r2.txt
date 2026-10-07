@@ -1,0 +1,19 @@
+mvv_inn_a_r2: size [17, 34, 13] bed heads 32 rooms 12 (2-bed 8, 4-bed 4) stages==finished True bed markers on heads True (32) -> PASS
+mvv_inn_b_r2: size [17, 34, 13] bed heads 32 rooms 12 (2-bed 8, 4-bed 4) stages==finished True bed markers on heads True (32) -> PASS
+mvv_inn_c_r2: size [17, 34, 13] bed heads 32 rooms 12 (2-bed 8, 4-bed 4) stages==finished True bed markers on heads True (32) -> PASS
+mvv_inn_d_r2: size [17, 34, 13] bed heads 32 rooms 12 (2-bed 8, 4-bed 4) stages==finished True bed markers on heads True (32) -> PASS
+rooms identical across the 4 skins: True
+rooms (skin a): feet | room x span | z span | beds | head x | doors
+  feet  4 | x  1.. 7 | z  2.. 4 | 4 | [1, 3, 5, 7] | [(4, 5)]
+  feet  4 | x  1.. 3 | z  9..11 | 2 | [1, 3] | [(2, 8)]
+  feet  4 | x  5.. 7 | z  9..11 | 2 | [5, 7] | [(6, 8)]
+  feet  4 | x  9..11 | z  2.. 4 | 2 | [9, 11] | [(10, 5)]
+  feet  4 | x  9..15 | z  9..11 | 4 | [9, 11, 13, 15] | [(12, 8)]
+  feet  4 | x 13..15 | z  2.. 4 | 2 | [13, 15] | [(14, 5)]
+  feet  8 | x  1.. 7 | z  2.. 4 | 4 | [1, 3, 5, 7] | [(4, 5)]
+  feet  8 | x  1.. 3 | z  9..11 | 2 | [1, 3] | [(2, 8)]
+  feet  8 | x  5.. 7 | z  9..11 | 2 | [5, 7] | [(6, 8)]
+  feet  8 | x  9..11 | z  2.. 4 | 2 | [9, 11] | [(10, 5)]
+  feet  8 | x  9..15 | z  9..11 | 4 | [9, 11, 13, 15] | [(12, 8)]
+  feet  8 | x 13..15 | z  2.. 4 | 2 | [13, 15] | [(14, 5)]
+VERIFY: PASS

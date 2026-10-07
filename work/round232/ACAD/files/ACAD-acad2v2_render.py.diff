@@ -1,0 +1,108 @@
+--- a/academy/acad2v2_render.py
++++ b/academy/acad2v2_render.py
+@@ -6,8 +6,9 @@
+ 
+ import acad2v2_layout as L
+ 
+-OUT = "/home/claude/_docs/castle/academy2_v2"
+ import os
++# 1.3.232 (#23): ACAD_OUT overrides the cloud path so the GitHub session can render into its scratchpad
++OUT = os.environ.get("ACAD_OUT", "/home/claude/_docs/castle/academy2_v2")
+ os.makedirs(OUT, exist_ok=True)
+ FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+ FONTB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+@@ -208,11 +209,13 @@
+     a, b, k = 5.0, 2.5, 2.4
+     hmap = {}
+     col = {}
++    own = {}                      # 1.3.232 (#23): which MASS box (index + 1) shows at a cell; 0 = ground
+ 
+-    def setc(u, v, h, c):
++    def setc(u, v, h, c, o=0):
+         if (u, v) not in hmap or h > hmap[(u, v)]:
+             hmap[(u, v)] = h
+             col[(u, v)] = c
++            own[(u, v)] = o
+ 
+     for zi in range(384 // CELL):
+         for xi in range(N):
+@@ -243,7 +246,7 @@
+             hmap[(zi, xi)] = -13
+             col[(zi, xi)] = (110, 160, 215)
+     labels = []
+-    for (x0, z0, x1, z1, h, roof, cat, label) in L.MASS:
++    for mk, (x0, z0, x1, z1, h, roof, cat, label) in enumerate(L.MASS):
+         base = -12 if x0 >= 320 else 0
+         fill = L.CAT[cat][0] if cat != "water" else (200, 225, 240)
+         cx, cz = (x0 + x1 + 1) / 2, (z0 + z1 + 1) / 2
+@@ -265,10 +268,10 @@
+                     if rr > max(hx, hz) + 0.5:
+                         continue
+                     hh = top + max(0, max(hx, hz) - rr) * 1.6
+-                setc(zi, xi, hh, fill)
++                setc(zi, xi, hh, fill, mk + 1)
+         if label:
+-            labels.append((label, cx, cz, top + (max(hx, hz) * 2.6 if roof == "spire" else 0)))
+-    labels += [("Water-gate canal", 350, 191, -13), ("Quay (feet -12)", 332, 120, -12), ("Forecourt", 60, 150, 0), ("Hall Garth", 185, 140, 0)]
++            labels.append((label, cx, cz, top + (max(hx, hz) * 2.6 if roof == "spire" else 0), mk + 1))
++    labels += [("Water-gate canal", 350, 191, -13, 0), ("Quay (feet -12)", 332, 120, -12, 0), ("Forecourt", 60, 150, 0, 0), ("Hall Garth", 185, 140, 0, 0)]
+     W, H = 2200, 1500
+     img = Image.new("RGB", (W, H), (246, 244, 238))
+     d = ImageDraw.Draw(img)
+@@ -279,6 +282,8 @@
+         return ox + (zc - vc) * a, oy + (zc + vc) * b - hgt * k
+ 
+     cells = sorted(hmap.keys(), key=lambda t: t[0] + (N - 1 - t[1]))
++    idimg = Image.new("I", (W, H), 0)          # 1.3.232 (#23): which box is visible at each pixel (leader anchors)
++    idd = ImageDraw.Draw(idimg)
+     for (zi, xi) in cells:
+         h = hmap[(zi, xi)]
+         c = col[(zi, xi)]
+@@ -291,10 +296,28 @@
+         d.polygon([scr(zi, v + 1, h), scr(zi + 1, v + 1, h), scr(zi + 1, v + 1, floor), scr(zi, v + 1, floor)], fill=left)
+         d.polygon([scr(zi + 1, v, h), scr(zi + 1, v + 1, h), scr(zi + 1, v + 1, floor), scr(zi + 1, v, floor)], fill=right)
+         d.polygon(p_top, fill=lit)
++        o = own.get((zi, xi), 0)
++        idd.polygon([scr(zi, v + 1, h), scr(zi + 1, v + 1, h), scr(zi + 1, v + 1, floor), scr(zi, v + 1, floor)], fill=o)
++        idd.polygon([scr(zi + 1, v, h), scr(zi + 1, v + 1, h), scr(zi + 1, v + 1, floor), scr(zi + 1, v, floor)], fill=o)
++        idd.polygon(p_top, fill=o)
++    import numpy as np
++    ids = np.array(idimg)
+     f = font(16, True)
+     placed = []
+-    for label, cx, cz, top in labels:
++    for label, cx, cz, top, o in labels:
+         sx, sy = scr(cz / CELL, N - 1 - cx / CELL, top)
++        # 1.3.232 (#23): a box hidden behind a nearer one (the Labs behind the moved Central Tower) gets its leader moved
++        # to its nearest VISIBLE pixel, so no label sits on another building's roof
++        if o and not (0 <= int(sy) < H and 0 <= int(sx) < W and ids[int(sy), int(sx)] == o):
++            ys, xs = np.nonzero(ids == o)
++            if len(xs):
++                dist2 = (xs - sx) ** 2 + (ys - sy) ** 2
++                j = int(np.argmin(dist2))
++                if dist2[j] > 36:          # not just the apex rounding of a spire: point at the middle of what shows
++                    mx, my = xs.mean(), ys.mean()
++                    j = int(np.argmin((xs - mx) ** 2 + (ys - my) ** 2))
++                print(f"  massing label '{label}': anchor hidden at ({sx:.0f},{sy:.0f}) -> visible ({xs[j]},{ys[j]})")
++                sx, sy = float(xs[j]), float(ys[j])
+         ty = sy - 34
+         while any(abs(ty - py) < 20 and abs(sx - px_) < 150 for (px_, py) in placed):
+             ty -= 22
+@@ -304,7 +327,7 @@
+         d.rectangle([sx - tw / 2 - 4, ty - 2, sx + tw / 2 + 4, ty + 19], fill=(255, 255, 255), outline=(90, 90, 90))
+         d.text((sx - tw / 2, ty), label, fill=(20, 20, 20), font=f)
+     d.text((40, 24), "ACADEMY II — 3/4 MASSING SKETCH (6 x 6 pieces = 384 x 384, seen from the gate-side corner)", fill=(20, 20, 20), font=font(26, True))
+-    d.text((40, 62), "Heights in blocks over the court: central tower 60 + spire (v2 position AWAITING ruling) · house towers 34 + spires · observatory 30 + cone · great hall 24 to the plate · chapel 20 · cloisters 5", fill=(60, 60, 60), font=font(15))
++    d.text((40, 62), "Heights in blocks over the court: central tower 60 + spire (at the crossing, ruling Q3 2026-10-07) · house towers 34 + spires · observatory 30 + cone · great hall 24 to the plate · chapel 20 · cloisters 5", fill=(60, 60, 60), font=font(15))
+     d.text((40, 84), "Viewer at the gate side looking toward the lake. Back: cliff (feet 0 -> -12), quay row, lake. Left: schools, labs, observatory, library. Right: masters, Rector, junior school, chapel. Sketch only.", fill=(60, 60, 60), font=font(15))
+     img.save(f"{OUT}/ACADEMY-II-MASSING.png")
+     print("wrote ACADEMY-II-MASSING.png", img.size)
+@@ -314,7 +337,7 @@
+     plan("G", L.G, "ACADEMY II — GROUND LEVEL (feet 0)", "6 x 6 pieces = 384 x 384 blocks · v2 (D-C1006-ACAD2): one central building + wings, courts between, covered walks joining all · lake row r5 = quay (feet -12)",
+          "ACADEMY-II-PLAN-GROUND.png",
+          ["Spiral stairs: C grand in the central tower and", "house towers' cores; B in ranges; A (narrow) on", "every secret stair. Headroom >= 2 everywhere.",
+-          "", "v2: one central building (Entrance Range >", "Great Hall > Central Tower) with wings; white", "strips = covered cloister walks joining every", "building; Walk to T3 = covered bridge (28)."])
++          "", "v2: one central building (Entrance Range >", "Central Tower at the crossing > Great Hall;", "Buttery + Servery = the cross arms) with wings; white", "strips = covered cloister walks joining every", "building; Walk to T3 = covered bridge (28)."])
+     plan("U", L.U, "ACADEMY II — UPPER LEVEL (feet 6; towers at a dormitory floor)", "Upper floors of the ranges; the great hall and chapel rise through this level (open roof / void); central tower floor with its four arms and the stair-hall void",
+          "ACADEMY-II-PLAN-UPPER.png",
+          ["Mural passage (4) runs in the precinct wall", "at feet 6 (Passetto: walk above, way below).",

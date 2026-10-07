@@ -6,8 +6,8 @@ zip lands, paste section **B**. Before either paste, put the zip in the repo (se
 ## How the zip gets into the repo (you do this part)
 1. On the laptop (or phone), open Google Drive → `ClaudeUploads` → `knowledge` → download the newest `AR-Knowledge-<date>.zip`.
 2. Open your repository on github.com → **Add file** → **Upload files**.
-3. Drag the zip in. In the path box at the top, type `_inbox/` before the file name so it lands in a folder named `_inbox`.
-4. Commit message: `knowledge zip <date>` → **Commit changes** (directly to the default branch is fine).
+3. Drag the zip in (the upload page has no folder box — the zip lands at the top of the repo; that is fine).
+4. In the **Add files via upload** box type `knowledge zip <date>` → keep "Commit directly to the master branch" → **Commit changes**.
    (The browser upload takes files up to 25 MB; the zip is built to stay under that.)
 5. Paste section A (first time) or B (every later time) into the Claude Code chat.
 
@@ -17,7 +17,7 @@ zip lands, paste section **B**. Before either paste, put the zip in the repo (se
 
 ```text
 You are working in Abs0lum's private AbsolutRealism repository (a personal-use Minecraft Bedrock pack suite). You cannot
-see our claude.ai Project, so the whole knowledge base is delivered to you as a zip in `_inbox/AR-Knowledge-<date>.zip`.
+see our claude.ai Project, so the whole knowledge base is delivered to you as a zip `AR-Knowledge-<date>.zip` at the repo root (or in `_inbox/`).
 Use the highest reasoning effort available: run `/effort ultracode` now (if it is not available, use the highest level
 you have and tell me which). Then do this, in order, and stop at the end:
 
@@ -31,9 +31,9 @@ you have and tell me which). Then do this, in order, and stop at the end:
 4. `.claude/settings.json`: merge in the keys from `claude-settings/settings.json` ("effortLevel": "xhigh",
    "ultracode": true, "alwaysThinkingEnabled": true, "promptCacheTtl": "1h", and the permissions deny list). Keep any
    keys that already exist unless they conflict; show me the result.
-5. `.gitignore`: make sure these are ignored: `_inbox/*.zip`, `_intake/secrets/`, `*.mcpack`, `*.mcaddon`, `*.mcworld`,
+5. `.gitignore`: make sure these are ignored: `AR-Knowledge-*.zip`, `_inbox/*.zip`, `_intake/secrets/`, `*.mcpack`, `*.mcaddon`, `*.mcworld`,
    `.env`, `node_modules/`, `__pycache__/`.
-6. Delete the zip from `_inbox/` and commit everything as one commit:
+6. Delete the zip (repo root or `_inbox/`) and commit everything as one commit:
    `knowledge sync <date> — first mirror (law CLAUDE-AR v3.0, prompts v2.6)`.
 7. Read, in this order: `knowledge/CLAUDE-AR.md` (the law — it overrides your defaults), `knowledge/00-INDEX.md`, the
    canonical docs in `knowledge/canonical/` (OPERATING-MANUAL-v4 first), and the newest HANDOFF in `knowledge/current/`.
@@ -50,7 +50,7 @@ Standing rules for this repo: personal use only — the repo stays private and n
 ## B. EVERY LATER SYNC (paste each time a new zip is uploaded)
 
 ```text
-Knowledge sync. A new zip is in `_inbox/` (use the newest AR-Knowledge-*.zip). At ultracode effort:
+Knowledge sync. A new AR-Knowledge-*.zip is at the repo root or in `_inbox/` (use the newest). At ultracode effort:
 1. Unzip outside the repo; check every MANIFEST row (bytes + md5); stop on any failure.
 2. Replace `knowledge/`, `prompts/`, `claude-settings/` with the zip's versions (deleted files go too — the zip is the
    whole mirror). Keep the repo CLAUDE.md; if `claude-settings/CLAUDE.md.repo-root` changed, show me the difference

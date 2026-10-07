@@ -1,0 +1,19 @@
+--- /home/user/Claude-Project/knowledge/tools/civ_variants.py	2026-10-07 11:33:28.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-INN/tools/civ_variants.py	2026-10-07 19:50:03.763950927 +0000
+@@ -17,6 +17,7 @@
+ generated (both return the top feet level the flues use). Names: pw:mvv_<building>_<skin>_r1 (the "a" slot was reserved
+ for this). Output beside the roster in _staging/civ; the marker audit and the stage cutter run on every variant."""
+ import json
++import re
+ import sys
+ from pathlib import Path
+ 
+@@ -85,7 +86,7 @@
+     finally:
+         R.gable_roof, R.hip_roof = orig_gable, orig_hip
+     form_hipped = hipped["v"] if hipped["v"] is not None else any(n.startswith("pw:roof_hip") for n, *_ in b.st.palette)
+-    b.name = b.name.replace("_a_r1", f"_{skin}_r1")
++    b.name = re.sub(r"_a_(r\d+)$", rf"_{skin}_\1", b.name)   # 1.3.232 (#INN): any revision (the inn r2), not only _r1
+     b.st.palette = [(rename(n, skin, form_hipped), st, ver) for n, st, ver in b.st.palette]
+     return b
+ 

@@ -195,6 +195,42 @@ def sink_tip(trunk, leaves, depth, anchor="stem"):
 
 BIRCH_TRUNK_INTO_CROWN = 1     # v3 (10-05, his 16:50): the trunk ends this many blocks above the crown's base (was: to the top)
 
+# v5 (round 231, 10-07; his 00:23 "the primary issues are with the dodecagon, primarily birch, oak and spruce").
+# Dodecagon prisms are 12-16 px wide inside a 16-px cell and only stack vertically, so (measured on BP-02 1.3.230):
+#   ONE_BARK      every log cell baked its own pw:variant (cell hash % 5) -> 5 different bark images stacked: 1,540 of
+#                 2,126 log-on-log joints changed image (a hard seam every block). Now every stem log carries variant 0,
+#                 the image the ROOT block always draws (its material is pw_<sp>_<age>_log_v0) -> 0 seams.
+#   CLUMP_STEP    birch clump stems stood 1 cell from the main stem: two prisms 16 px apart centre to centre leave a
+#                 1-4 px slit running the full height (53 side-by-side + 75 edge-touching cells in 8 templates). Now the
+#                 clump's extra stems stand 2 cells out (the same random draws x 2): a clear gap, separate stems.
+#   NO_JUMP       the birch S-curve lean moved a stem one whole cell sideways (2 cells in 2 templates): a prism hanging
+#                 beside the one under it, touching it nowhere. Dodecagons cannot lean -> stems stay straight (the lean
+#                 draws are still taken so every crown keeps its random numbers).
+#   SHEATH_FULL   the look rule bakes every leaf face-adjacent to wood as a 'card' leaf (variant 5/6: planes only, no
+#                 cube faces). Around a dodecagon stem that leaves the pole bare inside the crown (100 % of in-crown logs
+#                 had no full leaf beside them) and the sawn log_top face of the stem tip showing through the card above
+#                 it (207 of 213 tips). Now, for these three species only: the leaf directly above each stem tip and the
+#                 leaves beside a stem log at or above the crown base take the full-cube look (variant (h >> 12) % 5,
+#                 the same hash the far leaves use). No cell is added or removed; only those leaves' variant changes.
+#   SPRUCE_CONE_TIP  his ruling (10-07 ~04:00, via lead): "leave these [trunks] alone for now, but lower the tip height by
+#                 1 or 2 and replace it with wide downward-coned spruce leaf blocks." After sink_tip, the top 1 (even idx)
+#                 or 2 (odd idx) logs leave the trunk and a solid cone of spruce leaves is laid over the new tip: apex
+#                 CONE_RISE blocks above it, flaring down to CONE_R[age] blocks radius one block BELOW the tip, so the
+#                 sawn top sits inside leaves. RNG-free (after every draw) -> crowns keep their cells; cone leaves take
+#                 the full-cube look. Never above the crown's own top (the tree does not grow taller).
+#   SPRUCE_COLLAR  his 11:12 ruling: mature/old spruce (tier step 2) get a ring of 8 leaves round the trunk on every
+#                 layer between two tiers (crown base+1 .. leader-1), so the trunk no longer shows as a bare dark stripe.
+#                 RNG-free (no draws) -> tier cells, crown height and outline unchanged; young (step 1) untouched.
+DODECA_231 = {"ONE_BARK": True, "CLUMP_STEP": 2, "NO_JUMP": True, "SHEATH_FULL": True, "SPRUCE_CONE_TIP": True,
+              "SPRUCE_COLLAR": True}
+CONE_RISE = 3
+CONE_R = {"young": 1.6, "mature": 2.4, "old": 2.8}
+# cap v2 (his 04:12 ruling): the crown-top profile continued — r = CAP_R0 + CAP_SLOPE * depth below the apex, down to CAP_R
+CAP_R0 = 0.5
+CAP_SLOPE = 0.38
+CAP_R = {"young": 2.4, "mature": 3.2, "old": 3.5}
+DODECA_231_SPECIES = ("birch", "oak", "spruce")
+
 
 def birch(age, idx):
     """v2 (1004b, his 15:27 "birches look incomplete and broken - not fully created"; D-C566). §3.6 kept: slim crown never
@@ -234,7 +270,8 @@ def birch(age, idx):
         stems = [(0, 0)]
         if clump:
             for _ in range(rnd.randint(1, 3)):
-                stems.append((rnd.choice((-1, 1)), rnd.choice((-1, 0, 1))))
+                step = DODECA_231["CLUMP_STEP"] or 1                # v5: 2 cells out (no slit between prisms)
+                stems.append((rnd.choice((-1, 1)) * step, rnd.choice((-1, 0, 1)) * step))
         lean = math.radians(rnd.uniform(0, 8)); laz = rnd.uniform(0, 2 * math.pi)
         heavy = rnd.uniform(0, 2 * math.pi)                         # the old tree's crown leans to one side
         tops = []
@@ -247,6 +284,8 @@ def birch(age, idx):
             for y in range(0, top + 1):
                 k = math.sin(math.pi * y / max(1, top)) * math.tan(lean) * y * 0.5     # S-curve lean: out, then back
                 x = int(round(sx + math.cos(laz) * k)); z = int(round(sz + math.sin(laz) * k))
+                if DODECA_231["NO_JUMP"]:                           # v5: a dodecagon stem never jumps sideways
+                    x, z = sx, sz
                 (trunk if y <= cut else core).append((x, y, z))
                 last = (x, y, z)
             tops.append((last[0], top, last[2], dead))
@@ -278,6 +317,58 @@ def birch(age, idx):
     leaves |= set(core)                                             # v3: the hidden leader is leaves now (a leafy core, no hollow)
     info["trunk_top"] = max(c[1] for c in trunk)
     return trunk, finish(trunk, leaves), info
+
+
+def _log_xray_visible(x, y, z, leaves, reach=14):
+    """True if any horizontal ray (+x, -x, +z, -z) from the log at (x, y, z) passes no leaf within `reach` blocks — the
+    in-generator form of the x-ray scan (xray_spruce.py, horizontal rays): that log shows through the crown."""
+    for dx, dz in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+        if not any((x + dx * k, y, z + dz * k) in leaves for k in range(1, reach + 1)):
+            return True
+    return False
+
+
+def spruce_cone_tip(trunk, leaves, age, idx):
+    """-> (trunk, cap, extra). v2 (his 04:12 ruling, D-C1007-R231b): lowers the trunk tip by 1 (even idx) or 2 (odd idx)
+    logs and lays a solid leaf cap over it whose radius per layer CONTINUES the crown-top profile he likes
+    (r = CAP_R0 + CAP_SLOPE * depth below the cap apex; measured 0-1 / 1-1.4 / 1-1.4 / 1-2.2 / 1.4-2.2 on the crown tops
+    -> ~0.38 per layer), apex CONE_RISE above the new tip, running down until r reaches CAP_R[age] (wider and taller than
+    cone v1). X-ray step (mature/old only): if the log just BELOW the cap still shows through the crown (a horizontal ray
+    escapes), the tip goes down ONE more log so the cap moves down over it — never below crown base + 1, never the root.
+    Cap cells above the crown's own top are dropped (the tree does not grow taller)."""
+    trunk0 = list(trunk)
+    top = max(c[1] for c in trunk0)
+    floor = max(1, crown_base_of(leaves) + 1)
+    crown_top = max(c[1] for c in leaves)
+    depth = int(math.ceil((CAP_R[age] - CAP_R0) / CAP_SLOPE))
+
+    def build(new_top):
+        removed = [c for c in trunk0 if c[1] > new_top]
+        kept = [c for c in trunk0 if c[1] <= new_top]
+        apex = new_top + CONE_RISE
+        bottom = max(floor, apex - depth)
+        cap = set(removed)                               # the removed logs' cells become leaves (no hole in the crown)
+        for tx, _, tz in (c for c in kept if c[1] == new_top):
+            for y in range(bottom, apex + 1):
+                if y > crown_top:
+                    continue
+                r = CAP_R0 + CAP_SLOPE * (apex - y)
+                ri = int(math.ceil(r))
+                for dx in range(-ri, ri + 1):
+                    for dz in range(-ri, ri + 1):
+                        if dx * dx + dz * dz <= r * r:
+                            cap.add((tx + dx, y, tz + dz))
+        ks = set(kept)
+        return kept, {c for c in cap if c not in ks}, bottom
+
+    new_top = max(floor, top - (1 + idx % 2))
+    kept, cap, bottom = build(new_top)
+    extra = 0
+    if age != "young" and new_top - 1 >= floor:
+        allleaves = leaves | cap
+        if any(_log_xray_visible(x, y, z, allleaves) for x, y, z in kept if y == bottom - 1):
+            kept, cap, bottom = build(new_top - 1); extra = 1
+    return kept, cap, extra
 
 
 def spruce(age, idx):
@@ -326,6 +417,14 @@ def spruce(age, idx):
             ellipsoid(leaves, tip, 0.9, 0.7, 0.9, rnd=rnd, rough=0.3)
             ellipsoid(leaves, inner, 0.9, 0.6, 0.9, rnd=rnd, rough=0.3)
         ellipsoid(leaves, (0, y, 0), min(r, 1.8), 0.7, min(r, 1.8), rnd=rnd, rough=0.2)
+    if step == 2 and DODECA_231["SPRUCE_COLLAR"]:          # his 11:12 ruling: leaf collar on the between-tier layers
+        for y in range(base + 1, top):                   # RNG-free ring of 8 round the trunk -> no bare trunk layer
+            if y in tiers:
+                continue
+            for dx in (-1, 0, 1):
+                for dz in (-1, 0, 1):
+                    if dx or dz:
+                        leaves.add((dx, y, dz))
     if forest:                                           # dead stubs below the crown
         for y in range(2, base, 2):
             az = rnd.uniform(0, 2 * math.pi)
@@ -336,8 +435,15 @@ def spruce(age, idx):
         ellipsoid(leaves, (0, H - 1, 0), 1.5, 1.5, 1.5, rnd=rnd, rough=0.2)
     trunk, core, _gone = sink_tip(trunk, leaves, TRUNK_TIP_DEPTH["spruce"][age])  # v4: the leader is leaves
     leaves |= set(core)
+    cone = set()
+    if DODECA_231["SPRUCE_CONE_TIP"]:                    # v5b: his tip ruling (see DODECA_231 notes)
+        trunk, cone, extra = spruce_cone_tip(trunk, leaves, age, idx)
+        leaves |= cone
     info = {"H": H, "crown_base": base, "radius": round(R0, 1), "tiers": len(tiers), "forest": forest, "double": double,
             "trunk_top": max(c[1] for c in trunk)}
+    if cone:
+        info["cone"] = cone
+        info["xray_extra_lowered"] = extra
     return trunk, finish(trunk, leaves), info
 
 
@@ -417,16 +523,34 @@ def build(species, age, idx):
     log_id = LOG[species][age]
     trunk_local = {(x - x0, y, z - z0) for x, y, z in trunk}
     root = (-x0, 0, -z0)
+    fix = species in DODECA_231_SPECIES
+    full_look = set()                                       # v5 SHEATH_FULL: leaves that take the full-cube look
+    if fix and DODECA_231["SHEATH_FULL"]:
+        cb = crown_base_of(leaves) if leaves else 0
+        for x, y, z in trunk_local:
+            if (x, y + 1, z) not in trunk_local:
+                full_look.add((x, y + 1, z))                # the cell over a stem tip (covers the sawn face) and the
+                full_look.add((x, y + 2, z))                # next one (oak/spruce are resampled: a squeezed crown can
+                                                            # bring that cell down onto the tip)
+            if y >= cb:
+                for dx, dz in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    full_look.add((x + dx, y, z + dz))      # the sheath beside an in-crown stem log
+        for cx, cy, cz in info.get("cone", ()):
+            full_look.add((cx - x0, cy, cz - z0))           # v5b SPRUCE_CONE_TIP: the cone is full leaf blocks
     for x, y, z in trunk_local:
         if (x, y, z) == root:     # T2 root block: same look, carries the template index + rotation (north = as saved)
             st.set(x, y, z, f"{log_id}_root", {"pw:tpl": M.i(idx % 16), "pw:tpl_hi": M.i(idx // 16), "minecraft:cardinal_direction": M.s("north")})
             continue
-        st.set(x, y, z, log_id, {"pw:variant": M.i(cell_hash(x, y, z) % 5), "pw:rseed": M.b(1),
+        bark = 0 if (fix and DODECA_231["ONE_BARK"]) else cell_hash(x, y, z) % 5   # v5: one bark image = the root's
+        st.set(x, y, z, log_id, {"pw:variant": M.i(bark), "pw:rseed": M.b(1),
                                  "pw:top_variant": M.i((cell_hash(x, y, z) >> 5) % 7)})
     for x, y, z in leaves:
         lx, lz = x - x0, z - z0
         d = min((abs(lx - a) + abs(y - b) + abs(lz - c) for a, b, c in trunk_local), default=99)
-        st.set(lx, y, lz, LEAF[species], {"pw:variant": M.i(leaf_look(lx, y, lz, d)), "pw:off": M.i((lx + 2 * y + 4 * lz) % 7),
+        look = leaf_look(lx, y, lz, d)
+        if (lx, y, lz) in full_look and look >= 5:
+            look = (cell_hash(lx, y, lz) >> 12) % 5                 # v5 SHEATH_FULL: the far leaves' full-cube look
+        st.set(lx, y, lz, LEAF[species], {"pw:variant": M.i(look), "pw:off": M.i((lx + 2 * y + 4 * lz) % 7),
                                           "pw:rseed": M.b(1), "pw:section": M.i(0), "pw:exposure": M.i(0),
                                           "pw:section_rolled": M.b(1)})
     info.update({"size": size, "root_local": root, "logs": len(trunk_local), "leaves": len(leaves)})

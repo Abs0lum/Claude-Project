@@ -1203,3 +1203,273 @@ export function* planRoadJob(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP = 6,
   { let a = 0; for (const t of turns.concat([L - 1])) { legs.push({ d: dirs[a + 1] || dirs[a], len: t - a }); a = t; } }
   return { cells, dirs, turns, H: plan.H, segs: plan.segs, cost: plan.cost, legs };
 }
+
+// ------------------------------------------------------------------------------------------------ ELEVATION BANDS (1.3.231, CIV-LAND)
+// His 00:23 CT 10-07: "civs struggle to slope up and grow on elevation — use 4-part slope switchbacks until the survey can
+// run again". The side-street search (clock sideStreetJob) held every new parallel street within +-K (3) of its base's
+// junction height — its 13-wide connector climbs 1 in 7 at best over D - 13 cells — and a street may cut or fill at most 6:
+// a parallel D = 47..90 blocks away could only stand on land at most ~9 blocks higher or lower (a hillside of ~1 in 5).
+// Steeper, every offset failed, every window was given back after 3 passes, and the search then ran with no windows at all
+// (his log, day 37..104: "no side street could open — {"jobs":0, ...}"). A BAND STREET stands on its OWN contour level (the
+// land's own height at its junction window, free of the connector's reach) and is joined to the base window by a CLIMBING
+// LEG: a narrow road (ROAD_W 7, his 4-part ramp q1..q4 = 1 in 4) that zig-zags between the two windows — switchbacks and
+// hairpins with a flat 7-cell landing at every turn (planRoadJob: straight / L / Z / switchback / hairpin shapes, then the
+// terrain search). A street per elevation band; the bands are joined by switchbacks.
+export const BAND = {
+  offsets: [60, 47, 73, 54, 66],     // the pitches a band street is tried at (the street pitch 60 first, as SIDE_OFFSETS)
+  halves: [70, 55, 40],              // its halves, longest first (as the clock's KIT_SIDE_HALVES)
+  perPass: 3,                        // at most this many band searches (each a climbing-leg search) per side-street pass
+  maxDP: 6,                          // the leg shapes profiled exactly
+};
+
+/** the two MOUTHS of a climbing leg between the junction window tj of a street (frame f) on `side` and the junction window
+ *  `half` of a parallel street (frame f2; its v may point either way): P0 just outside f's tee branch, heading away from f
+ *  (d0); P1 just outside f2's tee branch on the side that FACES f, and the road ARRIVES there heading into f2 (d1 = d0).
+ *  (1.3.231: the clock's legJob gave d1 = -d0 — an arrival heading back toward the base street, i.e. from inside the
+ *  parallel's own corridor; every shape was vetoed: his 1.3.224 log "every one of 1620 shapes vetoed".) */
+export function bandMouths(f, tj, side, f2, half) {
+  const d = [side * f.vx, side * f.vz];
+  const P0 = cellOf(f, tj + 6, side > 0 ? W : -1);
+  const s2 = f2.vx * f.vx + f2.vz * f.vz;                       // +1: f2's v runs the same way as f's; -1: the other way
+  const facing = -side * s2;                                    // f2's side that faces f, in f2's own frame
+  const P1 = cellOf(f2, half + 6, facing > 0 ? W : -1);
+  return { P0, d0: d, P1, d1: d.slice() };
+}
+
+/** 1.3.232 (CIV-LAND, his 04:0x 10-07 ruling): a CLIMBING LEG built as he described — "more short runs, run contiguously to
+ *  get the correct height jump, THEN make the switchback". From P0 (heading d0, into the slope) a flat mouth, then RUNS along
+ *  the contour (+-u, all of one length Lr, alternating: a zig-zag that returns to P0's u) carrying his 4-part ramps chained
+ *  end to end (each run: 4 pad cells after its turn, k ramps, >= 3 pad cells before the next), joined by FLAT uphill links
+ *  (>= ROAD_W + 1 cells, so the runs' 7-wide decks never overlap); the last link arrives at P1 heading d1 at H1. Every cell
+ *  off the two mouths keeps |H - ground| <= ROAD_CUT; the mouths (7 cells each) <= ROAD_CUT_MAX. A DP over (run, link end,
+ *  height) per (Lr, first direction); min cost = sum |H - g| + cells. Returns planRoadJob's shape or null (caller falls back). */
+export function* planBandLegJob(ground, blocked, P0, d0, P1, d1, H0, H1, stats = {}) {
+  stats.legTries = (stats.legTries || 0) + 1;
+  const u = [-d0[1], d0[0]];
+  const dx = P1[0] - P0[0], dz = P1[1] - P0[1];
+  const Z = dx * d0[0] + dz * d0[1], U = dx * u[0] + dz * u[1];
+  if (U !== 0 || d1[0] !== d0[0] || d1[1] !== d0[1] || Z < 2 * (ROAD_W + 1)) return null;
+  const rise = H1 - H0, sgn = Math.sign(rise), MOUTH = 7;
+  const at = (x, z) => [P0[0] + x * u[0] + z * d0[0], P0[1] + x * u[1] + z * d0[1]];
+  const gAt = new Map();
+  const g = (x, z) => { const k = x * 4096 + z; if (gAt.has(k)) return gAt.get(k); const [wx, wz] = at(x, z); const c = ground(wx, wz); const v = !c || c.water ? null : c.g; gAt.set(k, v); return v; };
+  const clr = new Map();
+  const clear = (x, z, alongU) => {                    // the 7-wide deck across the travel direction is free
+    const k = (x * 4096 + z) * 2 + (alongU ? 1 : 0);
+    if (clr.has(k)) return clr.get(k);
+    let ok = true;
+    for (let w = -ROAD_HALF; w <= ROAD_HALF && ok; w++) { const [wx, wz] = alongU ? at(x, z + w) : at(x + w, z); if (blocked(wx, wz)) ok = false; }
+    clr.set(k, ok); return ok;
+  };
+  // the narrow-road law (planRoadJob's): fill <= ROAD_CUT (beyond it a deck), cut <= ROAD_CUT_MAX; `lim` tightens the fill only
+  const cellOk = (x, z, H, alongU, lim) => { const v = g(x, z); return v !== null && H - v <= lim && v - H <= ROAD_CUT_MAX && clear(x, z, alongU); };
+  // the run's heights: offset q = 1..Lr from its start; ramps on q 4 .. 4 + 4k - 1 (rampH: an up ramp's 4 cells at the lower level)
+  const runH = (h, k, q) => { const m = Math.floor((q - 4) / ROAD_RAMP); if (q < 4) return h; const n = Math.abs(k); if (m >= n) return h + k; return sgn > 0 ? h + m : h - m - 1; };
+  let best = null, work = 0;
+  for (const Lr of [11, 15, 19, 23, 27, 31, 35, 39, 43, 47]) {
+    const kMax = Math.floor((Lr - 7) / ROAD_RAMP);
+    for (const s of [1, -1]) {
+      // state after run j: (z, h, par) — par 1: at x = s * Lr, par 0: at x = 0. dp[j] = Map key z,h,par -> {cost, prev, k, z}
+      const xOf = (par) => par ? s * Lr : 0;
+      let layer = new Map();
+      // the mouth: x 0, z 1 .. z1 at H0 (cells 0..MOUTH-1 loose), then run 1 at z1
+      const tryRun = (z, h, par, k, base, prev) => {        // a run at z from xOf(par) to xOf(1 - par), entering at h
+        const x0 = xOf(par), dir = par ? -s : s;
+        let c = base;
+        for (let q = 1; q <= Lr; q++) { const H = runH(h, k, q), x = x0 + dir * q; if (!cellOk(x, z, H, true, ROAD_CUT)) return null; c += Math.abs(H - g(x, z)) + 1; }
+        if (!clear(x0 + dir * Lr, z, false)) return null;      // the corner pad also clears along the next link
+        return { cost: c, prev, k, z, h: h + k, par: 1 - par };
+      };
+      // the CLIMBING MOUTH (lead ruling 04:3x 10-07, Q1): the straight exit through the window may carry k0 chained 4-part
+      // ramps from cell MOUTH on ("run them contiguously to get the correct height jump, THEN make the switchback"),
+      // with >= 3 flat pad cells before the first turn; k0 = 0 is the flat mouth
+      for (let k0 = 0; k0 <= Math.abs(rise); k0++) {
+        const mH = (z) => runH(H0, sgn * k0, z - (MOUTH - 4));
+        const zMin = Math.max(ROAD_HALF + 1, k0 ? MOUTH + ROAD_RAMP * k0 + 3 : 0);
+        let c = 0, ok = true, zc = 0;
+        for (let z1 = ROAD_HALF + 1; z1 <= Z - (ROAD_W + 1) - ROAD_HALF; z1++) {
+          for (let z = zc + 1; z <= z1 && ok; z++) { const Hm = mH(z); if (!cellOk(0, z, Hm, false, z < MOUTH ? ROAD_CUT_MAX : ROAD_CUT)) ok = false; else c += Math.abs(Hm - g(0, z)) + 1; }
+          zc = z1;
+          if (!ok) break;                                   // the mouth only lengthens: once it fails it stays failed
+          if (z1 < zMin || !clear(0, z1, true)) continue;
+          for (let k = 0; k <= kMax; k++) {
+            const st = tryRun(z1, H0 + sgn * k0, 0, sgn * k, c, null);
+            if (st) st.k0 = k0;
+            if (st && Math.abs(H1 - st.h) <= Math.abs(rise)) { const key = `${st.z},${st.h},${st.par}`; const o = layer.get(key); if (!o || st.cost < o.cost) layer.set(key, st); }
+          }
+        }
+      }
+      yield;
+      for (let j = 1; layer.size && j < 12; j++) {
+        // close: an even count of runs back at x 0, at H1, then the last link of >= MOUTH cells to P1
+        for (const st of layer.values()) {
+          if (st.par !== 0 || st.h !== H1 || Z - st.z < ROAD_HALF) continue;     // the last pad's 3 cells reach P1
+          let c = st.cost, ok = true;
+          for (let z = st.z + 1; z <= Z && ok; z++) { if (!cellOk(0, z, H1, false, Z - z < MOUTH ? ROAD_CUT_MAX : ROAD_CUT)) ok = false; else c += Math.abs(H1 - g(0, z)) + 1; }
+          if (ok && (!best || c < best.cost)) best = { cost: c, last: st, Lr, s };
+        }
+        const next = new Map();
+        for (const st of layer.values()) {
+          const x = xOf(st.par);
+          for (let l = ROAD_W + 1; st.z + l <= Z - ROAD_HALF; l++) {
+            const z2 = st.z + l;
+            let c = st.cost, ok = true;
+            for (let z = st.z + 1; z <= z2 && ok; z++) { if (!cellOk(x, z, st.h, false, ROAD_CUT)) ok = false; else c += Math.abs(st.h - g(x, z)) + 1; }
+            if (!ok) break;
+            if (!clear(x, z2, true)) continue;
+            for (let k = 0; k <= kMax; k++) {
+              const n2 = st.h + sgn * k;
+              if (Math.abs(H1 - n2) > Math.abs(H1 - st.h)) break;
+              const s2 = tryRun(z2, st.h, st.par, sgn * k, c, st);
+              if (!s2) continue;
+              const key = `${s2.z},${s2.h},${s2.par}`; const o = next.get(key); if (!o || s2.cost < o.cost) next.set(key, s2);
+            }
+            if (++work % ROAD_YIELD === 0) yield;
+          }
+        }
+        layer = next;
+        yield;
+      }
+    }
+  }
+  if (!best) { stats.legNone = (stats.legNone || 0) + 1; return null; }
+  // the centre line and heights from the chain
+  const chain = [];
+  for (let st = best.last; st; st = st.prev) chain.push(st);
+  chain.reverse();
+  const { Lr, s } = best, cells = [[P0[0], P0[1]]], dirs = [d0], H = [H0];
+  const push = (x, z, d, h) => { cells.push(at(x, z)); dirs.push(d); H.push(h); };
+  let x = 0, z = 0, h = H0;
+  for (const st of chain) {
+    if (st.k0) { for (z = z + 1; z <= st.z; z++) push(x, z, d0, runH(H0, sgn * st.k0, z - (MOUTH - 4))); h = H0 + sgn * st.k0; }
+    else for (z = z + 1; z <= st.z; z++) push(x, z, d0, h);
+    z = st.z;
+    const dir = x === 0 ? s : -s, du = [u[0] * dir, u[1] * dir];
+    for (let q = 1; q <= Lr; q++) push(x + dir * q, z, du, runH(h, st.k, q));
+    x += dir * Lr; h = st.h;
+  }
+  for (z = z + 1; z <= Z; z++) push(x, z, d0, h);
+  const L = cells.length;
+  const turns = [];
+  for (let i = 1; i < L; i++) if (dirs[i][0] !== dirs[i - 1][0] || dirs[i][1] !== dirs[i - 1][1]) turns.push(i - 1);
+  // segs as planProfile builds them: a 4-part ramp at every step (rampH: an up ramp's 4 cells sit at the lower level and the
+  // step falls on the cell after; a down ramp's 4 cells sit at the lower level from its first cell), flat elsewhere
+  const kind = new Array(L).fill(null), segs = [];
+  for (let i = 1; i < L; i++) {
+    if (H[i] === H[i - 1] + 1) { const a = i - ROAD_RAMP; segs.push({ kind: "ramp", a, len: ROAD_RAMP, H: H[a], dir: 1 }); for (let q = a; q < i; q++) kind[q] = "ramp"; }
+    else if (H[i] === H[i - 1] - 1) { segs.push({ kind: "ramp", a: i, len: ROAD_RAMP, H: H[i - 1], dir: -1 }); for (let q = i; q < i + ROAD_RAMP; q++) kind[q] = "ramp"; }
+  }
+  for (let i = 0; i < L; i++) {
+    if (kind[i]) continue;
+    const top = segs[segs.length - 1];
+    if (top && top.kind === "flat" && top.H === H[i] && top.a + top.len === i) top.len++;
+    else segs.push({ kind: "flat", a: i, len: 1, H: H[i] });
+  }
+  segs.sort((p, q) => p.a - q.a);
+  const legs = [];
+  { let a = 0; for (const t of turns.concat([L - 1])) { legs.push({ d: dirs[a + 1] || dirs[a], len: t - a }); a = t; } }
+  stats.legOk = (stats.legOk || 0) + 1;
+  return { cells, dirs, turns, H, segs, cost: best.cost, legs, runLen: Lr, gen: "bandLeg" };
+}
+
+/** plan a BAND STREET at offset D from the junction window tj (side) of the street in frame f (its sidewalk height there Hb):
+ *  the parallel at the land's own level (planProfile with its junction window held flat at whatever height the land gives)
+ *  and the climbing leg to it. site: { at, isWater } (the settlement's live site); streetBlocked(x, z): cells a street
+ *  corridor may not take; legBlocked(x, z): cells the leg may not take (the band street's own corridor is added here);
+ *  opts: the street options (the clock's STREET_OPTS). A generator (yields between plans; the leg search yields inside).
+ *  Returns { D, half, f2, L2, p2, Hn, rise, road, tOff } or null; stats counts why (bandP2, bandBlocked, bandLeg, bandOk). */
+export function* planBandStreetJob(site, f, tj, side, Hb, D, streetBlocked, legBlocked, opts = {}, stats = {}) {
+  for (const k of ["bandPlans", "bandP2", "bandBlocked", "bandLeg", "bandOk"]) stats[k] = stats[k] || 0;
+  for (const half of BAND.halves) {
+    const f2 = frameOf(f.ox + side * D * f.vx + (tj - half) * f.ux, f.oz + side * D * f.vz + (tj - half) * f.uz, [f.ux, f.uz], [f.vx, f.vz]);
+    const L2 = 2 * half + 13;
+    const ground = groundAlong(site, f2, 0, L2);
+    yield;
+    const p2 = planProfile(ground, { ...opts, flat: [[half - 1, half + 13]] });
+    stats.bandPlans++;
+    yield;
+    if (p2.cost === Infinity) { stats.bandP2++; continue; }
+    const Hn = p2.H[half];
+    if (Hn === undefined || !p2.H.slice(half, half + 13).every((h) => h === Hn)) { stats.bandP2++; continue; }
+    const cells2 = corridorCells(f2, p2, 0, new Map());
+    let hit = false;
+    for (const key of cells2.keys()) { const c = key.indexOf(","); if (streetBlocked(+key.slice(0, c), +key.slice(c + 1))) { hit = true; break; } }
+    if (hit) { stats.bandBlocked++; continue; }
+    const { P0, d0, P1, d1 } = bandMouths(f, tj, side, f2, half);
+    const blocked = (x, z) => cells2.has(`${x},${z}`) || legBlocked(x, z);
+    const ground2 = (x, z) => { const g = site.at(x, z); return g === undefined ? undefined : { g, water: site.isWater(x, z) }; };
+    const legStats = {};
+    let road = yield* planBandLegJob(ground2, blocked, P0, d0, P1, d1, Hb, Hn, legStats);
+    if (!road) road = yield* planRoadJob(ground2, blocked, P0, d0, P1, d1, Hb, Hn, BAND.maxDP, legStats);
+    stats.legShapes = (stats.legShapes || 0) + (legStats.shapes || 0);
+    stats.legPops = (stats.legPops || 0) + (legStats.pops || 0);
+    if (!road) { stats.bandLeg++; continue; }
+    stats.bandOk++;
+    return { D, half, f2, L2, p2, Hn, rise: Hn - Hb, road, tOff: tj - half };
+  }
+  return null;
+}
+
+/** the facts of a climbing leg a test (or the chronicle) reads: its turns, its ramps (each a 4-part ramp: 1 block over 4
+ *  cells), the steepest climb over any 4 cells, and whether every turn stands on a flat landing (3 cells before and after) */
+export function legFacts(road) {
+  const H = road.H, L = H.length;
+  let steep4 = 0, maxStep = 0;
+  for (let i = 1; i < L; i++) maxStep = Math.max(maxStep, Math.abs(H[i] - H[i - 1]));
+  for (let i = 4; i < L; i++) steep4 = Math.max(steep4, Math.abs(H[i] - H[i - 4]));
+  const landings = road.turns.every((ti) => { for (let i = Math.max(0, ti - 3); i <= Math.min(L - 1, ti + 3); i++) if (H[i] !== H[ti]) return false; return true; });
+  const ramps = road.segs.filter((q) => q.kind === "ramp");
+  return { cells: L, turns: road.turns.length, ramps: ramps.length, rampLens: [...new Set(ramps.map((q) => q.len))], climb: H[L - 1] - H[0], steep4, maxStep, landings };
+}
+
+/** 1.3.231 (RAMPS-231 proposal, applied by CIV-LAND): `/scriptevent pw:clock rampclear [go|force]` — his dirt wedges on the
+ *  street ramps (-190..-205 64 122, 10-07). Over every kit-street RAMP piece, lane cells w 0..12, y = piece.y+15 .. H+3:
+ *  natural ground only (RAMP_CLEAR_NATURAL; never a structure block — curbs, decks, pw:* stay). Causes covered: the ramp8
+ *  structure's top layer was VOID (a down ramp's H layer never cut) and kitPrep's skipped unread columns. mode undefined =
+ *  dry run (counts only); "go" cuts; "force" also re-sends the lane layer y = H (w 4..8) held as AIR: dirt now, air one
+ *  tick later — two block updates reach every client (a ghost dirt the server already holds as air is corrected).
+ *  Unloaded columns are counted, never read (1.3.227: no getBlock into an unloaded chunk). Engine handed in (testable). */
+export const RAMP_CLEAR_NATURAL = new Set(["minecraft:dirt", "minecraft:grass_block", "minecraft:coarse_dirt", "minecraft:podzol",
+  "minecraft:rooted_dirt", "minecraft:mycelium", "minecraft:dirt_with_roots", "minecraft:mud", "minecraft:clay",
+  "minecraft:gravel", "minecraft:sand", "minecraft:red_sand", "minecraft:stone", "minecraft:granite", "minecraft:diorite",
+  "minecraft:andesite", "minecraft:tuff", "minecraft:deepslate", "minecraft:snow", "minecraft:short_grass",
+  "minecraft:tall_grass", "minecraft:fern", "minecraft:large_fern", "minecraft:snow_layer"]);
+export function rampClear(s, mode, planOf, world, system) {
+  const force = mode === "force", go = mode === "go" || force;
+  let pieces = 0, cut = 0, unloaded = 0;
+  for (const st of s.settlements || []) {
+    const dim = world.getDimension(st.dim);
+    for (const street of st.streets || []) {
+      if (street.kind !== "kit") continue;
+      let ps = [];
+      try { ps = piecesOf(street.f, planOf(street), "v", street.tmin).pieces; } catch (e) { console.warn(`[CLOCK] rampclear ${street.id}: ${e}`); continue; }
+      for (const pc of ps) {
+        if (pc.kind !== "ramp") continue;
+        pieces++;
+        const H = pc.y + 14 + (pc.dir < 0 ? 1 : 0);
+        for (let t = pc.a; t < pc.a + pc.len; t++) {
+          for (let w = 0; w <= 12; w++) {
+            const [x, z] = cellOf(street.f, t, w);
+            if (!dim.isChunkLoaded({ x, y: H, z })) { unloaded++; continue; }
+            for (let y = pc.y + 15; y <= H + 3; y++) {
+              const b = dim.getBlock({ x, y, z });
+              if (!b || !b.isValid) continue;
+              if (force && b.typeId === "minecraft:air" && y === H && w >= 4 && w <= 8) {
+                cut++;
+                const at = { x, y, z };
+                b.setType("minecraft:dirt");
+                system.runTimeout(() => { try { const q = dim.getBlock(at); if (q && q.isValid && q.typeId === "minecraft:dirt") q.setType("minecraft:air"); } catch { /* left */ } }, 1);
+                continue;
+              }
+              if (!RAMP_CLEAR_NATURAL.has(b.typeId)) continue;
+              cut++;
+              if (go) b.setType("minecraft:air");
+            }
+          }
+        }
+      }
+    }
+  }
+  return `§6rampclear${go ? "" : " (dry run: add 'go' to cut)"}:§r ${pieces} ramp piece(s), ${cut} block(s) ${go ? "cut" : "to cut"}` +
+    (unloaded ? `, ${unloaded} column(s) not loaded — walk there and run it again` : "");
+}

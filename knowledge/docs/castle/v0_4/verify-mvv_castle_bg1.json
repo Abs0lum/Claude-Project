@@ -1,0 +1,883 @@
+{
+ "size": 256,
+ "variety": "skin B grand seed 1: box 256 (content quad 76), plan rect, round towers, curtain 9/14 high, moat wet w12, barbican True, stone polished_andesite, roof spruce, keep corner 1",
+ "R1_ward": [
+  24530,
+  24530
+ ],
+ "R2_rooms": {
+  "guardroom_0": [
+   39,
+   39
+  ],
+  "guardroom_1": [
+   39,
+   39
+  ],
+  "gatechamber_0": [
+   160,
+   160
+  ],
+  "gatelodging_0": [
+   79,
+   79
+  ],
+  "gatelodging_1": [
+   70,
+   70
+  ],
+  "guardroom_2": [
+   45,
+   45
+  ],
+  "guardroom_3": [
+   50,
+   50
+  ],
+  "guardroom_4": [
+   49,
+   49
+  ],
+  "guardroom_5": [
+   50,
+   50
+  ],
+  "gatechamber_1": [
+   196,
+   196
+  ],
+  "gatelodging_2": [
+   97,
+   97
+  ],
+  "gatelodging_3": [
+   86,
+   86
+  ],
+  "treasury_0": [
+   45,
+   45
+  ],
+  "keep_basement_0": [
+   209,
+   209
+  ],
+  "keep_ground_0": [
+   209,
+   209
+  ],
+  "keep_greatchamber_0": [
+   209,
+   209
+  ],
+  "keep_solar_0": [
+   209,
+   209
+  ],
+  "buttery_0": [
+   21,
+   21
+  ],
+  "steward_0": [
+   25,
+   25
+  ],
+  "pantry_0": [
+   25,
+   25
+  ],
+  "countingroom_0": [
+   85,
+   85
+  ],
+  "cellar_0": [
+   843,
+   843
+  ],
+  "hall_0": [
+   679,
+   679
+  ],
+  "screens_0": [
+   34,
+   34
+  ],
+  "kitchen_0": [
+   88,
+   88
+  ],
+  "cooksroom_0": [
+   36,
+   36
+  ],
+  "lodgings_0": [
+   85,
+   85
+  ],
+  "lodgings_1": [
+   85,
+   85
+  ],
+  "chaplain_0": [
+   27,
+   27
+  ],
+  "chapel_0": [
+   206,
+   206
+  ],
+  "armoury_0": [
+   35,
+   35
+  ],
+  "mess_0": [
+   19,
+   19
+  ],
+  "dormitory_0": [
+   61,
+   61
+  ],
+  "armoury_1": [
+   35,
+   35
+  ],
+  "mess_1": [
+   47,
+   47
+  ],
+  "dormitory_1": [
+   89,
+   89
+  ],
+  "armoury_2": [
+   35,
+   35
+  ],
+  "mess_2": [
+   19,
+   19
+  ],
+  "dormitory_2": [
+   61,
+   61
+  ],
+  "armoury_3": [
+   35,
+   35
+  ],
+  "mess_3": [
+   19,
+   19
+  ],
+  "dormitory_3": [
+   61,
+   61
+  ],
+  "armoury_4": [
+   35,
+   35
+  ],
+  "mess_4": [
+   47,
+   47
+  ],
+  "dormitory_4": [
+   89,
+   89
+  ],
+  "marshal_0": [
+   21,
+   21
+  ],
+  "grooms_0": [
+   21,
+   21
+  ],
+  "stables_0": [
+   21,
+   21
+  ],
+  "smithy_0": [
+   34,
+   34
+  ],
+  "granary_0": [
+   45,
+   45
+  ],
+  "bakehouse_0": [
+   35,
+   35
+  ],
+  "lockup_0": [
+   14,
+   14
+  ],
+  "conduithouse_0": [
+   12,
+   12
+  ]
+ },
+ "R2_failing": {},
+ "R3_beds": [
+  80,
+  80
+ ],
+ "R3_unreached": [],
+ "R4_towers": [
+  {
+   "at": [
+    21,
+    115
+   ],
+   "kind": "gatetower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    21,
+    140
+   ],
+   "kind": "gatetower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    89,
+    115
+   ],
+   "kind": "gatetower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    89,
+    140
+   ],
+   "kind": "gatetower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    90,
+    165
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    115,
+    89
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    140,
+    89
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    165,
+    90
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    165,
+    165
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    140,
+    166
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    115,
+    166
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    90,
+    90
+   ],
+   "kind": "keep",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "spiral": "B_tower"
+  },
+  {
+   "at": [
+    22,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    22,
+    184
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    22,
+    156
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    22,
+    99
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    22,
+    70
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    22,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    52,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    82,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    112,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    143,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    173,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    203,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    233,
+    42
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    233,
+    70
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    233,
+    99
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    233,
+    128
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    233,
+    156
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    233,
+    184
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    233,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    203,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    173,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    143,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    112,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    82,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    52,
+    213
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    167,
+    102
+   ],
+   "kind": "posterntower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    166,
+    134
+   ],
+   "kind": "tower",
+   "ground": true,
+   "floors": [
+    true,
+    true,
+    true
+   ],
+   "spiral": "A_turret"
+  },
+  {
+   "at": [
+    179,
+    80
+   ],
+   "kind": "sluicetower",
+   "ground": true,
+   "floors": [
+    true
+   ],
+   "spiral": "A_turret"
+  }
+ ],
+ "R4_failing": [],
+ "R4b_gate_towers_newel": 0,
+ "spiral_fallbacks": 0,
+ "R5_walk": [
+  2038,
+  2038
+ ],
+ "R5b_mural": [
+  178,
+  178
+ ],
+ "R6_enclosure_leaks": 0,
+ "R6_first_leaks": [],
+ "R7_bare_floor_cells": [
+  0,
+  5276
+ ],
+ "R8_markers": [
+  289,
+  289
+ ],
+ "R8_unreached": [],
+ "R9_drains": {
+  "heads": [
+   112,
+   112
+  ],
+  "trench": [
+   372,
+   372
+  ],
+  "junction": true,
+  "sluice": true,
+  "cellar_cells_joined": 0,
+  "by_kind": {
+   "garderobe": 17,
+   "gully": 92,
+   "kitchen": 1,
+   "smithy": 1,
+   "stable": 1
+  },
+  "unreached": [],
+  "tunnel_cells_joined": 0
+ },
+ "R10_water": {
+  "sources": 6514,
+  "stray": 0,
+  "first": []
+ },
+ "R11_beds": {
+  "by_role": {
+   "guard": 62,
+   "noble": 1,
+   "lord": 1,
+   "child": 1,
+   "clerk": 2,
+   "servant": 13
+  },
+  "steps": {
+   "G2": 12,
+   "G1": 6,
+   "G3": 18,
+   "G4": 26
+  },
+  "offices": {
+   "men-at-arms": 61,
+   "gate-ward": 1,
+   "constable": 1,
+   "lord": 1,
+   "lord's children": 1,
+   "steward": 1,
+   "cook": 2,
+   "household (retainers)": 8,
+   "chaplain": 1,
+   "marshal": 1,
+   "groom": 2
+  },
+  "garrison_men": 63,
+  "short": {}
+ },
+ "R12_hidden": [
+  {
+   "what": "keep treasury",
+   "reached": true,
+   "reached_with_panel_closed": false
+  },
+  {
+   "what": "sally tunnel",
+   "reached": true,
+   "reached_with_panel_closed": false
+  }
+ ],
+ "R14_skyway": {
+  "slots": 1,
+  "cells": 78,
+  "blocked": 0
+ },
+ "R15_tower_gap_max": 32.0,
+ "R15_gaps": [
+  29.0,
+  31.0,
+  29.0,
+  31.0,
+  25.0,
+  25.0,
+  32.0,
+  25.0
+ ],
+ "reachable_cells": 73657,
+ "OK": true,
+ "summary": "ward 24530/24530 rooms 53/53 beds 80/80 towers 40/40 walk 2038/2038 mural 178/178 leaks 0 bare 0 markers 289/289 drains 112/112 stray-water 0 men 63 gap 32.0",
+ "R13_pieces": [
+  1051654,
+  1051654,
+  0
+ ]
+}

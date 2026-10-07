@@ -3,193 +3,193 @@
 "name": "acacia_00",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 28800
+"bytes": 22493
 },
 {
 "name": "acacia_01",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 24906
+"bytes": 17043
 },
 {
 "name": "acacia_02",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 20928
+"bytes": 15721
 },
 {
 "name": "acacia_03",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 21709
+"bytes": 17168
 },
 {
 "name": "acacia_04",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 37191
+"bytes": 23854
 },
 {
 "name": "acacia_05",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 20555
+"bytes": 14771
 },
 {
 "name": "acacia_06",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 38813
+"bytes": 27302
 },
 {
 "name": "acacia_07",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 42209
+"bytes": 35294
 },
 {
 "name": "acacia_08",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 20444
+"bytes": 16299
 },
 {
 "name": "acacia_09",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 28329
+"bytes": 19391
 },
 {
 "name": "acacia_10",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 29431
+"bytes": 22570
 },
 {
 "name": "acacia_11",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 24864
+"bytes": 20279
 },
 {
 "name": "acacia_12",
 "leaf": "acacia",
 "layers": 9,
-"bytes": 29571
+"bytes": 22454
 },
 {
 "name": "acacia_13",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 40631
+"bytes": 34790
 },
 {
 "name": "acacia_14",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 24565
+"bytes": 19922
 },
 {
 "name": "acacia_15",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 28928
+"bytes": 23377
 },
 {
 "name": "acacia_16",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 30448
+"bytes": 22762
 },
 {
 "name": "acacia_17",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 26001
+"bytes": 20218
 },
 {
 "name": "acacia_18",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 25741
+"bytes": 17418
 },
 {
 "name": "acacia_19",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 24572
+"bytes": 18802
 },
 {
 "name": "acacia_20",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 19211
+"bytes": 18280
 },
 {
 "name": "acacia_21",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 16311
+"bytes": 10992
 },
 {
 "name": "acacia_22",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 26814
+"bytes": 19367
 },
 {
 "name": "acacia_23",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 28555
+"bytes": 23773
 },
 {
 "name": "acacia_24",
 "leaf": "acacia",
 "layers": 9,
-"bytes": 21590
+"bytes": 17596
 },
 {
 "name": "acacia_25",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 20041
+"bytes": 14393
 },
 {
 "name": "acacia_26",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 21428
+"bytes": 18241
 },
 {
 "name": "acacia_27",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 19704
+"bytes": 13913
 },
 {
 "name": "acacia_28",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 22771
+"bytes": 16478
 },
 {
 "name": "acacia_29",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 22904
+"bytes": 19422
 },
 {
 "name": "acacia_30",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 30600
+"bytes": 24144
 },
 {
 "name": "acacia_31",
 "leaf": "acacia",
 "layers": 10,
-"bytes": 31507
+"bytes": 27769
 },
 {
 "name": "birch_mature_00",
@@ -224,8 +224,8 @@
 {
 "name": "birch_mature_05",
 "leaf": "birch",
-"layers": 21,
-"bytes": 20234
+"layers": 19,
+"bytes": 22492
 },
 {
 "name": "birch_mature_06",
@@ -261,7 +261,7 @@
 "name": "birch_mature_11",
 "leaf": "birch",
 "layers": 18,
-"bytes": 19241
+"bytes": 20645
 },
 {
 "name": "birch_mature_12",
@@ -296,8 +296,8 @@
 {
 "name": "birch_mature_17",
 "leaf": "birch",
-"layers": 20,
-"bytes": 17653
+"layers": 19,
+"bytes": 20504
 },
 {
 "name": "birch_mature_18",
@@ -309,13 +309,13 @@
 "name": "birch_mature_19",
 "leaf": "birch",
 "layers": 21,
-"bytes": 20470
+"bytes": 20404
 },
 {
 "name": "birch_mature_20",
 "leaf": "birch",
 "layers": 18,
-"bytes": 17285
+"bytes": 17281
 },
 {
 "name": "birch_mature_21",
@@ -333,7 +333,7 @@
 "name": "birch_mature_23",
 "leaf": "birch",
 "layers": 20,
-"bytes": 21574
+"bytes": 25473
 },
 {
 "name": "birch_old_00",
@@ -351,7 +351,7 @@
 "name": "birch_old_02",
 "leaf": "birch",
 "layers": 20,
-"bytes": 21843
+"bytes": 21233
 },
 {
 "name": "birch_old_03",
@@ -369,7 +369,7 @@
 "name": "birch_old_05",
 "leaf": "birch",
 "layers": 20,
-"bytes": 21040
+"bytes": 24938
 },
 {
 "name": "birch_old_06",
@@ -387,7 +387,7 @@
 "name": "birch_old_08",
 "leaf": "birch",
 "layers": 22,
-"bytes": 26066
+"bytes": 26004
 },
 {
 "name": "birch_old_09",
@@ -404,8 +404,8 @@
 {
 "name": "birch_old_11",
 "leaf": "birch",
-"layers": 17,
-"bytes": 20373
+"layers": 16,
+"bytes": 21979
 },
 {
 "name": "birch_old_12",
@@ -423,7 +423,7 @@
 "name": "birch_old_14",
 "leaf": "birch",
 "layers": 16,
-"bytes": 18202
+"bytes": 18201
 },
 {
 "name": "birch_old_15",
@@ -435,13 +435,13 @@
 "name": "birch_old_16",
 "leaf": "birch",
 "layers": 22,
-"bytes": 28718
+"bytes": 28372
 },
 {
 "name": "birch_old_17",
 "leaf": "birch",
-"layers": 23,
-"bytes": 28289
+"layers": 22,
+"bytes": 36387
 },
 {
 "name": "birch_old_18",
@@ -459,7 +459,7 @@
 "name": "birch_old_20",
 "leaf": "birch",
 "layers": 18,
-"bytes": 20955
+"bytes": 20952
 },
 {
 "name": "birch_old_21",
@@ -477,7 +477,7 @@
 "name": "birch_old_23",
 "leaf": "birch",
 "layers": 21,
-"bytes": 22114
+"bytes": 24199
 },
 {
 "name": "birch_young_00",
@@ -2835,349 +2835,349 @@
 "name": "spruce_mature_00",
 "leaf": "spruce",
 "layers": 20,
-"bytes": 34749
+"bytes": 29011
 },
 {
 "name": "spruce_mature_01",
 "leaf": "spruce",
-"layers": 22,
-"bytes": 30042
+"layers": 23,
+"bytes": 25061
 },
 {
 "name": "spruce_mature_02",
 "leaf": "spruce",
-"layers": 19,
-"bytes": 26033
+"layers": 17,
+"bytes": 22397
 },
 {
 "name": "spruce_mature_03",
 "leaf": "spruce",
-"layers": 23,
-"bytes": 20574
+"layers": 24,
+"bytes": 16804
 },
 {
 "name": "spruce_mature_04",
 "leaf": "spruce",
 "layers": 23,
-"bytes": 38010
+"bytes": 30934
 },
 {
 "name": "spruce_mature_05",
 "leaf": "spruce",
-"layers": 24,
-"bytes": 41569
+"layers": 22,
+"bytes": 36290
 },
 {
 "name": "spruce_mature_06",
 "leaf": "spruce",
-"layers": 24,
-"bytes": 36312
+"layers": 22,
+"bytes": 32214
 },
 {
 "name": "spruce_mature_07",
 "leaf": "spruce",
 "layers": 21,
-"bytes": 18783
+"bytes": 17566
 },
 {
 "name": "spruce_mature_08",
 "leaf": "spruce",
-"layers": 20,
-"bytes": 32511
+"layers": 19,
+"bytes": 26130
 },
 {
 "name": "spruce_mature_09",
 "leaf": "spruce",
-"layers": 19,
-"bytes": 29896
+"layers": 20,
+"bytes": 26666
 },
 {
 "name": "spruce_mature_10",
 "leaf": "spruce",
-"layers": 22,
-"bytes": 32612
+"layers": 20,
+"bytes": 29242
 },
 {
 "name": "spruce_mature_11",
 "leaf": "spruce",
-"layers": 25,
-"bytes": 18342
+"layers": 24,
+"bytes": 16668
 },
 {
 "name": "spruce_mature_12",
 "leaf": "spruce",
-"layers": 20,
-"bytes": 37474
+"layers": 23,
+"bytes": 29640
 },
 {
 "name": "spruce_mature_13",
 "leaf": "spruce",
 "layers": 18,
-"bytes": 22723
+"bytes": 19087
 },
 {
 "name": "spruce_mature_14",
 "leaf": "spruce",
 "layers": 23,
-"bytes": 41264
+"bytes": 32684
 },
 {
 "name": "spruce_mature_15",
 "leaf": "spruce",
-"layers": 25,
-"bytes": 21556
+"layers": 24,
+"bytes": 20603
 },
 {
 "name": "spruce_mature_16",
 "leaf": "spruce",
 "layers": 19,
-"bytes": 36253
+"bytes": 28068
 },
 {
 "name": "spruce_mature_17",
 "leaf": "spruce",
-"layers": 20,
-"bytes": 27212
+"layers": 23,
+"bytes": 24006
 },
 {
 "name": "spruce_mature_18",
 "leaf": "spruce",
-"layers": 23,
-"bytes": 34082
+"layers": 21,
+"bytes": 27837
 },
 {
 "name": "spruce_mature_19",
 "leaf": "spruce",
-"layers": 22,
-"bytes": 18750
+"layers": 23,
+"bytes": 16743
 },
 {
 "name": "spruce_mature_20",
 "leaf": "spruce",
-"layers": 22,
-"bytes": 32655
+"layers": 20,
+"bytes": 26403
 },
 {
 "name": "spruce_mature_21",
 "leaf": "spruce",
-"layers": 21,
-"bytes": 37750
+"layers": 19,
+"bytes": 31815
 },
 {
 "name": "spruce_mature_22",
 "leaf": "spruce",
 "layers": 26,
-"bytes": 43968
+"bytes": 36186
 },
 {
 "name": "spruce_mature_23",
 "leaf": "spruce",
 "layers": 19,
-"bytes": 18909
+"bytes": 17193
 },
 {
 "name": "spruce_old_00",
 "leaf": "spruce",
-"layers": 27,
-"bytes": 41651
+"layers": 28,
+"bytes": 32758
 },
 {
 "name": "spruce_old_01",
 "leaf": "spruce",
 "layers": 31,
-"bytes": 58415
+"bytes": 54855
 },
 {
 "name": "spruce_old_02",
 "leaf": "spruce",
-"layers": 30,
-"bytes": 56382
+"layers": 31,
+"bytes": 49389
 },
 {
 "name": "spruce_old_03",
 "leaf": "spruce",
 "layers": 30,
-"bytes": 50189
+"bytes": 44284
 },
 {
 "name": "spruce_old_04",
 "leaf": "spruce",
 "layers": 31,
-"bytes": 54131
+"bytes": 45357
 },
 {
 "name": "spruce_old_05",
 "leaf": "spruce",
-"layers": 23,
-"bytes": 40762
+"layers": 24,
+"bytes": 34014
 },
 {
 "name": "spruce_old_06",
 "leaf": "spruce",
 "layers": 28,
-"bytes": 45650
+"bytes": 42235
 },
 {
 "name": "spruce_old_07",
 "leaf": "spruce",
 "layers": 27,
-"bytes": 50431
+"bytes": 42524
 },
 {
 "name": "spruce_old_08",
 "leaf": "spruce",
 "layers": 28,
-"bytes": 43070
+"bytes": 41186
 },
 {
 "name": "spruce_old_09",
 "leaf": "spruce",
-"layers": 25,
-"bytes": 43570
+"layers": 26,
+"bytes": 40722
 },
 {
 "name": "spruce_old_10",
 "leaf": "spruce",
-"layers": 25,
-"bytes": 41798
+"layers": 24,
+"bytes": 37015
 },
 {
 "name": "spruce_old_11",
 "leaf": "spruce",
 "layers": 25,
-"bytes": 44418
+"bytes": 36126
 },
 {
 "name": "spruce_old_12",
 "leaf": "spruce",
 "layers": 29,
-"bytes": 43145
+"bytes": 35672
 },
 {
 "name": "spruce_old_13",
 "leaf": "spruce",
 "layers": 28,
-"bytes": 48572
+"bytes": 45271
 },
 {
 "name": "spruce_old_14",
 "leaf": "spruce",
 "layers": 29,
-"bytes": 50790
+"bytes": 42340
 },
 {
 "name": "spruce_old_15",
 "leaf": "spruce",
-"layers": 25,
-"bytes": 45653
+"layers": 26,
+"bytes": 40491
 },
 {
 "name": "spruce_old_16",
 "leaf": "spruce",
-"layers": 28,
-"bytes": 43565
+"layers": 27,
+"bytes": 40482
 },
 {
 "name": "spruce_old_17",
 "leaf": "spruce",
 "layers": 26,
-"bytes": 40885
+"bytes": 34645
 },
 {
 "name": "spruce_old_18",
 "leaf": "spruce",
 "layers": 31,
-"bytes": 50785
+"bytes": 43589
 },
 {
 "name": "spruce_old_19",
 "leaf": "spruce",
-"layers": 28,
-"bytes": 42039
+"layers": 27,
+"bytes": 37181
 },
 {
 "name": "spruce_old_20",
 "leaf": "spruce",
 "layers": 26,
-"bytes": 39429
+"bytes": 35899
 },
 {
 "name": "spruce_old_21",
 "leaf": "spruce",
-"layers": 28,
-"bytes": 43523
+"layers": 29,
+"bytes": 35398
 },
 {
 "name": "spruce_old_22",
 "leaf": "spruce",
 "layers": 23,
-"bytes": 38733
+"bytes": 36591
 },
 {
 "name": "spruce_old_23",
 "leaf": "spruce",
-"layers": 27,
-"bytes": 47368
+"layers": 26,
+"bytes": 40515
 },
 {
 "name": "spruce_young_00",
 "leaf": "spruce",
-"layers": 8,
-"bytes": 11512
+"layers": 9,
+"bytes": 11239
 },
 {
 "name": "spruce_young_01",
 "leaf": "spruce",
 "layers": 10,
-"bytes": 11449
+"bytes": 11174
 },
 {
 "name": "spruce_young_02",
 "leaf": "spruce",
-"layers": 8,
-"bytes": 11373
+"layers": 7,
+"bytes": 11458
 },
 {
 "name": "spruce_young_03",
 "leaf": "spruce",
 "layers": 10,
-"bytes": 12883
+"bytes": 12610
 },
 {
 "name": "spruce_young_04",
 "leaf": "spruce",
 "layers": 9,
-"bytes": 13092
+"bytes": 12267
 },
 {
 "name": "spruce_young_05",
 "leaf": "spruce",
 "layers": 10,
-"bytes": 10544
+"bytes": 10270
 },
 {
 "name": "spruce_young_06",
 "leaf": "spruce",
 "layers": 9,
-"bytes": 11797
+"bytes": 11524
 },
 {
 "name": "spruce_young_07",
 "leaf": "spruce",
 "layers": 11,
-"bytes": 13767
+"bytes": 14042
 },
 {
 "name": "spruce_young_08",
 "leaf": "spruce",
 "layers": 7,
-"bytes": 9746
+"bytes": 9127
 },
 {
 "name": "spruce_young_09",
 "leaf": "spruce",
-"layers": 8,
-"bytes": 11512
+"layers": 9,
+"bytes": 11300
 },
 {
 "name": "spruce_young_10",
@@ -3189,78 +3189,78 @@
 "name": "spruce_young_11",
 "leaf": "spruce",
 "layers": 8,
-"bytes": 11381
+"bytes": 11380
 },
 {
 "name": "spruce_young_12",
 "leaf": "spruce",
 "layers": 8,
-"bytes": 11248
+"bytes": 11249
 },
 {
 "name": "spruce_young_13",
 "leaf": "spruce",
-"layers": 9,
-"bytes": 14196
+"layers": 10,
+"bytes": 13430
 },
 {
 "name": "spruce_young_14",
 "leaf": "spruce",
-"layers": 9,
-"bytes": 12957
+"layers": 11,
+"bytes": 12934
 },
 {
 "name": "spruce_young_15",
 "leaf": "spruce",
 "layers": 8,
-"bytes": 11465
+"bytes": 11396
 },
 {
 "name": "spruce_young_16",
 "leaf": "spruce",
-"layers": 10,
-"bytes": 12871
+"layers": 11,
+"bytes": 12933
 },
 {
 "name": "spruce_young_17",
 "leaf": "spruce",
-"layers": 10,
-"bytes": 13163
+"layers": 11,
+"bytes": 12950
 },
 {
 "name": "spruce_young_18",
 "leaf": "spruce",
 "layers": 7,
-"bytes": 9948
+"bytes": 9330
 },
 {
 "name": "spruce_young_19",
 "leaf": "spruce",
 "layers": 10,
-"bytes": 12327
+"bytes": 12326
 },
 {
 "name": "spruce_young_20",
 "leaf": "spruce",
 "layers": 8,
-"bytes": 11100
+"bytes": 11096
 },
 {
 "name": "spruce_young_21",
 "leaf": "spruce",
 "layers": 11,
-"bytes": 12948
+"bytes": 12676
 },
 {
 "name": "spruce_young_22",
 "leaf": "spruce",
 "layers": 7,
-"bytes": 10075
+"bytes": 9731
 },
 {
 "name": "spruce_young_23",
 "leaf": "spruce",
 "layers": 10,
-"bytes": 12327
+"bytes": 11992
 }
 ]

@@ -1,0 +1,8 @@
+grade <= 1/8 : 21 roads, 157/166 ramps 8-part (95 %)
+1/8 .. 1/5   : 11 roads, 99/167 ramps 8-part (59 %)
+1/5 .. 1/4   : 2 roads, 12/42 ramps 8-part (29 %)
+> 1/4        : 6 roads, 19/316 ramps 8-part (6 %)
+earthwork sum |H-g|: ramp8 14514 vs 4-only 12117; cells cut >= 5: 132 of 6803
+local ground <= 1/8: 333 ramps, 200 8-part (60 %)
+local 1/8 .. 1/4: 140 ramps, 60 8-part (43 %)
+local > 1/4: 218 ramps, 27 8-part (12 %)

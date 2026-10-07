@@ -944,7 +944,9 @@ function travelOf(s, st, p) {
 function jobKindOf(s, p) { if (typeof p.job === "number") { const b = buildingById(s, p.job); return b ? short(b) : null; } return p.job || null; }
 /** BF5: the shift options of a person (template inputs, the town's seed, the walk home) */
 function shiftOpts(s, st, p, child = PEOPLE.stage(p, Math.floor(s.simDays)) === "child") {
-  return { seed: st.seed || 0, keeper: !!p.keeper, kind: jobKindOf(s, p), child, travel: child ? 0 : travelOf(s, st, p) };
+  const kind = jobKindOf(s, p);
+  return { seed: st.seed || 0, keeper: !!p.keeper, kind, child, travel: child ? 0 : travelOf(s, st, p),
+           inn: kind === "inn" && !child ? innRotaOf(s, st, p.job) : undefined };   // 1.3.231 (INN24): the inn's rota
 }
 /** BF5: where person p's day stands now ({slot, tpl, off, home, ...}) */
 function shiftNow(s, st, p, tod = world.getTimeOfDay(), day = worldDay(), child) { return PEOPLE.shiftAt(p, tod, day, shiftOpts(s, st, p, child)); }
@@ -1146,24 +1148,27 @@ function bodySync(s, st) {
   const day0 = Math.floor(s.simDays);
   const shopperOk = (q) => !q.keeper && q.job !== "watch" && q.job !== "builders" && PEOPLE.stage(q, day0) !== "child";
   const homesWithShopper = new Set(PEOPLE.alive(P).filter((q) => q.home && byPid.has(q.id) && shopperOk(q)).map((q) => q.home));
-  const want = PEOPLE.alive(P).filter((p) => !byPid.has(p.id) && !p.keeper && (BODY_POSTS.includes(p.job) || (p.home && shopperOk(p) && !homesWithShopper.has(p.home))))
-    .sort((a2, b2) => (BODY_POSTS.includes(a2.job) ? 0 : 1) - (BODY_POSTS.includes(b2.job) ? 0 : 1) || a2.id - b2.id);
+  // 1.3.231 (INN24): the inn's staff walk too (the rota's night keeper and serving staff are posts with a body)
+  const innIds = new Set(plotsOf(s, st).filter((b) => short(b) === "inn" && b.stage >= 4 && !b.closed).map((b) => b.id));
+  const isPost = (job) => BODY_POSTS.includes(job) || innIds.has(job);
+  const want = PEOPLE.alive(P).filter((p) => !byPid.has(p.id) && !p.keeper && (isPost(p.job) || (p.home && shopperOk(p) && !homesWithShopper.has(p.home))))
+    .sort((a2, b2) => (isPost(a2.job) ? 0 : 1) - (isPost(b2.job) ? 0 : 1) || a2.id - b2.id);
   // a post holder without a body while the cap is full: a shopper's body (not walking) is released for it
-  const postless = want.filter((p) => BODY_POSTS.includes(p.job)).length;
+  const postless = want.filter((p) => isPost(p.job)).length;
   if (postless && byPid.size >= EMBODY_CAP) {
     let freed = 0;
     for (const [pid, v] of [...byPid]) {
       if (freed >= postless) break;
       if (!v.hasTag("civ:shopper") || WALK.walking(v)) continue;
       const q = PEOPLE.byId(P, pid);
-      if (q && BODY_POSTS.includes(q.job)) continue;
+      if (q && isPost(q.job)) continue;
       try { v.remove(); byPid.delete(pid); freed++; gone++; } catch { /* left */ }
     }
   }
   for (const p of want) {
     if (made >= 3 || byPid.size >= EMBODY_CAP) break;
     if (byPid.has(p.id) || p.keeper) continue;
-    if (!BODY_POSTS.includes(p.job)) { if (byPid.size >= EMBODY_CAP - SHOPPER_RESERVE || homesWithShopper.has(p.home)) continue; homesWithShopper.add(p.home); }
+    if (!isPost(p.job)) { if (byPid.size >= EMBODY_CAP - SHOPPER_RESERVE || homesWithShopper.has(p.home)) continue; homesWithShopper.add(p.home); }
     const home = p.home ? s.buildings.find((b) => b.id === p.home) : null;
     const def = home && BUILDINGS[home.family];
     let spot = null;
@@ -1173,7 +1178,7 @@ function bodySync(s, st) {
     try {
       const v = dim.spawnEntity(VILLAGER_ID, spot);
       v.nameTag = p.name; v.addTag(`civ:person:${p.id}`); v.addTag("civ:villager"); v.addTag(`civ:settlement:${st.id}`); if (p.home) v.addTag(`civ:home:${p.home}`);
-      if (!BODY_POSTS.includes(p.job)) v.addTag("civ:shopper");
+      if (!isPost(p.job)) v.addTag("civ:shopper");
       civOn(v);
       byPid.set(p.id, v); made++;
     } catch { /* unloaded: tomorrow */ }
@@ -2706,7 +2711,7 @@ function siteOf(st) {
     if (n > 0) {
       let txt = "";
       for (let i = 0; i < n; i++) txt += world.getDynamicProperty(`${SITE_KEY}${st.id}:${i}`) || "";
-      const site = siteFromRLE(JSON.parse(txt)); siteCache.set(st.id, site); return site;
+      const site = LAND.siteDecode(JSON.parse(txt)); siteCache.set(st.id, site); return site;   // 1.3.231: "d1" or the old runs
     }
   } catch { /* none */ }
   return null;
@@ -2748,8 +2753,86 @@ function* readSiteJob(st, cx, cz, dimId, onDone) {
     return;
   }
   siteCache.set(st.id, site);
-  try { saveSite(st.id, siteToRLE(site)); } catch (e) { console.warn(`[CIV-CLOCK] site save failed: ${e}`); }
+  try { saveSite(st.id, LAND.siteEncode(site)); } catch (e) { console.warn(`[CIV-CLOCK] site save failed: ${e}`); }   // 1.3.231: "d1" text (~half)
   onDone(site);
+}
+
+// 1.3.231 (CIV-LAND) THE WIDE SURVEY (his 00:23 10-07: "survey a MUCH larger area and plan for elevation"): once a kit
+// settlement stands, its field grows to LAND.wideRadius(border) around the square (192 = 384 x 384 for a village; more as
+// the stones move out) in the background — LAND.wideSurveyPass (tests/test_survey.mjs): tiles of 128 x 128 nearest first; a
+// loaded tile is read at once, a sleeping one is held awake by ONE ticking area (only when a slot is FREE — town work is
+// never evicted for it) and released after its read; passes WIDE_PAUSE ticks apart. The founding's own cells are kept.
+// The new field replaces the old in one step (siteCache + saveSite), so every planner sees one field or the other.
+const WIDE_PAUSE = 100;
+const wideJobs = new Map();                                     // settlement id -> survey progress (memory; a restart starts over)
+/** one column for the field, as readSiteJob reads it: { g, water } (the bed under water), null asleep, undefined no ground */
+function siteColumn(dim, x, z) {
+  const top = topAt(dim, x, z);
+  if (!top) return null;
+  try {
+    let water = false, b = top, by = top.location.y;
+    for (let i = 0; b && i < 48; i++) {
+      if (b.typeId === "minecraft:water" || b.typeId === "minecraft:flowing_water") water = true;
+      if (isGround(b.typeId) && b.typeId !== "minecraft:water") return { g: by, water };
+      by--;
+      b = blockAt(dim, x, by, z, true);                         // the column is loaded (topAt asked): no throw, no below()
+    }
+  } catch { ENGINE.throws++; return null; }
+  return undefined;
+}
+/** the radius the settlement's field should now reach (0 = it does) */
+function wideNeed(s, st) {
+  if (!st.kit || st.phase !== "built" || !st.square || !siteOf(st)) return 0;
+  const R = LAND.wideRadius(st.border ? st.border.r : 0);
+  const w = st.wide;
+  if (!w || w.R < R) return R;
+  if (w.skipped && Math.floor(s.simDays) - w.day >= 3) return R;   // the tiles that never woke get another look
+  return 0;
+}
+function startWideSurvey(s, st) {
+  const R = wideNeed(s, st);
+  if (!R || wideJobs.size) return false;                        // one survey at a time in the world
+  const [cx, cz] = squareCentre(st);
+  const dim = world.getDimension(st.dim);
+  const prog = LAND.wideProgress(siteOf(st), cx, cz, R);
+  wideJobs.set(st.id, prog);
+  st.log.push(`day ${s.simDays.toFixed(0)}: the surveyors set out to read the land ${R} blocks around the square (${prog.tiles.length} tiles of ${LAND.WIDE.tile})`);
+  const io = {
+    loaded: (t) => boxLoaded(dim, t[0], t[1], t[2], t[3]),
+    column: (x, z) => siteColumn(dim, x, z),
+    hold: (t) => {
+      const s2 = load(), T = coreState(s2);
+      if (Object.keys(T.areas).length >= T.slots) return null;  // no free slot: wait (the town's work keeps its areas)
+      const before = new Set(Object.keys(T.areas));
+      const nm = ensureTicking(s2, st, t, "land survey");
+      return nm ? { name: nm, mine: !before.has(nm) } : null;
+    },
+    release: (h) => { if (h && h.mine) releaseTicking(load(), h.name); },
+  };
+  const pass = () => {
+    function* job() {
+      let res;
+      try { res = yield* LAND.wideSurveyPass(prog, io); } catch (e) { console.warn(`[CIV-CLOCK] wide survey: ${e}`); wideJobs.delete(st.id); return; }
+      if (res === "wait") { system.runTimeout(pass, WIDE_PAUSE); return; }
+      wideDone(st.id, prog);
+    }
+    try { system.runJob(job()); } catch (e) { wideJobs.delete(st.id); console.warn(`[CIV-CLOCK] wide survey job: ${e}`); }
+  };
+  pass();
+  return true;
+}
+function wideDone(stId, prog) {
+  wideJobs.delete(stId);
+  const s = load(), st = s.settlements.find((x) => x.id === stId);
+  if (!st) return;
+  siteCache.set(st.id, prog.site);
+  try { saveSite(st.id, LAND.siteEncode(prog.site)); } catch (e) { console.warn(`[CIV-CLOCK] wide site save failed: ${e}`); }
+  let known = 0;
+  for (let i = 0; i < prog.site.h.length; i++) if (prog.site.h[i] >= 0) known++;
+  st.wide = { R: prog.R, day: Math.floor(s.simDays), tiles: prog.tiles.length, skipped: prog.skipped.length, known };
+  st.log.push(`day ${s.simDays.toFixed(0)}: the surveyors have read the land ${prog.R} blocks around the square (${known.toLocaleString()} of ${prog.site.h.length.toLocaleString()} columns known${prog.skipped.length ? `; ${prog.skipped.length} tiles never woke` : ""})`);
+  console.warn(`[CIV-SURVEY] ${JSON.stringify({ st: st.id, wide: st.wide, read: prog.read, asleep: prog.asleep, kept: prog.kept })}`);
+  save();
 }
 
 /** nothing hangs over a worked cell (street, square, yard): a trunk above it is felled whole (fellTree, no stump left on
@@ -3195,7 +3278,15 @@ function kitPrep(dim, street, a, len, H, bridge = false, boxes = [], body = null
     for (let w = -1; w <= 13; w++) {
       const [x, z] = KIT.cellOf(f, t, w);
       const g = groundAt(dim, x, z);
-      if (g === undefined) continue;
+      if (g === undefined) {
+        // 1.3.231 (CIV-LAND, his dirt on the ramps 10-07): an unread corridor cell was skipped whole — no cut — and the
+        // ramp8 piece's void top layer then left the old ground standing. Edges keep the skip (no berm without a ground
+        // height); a corridor cell is cut to a fixed H + 4 (ramp rise 1 + headroom 3)
+        if (w === -1 || w === 13) continue;
+        street.prepBlind = (street.prepBlind || 0) + 1;
+        for (let y = H + 1; y <= H + 4; y++) { const b = blockAt(dim, x, y, z); if (b && b.typeId !== "minecraft:air") b.setType("minecraft:air"); }
+        continue;
+      }
       if (w === -1 || w === 13) {                                   // the edge outside the corridor (never a house's wall)
         if (inPlot(x, z)) continue;
         // D-C534 §2.2: the uphill edge is a stepped face (walls <= 3, benches of 3), not one tall cladding
@@ -5460,6 +5551,9 @@ function* sideStreetJob(stId) {
   const st = s.settlements.find((x) => x.id === stId);
   if (!st || !st.kit) return;
   if (st.sideRest !== undefined && s.simDays < st.sideRest && (!st.border || st.border.r === st.sideRestR)) return;
+  // 1.3.231 (CIV-LAND): the windows given back to the houses after 3 failed passes (WIN_RELEASE) failed under the old
+  // connector law; with terrace streets they get one more look (his hill town: "jobs":0 from day 37 on)
+  if (!st.bandLaw) { st.bandLaw = 1; if (st.winFail) { delete st.winFail; st.log.push(`day ${s.simDays.toFixed(0)}: the surveyors look again at the junctions given back to the houses (terrace streets)`); } }
   const dim = world.getDimension(st.dim);
   const lsite = liveSite(dim, siteOf(st));
   const blockedNow = () => {
@@ -5497,7 +5591,7 @@ function* sideStreetJob(stId) {
       // D-C545: the longest parallel the land holds (its halves tried longest first: 70 carries the grid windows at +-56
       // from its junction, so the blocks can close); the family's grid windows inside it stay flat (its own junction
       // window always); a hill that cannot hold them flat gets the street without them
-      let best = null;
+      let best = null, landH;                                               // landH (1.3.231): the land's own junction level
       for (const half of KIT_SIDE_HALVES) {
         if (best) break;
         why.halves++;
@@ -5514,6 +5608,7 @@ function* sideStreetJob(stId) {
           why.plans++; yield;
           if (pf.cost === Infinity) continue;                       // no height at all holds this street: the fixed ones cannot either
           const Hf = pf.H[half];
+          if (landH === undefined) landH = Hf;
           if (Hf !== undefined && Math.abs(Hf - Hb) <= K && pf.H.slice(half, half + 13).every((h) => h === Hf)) {
             const pc = KIT.planProfile(gc, { ...STREET_OPTS, startDead: false, endDead: false, startH: Hb, endH: Hf });
             why.plans++; yield;
@@ -5534,6 +5629,17 @@ function* sideStreetJob(stId) {
           if (best) break;
         }
         if (best) break;                                                    // the longest feasible half wins
+      }
+      // 1.3.231 (CIV-LAND, his 00:23 10-07 "use 4-part slope switchbacks"): ELEVATION BAND — the connector cannot reach the
+      // land's own level from this junction (no parallel at all, or only one sunk into a trench below it): first a parallel
+      // on its own contour level joined by a climbing switchback leg (KIT.planBandStreetJob, tests/test_band.mjs)
+      const trench = !!best && landH !== undefined && Math.abs(landH - Hb) > K && best.Hn !== landH;
+      if ((!best || trench) && KIT.BAND.offsets.includes(D) && (why.band || 0) < KIT.BAND.perPass) {
+        why.band = (why.band || 0) + 1;
+        const veto = bandVeto(s, st);
+        const band = yield* KIT.planBandStreetJob(lsite, f, tj, side, Hb, D, veto.street, veto.leg, STREET_OPTS, why);
+        if (!alive()) return;
+        if (band && commitBand(s, st, base, tj, side, Hb, band, why)) { st.sideRest = undefined; save(); return; }
       }
       if (!best) { why.p2inf++; continue; }
       // commit against the town as it is NOW (it went on building while this job planned)
@@ -5594,6 +5700,8 @@ HB.register("room", { fn: () => {
   const now = system.currentTick;
   if (now - roomLast < (s.accelNow ? ROOM_EVERY_ACCEL : ROOM_EVERY)) return;
   roomLast = now;
+  // 1.3.231 (CIV-LAND): the wide survey — one settlement at a time, in the background (startWideSurvey)
+  if (!wideJobs.size) for (const st of s.settlements) { try { if (wideNeed(s, st) && startWideSurvey(s, st)) break; } catch (e) { console.warn(`[CIV-CLOCK] wide survey start: ${e}`); break; } }
   for (const st of s.settlements) {
     if (!st.kit || st.phase !== "built" || !((st.leftover || []).length || (st.civicLeft || []).length) || (st.kitQueue || []).length > 40) continue;
     if (st.roomDay === Math.floor(s.simDays) || sideJobs.has(st.id)) continue;
@@ -5840,8 +5948,9 @@ function* legJob(stId, baseId, tj, side, otherId, tOther) {
   if (Hb === undefined || Hn === undefined) return;
   const f = base.f;
   // the mouths: the cell just outside each tee's branch, the road heading away from base / into other
-  const P0 = KIT.cellOf(f, tj + 6, side > 0 ? 13 : -1), d0 = [side * f.vx, side * f.vz];
-  const P1 = KIT.cellOf(other.f, tOther + 6, -side > 0 ? 13 : -1), d1 = [-side * f.vx, -side * f.vz];
+  // 1.3.231 (CIV-LAND): d1 was -side * v — an arrival heading back toward base, from inside other's own corridor: every
+  // shape was vetoed (his 1.3.224 log, 1620 of 1620); KIT.bandMouths arrives heading INTO other (tests/test_band.mjs)
+  const { P0, d0, P1, d1 } = KIT.bandMouths(f, tj, side, other.f, tOther);
   const own = kitBody(st0);
   const boxes = plotBoxes(s0, 0, null);
   // 1.3.224 (his log: every one of 1620 shapes vetoed, 1 pop): the leg's veto now matches the bench road's — the sewer
@@ -5887,6 +5996,49 @@ function commitLeg(stId, baseId, tj, side, otherId, tOther, Hb, Hn, road) {
   st.legs = (st.legs || 0) + 1;
   st.log.push(`day ${s.simDays.toFixed(0)}: a climbing leg joins street ${baseId} (y ${Hb}) and street ${otherId} (y ${Hn}): ${rec.cells.length} cells, ${rec.turns.length} turns`);
   save();
+}
+// 1.3.231 (CIV-LAND) ELEVATION BANDS: the cells a band street (street) and its climbing leg (leg) may not take — plots and the
+// crown's reserve, every settlement's corridors, the narrow roads, the old streets; the street also never over a sewer tunnel
+function bandVeto(s, st) {
+  const fc = freeSets(s);
+  const leg = (x, z) => {
+    const k = `${x},${z}`;
+    if (fc.roadCells.has(k) || fc.legacy.has(k) || fc.bodies.some((m) => m.has(k)) || inReserve(s, x, z)) return true;
+    for (const [x0, x1, z0, z1] of boxesNear(fc, x, x, z, z)) if (x >= x0 && x <= x1 && z >= z0 && z <= z1) return true;
+    return false;
+  };
+  return { leg, street: (x, z) => leg(x, z) || fc.tunnels.has(`${x},${z}`) };
+}
+/** commit a planned band street (KIT.planBandStreetJob) against the town as it is NOW: the street on its own level, then
+ *  the climbing leg and both tees (commitLeg). false when the window was taken meanwhile, a cell is vetoed now, or the
+ *  street / leg reach past the boundary stones (the council is asked to move them, as for a side street) */
+function commitBand(s, st, base, tj, side, Hb, band, why) {
+  if (!st.streets.includes(base) || !junctionWindows(st, base, side).includes(tj)) { why.gone++; return false; }
+  const cells2 = KIT.corridorCells(band.f2, band.p2, 0, new Map());
+  const legCells = new Map(band.road.cells.map(([x, z]) => [`${x},${z}`, 0]));
+  const veto = bandVeto(s, st);
+  for (const k of cells2.keys()) { const [x, z] = k.split(",").map(Number); if (veto.street(x, z)) { why.blocked2++; return false; } }
+  if (!cellsInInfluence(st, cells2) || !cellsInInfluence(st, legCells)) {
+    why.border++;
+    st.borderWait = (st.borderWait || 0) + 1;
+    if (st.border && st.borderWait % BORDER_ASK === 0 && !st.border.moves.some((m) => !m.done && m.blocked === null)) {
+      planBorderGrowth(s, st, st.border.r + STONE_EVERY, !!s.accelNow);
+      st.log.push(`day ${s.simDays.toFixed(0)}: a terrace street presses on the boundary stones: the council sends the surveyor out ${STONE_EVERY} blocks`);
+    }
+    return false;
+  }
+  const id2 = st.nextStreetId++;
+  const street = { kind: "kit", id: id2, role: "side", band: true, f: band.f2, tmin: 0, H: band.p2.H, segs: band.p2.segs, access: [], mid: band.half + 6,
+                   tees: [], reserved: [[band.half, band.half + 12, side]], tOff: tOffOf(base) + band.tOff };
+  st.streets.push(street);
+  kitTouch(st);
+  st.kitQueue = st.kitQueue || [];
+  queueKitStreet(st, street);
+  commitLeg(st.id, base.id, tj, side, id2, band.half, Hb, band.Hn, band.road);       // the leg, both tees, the road ops
+  st.bands = (st.bands || 0) + 1;
+  st.log.push(`day ${s.simDays.toFixed(0)}: a TERRACE street opened ${band.D} blocks ${side > 0 ? "beyond" : "before"} street ${base.id} on its own level (y ${band.Hn}, ${band.rise >= 0 ? "+" : ""}${band.rise} from the junction at y ${Hb}; ${band.L2} cells), reached by a switchback of ${band.road.cells.length} cells, ${band.road.turns.length} turns`);
+  st.roomFound = (st.roomFound || 0) + 1; st.roomDay = Math.floor(s.simDays);
+  return true;
 }
 function startLegJob(st, base, tj, side, other, tOther) {
   const key = `${st.id}:${base.id}:${tj}:${side}`;
@@ -7669,11 +7821,12 @@ function clearEntities(dim, b) {
 // 1.3.228 (B1 / TR4): the height is the GROUND (topAt + the groundAt walk past leaves, logs and plants: a forest read as a
 // hill before) and a sleeping column is asked, never read (the raw getTopmostBlock threw there — the leak path)
 const SURVEY_STEP = 8, SURVEY_SLOPE = 3, SURVEY_R2 = 64, SURVEY_CENTRE = 32, SURVEY_RELIEF_MAX = 40;
+const SURVEY_HOLD_TICKS = 200;                                 // 1.3.231: the longest wait for a held tile's chunks (10 s)
 function* surveyJob(dim, cx, cz, R, done) {
   const n = Math.floor(R / SURVEY_STEP), W = 2 * n + 1;
   const H = new Array(W * W).fill(null), WET = new Uint8Array(W * W);
   let read = 0, asleep = 0;
-  for (let i = 0; i < W; i++) for (let j = 0; j < W; j++) {
+  const readAt = (i, j) => {                                   // true when the column was read
     const x = cx + (i - n) * SURVEY_STEP, z = cz + (j - n) * SURVEY_STEP;
     try {
       const top = topAt(dim, x, z);
@@ -7682,9 +7835,49 @@ function* surveyJob(dim, cx, cz, R, done) {
         const above = blockAt(dim, x, top.location.y + 1, z, true);
         H[i * W + j] = g;
         if ((above && above.typeId === "minecraft:water") || top.typeId.includes("ice")) WET[i * W + j] = 1;
-      } else asleep++;
-    } catch { asleep++; }
+        return true;
+      }
+    } catch { /* asleep */ }
+    return false;
+  };
+  for (let i = 0; i < W; i++) for (let j = 0; j < W; j++) {
+    if (!readAt(i, j)) asleep++;
     if (++read % 50 === 0) yield;
+  }
+  // 1.3.231 (CIV-LAND, his 00:23 10-07 "until the survey can run again" — his survey: 2173 of 2401 columns not loaded):
+  // the sleeping columns are read by holding their land awake — LAND.surveyTiles (128 x 128, chunk-aligned), one ticking
+  // area at a time ("civsurvey"), up to SURVEY_HOLD_TICKS for its chunks to load, then removed; a world with no free area
+  // (the engine's 10) keeps them unread (counted, as before)
+  let held = 0, woke = 0;
+  if (asleep) {
+    const byTile = new Map();
+    for (let i = 0; i < W; i++) for (let j = 0; j < W; j++) {
+      if (H[i * W + j] !== null) continue;
+      const x = cx + (i - n) * SURVEY_STEP, z = cz + (j - n) * SURVEY_STEP;
+      const key = `${Math.floor(x / LAND.WIDE.tile)},${Math.floor(z / LAND.WIDE.tile)}`;
+      if (!byTile.has(key)) byTile.set(key, []);
+      byTile.get(key).push([i, j]);
+    }
+    const tiles = [...byTile.entries()].map(([key, cells]) => { const [a, b] = key.split(",").map(Number); return { x0: a * LAND.WIDE.tile, z0: b * LAND.WIDE.tile, cells }; })
+      .sort((p, q) => Math.hypot(p.x0 + 64 - cx, p.z0 + 64 - cz) - Math.hypot(q.x0 + 64 - cx, q.z0 + 64 - cz));
+    for (const t of tiles) {
+      const x1 = t.x0 + LAND.WIDE.tile - 1, z1 = t.z0 + LAND.WIDE.tile - 1;
+      try { dim.runCommand("tickingarea remove civsurvey"); } catch { /* none */ }
+      let ok = false;
+      try { ok = dim.runCommand(`tickingarea add ${t.x0} -64 ${t.z0} ${x1} 320 ${z1} civsurvey true`).successCount > 0; } catch { ok = false; }
+      if (!ok) break;                                          // no free ticking area in this world: the rest stays unread
+      held++;
+      const t0 = system.currentTick;
+      let last = -1;
+      for (;;) {                                               // wait for the chunks (a check every 20 ticks)
+        const now = system.currentTick;
+        if (now - t0 > SURVEY_HOLD_TICKS) break;
+        if (now - last >= 20) { last = now; if (boxLoaded(dim, t.x0, t.z0, x1, z1)) break; }
+        yield;
+      }
+      for (const [i, j] of t.cells) { if (readAt(i, j)) { asleep--; woke++; } if (++read % 50 === 0) yield; }
+      try { dim.runCommand("tickingarea remove civsurvey"); } catch { /* gone */ }
+    }
   }
   const gentle = new Uint8Array(W * W);
   for (let i = 1; i < W - 1; i++) for (let j = 1; j < W - 1; j++) {
@@ -7712,7 +7905,7 @@ function* surveyJob(dim, cx, cz, R, done) {
   cands.sort((a, b) => b.area - a.area || a.relief - b.relief);
   const best = [];
   for (const c of cands) { if (best.every((o) => Math.hypot(o.x - c.x, o.z - c.z) >= 96)) best.push(c); if (best.length >= 3) break; }
-  done({ best, columns: W * W, asleep, gentleShare: gentle.reduce((a, v) => a + v, 0) / Math.max(1, W * W - asleep) });
+  done({ best, columns: W * W, asleep, held, woke, gentleShare: gentle.reduce((a, v) => a + v, 0) / Math.max(1, W * W - asleep) });
 }
 function compassOf(dx, dz) {
   const names = ["east", "south-east", "south", "south-west", "west", "north-west", "north", "north-east"];
@@ -7726,6 +7919,9 @@ system.afterEvents.scriptEventReceive.subscribe((ev) => {
   const [cmd, a, b] = args;
   const s = load();
   const reply = (m) => (p ? say(p, m) : console.warn(m.replace(/§./g, "")));
+  // 1.3.231 (RAMPS-231 / CIV-LAND, his dirt wedges on the ramps 10-07): /scriptevent pw:clock rampclear [go|force]
+  // (dry run / cut natural ground over ramp pieces / also re-send the lane layer) — KIT.rampClear, tests/test_rampclear.mjs
+  if (cmd === "rampclear") { reply(KIT.rampClear(s, a, kitPlan, world, system)); return; }
   if (!cmd || cmd === "status") {
     if (p) { status(p); return; }
     // no player (a command block, the console, another pack): one pw:clock_bld script event per building, so other
@@ -7832,7 +8028,7 @@ system.afterEvents.scriptEventReceive.subscribe((ev) => {
       console.warn(`[CIV-SURVEY] ${JSON.stringify({ at: [cx, cz], R, ...r })}`);
       if (!r.best.length) { reply(`§c[CLOCK] no gentle land found within ${R} blocks (${r.asleep} of ${r.columns} columns not loaded — walk further out and survey again)`); return; }
       const lines = r.best.map((c, i) => `§e${i + 1}) §f${c.x} ${c.y ?? "?"} ${c.z}§e — ${Math.round(Math.hypot(c.x - cx, c.z - cz))} blocks ${compassOf(c.x - cx, c.z - cz)}, ${c.area.toLocaleString()} m² of gentle land within 64, relief ${c.relief}`);
-      reply(`§e[CLOCK] the best ground for a city (gentle = slope ≤ 3 per 8 blocks, dry):\n${lines.join("\n")}\n§7${Math.round(r.gentleShare * 100)} % of the land read is gentle; ${r.asleep} of ${r.columns} columns were not loaded. Stand on a site and use /scriptevent pw:clock village to found there.`);
+      reply(`§e[CLOCK] the best ground for a city (gentle = slope ≤ 3 per 8 blocks, dry):\n${lines.join("\n")}\n§7${Math.round(r.gentleShare * 100)} % of the land read is gentle; ${r.asleep} of ${r.columns} columns were not loaded${r.held ? ` (${r.woke} read by holding ${r.held} tiles awake)` : ""}. Stand on a site and use /scriptevent pw:clock village to found there.`);
     }));
     return;
   }
@@ -8454,16 +8650,52 @@ function leisureGoal(s, st, v, person, homeB, tod, front, centreB, dusk, ctx = n
   // room (INN.perStation a station); every INN.per ticks there is a mood point (the schedule pass counts the stay)
   const ig = innGoal(person, ctx);
   if (ig) return ig;
-  const phase = Math.floor(tod / 2500);
-  const opts = [];
-  if (homeB) { const f = front(homeB); if (f) opts.push(f); }
-  if (st.square) opts.push(squareSlot(st, n, phase));
-  if (centreB) { const f = front(centreB); if (f) opts.push(f); }
+  const phase = Math.floor(tod / PEOPLE.LEISURE.phase);
+  // 1.3.231 (CIV-PEOPLE; his 02:44 screenshot: civs bunched around the well in daylight): the square was one of 2..4 EQUAL
+  // options at every hour and a centre meant its WELL's front. Now: weighted kinds (PEOPLE.leisureWeights) — home, the
+  // workplace, a shop, the neighbourhood centre's SHOPS (never its well), a park bench, the inn; the square only at the
+  // midday market and at dusk
+  const C = [], at = (b) => (b ? front(b) : null), byId = (id) => (ctx && ctx.byId ? ctx.byId.get(id) : buildingById(s, id));
+  const live = (b) => b && b.stage >= 4 && !b.closed;
+  { const f = at(homeB); if (f) C.push({ kind: "home", at: f }); }
+  if (person && typeof person.job === "number") { const jb = byId(person.job); const f = live(jb) ? at(jb) : null; if (f) C.push({ kind: "work", at: f }); }
+  if (st.square) C.push({ kind: "square", at: squareSlot(st, n, phase) });
+  if (centreB) {
+    const c = (st.centres || []).find((x) => x.well === centreB.id);
+    const cs = (c ? c.shops : []).map(byId).filter(live);
+    const f = cs.length ? at(cs[(n + phase) % cs.length]) : null; if (f) C.push({ kind: "centre", at: f });
+  }
   const fin = ctx ? ctx.fin : plotsOf(s, st).filter((b) => b.stage >= 4 && !b.closed && !b.palace && SHOPS.includes(short(b)));
-  if (fin.length) { const f = front(fin[(n + phase) % fin.length]); if (f) opts.push(f); }
-  if (dusk) { const inn = ctx ? ctx.inn : plotsOf(s, st).find((b) => short(b) === "inn" && b.stage >= 4 && !b.closed); if (inn) { const f = front(inn); if (f) opts.push(f, f); } }
-  if (!opts.length) return null;
-  return { ...opts[(n + phase * 3) % opts.length], mode: "idle" };
+  if (fin.length) { const f = at(fin[(n + phase) % fin.length]); if (f) C.push({ kind: "shop", at: f }); }
+  { const inn = ctx ? ctx.inn : plotsOf(s, st).find((b) => short(b) === "inn" && b.stage >= 4 && !b.closed); const f = at(inn); if (f) C.push({ kind: "inn", at: f }); }
+  { const f = PEOPLE.parkSpot(st.park, n + phase); if (f) C.push({ kind: "park", at: f }); }
+  const c = PEOPLE.leisurePick(C, n, phase, PEOPLE.leisureWeights({ dusk, tod, housed: !!homeB }));
+  return c ? { ...c.at, mode: "idle", leisure: c.kind } : null;
+}
+/** 1.3.231 (CIV-PEOPLE): where a body WITHOUT a home rests (was: the square's ring — all night, and all day for the night
+ *  watch): a guest bed at the inn (tonight's guests: PEOPLE.innGuests, billed by the shop beat), else a shelter — its own
+ *  workplace, the town hall, a chapel / church; null when none stands (the caller keeps the square as the last resort) */
+function restGoal(s, st, person, jobB, ctx) {
+  const inn = ctx ? ctx.inn : null;
+  if (person && inn && BUILDINGS[inn.family]) {
+    if (!ctx.guests) ctx.guests = new Set(PEOPLE.innGuests(st.people ? st.people.list : [], PEOPLE.bedsOf(BUILDINGS[inn.family].dir), inn.id));
+    if (ctx.guests.has(person.id)) return { ...insideDoor(inn, BUILDINGS[inn.family]), mode: "home", lodge: inn.id };
+  }
+  const live = (b) => b && b.stage >= 4 && !b.closed && BUILDINGS[b.family];
+  if (live(jobB) && short(jobB) !== "inn") return { ...insideDoor(jobB, BUILDINGS[jobB.family]), mode: "home", shelter: jobB.id };
+  if (ctx && ctx.shelter === undefined) ctx.shelter = plotsOf(s, st).filter((b) => live(b) && ["town_hall", "chapel", "church"].includes(short(b))).sort((a, b) => a.id - b.id)[0] || null;
+  const sh = ctx ? ctx.shelter : null;
+  return sh ? { ...insideDoor(sh, BUILDINGS[sh.family]), mode: "home", shelter: sh.id } : null;
+}
+// 1.3.231 (INN24): the rota of an inn's staff (PEOPLE.innRota), once per settlement + inn per tick (memory)
+const innRotaCache = new Map();
+function innRotaOf(s, st, innId) {
+  const k = `${st.id}:${innId}`, now = system.currentTick, c = innRotaCache.get(k);
+  if (c && c.tick === now) return c.rota;
+  const rota = PEOPLE.innRota(PEOPLE.innStaff(census(st), innId, Math.floor(s.simDays)));
+  innRotaCache.set(k, { tick: now, rota });
+  if (innRotaCache.size > 256) innRotaCache.clear();
+  return rota;
 }
 /** B4 (PE2): the inn for an unhappy person (inside its door), or null (content, no inn, the inn full) */
 function innGoal(person, ctx) {
@@ -8651,7 +8883,7 @@ function goalFor(s, st, v, tod, ctx = schedCtx(s, st, tod)) {
     if (slot === "W" && person && person.job && typeof person.job === "string") ctx.homeFar = homeFarOf(s, st, person);
     if (wet && homeInside && !(PEOPLE.wantsInn(person) && ctx.inn)) { ctx.kind = "rain"; return homeInside; }
     ctx.kind = "leisure";
-    return leisureGoal(s, st, v, person, homeB, tod, front, centreB, false, ctx) || homeInside;
+    return leisureGoal(s, st, v, person, homeB, tod, front, centreB, false, ctx) || homeInside || restGoal(s, st, person, jobB, ctx);   // 1.3.231: no home, no idle place -> a shelter
   }
   ctx.kind = "off";
   if (slot === "M") {
@@ -8664,6 +8896,9 @@ function goalFor(s, st, v, tod, ctx = schedCtx(s, st, tod)) {
   }
   // night: INSIDE the home (1004b: vanilla's move_indoors is gone; the civ stands in its house, still)
   if (homeInside) return homeInside;
+  // 1.3.231 (CIV-PEOPLE): no home -> the inn's guest bed or a shelter; the square's ring only when no building stands
+  const rg = restGoal(s, st, person, jobB, ctx);
+  if (rg) { ctx.kind = rg.lodge !== undefined ? "lodge" : "shelter-night"; return rg; }
   return st.square ? { ...squareSlot(st, idNum(v, person)), mode: "idle" } : null;
 }
 // 1.3.227: the schedule is a JOB — a pass starts every 100 ticks when the last one has finished, and gives the tick back

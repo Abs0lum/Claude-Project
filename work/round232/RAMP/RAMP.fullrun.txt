@@ -1,0 +1,35 @@
+test_alarm: test_alarm (b): 17 pass, 0 fail
+test_band: test_band: 51/51 passed
+test_beat: test_beat: 116/116 passed
+test_canopy: test_canopy: 5/5 passed
+test_coins: test_coins: 810/810 passed
+test_court: test_court: 37/37 passed
+test_diet: test_diet: 8/8 passed
+test_doorramp: 14/14 PASS
+test_econ228: test_econ228: 1195/1195 passed
+test_fell: test_fell: 31/31 passed
+test_frontage: test_frontage: 12/12 passed (houses: ramp-aware 13, flat-only 0, cesspit 13, ramps 13)
+test_households: test_households: 95/95 passed
+test_hygiene: test_hygiene: 15/15 passed
+test_inn24: test_inn24: 57/57 passed
+test_landclock: test_landclock: 25/25 passed
+test_lanes: test_lanes: 14/14 passed (lane 101 cells, 5 legs, turns 4)
+test_leisure: test_leisure: 27/27 passed
+test_market: 16/16 passed
+test_names: test_names: 48/48 passed
+test_needs: test_needs: 80/80 passed
+test_occupied: test_occupied: 97680/97680 passed
+test_plan: test_plan: 37/37 passed
+test_plateau: test_plateau: 109/109 passed
+test_player: test_player: 71/71 passed
+test_ramp8: test_ramp8: 7/7 passed
+test_rampclear: rampclear force: 9 pass, 0 fail
+test_roadramp8: test_roadramp8: 61/61 passed
+test_route: test_route: 468/468 passed
+test_save: test_save: 40/40 passed
+test_shifts: test_shifts: 90/90 passed
+test_survey: test_survey: 25/25 passed
+test_talk: test_talk: 48/48 passed
+test_watch: test_watch: 15/15 passed
+test_why: test_why: 33/33 passed
+scratch copy: /tmp/tmp.jW7m53V4oo

@@ -18,7 +18,7 @@ LEVELS: B2 tunnels/sewers walk -12 (clear -12..-9, floor course -13, the gutter:
 B1 cellars walk -7 (clear -7..-2, floor course -8); ground 0..4, slab 5; étage noble 6..13 (the cabinet zone's
 ENTRESOL: lower 6..9, slab 10, upper 11..13), slab 14; attic 15..18; eaves 19.
 MASSING (x ranges): gate range 0..11 (gatehouse z 114..141) · court of honour 12..119 (z 40..215, the fountain + cascade
-grotto at its centre) between the WEST WING (government, z 16..39) and the EAST WING (16 noble families' ranges,
+grotto at its centre) between the NORTH WING (government, z 16..39) and the SOUTH WING (16 noble families' ranges,
 z 216..239) · CORPS DE LOGIS 120..159 (z 16..239): court wall 120 | state rooms 121..132 | jib partition 133 | HIDDEN
 SPINE 134..135 | wall 136 | cabinet zone 137..144 | stoking wall 145..147 (passage 146) | garden range 148..156 | rear
 wall 157..159 (3 thick: the stair in the wall) · ALLEY 160..162 · CANAL 163..170 (water feet -3..-1) · REAR 171..255:
@@ -45,6 +45,7 @@ POST, GLASS, LIGHT, AIR, VOID = PG.POST, PG.GLASS, PG.LIGHT, PG.AIR, PG.VOID
 GRASS, GRAVEL, DIRT, WATER = PG.GRASS, PG.GRAVEL, PG.DIRT, PG.WATER
 JIB, PAINTING = PG.JIB_PANEL, PG.SECRET_PAINTING
 BARS, IRON_DOOR = "minecraft:iron_bars", "minecraft:iron_door"
+SOFT = ("_door", "bars", "pane", "fence", "_wall", "trapdoor", "slab", "stairs", "ladder", "button", "lantern", "pw:")   # no button hangs on these
 BRICK = "minecraft:stone_bricks"            # every basement shell (a GROUND block: civ_stages puts it in the plot stage)
 F_B2, F_B1 = -12, -7
 F_GROUND, F_SLAB1, F_NOBLE, F_ENT_SLAB, F_ENT, F_SLAB2, F_ATTIC, F_EAVE = 0, 5, 6, 10, 11, 14, 15, 19
@@ -81,6 +82,7 @@ class Palace2(PG.Palace):
         self.drains = []         # {building, gully: [x, z], sewer}
         self.below = []          # basement spaces to dig: {level, box, clear, gutter, kind}
         self.keep = set()        # exit cells of spirals already laid (a later ring never closes them)
+        self.wells = []          # (x0, z0, x1, z1, f0, f1) of every spiral laid: a later stair's ring never builds into them
 
     # ---------------------------------------------------------------- fast fill (one palette lookup per call)
     def fill(self, x0, f0, z0, x1, f1, z1, name, **states):
@@ -122,16 +124,56 @@ class Palace2(PG.Palace):
         self.secrets.append({"id": sid, "element": element, "precedent": precedent, "how": how,
                              "public": list(public) if public else None, "hidden": list(hidden) if hidden else None, "mode": mode})
 
+    def bed(self, x, feet, z, head_dir, kind="minecraft:bed", role="staff"):
+        """palacegen's bed; a light block where the bed goes is removed first (it is not furniture: his 17:52 clash rule)"""
+        dx, dz = PG.VEC[head_dir]
+        for (cx, cz) in ((x, z), (x + dx, z + dz)):
+            if self.get(cx, feet, cz) == LIGHT:
+                self.put(cx, feet, cz, AIR)
+                self.lights -= 1
+        PG.Palace.bed(self, x, feet, z, head_dir, kind, role)
+
+    def set_public(self, sid, label, fe):
+        """a secret's public end = the cell just outside the ring beside the spiral `label`'s exit at walking level fe"""
+        sp = [s for s in self.spirals if s["label"] == label][-1]
+        wx0, wz0, wx1, wz1 = sp["well"]
+        for (x, f, z, tag) in sp["exits"]:
+            if f == fe and tag != "foot":
+                dx = 1 if x > wx1 else -1 if x < wx0 else 0
+                dz = 1 if z > wz1 else -1 if z < wz0 else 0
+                for s in self.secrets:
+                    if s["id"] == sid:
+                        s["public"] = [x + dx, fe, z + dz]
+                return
+
     def jib2(self, x, f, z):
         self.put(x, f, z, JIB)
         self.put(x, f + 1, z, JIB)
 
-    def iron_gate(self, x, f, z, facing, inside):
-        """an iron door that opens from `inside` only (a stone button there, at head height); records the one-way pair"""
+    def iron_gate(self, x, f, z, facing, inside, both=False):
+        """an iron door that opens from `inside` only: a stone button on the wall BESIDE the doorway, on the inner face at
+        head height (the button powers the wall block it hangs on, the block powers the door next to it — the classic iron
+        door), or, when neither flank is a wall, a floor button in the inner cell (it touches the door). both=True puts a
+        button on the outer side too (a strongroom door, not a one-way gate). Records the pair for the walk check."""
         self.door(x, f, z, facing, mat=IRON_DOOR)
-        ix, iz = inside
-        self.put(ix, f + 1, iz, "minecraft:stone_button", facing_direction=1, button_pressed_bit=False)
-        self.oneway.append({"cells": [[x, f, z], [x, f + 1, z]], "open_from": [[ix, f, iz]]})
+        sides = [inside]
+        if both:
+            sides.append((2 * x - inside[0], 2 * z - inside[1]))
+        for (ix, iz) in sides:
+            self._door_button(x, f, z, ix, iz)
+        self.oneway.append({"cells": [[x, f, z], [x, f + 1, z]], "open_from": [[ix, f, iz] for (ix, iz) in sides]})
+
+    def _door_button(self, x, f, z, ix, iz):
+        nx, nz = ix - x, iz - z
+        fd = {(1, 0): 5, (-1, 0): 4, (0, 1): 3, (0, -1): 2}[(nx, nz)]
+        for (tx, tz) in ((nz, nx), (-nz, -nx)):
+            bx, bz = ix + tx, iz + tz                      # the button's cell (inside, beside the doorway)
+            ax, az = x + tx, z + tz                        # the wall block it hangs on (the doorway's flank)
+            an = str(self.get(ax, f + 1, az))
+            if self.free(bx, f + 1, bz) and not self.free(ax, f + 1, az) and not any(k in an for k in SOFT):
+                self.put(bx, f + 1, bz, "minecraft:stone_button", facing_direction=fd, button_pressed_bit=False)
+                return
+        self.put(ix, f, iz, "minecraft:stone_button", facing_direction=1, button_pressed_bit=False)
 
     def lights_in(self, x0, x1, z0, z1, f, every=6):
         for x in range(x0 + 1, x1, every):
@@ -156,18 +198,36 @@ class Palace2(PG.Palace):
         top = P["top"]
         lo = f0 if ring_lo is None else ring_lo
         hi = (ceiling - 1) if ring_hi is None else ring_hi
-        exits = {}                                                    # (x, z) -> (feet, tag)
+        exits = {}                                   # (x, z, feet) -> tag  (one column may hold exits at several storeys)
         for d in P["doors"]:
-            exits[tuple(d["cell"])] = (d["feet"], d["feet"])
+            exits[(d["cell"][0], d["cell"][1], d["feet"])] = d["feet"]
         for (x, f, z) in P["landing"]:
             if not (wx0 <= x <= wx1 and wz0 <= z <= wz1):
-                exits[(x, z)] = (top, "top")
+                exits[(x, z, top)] = "top"
         foot = [(x, z) for (x, f, z, _s) in P["cells"] if f == f0]
         for (x, z) in foot:
             for dx, dz in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                 c = (x + dx, z + dz)
                 if not (wx0 <= c[0] <= wx1 and wz0 <= c[1] <= wz1):
-                    exits.setdefault(c, (f0, "foot"))
+                    exits.setdefault((c[0], c[1], f0), "foot")
+        # the FOOT must be enterable: when no cell beside the first quarter is walkable floor (walls there), the entry is the
+        # ring cell nearest the first step that is walkable and opens onto a free well cell at the foot level (the first
+        # quarters climb over it with >= 2 blocks of headroom; the first step is mounted from inside the well)
+        def walk_ok(x, z, f):
+            return self.free(x, f, z) and self.free(x, f + 1, z) and not self.free(x, f - 1, z)
+        if not any(t == "foot" and walk_ok(x, z, f0) for (x, z, fe), t in exits.items()):
+            cands = []
+            for x in range(wx0 - 1, wx1 + 2):
+                for z in range(wz0 - 1, wz1 + 2):
+                    if (wx0 <= x <= wx1 and wz0 <= z <= wz1) or not walk_ok(x, z, f0):
+                        continue
+                    for dx, dz in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                        w = (x + dx, z + dz)
+                        if wx0 <= w[0] <= wx1 and wz0 <= w[1] <= wz1 and self.free(w[0], f0, w[1]) and self.free(w[0], f0 + 1, w[1]):
+                            cands.append((min(abs(w[0] - a) + abs(w[1] - b) for (a, b) in foot), x, z))
+            if cands:
+                cands.sort()
+                exits[(cands[0][1], cands[0][2], f0)] = "foot"
         # a landing that is only the quarter inside the well steps off sideways: keep the ring open beside it at the top
         if P.get("landing_mode") == "quarter":
             inq = [(x, z) for (x, f, z) in P["landing"]]
@@ -175,19 +235,21 @@ class Palace2(PG.Palace):
                 for dx, dz in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                     c = (x + dx, z + dz)
                     if not (wx0 <= c[0] <= wx1 and wz0 <= c[1] <= wz1) and self.free(c[0], top, c[1]) and not self.free(c[0], top - 1, c[1]):
-                        exits.setdefault(c, (top, "top"))
+                        exits.setdefault((c[0], c[1], top), "top")
         ringcells = [(x, z) for x in range(wx0 - 1, wx1 + 2) for z in range(wz0 - 1, wz1 + 2)
                      if not (wx0 <= x <= wx1 and wz0 <= z <= wz1)]
         for (x, z) in ringcells:
-            ex = exits.get((x, z))
+            here = [fe for (ex, ez, fe) in exits if (ex, ez) == (x, z)]
             for f in range(lo, hi + 1):
-                if ex and ex[0] <= f <= ex[0] + 2:
+                if any(fe <= f <= fe + 2 for fe in here):
                     continue
                 if (x, f, z) in self.keep:
                     continue
+                if any(w[0] <= x <= w[2] and w[1] <= z <= w[3] and w[4] <= f <= w[5] for w in self.wells):
+                    continue
                 if self.free(x, f, z):
                     self.put(x, f, z, ring)
-        for (x, z), (fe, tag) in exits.items():
+        for (x, z, fe), tag in exits.items():
             if tag in secret_exits or fe in secret_exits:
                 if self.free(x, fe, z) and self.free(x, fe + 1, z):
                     self.jib2(x, fe, z)
@@ -197,8 +259,25 @@ class Palace2(PG.Palace):
                 facing = "east" if x > wx1 else "west" if x < wx0 else "south" if z > wz1 else "north"
                 if self.free(x, fe, z) and self.free(x, fe + 1, z):
                     self.door(x, fe, z, facing)
-        sp["exits"] = [[x, fe, z, str(tag)] for (x, z), (fe, tag) in exits.items()]
-        for (x, z), (fe, tag) in exits.items():
+        # C GRAND: the four outer corner columns of the 6 x 6 well hold no tread (the treads end at r1 = 46 px, a corner
+        # cell's centre lies at 56 px) — open shafts the full height of the stair. They are filled with the ring's
+        # masonry (a round stair in a square tower), except the landing's floor and the storey above it in front.
+        if design == "C_grand":
+            land = {(x, f, z) for (x, f, z) in P["landing"]}
+            landq = {(x, z) for (x, f, z) in P["landing"] if wx0 <= x <= wx1 and wz0 <= z <= wz1}
+            for (cx, cz) in ((wx0, wz0), (wx0, wz1), (wx1, wz0), (wx1, wz1)):
+                for f in range(f0, ceiling):
+                    if (cx, f, cz) in land or ((cx, cz) in landq and f >= top - 1):
+                        continue
+                    if self.free(cx, f, cz):
+                        self.put(cx, f, cz, ring if ring not in ("minecraft:spruce_fence",) else STONE)
+        sp["exits"] = [[x, fe, z, str(tag)] for (x, z, fe), tag in exits.items()]
+        if secret_exits:                      # the whole stair is part of the hidden network: the no-walk box covers its exits
+            xs = [wx0 - 1, wx1 + 1] + [x for (x, z, fe) in exits]
+            zs = [wz0 - 1, wz1 + 1] + [z for (x, z, fe) in exits]
+            self.hide(label, min(xs), max(xs), min(zs), max(zs), f0, ceiling - 1)
+        self.wells.append((wx0, wz0, wx1, wz1, f0, ceiling - 1))
+        for (x, z, fe) in exits:
             for ff in range(fe - 1, fe + 3):
                 self.keep.add((x, ff, z))
         return P
@@ -329,13 +408,15 @@ def plan_below(p):
     p.dig("B1", 176, 190, 131, 141, -7, -2, kind="cellar", label="kitchen cellar")
     p.dig("B1", 121, 158, 217, 238, -7, -2, kind="cellar", label="crypt")
     p.dig("B1", 134, 136, 215, 216, -7, -2, kind="cellar", label="crypt passage")
+    p.dig("B1", 137, 141, 48, 55, -7, -2, kind="cellar", label="west back-stair foot")      # the corps back stairs start in B1
+    p.dig("B1", 137, 141, 205, 212, -7, -2, kind="cellar", label="east back-stair foot")
     p.dig("B1", 121, 156, 18, 39, -7, -2, kind="cellar", label="pozzi")
-    p.dig("B1", 13, 111, 27, 28, -7, -2, kind="cellar", label="west wing cellar corridor")
-    p.dig("B1", 13, 111, 29, 38, -7, -2, kind="cellar", label="west wing cellars")
-    p.dig("B1", 112, 118, 17, 38, -7, -2, kind="cellar", label="west wing stair cellar")
-    p.dig("B1", 13, 111, 227, 228, -7, -2, kind="cellar", label="east wing cellar corridor")
-    p.dig("B1", 13, 111, 217, 226, -7, -2, kind="cellar", label="east wing cellars")
-    p.dig("B1", 112, 118, 217, 238, -7, -2, kind="cellar", label="east wing stair cellar")
+    p.dig("B1", 13, 111, 27, 28, -7, -2, kind="cellar", label="north wing cellar corridor")
+    p.dig("B1", 13, 111, 29, 38, -7, -2, kind="cellar", label="north wing cellars")
+    p.dig("B1", 112, 118, 17, 38, -7, -2, kind="cellar", label="north wing stair cellar")
+    p.dig("B1", 13, 111, 227, 228, -7, -2, kind="cellar", label="south wing cellar corridor")
+    p.dig("B1", 13, 111, 217, 226, -7, -2, kind="cellar", label="south wing cellars")
+    p.dig("B1", 112, 118, 217, 238, -7, -2, kind="cellar", label="south wing stair cellar")
     p.dig("B1", 58, 79, 116, 139, -7, -3, kind="grotto", label="cascade grotto")
 
 
@@ -370,13 +451,19 @@ def fit_below(p):
     p.iron_gate(163, -12, 75, "east", inside=(162, 75))
     p.secret("U1", "Escape tunnel (B2) to the garden pavilion", "Kremlin Tainitskaya Tower: 'a hidden exit to the Moskva River'; Passetto di Borgo (escape route) [the long tunnel is a composite]",
              "from J2 under the corps through an iron door (button on the palace side only); out by a ladder and a trapdoor in the pavilion floor",
-             (162, -12, 75), (164, -12, 75), "oneway")
+             (164, -12, 75), (162, -12, 75), "oneway")
     # the ladder shaft at the far end (x 239, z 75) up to the pavilion floor
     for f in range(-12, 0):
         p.put(239, f, 75, "minecraft:ladder", facing_direction=4)     # against the wall at x 240
     p.fill(240, -12, 74, 240, -1, 76, BRICK)
     p.fill(238, -8, 74, 238, -2, 76, BRICK); p.fill(239, -8, 74, 239, -2, 74, BRICK); p.fill(239, -8, 76, 239, -2, 76, BRICK)
     p.put(239, 0, 75, "minecraft:spruce_trapdoor", direction=0, open_bit=False, upside_down_bit=False)
+    # ---- the PRISON TOWER's vault meets the tower tunnel through an iron door that opens from the tunnel side only (the
+    # gaolers come from the palace; nobody climbs from the prison into the palace's tunnels)
+    p.fill(174, -12, 31, 176, -9, 31, BRICK)
+    p.iron_gate(175, -12, 31, "south", inside=(175, 32))
+    p.secret("U4b", "Tower branch: the tunnel door into the prison tower's vault", "Dover Castle: the passages to the towers (the tower branch of the junction)",
+             "an iron door at the tunnel's tower end, its button on the tunnel side only", (175, -12, 30), (175, -12, 32), "oneway")
     # ---- J2: the H12 garderobe shaft arrives at x 144 z 73 (the foot passage x 143..149) ----
     # ---- the gatehouse tunnel stair foot area and the J1 / U4 passages are open spaces (dug)
     # ---- POZZI (B1, the corps' government bay): 4 cells of 3 x 3 behind iron bars, iron doors; the guard walk between
@@ -388,7 +475,7 @@ def fit_below(p):
         fz = cz + 3 if side == "n" else cz - 1
         p.fill(cx, -7, fz, cx + 2, -5, fz, BARS)
         p.put(cx + 1, -7, fz, AIR); p.put(cx + 1, -6, fz, AIR)
-        p.door(cx + 1, -7, fz, "south" if side == "n" else "north", mat=IRON_DOOR)
+        p.iron_gate(cx + 1, -7, fz, "south" if side == "n" else "north", inside=(cx + 1, fz + 1 if side == "n" else fz - 1))   # the gaoler's side
         p.bed(cx, -7, cz + 1, "east", role="cell")
         p.put(cx + 2, -7, cz + (2 if side == "n" else 0), "minecraft:barrel", facing_direction=1, open_bit=False)   # the bucket
         p.room(f"pozzo cell {cx},{cz}", "B1", cx, cx + 2, cz, cz + 2, -7, "Doge's Palace, the Pozzi ('small wet cells… a wood litter… a bucket')", hidden=True)
@@ -404,7 +491,7 @@ def fit_below(p):
     p.door(133, -7, 61, "west")
     p.fill(130, -7, 61, 132, -6, 61, AIR)
     p.put(129, -7, 61, AIR); p.put(129, -6, 61, AIR)
-    p.iron_gate(129, -7, 61, "west", inside=(130, 61))
+    p.iron_gate(129, -7, 61, "west", inside=(130, 61), both=True)       # a strongroom, not a cell: buttons both sides
     for i in range(6):
         p.barrel(122 + i * 2, -7, 44); p.barrel(122 + i * 2, -7, 49)
         p.barrel(122 + i * 2, -6, 44)
@@ -439,14 +526,14 @@ def fit_below(p):
     p.room("crypt", "B1", 121, 158, 217, 238, -7, "Hofburg Augustinian church: the Herzgruft ('the hearts of 54 members of the imperial family')", zone="cellar")
     PG.vault(p, 121, 158, 217, 238, -6, axis="x", wood="spruce", crown="beam", fill=BRICK, deck=BRICK, end_mat=BRICK, deck_lights=0) if False else None
     # wings' cellars: corridor walls + doors
-    for (zc0, zc1, zr0, zr1, name) in ((27, 28, 29, 38, "west"), (227, 228, 217, 226, "east")):
-        wz = zc1 + 1 if name == "west" else zc0 - 1
+    for (zc0, zc1, zr0, zr1, name) in ((27, 28, 29, 38, "north"), (227, 228, 217, 226, "south")):
+        wz = zc1 + 1 if name == "north" else zc0 - 1
         p.fill(13, -7, wz, 111, -2, wz, BRICK)
         for xx in range(20, 110, 12):
-            p.door(xx, -7, wz, "south" if name == "west" else "north")
+            p.door(xx, -7, wz, "south" if name == "north" else "north")
             p.fill(xx + 6, -7, zr0, xx + 6, -2, zr1, BRICK)
             for i in range(3):
-                p.barrel(xx - 3 + i, -7, zr1 if name == "west" else zr0)
+                p.barrel(xx - 3 + i, -7, zr1 if name == "north" else zr0)
         p.room(f"{name} wing cellar corridor", "B1", 13, 111, zc0, zc1, -7, "", zone="cellar")
         p.room(f"{name} wing cellars", "B1", 13, 111, zr0, zr1, -7, "", zone="storeroom")
     # the kitchen cellar
@@ -511,6 +598,7 @@ def fountain(p):
         G.wall_ring(p, [(x, zz - 1) for x in range(49, 58)], 0)
         G.wall_ring(p, [(x, zz + 2) for x in range(49, 58)], 0)
         p.fill(56, -7, zz, 57, -3, zz + 1, AIR)
+        p.fill(52, 0, zz, 55, 0, zz + 1, "minecraft:spruce_fence")         # the well's far end at the court level
         p.fill(56, -2, zz, 57, -1, zz + 1, STONE)
         p.fill(48, -8, zz - 1, 57, -2, zz - 1, STONE); p.fill(48, -8, zz + 2, 57, -2, zz + 2, STONE)
         for ff in range(-8, -1):
@@ -622,7 +710,7 @@ def wing(p, zw0, zw1, west):
     p.slab(x0, x1, zw0, zw1, F_SLAB1, FLOOR); p.shell(x0, x1, zw0, zw1, F_SLAB1, F_SLAB1, CHISEL)
     p.slab(x0, x1, zw0, zw1, F_SLAB2, ATTIC_FLOOR); p.shell(x0, x1, zw0, zw1, F_SLAB2, F_SLAB2, CHISEL)
     p.roof_hip(x0, x1, zw0, zw1, F_EAVE)
-    name = "west" if west else "east"
+    name = "north" if west else "south"   # ruling 1007: model N/S wings
     # corridor walls on every floor (x 13..109); the stair hall x 110..118 is open the full width
     for f0, f1 in ((0, 4), (6, 13), (15, 18)):
         mat = PANEL if f0 == 6 else STONE
@@ -649,7 +737,7 @@ def wing(p, zw0, zw1, west):
     else:
         east_wing_rooms(p, zw0, zw1, zc0, zc1, court_z, outer_z)
     # the back stair (B tower) in the stair hall, laid last
-    p.later.append(lambda: p.spiral3(112, zc0 - 1, -7, [0, 6, 15], "B_tower", "spruce_plaster", ceiling=F_EAVE,
+    p.later.append(lambda: p.spiral3(113, zw0 + 3, -7, [0, 6, 15], "B_tower", "spruce_plaster", ceiling=F_EAVE,
                                      label=f"{name} wing back stair", ring=PANEL, ring_lo=-7))
 
 
@@ -666,7 +754,7 @@ def west_wing_rooms(p, zw0, zw1, zc0, zc1, cz, oz):
     p.room("west guard room + armoury", "G", 13, 32, cz[0], cz[1], 0, "R3: guard room + armoury 20 x 8", zone="quarters")
     for i in range(10):
         p.barrel(35 + i * 4, 0, cz[1])
-    p.room("west wing stores", "G", 34, 78, cz[0], cz[1], 0, "", zone="storeroom")
+    p.room("north wing stores", "G", 34, 78, cz[0], cz[1], 0, "", zone="storeroom")
     # the GREAT HALL (court sittings): x 80..109, z cz (10 wide), feet 0..13 (no first floor over it), a dais, trusses
     p.fill(80, 5, cz[0], 109, 5, cz[1], AIR)
     p.fill(80, 6, cz[0], 109, 13, cz[1], AIR)
@@ -685,7 +773,7 @@ def west_wing_rooms(p, zw0, zw1, zc0, zc1, cz, oz):
         p.fill(xx + 11, 0, oz[0], xx + 11, 4, oz[1], STONE) if xx + 11 < 110 else None
         p.door(xx + 5, 0, zc0 - 1, "north")
         p.barrel(xx + 2, 0, oz[0]); p.chest(xx + 4, 0, oz[0], "south")
-    p.room("west wing outer stores", "G", 13, 109, oz[0], oz[1], 0, "", zone="storeroom")
+    p.room("north wing outer stores", "G", 13, 109, oz[0], oz[1], 0, "", zone="storeroom")
     # NOBLE: the chancery hall (x 13..42, 8 lecterns), the Upper Exchequer (x 44..57: the chequered table) + strongroom
     p.fill(43, 6, cz[0], 43, 13, cz[1], PANEL); p.fill(58, 6, cz[0], 58, 13, cz[1], PANEL)
     p.fill(67, 6, cz[0], 67, 13, cz[1], PANEL); p.fill(79, 6, cz[0], 79, 13, cz[1], STONE)
@@ -700,15 +788,12 @@ def west_wing_rooms(p, zw0, zw1, zc0, zc1, cz, oz):
     p.lectern(50, 6, cz[0] + 7, "north")
     p.room("Upper Exchequer (audit room)", "N", 44, 57, cz[0], cz[1], 6, "the Exchequer's chequered table (R3 §5.4)", zone="workfloor")
     p.fill(59, 6, cz[0], 66, 13, cz[1], STONE); p.clear(61, 64, cz[0] + 2, cz[1] - 2, 6, 9)
-    p.fill(60, 6, cz[0] + 4, 60, 7, cz[0] + 4, AIR)
-    p.door(60, 6, cz[0] + 4, "east", mat=IRON_DOOR) if False else None
-    p.fill(59, 6, zc1 + 2, 66, 9, zc1 + 3, AIR)
-    p.door(62, 6, cz[0] + 1, "south", mat=IRON_DOOR)
-    p.put(62, 7, cz[0], "minecraft:stone_button", facing_direction=1, button_pressed_bit=False)
+    p.fill(59, 6, zc1 + 2, 66, 9, zc1 + 2, AIR)                         # the lobby (z 30); the strongroom's wall z 31
+    p.iron_gate(62, 6, cz[0] + 1, "south", inside=(62, cz[0]), both=True)
     for i in range(4):
         p.chest(61 + i, 6, cz[1] - 2, "north")
     p.room("exchequer strongroom", "N", 61, 64, cz[0] + 2, cz[1] - 2, 6, "", zone="storeroom")
-    p.room("exchequer lobby", "N", 59, 66, zc1 + 2, zc1 + 3, 6, "")
+    p.room("exchequer lobby", "N", 59, 66, zc1 + 2, zc1 + 2, 6, "")
     for i in range(3):
         p.table(70 + i, 6, cz[0] + 4)
     p.room("clerks' writing room", "N", 68, 78, cz[0], cz[1], 6, "", zone="workfloor")
@@ -768,7 +853,7 @@ def east_wing_rooms(p, zw0, zw1, zc0, zc1, cz, oz):
         p.door(xx + 3, 0, zc1 + 1, "north")
         p.bed(xx, 0, oz[1] - 1, "north", role="servant"); p.bed(xx + 2, 0, oz[1] - 1, "north", role="servant")
         p.chest(xx + 5, 0, oz[1], "north")
-    p.room("servants' quarters (east)", "G", 13, 108, oz[0], oz[1], 0, "Kerr: servants' bedrooms", zone="quarters")
+    p.room("servants' quarters (south wing)", "G", 13, 108, oz[0], oz[1], 0, "Kerr: servants' bedrooms", zone="quarters")
     # the BAIZE DOOR at the stair hall: a warped door in green wool between the offices and the family stair
     p.fill(110, 0, zc0 - 1, 110, 3, zc1 + 1, "minecraft:green_wool")
     p.fill(110, 0, zc0, 110, 1, zc1, AIR)
@@ -778,10 +863,10 @@ def east_wing_rooms(p, zw0, zw1, zc0, zc1, cz, oz):
     # NOBLE + ATTIC: six family apartments on each (3 per side)
     for (f0, clear, lvl) in ((F_NOBLE, 8, "N"), (F_ATTIC, 4, "A")):
         for xa in (13, 40, 67):
-            family(p, f"east wing {lvl} court x {xa}", "x", xa, cz[0], cz[1], zc0 - 1, f0, clear, lvl, toward=-1)
-            family(p, f"east wing {lvl} outer x {xa}", "x", xa, oz[0], oz[1], zc1 + 1, f0, clear, lvl, toward=+1)
+            family(p, f"south wing {lvl} court x {xa}", "x", xa, cz[0], cz[1], zc0 - 1, f0, clear, lvl, toward=-1)
+            family(p, f"south wing {lvl} outer x {xa}", "x", xa, oz[0], oz[1], zc1 + 1, f0, clear, lvl, toward=+1)
     # the tribune door: the corridor's corps end at noble level opens onto the chapel's tribune (x 121..)
-    p.notes.append("east wing: 7 offices, 12 servants' rooms, 12 family apartments (noble + attic), the baize door")
+    p.notes.append("south wing: 7 offices, 12 servants' rooms, 12 family apartments (noble + attic), the baize door")
 
 
 def family(p, label, axis, a0, d0, d1, dwall, f0, clear, lvl, toward):
@@ -1000,14 +1085,21 @@ def corps_ground(p):
     for (za, zb) in gz:
         p.fill(XK[0], 0, zb + 1, XK[1], 4, zb + 1, STONE) if zb < 214 else None
         p.fill(XG[0], 0, zb + 1, XG[1], 4, zb + 1, STONE) if zb < 214 else None
-        zm = (za + zb) // 2
+        zm = (za + zb) // 2 if za != 42 else 45                     # z 49..54: the west back stair's ring
         p.door(XW, 0, zm, "east")
         p.fill(XST[0], 0, zm, XST[1], 1, zm, AIR)
         p.door(XST[0], 0, zm, "east")
         p.room(f"cabinet-zone room G z {za}", "G", XK[0], XK[1], za, zb, 0, "", zone="storeroom")
         p.room(f"garden-range room G z {za}", "G", XG[0], XG[1], za, zb, 0, "", zone="storeroom")
         p.lights_in(XK[0], XK[1], za, zb, 0, 5); p.lights_in(XG[0], XG[1], za, zb, 0, 5)
+    # ruling 1007 (Abs0lum): the former solid plinth under the cross salon is a ground-floor room; the cross walls
+    # at z 127 and z 135 stay as the salon's supports, the room is entered from the cabinet-zone rooms either side
     p.fill(XK[0], 0, 127, XG[1], 4, 135, STONE)
+    p.fill(XK[0], 0, 128, XG[1], 4, 134, AIR)
+    p.door(140, 0, 127, "south"); p.door(140, 0, 135, "north")
+    p.room("plate room (silver pantry under the cross salon)", "G", XK[0], XG[1], 128, 134, 0,
+           "household plate room on the service floor below the state rooms (design choice; see design doc)", zone="storeroom")
+    p.lights_in(XK[0], XG[1], 128, 134, 0, 5)
     for i in range(4):
         p.bed(150 + i * 2, 0, 160, "north", role="servant"); p.bed(150 + i * 2, 0, 186, "north", role="servant")
     for i in range(3):
@@ -1091,7 +1183,7 @@ def corps_noble(p):
     p.fill(XST[0], F_NOBLE + 5, 128, XST[1], F_NOBLE + 7, 134, STONE)
     # the CONSORT's spine end (z 214) -> the chapel tribune: a jib panel through the end wall (H15)
     p.secret("H15", "Royal tribune door: the spine's east end -> the chapel's tribune", "Versailles: the royal family entered the chapel's tribune from the state floor; Hofburg: the palace church 'engulfed' by the palace",
-             "a jib panel at the spine's end opens onto the tribune balcony (the nobles use the east wing's door)", (XC[0], F_NOBLE, 214), (XC[0], F_NOBLE, 218), "disguised")
+             "a jib panel at the spine's end opens onto the tribune balcony (the nobles use the south wing's door)", (XC[0], F_NOBLE, 214), (XC[0], F_NOBLE, 218), "disguised")
 
 
 def cabinet_zone(p):
@@ -1155,7 +1247,7 @@ def cabinet_zone(p):
     p.door(150, f, 82, "south"); p.door(150, f, 93, "south"); p.door(150, f, 99, "south"); p.door(150, f, 110, "south")
     p.bed(155, f, 87, "east", role="lord") if False else None
     p.lectern(152, f, 56, "west"); p.chair(153, f, 56, "west")
-    p.fill(g0, f + 1, 50, g0, f + 3, 62, "minecraft:bookshelf")
+    p.fill(g0, f + 1, 50, g0, f + 3, 58, "minecraft:bookshelf")          # the door from the stoking passage (z 60) stays clear
     # H6: the STAIR IN THE WALL lands at x 158 z 62..63 -> a jib panel at x 157 z 62 into the study
     # H7: the STUDIOLO (z 43..46, x 150..155) behind a jib panel in the study's wall z 48; the TESORETTO 3 x 3 behind a painting
     p.fill(g0, f, 42, g1, f + 7, 47, STONE)
@@ -1170,7 +1262,7 @@ def cabinet_zone(p):
     p.room("STUDIOLO", "N", 150, 155, 43, 46, f, "Studiolo of Francesco I: windowless, barrel-vaulted, 'part-office, part-laboratory, part-hiding place'", hidden=True)
     p.hide("studiolo", 150, 155, 43, 47, f, f + 3)
     p.secret("H7a", "Studiolo behind the panelling", "Studiolo of Francesco I (1570-72): 'small painting-encrusted barrel-vaulted room'",
-             "a jib panel in the private study's west wall (z 48) opens into the vaulted Studiolo; cupboards = chests", (152, f, 49), (152, f, 45), "hidden")
+             "a jib panel in the private study's west wall (z 48) opens into the vaulted Studiolo; cupboards = chests", (152, f, 49), (151, f, 44), "hidden")
     # the Tesoretto (z 65..67, x 150..152) behind a secret painting in the wall z 64; the INNER HIDE (z 69..70, x 150..151)
     # behind a second painting in the Tesoretto's wall z 68 (Nicholas Owen: an outer hide concealing an inner one)
     p.fill(g0, f, 64, g1, f + 7, 70, STONE)
@@ -1189,7 +1281,7 @@ def cabinet_zone(p):
     p.secret("H7b", "Tesoretto behind a painting", "Palazzo Vecchio: Cosimo's Scrittoio 'accessible only thanks to passages concealed behind paintings'; the Tesoretto",
              "a pw:secret_painting (walk-through framed canvas) in the study's south wall", (151, f, 63), (151, f, 66), "hidden")
     p.secret("H7c", "Inner hide behind a second painting", "Nicholas Owen's double hide (outer hide concealing an inner one)",
-             "a second pw:secret_painting in the Tesoretto's far wall", (151, f, 67), (151, f, 70) if False else (150, f, 70), "hidden")
+             "a second pw:secret_painting in the Tesoretto's far wall", (151, f, 67), (151, f, 69), "hidden")
     # H13: the FLYING TABLE — a 3 x 1 shaft from the serving room (B1) to the dining room floor, trapdoors flush in the
     # parquet, the table parked on its platform at the bottom (Choisy/Trianon; the lift is cancelled theatre, as at Versailles)
     for xx in (151, 152, 153):
@@ -1207,7 +1299,7 @@ def cabinet_zone(p):
         p.chair(xx, f, 101, "south"); p.chair(xx, f, 106, "north")
     p.hide("flying table shaft", 151, 153, 104, 104, -7, f - 1)
     p.secret("H13", "Flying table (table volante)", "Choisy / Petit Trianon: tables laid below 'could appear in the center of the first-floor dining room'; 'Traces of a trapdoor remain'",
-             "trapdoors flush in the dining-room floor over a 3 x 1 shaft to the serving room (B1)", (152, f, 103), (152, -7, 103), "hidden")
+             "trapdoors flush in the dining-room floor over a 3 x 1 shaft to the serving room (B1)", (152, f, 103), (152, -7, 103), "disguised")
     # ---- the GARDEN CABINET's H11 water stair (laid later) and the garden-range doors
     # ---- consort side, cabinet zone: the ENTRESOL (lower 6..9, slab 10, upper 11..13) z 168..197
     e0, e1 = 168, 197
@@ -1302,7 +1394,7 @@ def wall_stair(p):
         for ff in range(-7, -4):
             p.put(x, ff, z, AIR)
     p.put(x, -7 + 7, 54, STONE) if False else None
-    p.iron_gate(XR[1], 0, 54, "east", inside=(x, 55))
+    p.iron_gate(XR[1], 0, 54, "east", inside=(x, 54))
     p.jib2(XR[0], F_NOBLE, 62)
     p.put(x, 7, 63, LIGHT); p.put(x, 1, 55, LIGHT) if False else None
     p.room("stair in the wall", "B1", x, x, 44, 63, -7, "Palazzo Vecchio: the Brienne stair 'carved into the thickness of the medieval wall'", hidden=True)
@@ -1311,9 +1403,9 @@ def wall_stair(p):
              "from the private study through a jib panel (x 157 z 62); down inside the rear wall to the alley door (iron, opens from inside) and on to the B1 cellars (iron door, opens from the stair side)",
              (156, F_NOBLE, 62), (158, F_NOBLE, 62), "hidden")
     p.secret("H6b", "Alley door of the wall stair", "Palazzo Vecchio: the Duke's door in the alleyway", "iron door in the rear wall's outer skin, button inside only",
-             (158, 0, 55), (160, 0, 54), "oneway")
+             (160, 0, 54), (158, 0, 54), "oneway")
     p.secret("H6c", "Cellar door of the wall stair", "Palazzo Vecchio (the stair to the lower floor) [B1 link = design]", "iron door from the cellar corridor, button on the stair side only",
-             (138, -7, 45), (136, -7, 45), "oneway")
+             (136, -7, 45), (138, -7, 45), "oneway")
 
 
 def gov_bay(p):
@@ -1324,7 +1416,7 @@ def gov_bay(p):
     the BRIDGE OF SIGHS from the Inquisitors' chamber to the prison tower across the canal."""
     x0, x1 = CORPS
     z0, z1 = GOV
-    # ---- GROUND: the vestibule from the west wing (x 121..124), the notary, the deputy, the Great Chancellor, the archive
+    # ---- GROUND: the vestibule from the north wing (x 121..124), the notary, the deputy, the Great Chancellor, the archive
     p.fill(125, 0, z0, 125, 4, z1, STONE)
     p.fill(126, 0, 29, 144, 4, 29, STONE)
     p.room("government vestibule (G)", "G", 121, 124, z0, z1, 0, "", zone="threshold")
@@ -1367,7 +1459,7 @@ def gov_bay(p):
     p.put(138, f, 23, AIR); p.put(138, f + 1, 23, AIR)
     p.jib2(137, f, 23)
     p.secret("H8", "The wardrobe door: Inquisitors -> Council of Ten", "Doge's Palace: the Inquisitors' room 'has a secret entrance behind a wooden wardrobe'",
-             "a gap in the barrel wardrobe, its back a jib panel", (135, f, 23), (139, f, 23), "hidden")
+             "a gap in the barrel wardrobe, its back a jib panel", (134, f, 23), (139, f, 23), "hidden")
     for i in range(3):
         p.table(146 + i, f, 20); p.chair(146 + i, f, 21, "north")
     p.room("CHAMBER OF THE INQUISITORS", "N", 138, 156, z0, 28, f, "Doge's Palace: the Chamber of the Inquisitors", zone="chamber", hidden=True)
@@ -1378,7 +1470,9 @@ def gov_bay(p):
     p.door(125, f, 34, "east")
     p.room("CHAMBER OF THE SECRET CHANCELLERY", "N", 126, 143, 30, z1, f, "Doge's Palace: 'the large and beautiful Chamber of the Secret Chancellery'", zone="workfloor")
     p.lights_in(126, 143, 30, z1, f, 4)
-    p.door(144, f, 35, "east")
+    p.jib2(144, f, 35)
+    p.secret("H9b", "The Chancellery's hidden door to the Torture Chamber", "Doge's Palace itinerary: the Chamber of the Secret Chancellery -> the Deputy -> the Torture Chamber (the museum's order) [the panel = design]",
+             "a jib panel among the Chancellery's lockers", (143, f, 35), (146, f, 35), "hidden")
     p.put(147, f, 37, "minecraft:grindstone", attachment="standing", direction=0)
     p.fill(146, f + 2, 33, 148, f + 2, 33, "minecraft:chain") if False else None
     p.room("Torture Chamber", "N", 145, 149, 30, z1, f, "Doge's Palace: the Torture Chamber", zone="chamber", hidden=True)
@@ -1411,11 +1505,14 @@ def gov_bay(p):
         p.put(xx, f + 1, 21, BARS); p.put(xx, f + 1, 25, BARS)
     p.fill(ALLEY[0], f + 4, 21, CANAL[1], f + 4, 25, "minecraft:stone_brick_slab", **{"minecraft:vertical_half": "bottom"})
     p.put(165, f + 1, 22, LIGHT); p.put(165, f + 1, 24, LIGHT)
+    for zz in (22, 24):
+        p.iron_gate(XR[0], f, zz, "east", inside=(XR[0] - 1, zz))           # the prisoner goes over; nobody comes back this way
     p.room("BRIDGE OF SIGHS (corridor 1)", "N", ALLEY[0], CANAL[1], 22, 22, f, "Doge's Palace 1600: arch span 11 m, 'two separate corridors that run next to each other'", hidden=True)
     p.room("BRIDGE OF SIGHS (corridor 2)", "N", ALLEY[0], CANAL[1], 24, 24, f, "Bridge of Sighs, second corridor", hidden=True)
     p.hide("bridge of sighs", XR[0], CANAL[1] + 2, 22, 24, f, f + 1)
     p.secret("H10", "Bridge of Sighs", "Doge's Palace 1600: enclosed stone bridge, span 11 m, two parallel corridors, to the New Prisons across the Rio di Palazzo",
-             "from the Chamber of the Inquisitors (behind the wardrobe) across the alley and the canal to the tower's interrogation floor", (156, f, 22), (174, f, 22), "hidden")
+             "from the Chamber of the Inquisitors (behind the wardrobe) through an iron door (button on the palace side only) across the alley and the canal to the tower's interrogation floor",
+             (158, f, 22), (156, f, 22), "oneway")
     # ---- ATTIC: Piombi (4 cells under the lead roof, iron doors) | attic armoury | the H9 stair head
     a = F_ATTIC
     p.fill(126, a, 29, XR[0] - 1, a + 3, 29, STONE)
@@ -1425,7 +1522,7 @@ def gov_bay(p):
     for (cx, i) in ((127, 0), (131, 1), (135, 2), (139, 3)):
         p.fill(cx + 3, a, 30, cx + 3, a + 3, 35, STONE)
         p.fill(cx, a, 35, cx + 2, a + 3, 35, STONE)
-        p.door(cx + 1, a, 35, "south", mat=IRON_DOOR)
+        p.iron_gate(cx + 1, a, 35, "south", inside=(cx + 1, 36))            # the gaoler's side (the Piombi walk)
         p.bed(cx, a, 31, "south", role="cell")
         p.room(f"Piombi cell {i + 1}", "A", cx, cx + 2, 30, 34, a, "Doge's Palace: the Piombi, 'in the attic, directly under the roof… covered with slabs of lead' (1591)", hidden=True)
     p.fill(126, a, 30, 126, a + 3, 35, STONE)
@@ -1438,18 +1535,21 @@ def gov_bay(p):
     p.fill(145, a, 29, 156, a + 3, 29, STONE); p.clear(152, 154, 29, 29, a, a + 2)
     p.room("itinerary stair head (A)", "A", 145, 156, 30, z1, a, "", hidden=True)
     p.lights_in(121, 156, z0, z1, a, 4)
-    p.hide("secret itinerary (gov bay)", 138, 156, z0, z1, f, a + 3)
+    p.hide("Chamber of the Inquisitors", 138, 156, z0, 28, f, f + 7)
+    p.hide("torture chamber + itinerary stair zone", 145, 156, 30, z1, f, f + 7)
+    p.hide("government attic (Piombi, armoury)", 121, 156, z0, z1, a, a + 3)
+    p.hide("H9 itinerary turret", 151, 154, 32, 35, -7, a + 3)
     p.secret("H9", "The Secret Itinerary (Pozzi -> notary -> Secret Chancellery -> torture -> Piombi -> armoury -> Inquisitors)",
-             "Doge's Palace 'Itinerari segreti' leaflet: the museum's own order", "the narrow A-turret stair from the ground-floor lobby (a spruce door) to the Pozzi below and the itinerary rooms above",
-             (149, 0, 34), (140, -7, 28), "disguised")
-    p.later.append(lambda: p.spiral3(152, 33, -7, [0, 6, 15], "A_turret", "stone", ceiling=F_EAVE, label="H9 itinerary stair (narrow)",
-                                     ring=STONE, ring_lo=-7, door_blocks=(0,)))
+             "Doge's Palace 'Itinerari segreti' leaflet: the museum's own order", "the narrow A-turret stair from the ground-floor lobby (a jib panel: 'a narrow door on the ground floor') to the Pozzi below and the itinerary rooms above",
+             None, (140, -7, 28), "hidden")
+    p.later.append(lambda: (p.spiral3(152, 33, -7, [0, 6, 15], "A_turret", "stone", ceiling=F_EAVE, label="H9 itinerary stair (narrow)",
+                                      ring=STONE, ring_lo=-7, secret_exits=(0,)), p.set_public("H9", "H9 itinerary stair (narrow)", 0)))
 
 
 def chapel(p):
     """the CHAPEL (x 120..159, z 216..239): nave double height on the ground (Versailles: the Royal Chapel at the end of
     the north wing), a barrel vault, the ROYAL TRIBUNE at the noble level over the entrance end (x 121..136), reached from
-    the spine (H15, jib) and from the east wing's noble corridor; the crypt below (B1)."""
+    the spine (H15, jib) and from the south wing's noble corridor; the crypt below (B1)."""
     x0, x1 = CORPS
     z0, z1 = CHAPEL
     p.fill(x0, -2, z0, x1, -1, z1, STONE)
@@ -1473,7 +1573,7 @@ def chapel(p):
     for xx in range(x0 + 20, x1 - 2, 4):
         p.fill(xx, 2, z0, xx + 1, 7, z0, GLASS) if False else None
         p.fill(xx, 2, z1, xx + 1, 7, z1, GLASS)
-    # the entrance from the court (x 120, z 226..229) and from the east wing's corridor at ground (x 120, z 227..228)
+    # the entrance from the court (x 120, z 226..229) and from the south wing's corridor at ground (x 120, z 227..228)
     p.opening(x0, x0, 225, 230, 0, 4) if False else None
     p.door(x0, 0, 222, "west")
     # the tribune (noble level) x 121..136, the floor course at 5, a balustrade at x 137
@@ -1490,7 +1590,7 @@ def chapel(p):
     p.lights_in(x0 + 1, x1 - 1, z0 + 1, z1 - 1, 0, 6)
     p.room("CHAPEL (nave)", "G", 121, 158, 217, 238, 0, "Versailles Royal Chapel; Hofburg court church", zone="commons")
     p.room("ROYAL TRIBUNE", "N", 121, 136, 217, 238, F_NOBLE, "Versailles: the royal tribune facing the altar", zone="chamber")
-    # the east wing corridor arrives at x 119 (ground: into the nave via a door; noble: onto the tribune)
+    # the south wing corridor arrives at x 119 (ground: into the nave via a door; noble: onto the tribune)
     p.door(x0, 0, 227, "west"); p.door(x0, F_NOBLE, 227, "west")
     # a crypt stair? (U2: the crypt is reached from B1 only)
 
@@ -1658,17 +1758,17 @@ def rear(p):
     for xx in (180, 207, 220):
         p.door(xx, 0, kz1, "south")
     p.lights_in(kx0 + 1, kx1 - 1, kz0 + 1, kz1 - 1, 0, 5)
-    # the kitchen's cellar stair (to the U5 tunnel): a straight flight down from the kitchen floor at x 186..187
-    for i in range(7):
-        x = 182 + i
-        for w in (139, 140):
-            p.put(x, -7 + i, w, "minecraft:stone_brick_stairs", weirdo_direction=PG.STAIR_DIR["east"], upside_down_bit=False)
-            for ff in range(-7 + i + 1, -7 + i + 4):
-                p.put(x, ff, w, AIR)
-    p.fill(181, -8, 139, 189, -8, 140, BRICK)
-    p.fill(181, -1, 138, 189, 3, 138, STONE) if False else None
-    p.fill(182, 0, 138, 189, 0, 138, "minecraft:spruce_fence"); p.fill(182, 0, 141, 189, 0, 141, "minecraft:spruce_fence")
-    p.put(189, 0, 138, AIR); p.put(189, 0, 141, AIR)
+    # the kitchen's cellar stair (to the U5 tunnel): a straight flight down from the kitchen floor at x 182..188 — laid
+    # AFTER the basements are dug (the kitchen cellar's dig would erase it otherwise)
+    def kitchen_stair():
+        for i in range(7):
+            x = 182 + i
+            for w in (139, 140):
+                p.put(x, -7 + i, w, "minecraft:stone_brick_stairs", weirdo_direction=PG.STAIR_DIR["east"], upside_down_bit=False)
+                for ff in range(-7 + i + 1, -7 + i + 4):
+                    p.put(x, ff, w, AIR)
+        p.fill(182, 0, 138, 188, 0, 138, "minecraft:spruce_fence"); p.fill(182, 0, 141, 188, 0, 141, "minecraft:spruce_fence")
+    p.later.append(kitchen_stair)
     # ---- LITTLE COMMONS x 239..252, z 150..209: dining hall + 2 floors of lodgings (one servant each), B stair
     cx0, cx1, cz0, cz1 = 239, 252, 150, 209
     p.fill(cx0, -2, cz0, cx1, -1, cz1, STONE); p.fill(cx0 + 1, -1, cz0 + 1, cx1 - 1, -1, cz1 - 1, FLOOR)
@@ -1751,8 +1851,8 @@ def drains(p):
     for zz in range(40, 216, 24):
         gully(14, zz if zz > 40 else 44, "gate range (court side)", "gate sewer")
     for xx in range(20, 116, 24):
-        gully(xx, 42, "west wing (court side)", "west sewer")
-        gully(xx, 213, "east wing (court side)", "east sewer")
+        gully(xx, 42, "north wing (court side)", "west sewer")
+        gully(xx, 213, "south wing (court side)", "east sewer")
     for zz in range(50, 214, 24):
         gully(116, zz, "corps (court side)", "corps sewer")
     for zz in range(24, 238, 24):
@@ -1819,16 +1919,16 @@ def secret_stairs(p):
              (129, F_NOBLE, 72), (126, F_ATTIC, 76), "hidden")
     p.hide("H4 vice stair", 130, 133, 69, 72, 0, 18)
     # H5: the CHILDREN'S STAIR (B tower) children's lodging (G, via the spine) -> garde-robe (N) -> schoolroom (A)
-    p.spiral3(137, 84, 0, [6, 15], "B_tower", "spruce_plaster", ceiling=F_EAVE, label="H5 children's stair", ring=PANEL,
+    p.spiral3(137, 84, 0, [6, 15], "A_turret", "oak", ceiling=F_EAVE, label="H5 children's stair (narrow)", ring=PANEL,
               door_ok=lambda x, fe, z: (fe != 0) or x == XW)
     p.secret("H5", "The children's stair: the night nursery -> the lord's garde-robe -> the schoolroom", "Hampton Court: Princess Mary lodged one floor below the king; Versailles: the Dauphin under the King [the link stair = design]",
              "a jib panel from the night nursery into the spine, the stair beside it; the family's only way between the nursery and the lord's garde-robe",
              (132, 0, 90), (139, F_NOBLE, 80), "disguised")
-    p.hide("H5 children's stair", 136, 141, 83, 88, 0, 18)
+    p.hide("H5 children's stair", 136, 139, 83, 86, 0, 18)
     # H11: the WATER STAIR (A turret) J2 (B2) -> the water door (G, the alley/canal) -> the garden cabinet (N)
     p.clear(XR[0], XR[0], 74, 77, 0, 2)
     p.spiral3(155, 75, -12, [0, 6], "A_turret", "stone", ceiling=14, label="H11 water stair (narrow)", ring=STONE, ring_lo=-12,
-              door_ok=lambda x, fe, z: (fe != 0) or x == XR[0])
+              door_ok=lambda x, fe, z: (fe != 0) or x == XR[0], secret_exits=("top",))
     sp = p.spirals[-1]
     d0 = [e for e in sp["exits"] if e[1] == 0 and e[3] != "foot"]
     if d0:
@@ -1843,8 +1943,8 @@ def secret_stairs(p):
                  "the garden cabinet's corner turret down past the water door (iron, opens from inside; a landing stage on the canal) to the escape junction J2",
                  (153, F_NOBLE, 74), (155, -12, 72) if False else (152, -12, 75), "hidden")
         p.secret("U3", "Water gate (iron door + landing stage on the canal)", "Tower of London: St Thomas's Tower water gate / Traitors' Gate",
-                 "iron door in the rear wall at the canal's edge, button inside only", (XR[0] + 1, 0, dz), (160, 0, dz), "oneway")
-    p.hide("H11 water stair", 154, 157, 74, 77, -12, 8)
+                 "iron door in the rear wall at the canal's edge, button inside only", (160, 0, dz), (XR[0] + 1, 0, dz), "oneway")
+    p.hide("H11 water stair + water door", 154, 159, 74, 77, -12, 8)
     p.secret("U2", "Crypt passage", "Hofburg: the Augustinian church 'engulfed' by the palace, its Herzgruft", "the cellar corridor's east end through a door into the crypt under the chapel",
              (135, -7, 214), (135, -7, 218), "disguised")
     p.secret("U4", "The Dover junction J1 (three passages meet under the court)", "Dover Castle: 'three passages to three towers meet in a junction under the redan'",
@@ -1852,7 +1952,7 @@ def secret_stairs(p):
              (64, -12, 120), (70, -12, 127), "disguised")
     p.secret("U5", "Service tunnel kitchen -> serving room", "Kerr: the dinner route 'must not cross the track of family traffic'; basement 'Dinner-Stair… or… a Lift' [tunnel = design]",
              "down the kitchen's cellar stair, under the canal (3 high below the canal bed) to the serving room under the dining room",
-             (183, -7, 130), (152, -7, 105), "disguised")
+             (181, -7, 133), (152, -7, 105), "disguised")
     p.secret("U7", "Wine cellar + ice house", "Whitehall: Henry VIII's vaulted wine cellar; Hampton Court ice house", "the cellar off the corps' cellar corridor; the ice house in the privy garden (2 doors)",
              (135, -7, 47), (125, -7, 46), "disguised")
     p.secret("H1", "The hidden spine corridor", "Versailles service rooms behind the state apartment; Kerr's service separation (R3 §2.3)",
@@ -1861,10 +1961,58 @@ def secret_stairs(p):
 
 
 def finish(p):
-    """last touches laid after every block: the royal tribune door through the chapel's end wall (H15)"""
+    """last touches laid after every block: the royal tribune door through the chapel's end wall (H15), the guard rails"""
     p.clear(XC[0], XC[1], 215, 216, F_NOBLE, F_NOBLE + 1)
     p.jib2(XC[0], F_NOBLE, 215); p.jib2(XC[1], F_NOBLE, 215)
     p.fill(XC[0], F_NOBLE + 2, 215, XC[1], F_NOBLE + 2, 216, STONE)
+    guard_rails(p)
+
+
+def guard_rails(p, rail="minecraft:spruce_fence", min_drop=4):
+    """a FENCE in every open cell beside a floor edge whose drop is >= min_drop blocks (fall damage starts past 3): stair
+    openings, the grotto's stair wells, the ice well, the attic's stair holes. A rail goes only into the hole itself at the
+    floor's walking level f, and only where the first thing below lies at least 3 cells down (f - t >= 3: no climber's
+    body ever uses that cell); ladder shafts (the cell below a ladder top is not free) and trapdoors are left alone.
+    Numpy over the whole box; O(cells)."""
+    import numpy as np
+    sx, sy, sz = p.size
+    pal = p.st.palette
+    freek = np.array([(n in (AIR, LIGHT, VOID)) for (n, _s, _v) in pal] + [True])
+    solidk = np.array([not (n in (AIR, LIGHT, VOID) or n.endswith(("_fence", "_wall", "_door", "ladder", "trapdoor", "_carpet", "_button", "water", "jib_panel", "secret_painting"))) for (n, _s, _v) in pal] + [False])
+    L = np.array(p.st.layer0, dtype=np.int64)
+    L[L < 0] = len(pal)
+    L = L.reshape((sx, sy, sz))
+    fr, so = freek[L], solidk[L]
+    walk = np.zeros_like(fr)
+    walk[:, 1:-1, :] = fr[:, 1:-1, :] & fr[:, 2:, :] & so[:, :-2, :]
+    hole = np.zeros_like(fr)
+    hole[:, 1:-1, :] = fr[:, 1:-1, :] & fr[:, :-2, :] & fr[:, 2:, :]
+    near = np.zeros_like(fr)
+    near[1:, :, :] |= walk[:-1, :, :]; near[:-1, :, :] |= walk[1:, :, :]
+    near[:, :, 1:] |= walk[:, :, :-1]; near[:, :, :-1] |= walk[:, :, 1:]
+    # indoors only (a ceiling within 12 above the hole) or below / at grade: roof tops and parapet walks are not floors
+    covered = np.zeros_like(fr)
+    for k in range(2, 13):
+        covered[:, :-k, :] |= ~fr[:, k:, :]
+    grade = np.zeros_like(fr)
+    grade[:, :p.y(0) + 1, :] = True
+    n, where = 0, {}
+    for (x, y, z) in np.argwhere(hole & near & (covered | grade)):
+        t = y - 1
+        while t >= 0 and fr[x, t, z]:
+            t -= 1
+        if t < 0 or y - t - 1 < min_drop:
+            continue
+        nm = pal[L[x, t, z]][0] if L[x, t, z] < len(pal) else ""
+        if nm in ("minecraft:water",) or nm.endswith("ladder"):
+            continue
+        p.put(int(x), int(y) + p.bottom, int(z), rail)
+        n += 1
+        k = (int(x) // 16 * 16, int(y) + p.bottom, int(z) // 16 * 16)
+        where[k] = where.get(k, 0) + 1
+    p.rails = where
+    p.notes.append(f"guard rails: {n} fence cells at stair openings and wells (drops >= {min_drop}): "
+                   + ", ".join(f"{v}@x{a}z{c}f{b}" for (a, b, c), v in sorted(where.items())))
 
 
 # ==================================================================================================== pieces, stages, manifests

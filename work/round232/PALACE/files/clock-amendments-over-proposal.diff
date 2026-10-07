@@ -1,0 +1,585 @@
+--- proposal-applied/pw_civ_clock.js
++++ 232/pw_civ_clock.js
+@@ -56,6 +56,8 @@
+ //   prio [family|clear]       build this family first inside the tier charter (a free command, B6) · tax low|normal|high (B7)
+ //   audit · board              the economy's ledger check / the notice board (B7)
+ //   beds                       the palace's role beds: held / reserved per role and who sleeps there (1.3.229)
++//   palace [check|ends [id]|test <id> [ordinary]]   the palace model (PALACE II or the 2 x 2 fallback; check = ask the pack
++//                              again), its pieces, the secret passages' ends, and the witness test of the passage rule (1.3.232)
+ import { world, system, ItemStack, BlockVolume, BlockTypes, BlockPermutation, LiquidType, StructureAnimationMode } from "@minecraft/server";
+ import { CIV_BUILDINGS } from "./pw_civ_buildings.js";
+ import * as ECON from "./pw_civ_economy.js";
+@@ -75,6 +77,7 @@
+ import * as VOICE from "./pw_civ_voice.js";
+ import * as PLAYER from "./pw_civ_player.js";                     // 1.3.228 (B11): standing, talk, gifts, festivals, titles
+ import * as GUEST from "./pw_civ_guest.js";
++import * as SECRETS from "./pw_civ_palace_secrets.js";            // 1.3.232 (#21 Part D): PALACE II's secret passages (pure; helpers passed in)
+ import * as COURT from "./pw_civ_court.js";                       // 1.3.229 ROLE BEDS (his 14:07): the palace beds by role                       // 1.3.228 (B11): festivals, the dusk speech, the guide, deeds (OFF)
+ import * as PLAN from "./pw_civ_plan.js";
+ import * as NAMES_ from "./pw_civ_names.js";                       // 1.3.228 (B9): district names, town titles, "Now entering"                          // 1.3.228 (B6): the weighted pick, district skins, relief, fillers, weathering                       // 1.3.228 (B5): speech bubbles, talk stops, overheard talk, petitioners
+@@ -1439,7 +1442,7 @@
+           const bill = stageBillOf(b, b.stage + 1);
+           const w = Math.min(bill.wages, Math.max(0, stp.ledger.treasury));
+           ECON.pay(stp.ledger, { mats: {}, wages: w, blocks: 0 });
+-          stp.log.push(`day ${s.simDays.toFixed(0)}: the crown's works — the ${STAGE_NAMES[b.stage + 1]} of the palace's piece ${b.palace.q} (row ${b.palace.q[0]} from the gate) (${bill.blocks} blocks; ${w} p wages from the treasury)`);
++          stp.log.push(`day ${s.simDays.toFixed(0)}: the crown's works — the ${STAGE_NAMES[b.stage + 1]} of the palace's ${palacePieceLabel(b.palace.q)} (${bill.blocks} blocks; ${w} p wages from the treasury)`);   // 1.3.232 (#21): a saved 2 x 2 keeps "sw quarter"
+         }
+         b.progress -= SDAYS[b.stage];
+         b.stage += 1;
+@@ -1501,8 +1504,11 @@
+ // tools/palacegen2.py; r = depth from the gate side, c = frontage), placed as ONE rotated group (each piece rotated, the 4 x 4
+ // positions permuted) with the gate toward the square; built in lockstep as the crown's works (wages from the treasury,
+ // materials imported — never waiting for stock).
+-const PALACE_N = 4;                                                                // pieces a side
+-const PALACE_SPAN = PALACE_N * 64;                                                 // 256
++// 1.3.232 (#21): TWO MODELS, n pieces a side. 4 = PALACE II (HOOK-PROPOSAL Part A); 2 = the 1.3.221 palace (tools/palacegen.py,
++// pieces sw se nw ne), kept for every saved world that holds one (its record has no n) and as the FALLBACK when PALACE II
++// is not complete in the pack (checkPalaceII: a [CIV-PALACE] line, never a crash). The model is chosen when the survey
++// starts and travels with the survey, the reserve and the palace (n); legacy records (no n) are the 2 x 2.
++const PALACE_N = 4;                                                                // PALACE II: pieces a side
+ const PALACE_PIECES = [];
+ const PALACE_GRID = {};                                                            // (i = depth from the gate side, j = frontage)
+ for (let i = 0; i < PALACE_N; i++) for (let j = 0; j < PALACE_N; j++) { PALACE_PIECES.push(`${i}${j}`); PALACE_GRID[`${i}${j}`] = [i, j]; }
+@@ -1510,17 +1516,197 @@
+ const PALACE_TIER = "city2";
+ const PALACE_PER_DAY = 2;                                                          // 1.3.224: candidates measured a day (6 made the day's step slow)
+ const palaceFamily = (q) => `pw:mvv_palace2_${q}_a_r1`;
+-const PALACE_M1 = PALACE_N - 1;
+-function palaceGridRot(i, j, r) { return r === 1 ? [PALACE_M1 - j, i] : r === 2 ? [PALACE_M1 - i, PALACE_M1 - j] : r === 3 ? [j, PALACE_M1 - i] : [i, j]; }
+-/** the palace block: a 256 x 256 site (+ 2 cells of margin) 180..440 from the square, free of plots / streets / the square /
+- *  park, the flattest candidate (ground sampled every 16 cells), its gate side toward the square. A SURVEY over days
+- *  (st.palaceSurvey): each day up to 6 loaded candidates are measured; the first sleeping one is kept awake by the
+- *  crown's surveyors (a 160 x 160 ticking area, held busy until the palace is laid) so tomorrow can read it. Accepted:
+- *  relief <= 14 at once; <= 24 once 8 candidates were measured; <= 40 after 30 days; the best of all once every
+- *  candidate has been tried. */
+-function palaceSite(s, st, dim) {
++export const PALACE_MODELS = {
++  2: { n: 2, pieces: ["sw", "se", "nw", "ne"], grid: { sw: [0, 0], se: [0, 1], nw: [1, 0], ne: [1, 1] }, family: (q) => `pw:mvv_palace_${q}_a_r1`, R: [110, 320] },
++  4: { n: PALACE_N, pieces: PALACE_PIECES, grid: PALACE_GRID, family: palaceFamily, R: [180, 440] },   // PALACE II: the centre sits >= 181 (half-diagonal) out
++};
++/** the grid position of piece (i, j) after r clockwise quarter turns of an n x n palace (n 2: the 1.3.221 law 1 - j, i) */
++export function palaceGridRot(i, j, r, n = 2) { const M1 = n - 1; return r === 1 ? [M1 - j, i] : r === 2 ? [M1 - i, M1 - j] : r === 3 ? [j, M1 - i] : [i, j]; }
++/** a palace / reserve / site record's model and size: legacy records (no n) are the 2 x 2 palace (128) */
++export const palaceNOf = (rec) => (rec && rec.n) || 2;
++export const palaceSpanOf = (rec) => palaceNOf(rec) * 64;
++export const palaceBox = (rec) => { const S = palaceSpanOf(rec); return [rec.x0, rec.z0, rec.x0 + S - 1, rec.z0 + S - 1]; };
++export const palaceCentre = (rec) => { const S = palaceSpanOf(rec); return [rec.x0 + S / 2, rec.z0 + S / 2]; };
++/** the reserved block + 2 cells of margin, [x0, x1, z0, z1] (reserveBox's order) */
++export const palaceReserveBox = (rec) => { const S = palaceSpanOf(rec); return [rec.x0 - 2, rec.x0 + S + 1, rec.z0 - 2, rec.z0 + S + 1]; };
++export const palaceReserveFits = (rec, n) => palaceNOf(rec) === n;
++/** the stage log's name of a piece: the 2 x 2 palace's quarters keep their words; PALACE II pieces say their row */
++export const palacePieceLabel = (q) => (/^\d\d$/.test(q) ? `piece ${q} (row ${q[0]} from the gate)` : `${q} quarter`);
++
++// ---- 1.3.232 (#21): FAIL SAFE — PALACE II is used only when all 16 table entries (Part C) and all 80 stage structures are
++// in the pack. Otherwise the crown builds the 2 x 2 palace and says so once ([CIV-PALACE]); nothing throws.
++/** the stage structures a model needs, as placeStage places them (pw:stages/<stem>_s<k>) */
++export function palaceRequiredStructures(n, defs = BUILDINGS) {
++  const M = PALACE_MODELS[n], out = [];
++  for (const q of M.pieces) { const fam = M.family(q), def = defs[fam], stem = def ? def.stem : fam.split(":")[1]; for (let k = 0; k < (def ? def.stages : 5); k++) out.push(`pw:stages/${stem}_s${k}`); }
++  return out;
++}
++/** [{ q, what: ["table" | "s0".."s4"] }] for every piece whose table entry or stage structure is missing (has(id) -> bool) */
++export function palaceMissing(M, defs, has, stagesToCheck = null) {
++  const out = [];
++  for (const q of M.pieces) {
++    const fam = M.family(q), def = defs[fam], what = [];
++    if (!def || def.stages !== 5 || !Array.isArray(def.size) || def.size[0] !== 64 || def.size[2] !== 64) what.push("table");
++    const stem = def && def.stem ? def.stem : fam.split(":")[1];
++    for (const k of stagesToCheck || [0, 1, 2, 3, 4]) { let h = false; try { h = !!has(`pw:stages/${stem}_s${k}`); } catch { h = false; } if (!h) what.push(`s${k}`); }
++    if (what.length) out.push({ q, what });
++  }
++  return out;
++}
++const PALACE_ID_PROBE = "pw:stages/mvv_palace_sw_a_r1_s0";                         // shipped since 1.3.221: proves the pack list's id form
++/** is PALACE II complete in this pack? sm = world.structureManager. The pack list (getPackStructureIds, module 2.8.0+) is
++ *  read once and trusted only when it holds the 2 x 2 palace's own plot stage (the id form placeStage uses); otherwise each
++ *  piece's s0 and s4 are asked with sm.get. Returns { ok, n, missing, how, line } and logs ONE [CIV-PALACE] line. */
++export function checkPalaceII(sm, defs = BUILDINGS, log = (l) => console.warn(l)) {
++  let has = null, how = "get", stages = [0, 4];
++  try {
++    const ids = sm && typeof sm.getPackStructureIds === "function" ? sm.getPackStructureIds() : null;
++    if (Array.isArray(ids)) { const set = new Set(ids); if (set.has(PALACE_ID_PROBE)) { has = (id) => set.has(id); how = "pack list"; stages = null; } }
++  } catch { has = null; }                                                           // early execution / an older engine: get()
++  if (!has) has = (id) => { try { return !!(sm && sm.get(id)); } catch { return false; } };
++  let missing;
++  try { missing = palaceMissing(PALACE_MODELS[4], defs || {}, has, stages); } catch (e) { missing = [{ q: "*", what: [String(e).slice(0, 60)] }]; }
++  const ok = missing.length === 0;
++  const list = missing.slice(0, 8).map((m) => `${m.q} (${m.what.join(" ")})`).join(", ") + (missing.length > 8 ? ` … ${missing.length} of 16 pieces` : "");
++  const line = ok ? `[CIV-PALACE] PALACE II: 16 pieces + their stage structures are in the pack (checked by ${how}) — the crown builds the 4 x 4 palace (256 x 256)`
++    : `[CIV-PALACE] PALACE II is not complete in this pack (checked by ${how}): missing ${list} — the crown builds the 2 x 2 palace (128 x 128) instead`;
++  try { log(line); } catch { /* left */ }
++  return { ok, n: ok ? 4 : 2, missing, how, line };
++}
++let palaceCheck = null;                                                             // memory: the pack does not change while the world runs
++/** the model the crown builds NOW (checked once a session) */
++export function palaceModelNow() {
++  if (!palaceCheck) { let sm; try { sm = world.structureManager; } catch { sm = undefined; } palaceCheck = checkPalaceII(sm); }
++  return palaceCheck.n;
++}
++export function __resetPalaceCheck() { palaceCheck = null; }
++
++// ---- 1.3.232 (#21): the SURVEY reads a site QUARTER by quarter. HOOK-PROPOSAL Part A held the quarter where the first
++// sample missed but still measured a site only when every sample read in ONE day: the crown's surveyors hold one area
++// (coreBusy keeps sv.area only) and a 256 site needs four (272 x 272 = 17 x 17 chunks; an area is <= 10 x 10), with
++// CORE_SLOTS_DEFAULT 4 shared by the town's core — a sleeping site was never measured. Now each quarter (128 x 128, + 8 out
++// = 9 x 9 or 10 x 10 chunks) is read when its area is awake and KEPT (sv.parts); the site is judged once all are in. The
++// 2 x 2 palace has one quarter: the old single box. tests/test_palace_hook.mjs: same verdict as the one-box measure.
++export const PALACE_QSPAN = 128;
++/** the quarters' offsets [qx, qz] of a span (256: four; 128: one) */
++export function palaceQuarters(span) { const out = []; for (let qx = 0; qx < span; qx += PALACE_QSPAN) for (let qz = 0; qz < span; qz += PALACE_QSPAN) out.push([qx, qz]); return out; }
++/** the box the surveyors hold for a quarter: the quarter + 8 cells out (where its outside samples lie), [x0, z0, x1, z1] */
++export const palaceQuarterBox = (x0, z0, q) => [x0 + q[0] - 8, z0 + q[1] - 8, x0 + q[0] + PALACE_QSPAN + 7, z0 + q[1] + PALACE_QSPAN + 7];
++const quarterOf = (dx, dz, span) => { const c = (v) => Math.min(span - 1, Math.max(0, v)); return `${Math.floor(c(dx) / PALACE_QSPAN) * PALACE_QSPAN},${Math.floor(c(dz) / PALACE_QSPAN) * PALACE_QSPAN}`; };
++/** the samples of a site (the 1.3.221..231 survey's, generalised by HOOK-PROPOSAL Part A): ground + wet every 16 cells, the
++ *  outside ring 8 cells out (span / 16 + 1 a side), the inner wet grid from 8 — each tagged with its quarter */
++function palaceSamples(span) {
++  const g = [], o = [], w = [];
++  for (let i = 0; i < span; i += 16) for (let j = 0; j < span; j += 16) g.push([i, j, quarterOf(i, j, span)]);
++  const PER = span / 16 + 1;
++  for (let k = 0; k < PER * 4; k++) {
++    const t = k % PER, side = Math.floor(k / PER) % 4, far = 8;
++    const dx = side === 0 ? -far : side === 1 ? span - 1 + far : t * 16, dz = side === 2 ? -far : side === 3 ? span - 1 + far : t * 16;
++    o.push([dx, dz, quarterOf(dx, dz, span)]);
++  }
++  for (let i = 8; i < span; i += 16) for (let j = 8; j < span; j += 16) w.push([i, j, quarterOf(i, j, span)]);
++  return { g, o, w };
++}
++const sampleMemo = new Map();
++/**
++ * measure the quarters of one candidate that are not in part.q yet, in order, stopping at the first quarter with a sleeping
++ * read (nothing of that quarter is kept) or once maxNew quarters were read (the day's budget). rd = { ground(x, z) -> { g,
++ * wet } | undefined, outside(x, z) -> { w (water / ice level or -999), t (topmost y) } | undefined, inner(x, z) -> { wy
++ * (standing water / ice level or null) } | undefined }. Returns { done, need: [qx, qz] | null (the quarter to hold awake),
++ * stored (quarters read now), budget (stopped by maxNew) }.
++ */
++export function palaceMeasure(part, x0, z0, span, rd, maxNew = Infinity) {
++  if (!sampleMemo.has(span)) sampleMemo.set(span, palaceSamples(span));
++  const S = sampleMemo.get(span);
++  let stored = 0;
++  for (const q of palaceQuarters(span)) {
++    const key = `${q[0]},${q[1]}`;
++    if (part.q[key]) continue;
++    if (stored >= maxNew) return { done: false, need: null, stored, budget: true };
++    // a quarter whose chunks are not all awake is not read at all (a partly loaded quarter cost up to 210 wasted reads, for
++    // every candidate overlapping a held area); rd.awake(box) asks isChunkLoaded only
++    if (rd.awake && !rd.awake(palaceQuarterBox(x0, z0, q))) return { done: false, need: q, stored, budget: false };
++    const rec = { h: [], w: 0, o: [], i: [] };
++    let miss = false;
++    for (const [dx, dz, qk] of S.g) { if (qk !== key) continue; const r = rd.ground(x0 + dx, z0 + dz); if (!r) { miss = true; break; } rec.h.push(r.g); if (r.wet) rec.w++; }
++    if (!miss) for (const [dx, dz, qk] of S.o) { if (qk !== key) continue; const r = rd.outside(x0 + dx, z0 + dz); if (!r) { miss = true; break; } rec.o.push([r.w, r.t]); }
++    if (!miss) for (const [dx, dz, qk] of S.w) { if (qk !== key) continue; const r = rd.inner(x0 + dx, z0 + dz); if (!r) { miss = true; break; } if (r.wy !== null && r.wy !== undefined) rec.i.push(r.wy); }   // only standing water / ice can reject
++    if (miss) return { done: false, need: q, stored, budget: false };
++    rec.n = S.g.filter((s) => s[2] === key).length * 2 + S.o.filter((s) => s[2] === key).length;
++    part.q[key] = rec;
++    stored++;
++  }
++  return { done: true, need: null, stored, budget: false };
++}
++/** the verdict of a fully measured candidate: relief, H (median ground + 1), wet ground samples, outside lakes at or above
++ *  feet -1, the bowl (land 16+ above the floor beside the block), standing water above the floor inside */
++export function palaceVerdict(part) {
++  const qs = Object.values(part.q), hs = [];
++  let wet = 0, samples = 0;
++  for (const r of qs) { for (const h of r.h) hs.push(h); wet += r.w; samples += r.n || 0; }
++  const H = median(hs) + 1;
++  let outsideWet = 0, bowl = 0, wetIn = 0;
++  for (const r of qs) { for (const [w, t] of r.o) { if (w >= H - 1) outsideWet++; if (t >= H + 16) bowl++; } for (const wy of r.i) if (wy >= H - 1) wetIn++; }
++  return { relief: Math.max(...hs) - Math.min(...hs), H, wet, outsideWet, bowl, wetIn, hs, samples };
++}
++/** 1.3.232 (#21): the survey's reads of ONE column — the 1.3.221..231 survey's own reads, moved out of the loop unchanged so a
++ *  quarter can be measured on its own (palaceMeasure). undefined = asleep / unreadable. */
++function palaceReads(dim) {
++  const isWet = (id) => id === "minecraft:water" || id === "minecraft:flowing_water" || id.includes("ice") || id === "minecraft:lava";
++  return {
++    awake: (b) => { try { return boxLoaded(dim, b[0], b[1], b[2], b[3]); } catch { return false; } },   // isChunkLoaded never throws
++    // gallery gate run 2: a lake at y 108 read as flat ground (groundAt walks down to the bed) and the palace was laid in it;
++    // the topmost block decides wetness at ANY height
++    ground: (x, z) => {
++      let topId, aboveId;
++      try {
++        const top = topAt(dim, x, z);                                           // run 4: this skips liquids (a 5-deep lake read as dry) —
++        topId = top ? top.typeId : undefined;                                  // so the block ABOVE the topmost solid is read too
++        const above = top ? blockAt(dim, x, top.location.y + 1, z, true) : undefined;
++        aboveId = above ? above.typeId : "minecraft:air";
++      } catch { topId = undefined; }                                            // reading a block of an unloaded chunk throws (run 3)
++      if (!topId) return undefined;
++      const g = groundAt(dim, x, z);
++      if (g === undefined) return undefined;
++      return { g, wet: isWet(topId) || isWet(aboveId) };
++    },
++    // gate runs 2–6: the box read dry and flat, but a lake stood just OUTSIDE it above the floor level; the land job's cut let
++    // it pour in. Samples 8 cells outside the box (run 9: 24 cells out lay beyond any area the surveyors can hold — 10 x 10
++    // chunks — and such sites were never measured): the level of water (or ice) standing there, and the land's top (run 7)
++    outside: (x, z) => {
++      try {
++        const top = topAt(dim, x, z);
++        if (!top) return undefined;
++        let wetHere = top.typeId.includes("ice") ? top.location.y : -999;
++        for (let yy = top.location.y + 1; yy < top.location.y + 64; yy++) { const a = blockAt(dim, x, yy, z, true); if (a && (a.typeId === "minecraft:water" || a.typeId === "minecraft:flowing_water")) wetHere = yy; else break; }
++        return { w: wetHere, t: top.location.y };
++      } catch { return undefined; }
++    },
++    // inside, denser: standing water above the floor level inside the box rejects (the first survey's 64 points missed a corner pond)
++    inner: (x, z) => {
++      try {
++        const top = topAt(dim, x, z);
++        if (!top) return undefined;
++        const a = blockAt(dim, x, top.location.y + 1, z, true);
++        let wy = null;
++        if (a && a.typeId === "minecraft:water") wy = a.location.y;
++        if (top.typeId.includes("ice")) wy = Math.max(wy === null ? -Infinity : wy, top.location.y);
++        return { wy };
++      } catch { return undefined; }
++    },
++  };
++}
++/** the palace block: an n x n-piece site (+ 2 cells of margin) — PALACE_MODELS[n]: PALACE II 256 x 256 at 180..440 from the
++ *  square, the 2 x 2 palace 128 x 128 at 110..320 — free of plots / streets / the square / park, the flattest candidate
++ *  (ground sampled every 16 cells), its gate side toward the square. A SURVEY over days (st.palaceSurvey, made for model
++ *  sv.n): each day up to PALACE_PER_DAY loaded QUARTERS are measured (1.3.232; a 2 x 2 site is one quarter); the first
++ *  sleeping candidate is kept awake by the crown's surveyors one quarter at a time (a 128 x 128 quarter + 8 out; the
++ *  quarters read are kept in sv.parts) so the next days can read the rest. Accepted: relief <= 14 at once; <= 24 once 8 candidates were measured; <= 40 after
++ *  30 days; the best of all once every candidate has been tried. */
++export function palaceSite(s, st, dim, n = palaceModelNow()) {   // 1.3.232: exported for tests/test_palace_hook.mjs
+   const sq = st.square;
+   if (!sq) return null;
++  const M = PALACE_MODELS[n], span = n * 64;                                          // 1.3.232 (#21): the model's own size
+   const cx = sq.x + 6, cz = sq.z + 6;
+   // occupancy at CHUNK resolution, built once per survey day (run 2 of the gate: a per-candidate walk over ~20k street
+   // cell keys took > 10 s in one tick — the watchdog killed the pack); a candidate is free when none of the chunks its
+@@ -1529,106 +1715,78 @@
+   for (const k of streetHeights(s).keys()) { const c = k.indexOf(","); occ.add(`${Math.floor(+k.slice(0, c) / 16)},${Math.floor(+k.slice(c + 1) / 16)}`); }
+   for (const [a, b2, c, d] of plotBoxes(s, 2)) for (let i = Math.floor(a / 16); i <= Math.floor(b2 / 16); i++) for (let j = Math.floor(c / 16); j <= Math.floor(d / 16); j++) occ.add(`${i},${j}`);
+   const free = (x0, z0) => {
+-    const x1 = x0 + PALACE_SPAN + 3, z1 = z0 + PALACE_SPAN + 3;
++    const x1 = x0 + span + 3, z1 = z0 + span + 3;
+     for (let i = Math.floor(x0 / 16); i <= Math.floor(x1 / 16); i++) for (let j = Math.floor(z0 / 16); j <= Math.floor(z1 / 16); j++) if (occ.has(`${i},${j}`)) return false;
+     return true;
+   };
+-  const sv = st.palaceSurvey || (st.palaceSurvey = { tried: {}, best: null, days: 0, loaded: 0 });
++  // 1.3.232 (#21): a survey made for the other model (a save from before 1.3.232 surveyed for the 2 x 2) starts again
++  if (st.palaceSurvey && palaceNOf(st.palaceSurvey) !== n) {
++    st.log.push(`day ${s.simDays.toFixed(0)}: the crown's surveyors start again — the palace to be built is ${span} x ${span}`);
++    delete st.palaceSurvey;
++  }
++  const sv = st.palaceSurvey || (st.palaceSurvey = { tried: {}, best: null, days: 0, loaded: 0, n });
+   sv.days++;
+-  let woke = null, evaluated = 0, open = 0;
+-  for (let R = 180; R <= 440 && evaluated < PALACE_PER_DAY; R += 24) {   // PALACE II: the centre sits >= 181 (half-diagonal) out
+-    for (let a = 0; a < 16 && evaluated < PALACE_PER_DAY; a++) {
++  let woke = null, evaluated = 0, open = 0, cut = false;
++  const rd = palaceReads(dim);
++  // 1.3.232 (#21): the day's measuring budget is PALACE_PER_DAY QUARTERS (a 2 x 2 site is one quarter: 2 sites a day, as
++  // before; a PALACE II site is four: half a site a day — the proposal's 2 whole 256 sites a day read 1,160 samples, 3.5 x the
++  // 328 of the 1.3.224 budget, "6 made the day's step slow"). The partly read candidates (the sleeping one the surveyors
++  // hold, the one the budget cut) keep their quarters in sv.parts until they are judged.
++  let qLeft = PALACE_PER_DAY;
++  const parts = {};
++  for (let R = M.R[0]; R <= M.R[1] && qLeft > 0 && !cut; R += 24) {
++    for (let a = 0; a < 16 && qLeft > 0 && !cut; a++) {
+       const ang = a * Math.PI / 8;
+-      const x0 = Math.round(cx + Math.cos(ang) * R) - PALACE_SPAN / 2, z0 = Math.round(cz + Math.sin(ang) * R) - PALACE_SPAN / 2;
++      const x0 = Math.round(cx + Math.cos(ang) * R) - span / 2, z0 = Math.round(cz + Math.sin(ang) * R) - span / 2;
+       const key = `${x0},${z0}`;
+       if (sv.tried[key]) continue;
+       if (!free(x0 - 2, z0 - 2)) { sv.tried[key] = 0; sv.why = sv.why || {}; sv.why.occupied = (sv.why.occupied || 0) + 1; continue; }   // 1.3.226: the reasons, counted
+-      const hs = [];
+-      let miss = false, wet = 0, missAt = null;
+-      for (let i = 0; i < PALACE_SPAN && !miss; i += 16) for (let j = 0; j < PALACE_SPAN; j += 16) {
+-        // gallery gate run 2: a lake at y 108 read as flat ground (groundAt walks down to the bed) and the palace was laid in it;
+-        // the topmost block decides wetness at ANY height
+-        let topId, aboveId;
+-        try {
+-          const top = topAt(dim, x0 + i, z0 + j);             // run 4: this skips liquids (a 5-deep lake read as dry) —
+-          topId = top ? top.typeId : undefined;                                  // so the block ABOVE the topmost solid is read too
+-          const above = top ? blockAt(dim, x0 + i, top.location.y + 1, z0 + j, true) : undefined;
+-          aboveId = above ? above.typeId : "minecraft:air";
+-        } catch { topId = undefined; }                                            // reading a block of an unloaded chunk throws (run 3)
+-        if (!topId) { miss = true; missAt = [i, j]; break; }
+-        const isWet = (id) => id === "minecraft:water" || id === "minecraft:flowing_water" || id.includes("ice") || id === "minecraft:lava";
+-        if (isWet(topId) || isWet(aboveId)) wet++;
+-        const g = groundAt(dim, x0 + i, z0 + j);
+-        if (g === undefined) { miss = true; missAt = [i, j]; break; }
+-        hs.push(g);
+-      }
+-      if (miss) {
++      // 1.3.232 (#21): QUARTER by quarter (palaceMeasure), within the day's budget
++      const part = (sv.parts && sv.parts[key]) || { key, q: {} };
++      const m = palaceMeasure(part, x0, z0, span, rd, qLeft);
++      qLeft -= m.stored;
++      if (m.budget) { cut = true; parts[key] = part; continue; }                     // read on tomorrow
++      if (!m.done) {
+         open++;
+         if (!woke) {
+           woke = [x0, z0, R];
+-          // PALACE II: the 272 x 272 survey box (17 x 17 chunks) is beyond one held area (run 9: <= 10 x 10 chunks) — the surveyors
+-          // hold the QUARTER (136 x 136 + 8 out, 9 x 9 chunks) where the first sample missed; a later day reads the next quarter
+-          const qx = missAt && missAt[0] >= PALACE_SPAN / 2 ? PALACE_SPAN / 2 : 0, qz = missAt && missAt[1] >= PALACE_SPAN / 2 ? PALACE_SPAN / 2 : 0;
+-          try { const nm = ensureTicking(s, st, [x0 + qx - 8, z0 + qz - 8, x0 + qx + PALACE_SPAN / 2 + 7, z0 + qz + PALACE_SPAN / 2 + 7], `palace site survey (${R} from the square, quarter ${qx ? 1 : 0}${qz ? 1 : 0})`); if (nm) sv.area = nm; }   // run 9: the held area must cover the OUTSIDE samples too (8 cells out), or the site stays open for ever
++          parts[key] = part;
++          // the surveyors hold the quarter that is asleep (a 128 x 128 quarter + 8 out: 9 x 9 or 10 x 10 chunks, inside the
++          // engine's 10 x 10; run 9: the held area must cover the OUTSIDE samples too, or the site stays open for ever)
++          const qn = span > PALACE_QSPAN ? `, quarter ${m.need[0] / PALACE_QSPAN}${m.need[1] / PALACE_QSPAN}` : "";
++          try { const nm = ensureTicking(s, st, palaceQuarterBox(x0, z0, m.need), `palace site survey (${R} from the square${qn})`); if (nm) sv.area = nm; }
+           catch (e) { console.warn(`[CIV-CLOCK] palace survey: ${e}`); }
+         }
+         continue;                                                                    // a later candidate may be loaded already
+       }
+       evaluated++; sv.loaded++;
+-      const relief = Math.max(...hs) - Math.min(...hs);
+-      const H = median(hs) + 1;
+-      // gate runs 2–6: the box read dry and flat, but a lake stood just OUTSIDE it above the floor level; the land job's cut let
+-      // it pour in. 36 samples 8 cells outside the box (9 a side; run 9: 24 cells out lay beyond any area the surveyors can
+-      // hold — 10 x 10 chunks — and such sites were never measured): water (or ice) standing at or above feet -1 rejects
+-      let outsideWet = 0, bowl = 0;
+-      const PER = PALACE_SPAN / 16 + 1;                                                 // 17 a side (68 samples)
+-      for (let k = 0; k < PER * 4 && !miss; k++) {
+-        const t = k % PER, side = Math.floor(k / PER) % 4, far = 8;
+-        const sx2 = side === 0 ? x0 - far : side === 1 ? x0 + PALACE_SPAN - 1 + far : x0 + t * 16, sz2 = side === 2 ? z0 - far : side === 3 ? z0 + PALACE_SPAN - 1 + far : z0 + t * 16;
+-        try {
+-          const top = topAt(dim, sx2, sz2);
+-          if (!top) { miss = true; break; }
+-          let wetHere = top.typeId.includes("ice") ? top.location.y : -999;
+-          for (let yy = top.location.y + 1; yy < top.location.y + 64; yy++) { const a = blockAt(dim, sx2, yy, sz2, true); if (a && (a.typeId === "minecraft:water" || a.typeId === "minecraft:flowing_water")) wetHere = yy; else break; }
+-          if (wetHere >= H - 1) outsideWet++;
+-          if (top.location.y >= H + 16) bowl++;                                             // run 7: a mountain beside the block poured its lake over the walls
+-        } catch { miss = true; break; }
+-      }
+-      // inside, denser: any standing water above the floor level inside the box rejects (the first survey's 64 points missed a corner pond)
+-      let wetIn = 0;
+-      for (let i = 8; i < PALACE_SPAN && !miss; i += 16) for (let j = 8; j < PALACE_SPAN; j += 16) {
+-        try {
+-          const top = topAt(dim, x0 + i, z0 + j);
+-          if (!top) { miss = true; break; }
+-          const a = blockAt(dim, x0 + i, top.location.y + 1, z0 + j, true);
+-          if ((a && a.typeId === "minecraft:water" && a.location.y >= H - 1) || (top.typeId.includes("ice") && top.location.y >= H - 1)) wetIn++;
+-        } catch { miss = true; break; }
+-      }
+-      if (miss) { open++; continue; }
++      const { relief, H, wet, outsideWet, bowl, wetIn } = palaceVerdict(part);
+       const score = relief + (wet + wetIn) * 6 + outsideWet * 6 + bowl * 3 + R / 40;
+       { const w = (sv.why = sv.why || {}); const k = relief <= 14 ? "r14" : relief <= 24 ? "r24" : relief <= 40 ? "r40" : "r40+"; w[k] = (w[k] || 0) + 1; if (wet >= 3) w.wet = (w.wet || 0) + 1; if (wetIn) w.wetIn = (w.wetIn || 0) + 1; if (outsideWet) w.outsideWet = (w.outsideWet || 0) + 1; if (bowl) w.bowl = (w.bowl || 0) + 1; }
+       sv.tried[key] = relief + 1;
+-      if (wet < 3 && wetIn === 0 && outsideWet === 0 && bowl === 0 && (!sv.best || score < sv.best.score)) sv.best = { x0, z0, score, relief, wet, R, H };
+-      if (relief <= 40 && (!sv.anyBest || score < sv.anyBest.score)) sv.anyBest = { x0, z0, score, relief, wet, wetIn, outsideWet, bowl, R, H };   // the fallback (60 days): the least wet, the least bowl-like
++      if (wet < 3 && wetIn === 0 && outsideWet === 0 && bowl === 0 && (!sv.best || score < sv.best.score)) sv.best = { x0, z0, score, relief, wet, R, H, n };
++      if (relief <= 40 && (!sv.anyBest || score < sv.anyBest.score)) sv.anyBest = { x0, z0, score, relief, wet, wetIn, outsideWet, bowl, R, H, n };   // the fallback (60 days): the least wet, the least bowl-like
+     }
+   }
+-  const exhausted = !woke && evaluated === 0;
++  if (Object.keys(parts).length) sv.parts = parts; else delete sv.parts;                // only today's sleeping / cut candidates are kept
++  const exhausted = !woke && evaluated === 0 && !cut;
+   let b = sv.best;
+   if (!b && sv.anyBest && (sv.days >= 60 || exhausted)) b = sv.anyBest;             // no dry site in 60 days: the walls will hold the water
+   const accept = b && (b.relief <= 14 || (sv.loaded >= 8 && b.relief <= 24) || (sv.days >= 30 && b.relief <= 40) || exhausted);
+   if (!accept) {
+-    st.palaceSearch = { days: sv.days, loaded: sv.loaded, open, best: b ? [b.x0, b.z0, b.relief, b.R] : null, waiting: woke, day: s.simDays, why: sv.why || null };
+-    if (exhausted && !b && sv.days % 30 === 0) { sv.tried = {}; st.log.push(`day ${s.simDays.toFixed(0)}: the crown's surveyors found no ground for a palace yet (${sv.loaded} sites measured); they start again`); }
++    st.palaceSearch = { days: sv.days, loaded: sv.loaded, open, best: b ? [b.x0, b.z0, b.relief, b.R] : null, waiting: woke, day: s.simDays, why: sv.why || null, n };
++    if (exhausted && !b && sv.days % 30 === 0) { sv.tried = {}; delete sv.parts; st.log.push(`day ${s.simDays.toFixed(0)}: the crown's surveyors found no ground for a palace yet (${sv.loaded} sites measured); they start again`); }
+     return null;
+   }
+-  const dx = cx - (b.x0 + PALACE_SPAN / 2), dz = cz - (b.z0 + PALACE_SPAN / 2);
++  const dx = cx - (b.x0 + span / 2), dz = cz - (b.z0 + span / 2);
+   b.rot = Math.abs(dx) >= Math.abs(dz) ? (dx < 0 ? 0 : 2) : (dz < 0 ? 1 : 3);       // gate west 0 / north 1 / east 2 / south 3
+-  b.days = sv.days; b.measured = sv.loaded;
++  b.days = sv.days; b.measured = sv.loaded; b.n = n;
+   return b;
+ }
+ /** the compass direction and distance from the square to the palace's centre, e.g. "212 blocks south-east" */
+ function palaceDir(st, site) {
+-  const dx = site.x0 + PALACE_SPAN / 2 - (st.square.x + 6), dz = site.z0 + PALACE_SPAN / 2 - (st.square.z + 6);
++  const [mx, mz] = palaceCentre(site);                                             // 1.3.232 (#21): the record's own size (legacy: 128)
++  const dx = mx - (st.square.x + 6), dz = mz - (st.square.z + 6);
+   const names = ["east", "south-east", "south", "south-west", "west", "north-west", "north", "north-east"];
+   const a = Math.round(Math.atan2(dz, dx) / (Math.PI / 4));
+   return `${Math.round(Math.hypot(dx, dz))} blocks ${names[(a + 8) % 8]}`;
+@@ -1638,45 +1796,54 @@
+ // reserved block (+2) is closed to houses and lanes; at city II the palace is laid there (re-checked first: a street that
+ // grew into it meanwhile sends the surveyors out again).
+ const PALACE_RESERVE_FROM = "town3";
+-function reserveBox(st) { const r = st.palaceReserve; return r ? [r.x0 - 2, r.x0 + PALACE_SPAN + 1, r.z0 - 2, r.z0 + PALACE_SPAN + 1] : null; }
++function reserveBox(st) { const r = st.palaceReserve; return r ? palaceReserveBox(r) : null; }   // 1.3.232 (#21): a saved 128 reserve keeps its box
+ function inReserve(s, x, z) { for (const st of s.settlements) { const b = reserveBox(st); if (b && x >= b[0] && x <= b[1] && z >= b[2] && z <= b[3]) return true; } return false; }
+ function boxInReserve(s, x0, x1, z0, z1) { for (const st of s.settlements) { const b = reserveBox(st); if (b && x0 <= b[1] && x1 >= b[0] && z0 <= b[3] && z1 >= b[2]) return true; } return false; }
+ function reservePalaceLand(s, st, dim) {
+   if (st.palace || st.palaceReserve || !st.square || TIERS.indexOf(st.tier) < TIERS.indexOf(PALACE_RESERVE_FROM)) return;
+-  const site = palaceSite(s, st, dim);
++  const n = palaceModelNow(), site = palaceSite(s, st, dim, n);                     // 1.3.232 (#21): the model the pack can build
+   if (!site) return;
+   st.palaceReserve = site;
+   delete st.palaceSurvey; delete st.palaceSearch;
+-  st.log.push(`day ${s.simDays.toFixed(0)}: the crown RESERVES its land — a ${PALACE_SPAN} x ${PALACE_SPAN} block at ${site.x0} ${site.z0}, ${palaceDir(st, site)} of the square (relief ${site.relief}); no house may be built there`);
+-  try { world.sendMessage(`§6${st.name}: the crown reserves land for its future seat — centre §e${site.x0 + PALACE_SPAN / 2} ${site.H} ${site.z0 + PALACE_SPAN / 2}§6, ${palaceDir(st, site)} of the square.`); } catch { /* left */ }
++  const S = palaceSpanOf(site), [mx, mz] = palaceCentre(site);
++  st.log.push(`day ${s.simDays.toFixed(0)}: the crown RESERVES its land — a ${S} x ${S} block at ${site.x0} ${site.z0}, ${palaceDir(st, site)} of the square (relief ${site.relief}); no house may be built there`);
++  try { world.sendMessage(`§6${st.name}: the crown reserves land for its future seat — centre §e${mx} ${site.H} ${mz}§6, ${palaceDir(st, site)} of the square.`); } catch { /* left */ }
+ }
+ function placePalace(s, st, dim) {
+   if (st.palace) return false;
++  const n = palaceModelNow(), M = PALACE_MODELS[n];                                  // 1.3.232 (#21): PALACE II, or the 2 x 2 (FAIL SAFE)
+   let site = null;
++  if (st.palaceReserve && !palaceReserveFits(st.palaceReserve, n)) {
++    // 1.3.232 (#21): a reserve made for the other model (a save's 128 x 128 reserve before PALACE II) cannot hold this palace
++    const S0 = palaceSpanOf(st.palaceReserve);
++    st.log.push(`day ${s.simDays.toFixed(0)}: the crown's reserved land (${S0} x ${S0}) does not fit the palace to be built (${n * 64} x ${n * 64}) — the surveyors look again`);
++    delete st.palaceReserve;
++  }
+   if (st.palaceReserve) {
+     // still free of streets? (houses and lanes were kept out; a street may have grown in)
+-    const r = st.palaceReserve, body = kitBody(st);
++    const r = st.palaceReserve, body = kitBody(st), rb = palaceReserveBox(r);
+     let clash = false;
+-    for (const k of body.keys ? body.keys() : body) { const c = k.indexOf(","), x = +k.slice(0, c), z = +k.slice(c + 1); if (x >= r.x0 - 2 && x <= r.x0 + PALACE_SPAN + 1 && z >= r.z0 - 2 && z <= r.z0 + PALACE_SPAN + 1) { clash = true; break; } }
++    for (const k of body.keys ? body.keys() : body) { const c = k.indexOf(","), x = +k.slice(0, c), z = +k.slice(c + 1); if (x >= rb[0] && x <= rb[1] && z >= rb[2] && z <= rb[3]) { clash = true; break; } }
+     if (!clash) site = r; else st.log.push(`day ${s.simDays.toFixed(0)}: a street grew into the crown's reserved land — the surveyors look again`);
+     delete st.palaceReserve;
+   }
+-  if (!site) site = palaceSite(s, st, dim);
++  if (!site) site = palaceSite(s, st, dim, n);
+   if (!site) { st.palaceTries = (st.palaceTries || 0) + 1; return false; }
+   const group = s.nextId++;
+   const ids = [];
+-  for (const q of PALACE_PIECES) {
+-    const [i, j] = PALACE_GRID[q];
+-    const [gi, gj] = palaceGridRot(i, j, site.rot);
+-    const b = { id: s.nextId++, family: palaceFamily(q), dim: st.dim, x: site.x0 + gi * 64, y: site.H - BUILDINGS[palaceFamily(q)].datum_y, z: site.z0 + gj * 64,
++  for (const q of M.pieces) {
++    const [i, j] = M.grid[q];
++    const [gi, gj] = palaceGridRot(i, j, site.rot, n);
++    const b = { id: s.nextId++, family: M.family(q), dim: st.dim, x: site.x0 + gi * 64, y: site.H - BUILDINGS[M.family(q)].datum_y, z: site.z0 + gj * 64,
+                 rot: site.rot, settled: true, stage: 0, progress: 0, delay: 0, pending: [0], settlement: st.id, planned: true, civic: "palace", palace: { group, q } };
+     s.buildings.push(b);
+     ids.push(b.id);
+   }
+-  st.palace = { group, x0: site.x0, z0: site.z0, rot: site.rot, H: site.H, ids, day: s.simDays, survey: [site.days, site.measured] };
++  st.palace = { group, n, x0: site.x0, z0: site.z0, rot: site.rot, H: site.H, ids, day: s.simDays, survey: [site.days, site.measured] };
+   delete st.palacePending; delete st.palaceSurvey; delete st.palaceSearch;
+-  st.log.push(`day ${s.simDays.toFixed(0)}: the SEAT OF GOVERNMENT is laid out — the palace block (${PALACE_SPAN} x ${PALACE_SPAN}) at ${site.x0} ${site.z0}, gate ${["west", "north", "east", "south"][site.rot]}, ${site.R} from the square (relief ${site.relief}); the crown builds it`);
+-  try { world.sendMessage(`§6${st.name}: the Seat of Government is laid out — the palace block's centre is at §e${site.x0 + PALACE_SPAN / 2} ${site.H} ${site.z0 + PALACE_SPAN / 2}§6, ${palaceDir(st, site)} of the square. It rises over the next weeks.`); } catch { /* left */ }   // 1.3.224: his 16:50 (he never found it)
++  const S = n * 64, [mx, mz] = palaceCentre(st.palace);
++  st.log.push(`day ${s.simDays.toFixed(0)}: the SEAT OF GOVERNMENT is laid out — the palace block (${S} x ${S}) at ${site.x0} ${site.z0}, gate ${["west", "north", "east", "south"][site.rot]}, ${site.R} from the square (relief ${site.relief}); the crown builds it`);
++  try { world.sendMessage(`§6${st.name}: the Seat of Government is laid out — the palace block's centre is at §e${mx} ${site.H} ${mz}§6, ${palaceDir(st, site)} of the square. It rises over the next weeks.`); } catch { /* left */ }   // 1.3.224: his 16:50 (he never found it)
+   return true;
+ }
+ /** the palace block's land, a generator for system.runJob (the plot stage of a piece is LIGHT — only the ground work at
+@@ -1709,7 +1876,7 @@
+   let ops = 0, walled = 0;
+   const tick = function* () { if (++ops % 300 === 0) yield; };
+   const stp = load().settlements.find((x) => x.palace && x.palace.group === b.palace.group);
+-  const box = stp ? [stp.palace.x0, stp.palace.z0, stp.palace.x0 + PALACE_SPAN - 1, stp.palace.z0 + PALACE_SPAN - 1] : null;
++  const box = stp ? palaceBox(stp.palace) : null;                                   // 1.3.232 (#21): the palace's own size (a saved 2 x 2: 128)
+   if (!box) return 0;
+   const WATERY = (a) => a.typeId === "minecraft:water" || a.typeId === "minecraft:flowing_water" || a.typeId.includes("ice") || a.isLiquid || a.isWaterlogged
+     || /kelp|seagrass|coral|sea_pickle|bubble_column|lily_pad/.test(a.typeId);
+@@ -1845,6 +2012,35 @@
+   for (const o of s.buildings) if (o.palace && o.palace.group === b.palace.group && o.id !== b.id && o.stage < k - 1) return false;
+   return true;
+ }
++// 1.3.232 (#21 Part D, his OK 10-07 Q2): the PALACE II SECRET PASSAGES. pw_civ_palace_secrets.js decides; this hands it the
++// town's bodies, their census persons, where each is walking (WALK.targetOf: his bed / station), the finished pieces and the
++// guarded block READS, every 40 ticks (heartbeat slot 20 of 40: no other beat runs there). The doors stay SHUT: a court
++// member (lord / noble / child / guard / servant) is moved from one end to the other when his goal lies nearer it; ordinary
++// civs never. The rotation helpers are passed in (the module imports nothing from the clock).
++const secretsSeen = new Map();                                     // settlement id -> { moved, last: [lines] } (memory; pw:clock palace)
++const secretsTest = new Map();                                     // body id -> { goal, until } (the witness test's goal; pw:clock palace test)
++function secretsDeps(s, st) {
++  const pieces = new Map(s.buildings.filter((b) => b.palace && b.palace.group === st.palace.group).map((b) => [b.palace.q, b]));
++  const dim = world.getDimension(st.dim);
++  const seen = secretsSeen.get(st.id) || { moved: 0, last: [] };
++  secretsSeen.set(st.id, seen);
++  return {
++    rot: { rotXZ, gridRot: (i, j, r) => palaceGridRot(i, j, r, 4) }, pieces, seen,
++    bodies: HB.bodiesOf(st), personOf: (v) => personOfBody(v, st),
++    goalOf: (v) => { const t = secretsTest.get(v.id); if (t && system.currentTick <= t.until) return t.goal; return WALK.targetOf(v); },
++    ready: (q) => { const b = pieces.get(q); return !!b && b.stage >= 4 && !b.closed; },
++    blockAt: (x, y, z) => blockAt(dim, x, y, z), cancel: (v) => { secretsTest.delete(v.id); WALK.cancel(v); },
++    log: (l) => { console.warn(l); seen.last.push(l); if (seen.last.length > 6) seen.last.shift(); },
++  };
++}
++HB.register("palacesecrets", { every: 40, slot: 20, budgetMs: 5, optional: true, fn: () => {
++  const s = load();
++  for (const st of s.settlements) {
++    if (!st.palace || palaceNOf(st.palace) !== SECRETS.PALACE_N) continue;          // the 2 x 2 palace has no passages
++    if (!s.buildings.some((b) => b.palace && b.palace.group === st.palace.group && b.stage >= 4)) continue;
++    try { const d = secretsDeps(s, st); d.seen.moved += SECRETS.runPalaceSecrets(st, d).moved; } catch (e) { console.warn(`[CIV-PALACE] secrets #${st.id}: ${e}`); }
++  }
++} });
+ 
+ // ------------------------------------------------------------------------------------------------ settlements
+ function plotsOf(s, st) { return s.buildings.filter((b) => b.settlement === st.id); }
+@@ -2437,7 +2633,13 @@
+   { const wetPieces = s.buildings.filter((pb) => pb.palace && pb.settlement === st.id && pb.palaceDrain > 0);
+     // 1.3.224: never during skipped days (a skip stacked one job per day — his Hang), never two jobs for one group
+     const grp = wetPieces.length ? wetPieces[0].palace.group : null;
+-    if (wetPieces.length && !s.accelNow && !palacePumpJobs.has(grp)) { try { const pd = BUILDINGS[wetPieces[0].family]; for (const pb of wetPieces) { pb.palaceDrain -= 1; const [pfx, , pfz] = footprint(pd, pb.rot); ensureTicking(s, st, [pb.x - 8, pb.z - 8, pb.x + pfx + 7, pb.z + pfz + 7], `palace pumps #${pb.id}`); }
++    if (wetPieces.length && !s.accelNow && !palacePumpJobs.has(grp)) { try { const pd = BUILDINGS[wetPieces[0].family]; for (const pb of wetPieces) pb.palaceDrain -= 1;
++      // 1.3.232 (#21): the pumps hold the block by QUARTERS (128 + 8 out, <= 10 x 10 chunks) holding a wet piece — PALACE II's
++      // 16 per-piece areas a day would cycle every slot (CORE_SLOTS_DEFAULT 4; the engine's cap is 10); the 2 x 2 palace: one area
++      const pal = st.palace && st.palace.group === grp ? st.palace : null;
++      if (pal) { const qs = new Set(wetPieces.map((pb) => `${Math.floor((pb.x - pal.x0) / PALACE_QSPAN) * PALACE_QSPAN},${Math.floor((pb.z - pal.z0) / PALACE_QSPAN) * PALACE_QSPAN}`));
++        for (const qk of qs) { const q = qk.split(",").map(Number); ensureTicking(s, st, palaceQuarterBox(pal.x0, pal.z0, q), `palace pumps (quarter ${q[0] / PALACE_QSPAN}${q[1] / PALACE_QSPAN})`); } }
++      else for (const pb of wetPieces) { const [pfx, , pfz] = footprint(pd, pb.rot); ensureTicking(s, st, [pb.x - 8, pb.z - 8, pb.x + pfx + 7, pb.z + pfz + 7], `palace pumps #${pb.id}`); }
+       palacePumpJobs.add(grp);
+       system.runJob((function* () { try { yield* palaceDrainJob(world.getDimension(st.dim), wetPieces, pd); } finally { palacePumpJobs.delete(grp); } })()); } catch (e) { palacePumpJobs.delete(grp); console.warn(`[CIV-CLOCK] palace pumps: ${e}`); } } }   // 1.3.221: the pumps (build 20: the whole group in one job, its chunks held — /fill needs them loaded)
+   // 1.3.226 (gate 225-1: a carried day of 1.2-2.0 s — the plot searches inside it): the day's PLANNING (civic works,
+@@ -2595,9 +2797,11 @@
+     // 1.3.224 (his 16:50: he never found the palace): the tier work and the palace, in the settlement's own lines
+     if (st.tierWork) say(p, `§b    laying out ${TIER_LABEL[st.tierWork.tier] || st.tierWork.tier}: ${st.tierWork.i}/${st.tierWork.items.length} plots${st.tierWork.i >= st.tierWork.items.length ? ` · then ${st.tierWork.after.join(", ")}` : ""}`);
+     if (st.palace) { const pcs = s.buildings.filter((x) => x.palace && x.palace.group === st.palace.group); const stg = pcs.length ? Math.min(...pcs.map((x) => x.stage)) : 0;
+-      say(p, `§6    PALACE: centre §e${st.palace.x0 + 64} ${st.palace.H} ${st.palace.z0 + 64}§6 (${palaceDir(st, st.palace)} of the square) · ${STAGE_NAMES[Math.max(0, stg)]}${stg < 4 ? ` · ${pcs.filter((x) => x.pending.length).length} quarter(s) waiting for their chunks` : ""}`); }
+-    else if (st.palaceReserve) { const r = st.palaceReserve; say(p, `§6    PALACE: the crown has RESERVED its land — centre ${r.x0 + 64} ${r.H} ${r.z0 + 64}, ${palaceDir(st, r)} of the square; it is laid at city II`); }
+-    else if (st.palacePending || st.palaceSearch) { const ps = st.palaceSearch || {}; say(p, `§6    PALACE: the crown's surveyors are measuring sites 110–320 blocks out (${ps.days || 0} day(s), ${ps.loaded || 0} site(s) measured${ps.best ? `, best so far ${ps.best[0] + 64} ${ps.best[1] + 64} (relief ${ps.best[2]})` : ""})`); }
++      const [pmx, pmz] = palaceCentre(st.palace), pn = palaceNOf(st.palace);         // 1.3.232 (#21): the palace's own size
++      say(p, `§6    PALACE: centre §e${pmx} ${st.palace.H} ${pmz}§6 (${palaceDir(st, st.palace)} of the square, ${pn} x ${pn} pieces) · ${STAGE_NAMES[Math.max(0, stg)]}${stg < 4 ? ` · ${pcs.filter((x) => x.pending.length).length} ${pn === 2 ? "quarter(s)" : "piece(s)"} waiting for their chunks` : ""}`); }
++    else if (st.palaceReserve) { const r = st.palaceReserve, [rmx, rmz] = palaceCentre(r), rs = palaceSpanOf(r); say(p, `§6    PALACE: the crown has RESERVED its land (${rs} x ${rs}) — centre ${rmx} ${r.H} ${rmz}, ${palaceDir(st, r)} of the square; it is laid at city II`); }
++    else if (st.palacePending || st.palaceSearch) { const ps = st.palaceSearch || {}, PM = PALACE_MODELS[palaceNOf(ps)], ph = palaceSpanOf(ps) / 2;   // 1.3.232 (#21): the survey's model (legacy: 2 x 2)
++      say(p, `§6    PALACE: the crown's surveyors are measuring ${ph * 2} x ${ph * 2} sites ${PM.R[0]}–${PM.R[1]} blocks out (${ps.days || 0} day(s), ${ps.loaded || 0} site(s) measured${ps.best ? `, best so far ${ps.best[0] + ph} ${ps.best[1] + ph} (relief ${ps.best[2]})` : ""})`); }
+     if (st.why) say(p, `§7    why: ${Object.entries(st.why).map(([k, n]) => `${k} ${n}`).join(" · ")}`);   // 1.3.228 (B2 / BF3)
+     if (st.roads && st.roads.length) say(p, `§d    roads: ${st.roads.map((r) => `to #${r.to} (${r.length} cells)`).join(", ")}${st.mother ? ` · daughter of #${st.mother}` : ""}`);
+     if (st.ledger) say(p, `§7    treasury ${Math.floor(st.ledger.treasury / ECON.COIN)} coin · purse ${Math.floor((st.ledger.purse || 0) / ECON.COIN)} · builders ${st.ledger.builders || 0}${st.ledger.hired ? ` (+${st.ledger.hired} hired)` : ""} · fed ${Math.round((st.ledger.prosperity.slice(-1)[0] || 0) * 100)} % · ` +
+@@ -8191,6 +8395,44 @@
+     for (const r of COURT.COURT.order) if (all[r]) reply(`§e  ${r}: ${(by[r] || []).length} of ${all[r]}${r === "lord" || r === "noble" ? " (couples sleep 2 to a bed)" : ""} — ${(by[r] || []).slice(0, 8).join(", ") || "reserved, waiting for the role"}${(by[r] || []).length > 8 ? " …" : ""}`);
+     return;
+   }
++  if (cmd === "palace") {                                       // 1.3.232 (#21): the palace model, the pack check, the secret passages
++    // palace [check] · palace ends [id] · palace test <id> [ordinary] (the witness test of Part D: see PALACE.md)
++    if (a === "check") __resetPalaceCheck();
++    const n = palaceModelNow();
++    reply(`§e[CLOCK] palace model now: ${n === 4 ? "PALACE II (4 x 4 pieces, 256 x 256)" : "the 2 x 2 palace (128 x 128)"} — ${palaceCheck.line.replace("[CIV-PALACE] ", "")}`);
++    const loc = p && p.location;
++    const st = (loc && s.settlements.find((x) => inInfluence(x, loc.x, loc.z))) || s.settlements[0];
++    if (!st) { reply("§e[CLOCK] no settlement"); return; }
++    if (!st.palace) { const r = st.palaceReserve; reply(`§e  ${st.name}: no palace yet${r ? ` — land reserved (${palaceSpanOf(r)} x ${palaceSpanOf(r)})` : st.palaceSurvey ? ` — surveying ${palaceSpanOf(st.palaceSurvey)} x ${palaceSpanOf(st.palaceSurvey)} sites` : ""}`); return; }
++    const pal = st.palace, pn = palaceNOf(pal), pcs = s.buildings.filter((x) => x.palace && x.palace.group === pal.group);
++    reply(`§e  ${st.name}: ${pn} x ${pn} palace at ${pal.x0} ${pal.z0} (gate ${["west", "north", "east", "south"][pal.rot]}, floor y ${pal.H}); finished pieces ${pcs.filter((x) => x.stage >= 4).length}/${pcs.length}`);
++    if (pn !== SECRETS.PALACE_N) { reply("§e  the 2 x 2 palace has no secret passages"); return; }
++    const d = secretsDeps(s, st), ends = SECRETS.passageEnds(pal, d.rot, d.ready);
++    reply(`§e  secret passages open to the court: ${ends.length} of 39 (both pieces finished) · court members moved this session: ${d.seen.moved}`);
++    if (a === "ends") {
++      const list = b ? ends.filter((e) => e.id.toLowerCase().startsWith(b.toLowerCase())) : ends.slice(0, 8);
++      for (const e of list) reply(`§e  ${e.id} (${e.mode}): public ${e.pub.join(" ")} · hidden ${e.hid.join(" ")}`);
++      if (!b && ends.length > 8) reply(`§7  … ${ends.length - 8} more (palace ends <id>)`);
++    } else if (a === "test") {
++      // the WITNESS TEST: a court member (or with "ordinary" a townsman) is put at the end a passage is entered from and given a
++      // goal beyond its other end; within 2 s the passage rule must move the court member (a [CIV-PALACE] secret line) and
++      // must NOT move the townsman. The doors stay shut either way.
++      const e = ends.find((x) => b && x.id.toLowerCase().startsWith(b.toLowerCase()));
++      if (!e) { reply("§c  palace test <id> [ordinary]: an id from 'palace ends' (both its pieces finished)"); return; }
++      const wantOrdinary = args[3] === "ordinary";
++      const v = d.bodies.find((x) => { const q = d.personOf(x); return q && (wantOrdinary ? !q.court : q.court && SECRETS.MAY_USE.has(q.court.r)); });
++      if (!v) { reply(`§c  no ${wantOrdinary ? "townsman" : "court member (lord / noble / guard / servant)"} of ${st.name} is loaded`); return; }
++      const [from, to] = e.mode === "oneway" && SECRETS.ONEWAY_FROM === "hidden" ? [e.hid, e.pub] : [e.pub, e.hid];
++      const goal = [to[0] + 0.5 + (to[0] - from[0]) * 3, to[1], to[2] + 0.5 + (to[2] - from[2]) * 3];
++      try { WALK.cancel(v); v.teleport({ x: from[0] + 0.5, y: from[1], z: from[2] + 0.5 }); } catch (err) { reply(`§c  ${err}`); return; }
++      secretsTest.set(v.id, { goal, until: system.currentTick + 200 });
++      const who = d.personOf(v), name = who ? who.name : v.id;
++      reply(`§e  test ${e.id}: ${name} (${who && who.court ? who.court.r : "townsman"}) put at ${from.join(" ")}, goal beyond ${to.join(" ")} — expect ${wantOrdinary ? "NO move" : "a move within 2 s"}`);
++      system.runTimeout(() => { try { const L = v.location, at = Math.hypot(L.x - (to[0] + 0.5), L.z - (to[2] + 0.5)) <= 1.2; secretsTest.delete(v.id); reply(`§e  test ${e.id}: ${name} ${at ? "WAS moved to the other end" : "was NOT moved"} — ${at === !wantOrdinary ? "§aas the rule says" : "§cNOT as the rule says"}`); } catch { /* gone */ } }, 80);
++    }
++    for (const l of d.seen.last) reply(`§7  ${l}`);
++    return;
++  }
+   if (cmd === "savehold") {                                     // 1.3.228 (B2 / BF2): release a save hold (the stored town could not be read at load)
+     if (a === "off") { saveHold = false; save(true); reply("§e[CLOCK] save hold released: the town in memory was saved"); return; }
+     reply(`§e[CLOCK] save hold is ${saveHold ? "§cON§e (the stored town could not be read; savehold off writes the town in memory over it)" : "off"}`);

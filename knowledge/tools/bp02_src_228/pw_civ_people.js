@@ -665,15 +665,17 @@ export function dayStep(P, ctx) {
   // builders, surveyor, carters, sewer keeper, civic posts, healers, fishers, the watch) are filled before the shops
   // (numeric building ids), as the list order did before B4; the nearest-to-home choice holds within each class
   const openJobs = (ctx.jobs || []).filter((j) => (j.vacancies || 0) > 0 || j.vacant);
-  const isFree = (x) => (x.vacancies || 0) > 0 || x.vacant;
-  const townPosts = openJobs.filter((j) => typeof j.id !== "number"), shopPosts = openJobs.filter((j) => typeof j.id === "number");
+  // 1.3.231 (INN24): a third class between them — the inn's COVER (its first INN24.cover staff: open round the clock)
+  const isFree = (x) => ((x.vacancies || 0) > 0 || x.vacant) && (!x.base || (x.base.vacancies || 0) > 0);
+  const { town: townPosts, cover: coverPosts, shops: shopPosts } = hireClasses(openJobs, living);
   for (const p of living) {
     if (p.job || stage(p, day) === "child" || stage(p, day) === "apprentice" && age(p, day) < DIALS.child + 5) continue;
     const at = homes.get(p.home);
-    const j = nearestFree(townPosts, at, isFree) || nearestFree(shopPosts, at, isFree);
+    const j = nearestFree(townPosts, at, isFree) || nearestFree(coverPosts, at, isFree) || nearestFree(shopPosts, at, isFree);
     if (!j) break;
     p.job = j.id; p.trade = j.kind;
     if (j.vacant) j.vacant = false; else j.vacancies--;
+    if (j.base) j.base.vacancies--;                                          // the cover share is one of the inn's own
   }
   // 3c. B4 (BF7 / PE5): a home more than COMMUTE.far from work — the household takes a free room within COMMUTE.near of the
   // work (MOVE.far households a town a day, by id), else he complains (every COMMUTE.sayEvery days)
@@ -959,8 +961,17 @@ export const SHIFT = {
     night:    "WWWWWRRRRRRRRRRRRMMWWWWW",   // the watch: work 19..05 (tod 13000..23000: the old NIGHT), rest by day, meet 17..19
     day:      "RRRRRRRWWWWWWWWWWMMRRRRR",   // the sewer keeper (his own id, so a command can move him alone)
     child:    "RRRRRRRIIIIIIIIIIMMRRRRR",   // children play by day
+    // 1.3.231 (INN24, his 00:23 CT 10-07: the inn open 24 h / late, several employees): the inn's ROTA (innRota below)
+    inn_solo:   "RRRRRRWWWWWWWWWWWWWWWWWR", // a lone innkeeper: 06..23 (all daylight and the evening)
+    inn_long_d: "RRRRRRWWWWWWWWWWWWIMRRRR", // two staff: the day half 06..18
+    inn_long_n: "WWWWWWIRRRRRRRRRIIWWWWWW", //            the night half 18..06
+    inn_day:    "RRRRRRWWWWWWWWIIIMMRRRRR", // three or more: the day keeper 06..14
+    inn_eve:    "RRRRRRRRIIIIIIWWWWWWWWIR", //                the evening (the taproom) 14..22
+    inn_night:  "WWWWWWIRRRRRRRRIIIMMIIWW", //                the night keeper 22..06
+    inn_serve:  "RRRRRRRRIIIIIWWWWWWWWIIR", //                serving staff at the busy hours 13..21
   },
-  off: { standard: 1, early: 1, late: 1, night: 2, day: 1, child: 0 },   // days off in 7
+  off: { standard: 1, early: 1, late: 1, night: 2, day: 1, child: 0,
+         inn_solo: 0, inn_long_d: 0, inn_long_n: 0, inn_day: 0, inn_eve: 0, inn_night: 0, inn_serve: 1 },   // days off in 7 (the inn's cover shifts: shorter days, no whole day off)
   offset: 200,                                                              // start offset: -200 .. +200 ticks from the id
 };
 const SH_SALT = 0x5F1F, REST_SALT = 0x0D7A;
@@ -974,6 +985,7 @@ export function shiftOffset(id) { return hash32(id, SH_SALT) % (2 * SHIFT.offset
 export function shiftTemplate(p, o = {}) {
   if (p && p.shift && SHIFT.T[p.shift]) return p.shift;
   if (o.child) return "child";
+  if (p && o.inn && typeof o.inn.get === "function" && o.inn.has(p.id)) return o.inn.get(p.id);   // 1.3.231 (INN24): the inn's rota
   const job = p ? p.job : null, kind = o.kind || (p && p.trade) || "";
   if (job === "watch") return "night";
   if (job === "sewer_keeper") return "day";
@@ -999,7 +1011,7 @@ export function dayOff(p, day, o = {}) {
 export function shiftAt(p, tod, day, o = {}) {
   const tpl = o.tpl || shiftTemplate(p, o);
   const T = SHIFT.T[tpl] || SHIFT.T.standard;
-  const A = day * 24000 + tod - shiftOffset(p.id);
+  const A = day * 24000 + tod - (isInnTpl(tpl) ? 0 : shiftOffset(p.id));   // 1.3.231 (INN24): the rota hands over on the hour (no gap)
   const d = Math.floor(A / 24000), t = A - d * 24000;
   const hour = hourOf(t);
   let slot = T[hour];
@@ -1010,7 +1022,8 @@ export function shiftAt(p, tod, day, o = {}) {
     let k = 1;
     while (k < 24 && T[(hour + k) % 24] !== "R") k++;
     toRest = k * 1000 - ((t + 6000) % 1000);
-    if (o.travel > 0 && toRest <= o.travel) { home = true; slot = "R"; }
+    // 1.3.231 (INN24): an inn cover shift is never cut short by the walk home — the staffer leaves when relieved
+    if (o.travel > 0 && toRest <= o.travel && !(slot === "W" && isInnTpl(tpl))) { home = true; slot = "R"; }
   }
   return { slot, tpl, hour, off, home, toRest };
 }
@@ -1116,6 +1129,113 @@ export function innStep(acc, dt, mood) {
   a -= gain * INN.per;
   gain = Math.min(gain, INN.cap - (mood ?? 50));
   return { acc: a, gain };
+}
+
+// INN24 (1.3.231, his 00:23 CT 10-07 ruling; his 02:43 witness: "We're closed — come back in the morning" from Sven the
+// Innkeeper in full daylight). Mechanism: the shop window opened only while the world's time of day was inside a FIXED
+// 1000..11000 window, while the keeper's own shift (the "late" template) runs 3000..13000 — 17:00..19:00 is daylight, the
+// keeper stood at his station, and the window said closed. Now the inn keeps a ROTA over its own staff (the people whose
+// job is the inn): one = a lone keeper 06..23; two = day 06..18 + night 18..06; three or more = day 06..14 (the keeper),
+// night 22..06, evening 14..22, the rest serving staff 13..21. The cover shifts start on the hour (no id offset, so no
+// handover gap), are never cut short by the walk home, and take no whole day off (8- and 12-hour days). The window is
+// open while ANY staffer is on duty (innStatus); the inn's first INN24.cover stations are hired after the town's posts and
+// before the shops (hireClasses; D-C1006-WATCH: priority classes kept, nearest within each). A body WITHOUT a home rests
+// in the inn as a paying guest while it has beds free (innGuests; the night is billed purse -> the inn's till, lodgeBill).
+export const INN24 = { cover: 3, bedP: 24,
+  solo: "inn_solo", pair: ["inn_long_d", "inn_long_n"], rota: ["inn_day", "inn_night", "inn_eve"], extra: "inn_serve" };
+const INN_TPLS = new Set(["inn_solo", "inn_long_d", "inn_long_n", "inn_day", "inn_eve", "inn_night", "inn_serve"]);
+/** INN24: is `tpl` one of the inn's rota templates? */
+export function isInnTpl(tpl) { return INN_TPLS.has(tpl); }
+/** INN24: the inn's staff in census P on sim day `day` (alive, grown, job = the inn's id) */
+export function innStaff(P, innId, day) {
+  return (P && P.list ? P.list : []).filter((q) => q.alive && q.job === innId && (day === undefined || stage(q, day) !== "child"));
+}
+/** INN24: the rota of an inn's staff -> Map(pid -> template). The keeper first, then by id. */
+export function innRota(staff) {
+  const s = (staff || []).filter((q) => q && q.alive !== false).sort((a, b) => (b.keeper ? 1 : 0) - (a.keeper ? 1 : 0) || a.id - b.id);
+  const m = new Map();
+  if (s.length === 1) m.set(s[0].id, INN24.solo);
+  else if (s.length === 2) { m.set(s[0].id, INN24.pair[0]); m.set(s[1].id, INN24.pair[1]); }
+  else s.forEach((q, i) => m.set(q.id, i < INN24.rota.length ? INN24.rota[i] : INN24.extra));
+  return m;
+}
+/** INN24: who of the staff is on duty at world time (tod, day) -> { on: [persons], rota, next: ticks until someone is
+ *  (0 when open now; null: nobody ever) }. o = { seed } (the town's seed: the serving staff's day off). The walk home is
+ *  not counted here: a staffer still in his W hours is at the counter. */
+export function innStatus(staff, tod, day, o = {}) {
+  const rota = innRota(staff);
+  const list = [...rota.keys()].map((id) => staff.find((q) => q.id === id));
+  const onAt = (t, d) => list.filter((q) => shiftAt(q, t, d, { tpl: rota.get(q.id), seed: o.seed || 0, keeper: !!q.keeper }).slot === "W");
+  const on = onAt(tod, day);
+  if (on.length) return { on, rota, next: 0 };
+  for (let k = 50; k <= 48000 && list.length; k += 50) {
+    const A = day * 24000 + tod + k, d = Math.floor(A / 24000);
+    if (onAt(A - d * 24000, d).length) return { on, rota, next: k };
+  }
+  return { on, rota, next: null };
+}
+/** INN24: the split of the open jobs into hiring classes — the town's posts (string ids), the inn's COVER (up to
+ *  INN24.cover staff at each inn, counting those already there), the shops (numeric ids). A cover entry is a share of its
+ *  inn's own vacancies (x.base): taking it takes one of the inn's. */
+export function hireClasses(openJobs, living) {
+  const town = [], cover = [], shops = [];
+  for (const j of openJobs || []) {
+    if (typeof j.id !== "number") { town.push(j); continue; }
+    shops.push(j);
+    if (j.kind !== "inn") continue;
+    const have = (living || []).filter((q) => q.alive && q.job === j.id).length;
+    const k = Math.min(Math.max(0, INN24.cover - have), j.vacancies || 0);
+    if (k > 0) cover.push({ ...j, vacancies: k, base: j });
+  }
+  return { town, cover, shops };
+}
+/** INN24: tonight's guests — the homeless living people (lowest ids first) for the inn's beds less its residents */
+export function innGuests(list, beds, innId) {
+  const L = (list || []).filter((q) => q.alive);
+  const free = Math.max(0, (beds || 0) - L.filter((q) => q.home === innId).length);
+  if (!free) return [];
+  return L.filter((q) => !q.home).sort((a, b) => a.id - b.id).slice(0, free).map((q) => q.id);
+}
+/** INN24: the night's bill for n guests from a purse (pennies): { n, price, paid } — a short purse pays what it holds */
+export function lodgeBill(n, purse, bed = INN24.bedP) {
+  const price = Math.max(0, n) * bed;
+  return { n: Math.max(0, n), price, paid: Math.max(0, Math.min(price, Math.floor(purse || 0))) };
+}
+
+// LEISURE (1.3.231, his 02:44 CT 10-07 screenshot at -168 68 125: four civs bunched on the square around the well in
+// daylight). Mechanism (the clock, 1.3.230): leisureGoal offered the square's ring at EVERY hour as one of 2..4 equal
+// options and a neighbourhood centre's WELL front; the rest slot sent every body without a home to the square (all night,
+// and all day for the night watch). Now the idle places are weighted by kind, the square only at its hours (the midday
+// market, dusk), never a well; a body without a home rests at the inn or a shelter (the clock's restGoal).
+export const LEISURE = { phase: 2500, market: [5000, 7000],
+  w: { home: 4, work: 1, shop: 3, centre: 3, park: 3, inn: 1, square: 0 },
+  dusk: { inn: 3, square: 3 }, marketSquare: 2, homelessInn: 2 };
+/** LEISURE: the weight of each kind of idle place now. f = { dusk, tod, housed } */
+export function leisureWeights(f = {}) {
+  const w = { ...LEISURE.w };
+  if (!f.housed) { w.home = 0; w.inn += LEISURE.homelessInn; }
+  if (f.dusk) { w.inn = Math.max(w.inn, LEISURE.dusk.inn); w.square = LEISURE.dusk.square; }
+  else if (f.tod >= LEISURE.market[0] && f.tod < LEISURE.market[1]) w.square = LEISURE.marketSquare;
+  return w;
+}
+/** LEISURE: one of the candidates [{ kind, at }] for person n in phase `phase`, weighted by w (deterministic); null when
+ *  no candidate has weight */
+export function leisurePick(cands, n, phase, w) {
+  const C = (cands || []).filter((c) => (w[c.kind] || 0) > 0);
+  if (!C.length) return null;
+  const tot = C.reduce((a, c) => a + w[c.kind], 0);
+  let h = hash32((Number(n) * 2654435761 + Math.imul(Number(phase) | 0, 40503)) >>> 0, 0x1E15) % tot;
+  for (const c of C) { if (h < w[c.kind]) return c; h -= w[c.kind]; }
+  return C[0];
+}
+/** LEISURE: a standing spot beside one of the park's four benches (layPark: benches beside the cross paths, the paths at
+ *  x = cx and z = cz), k mod 4; null when the park is not laid */
+export function parkSpot(park, k) {
+  if (!park || !park.done || !park.box) return null;
+  const [x0, x1, z0, z1] = park.box, cx = (x0 + x1) >> 1, cz = (z0 + z1) >> 1;
+  const S = [[cx, cz - 3], [cx, cz + 3], [cx - 3, cz], [cx + 3, cz]];
+  const [x, z] = S[((Number(k) % 4) + 4) % 4];
+  return { x: x + 0.5, y: park.H + 1, z: z + 0.5 };
 }
 
 // BF7 — places: a jobless person takes the free job NEAREST his home, a person without a home the room nearest his work,

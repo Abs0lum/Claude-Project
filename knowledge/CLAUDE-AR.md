@@ -11,7 +11,8 @@ version of this same law. Where the two differ, the newer dated one wins and the
 
 ## 0. EFFORT LAW — ALWAYS THINK AT THE HIGHEST LEVEL
 
-- Every session runs at the highest effort the venue offers: Claude Code `ultracode` on (`/effort ultracode`; the settings
+- Every session runs at the highest effort the venue offers. The effort slider's top stop is **Ultracode**, one above
+  **Max** (witnessed in his app 2026-10-07). Claude Code: `ultracode` on (`/effort ultracode`; the settings
   file in `claude-settings/settings.json` turns it on with `"ultracode": true` and `"effortLevel": "xhigh"`), extended
   thinking always on. If the venue cannot go that high, say so once and use its highest level.
 - High effort means behaviour, not only a setting:

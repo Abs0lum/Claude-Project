@@ -1,0 +1,907 @@
+{
+ "127": {
+  "pick": 1,
+  "id": "trono1",
+  "pack": "feudal",
+  "wood": "dark_oak",
+  "parts": {
+   "7": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red (seat cushion)"
+   },
+   "4": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red (back panel)"
+   }
+  },
+  "before_materials": {
+   "post": 8,
+   "end": 4,
+   "board": 48
+  },
+  "after_materials": {
+   "post": 8,
+   "end": 4,
+   "board": 36,
+   "cloth_red.png": 12
+  },
+  "source_texture_leak": false
+ },
+ "32": {
+  "pick": 2,
+  "id": "fireplace1-1",
+  "pack": "feudal",
+  "wood": "dark_oak",
+  "parts": {
+   "8": {
+    "key": "log / log_end",
+    "texture": "pw_hearth_log_lit + pw_hearth_log_end_lit (RP-04, 0 px new)"
+   },
+   "9": {
+    "key": "log / log_end",
+    "texture": "pw_hearth_log_lit + pw_hearth_log_end_lit (RP-04, 0 px new)"
+   },
+   "10": {
+    "key": "log / log_end",
+    "texture": "pw_hearth_log_lit + pw_hearth_log_end_lit (RP-04, 0 px new)"
+   },
+   "1": {
+    "key": "bed",
+    "texture": "pw_hearth_embers (RP-04)"
+   },
+   "2": {
+    "key": "bed",
+    "texture": "pw_hearth_embers (RP-04)"
+   },
+   "3": {
+    "key": "bed",
+    "texture": "pw_hearth_embers (RP-04)"
+   },
+   "4": {
+    "key": "bed",
+    "texture": "pw_hearth_ash (RP-04)"
+   },
+   "7": {
+    "key": "soot",
+    "texture": "pw_hearth_soot on the inner face (RP-04)"
+   },
+   "+2": {
+    "key": "flame",
+    "texture": "pw_hearth_flame flipbook (RP-04) on 2 ADDED crossed planes"
+   }
+  },
+  "before_materials": {
+   "stone": 68,
+   "keep": 6
+  },
+  "after_materials": {
+   "stone": 47,
+   "pw_hearth_embers.png": 6,
+   "pw_hearth_ash.png": 2,
+   "pw_hearth_soot.png": 1,
+   "pw_hearth_log_end_lit.png": 6,
+   "pw_hearth_log_lit.png": 12,
+   "pw_hearth_flame_f0.png": 4
+  },
+  "source_texture_leak": false
+ },
+ "33": {
+  "pick": 2,
+  "id": "fireplace-top1-1",
+  "pack": "feudal",
+  "wood": "dark_oak",
+  "parts": {
+   "3": {
+    "key": "soot",
+    "texture": "pw_hearth_soot (flue opening)"
+   }
+  },
+  "before_materials": {
+   "stone": 32
+  },
+  "after_materials": {
+   "stone": 30,
+   "pw_hearth_soot.png": 2
+  },
+  "source_texture_leak": false
+ },
+ "57": {
+  "pick": 3,
+  "id": "estante4",
+  "pack": "feudal",
+  "wood": "dark_oak",
+  "parts": {
+   "8": {
+    "key": "book",
+    "texture": "pw_furn_book spine1/cover1/pages"
+   },
+   "9": {
+    "key": "book",
+    "texture": "pw_furn_book spine4/cover4/pages"
+   },
+   "10": {
+    "key": "book",
+    "texture": "pw_furn_book spine7/cover7/pages"
+   },
+   "11": {
+    "key": "book",
+    "texture": "pw_furn_book spine2/cover2/pages"
+   },
+   "12": {
+    "key": "book",
+    "texture": "pw_furn_book cover0 (open book boards)"
+   },
+   "13": {
+    "key": "book",
+    "texture": "pw_furn_book cover0 (open book boards)"
+   },
+   "14": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written (top half)"
+   },
+   "15": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written (top half)"
+   },
+   "16": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written (top half)"
+   },
+   "17": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written (top half)"
+   },
+   "18": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written (top half)"
+   },
+   "19": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written (top half)"
+   }
+  },
+  "before_materials": {
+   "end": 2,
+   "post": 4,
+   "board": 114
+  },
+  "after_materials": {
+   "end": 2,
+   "post": 4,
+   "board": 66,
+   "pw_furn_book.png": 36,
+   "pw_furn_parchment.png": 12
+  },
+  "source_texture_leak": false
+ },
+ "71": {
+  "pick": 5,
+  "id": "libro_cocina1",
+  "pack": "craftopia",
+  "wood": "dark_oak",
+  "parts": {
+   "0": {
+    "key": "book",
+    "texture": "pw_furn_book cover1/spine1"
+   },
+   "4": {
+    "key": "book",
+    "texture": "pw_furn_book cover1/spine1"
+   },
+   "1": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written"
+   },
+   "2": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written"
+   },
+   "3": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written"
+   },
+   "5": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written"
+   },
+   "6": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written"
+   },
+   "7": {
+    "key": "paper",
+    "texture": "pw_furn_parchment page_written"
+   },
+   "10": {
+    "key": "brass",
+    "texture": "pw_furn_brass (page clips)"
+   },
+   "11": {
+    "key": "brass",
+    "texture": "pw_furn_brass (page clips)"
+   }
+  },
+  "before_materials": {
+   "keep": 24,
+   "post": 10,
+   "end": 2,
+   "board": 8
+  },
+  "after_materials": {
+   "pw_furn_book.png": 12,
+   "pw_furn_parchment.png": 12,
+   "dark_oak_planks_v0.png": 6,
+   "stripped_dark_oak_log.png": 10,
+   "pw_furn_brass.png": 4
+  },
+  "source_texture_leak": false
+ },
+ "76": {
+  "pick": 6,
+  "id": "globe",
+  "pack": "rustic",
+  "wood": "oak",
+  "parts": {
+   "7": {
+    "key": "globe",
+    "texture": "pw_furn_globe side0..3"
+   },
+   "3": {
+    "key": "brass",
+    "texture": "pw_furn_brass (meridian ring + pin)"
+   },
+   "4": {
+    "key": "brass",
+    "texture": "pw_furn_brass (meridian ring + pin)"
+   },
+   "5": {
+    "key": "brass",
+    "texture": "pw_furn_brass (meridian ring + pin)"
+   },
+   "6": {
+    "key": "brass",
+    "texture": "pw_furn_brass (meridian ring + pin)"
+   }
+  },
+  "before_materials": {
+   "keep": 48
+  },
+  "after_materials": {
+   "stripped_oak_log.png": 6,
+   "oak_planks_v0.png": 12,
+   "pw_furn_brass.png": 24,
+   "pw_furn_globe.png": 6
+  },
+  "source_texture_leak": false
+ },
+ "78": {
+  "pick": 7,
+  "id": "telescopio",
+  "pack": "craftopia",
+  "wood": "oak",
+  "parts": {
+   "0": {
+    "key": "brass",
+    "texture": "pw_furn_brass tube; lens region on both ends"
+   },
+   "1": {
+    "key": "brass",
+    "texture": "pw_furn_brass brass_dark (draw sleeve)"
+   }
+  },
+  "before_materials": {
+   "post": 26,
+   "end": 10
+  },
+  "after_materials": {
+   "pw_furn_brass.png": 12,
+   "post": 18,
+   "end": 6
+  },
+  "source_texture_leak": false
+ },
+ "61": {
+  "pick": 4,
+  "id": "libreriarust1",
+  "pack": "craftopia",
+  "wood": "dark_oak",
+  "parts": {
+   "5": {
+    "key": "book",
+    "texture": "pw_furn_book spine5/cover5/pages"
+   },
+   "6": {
+    "key": "book",
+    "texture": "pw_furn_book spine0/cover0/pages"
+   },
+   "7": {
+    "key": "book",
+    "texture": "pw_furn_book spine3/cover3/pages"
+   },
+   "8": {
+    "key": "book",
+    "texture": "pw_furn_book spine6/cover6/pages"
+   },
+   "9": {
+    "key": "book",
+    "texture": "pw_furn_book spine1/cover1/pages"
+   },
+   "10": {
+    "key": "book",
+    "texture": "pw_furn_book spine4/cover4/pages"
+   },
+   "11": {
+    "key": "book",
+    "texture": "pw_furn_book spine7/cover7/pages"
+   },
+   "12": {
+    "key": "book",
+    "texture": "pw_furn_book spine2/cover2/pages"
+   }
+  },
+  "before_materials": {
+   "board": 90
+  },
+  "after_materials": {
+   "board": 42,
+   "pw_furn_book.png": 48
+  },
+  "source_texture_leak": false
+ },
+ "62": {
+  "pick": 4,
+  "id": "libreriarust3",
+  "pack": "craftopia",
+  "wood": "dark_oak",
+  "parts": {
+   "2": {
+    "key": "book",
+    "texture": "pw_furn_book spine6/cover6/pages"
+   },
+   "3": {
+    "key": "book",
+    "texture": "pw_furn_book spine1/cover1/pages"
+   },
+   "4": {
+    "key": "book",
+    "texture": "pw_furn_book spine4/cover4/pages"
+   },
+   "5": {
+    "key": "book",
+    "texture": "pw_furn_book spine7/cover7/pages"
+   },
+   "6": {
+    "key": "book",
+    "texture": "pw_furn_book spine2/cover2/pages"
+   },
+   "10": {
+    "key": "book",
+    "texture": "pw_furn_book spine5/cover5/pages"
+   },
+   "11": {
+    "key": "book",
+    "texture": "pw_furn_book spine0/cover0/pages"
+   },
+   "12": {
+    "key": "book",
+    "texture": "pw_furn_book spine3/cover3/pages"
+   }
+  },
+  "before_materials": {
+   "board": 90
+  },
+  "after_materials": {
+   "board": 42,
+   "pw_furn_book.png": 48
+  },
+  "source_texture_leak": false
+ },
+ "63": {
+  "pick": 4,
+  "id": "libreriarust5",
+  "pack": "craftopia",
+  "wood": "dark_oak",
+  "parts": {
+   "3": {
+    "key": "book",
+    "texture": "pw_furn_book spine7/cover7/pages"
+   },
+   "4": {
+    "key": "book",
+    "texture": "pw_furn_book spine2/cover2/pages"
+   },
+   "7": {
+    "key": "book",
+    "texture": "pw_furn_book spine5/cover5/pages"
+   },
+   "8": {
+    "key": "book",
+    "texture": "pw_furn_book spine0/cover0/pages"
+   },
+   "9": {
+    "key": "book",
+    "texture": "pw_furn_book spine3/cover3/pages"
+   },
+   "10": {
+    "key": "book",
+    "texture": "pw_furn_book spine6/cover6/pages"
+   },
+   "11": {
+    "key": "book",
+    "texture": "pw_furn_book spine1/cover1/pages"
+   }
+  },
+  "before_materials": {
+   "board": 84
+  },
+  "after_materials": {
+   "board": 42,
+   "pw_furn_book.png": 42
+  },
+  "source_texture_leak": false
+ },
+ "64": {
+  "pick": 4,
+  "id": "libreriarust6",
+  "pack": "craftopia",
+  "wood": "dark_oak",
+  "parts": {
+   "3": {
+    "key": "book",
+    "texture": "pw_furn_book spine0/cover0/pages"
+   },
+   "4": {
+    "key": "book",
+    "texture": "pw_furn_book spine3/cover3/pages"
+   },
+   "6": {
+    "key": "book",
+    "texture": "pw_furn_book spine6/cover6/pages"
+   },
+   "7": {
+    "key": "book",
+    "texture": "pw_furn_book spine1/cover1/pages"
+   },
+   "8": {
+    "key": "book",
+    "texture": "pw_furn_book spine4/cover4/pages"
+   }
+  },
+  "before_materials": {
+   "board": 66
+  },
+  "after_materials": {
+   "board": 36,
+   "pw_furn_book.png": 30
+  },
+  "source_texture_leak": false
+ },
+ "79": {
+  "pick": 8,
+  "id": "pizarra",
+  "pack": "craftopia",
+  "wood": "oak",
+  "parts": {
+   "5": {
+    "key": "slate",
+    "texture": "pw_furn_slate board"
+   },
+   "0": {
+    "key": "slate",
+    "texture": "pw_furn_slate chalk (chalk + duster)"
+   },
+   "1": {
+    "key": "slate",
+    "texture": "pw_furn_slate chalk (chalk + duster)"
+   }
+  },
+  "before_materials": {
+   "keep": 41,
+   "board": 2
+  },
+  "after_materials": {
+   "pw_furn_slate.png": 14,
+   "stripped_oak_log.png": 24,
+   "oak_planks_v0.png": 6
+  },
+  "source_texture_leak": false
+ },
+ "38": {
+  "pick": 10,
+  "id": "barril2",
+  "pack": "feudal",
+  "wood": "spruce",
+  "parts": {
+   "2": {
+    "key": "cask",
+    "texture": "pw_furn_cask_spruce (staves + 2 iron hoops)"
+   },
+   "3": {
+    "key": "cask",
+    "texture": "pw_furn_cask_spruce (staves + 2 iron hoops)"
+   },
+   "4": {
+    "key": "cask",
+    "texture": "pw_furn_cask_spruce (staves + 2 iron hoops)"
+   },
+   "5": {
+    "key": "cask",
+    "texture": "pw_furn_cask_spruce (staves + 2 iron hoops)"
+   },
+   "0": {
+    "key": "board",
+    "texture": "planks (cask heads; was cloth:silver / source)"
+   },
+   "1": {
+    "key": "board",
+    "texture": "planks (cask heads; was cloth:silver / source)"
+   },
+   "6": {
+    "key": "board",
+    "texture": "planks (cask heads; was cloth:silver / source)"
+   }
+  },
+  "before_materials": {
+   "board": 39,
+   "keep": 2,
+   "cloth:silver": 1,
+   "post": 16,
+   "end": 8
+  },
+  "after_materials": {
+   "spruce_planks_v0.png": 18,
+   "board": 16,
+   "pw_furn_cask_spruce.png": 8,
+   "post": 16,
+   "end": 8
+  },
+  "source_texture_leak": false
+ },
+ "1": {
+  "pick": 9,
+  "id": "classic_nightstand",
+  "pack": "rustic",
+  "wood": "oak",
+  "parts": {
+   "17": {
+    "key": "brass",
+    "texture": "pw_furn_brass (drawer pull)"
+   },
+   "18": {
+    "key": "brass",
+    "texture": "pw_furn_brass (drawer pull)"
+   }
+  },
+  "before_materials": {
+   "post": 64,
+   "end": 32,
+   "board": 18
+  },
+  "after_materials": {
+   "post": 56,
+   "end": 28,
+   "board": 18,
+   "pw_furn_brass.png": 12
+  },
+  "source_texture_leak": false
+ },
+ "3": {
+  "pick": 9,
+  "id": "classic_nightstand_left",
+  "pack": "rustic",
+  "wood": "oak",
+  "parts": {
+   "12": {
+    "key": "brass",
+    "texture": "pw_furn_brass (drawer pull)"
+   },
+   "13": {
+    "key": "brass",
+    "texture": "pw_furn_brass (drawer pull)"
+   }
+  },
+  "before_materials": {
+   "end": 22,
+   "post": 44,
+   "board": 18
+  },
+  "after_materials": {
+   "end": 18,
+   "post": 36,
+   "board": 18,
+   "pw_furn_brass.png": 12
+  },
+  "source_texture_leak": false
+ },
+ "4": {
+  "pick": 9,
+  "id": "classic_nightstand_middle",
+  "pack": "rustic",
+  "wood": "oak",
+  "parts": {
+   "7": {
+    "key": "brass",
+    "texture": "pw_furn_brass (drawer pull)"
+   },
+   "8": {
+    "key": "brass",
+    "texture": "pw_furn_brass (drawer pull)"
+   }
+  },
+  "before_materials": {
+   "end": 12,
+   "post": 24,
+   "board": 18
+  },
+  "after_materials": {
+   "end": 8,
+   "post": 16,
+   "board": 18,
+   "pw_furn_brass.png": 12
+  },
+  "source_texture_leak": false
+ },
+ "96": {
+  "pick": 11,
+  "id": "carpa1",
+  "pack": "feudal",
+  "wood": "spruce",
+  "parts": {
+   "0": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red (canopy)"
+   },
+   "2": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red (valance)"
+   },
+   "3": {
+    "key": "cloth2",
+    "texture": "pw_furn_cloth tint cream (flaps)"
+   },
+   "4": {
+    "key": "cloth2",
+    "texture": "pw_furn_cloth tint cream (flaps)"
+   },
+   "5": {
+    "key": "cloth2",
+    "texture": "pw_furn_cloth tint cream (flaps)"
+   }
+  },
+  "before_materials": {
+   "cloth:yellow": 4,
+   "end": 2,
+   "post": 4,
+   "cloth:white": 6
+  },
+  "after_materials": {
+   "cloth_red.png": 4,
+   "end": 2,
+   "post": 4,
+   "cloth_cream.png": 6
+  },
+  "source_texture_leak": false
+ },
+ "101": {
+  "pick": 11,
+  "id": "mesaplegable",
+  "pack": "craftopia",
+  "wood": "spruce",
+  "parts": {},
+  "before_materials": {
+   "post": 30,
+   "end": 8,
+   "board": 6
+  },
+  "after_materials": {
+   "post": 30,
+   "end": 10,
+   "board": 6
+  },
+  "source_texture_leak": false
+ },
+ "131": {
+  "pick": 12,
+  "id": "cortina_cerrada",
+  "pack": "craftopia",
+  "wood": "dark_oak",
+  "parts": {
+   "8": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "9": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "10": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "11": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "12": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "13": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "14": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "15": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "16": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "17": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "18": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "19": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "20": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "21": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "2": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "3": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "4": {
+    "key": "post",
+    "texture": "stripped log (curtain pole; was cloth:red)"
+   },
+   "5": {
+    "key": "post",
+    "texture": "stripped log (curtain pole; was cloth:red)"
+   },
+   "0": {
+    "key": "iron",
+    "texture": "pw_furn_iron (pole brackets; was cloth:red)"
+   },
+   "1": {
+    "key": "iron",
+    "texture": "pw_furn_iron (pole brackets; was cloth:red)"
+   },
+   "6": {
+    "key": "brass",
+    "texture": "pw_furn_brass (finials; was cloth:red)"
+   },
+   "7": {
+    "key": "brass",
+    "texture": "pw_furn_brass (finials; was cloth:red)"
+   }
+  },
+  "before_materials": {
+   "cloth:red": 52
+  },
+  "after_materials": {
+   "pw_furn_iron.png": 4,
+   "cloth_red.png": 32,
+   "stripped_dark_oak_log.png": 12,
+   "pw_furn_brass.png": 4
+  },
+  "source_texture_leak": false
+ },
+ "132": {
+  "pick": 12,
+  "id": "cortina_abierta",
+  "pack": "craftopia",
+  "wood": "dark_oak",
+  "parts": {
+   "5": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "6": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "7": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "8": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "9": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "10": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "11": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "12": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "13": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "14": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "15": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "16": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "1": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "4": {
+    "key": "cloth",
+    "texture": "pw_furn_cloth tint red"
+   },
+   "0": {
+    "key": "post",
+    "texture": "stripped log (curtain pole; was cloth:red)"
+   },
+   "19": {
+    "key": "post",
+    "texture": "stripped log (curtain pole; was cloth:red)"
+   },
+   "2": {
+    "key": "iron",
+    "texture": "pw_furn_iron (pole brackets; was cloth:red)"
+   },
+   "3": {
+    "key": "iron",
+    "texture": "pw_furn_iron (pole brackets; was cloth:red)"
+   },
+   "17": {
+    "key": "brass",
+    "texture": "pw_furn_brass (finials; was cloth:red)"
+   },
+   "18": {
+    "key": "brass",
+    "texture": "pw_furn_brass (finials; was cloth:red)"
+   }
+  },
+  "before_materials": {
+   "cloth:red": 42
+  },
+  "after_materials": {
+   "stripped_dark_oak_log.png": 12,
+   "cloth_red.png": 26,
+   "pw_furn_iron.png": 4,
+   "pw_furn_brass.png": 4
+  },
+  "source_texture_leak": false
+ }
+}

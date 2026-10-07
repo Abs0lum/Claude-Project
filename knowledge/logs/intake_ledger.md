@@ -168,3 +168,94 @@ S214248 (1MwsDtL9ZFatVCJ6scDwh9oIFgAgATnYb) VIEWED full-res halves 21:5x
 - VIEWED Screenshot_20261006-233457.png
 - VIEWED Screenshot_20261006-233500.png
 - VIEWED Screenshot_20261006-233502.png
+
+## INTAKE 2026-10-07 02:54 CT — his post-load report (Drive folder 12xuiuVkNB0uHZ4pldPD1NM7NvSXH39xY) + 2 content logs
+- VIEWED content log A (2e4f6d48, 112 lines, 9,282 B) — first line "[Scripting][warning]-[PW-VERSION] BP-03 Identification Diagnostics v1.3.34 — version-flag law"
+- VIEWED content log B "before exit" (3bfced19, 130 lines, 11,516 B) — same first line
+- VIEWED Screenshot_20261007-024339.png
+- VIEWED Screenshot_20261007-024347.png
+- VIEWED Screenshot_20261007-024351.png
+- VIEWED Screenshot_20261007-024359.png
+- VIEWED Screenshot_20261007-024400.png
+- VIEWED Screenshot_20261007-024423.png
+- VIEWED Screenshot_20261007-024449.png
+- VIEWED Screenshot_20261007-024450.png
+- VIEWED Screenshot_20261007-024451.png
+- VIEWED Screenshot_20261007-024452.png
+- VIEWED Screenshot_20261007-024452 (1).png
+
+## BLOCKS worker sub-intake 2026-10-07 (paintings + bed subset of screens-1007; lead already viewed 46/46)
+- VIEWED Screenshot_20261006-233329.png
+- VIEWED Screenshot_20261006-233331.png
+- VIEWED Screenshot_20261006-233351.png
+- VIEWED Screenshot_20261006-233358.png
+- VIEWED Screenshot_20261006-233359.png
+- VIEWED Screenshot_20261006-233404.png
+- VIEWED Screenshot_20261006-233407.png
+- VIEWED Screenshot_20261006-233443.png
+- VIEWED Screenshot_20261006-233446.png
+- VIEWED Screenshot_20261006-233457.png
+- VIEWED Screenshot_20261006-233500.png
+- VIEWED Screenshot_20261006-233502.png
+
+## CIV-LAND sub-intake 2026-10-07 (elevation/survey subset of screens-1007 + ramp shots of screens-1007b; lead viewed all)
+- VIEWED screens-1007/Screenshot_20261006-231943.png
+- VIEWED screens-1007/Screenshot_20261006-231944.png
+- VIEWED screens-1007/Screenshot_20261006-231952.png
+- VIEWED screens-1007/Screenshot_20261006-232350.png
+- VIEWED screens-1007/Screenshot_20261006-232351.png
+- VIEWED screens-1007/Screenshot_20261006-232353.png
+- VIEWED screens-1007/Screenshot_20261006-232402.png
+- VIEWED screens-1007/Screenshot_20261006-232413.png
+- VIEWED screens-1007/Screenshot_20261006-232505.png
+- VIEWED screens-1007/Screenshot_20261006-232507.png
+- VIEWED screens-1007/Screenshot_20261006-232508.png
+- VIEWED screens-1007/Screenshot_20261006-232510.png
+- VIEWED screens-1007b/Screenshot_20261007-024339.png
+- VIEWED screens-1007b/Screenshot_20261007-024347.png
+- VIEWED screens-1007b/Screenshot_20261007-024351.png
+- VIEWED screens-1007b/Screenshot_20261007-024359.png
+- VIEWED screens-1007b/Screenshot_20261007-024400.png
+- VIEWED screens-1007b/Screenshot_20261007-024423.png
+- VIEWED screens-1007b/Screenshot_20261007-024449.png
+- VIEWED screens-1007b/Screenshot_20261007-024450.png
+- VIEWED screens-1007b/Screenshot_20261007-024451.png
+- VIEWED screens-1007b/Screenshot_20261007-024452.png
+## TREES sheets intake 1007 (full-res crops)
+TREE-DODECAGON-BEFORE-AFTER-birch_mature.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-birch_old.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-birch_young.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-oak_mature.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-oak_old.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-oak_young.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-spruce_mature.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-spruce_old.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-BEFORE-AFTER-spruce_young.png VIEWED (4 full-res quadrants, 24/24 pairs)
+TREE-DODECAGON-OVERVIEW.png VIEWED (1882x1242, displayed at full res)
+## RAMPS slice4 03:47 CT — dirt screens
+- Screenshot_20261007-024450.png VIEWED full-res
+- Screenshot_20261007-024451.png VIEWED full-res
+- Screenshot_20261007-024452 (1).png VIEWED full-res
+- Screenshot_20261007-024452.png VIEWED full-res
+## RAMPS slice5 03:50 CT — shadow screens
+- Screenshot_20261007-024339.png VIEWED full-res
+- Screenshot_20261007-024347.png VIEWED full-res
+## TREES cone sheet intake 1007
+SPRUCE-CONE-TIP-BEFORE-AFTER.png left half VIEWED
+SPRUCE-CONE-TIP-BEFORE-AFTER.png right half VIEWED
+
+## INTAKE 2026-10-07 11:27 CT — shadows on ramps, door vs ramp, shops closed, dirt (Drive 12xuiuVk…) + content log 0ed34583 (200 lines, first "[BIGCANOPY] v0.15.18 loaded")
+- VIEWED content log 0ed34583
+- (re-uploads 024449..024452(1) already VIEWED at 02:54)
+- VIEWED Screenshot_20261007-100642.png
+- VIEWED Screenshot_20261007-100644.png
+- VIEWED Screenshot_20261007-100644 (1).png
+- VIEWED Screenshot_20261007-100647.png
+- VIEWED Screenshot_20261007-100648.png
+- VIEWED Screenshot_20261007-100717.png
+- VIEWED Screenshot_20261007-100807.png
+- VIEWED Screenshot_20261007-101004.png
+- VIEWED Screenshot_20261007-101007.png
+- VIEWED Screenshot_20261007-101151.png
+- VIEWED Screenshot_20261007-101242.png
+- VIEWED Screenshot_20261007-101839.png
