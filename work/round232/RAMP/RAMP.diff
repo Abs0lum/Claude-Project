@@ -1,0 +1,828 @@
+diff -ruN -x node_modules /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_clock.js /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/pw_civ_clock.js
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_clock.js	2026-10-07 16:42:14.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/pw_civ_clock.js	2026-10-07 20:04:47.713532760 +0000
+@@ -3130,6 +3130,10 @@
+ const KIT_SIDE_HALVES = [70, 55, 40];      // the halves tried for a new parallel: 70 carries the grid windows at +-56 from its junction
+ const STREET_CUT = 6, STREET_FILL = 6;     // D-C538 / D-C545: a street is cut or filled by at most this (0.0.14: a parallel lay 50 deep in a mountain)
+ const STREET_OPTS = { maxCut: STREET_CUT, maxFill: STREET_FILL, ramp8: true };   // 1.3.228: the 8-block ramp preferred (his 12:20)
++// 1.3.232 (#5, his 04:12 CT 10-07 + D-GH1007-RAMP8 "one by one"): the narrow ROADS (bench roads, gate stubs) take the 8-part
++// ramp too, laid block by block in layRoadOp (pw:ramp_cobble_8_e1..e8; no structure); his 4-part stays where the road is
++// steep (chosen by cost, as the streets' ramp7) and on every climbing leg (legJob, the band legs: switchbacks stay 4-part)
++const ROAD_OPTS = { ramp8: true };
+ const KIT_MAX_LEN = 220;                   // a street grows up to this length
+ const KIT_GROW = 30;                       // cells added when a street grows
+ const PLAN_MS = 40;
+@@ -4435,8 +4439,9 @@
+   for (let i = Math.floor(x0 / 16); i <= Math.floor(x1 / 16); i++) for (let j = Math.floor(z0 / 16); j <= Math.floor(z1 / 16); j++) for (const bx of fc.grid.get(`${i},${j}`) || []) out.add(bx);
+   return out;
+ }
+-function kitFree(s, st = null, lsite = null, allowStilts = false, whyOut = null, allowPlateau = false) {
++function kitFree(s, st = null, lsite = null, allowStilts = false, whyOut = null, allowPlateau = false, def = null) {
+   const fc = freeSets(s);
++  const boxCut = def ? PLAN.boxClearOf(def) : undefined;                    // 1.3.232 (#7): the plot stage's air rows cap the box cut
+   const bodies = fc.bodies;
+   const legacy = fc.legacy;
+   const tunnels = fc.tunnels;
+@@ -4466,7 +4471,7 @@
+       // 1.3.232 (#6 a): a floor raised to a ramp's high level (slot.doorRamp) stands on a plateau pad at P = slot.H
+       const rampDoor = !!(slot.doorRamp && slot.doorRamp.raised > 0);
+       if (slot.plateau || rampDoor || (allowPlateau && land.kind === "reject")) {
+-        const pl = plateauLand(s, lsite, f, slot, fc);
++        const pl = plateauLand(s, lsite, f, slot, fc, false, boxCut);
+         if (pl.kind === "plateau") { land = pl; slot.land = pl; why.plateauOk = (why.plateauOk || 0) + 1; }
+         else {
+           why.plateauNo = (why.plateauNo || 0) + 1;
+@@ -4521,7 +4526,7 @@
+ }
+ /** slot -> its plateau, judged on the site field (the ground before the town worked it): the land record, or
+  *  { kind: "reject", why } (why: cut / fill / drop / water / plot / street / tree / unknown) */
+-function plateauLand(s, lsite, f, slot, fc, park = false) {
++function plateauLand(s, lsite, f, slot, fc, park = false, boxCut = undefined) {   // 1.3.232 (#7): boxCut = PLAN.boxClearOf(def)
+   const street = slot._street || null;
+   const [, wa] = KIT.tw(f, slot.box[0], slot.box[2]), [, wb] = KIT.tw(f, slot.box[1], slot.box[3]);
+   const xz = plateauFrame(f, slot.side, slot.at);
+@@ -4533,6 +4538,7 @@
+     ground: (q, d) => { const [x, z] = xz(q, d); const h = lsite.at(x, z); return h === undefined ? undefined : { h, wet: lsite.isWater(x, z) }; },
+     blocked: (q, d) => { const [x, z] = xz(q, d); return plateauBlocked(s, fc, x, z); },
+     boxFillMax: park ? PLAN.PLATEAU.fillMax : undefined,
++    boxCutMax: boxCut,
+   });
+   return res.ok ? plateauRecord(res, slot) : { kind: "reject", why: res.why, cut: 0, fill: 0, water: 0 };
+ }
+@@ -4559,7 +4565,7 @@
+ function kitSlot(s, st, family, only = null, allowStilts = false, allowPlateau = false) {
+   const def = BUILDINGS[family];
+   const sz = shaftZOf(def);
+-  const free = kitFree(s, st, liveSite(world.getDimension(st.dim), siteOf(st)), allowStilts, null, allowPlateau);
++  const free = kitFree(s, st, liveSite(world.getDimension(st.dim), siteOf(st)), allowStilts, null, allowPlateau, def);   // 1.3.232 (#7): + def
+   const plOpts = allowPlateau ? { riseMax: PLAN.PLATEAU.frontRise, doorStep: PLAN.PLATEAU.doorStep } : null;   // 1.3.230 (PL)
+   const kind = (def.stem || "").replace(/^mvv_/, "").replace(/_[a-d]_r\d+$/, "");
+   const district = DISTRICT[kind] || "homes";
+@@ -4679,8 +4685,8 @@
+   const fz = def.size[2], sz = shaftZOf(def);
+   const lsite = liveSite(world.getDimension(st.dim), siteOf(st));
+   const why = { plot: 0, tunnel: 0, body: 0, legacy: 0, land: 0 };          // zeros: kitFree counts with ++ (diag1 showed these as '?')
+-  const free = kitFree(s, null, lsite, false, why);
+-  const freeP = kitFree(s, null, lsite, false, {}, true);                     // 1.3.230 (PL): the plateau's own counters, apart
++  const free = kitFree(s, null, lsite, false, why, false, def);               // 1.3.232 (#7): + def (the box cap)
++  const freeP = kitFree(s, null, lsite, false, {}, true, def);                // 1.3.230 (PL): the plateau's own counters, apart
+   const out = { family, fz, streets: [], total: { corridor: 0, flat: 0, fits: 0, why: {} } };
+   const charge = (o, k) => { o[k] = (o[k] || 0) + 1; out.total.why[k] = (out.total.why[k] || 0) + 1; };
+   for (const street of st.streets.filter((x) => x.kind === "kit")) {
+@@ -4868,7 +4874,7 @@
+   const def = BUILDINGS[family];
+   const sz = shaftZOf(def);
+   const lsite = liveSite(world.getDimension(st.dim), siteOf(st));
+-  const free = kitFree(s, st, lsite, false);
++  const free = kitFree(s, st, lsite, false, null, false, def);               // 1.3.232 (#7): + def (the box cap)
+   const fz = def.size[2];
+   for (const rec of (st.roads7 || []).filter((r) => r.ln && r.laid && r.ln.galleryDone)) {   // the gallery first: its lining would close an earlier branch
+     const ln = laneOf(st, rec.id);
+@@ -5895,7 +5901,7 @@
+         for (let k = 1; k <= 7 && ok; k++) { const g = lsite.at(dep.P[0] + dep.d[0] * k, dep.P[1] + dep.d[1] * k); if (g !== undefined && g - dep.H > KIT.ROAD_CUT_MAX) ok = false; }
+         if (!ok) { console.warn(`[CIV-CLOCK] bench road: departure ${dep.P} ${dep.d} H${dep.H} faces a hillside (skipped)`); continue; }
+         const stats = {};
+-        const road = yield* KIT.planRoadJob(ground, blocked, dep.P, dep.d, P1, d1, dep.H, H1, 6, stats);
++        const road = yield* KIT.planRoadJob(ground, blocked, dep.P, dep.d, P1, d1, dep.H, H1, 6, stats, ROAD_OPTS);   // 1.3.232 (#5)
+         if (!road) { console.warn(`[CIV-CLOCK] bench road ${dep.P} ${dep.d} H${dep.H} -> ${P1} ${d1} H${H1}: ${JSON.stringify(stats)}`); continue; }
+         commitBench(stId, c, dep, road);
+         return;
+@@ -5931,15 +5937,17 @@
+   if (from) (from.roadsOut = from.roadsOut || []).push({ end: dep.end, to: id });
+   const rid = (st.nextRoadId = (st.nextRoadId || 1)) ; st.nextRoadId++;
+   // the road record: compact (cells as flat ints, H, turns, ramp segs)
++  // 1.3.232 (#5): each ramp keeps its own length ([a, dir, len]: 8 = the 8-part, 4 = his 4-part); rampLen = old records'
+   const rec = { id: rid, from: dep.sid, end: dep.end, to: id, cells: road.cells.map(([x, z]) => [x, z]), H: road.H, turns: road.turns,
+-                ramps: road.segs.filter((q) => q.kind === "ramp").map((q) => [q.a, q.dir]), rampLen: KIT.ROAD_RAMP,
++                ramps: road.segs.filter((q) => q.kind === "ramp").map((q) => [q.a, q.dir, q.len]), rampLen: KIT.ROAD_RAMP,
+                 dirs: road.dirs.map((d) => d[0] === 1 ? 0 : d[1] === 1 ? 1 : d[0] === -1 ? 2 : 3) };
+   (st.roads7 = st.roads7 || []).push(rec);
+   kitTouch(st);
+   st.kitQueue = st.kitQueue || [];
+   for (let i = 0; i < rec.cells.length; i += 7) st.kitQueue.push({ op: "road", rid, a: i, len: Math.min(7, rec.cells.length - i), H: rec.H[i], sid: id });
+   queueKitStreet(st, street);
+-  st.log.push(`day ${s.simDays.toFixed(0)}: a new bench ${c.D} blocks out at ${c.anchor[0]} ${c.anchor[1]} (street ${id}, ${c.L} cells) reached by a ${rec.cells.length}-cell road with ${rec.turns.length} turns from street ${dep.sid}'s ${dep.end}`);
++  const n8 = rec.ramps.filter((r) => r[2] === KIT.RAMP8).length;             // 1.3.232 (#5): the witness count
++  st.log.push(`day ${s.simDays.toFixed(0)}: a new bench ${c.D} blocks out at ${c.anchor[0]} ${c.anchor[1]} (street ${id}, ${c.L} cells) reached by a ${rec.cells.length}-cell road with ${rec.turns.length} turns from street ${dep.sid}'s ${dep.end} (${n8} 8-part ramp(s), ${rec.ramps.length - n8} 4-part)`);
+   delete st.benchFail;
+   save();
+ }
+@@ -5996,7 +6004,7 @@
+   other.tees = other.tees || []; other.tees.push({ t: tOther, side: -side, H: Hn, leg: true });
+   const rid = (st.nextRoadId = (st.nextRoadId || 1)); st.nextRoadId++;
+   const rec = { id: rid, from: baseId, end: `leg:${tj}`, to: otherId, leg: true, cells: road.cells.map(([x, z]) => [x, z]), H: road.H, turns: road.turns,
+-                ramps: road.segs.filter((q) => q.kind === "ramp").map((q) => [q.a, q.dir]), rampLen: KIT.ROAD_RAMP,
++                ramps: road.segs.filter((q) => q.kind === "ramp").map((q) => [q.a, q.dir, q.len]), rampLen: KIT.ROAD_RAMP,   // 1.3.232 (#5): + len
+                 dirs: road.dirs.map((d) => d[0] === 1 ? 0 : d[1] === 1 ? 1 : d[0] === -1 ? 2 : 3) };
+   (st.roads7 = st.roads7 || []).push(rec);
+   kitTouch(st);
+@@ -6075,13 +6083,23 @@
+ function layRoadOp(dim, s, st, rec, a, len) {
+   const boxes = plotBoxes(s, 0, null);
+   const inPlot = (x, z) => boxes.some(([x0, x1, z0, z1]) => x >= x0 && x <= x1 && z >= z0 && z <= z1);
+-  const rampAt = new Map();                                                  // cell index -> [q 1..4, uphill dir index]
++  const rampAt = new Map();                                                  // cell index -> [part "4_q1".."8_e8", uphill dir index]
+   const RL = rec.rampLen || 7;                                               // the segment's length: 4 (his 4-part ramp) or the old 7
+-  for (const [ra, dir] of rec.ramps) {
++  for (const [ra, dir, len] of rec.ramps) {
++    // 1.3.232 (#5, D-GH1007-RAMP8 "one by one"): an 8-part ramp, laid block by block as the street piece t_ramp8 lays its
++    // lane (BP-02 1.3.230): every cell of the segment carries a part, e1 at the low end .. e8 at the high end, facing uphill
++    if (len === KIT.RAMP8) {
++      for (let q = 0; q < KIT.RAMP8; q++) {
++        const i = ra + q, di = rec.dirs[Math.min(i, rec.dirs.length - 1)];
++        rampAt.set(i, [`8_e${dir > 0 ? q + 1 : KIT.RAMP8 - q}`, dir > 0 ? di : (di + 2) % 4]);
++      }
++      continue;
++    }
++    const L4 = len || RL;                                                    // 1.3.232 (#5): the record's own length; old records: rampLen
+     for (let q = 0; q < 4; q++) {
+-      const i = dir > 0 ? ra + q : ra + (RL - 4) + q;                       // up: the first 4 cells; down: the last 4
++      const i = dir > 0 ? ra + q : ra + (L4 - 4) + q;                       // up: the first 4 cells; down: the last 4
+       const di = rec.dirs[Math.min(i, rec.dirs.length - 1)];
+-      rampAt.set(i, [dir > 0 ? q + 1 : 4 - q, dir > 0 ? di : (di + 2) % 4]);
++      rampAt.set(i, [`4_q${dir > 0 ? q + 1 : 4 - q}`, dir > 0 ? di : (di + 2) % 4]);
+     }
+   }
+   const turnSet = new Set(rec.turns);
+@@ -6118,7 +6136,7 @@
+       for (let k = -2; k <= 2; k++) {
+         try {
+           const b = dim.getBlock({ x: x + p[0] * k, y: H + 1, z: z + p[1] * k });
+-          if (b) b.setPermutation(BlockPermutation.resolve(`pw:ramp_cobble_4_q${q}`, { "minecraft:cardinal_direction": CARD4[up] }));
++          if (b) b.setPermutation(BlockPermutation.resolve(`pw:ramp_cobble_${q}`, { "minecraft:cardinal_direction": CARD4[up] }));   // 1.3.232 (#5): q = "4_qN" | "8_eN"
+         } catch (e) { console.warn(`[CIV-CLOCK] road ramp: ${e}`); }
+       }
+     }
+@@ -6134,6 +6152,14 @@
+   }
+   return done.size;
+ }
++/** 1.3.232 (#5): a road record's ramps for the witness list (/scriptevent pw:clock roadramps): one row per ramp — its first
++ *  cell along the road (x, z), the ramp row y (H + 1), parts 8 (the 8-part, e1..e8) or 4 (his 4-part), the uphill facing */
++function roadRampList(rec) {
++  return (rec.ramps || []).map(([a, dir, len]) => {
++    const [x, z] = rec.cells[a], di = rec.dirs[a];
++    return { x, y: rec.H[a] + 1, z, parts: len === KIT.RAMP8 ? 8 : 4, up: CARD4[dir > 0 ? di : (di + 2) % 4] };
++  });
++}
+ 
+ // ------------------------------------------------------------------------------------------------ WALLS + GATES (D-C534 §3, tier city; a second ring at metropolis)
+ const WALL_H = 5, WALL_MARGIN = 10, GATE_W = 13, TOWER = 8;
+@@ -6197,11 +6223,11 @@
+       const cells = [];
+       for (let q = 0; q <= k; q++) cells.push(KIT.cellOf(street.f, t0 + q * (end === "start" ? -1 : 1), 6));
+       const ground = cells.map(([x, z]) => { const g = lsite.at(x, z); return g === undefined ? undefined : { g, water: lsite.isWater(x, z) }; });
+-      const plan = KIT.planProfile(ground, { startDead: false, endDead: false, startH: H, flat: [[0, Math.min(6, cells.length - 1)]], maxCut: 4, maxFill: 4, noBridge: true });
++      const plan = KIT.planProfile(ground, { startDead: false, endDead: false, startH: H, flat: [[0, Math.min(6, cells.length - 1)]], maxCut: 4, maxFill: 4, noBridge: true, ...ROAD_OPTS });   // 1.3.232 (#5): the 8-part on the stubs
+       if (plan.cost === Infinity) continue;
+       const rid = (st.nextRoadId = (st.nextRoadId || 1)); st.nextRoadId++;
+       const di = d[0] === 1 ? 0 : d[1] === 1 ? 1 : d[0] === -1 ? 2 : 3;
+-      const rec = { id: rid, from: street.id, end, to: 0, gate: true, cells, H: plan.H, turns: [], ramps: plan.segs.filter((q) => q.kind === "ramp").map((q) => [q.a, q.dir]), dirs: cells.map(() => di) };
++      const rec = { id: rid, from: street.id, end, to: 0, gate: true, cells, H: plan.H, turns: [], ramps: plan.segs.filter((q) => q.kind === "ramp").map((q) => [q.a, q.dir, q.len]), dirs: cells.map(() => di) };   // 1.3.232 (#5): + len
+       (st.roads7 = st.roads7 || []).push(rec);
+       (street.roadsOut = street.roadsOut || []).push({ end, to: 0, gate: true });
+       for (let i = 0; i < cells.length; i += 7) (st.kitQueue = st.kitQueue || []).push({ op: "road", rid, a: i, len: Math.min(7, cells.length - i), H: plan.H[i], sid: street.id });
+@@ -8284,6 +8310,20 @@
+     foundSettlement(s, dimId, x0, z0, seed, reply);
+     return;
+   }
++  // 1.3.232 (#5): /scriptevent pw:clock roadramps — where every narrow road's ramps are (the 8-part road ramps' witness list)
++  if (cmd === "roadramps") {
++    const st = targetSettlement(s, p, a);
++    if (!st) { reply("§c[CLOCK] no settlement here"); return; }
++    const roads = (st.roads7 || []).filter((r) => (r.ramps || []).length);
++    if (!roads.length) { reply(`§e[CLOCK] ${st.name}: no road ramps yet (§7/scriptevent pw:clock bench§e opens a bench road)`); return; }
++    for (const r of roads.slice(0, 8)) {
++      const rows = roadRampList(r), n8 = rows.filter((q) => q.parts === 8).length;
++      const kind = r.gate ? "gate stub" : r.leg ? "climbing leg" : r.ln ? "lane" : "bench road";
++      reply(`§e[CLOCK] road ${r.id} (${kind}, ${r.cells.length} cells): ${n8} 8-part, ${rows.length - n8} 4-part — ${rows.slice(0, 6).map((q) => `${q.x} ${q.y} ${q.z} ${q.parts}-part up ${q.up}`).join(" · ")}${rows.length > 6 ? " …" : ""}`);
++    }
++    if (roads.length > 8) reply(`§7… ${roads.length - 8} more road(s)`);
++    return;
++  }
+   if (cmd === "bench") {
+     const st = targetSettlement(s, p, a);
+     if (!st || !st.kit) { reply("§c[CLOCK] no kit settlement here"); return; }
+diff -ruN -x node_modules /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_plan.js /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/pw_civ_plan.js
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_plan.js	2026-10-07 05:04:25.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/pw_civ_plan.js	2026-10-07 19:48:38.152717721 +0000
+@@ -110,9 +110,12 @@
+ //   * the pad stands at the street's height at the door, or one step above it (never below any sidewalk cell of its
+ //     frontage: the floor is the highest sidewalk) — a frontage may rise PLATEAU.frontRise (2) instead of FRONT_RISE (1);
+ //   * the pad = the house's 1-cell RING (the box itself is the structure's own cut and fill); its cut and its fill are each
+-//     at most cutMax / fillMax (6);
++//     at most cutMax / fillMax (9; 1.3.232 #7, ruling D-GH1007-PLATEAU 2026-10-07 — was 6); the BOX's cut is also at most
++//     the rows the house's plot stage clears above its floor (g.boxCutMax = boxClearOf(def): a hill above them would stay
++//     on the roof — cottage_s / butcher / farms 8, quarry / well 6);
+ //   * DOWNHILL: a ring cell whose outside lies 2+ below the pad is a STONE RETAINING WALL (from the ground outside + 1 to
+-//     P - 1, the pad's top on it); a drop of more than one lift gets BERM lifts beyond (top P - 3, P - 6; R5: walls <= 3);
++//     P - 1, the pad's top on it); a drop of more than one lift gets BERM lifts beyond (top P - 3, P - 6, P - 9; R5: walls
++//     <= 3);
+ //   * UPHILL: the hill beyond the ring is cut in LIFTS — one clad wall (<= 3 high) per cell of setback (stepBerm's law), up
+ //     to faceLifts lifts; a hill that would overtop the last lift refuses the plateau;
+ //   * NEVER INTO another plot (its box holds the hill / abuts: a face stops there; a ring or berm cell refuses), a street,
+@@ -123,7 +126,8 @@
+ //     (a bridge, a dead end) -> a soakaway pit (gravel lower half);
+ //   * the COST (stone for the walls, clad faces and gutter; an iron grate; the earth moved as labourer days) is added to
+ //     the plot's first paid stage bill (plateauBillInto).
+-export const PLATEAU = { cutMax: 6, fillMax: 6, lift: 3, faceLifts: 3, frontRise: 2, doorStep: 1, boxDrop: 12,
++// 1.3.232 (#7, ruling D-GH1007-PLATEAU 2026-10-07): cutMax / fillMax 9 (was 6) — three lifts of 3 at the pad
++export const PLATEAU = { cutMax: 9, fillMax: 9, lift: 3, faceLifts: 3, frontRise: 2, doorStep: 1, boxDrop: 12,
+   earthPerDay: 80, wageLabour: 72, soakDepth: 8, hallTop: 8 };
+ 
+ /** the pad's height from the frontage's sidewalk heights Hs (q = 0 .. fz - 1) and the door's q: { ok, P, rise, step, why } */
+@@ -138,6 +142,13 @@
+   return { ok: true, P: hi, rise, step };
+ }
+ 
++/** 1.3.232 (#7): the rows above the floor that a building's PLOT stage (stages/<stem>_s0) clears — all air from the floor
++ *  (datum_y) to its top row (size y - 1); read from the 43 s0 templates of BP-02 1.3.230. A plateau box may be cut no
++ *  deeper than this, or the hill above it would stay on the roof. undefined without a def. */
++export function boxClearOf(def) {
++  return def && def.size ? def.size[1] - 1 - (def.datum_y || 0) : undefined;
++}
++
+ /** the outward directions of a ring cell (never the street side: d = -1 is the corridor) */
+ function ringOut(q, d, fz, depth) {
+   const out = [];
+@@ -150,7 +161,8 @@
+ /** plan one plateau. g = { fz, depth, P, Hring(q) -> street H at ring t (q -1 .. fz) | undefined, hallAt(q) -> the sewer
+  *  hall's street H under that t | undefined, ground(q, d) -> { h, wet } | undefined (unread), blocked(q, d) -> null |
+  *  "plot" | "street" | "water" | "tree", skipBox (the job: the house already stands), boxFillMax (default boxDrop; the
+- *  park: fillMax), dials }. q runs along the frontage (0 .. fz - 1 = the box), d away from the corridor (0 = the row
++ *  park: fillMax), boxCutMax (1.3.232 #7: the rows the house's plot stage clears, boxClearOf(def); default cutMax), dials }.
++ *  q runs along the frontage (0 .. fz - 1 = the box), d away from the corridor (0 = the row
+  *  against it, depth = the rear ring). Returns { ok, why, at } or { ok, P, cut, fill, ops, cutVol, fillVol, drain, bill }.
+  *  ops (in build order): pad {q, d, g, y: P, wall: y0 | null} · berm {q, d, g, y} · face {q, d, g, y, clad: [y0, y1] | null}
+  *  · gutter {q, d, y} · outlet {q, d, y, yBot, to} · link {q, k, y} (corridor cell k = 0..3 inward from its edge). */
+@@ -158,6 +170,7 @@
+   const dl = { ...PLATEAU, ...(g.dials || {}) };
+   const { fz, depth, P } = g;
+   const boxFillMax = g.boxFillMax ?? dl.boxDrop;
++  const boxCutMax = Math.min(dl.cutMax, g.boxCutMax ?? dl.cutMax);           // 1.3.232 (#7): never above the plot stage's air
+   const memo = new Map();
+   const G = (q, d) => { const k = q * 4099 + d; if (!memo.has(k)) memo.set(k, g.ground(q, d)); return memo.get(k); };
+   const B = (q, d) => (g.blocked ? g.blocked(q, d) : null);
+@@ -172,6 +185,7 @@
+       n++;
+       if (c.wet) { wet++; continue; }
+       if (c.h - P > cut) cut = c.h - P;
++      if (c.h - P > boxCutMax) return fail("cut", [q, d]);                    // 1.3.232 (#7): the hill would stay on the roof
+       if (P - c.h > boxFillMax) return fail("fill", [q, d]);
+     }
+     if (wet > n * RELIEF.water) return fail("water");
+diff -ruN -x node_modules /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_streets.js /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/pw_civ_streets.js
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/pw_civ_streets.js	2026-10-07 16:41:51.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/pw_civ_streets.js	2026-10-07 20:10:58.872605986 +0000
+@@ -20,7 +20,14 @@
+ // PREFERRED street ramp (street piece ramp8); his 7-cell ramp7 (the 4-part ramp + a 3-cell landing) only where there is no
+ // room for it (steep land, short stretches, switchbacks). opts.ramp8 turns the choice on (streets; the narrow roads keep
+ // the 4-part ramp).
++// 1.3.232 (#5, his 04:12 CT 10-07: "8-part on mild roads, 4-part only on steep; switchback legs stay 4-part"): the narrow
++// ROADS take opts.ramp8 too (planRoadJob opts) — the 8-part against his 4-part ramp, chosen by the same cost; the legs don't.
+ export const RAMP8 = 8, RAMP7_EXTRA = 12;   // the 7-cell ramp costs 12 more: chosen only when the 8-ramp cannot fit or would cost far more earthwork
++// 1.3.232 (#5): the same choice on the narrow ROADS (opts.ramp8 against his 4-part ramp): the 4-part costs ROAD4_EXTRA more.
++// A road's ends are fixed (a street end, a bench end), so the streets' 12 left ~27 % 4-parts on mild roads (40 roads on the
++// gate world's heightmap 20261005-190214, grade <= 1 in 8: 73 % 8-part); 48 -> 95 %, earthwork +20 % (all within the road's
++// cut / fill law), steep roads (> 1 in 4) unchanged at 6 % 8-part
++export const ROAD4_EXTRA = 48;
+ export const BRIDGE_DROP = 8;              // the ground this far below the sidewalk (or water) -> a plank bridge, no substructure
+ export const RULES = { strictDrop: true };   // the founding main street may relax it once (a settlement must stand somewhere)
+ export const BUILD_UP_MAX = 15;            // 1.3.224 (his 16:50): no street, embankment or dry-land pier over a drop of more than 15 at ANY column
+@@ -115,7 +122,7 @@
+   // down ramp (base H - 1); the other cells of the segment are flat at the upper level.
+   const R = opts.ramp || RAMP;
+   const rampH = (dir, H, q) => dir > 0 ? (q < 4 ? H : H + 1) : (q < R - 4 ? H : H - 1);
+-  const with8 = !!opts.ramp8 && R === RAMP;
++  const with8 = !!opts.ramp8 && (R === RAMP || R === ROAD_RAMP);           // 1.3.232 (#5): the roads' 4-part ramp too
+   const R8 = RAMP8;
+   const rampH8 = (dir, H) => (dir > 0 ? H : H - 1);           // every cell of the 8-ramp is a quarter of the climb: base = the lower level
+   const startDead = opts.startDead !== false, endDead = opts.endDead !== false;
+@@ -161,7 +168,7 @@
+       for (let di = 0; di < 2; di++) {
+         const dir = di === 0 ? 1 : -1, h2 = h + dir;
+         if (h2 < 0 || h2 >= NH) continue;
+-        let rc = with8 ? 5 + RAMP7_EXTRA : 5;                    // 1.3.228: with the 8-ramp on, the 7-cell ramp is the dearer choice
++        let rc = with8 ? 5 + (R === ROAD_RAMP ? ROAD4_EXTRA : RAMP7_EXTRA) : 5;   // 1.3.228: with the 8-ramp on, the 7-cell ramp is the dearer choice (1.3.232 #5: a road's 4-part, ROAD4_EXTRA)
+                                                                  // a price per ramp (review 19:1x: was 1.5 — hills came out as ramp after ramp with
+                                                                  // 3-cell flats between, no frontage left; now the land is terraced first)
+         for (let q = 0; q < R; q++) {
+@@ -947,7 +954,7 @@
+ /** the SHAPE pass: straight / L / Z / U / switchback / hairpin leg lists checked cheaply (length, ramp room, vetoes, no
+  *  self-overlap, a vertical band, a greedy profile), the best few profiled exactly. Fast and good on open hillsides; the
+  *  terrain search below takes over where ravines, humps and vetoes defeat fixed shapes. */
+-export function* planRoadShapesJob(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP = 6, stats = null) {
++export function* planRoadShapesJob(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP = 6, stats = null, opts = null) {   // 1.3.232 (#5): opts.ramp8
+   const shapes = roadShapes(P0, d0, P1, d1).concat(switchbackShapes(P0, d0, P1, d1), hairpinShapes(P0, d0, P1, d1));
+   const cands = [];
+   const climb = Math.abs(H1 - H0);
+@@ -1046,7 +1053,7 @@
+   let best = null;
+   for (const c of cands.slice(0, maxDP)) {
+     const flat = [[0, 6], [c.cells.length - 7, c.cells.length - 1]].concat(c.turns.map((i) => [i - 3, i + 3]));
+-    const plan = planProfile(c.gs, { startDead: false, endDead: false, startH: H0, endH: H1, flat, maxCut: ROAD_CUT_MAX, maxFill: ROAD_CUT, bridgeDrop: ROAD_CUT, ramp: ROAD_RAMP, rampOnBridge: true });
++    const plan = planProfile(c.gs, { startDead: false, endDead: false, startH: H0, endH: H1, flat, maxCut: ROAD_CUT_MAX, maxFill: ROAD_CUT, bridgeDrop: ROAD_CUT, ramp: ROAD_RAMP, rampOnBridge: true, ramp8: !!(opts && opts.ramp8) });
+     yield;
+     S.sdp++;
+     if (plan.cost === Infinity) { S.sdpFail++; continue; }
+@@ -1062,9 +1069,9 @@
+  *  profiled EXACTLY by planProfile (which may place the ramps differently but cannot do worse). A generator. */
+ export const ROAD_TUNE = { margin: 50, turn: 10, ramp: 2, yieldEvery: 60, hSpan: 8, maxPops: 80000, debug: 0 };   // 0.0.16: 60 pops per slice (a slice of 1,200 held the tick ~1 s); a search gives up at maxPops
+ const ROAD_SEARCH_MARGIN = ROAD_TUNE.margin, ROAD_TURN_COST = ROAD_TUNE.turn, ROAD_RAMP_COST = ROAD_TUNE.ramp, ROAD_YIELD = ROAD_TUNE.yieldEvery, ROAD_H_SPAN = ROAD_TUNE.hSpan;
+-export function* planRoadJob(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP = 6, stats = null) {
++export function* planRoadJob(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP = 6, stats = null, opts = null) {   // 1.3.232 (#5): opts = { ramp8 } (mild roads)
+   const S = stats || {};
+-  const byShapes = yield* planRoadShapesJob(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP, S);
++  const byShapes = yield* planRoadShapesJob(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP, S, opts);
+   if (byShapes) return byShapes;
+   S.pops = 0; S.dp = 0; S.dpFail = 0; S.noPath = 0;
+   const DIRS = [[1, 0], [0, 1], [-1, 0], [0, -1]];
+@@ -1226,7 +1233,7 @@
+   const gs = cells.map(([x, z]) => ground(x, z));
+   const L = cells.length;
+   const flat = [[0, 6], [L - 7, L - 1]].concat(turns.map((i) => [i - 3, i + 3]));
+-  const plan = planProfile(gs, { startDead: false, endDead: false, startH: H0, endH: H1, flat, maxCut: ROAD_CUT_MAX, maxFill: ROAD_CUT, bridgeDrop: ROAD_CUT, ramp: ROAD_RAMP, rampOnBridge: true });
++  const plan = planProfile(gs, { startDead: false, endDead: false, startH: H0, endH: H1, flat, maxCut: ROAD_CUT_MAX, maxFill: ROAD_CUT, bridgeDrop: ROAD_CUT, ramp: ROAD_RAMP, rampOnBridge: true, ramp8: !!(opts && opts.ramp8) });
+   yield;
+   S.dp++;
+   if (plan.cost === Infinity) {
+diff -ruN -x node_modules /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/fixtures/ramp_cobble_230.json /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/tests/fixtures/ramp_cobble_230.json
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/fixtures/ramp_cobble_230.json	1970-01-01 00:00:00.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/tests/fixtures/ramp_cobble_230.json	2026-10-07 19:54:20.674044586 +0000
+@@ -0,0 +1 @@
++{"blocks":{"pw:ramp_cobble_4_q1":{"collision_h":2,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_4_q2":{"collision_h":6,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_4_q3":{"collision_h":10,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_4_q4":{"collision_h":14,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e1":{"collision_h":2,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e2":{"collision_h":4,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e3":{"collision_h":6,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e4":{"collision_h":8,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e5":{"collision_h":10,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e6":{"collision_h":12,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e7":{"collision_h":14,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]},"pw:ramp_cobble_8_e8":{"collision_h":16,"rot":{"east":90,"north":180,"south":0,"west":270},"states":{"pw:snow":[0,1,2,3,4]},"trait_states":["minecraft:cardinal_direction"]}},"md5":{"pw_ramp_cobble_4_q1.json":"65b24810684d962ddd684d6d74b64f07","pw_ramp_cobble_4_q2.json":"e6dac92aca98f2afb168d855dac269b6","pw_ramp_cobble_4_q3.json":"7919e94cb46bc95d5fb7fcaf9440cf98","pw_ramp_cobble_4_q4.json":"f8664cd5b1b1deb7cba5b72be663bd76","pw_ramp_cobble_8_e1.json":"175295a0383a3a7663a89422edda90d4","pw_ramp_cobble_8_e2.json":"44ac31be8159603dacea497863aa990e","pw_ramp_cobble_8_e3.json":"ad4637e3bebad652bcd25cfabf682326","pw_ramp_cobble_8_e4.json":"a7df22c8f716e45d0f21df9f28539f13","pw_ramp_cobble_8_e5.json":"9ec2eb2466fd1ddd687ded52cf0c25bd","pw_ramp_cobble_8_e6.json":"e0a6dead238a7d2dbd19201f5421d4fa","pw_ramp_cobble_8_e7.json":"18eb44260a1c74b0c620ce3797aff204","pw_ramp_cobble_8_e8.json":"84c144cff889f92bd453591579bbca40","t_ramp8.mcstructure":"5533e5393617d731dc2abef03f41e236"},"source":"BP-02 1.3.230 (scratchpad/bp02-230), read by make_fixture.py","t_ramp8_lane":{"cells":[{"name":"pw:ramp_cobble_8_e1","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":0},{"name":"pw:ramp_cobble_8_e2","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":1},{"name":"pw:ramp_cobble_8_e3","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":2},{"name":"pw:ramp_cobble_8_e4","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":3},{"name":"pw:ramp_cobble_8_e5","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":4},{"name":"pw:ramp_cobble_8_e6","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":5},{"name":"pw:ramp_cobble_8_e7","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":6},{"name":"pw:ramp_cobble_8_e8","states":{"minecraft:cardinal_direction":"east","pw:snow":0},"x":7}],"native":"travel +x, low end x 0","size":[8,16,13]}}
+\ No newline at end of file
+diff -ruN -x node_modules /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/test_plateau.mjs /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/tests/test_plateau.mjs
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/test_plateau.mjs	2026-10-07 05:10:56.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/tests/test_plateau.mjs	2026-10-07 19:48:23.602264318 +0000
+@@ -16,7 +16,8 @@
+ const D = PLAN.PLATEAU;
+ 
+ // ------------------------------------------------------------------------------------------------ dials
+-ok("dials: cut 6, fill 6, lifts of 3, three face lifts, frontage rise 2, door step 1", D && D.cutMax === 6 && D.fillMax === 6 && D.lift === 3 && D.faceLifts === 3 && D.frontRise === 2 && D.doorStep === 1, D);
++// 1.3.232 (#7, ruling D-GH1007-PLATEAU 2026-10-07): the cut / fill dial is 9 (was 6)
++ok("dials: cut 9, fill 9, lifts of 3, three face lifts, frontage rise 2, door step 1", D && D.cutMax === 9 && D.fillMax === 9 && D.lift === 3 && D.faceLifts === 3 && D.frontRise === 2 && D.doorStep === 1, D);
+ 
+ // ------------------------------------------------------------------------------------------------ pad height
+ {
+@@ -67,7 +68,7 @@
+   for (let q = -1; q <= 9; q++) for (let d = 0; d <= 8 + 3; d++) oldCut = Math.max(oldCut, g(q, d) - 70);
+   ok("uphill 0.6: the old law rejects it (cut over box + ring + bench > 6)", oldCut > 6, oldCut);
+   const r = PLAN.planPlateau(site(g));
+-  ok("uphill 0.6: the plateau takes it (pad cut <= 6)", r.ok && r.cut <= 6 && r.cut === 5, r.why || r.cut);
++  ok("uphill 0.6: the plateau takes it (pad cut 5 <= cutMax)", r.ok && r.cut <= 6 && r.cut === 5, r.why || r.cut);
+   const faces = r.ops.filter((o) => o.kind === "face");
+   ok("uphill: a cut face stands behind the rear ring (rows beyond d = depth)", faces.length > 0 && faces.every((o) => o.d > 8 || o.q < -1 || o.q > 9), faces.slice(0, 4));
+   const clads = faces.filter((o) => o.clad);
+@@ -113,7 +114,7 @@
+   ok("cross slope: the uphill end gets a clad face (q < -1)", r.ops.some((o) => o.kind === "face" && o.q < -1 && o.clad), r.ops.filter((o) => o.kind === "face").slice(0, 3));
+   ok("cross slope: fill volume = the hollows of the ring + the berms", r.fillVol === r.ops.reduce((a, o) => a + (o.kind === "pad" ? Math.max(0, 70 - o.g) : o.kind === "berm" ? o.y - o.g : 0), 0), r.fillVol);
+   const deep = PLAN.planPlateau(site((q, d) => 76 - 2 * q));
+-  ok("a drop beyond the fill dial (6): refused (fill or drop)", !deep.ok && (deep.why === "fill" || deep.why === "drop" || deep.why === "cut"), deep.why);
++  ok("a drop beyond the fill dial (fill 12 > 9): refused (fill or drop)", !deep.ok && (deep.why === "fill" || deep.why === "drop" || deep.why === "cut"), deep.why);
+ }
+ 
+ // the NEVER-INTO rules
+@@ -169,6 +170,97 @@
+   ok("bill: a plot without a plateau keeps its bill", PLAN.plateauBillInto(bill, { kind: "level" }, 40, 120) === bill && PLAN.plateauBillInto(bill, null, 40, 120) === bill);
+ }
+ 
++// ------------------------------------------------------------------------------------------------ 1.3.232 (#7) THE DIAL AT 9
++// D-GH1007-PLATEAU (owner ruling 2026-10-07): cutMax / fillMax 6 -> 9. The deeper pad keeps every law of the 6-dial: clad
++// faces and walls of at most one lift (3), berm lifts at P - 3 / P - 6 / P - 9, protected trees never worked, and the
++// house's own plot stage still clears its box (the box's cut is capped by the rows the stage's air reaches).
++import { CIV_BUILDINGS } from "../pw_civ_buildings.js";
++{
++  const six = { cutMax: 6, fillMax: 6 };
++  // UPHILL 0.9 per cell: the rear ring (d 8) stands at 70 + floor(0.9 * 9) = 78 -> pad cut 8
++  const g9 = (q, d) => 70 + Math.floor(0.9 * (d + 1));
++  const r = PLAN.planPlateau(site(g9));
++  ok("dial 9: an uphill lot with pad cut 8 is taken", r.ok && r.cut === 8, r.why || r.cut);
++  const r6 = PLAN.planPlateau(site(g9, { dials: six }));
++  ok("dial 9: the same lot is refused at the old dial 6 (cut)", !r6.ok && r6.why === "cut", r6.why);
++  const faces = (r.ops || []).filter((o) => o.kind === "face");
++  ok("dial 9 uphill: every clad face is at most one lift (3) high", faces.length > 0 && faces.every((o) => !o.clad || (o.clad[0] <= o.clad[1] && o.clad[1] - o.clad[0] + 1 <= D.lift)), faces.filter((o) => o.clad && o.clad[1] - o.clad[0] + 1 > D.lift).slice(0, 4));
++  ok("dial 9 uphill: every face cell is cut to its lift (y = min(ground, P + 3 * row))", faces.every((o) => {
++    const row = o.d > 8 ? o.d - 8 : o.q < -1 ? -1 - o.q : o.q - 9;
++    return o.y === Math.min(o.g, 70 + D.lift * row);
++  }), faces.slice(0, 6));
++  ok("dial 9 uphill: the pad (ring) is level at P, no op inside the box", r.ok && r.ops.filter((o) => o.kind === "pad").every((o) => o.y === 70 && isRing(o)) && r.ops.every((o) => o.kind === "link" || !inBox(o)));
++  // DOWNHILL behind the house: ring at 68 (fill 2), the ground beyond falls 61, 59, 58, 57 (rows 1..4 out of the rear ring)
++  // -> the first outside cell lies 9 below the pad (exposure 9): three berm lifts at P - 3, P - 6, P - 9
++  const deepDown = (q, d) => (d <= 8 ? 68 : [61, 59, 58, 57][d - 9] ?? 57);
++  const dd = PLAN.planPlateau(site(deepDown));
++  ok("dial 9 downhill: a drop of 9 behind the pad is taken", dd.ok, dd.why);
++  const dd6 = PLAN.planPlateau(site(deepDown, { dials: six }));
++  ok("dial 9 downhill: refused at the old dial 6 (drop)", !dd6.ok && dd6.why === "drop", dd6.why);
++  const berms = dd.ok ? dd.ops.filter((o) => o.kind === "berm" && o.q === 4) : [];
++  ok("dial 9 downhill: three berm lifts behind the rear ring, tops P - 3, P - 6, P - 9 (rows d 9, 10, 11), none on row 12", JSON.stringify(berms.map((o) => [o.d, o.y])) === JSON.stringify([[9, 67], [10, 64], [11, 61]]), berms.map((o) => [o.d, o.y]));
++  const walls = dd.ok ? dd.ops.filter((o) => o.kind === "pad" && o.wall !== null) : [];
++  ok("dial 9 downhill: every retaining wall on the ring is at most one lift (P - wall <= 3)", walls.length > 0 && walls.every((o) => o.y - o.wall <= D.lift), walls.filter((o) => o.y - o.wall > D.lift).slice(0, 4));
++  ok("dial 9 downhill: every berm's stone face below its top is at most one lift where the next row is not a berm", dd.ok && dd.ops.filter((o) => o.kind === "berm").every((o) => {
++    const nxt = dd.ops.find((p) => p.kind === "berm" && ((o.d > 8 && p.q === o.q && p.d === o.d + 1) || (o.q > 9 && p.d === o.d && p.q === o.q + 1) || (o.q < -1 && p.d === o.d && p.q === o.q - 1)));
++    if (nxt) return o.y - nxt.y === D.lift;                                  // the next lift down, exactly one lift lower
++    const out = o.d > 8 ? deepDown(o.q, o.d + 1) : deepDown(o.q > 9 ? o.q + 1 : o.q - 1, o.d);   // the ground beyond the berm
++    return o.y - out <= D.lift + 1;                                          // a 3-course face + its top
++  }));
++  const deeper = PLAN.planPlateau(site((q, d) => (d <= 8 ? 68 : [60, 59, 58, 57][d - 9] ?? 57)));
++  ok("dial 9 downhill: a drop of 10 just outside the ring is still refused (drop)", !deeper.ok && deeper.why === "drop", deeper.why);
++  // PROTECTED TREES: the third lift (row 3 out) is worked now — a trunk there refuses the plateau; a trunk on row 4, where the
++  // ground already meets the last lift (not worked), does not matter
++  const t3 = PLAN.planPlateau(site(deepDown, { blocked: (q, d) => (d === 11 && q === 4 ? "tree" : null) }));
++  ok("dial 9: a protected tree on the third berm lift: refused (tree)", !t3.ok && t3.why === "tree", t3.why);
++  const t4 = PLAN.planPlateau(site(deepDown, { blocked: (q, d) => (d === 12 && q === 4 ? "tree" : null) }));
++  ok("dial 9: a tree beyond the last lift (ground meets it, never worked): no matter", t4.ok, t4.why);
++  const tf = PLAN.planPlateau(site(g9, { blocked: (q, d) => (d === 11 && q === 2 ? "tree" : null) }));
++  ok("dial 9: a protected tree in the deeper cut face (row 3): refused (tree)", !tf.ok && tf.why === "tree", tf.why);
++  // HEADROOM over the house: the box is never worked; the plot stage (s0) clears it with air from the floor to its top row
++  // (size y - 1 - datum_y; read from the 43 s0 templates of BP-02 1.3.230: cottage_s / butcher / farms +8, quarry / well
++  // +6). A box cell cut deeper than that would leave the hill on the roof -> the box's cut is capped there (g.boxCutMax).
++  const cs = CIV_BUILDINGS["pw:mvv_cottage_s_a_r1"], cm = CIV_BUILDINGS["pw:mvv_cottage_m_a_r1"], qu = CIV_BUILDINGS["pw:mvv_quarry_a_r1"];
++  ok("PLAN.boxClearOf: the rows the plot stage clears above the floor — cottage_s 8, cottage_m 10, quarry 6", typeof PLAN.boxClearOf === "function" && PLAN.boxClearOf(cs) === 8 && PLAN.boxClearOf(cm) === 10 && PLAN.boxClearOf(qu) === 6, typeof PLAN.boxClearOf === "function" && [PLAN.boxClearOf(cs), PLAN.boxClearOf(cm), PLAN.boxClearOf(qu)]);
++  const hillInBox = (q, d) => (q === 4 && d === 6 ? 79 : 70);                // one box cell 9 above the floor, the ring flat
++  const bx = PLAN.planPlateau(site(hillInBox));
++  ok("box cut 9 with no cap: within the dial (the cut is measured, the box never worked)", bx.ok && bx.cut === 9, bx.why || bx.cut);
++  const bxS = PLAN.planPlateau(site(hillInBox, { boxCutMax: 8 }));
++  ok("box cut 9 under a house whose plot stage clears 8 rows (cottage_s): refused (cut, at the box cell)", !bxS.ok && bxS.why === "cut" && JSON.stringify(bxS.at) === "[4,6]", bxS);
++  const bxM = PLAN.planPlateau(site(hillInBox, { boxCutMax: 10 }));
++  ok("box cut 9 under a house clearing 10 rows (cottage_m): taken (the cap never exceeds the dial)", bxM.ok && bxM.cut === 9, bxM.why);
++  const bx10 = PLAN.planPlateau(site((q, d) => (q === 4 && d === 6 ? 80 : 70), { boxCutMax: 10 }));
++  ok("box cut 10 under a house clearing 10 rows: still refused by the dial 9 (cut)", !bx10.ok && bx10.why === "cut", bx10.why);
++  ok("the box cap ignores the ring (a ring cell cut 9 next to a cottage_s box is the pad's own cut, worked to P)", PLAN.planPlateau(site((q, d) => (d === 8 ? 79 : 70), { boxCutMax: 8 })).ok);
++}
++// the DOOR LANDING (1.3.232 #6, test_doorramp): a floor raised to a ramp's high level stands on a pad at P = the floor; at
++// dial 9 a pad with fill 8 under it plans, and its works never touch the landing (the corridor's sidewalk rows in front of
++// the door, filled y H + 1 .. floor): the pad and the landing meet at the floor, side by side
++{
++  const f = K.frameOf(0, 0, [1, 0], [0, 1]);
++  const Hs3 = [60, 60, 60, 60, 60, 61, 61, 62, 62, 62, 62, 62];
++  const st3 = { a: 0, b: Hs3.length - 1, H: 60, Hs: Hs3, kinds: "ffffrrrrrfff" };
++  const w = K.placeAlong(f, { "1": [st3], "-1": [] }, { size: [8, 20, 9] }, null, 4.5, () => true, new Set(), 1, 1, [], { riseMax: 2, doorStep: 1 });
++  const P = w ? w.H : 62;
++  const g = { fz: 9, depth: 8, P, Hring: (q) => (w ? w.Hring[q + 1] : undefined), hallAt: (q) => (w ? w.Hring[q + 1] : undefined), ground: () => ({ h: P - 8, wet: false }), blocked: () => null };
++  const pp = PLAN.planPlateau(g);
++  ok("door landing: the raised ramp-door slot (floor 62) plans a pad over ground 8 below at dial 9", w && w.doorRamp && pp.ok && pp.P === 62 && pp.fill === 8, pp.why || pp.fill);
++  ok("door landing: the same pad is refused at the old dial 6 (fill)", !PLAN.planPlateau({ ...g, dials: { cutMax: 6, fillMax: 6 } }).ok);
++  const L = w ? K.landingCells(f, 1, w.doorT, (t) => Hs3[t - st3.a], P, "t") : [];
++  const cellsOf = (o) => {
++    if (o.kind === "link") { const [x, z] = K.cellOf(f, w.at + o.q, K.W - 1 - o.k); return [[x, o.y, z]]; }
++    const [x, z] = K.cellOf(f, w.at + o.q, K.W + o.d);
++    const y0 = o.kind === "outlet" ? o.yBot : o.kind === "gutter" ? P - 1 : o.kind === "face" ? Math.min(o.y, o.clad ? o.clad[0] : o.y) : (o.g ?? P) + 1;
++    const y1 = o.kind === "face" ? o.g + 2 : o.kind === "pad" ? Math.max(o.g, P) + 3 : o.y ?? P;
++    const out = [];
++    for (let y = y0; y <= y1; y++) out.push([x, y, z]);
++    return out;
++  };
++  const hit = pp.ok ? pp.ops.flatMap(cellsOf).filter(([x, y, z]) => L.some((c) => c.x === x && c.z === z && y >= c.y0 && y <= c.y1)) : ["no plan"];
++  ok("door landing: the plateau's works never touch a landing cell (the pad starts behind the corridor, w >= 13)", L.length > 0 && hit.length === 0, { L: L.length, hit: hit.slice(0, 4) });
++  ok("door landing: the landing's top and the pad stand at the same floor (P)", L.length > 0 && L.every((c) => c.y1 === pp.P), L.map((c) => c.y1));
++}
++
+ // ------------------------------------------------------------------------------------------------ the slot search (KIT.placeAlong)
+ // a steep street: one block every 4 cells — every 9-cell frontage spans a rise of 2 (the old law fits nothing here)
+ {
+@@ -235,7 +327,8 @@
+   };
+   const cutConst = (name) => { const i = src.indexOf(`const ${name} =`); return src.slice(i, src.indexOf(";\n", i) + 1); };
+   const H = 70;
+-  const ground0 = (x, z) => (z <= 12 ? H : H + Math.floor(0.6 * (z - 13 + 1)));
++  let slope = 0.6;                                              // 1.3.232 (#7): 0.9 below for the dial-9 lot
++  const ground0 = (x, z) => (z <= 12 ? H : H + Math.floor(slope * (z - 13 + 1)));
+   const over = new Map();                                       // (x,y,z) -> typeId set by the job
+   const kOf = (x, y, z) => `${x},${y},${z}`;
+   let asleep = () => false;
+@@ -313,6 +406,40 @@
+   const r3 = run({ key: "b:44" });
+   ok("clock plateauJob: a sleeping chunk -> it waits (many ticks), then the fallback; nothing set", r3.fell === 1 && r3.ticks > 1000 && over.size === 0, [r3, over.size]);
+   asleep = () => false;
++
++  // 1.3.232 (#7) the dial 9 on the clock's half
++  const Rm = src.match(/const R = PLAN\.PLATEAU\.faceLifts \+ (\d+);/);
++  const Rread = Rm ? D.faceLifts + Number(Rm[1]) : -1;
++  ok("clock plateauJob: its read radius covers the deepest berm ray (floor(fillMax / lift) + 1 rows) and face ray (faceLifts + 1)", Rread >= Math.floor(D.fillMax / D.lift) + 1 && Rread >= D.faceLifts + 1, { Rread, berm: Math.floor(D.fillMax / D.lift) + 1 });
++  // the box cap: the uphill 0.6 lot has a box cut of 4 (z 20: 70 + floor(0.6 * 8))
++  const capLow = C.plateauLand(S, lsite, street.f, { ...slot, box: [10, 18, 13, 20] }, { ...fc, boxes: [] }, false, 3);
++  ok("clock plateauLand: a box cut (4) beyond the rows the house's plot stage clears (3) -> reject (cut)", capLow.kind === "reject" && capLow.why === "cut", capLow);
++  const capOk = C.plateauLand(S, lsite, street.f, { ...slot, box: [10, 18, 13, 20] }, { ...fc, boxes: [] }, false, 8);
++  ok("clock plateauLand: the same lot under a house clearing 8 rows -> plateau", capOk.kind === "plateau" && capOk.cut === 5, capOk);
++  const calls = src.match(/kitFree\(s, [^\n]*?\);/g) || [];
++  ok("clock kitFree: hands the building's plot-stage rows to the plateau (PLAN.boxClearOf(def)); every caller with a site passes its def",
++     /function kitFree\(s, st = null, lsite = null, allowStilts = false, whyOut = null, allowPlateau = false, def = null\)/.test(src)
++     && /const boxCut = def \? PLAN\.boxClearOf\(def\) : undefined;/.test(src)
++     && src.includes("const pl = plateauLand(s, lsite, f, slot, fc, false, boxCut);")
++     && /function plateauLand\(s, lsite, f, slot, fc, park = false, boxCut = undefined\)/.test(src) && src.includes("boxCutMax: boxCut,")
++     && calls.length === 4 && calls.every((c) => /, def\);$/.test(c)), calls);
++  // HEADROOM on the deeper lot: slope 0.9 -> the rear ring at 78 (pad cut 8), faces at P + 3 / P + 6 / P + 9
++  slope = 0.9; over.clear(); delete house.plateauDone;
++  const r4 = run({ key: "b:45" });
++  ok("clock plateauJob dial 9: the deeper lot (pad cut 8) is cut, no fallback", r4.fell === 0 && house.plateauDone && house.plateauDone.ok, [r4, house.plateauDone]);
++  const ringXZ = [];
++  for (let x = 9; x <= 19; x++) for (let z = 13; z <= 21; z++) if (!(x >= 10 && x <= 18 && z <= 20)) ringXZ.push([x, z]);
++  const lowRoof = ringXZ.filter(([x, z]) => ![H + 1, H + 2, H + 3].every((y) => idAt(x, y, z) === "minecraft:air") || idAt(x, H, z) === "minecraft:air");
++  ok("clock plateauJob dial 9: headroom — every ring cell stands solid at P with open air P + 1 .. P + 3 above", ringXZ.length === 27 && lowRoof.length === 0, lowRoof.slice(0, 4).map(([x, z]) => [x, z, [H, H + 1, H + 2, H + 3].map((y) => idAt(x, y, z))]));
++  ok("clock plateauJob dial 9: the rear face climbs in clad lifts of 3 (P+1..P+3, P+4..P+6, P+7..P+9), air above each",
++     [[22, H + 1, H + 3], [23, H + 4, H + 6], [24, H + 7, H + 9]].every(([z, y0, y1]) => idAt(14, y0, z) === "minecraft:stone_bricks" && idAt(14, y1, z) === "minecraft:stone_bricks" && idAt(14, y1 + 1, z) === "minecraft:air"),
++     [22, 23, 24].map((z) => [H + 1, H + 3, H + 4, H + 6, H + 7, H + 9, H + 10].map((y) => idAt(14, y, z).replace("minecraft:", ""))));
++  const inBoxSet = [...over.keys()].map((k) => k.split(",").map(Number)).filter(([x, , z]) => x >= 10 && x <= 18 && z >= 13 && z <= 20);
++  ok("clock plateauJob dial 9: never a block inside the house's box", inBoxSet.length === 0, inBoxSet.slice(0, 4));
++  over.clear(); delete house.plateauDone; trees.add("14,24");
++  const r5 = run({ key: "b:46" });
++  ok("clock plateauJob dial 9: a trunk on the third lift of the deeper face (row 3) -> refused (tree), the fallback, nothing set", r5.fell === 1 && house.plateauDone && house.plateauDone.why === "tree" && over.size === 0, [r5, house.plateauDone, over.size]);
++  trees.clear(); over.clear(); delete house.plateauDone; slope = 0.6;
+ }
+ 
+ console.log(`test_plateau: ${n - bad}/${n} passed`);
+diff -ruN -x node_modules /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/test_roadramp8.mjs /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/tests/test_roadramp8.mjs
+--- /home/user/Claude-Project/work/inbox-2026-10-07-1714/bp02-231-src/tests/test_roadramp8.mjs	1970-01-01 00:00:00.000000000 +0000
++++ /tmp/claude-0/-home-user-Claude-Project/cf664ecd-d690-5a25-974e-eb1c9de1da5f/scratchpad/w232-RAMP/tests/test_roadramp8.mjs	2026-10-07 20:10:46.783043927 +0000
+@@ -0,0 +1,290 @@
++// test_roadramp8.mjs — 1.3.232 (#5): 8-part ramps on mild narrow ROADS, laid block by block. His rulings: 04:12 CT 10-07
++// "8-part on mild roads, 4-part only on steep; switchback legs stay 4-part"; D-GH1007-RAMP8 "one by one (block by block)" —
++// the staged structure r_ramp8.mcstructure stays unused. Covers:
++//   * the REAL blocks (tests/fixtures/ramp_cobble_230.json, read from BP-02 1.3.230 by make_fixture.py): ids, states, and
++//     the street piece t_ramp8's cobble lane — the model the road copies (e1 at the low end, cardinal_direction = uphill);
++//   * the profile (KIT.planProfile with the road's law + opts.ramp8): mild -> 8-part, steep -> 4-part, the cut / fill law,
++//     continuity; without opts.ramp8 (the legs) nothing changes;
++//   * the road planner (KIT.planRoadJob opts) and the clock's wiring (static checks on the source);
++//   * the clock's road layer: layRoadOp cut from pw_civ_clock.js and run on a stand-in world (every block it sets).
++// Usage: node tests/test_roadramp8.mjs
++import * as KIT from "../pw_civ_streets.js";
++import { readFileSync, readdirSync } from "node:fs";
++
++let n = 0, bad = 0;
++const ok = (name, cond, info) => { n++; if (!cond) bad++; console.log(`${cond ? "PASS" : "FAIL"} ${n} ${name}${cond ? "" : " — " + String(JSON.stringify(info)).slice(0, 500)}`); };
++const FX = JSON.parse(readFileSync(new URL("./fixtures/ramp_cobble_230.json", import.meta.url), "utf8"));
++const run = (gen) => { let r = gen.next(); while (!r.done) r = gen.next(); return r.value; };
++const CARDS = ["north", "south", "east", "west"];
++
++// ------------------------------------------------------------------------------------------------ 1. the real blocks
++{
++  const e = [1, 2, 3, 4, 5, 6, 7, 8].map((k) => FX.blocks[`pw:ramp_cobble_8_e${k}`]);
++  ok("fixture: pw:ramp_cobble_8_e1..e8 exist in BP-02 1.3.230", e.every(Boolean), Object.keys(FX.blocks));
++  ok("fixture: their states are cardinal_direction (placement trait) + pw:snow 0..4 only — no pw:var (SLIM)", e.every((b) => b && JSON.stringify(b.trait_states) === '["minecraft:cardinal_direction"]'
++     && JSON.stringify(Object.keys(b.states)) === '["pw:snow"]' && JSON.stringify(b.states["pw:snow"]) === "[0,1,2,3,4]"), e.map((b) => b && b.states));
++  ok("fixture: e_k's collision top is 2k px (one block over 8 cells; e8 is a full block)", e.every((b, i) => b && b.collision_h === 2 * (i + 1)), e.map((b) => b && b.collision_h));
++  ok("fixture: the same facing table as the 4-part (south 0, east 90, north 180, west 270)", e.every((b) => JSON.stringify(b.rot) === JSON.stringify(FX.blocks["pw:ramp_cobble_4_q1"].rot)), e.map((b) => b && b.rot));
++  const lane = FX.t_ramp8_lane.cells;
++  ok("model (street piece t_ramp8, travel +x, low end x 0): e1 .. e8 from the low end to the high end, every one facing east (= uphill)",
++     lane.length === 8 && lane.every((c, i) => c.name === `pw:ramp_cobble_8_e${i + 1}` && c.states["minecraft:cardinal_direction"] === "east"), lane);
++}
++
++// ------------------------------------------------------------------------------------------------ 2. the profile
++// the road's law (the clock's planRoadJob): fixed ends, 7 flat cells at each end, cut <= ROAD_CUT_MAX, fill <= ROAD_CUT (a deck
++// beyond), the ramp on a deck allowed; his 4-part ramp R = ROAD_RAMP; opts.ramp8 = the 8-part allowed (preferred by cost)
++const roadOpts = (L, H0, H1, ramp8) => ({ startDead: false, endDead: false, startH: H0, endH: H1, flat: [[0, 6], [L - 7, L - 1]],
++  maxCut: KIT.ROAD_CUT_MAX, maxFill: KIT.ROAD_CUT, bridgeDrop: KIT.ROAD_CUT, ramp: KIT.ROAD_RAMP, rampOnBridge: true, ramp8 });
++const slope = (L, s, base = 64) => Array.from({ length: L }, (_, t) => ({ g: base + Math.floor(t * s), water: false }));
++const lensOf = (p) => p.segs.filter((q) => q.kind === "ramp").map((q) => q.len);
++// the law of every planned road: H steps <= 1; an 8-ramp's 8 cells at its lower level, the cell beyond its high end one up;
++// fill <= ROAD_CUT unless a deck (bridge segment), cut <= ROAD_CUT_MAX
++const lawOf = (p, g) => {
++  const why = [];
++  for (let t = 1; t < p.H.length; t++) if (Math.abs(p.H[t] - p.H[t - 1]) > 1) why.push(["step", t]);
++  for (const q of p.segs.filter((s) => s.kind === "ramp" && s.len === 8)) {
++    const lo = q.dir > 0 ? q.H : q.H - 1;
++    for (let k = 0; k < 8; k++) if (p.H[q.a + k] !== lo) why.push(["lower", q.a + k]);
++    if (q.dir > 0 && q.a + 8 < p.H.length && p.H[q.a + 8] !== lo + 1) why.push(["after", q.a + 8]);
++    if (q.dir < 0 && q.a > 0 && p.H[q.a - 1] !== lo + 1) why.push(["before", q.a - 1]);
++  }
++  const deck = new Set();
++  for (const q of p.segs.filter((s) => s.kind === "bridge")) for (let k = 0; k < q.len; k++) deck.add(q.a + k);
++  p.H.forEach((h, t) => { if (g[t].g - h > KIT.ROAD_CUT_MAX) why.push(["cut", t]); if (h - g[t].g > KIT.ROAD_CUT && !deck.has(t)) why.push(["fill", t]); });
++  return why;
++};
++{
++  for (const [name, L, s] of [["1 in 16", 120, 1 / 16], ["1 in 12", 120, 1 / 12], ["1 in 10", 100, 1 / 10]]) {
++    const g = slope(L, s), H0 = g[0].g, H1 = g[L - 1].g;
++    const p = KIT.planProfile(g, roadOpts(L, H0, H1, true)), lens = lensOf(p);
++    ok(`mild road ${name} (climb ${H1 - H0}): every ramp is the 8-part`, p.cost < Infinity && lens.length === H1 - H0 && lens.every((x) => x === 8), lens);
++    ok(`mild road ${name}: the law holds (steps <= 1, 8-ramp cells at the lower level, cut / fill caps)`, p.cost < Infinity && lawOf(p, g).length === 0, lawOf(p, g).slice(0, 4));
++    const p4 = KIT.planProfile(g, roadOpts(L, H0, H1, false)), l4 = lensOf(p4);
++    ok(`mild road ${name} WITHOUT ramp8 (the switchback legs' law): every ramp the 4-part, as before`, p4.cost < Infinity && l4.length === H1 - H0 && l4.every((x) => x === KIT.ROAD_RAMP), l4);
++  }
++  // 1 in 8 = the 8-part's own pitch: the 14 flat end cells make the road climb a little faster than the ground somewhere
++  {
++    const L = 100, g = slope(L, 1 / 8), H0 = g[0].g, H1 = g[L - 1].g;
++    const p = KIT.planProfile(g, roadOpts(L, H0, H1, true)), lens = lensOf(p);
++    ok("road at 1 in 8 (the 8-part's pitch): mostly 8-parts (>= 2/3), a 4-part only where the fixed flat ends force a quicker climb", p.cost < Infinity && lens.filter((x) => x === 8).length * 3 >= lens.length * 2 && lens.length === H1 - H0, lens);
++    ok("road at 1 in 8: the law holds", lawOf(p, g).length === 0, lawOf(p, g).slice(0, 4));
++  }
++  // STEEP: 1 in 4 (the 4-part's own pitch), climb 20 in 100 cells
++  {
++    const L = 100, g = slope(L, 1 / 4), H0 = g[0].g, H1 = H0 + 20;
++    const p = KIT.planProfile(g, roadOpts(L, H0, H1, true)), lens = lensOf(p);
++    ok("steep road 1 in 4: the 4-part (>= 90 % of the ramps)", p.cost < Infinity && lens.length === 20 && lens.filter((x) => x === 4).length >= 18, lens);
++    ok("steep road 1 in 4: the law holds", lawOf(p, g).length === 0, lawOf(p, g).slice(0, 4));
++  }
++  // between the pitches (1 in 6): the planner mixes 4- and 8-parts and keeps the road on the ground (|H - g| <= 1)
++  {
++    const L = 100, g = slope(L, 1 / 6), H0 = g[0].g, H1 = g[L - 1].g;
++    const p = KIT.planProfile(g, roadOpts(L, H0, H1, true)), lens = lensOf(p);
++    let worst = 0; p.H.forEach((h, t) => { worst = Math.max(worst, Math.abs(h - g[t].g)); });
++    ok("road at 1 in 6 (between the pitches): both kinds, the road within one block of the ground", p.cost < Infinity && lens.includes(4) && lens.includes(8) && worst <= 1, { lens, worst });
++  }
++  // DESCENDING (the cells run downhill): the 8-ramp's dir -1, its cells at the lower level
++  {
++    const L = 100, g = slope(L, -1 / 10, 80), H0 = g[0].g, H1 = g[L - 1].g;
++    const p = KIT.planProfile(g, roadOpts(L, H0, H1, true));
++    const rs = p.segs.filter((q) => q.kind === "ramp");
++    ok("descending mild road: every ramp an 8-part going down (dir -1)", p.cost < Infinity && rs.length === H0 - H1 && rs.every((q) => q.len === 8 && q.dir === -1), rs);
++    ok("descending mild road: the law holds", lawOf(p, g).length === 0, lawOf(p, g).slice(0, 4));
++  }
++  // the streets keep their own law (ramp7 vs ramp8): unchanged by the roads' opt
++  {
++    const g = slope(80, 3 / 79);
++    const p = KIT.planProfile(g, { maxCut: 6, maxFill: 6, ramp8: true });
++    ok("streets unchanged: a gentle street still takes the 8-ramp (street law, R = 7)", p.cost < Infinity && lensOf(p).length >= 2 && lensOf(p).every((x) => x === 8), lensOf(p));
++  }
++}
++
++// ------------------------------------------------------------------------------------------------ 3. the road planner
++// the planner picks its own shape (on these open slopes a 4-turn one); its LANDINGS (7 flat cells at each end, 3 each side of
++// a turn) hold no ramp, so the road must sometimes climb quicker right beside one: a 4-part may stand there, nowhere else
++const landingGap = (r) => {
++  const n2 = r.cells.length, wins = [[0, 6], [n2 - 7, n2 - 1]].concat(r.turns.map((i) => [i - 3, i + 3]));
++  return r.segs.filter((q) => q.kind === "ramp" && q.len === 4).map((q) => Math.min(...wins.map(([p, e]) => Math.max(0, p - (q.a + 3), q.a - e))));
++};
++for (const [L, div] of [[100, 10], [120, 12], [140, 14], [200, 12]]) {
++  const ground = (x, z) => ({ g: 64 + Math.floor(Math.max(0, x) / div), water: false });
++  const H1 = 64 + Math.floor(L / div);
++  const r8 = run(KIT.planRoadJob(ground, () => false, [0, 0], [1, 0], [L, 0], [1, 0], 64, H1, 6, {}, { ramp8: true }));
++  const l8 = r8 ? lensOf(r8) : [], gaps = r8 ? landingGap(r8) : [99];
++  ok(`planRoadJob opts.ramp8, mild road 1 in ${div} (climb ${H1 - 64}): the 8-part carries the climb (>= 2/3 of the ramps); a 4-part only beside a landing (<= 2 cells)`,
++     r8 && l8.length === H1 - 64 && l8.filter((x) => x === 8).length * 3 >= l8.length * 2 && gaps.every((gp) => gp <= 2), { l8, gaps });
++  const r4 = run(KIT.planRoadJob(ground, () => false, [0, 0], [1, 0], [L, 0], [1, 0], 64, H1, 6, {}));
++  const l4 = r4 ? lensOf(r4) : null;
++  ok(`planRoadJob without opts (the climbing legs), 1 in ${div}: only his 4-part ramp, as before`, r4 && l4.length === H1 - 64 && l4.every((x) => x === KIT.ROAD_RAMP), l4);
++}
++{
++  const steep = (x, z) => ({ g: 64 + Math.floor(Math.max(0, x) / 4), water: false });
++  const rs = run(KIT.planRoadJob(steep, () => false, [0, 0], [1, 0], [100, 0], [1, 0], 64, 84, 6, {}, { ramp8: true }));
++  const ls = rs ? lensOf(rs) : null;
++  ok("planRoadJob opts.ramp8 on a steep road (1 in 4, climb 20): the 4-part (>= 90 %)", rs && ls.length === 20 && ls.filter((x) => x === 4).length >= 18, ls);
++}
++
++// ------------------------------------------------------------------------------------------------ 4. the clock's wiring
++const src = readFileSync(new URL("../pw_civ_clock.js", import.meta.url), "utf8");
++const ssrc = readFileSync(new URL("../pw_civ_streets.js", import.meta.url), "utf8");
++{
++  ok("streets: planProfile allows the 8-ramp for the road's 4-part ramp too (the gate)", /const with8 = !!opts\.ramp8 && \(R === RAMP \|\| R === ROAD_RAMP\);/.test(ssrc));
++  // the road's own dial: a road's ends are fixed (a street end, a bench end), so the streets' 12 left ~27 % 4-parts on mild
++  // roads on the gate world's heightmap (40 roads, ramp-scripts/realroads.mjs); 48 -> 95 %, steep roads unchanged (6 %)
++  ok("streets: the roads' 4-part costs ROAD4_EXTRA (48) more when the 8-part is on; the streets keep RAMP7_EXTRA (12)", KIT.ROAD4_EXTRA === 48 && KIT.RAMP7_EXTRA === 12
++     && /let rc = with8 \? 5 \+ \(R === ROAD_RAMP \? ROAD4_EXTRA : RAMP7_EXTRA\) : 5;/.test(ssrc), [KIT.ROAD4_EXTRA, KIT.RAMP7_EXTRA]);
++  ok("streets: planRoadJob / planRoadShapesJob take opts and hand ramp8 to both exact profiles",
++     /export function\* planRoadShapesJob\([^)]*stats = null, opts = null\)/.test(ssrc) && /export function\* planRoadJob\([^)]*stats = null, opts = null\)/.test(ssrc)
++     && (ssrc.match(/ramp: ROAD_RAMP, rampOnBridge: true, ramp8: !!\(opts && opts\.ramp8\) \}\)/g) || []).length === 2
++     && /yield\* planRoadShapesJob\(ground, blocked, P0, d0, P1, d1, H0, H1, maxDP, S, opts\)/.test(ssrc));
++  ok("streets: the band leg (planBandLegJob, then its planRoadJob fallback) never asks for the 8-ramp (switchback legs stay 4-part)",
++     ssrc.includes("if (!road) road = yield* planRoadJob(ground2, blocked, P0, d0, P1, d1, Hb, Hn, BAND.maxDP, legStats);") && !/function\* planBandLegJob[\s\S]{0,6000}ramp8/.test(ssrc.slice(0, ssrc.indexOf("export function* planBandStreetJob"))));
++  ok("clock: ROAD_OPTS = { ramp8: true }; the bench road (benchJob) plans with it",
++     /const ROAD_OPTS = \{ ramp8: true \};/.test(src) && src.includes("const road = yield* KIT.planRoadJob(ground, blocked, dep.P, dep.d, P1, d1, dep.H, H1, 6, stats, ROAD_OPTS);"));
++  ok("clock: the climbing leg (legJob) plans WITHOUT it (a switchback leg: 4-part)", src.includes("const road = yield* KIT.planRoadJob(ground, blocked, P0, d0, P1, d1, Hb, Hn, 6, stats);"));
++  ok("clock: the gate stubs (a straight narrow road) plan with it", /maxCut: 4, maxFill: 4, noBridge: true, \.\.\.ROAD_OPTS \}\)/.test(src));
++  const recs = src.match(/ramps: (?:road|plan)\.segs\.filter\(\(q\) => q\.kind === "ramp"\)\.map\(\(q\) => \[q\.a, q\.dir, q\.len\]\)/g) || [];
++  ok("clock: every road record keeps each ramp's own length [a, dir, len] (commitBench, commitLeg, the gate stubs)", recs.length === 3 && !/\.map\(\(q\) => \[q\.a, q\.dir\]\)/.test(src), recs.length);
++  const scripts = readdirSync(new URL("..", import.meta.url)).filter((f) => f.endsWith(".js"));
++  const held = scripts.filter((f) => /r_ramp8|road\/r_/.test(readFileSync(new URL(`../${f}`, import.meta.url), "utf8")));
++  ok("no script references the held structure r_ramp8 (the road ramp is laid block by block)", held.length === 0, held);
++}
++
++// ------------------------------------------------------------------------------------------------ 5. layRoadOp on stand-ins
++const cut = (name) => {
++  let i = src.indexOf(`function ${name}(`);
++  let j = src.indexOf("{", i), depth = 0;
++  for (; j < src.length; j++) { if (src[j] === "{") depth++; else if (src[j] === "}" && --depth === 0) break; }
++  return src.slice(i, j + 1);
++};
++const cutConst = (name) => { const i = src.indexOf(`const ${name} =`); return src.slice(i, src.indexOf(";\n", i) + 1); };
++const resolveLog = [];
++const BlockPermutation = {
++  // the engine's resolve, held to the REAL block table: an unknown id, state or value throws (as BlockPermutation.resolve does)
++  resolve(id, states = {}) {
++    const b = FX.blocks[id];
++    if (!b) throw new Error(`unknown block ${id}`);
++    for (const [k, v] of Object.entries(states)) {
++      if (k === "minecraft:cardinal_direction" ? !(b.trait_states.includes(k) && CARDS.includes(v)) : !(b.states[k] && b.states[k].includes(v))) throw new Error(`bad state ${k}=${v} on ${id}`);
++    }
++    resolveLog.push(id);
++    return { id, states: { "minecraft:cardinal_direction": "south", "pw:snow": 0, ...states } };
++  },
++};
++function world() {
++  const m = new Map(), level = [];
++  const key = (x, y, z) => `${x},${y},${z}`;
++  const dim = { getBlock: ({ x, y, z }) => ({ get typeId() { return (m.get(key(x, y, z)) || { id: "minecraft:air" }).id; },
++    setType(id) { m.set(key(x, y, z), { id, states: {} }); }, setPermutation(p) { m.set(key(x, y, z), { id: p.id, states: p.states }); } }) };
++  return { m, dim, level, at: (x, y, z) => m.get(key(x, y, z)) || { id: "minecraft:air", states: {} } };
++}
++function layer(w) {
++  const env = { plotBoxes: () => [], levelColumn: (dim, x, z, top, clear) => { w.level.push({ x, z, top, clear }); return top; }, sealWater: () => 0,
++    groundAt: () => undefined, terraceFace: () => 0, wallColumn: () => 0, BlockPermutation, KIT, console };
++  return new Function(...Object.keys(env), `${cutConst("DIRS4")}\n${cutConst("CARD4")}\n${cut("layRoadOp")}\nreturn layRoadOp;`)(...Object.values(env));
++}
++const DIRS4 = [[1, 0], [0, 1], [-1, 0], [0, -1]], CARD4 = ["east", "south", "west", "north"];
++// a straight road record from a planned profile: cells from (x0, z0) along DIRS4[di]
++function recOf(p, di, x0 = 0, z0 = 0, tuple = 3) {
++  const d = DIRS4[di];
++  const cells = p.H.map((_, i) => [x0 + d[0] * i, z0 + d[1] * i]);
++  return { id: 1, cells, H: p.H.slice(), turns: [], dirs: cells.map(() => di), rampLen: KIT.ROAD_RAMP,
++           ramps: p.segs.filter((q) => q.kind === "ramp").map((q) => (tuple === 3 ? [q.a, q.dir, q.len] : [q.a, q.dir])) };
++}
++const layAll = (rec, w) => { const lay = layer(w); for (let i = 0; i < rec.cells.length; i += 7) lay(w.dim, { buildings: [] }, { id: 1 }, rec, i, Math.min(7, rec.cells.length - i)); };
++// what the road should carry at cell i: [id, cardinal] or null (a flat cell)
++function expected(p, di) {
++  const want = new Map();
++  for (const q of p.segs.filter((s) => s.kind === "ramp")) {
++    const up = q.dir > 0 ? di : (di + 2) % 4;
++    if (q.len === 8) for (let k = 0; k < 8; k++) want.set(q.a + k, [`pw:ramp_cobble_8_e${q.dir > 0 ? k + 1 : 8 - k}`, CARD4[up]]);
++    else for (let k = 0; k < 4; k++) want.set(q.dir > 0 ? q.a + k : q.a + (q.len - 4) + k, [`pw:ramp_cobble_4_q${q.dir > 0 ? k + 1 : 4 - k}`, CARD4[up]]);
++  }
++  return want;
++}
++function check(p, di, label, tuple = 3) {
++  const w = world(), rec = recOf(p, di, 0, 0, tuple);
++  layAll(rec, w);
++  const want = expected(p, di), d = DIRS4[di], s = [-d[1], d[0]];
++  const wrong = [];
++  rec.cells.forEach(([x, z], i) => {
++    const H = rec.H[i], e = want.get(i);
++    for (let k = -2; k <= 2; k++) {
++      const cx = x + s[0] * k, cz = z + s[1] * k, b = w.at(cx, H + 1, cz), deck = w.at(cx, H, cz);
++      if (deck.id !== "minecraft:cobblestone") wrong.push([i, k, "deck", deck.id]);
++      if (e ? (b.id !== e[0] || b.states["minecraft:cardinal_direction"] !== e[1]) : b.id !== "minecraft:air") wrong.push([i, k, b.id, b.states["minecraft:cardinal_direction"], e]);
++    }
++  });
++  return { wrong, w, rec };
++}
++{
++  const L = 72;
++  const up = KIT.planProfile(slope(L, 1 / 12), roadOpts(L, 64, 64 + Math.floor((L - 1) / 12), true));
++  const down = KIT.planProfile(slope(L, -1 / 12, 80), roadOpts(L, 80, 80 + Math.floor(-(L - 1) / 12), true));
++  ok("stand-in: the profiles carry 8-part ramps up and down", lensOf(up).every((x) => x === 8) && lensOf(down).every((x) => x === 8) && lensOf(up).length >= 4 && lensOf(down).length >= 4, [lensOf(up), lensOf(down)]);
++  for (const di of [0, 1, 2, 3]) {
++    const a = check(up, di), b = check(down, di);
++    ok(`layRoadOp, travel ${CARD4[di]}, climbing: every cell of an 8-ramp carries e1..e8 from the low end, facing uphill (${CARD4[di]}); flat cells none; cobble under all`, a.wrong.length === 0, a.wrong.slice(0, 4));
++    ok(`layRoadOp, travel ${CARD4[di]}, descending: e8 at the high (first) end .. e1 at the low end, facing uphill (${CARD4[(di + 2) % 4]})`, b.wrong.length === 0, b.wrong.slice(0, 4));
++  }
++  // the walking SURFACE is continuous along the run (in eighths of a block): a flat cell is H + 1 at both edges; e_k climbs
++  // from H + 1 + (k - 1)/8 to H + 1 + k/8 toward its uphill side, q_k from H + 1 + (k - 1)/4 to H + 1 + k/4 — every cell's far
++  // edge meets the next cell's near edge (no step, no gap: the part index runs the right way along the run)
++  const surface = (p, di) => {
++    const want = expected(p, di), bad2 = [];
++    const edges = p.H.map((H, i) => {
++      const e = want.get(i), base = 8 * (H + 1);
++      if (!e) return [base, base];
++      const k = Number(e[0].slice(-1)), step = e[0].includes("_8_e") ? 1 : 2, upAlong = e[1] === CARD4[di];
++      return upAlong ? [base + step * (k - 1), base + step * k] : [base + step * k, base + step * (k - 1)];
++    });
++    for (let i = 1; i < edges.length; i++) if (edges[i - 1][1] !== edges[i][0]) bad2.push([i, edges[i - 1], edges[i]]);
++    return bad2;
++  };
++  ok("surface: continuous along the climbing road (every far edge = the next near edge)", surface(up, 0).length === 0, surface(up, 0).slice(0, 4));
++  ok("surface: continuous along the descending road", surface(down, 2).length === 0, surface(down, 2).slice(0, 4));
++  // HEADROOM (>= 2 everywhere): every ramp cell's column is levelled at its H with 3 cleared above (H + 1 .. H + 3): over
++  // the full e8 (top H + 2) two blocks stay clear
++  const { w, rec } = check(up, 0);
++  const rampCells = new Set([...expected(up, 0).keys()].map((i) => `${rec.cells[i][0]},${rec.cells[i][1]}`));
++  const lv = w.level.filter((c) => rampCells.has(`${c.x},${c.z}`));
++  ok("headroom: every ramp cell levelled at its H, cleared 3 above (>= 2 free over the full e8)", lv.length === rampCells.size && lv.every((c) => c.clear >= 3 && c.top === rec.H[rec.cells.findIndex(([x, z]) => x === c.x && z === c.z)]), lv.slice(0, 3));
++  ok("every ramp block went through BlockPermutation.resolve against the real table (ids + states valid)", resolveLog.length > 0 && resolveLog.every((id) => id.startsWith("pw:ramp_cobble_")), resolveLog.slice(0, 3));
++  // the 4-part path is unchanged: a steep road (all 4-parts), and an OLD saved record ([a, dir] + rampLen 4) lays the same
++  const L2 = 60, steepP = KIT.planProfile(slope(L2, 1 / 4), roadOpts(L2, 64, 74, false));
++  const s3 = check(steepP, 1), s2 = check(steepP, 1, "old", 2);
++  ok("4-part road (q1..q4 from the low end, facing uphill): unchanged", lensOf(steepP).every((x) => x === 4) && s3.wrong.length === 0, s3.wrong.slice(0, 4));
++  ok("an old saved road record ([a, dir], rampLen 4) lays exactly as before", s2.wrong.length === 0 && JSON.stringify([...s2.w.m]) === JSON.stringify([...s3.w.m]), s2.wrong.slice(0, 4));
++  // the old 7-cell gate-stub ramp ([a, dir], no rampLen): its 4 quarters at the low end (up) / the last 4 cells (down)
++  const g7 = { H: Array(30).fill(70).map((h, i) => (i >= 10 && i < 17 ? (i < 14 ? 70 : 71) : i >= 17 ? 71 : 70)), segs: [{ kind: "flat", a: 0, len: 10, H: 70 }, { kind: "ramp", a: 10, len: 7, H: 70, dir: 1 }, { kind: "flat", a: 17, len: 13, H: 71 }] };
++  const w7 = world(), rec7 = recOf(g7, 0, 0, 0, 2);
++  delete rec7.rampLen;
++  layAll(rec7, w7);
++  ok("an old 7-cell ramp record (no rampLen) still lays q1..q4 on its first 4 cells", [10, 11, 12, 13].every((i, k) => w7.at(i, 71, 0).id === `pw:ramp_cobble_4_q${k + 1}`) && w7.at(14, 72, 0).id === "minecraft:air", [10, 11, 12, 13, 14].map((i) => w7.at(i, 71, 0).id));
++  // a mixed road (1 in 6): every ramp laid by its own length
++  const L3 = 100, mixP = KIT.planProfile(slope(L3, 1 / 6), roadOpts(L3, 64, 64 + Math.floor(99 / 6), true));
++  const mx = check(mixP, 3);
++  ok("mixed road (4- and 8-parts, travel north): every ramp laid by its own length", lensOf(mixP).includes(4) && lensOf(mixP).includes(8) && mx.wrong.length === 0, mx.wrong.slice(0, 4));
++  ok("surface: continuous along the mixed road and the steep (4-part) road", surface(mixP, 3).length === 0 && surface(steepP, 1).length === 0, [surface(mixP, 3).slice(0, 3), surface(steepP, 1).slice(0, 3)]);
++}
++
++// ------------------------------------------------------------------------------------------------ 6. the witness list
++// /scriptevent pw:clock roadramps — every narrow road's ramps (where each starts, 8-part or 4-part, which way it climbs);
++// roadRampList cut from the clock and run on a planned road
++{
++  const env = { KIT };
++  const list = new Function(...Object.keys(env), `${cutConst("DIRS4")}\n${cutConst("CARD4")}\n${cut("roadRampList")}\nreturn roadRampList;`)(...Object.values(env));
++  const L = 72, p = KIT.planProfile(slope(L, 1 / 12), roadOpts(L, 64, 64 + Math.floor((L - 1) / 12), true));
++  const rec = recOf(p, 1, 10, 20);
++  const rows = list(rec);
++  const rs = p.segs.filter((q) => q.kind === "ramp");
++  ok("roadRampList: one row per ramp — its first cell along the road (x, y = the ramp row H + 1, z), its parts (8 / 4) and its uphill facing",
++     rows.length === rs.length && rows.every((r, i) => r.x === 10 && r.z === 20 + rs[i].a && r.y === p.H[rs[i].a] + 1 && r.parts === (rs[i].len === 8 ? 8 : 4) && r.up === "south"), rows.slice(0, 3));
++  const old = list({ ...rec, ramps: rec.ramps.map(([a, d]) => [a, d]), rampLen: 4 });
++  ok("roadRampList: an old record ([a, dir], rampLen 4) lists 4-part ramps", old.length === rs.length && old.every((r) => r.parts === 4));
++  ok("clock: /scriptevent pw:clock roadramps is wired, and the bench road's chronicle line counts its 8-part / 4-part ramps",
++     /if \(cmd === "roadramps"\)/.test(src) && /roadRampList\(r\)/.test(src) && /8-part ramp/.test(src.slice(src.indexOf("function commitBench("), src.indexOf("function commitBench(") + 3000)));
++}
++
++console.log(`test_roadramp8: ${n - bad}/${n} passed`);
++if (bad) process.exitCode = 1;
